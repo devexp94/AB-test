@@ -12,7 +12,7 @@ div.explore-categories > div.row-of-boxes {
 
 .middle .row-of-boxes .category-pages-box {
     height: 100px !important;
-    margin: 0 !important;
+    margin: 4px 8px !important;
 }
 
  .category-pages-box .name {
@@ -22,7 +22,6 @@ div.explore-categories > div.row-of-boxes {
     padding-bottom: 2px;
     padding-inline: 10px;
  }
- 
 
  #__next > div.middle > h2 {
     display: none;
@@ -62,7 +61,6 @@ div.explore-categories > div.row-of-boxes {
 
 #__next > div.middle > div.row-of-boxes > a{
     height: 50px !important;
-    margin: 0;
     margin-block: auto;
     display: flex;
     width: 350px;
