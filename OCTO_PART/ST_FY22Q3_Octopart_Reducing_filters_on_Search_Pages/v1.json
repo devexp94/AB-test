@@ -1,0 +1,11 @@
+{
+    "files": [
+        "./variation1/variation.css",
+        "./variation1/variation.js"
+    ],
+
+    "urls": ["https://octopart.com/search?q=MBR15",
+        "https://octopart.com/search"
+    ],
+    "inject": ""
+}

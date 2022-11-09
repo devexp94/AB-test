@@ -31,12 +31,15 @@ section:nth-child(6) picture {
 }
 
 
-/* .css-16f4053 img {
-    width: 100%;
-    height: 109% !important;
-    object-fit: cover;
-    padding-bottom: 10px;
-} */
+.css-16f4053 img {
+    display: block;
+}
+
+
+.css-16f4053 {
+    aspect-ratio: 1/1;
+    height: unset !important;
+}
 
 
 @media screen and (max-width: 1450px) {
