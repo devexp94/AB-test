@@ -1,0 +1,63 @@
+#__next .top + .middle {
+    display: flex;
+    justify-content: center;
+}
+
+div.explore-categories > div.row-of-boxes {
+    display: grid;
+    grid-template-rows: repeat(3 , 110px);
+    grid-template-columns: repeat(3 , 240px);
+    margin-top: 3px;
+}
+
+.row-of-boxes .category-pages-box{
+    height: 100px !important;    
+    margin: 4px;
+ }
+
+ .category-pages-box .name {
+    width: 100% !important;
+    font-weight: bold !important;
+    font-size: 18px;
+    padding-bottom: 2px;
+    padding-inline: 10px;
+ }
+ 
+
+ #__next > div.middle > h2 {
+    display: none;
+}
+
+#__next > div.middle > div.row-of-boxes {
+    display: grid !important;
+    grid-template-rows: repeat(3 , 110px);
+    position: relative;
+    grid-template-columns:repeat(2, 200px);
+}
+
+#__next > div.middle > div.explore-categories {
+    padding-right: 2%;
+    margin: auto 5% auto 0;
+    border-right: 3px solid #d9d7d1;
+}
+
+
+#__next > div.middle > div.row-of-boxes::before {
+    content: "Top Manufacturers";
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+}
+
+#__next > div.middle > div.row-of-boxes{
+    padding-top: 5%;
+    margin-left: -3%;
+}
+.middle > div.explore-categories > h2 {
+    font-weight: bold;
+}
