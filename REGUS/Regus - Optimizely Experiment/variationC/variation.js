@@ -33,16 +33,7 @@
 
     function init() {
 
-      let items = document.querySelectorAll('div.css-gw8ne9');
-
-      items.forEach(function (item) {
-        item.insertAdjacentHTML('afterend', eg_str);
-      });
-      document.querySelector("section:nth-child(6) div:nth-child(3) div.eg_btm > a.eg_quote").innerText  = "Book now";
-      document.querySelector("section:nth-child(6) div:nth-child(4) div.eg_btm > a.eg_quote").innerText  = "Buy now";  
-
-      let egIndex = 0;
-      let linksBox = document.querySelectorAll(".eg_btm");
+      let items = document.querySelectorAll('section:nth-child(6) > div > div > div div.css-gw8ne9');
       let egObj = [
         {
           link1: "https://www.regus.com/en-gb/get-a-quote",
@@ -62,11 +53,17 @@
         }
       ];
 
-      egObj.forEach(boxlinks => {
-        linksBox[egIndex].children[0].href = boxlinks.link1;
-        linksBox[egIndex].children[1].href = boxlinks.link2;
-        egIndex += 1;
+      items.forEach(function(item,i){
+        var eg_str = `
+        <div class="eg_btm">
+            <a href="${egObj[i].link1}" class="eg_quote"> Get a quote</a>
+            <a href="${egObj[i].link2}" class="eg_learn"> Learn more</a>
+        </div>
+      `;
+        item.insertAdjacentHTML('afterend',eg_str);
       });
+      document.querySelector("section:nth-child(6) div:nth-child(3) div.eg_btm > a.eg_quote").innerText  = "Book now";
+      document.querySelector("section:nth-child(6) div:nth-child(4) div.eg_btm > a.eg_quote").innerText  = "Buy now";  
     }
 
     /* Initialize variation */
