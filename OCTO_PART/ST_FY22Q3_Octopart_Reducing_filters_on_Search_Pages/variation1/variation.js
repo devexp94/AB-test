@@ -101,7 +101,7 @@
                     } else {
                         egClicked = egRadioBtn;
                     }
-                })
+                });
             }
         }
 

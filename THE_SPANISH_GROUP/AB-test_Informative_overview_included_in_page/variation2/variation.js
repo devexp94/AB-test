@@ -36,11 +36,12 @@
         <section class="eg-overview-container">
             <div class="eg-overview-wrapper">
                 <!--left side div-->
-                <div class='eg-heading'>
-                    <h2>Top Services</h2>
+                <div class='eg-tabs'>
+                    <h2 class="eg-tab eg-tab-1 eg-tab-active">Top Services</h2>
+                    <h2 class="eg-tab eg-tab-2">Top Documents</h2>
                 </div>
                 <!--right side div-->
-                <div class="eg-callouts-container">
+                <div class="eg-callouts-container eg-callout-1">
 
                     <!--Certified Translation-->
                     <div class="eg-callouts">
@@ -74,12 +75,47 @@
                         <a href="#">Learn more ${egGreaterthanSvg}</a>
                     </div>
                 </div>
+
+                <div class="eg-callouts-container eg-callout-2">
+
+                    <!--Academic Translation-->
+                    <div class="eg-callouts">
+                        <img src="https://thespanishgroup.org/wp-content/uploads/2020/08/Group-7.png" alt="callout-icon">
+                        <h3 class="eg-title">Academic Translation</h3>
+                        <p class="eg-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla erat massa, finibus ac velit nec, imperdiet consequat sapien. Mauris nec eleifend odio, nec euismod nunc. Duis et turpis vitae mauris.</p>
+                        <a href="#">Learn more ${egGreaterthanSvg}</a>
+                    </div>
+
+                    <!--90+ Languages Supported-->
+                    <div class="eg-callouts">
+                        <img src="https://thespanishgroup.org/translations/wp-content/themes/translations/img/global-icon.png" alt="callout-icon">
+                        <h3 class="eg-title">90+ Languages Supported</h3>
+                        <p class="eg-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla erat massa, finibus ac velit nec, imperdiet consequat sapien. Mauris nec eleifend odio, nec euismod nunc. Duis et turpis vitae mauris.</p>
+                        <a href="#">Learn more ${egGreaterthanSvg}</a>
+                    </div>
+                </div>
+
             </div>
         </section>`;
 
         /* Variation functions */
         function init() {
-            document.querySelector("section#processinfo").insertAdjacentHTML("afterend",egOverviewHTML);
+            document.querySelector("section#processinfo").insertAdjacentHTML("afterend", egOverviewHTML);
+
+            document.querySelectorAll(".eg-tab").forEach(tab => {
+                tab.addEventListener("click", function() {
+                    tab.classList.add("eg-tab-active");
+                    if (tab.classList.contains("eg-tab-1")) {
+                        document.querySelector(".eg-callout-2").style.display = "none";
+                        document.querySelector(".eg-callout-1").style.display = "flex";
+                        tab.nextElementSibling.classList.remove("eg-tab-active");
+                    } else if (tab.classList.contains("eg-tab-2")) {
+                        document.querySelector(".eg-callout-1").style.display = "none";
+                        document.querySelector(".eg-callout-2").style.display = "flex";
+                        tab.previousElementSibling.classList.remove("eg-tab-active");
+                    }
+                });
+            });
 
         }
 
