@@ -35,7 +35,7 @@
                 "The ultimate experience, whatever you throw at it."
             ]
             setTimeout(() => {
-                const egPriceInfoBoxes = document.querySelectorAll("#block_627dfcc65e214 > .container .packages-wr .package > .package-body > div > .speed-details-wr")
+                const egPriceInfoBoxes = document.querySelectorAll("#block_627dfcc65e214  .package > .package-body > div > .speed-details-wr");
 
                 egPriceInfoBoxes.forEach((priceInfo, index) => {
                     priceInfo.insertAdjacentHTML("beforebegin", `<p class="eg-desc">${egDesc[index]}</p>`);
@@ -46,7 +46,7 @@
         }
 
         /* Initialize variation */
-        waitForElement('#block_627dfcc65e214 > .container .packages-wr .package > .package-body > div > .speed-details-wr', init, 50, 15000);
+        waitForElement('#block_627dfcc65e214  .package > .package-body > div > .speed-details-wr', init, 50, 15000);
     } catch (e) {
         if (debug) console.log(e, "error in Test" + variation_name);
     }
