@@ -33,6 +33,9 @@
         /* Variation functions */
         function init() {
 
+            // setting background image
+            document.querySelector("section.black-friday div.hero__bg img").src = "https://cdn.optimizely.com/img/8453775962/c2dba1b0a5604e8b9db78c251fc8097f.png";
+
             // adding top message
             document.querySelector("section.black-friday").insertAdjacentHTML("afterbegin", egMessage);
 

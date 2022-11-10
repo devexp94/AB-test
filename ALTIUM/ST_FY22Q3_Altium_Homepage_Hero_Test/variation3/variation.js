@@ -26,6 +26,8 @@
 
         /* Variation functions */
         function init() {
+            // setting background image
+            document.querySelector("section.black-friday div.hero__bg img").src = "https://cdn.optimizely.com/img/8453775962/c2dba1b0a5604e8b9db78c251fc8097f.png";
 
             // changing image logo
             document.querySelector("section.black-friday .black-friday__logo > img").src = "https://www.altium.com/sites/default/files/media_icon/2021-07/se_logo.svg";

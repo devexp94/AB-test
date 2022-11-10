@@ -1,5 +1,14 @@
+section.black-friday .hero__bg {
+    background: rgb(0 0 0 /89%);
+}
+
+section.black-friday .hero__bg img{
+    display: block !important;
+}
+
 section.black-friday div.hero__bg+div {
     text-align: center;
+    background: none;
 }
 
 section.black-friday div.hero__bg+div {
