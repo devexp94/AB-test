@@ -1,8 +1,8 @@
 {
-	"files": [
-		"./variationB/variation.css",
-		"./variationB/variation.js"
-	],
-	"urls": ["https://watch.britbox.com/us/karen-pirie"],
-	"inject": ""
+    "files": [
+        "./variationB/variation.css",
+        "./variationB/variation.js"
+    ],
+    "urls": ["https://watch.britbox.com/us/karen-pirie"],
+    "inject": ""
 }

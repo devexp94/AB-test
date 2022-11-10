@@ -20,10 +20,11 @@
 
     /* Variation functions */
 
-    var customImg = `<div class="eg_contain">
+    var egBgImgs;
 
-<div class="eg_wrap">
-<div class="eg-img-row">
+    if(window.innerWidth>767){
+
+   egBgImgs =  `<div class="eg-img-row">
 <img src="https://static.bbus-static.com/shain/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&amp;Quality=80&amp;Width=405&amp;Height=227&amp;ImageUrl=224684.jpg&amp;imageType=tile"
     class="b-lazy b-loaded">
 <img class="b-lazy b-loaded"
@@ -103,8 +104,15 @@
     src="https://static.bbus-static.com/shain/v1/dataservice/ResizeImage/$value?Format='jpg'&amp;Quality=80&amp;Width=405&amp;Height=227&amp;ImageUrl=346483.jpg&amp;imageType=tile">
 
 <img data-v-c37533c6="" class="b-lazy b-loaded" src="https://static.bbus-static.com/shain/v1/dataservice/ResizeImage/$value?Format='jpg'&amp;Quality=80&amp;Width=405&amp;Height=227&amp;ImageUrl=223345.jpg&amp;imageType=tile">
-</div> -->
+</div> -->`;
+} else {
+    egBgImgs = `<div class='eg-mobile-bg'><img src='https://v.fastcdn.co/u/5149ab86/62967482-0-Mobile-title-tile.png' alt='mobile-bg'></div>`;
+}
 
+    var customImg = `<div class="eg_contain">
+
+<div class="eg_wrap">
+${egBgImgs}
 </div>
 
 <div class="eg-britbox-container">

@@ -1,3 +1,11 @@
+/*updating bg image below 767px*/
+.eg-mobile-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*updating bg image below 767px end*/
 
 .eg-img-row>img {
     width: 12.5%;
