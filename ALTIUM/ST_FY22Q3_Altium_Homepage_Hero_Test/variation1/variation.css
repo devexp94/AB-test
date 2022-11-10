@@ -1,7 +1,5 @@
 section.black-friday .hero__bg {
-    background: url(https://cdn.optimizely.com/img/8453775962/c2dba1b….png) 0 black;
-    background-size: cover;
-    background-position: center;
+    background:rgb(0 0 0 / 89%) !important;
 }
 
 section.black-friday .hero__bg img{
