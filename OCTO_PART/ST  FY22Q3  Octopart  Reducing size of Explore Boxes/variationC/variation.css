@@ -12,7 +12,7 @@ div.explore-categories > div.row-of-boxes {
 
 .middle .row-of-boxes .category-pages-box {
     height: 100px !important;
-    margin: 0 !important;
+    /* margin: 0 !important; */
 }
 
  .category-pages-box .name {
@@ -31,6 +31,7 @@ div.explore-categories > div.row-of-boxes {
 #__next > div.middle > div.row-of-boxes {
     display: grid !important;
     position: relative;
+    gap: 2px;
 }
 
 #__next > div.middle > div.explore-categories {
@@ -56,7 +57,7 @@ div.explore-categories > div.row-of-boxes {
 }
 
 #__next > div.middle > div.row-of-boxes {
-    padding-top: 5.5%;
+    padding-top: 5%;
     margin-left: -3%;
 }
 
