@@ -12,7 +12,7 @@ div.explore-categories > div.row-of-boxes {
 
 .middle .row-of-boxes .category-pages-box {
     height: 100px !important;
-    margin: 4px 8px !important;
+    margin: 0 !important;
 }
 
  .category-pages-box .name {
@@ -22,6 +22,7 @@ div.explore-categories > div.row-of-boxes {
     padding-bottom: 2px;
     padding-inline: 10px;
  }
+ 
 
  #__next > div.middle > h2 {
     display: none;
@@ -50,17 +51,17 @@ div.explore-categories > div.row-of-boxes {
     transform: translateX(-50%);
     font-size: 30px;
 }
-
-#__next > div.middle > div.row-of-boxes{
-    padding-top: 5%;
-    margin-left: -3%;
-}
 .middle > div.explore-categories > h2 {
     font-weight: bold;
 }
 
-#__next > div.middle > div.row-of-boxes > a{
-    height: 50px !important;
+#__next > div.middle > div.row-of-boxes {
+    padding-top: 5.5%;
+    margin-left: -3%;
+}
+
+#__next > div.middle > div.row-of-boxes > a {
+    height: 45px !important;
     margin-block: auto;
     display: flex;
     width: 350px;
@@ -72,4 +73,11 @@ div.explore-categories > div.row-of-boxes {
 #__next > div.middle > div.row-of-boxes > a .name{
    text-align:left;
    place-items: center;
+}
+
+
+@media (min-width: 1085px) and (max-width: 1199px) {
+    #__next > div.middle > div.row-of-boxes {
+        padding-top: 6.5% !important;
+    }
 }

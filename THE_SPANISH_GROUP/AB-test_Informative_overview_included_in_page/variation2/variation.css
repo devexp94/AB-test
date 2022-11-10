@@ -17,7 +17,6 @@
 .eg-tabs h2 {
     font-size: 20px;
     font-weight: 600;
-
     padding: 10px;
     text-align: center;
     cursor: pointer;
@@ -146,5 +145,4 @@
         border-right: none;
         border-bottom: 2px solid#1f3d5c;
     }
-
 }
