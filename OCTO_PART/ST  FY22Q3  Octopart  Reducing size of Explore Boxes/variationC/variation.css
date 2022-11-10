@@ -82,3 +82,10 @@ div.explore-categories > div.row-of-boxes {
         padding-top: 6.5% !important;
     }
 }
+
+@media (min-width: 999px) and (max-width: 1084px) {
+#__next > div.middle > div.row-of-boxes {
+    padding-top: 7.5%;
+    margin-left: -3%;
+}
+}
