@@ -60,16 +60,16 @@
 
 .eg_content p {
     font-family: museo-sans, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     color: #eeeeee;
     text-align: center;
-    margin: 12px 0 30px;
+    margin: 8px 0 30px;
     font-weight: 200;
 }
 
 .eg_content h2 {
     color: #fff;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -125,7 +125,7 @@ p.eg_small {
 .eg_content img {
     margin-top: -10px;
     max-width: 170px;
-    height: 55px !important;
+    height: 65px !important;
 }
 
 /* .eg_contain img {
