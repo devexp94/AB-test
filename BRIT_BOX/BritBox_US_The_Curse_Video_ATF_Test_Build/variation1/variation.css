@@ -1,7 +1,80 @@
-.eg-hero-video{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+.eg-hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* important settings for iframe */
+#page_block_header {
+    height: 48rem;
+}
+
+#page_block_header .section-block {
+    background: #08101d;
+    height: 100%;
+}
+
+/* settings for iframe */
+
+/* show banner and cta on hero page */
+#element-69 {
+    top: 40%;
+    left: -5rem;
+    height: 7rem;
+    width: 22rem;
+}
+
+#element-69 .cropped {
+    background: url(//v.fastcdn.co/u/5149ab86/62729038-0-50300-12-THE-CURSE-H.png) 0 0 / 21.6875rem 7.5rem;
+    background-repeat: no-repeat;
+}
+
+#element-240 {
+    top: 59%;
+    left: -2.5rem;
+    height: 3rem;
+    width: 16.9375rem;
+}
+
+#element-240 .btn {
+    height: 3rem !important;
+    width: 20.9375rem !important;
+}
+
+/* show banner and cta on hero page */
+
+@media(max-width: 767px) {
+    #element-240 .btn {
+        height: 2rem !important;
+        width: 12rem !important;
+    }
+
+    #page_block_header {
+        height: 14rem;
+    }
+
+    #element-240 {
+        top: 75%;
+        left: 1.5rem;
+        height: 2rem;
+        width: 12rem;
+    }
+
+    div#element-226 {
+        display: none;
+    }
+
+    #element-257 {
+        top: 0.8125rem;
+    }
+
+    #element-220 {
+        top: 6.375rem;
+    }
+
+    #page-block-qvwd5jb730q {
+        height: 22.375rem;
+    }
 }
