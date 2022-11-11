@@ -1,0 +1,8 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"urls": ["https://www.moorings.com/booking/extras#!departureId=23640186&pax=2&nid=1094"],
+	"inject": ""
+}

@@ -1,0 +1,86 @@
+.col-md-12, .calendar-calendar, .view .row>.list-group {
+    width: 85%;
+}
+
+.booking-flow .step {
+    font-size: 1.8rem;
+    margin-top: 0;
+    height: 45px;
+}
+.booking-flow .steps .number{
+    height:28px;
+}
+
+.booking-flow .main .extra .extra-line-item {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+}
+.egImg {
+    width: 170px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.extra-inner {
+    border: 1px solid #d0cdc5;
+}
+.text {
+    padding: 5px 25px 10px;
+}
+
+.booking-flow .Collapsible__trigger{
+    width: 96%;
+    margin: auto;
+}
+
+.extra-line-item {
+    background: #fff !important;
+}
+
+span.totalPrice {
+    color: #1ba9e8;
+    font-weight: 600;
+}
+
+ .booking-flow .main .extra .price-quantity {
+    float: none;
+      grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding-left: 5%;
+
+}   
+
+ .booking-flow .main .extra .extra-line-item {
+    padding:0;
+}
+
+ .booking-flow .main .extra label {
+         display: flex;
+    align-items: center;
+    justify-content: space-between;
+  max-width: 100%;
+    width: 100%;
+    font-weight: 600;
+    padding-left: 5%;
+}
+
+ .booking-flow input[type=checkbox]{
+  order:1;
+ }
+
+ .notes {
+    padding-left: 3%;
+}
+
+.price-quantity {
+    display: flex;
+    gap: 15px;
+}
+
+.booking-flow .main .extra .notes .crew-message{
+    border: none !important;
+    padding: 0;
+    margin: 0;
+}
