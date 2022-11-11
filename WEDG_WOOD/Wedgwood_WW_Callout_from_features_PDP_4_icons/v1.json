@@ -1,0 +1,28 @@
+{
+    "files": [
+        "./variation1/variation.css",
+        "./variation1/variation.js"
+    ],
+    "urls": ["https://www.wedgwood.com/en-us/collections/all-collections/renaissance-gold/renaissance-gold-3-piece-place-setting-1054478",
+        "https://www.wedgwood.com/en-us/collections/all-collections/renaissance-gold/renaissance-gold-8-piece-place-setting-1054479", "https://www.wedgwood.com/en-us/collections/all-collections/vera-wang-lace-gold/vera-lace-gold-oval-open-vegetable-bowl-50146903602", "https://www.wedgwood.com/en-us/collections/all-collections/renaissance-gold/renaissance-gold-3-piece-tea-set-1054480",
+        "https://www.wedgwood.com/en-us/collections/all-collections/renaissance-gold/renaissance-gold-mug-set-of-2-1054482",
+        "https://www.wedgwood.com/en-us/collections/all-collections/vera-wang-lace-gold/vera-lace-gold-5-piece-place-setting-50146907730",
+        "https://www.wedgwood.com/en-us/collections/all-collections/vera-wang-lace-gold/vera-lace-gold-4-piece-setting-40030695",
+        "https://www.wedgwood.com/en-us/collections/all-collections/renaissance-gold/renaissance-gold-serving-bowl-5c102102217",
+        "https://www.wedgwood.com/en-us/collections/all-collections/gio-gold/gio-gold-teacup-saucer-40007548",
+        "https://www.wedgwood.com/en-us/collections/all-collections/renaissance-gold/renaissance-gold-5-piece-place-setting-5c102100222",
+        "https://www.wedgwood.com/en-us/collections/all-collections/gio-gold/gio-gold-cereal-bowl-40007550",
+        "https://www.wedgwood.com/en-us/collections/all-collections/renaissance-gold/renaissance-gold-gravy-boat-5c102103100",
+        "https://www.wedgwood.com/en-us/collections/all-collections/renaissance-gold/renaissance-gold-mug-5c107408599",
+        "https://www.wedgwood.com/en-us/collections/all-collections/renaissance-gold/renaissance-gold-creamer-5c102102213",
+        "https://www.wedgwood.com/en-us/collections/all-collections/renaissance-gold/renaissance-gold-soup-cereal-bowl-5c102102214",
+        "https://www.wedgwood.com/en-us/collections/all-collections/gio-gold/gio-gold-salad-plate-40007540",
+        "https://www.wedgwood.com/en-us/collections/all-collections/renaissance-gold/renaissance-gold-sugar-5c102102212",
+        "https://www.wedgwood.com/en-us/collections/all-collections/gio-gold/gio-gold-dinner-plate-40007539",
+        "https://www.wedgwood.com/en-us/collections/all-collections/gio-gold/gio-gold-oval-serving-bowl-40011715",
+        "https://www.wedgwood.com/en-us/collections/all-collections/gio-gold/gio-gold-mug-1055613",
+        "https://www.wedgwood.com/en-us/collections/all-collections/renaissance-gold/renaissance-gold-rim-soup-bowl-5c102101012",
+        "https://www.wedgwood.com/en-us/collections/all-collections/gio-gold/gio-gold-bread-butter-plate-40007541"
+    ],
+    "inject": ""
+}

@@ -1,0 +1,7 @@
+.eg-icon{
+	width:20px;
+	display: inline-block;
+}
+#pdp-ecom-container > div.c-call-outs > div > p > span:before{
+	display: none !important;
+}
