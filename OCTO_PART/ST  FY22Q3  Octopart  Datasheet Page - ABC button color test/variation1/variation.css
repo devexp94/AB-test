@@ -1,0 +1,11 @@
+.header .middle .bottom a:first-child {
+    background: rgb(54, 113, 176);
+    color: #FFF;
+}
+
+@media screen and (max-width: 767px) {
+    .header > .buttons-container > a:first-of-type{
+        background: rgb(54, 113, 176);
+        color: #FFF;
+    }
+}

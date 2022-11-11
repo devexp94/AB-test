@@ -1,0 +1,11 @@
+{
+    "files": [
+        "./variation2/variation.css",
+        "./variation2/variation.js"
+    ],
+
+    "urls": ["https://octopart.com/datasheet/mic1557ym5-tr-microchip-66800156",
+        "https://octopart.com/datasheet/"
+    ],
+    "inject": ""
+}
