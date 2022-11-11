@@ -36,9 +36,11 @@
 
             // set or change attributes
             egVideo.setAttribute("id", "eg-video-iframe");
+            egVideo.setAttribute("src","https://player.vimeo.com/video/756540934?title=0&autoplay=1&muted=1&controls=0&loop=1");
 
             // append this cloned iframe to the newly entered div
             egHeroVideoBlock.insertAdjacentElement("afterbegin",egVideo); 
+
 
 
         }
