@@ -21,23 +21,79 @@
 
                 , delayTimeout);
         }
+var str3 = `
+<div class="eg-callout">
+    <p>
+        <span class="c-call-outs__icons icon">
+            <img src="https://www.wedgwood.com/-/media/Wedgwood/ww-cro-icons/star%201%201" class="eg-icon" >
+        </span>
+        Strong fine bone china
+    </p>
+</div>
 
+<div class="eg-callout">
+    <p>
+        <span class="c-call-outs__icons icon">
+            <img src="https://www.wedgwood.com/-/media/Wedgwood/ww-cro-icons/Group" class="eg-icon" >
+        </span>
+        Gold banding
+    </p>
+</div>
+
+<div class="eg-callout">
+    <p>
+        <span class="c-call-outs__icons icon">
+            <img src="https://www.wedgwood.com/-/media/Wedgwood/ww-cro-icons/dishwasher%201" class="eg-icon" >
+        </span>
+        Dishwasher Safe
+    </p>
+</div>`;
+
+var str4 = `
+<div class="eg-callout">
+    <p>
+        <span class="c-call-outs__icons icon">
+            <img src="https://www.wedgwood.com/-/media/Wedgwood/ww-cro-icons/star%201%201" class="eg-icon" >
+        </span>
+        Strong fine bone china
+    </p>
+</div>
+
+<div class="eg-callout">
+    <p>
+        <span class="c-call-outs__icons icon">
+            <img src="https://www.wedgwood.com/-/media/Wedgwood/ww-cro-icons/Group" class="eg-icon" >
+        </span>
+        Gold banding
+    </p>
+</div>
+
+<div class="eg-callout">
+    <p>
+        <span class="c-call-outs__icons icon">
+            <img src="https://www.wedgwood.com/-/media/Wedgwood/ww-cro-icons/box%201" class="eg-icon" >
+        </span>
+        Carefull packaged in a Wedgwood blue gift box
+    </p>
+</div>
+
+<div class="eg-callout">
+    <p>
+        <span class="c-call-outs__icons icon">
+            <img src="https://www.wedgwood.com/-/media/Wedgwood/ww-cro-icons/dishwasher%201" class="eg-icon" >
+        </span>
+        Dishwasher Safe
+    </p>
+</div>`;
 
         function init() {
-            const egIcon1 = document.querySelector("#pdp-ecom-container > div.c-call-outs > div:nth-child(1) > p > span");
-            const egIcon2 = document.querySelector("#pdp-ecom-container > div.c-call-outs > div:nth-child(2) > p > span");
-            const egIcon3 = document.querySelector("#pdp-ecom-container > div.c-call-outs > div:nth-child(3) > p > span");
-
-            const egNewIcon1 = 'https://www.wedgwood.com/-/media/Wedgwood/ww-cro-icons/star%201%201'; //Strong fine bone china
-            const egNewIcon2 = 'https://www.wedgwood.com/-/media/Wedgwood/ww-cro-icons/Group'; //Gold banding
-            const egNewIcon3 = 'https://www.wedgwood.com/-/media/Wedgwood/ww-cro-icons/dishwasher%201'; //Dishwasher Safe
-
+          
             let egLinks = ['/en-us/collections/all-collections/gio-gold/gio-gold-cereal-bowl-40007550',
                 '/en-us/collections/all-collections/renaissance-gold/renaissance-gold-gravy-boat-5c102103100',
                 '/en-us/collections/all-collections/renaissance-gold/renaissance-gold-mug-5c107408599',
                 '/en-us/collections/all-collections/renaissance-gold/renaissance-gold-creamer-5c102102213',
                 '/en-us/collections/all-collections/renaissance-gold/renaissance-gold-soup-cereal-bowl-5c102102214',
-                '/en-us/collections/all-collections/renaissance-gold/renaissance-gold-soup-cereal-bowl-5c102102214',
+                '/en-us/collections/all-collections/gio-gold/gio-gold-salad-plate-40007540',
                 '/en-us/collections/all-collections/renaissance-gold/renaissance-gold-sugar-5c102102212',
                 '/en-us/collections/all-collections/gio-gold/gio-gold-dinner-plate-40007539',
                 '/en-us/collections/all-collections/gio-gold/gio-gold-oval-serving-bowl-40011715',
@@ -49,17 +105,15 @@
                 '/en-us/collections/all-collections/vera-wang-lace-gold/vera-lace-gold-salad-plate-50146901006',
                 '/en-us/collections/all-collections/vera-wang-lace-gold/vera-lace-gold-oval-platter-50146903001',
                 '/en-us/collections/all-collections/vera-wang-lace-gold/vera-lace-gold-dinner-plate-50146901004',
-                '/en-us/collections/all-collections/vera-wang-lace-gold/vera-lace-gold-dinner-plate-50146901004',
+                '/en-us/collections/all-collections/vera-wang-lace-gold/vera-lace-gold-rim-soup-bowl-50146901012',
                 '/en-us/collections/all-collections/vera-wang-lace-gold/vera-lace-gold-bread-butter-plate-50146901008'                
 
             ];
             // if link after 29 (xls ref)
             if (egLinks.indexOf(window.location.pathname) != -1) {
-                egIcon1.insertAdjacentHTML("afterbegin",`<img class="eg-icon" src="${egNewIcon1}" alt="Strong fine bone china" >`);
-                egIcon2.insertAdjacentHTML("afterbegin",`<img class="eg-icon" src="${egNewIcon2}" alt="Gold banding" >`);
-                egIcon3.insertAdjacentHTML("afterbegin",`<img class="eg-icon" src="${egNewIcon3}" alt="Dishwasher safe" >`);
-            } else {
-                console.log("hellow")
+                document.querySelector('.c-call-outs').innerHTML = str3;
+                   } else {
+                    document.querySelector('.c-call-outs').innerHTML = str4;
             }
         }
 
