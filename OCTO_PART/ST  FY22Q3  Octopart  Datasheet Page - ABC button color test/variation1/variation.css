@@ -1,11 +1,21 @@
 .header .middle .bottom a:first-child {
     background: rgb(54, 113, 176);
     color: #FFF;
+    border: none;
+}
+.header .middle .bottom a:first-child:hover{
+    border: none;
+    background: rgb(24, 50, 78);
 }
 
 @media screen and (max-width: 767px) {
     .header > .buttons-container > a:first-of-type{
         background: rgb(54, 113, 176);
         color: #FFF;
+        border: none;
+    }
+    .header > div.buttons-container > a:first-of-type:hover {
+        border: none;
+        background: rgb(24, 50, 78);
     }
 }
