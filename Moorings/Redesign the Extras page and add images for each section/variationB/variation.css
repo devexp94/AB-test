@@ -56,18 +56,18 @@ span.totalPrice {
     padding:0;
 }
 
- .booking-flow .main .extra label {
-         display: flex;
+ .booking-flow .main .extra label { 
+    display: flex;
     align-items: center;
     justify-content: space-between;
-  max-width: 100%;
+    max-width: 100%;
     width: 100%;
     font-weight: 600;
     padding-left: 5%;
 }
 
  .booking-flow input[type=checkbox]{
-  order:1;
+    order:1;
  }
 
  .notes {
