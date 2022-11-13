@@ -112,7 +112,8 @@ var str4 = `
             // if link after 29 (xls ref)
             if (egLinks.indexOf(window.location.pathname) != -1) {
                 document.querySelector('.c-call-outs').innerHTML = str3;
-                   } else {
+                   } 
+                   else {
                     document.querySelector('.c-call-outs').innerHTML = str4;
             }
         }
