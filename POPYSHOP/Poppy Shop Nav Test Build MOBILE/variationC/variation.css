@@ -1,4 +1,7 @@
+@media screen and (max-width: 767px){
+
 /* Need to be remove this CSS */
+
 #shopify-section-header>div>header>section {
     display: none !important;
 }
@@ -118,6 +121,8 @@ html body .eg-sub-menu-option>.eg-title.eg-active+.eg-sub-menu-link .eg-title {
     font-size: 17px;
     line-height: 26px;
     color: #0D5AA3;
+}
+
 }
 
 .eg-image-text.eg-jewellery {
