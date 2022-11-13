@@ -177,7 +177,7 @@
 
         function convertToHTML(eleList) {
             var eleHtml = eleList.reduce(function(html, listEle) {
-                console.log(typeof html);
+              //  console.log(typeof html);
                 if (typeof html === "object") {
                     return html.outerHTML.toString() + listEle.outerHTML.toString();
                 }
@@ -189,8 +189,6 @@
         }
 
         function addHtml(eleHtml) {
-            console.log('hello', eleHtml);
-
             document.querySelectorAll(".eg-products-container ul").forEach((ele)=>{
                 ele.insertAdjacentHTML("beforeend",eleHtml);
             })
