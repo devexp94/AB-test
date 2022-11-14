@@ -105,7 +105,7 @@
                 });
             });
         }
-        // moving price perday
+
         // moving crew message and text note
         function movingElements(elements){
             elements.forEach(ele=>{
