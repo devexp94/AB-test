@@ -98,16 +98,12 @@
             // mobile cta scroll to first plan
             const egCta = document.querySelector(".eg-checkout-plans-cta");
 
+            // mobile cta scroll to first plan
+            const egCta = document.querySelector(".eg-checkout-plans-cta");
+
             egCta.addEventListener("click", (e) => {
                 e.preventDefault();
-                var i = 250; // how much you want to move
-                var time = 10; // in how much time
-                // time should be less than i for better smoothness
-                var int = setInterval(function() {
-                    window.scrollTo(0, i);
-                    i += 50;
-                    if (i >= 1200) clearInterval(int);
-                }, time);
+                document.querySelector("section[data-id='6476490']").scrollIntoView({ behaviour: "smooth" });
             });
         }
 
