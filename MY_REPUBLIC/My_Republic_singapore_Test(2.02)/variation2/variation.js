@@ -95,15 +95,16 @@
         function init() {
             // write your js here(function can be outside)
             document.querySelector("main article .elementor-section-wrap section:nth-child(2)").insertAdjacentHTML("beforebegin", egNewBannerHTML);
-            // mobile cta scroll to first plan
-            const egCta = document.querySelector(".eg-checkout-plans-cta");
-
+            
             // mobile cta scroll to first plan
             const egCta = document.querySelector(".eg-checkout-plans-cta");
 
             egCta.addEventListener("click", (e) => {
                 e.preventDefault();
-                document.querySelector("section[data-id='6476490']").scrollIntoView({ behaviour: "smooth" });
+                window.scrollTo({
+                    top: 1170,
+                    behavior: 'smooth',
+                })
             });
         }
 

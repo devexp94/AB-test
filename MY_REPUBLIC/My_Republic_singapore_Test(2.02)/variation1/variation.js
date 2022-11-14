@@ -100,7 +100,10 @@
 
             egCta.addEventListener("click", (e) => {
                 e.preventDefault();
-                document.querySelector("section[data-id='6476490']").scrollIntoView({ behaviour: "smooth" });
+                window.scrollTo({
+                    top: 1170,
+                    behavior: 'smooth',
+                })
             });
 
         }
