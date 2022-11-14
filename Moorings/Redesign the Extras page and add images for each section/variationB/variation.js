@@ -73,10 +73,12 @@
   `;
 
         function init() {
-            let container = document.querySelectorAll("#tm-booking .main .Collapsible__contentInner .extra-line-item");
+            let container = document.querySelectorAll("#tm-booking .main .extra-inner .extra-line-item");
             for (let item of container) {
                 item.insertAdjacentHTML("afterbegin", eg_Img);
             }
+
+            movingElements(document.querySelectorAll("#tm-booking .main .extra-inner"));
 
             // mutation observer
             let observer = new MutationObserver(mutations => {
@@ -85,24 +87,46 @@
                     for (let node of mutation.addedNodes) {
                         // we track only elements, skip other nodes (e.g. text nodes)
                         if ((node instanceof HTMLElement)) {
-                            node.children[0].children[0].insertAdjacentHTML("afterbegin", eg_Img);
+                            node.querySelector(".extra-line-item").insertAdjacentHTML("afterbegin", eg_Img);
+                            movingElements([node]);
                         }
+                        console.log(node);
                     }
                 }
             });
 
-            const ele = document.querySelectorAll("#tm-booking .main .Collapsible__contentInner");
+            const ele = document.querySelectorAll("#tm-booking .main .extras form");
 
             ele.forEach(ele => {
                 // observe everything except attributes
                 observer.observe(ele, {
-                    childList: true, // observe direct children
+                    subtree: true, // observe desendents children
+                    childList:true
                 });
             });
         }
+        // moving price perday
+        // moving crew message and text note
+        function movingElements(elements){
+            elements.forEach(ele=>{
+                qualifier = ele.querySelector("span.qualifier");
+                priceQuantity = ele.querySelector(".price-quantity");
+                notes = ele.querySelector(".extra-description > .notes");
+                text = ele.querySelector(".extra-description > .text");
+
+                if(qualifier){
+                    priceQuantity.insertAdjacentElement("beforeend",qualifier);
+                }
+
+                if(notes){
+                    text.insertAdjacentElement("afterend",notes);
+                    notes.querySelector(".crew-message").textContent = notes.querySelector(".crew-message").textContent.replace("*","Note")
+                }
+            })
+        }
 
         /* Initialize variation */
-        waitForElement("#tm-booking .main .Collapsible__contentInner", init, 50, 15000);
+        waitForElement("#tm-booking .main .extra-inner", init, 50, 15000);
     } catch (e) {
         if (debug) console.log(e, "error in Test" + variation_name);
     }

@@ -2,6 +2,32 @@
     width: 85%;
 }
 
+.booking-flow .main .extra .notes {
+    margin-top: 0;
+}
+
+span.qualifier {
+    color: #bdbdbd;
+}
+
+.booking-flow .main .extra.child {
+    background-color:white; 
+}
+
+.booking-flow .Collapsible__trigger:after {
+    float: right;
+    font-size: 11px;
+    margin: 4px 0 8px;
+}
+
+.booking-flow .Collapsible {
+     border-bottom:none; 
+}
+
+.booking-flow .Collapsible__trigger {
+    background-color: rgb(204 204 204 /35%);
+}
+
 .booking-flow .step {
     font-size: 1.8rem;
     margin-top: 0;
