@@ -22,6 +22,7 @@
             setTimeout(function() {
                 clearInterval(interval);
             }, delayTimeout);
+            
         }
 
         // new banner html
@@ -93,8 +94,21 @@
         /* Variation functions */
         function init() {
             // write your js here(function can be outside)
-            document.querySelector("main article .elementor-section-wrap section:nth-child(2)").insertAdjacentHTML("beforebegin",egNewBannerHTML);
+            document.querySelector("main article .elementor-section-wrap section:nth-child(2)").insertAdjacentHTML("beforebegin", egNewBannerHTML);
+            // mobile cta scroll to first plan
+            const egCta = document.querySelector(".eg-checkout-plans-cta");
 
+            egCta.addEventListener("click", (e) => {
+                e.preventDefault();
+                var i = 250; // how much you want to move
+                var time = 10; // in how much time
+                // time should be less than i for better smoothness
+                var int = setInterval(function() {
+                    window.scrollTo(0, i);
+                    i += 50;
+                    if (i >= 1200) clearInterval(int);
+                }, time);
+            });
         }
 
 
