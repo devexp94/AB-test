@@ -1,0 +1,13 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.vodafone.it/portal/aziende/partita-iva/fibra-e-adsl/rete-fissa/snodo?icmp=bz_hp_piva_box",
+		"https://www.vodafone.it/portal/Aziende/Partita-IVA/Fibra-e-ADSL/Rete-Fissa/one-net-pro",
+		"https://www.vodafone.it/portal/aziende/partita-iva/landing/retargeting-fissa?ecmp=007_sem-brnd_googl",
+		"https://www.vodafone.it/portal/aziende/partita-iva/landing/iperfibra-adv-red-internet?ecmp=007_sem-b"
+	]
+}

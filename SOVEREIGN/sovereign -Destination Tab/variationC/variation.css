@@ -1,0 +1,218 @@
+.sov-hero-slider-wrapper {
+    position: relative;
+}
+.eg-option-container {
+    max-width: 364px;
+    padding: 15px 20px;
+    background: #fff;
+    /* height: 100% */
+    position: relative;
+    z-index: 99;
+}
+
+.eg-option-container .eg-note, 
+.eg-option-container .eg-price-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.eg-option-container .eg-price-number {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    color: #333333;
+}
+
+.eg-option-container .eg-details-container p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin: 0px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.eg-option-container .eg-details-container p span {
+    display: flex;
+    align-items: center;
+}
+.eg-option-container .eg-details-container .eg-label:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+.eg-option-container .eg-details-container p span svg:nth-child(1){
+    width: 28px;
+    height: 24px;
+}
+
+.eg-option-container .eg-total-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+.eg-option-container .eg-details-container {
+    padding: 18px 0px;
+    border-top: 0.5px solid #C0C4CC;
+    border-bottom: 0.5px solid #C0C4CC;
+    margin: 18px 0px;
+    height: 244px;
+    overflow-y: scroll;
+}
+.eg-option-container .eg-total-text, 
+.eg-option-container .eg-total-price {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.eg-option-container .eg-button {
+    width: 325px;
+    height: 60px;
+    background: #487E78;
+    border-radius: 4px;
+    border: none;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+html body .sov-hero-slider-wrapper .slick-slide {
+    display: flex;
+    justify-content: center;
+}
+html body .sov-hero-slider-wrapper .slick-slide:not(.slick-center) .view-more,
+html body .sov-hero-slider-wrapper .slick-slide:not(.slick-center) .eg-option-container {
+    opacity: 0;
+}
+
+html body .sov-hero-slider-wrapper .slick-slide .view-more {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 186px;
+    top: 1px;
+    background: #3C3C3C;
+    color: #fff;
+    padding: 11px 16px;
+    cursor: pointer;
+    
+}
+html body .sov-hero-slider-wrapper .slick-slide .view-more svg {
+    margin-left: 10px;
+}
+
+
+@media screen and (max-width:991px) {
+    html body .slick-slide .eg-option-container {
+        display: none;
+    }
+    html body .sov-hero-slider-wrapper .slick-slide .view-more {
+        right: 5px;
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (min-width:992px) {
+    html body .sov-hero-slider + .eg-option-container{
+        display: none;
+    }
+}
+@media screen and (max-width:991px) {
+    .sov-hero-slider + .eg-option-container .eg-details-container{
+        height: 240px;
+    }
+    html body .sov-hero-slider > .eg-option-container{
+        display: none;
+    }
+    html body .sov-hero-slider + .eg-option-container {
+        max-width: 750px;
+        margin: 20px auto;
+    }
+    
+    html body .sov-hero-slider + .eg-option-container .eg-button {
+        width: 100%;
+    }
+    html body.eg-check-price-page .sov-hero-slider + .eg-option-container .eg-button {
+        width: 220px !important;
+    }
+}
+
+.slick-initialized.slick-slider.sov-hero-slider {
+    margin-top: 20px;
+}
+
+.body-content.css-force-display {
+    padding-top: 115px;
+}
+.eg-check-price-page .eg-option-container .eg-option-inr {
+    display: flex;
+    flex-direction: column;
+}
+
+.eg-check-price-page .eg-option-container .eg-tag-details-container {
+    margin: 20px 0px;
+}
+
+.eg-check-price-page .eg-option-container .eg-review-container > div {
+    width: 100%;
+    display: flex;
+    padding: 0px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.eg-check-price-page .eg-option-container .eg-review-container > div img {
+    max-width: 154px;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.eg-check-price-page .eg-option-container .eg-review-container > div span {
+    font-size: 15px;
+}
+.hero-outside.container.css-force-display .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.hero-outside.container.css-force-display .tag-list .col-md-6 {
+    float: none;
+    width: auto;
+    margin-left: auto;
+    padding-right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.hero-outside.container.css-force-display .tag-list .col-md-6 img {
+    max-width: 141px;
+}
+
+@media screen and (max-width:1199px) {
+    html .body-content.css-force-display{
+        padding-top: 150px !important;
+    }
+}
+.hero-outside.container.css-force-display .tag-list .col-md-6 + .col-md-6{
+    display: block;
+}   

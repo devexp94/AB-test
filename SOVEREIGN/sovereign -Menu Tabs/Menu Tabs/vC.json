@@ -1,0 +1,10 @@
+{
+	"files": [
+		"./variationC- New code/variation.css",
+		"./variationC- New code/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.sovereign.com/"
+	]
+}

@@ -1,0 +1,13 @@
+{
+	"files": [
+		"./variation1/variation.css",
+		"./variation1/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.instarem.com/en-au/transfer-money-to-india",
+		"https://www.instarem.com/en-au/transfer-money-to-usa",
+		"https://www.instarem.com/en-au/transfer-money-to-uk",
+		"https://www.instarem.com/en-au/transfer-money-to-indonesia" 
+	]
+}

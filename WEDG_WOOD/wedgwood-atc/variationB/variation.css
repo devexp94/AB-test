@@ -1,0 +1,247 @@
+.cartpopOpened {
+  overflow: hidden;
+}
+.v_cartDrawer {
+  transition: all 0.3s;
+  display: none;
+}
+.v_overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.35s 0.1s;
+  background: rgba(0, 0, 0, 0.5);
+}
+.cartpopOpened .v_overlay {
+  opacity: 1;
+  visibility: visible;
+}
+.v_content {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999999;
+  width: 457px;
+  max-width: 100%;
+  background: #fff;
+  margin-left: auto;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  padding: 16px 48px;
+  border-radius: 4px;
+  transition: all 0.35s;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 0;
+  opacity: 0;
+  transform: translateX(100%);
+}
+.cartpopOpened .v_content {
+  transform: none;
+  opacity: 1;
+}
+.v_content .text p {
+  text-align: center;
+  margin-bottom: 0;
+}
+.v_content button.close {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 15px;
+  padding: 0 16px 0 8px;
+  cursor: pointer;
+}
+.textWithButtons {
+  margin-top: 36px;
+  font-family: "Orpheus Pro";
+  font-weight: 400;
+  text-align: center;
+  font-size: 16px;
+}
+.text {
+  letter-spacing: 1px !important;
+}
+.text__success {
+  font-family: "Orpheus Pro bold";
+  font-weight: 700;
+  color: #07202c;
+  margin-bottom: 15px !important;
+  font-size: 28px;
+}
+#v__prodImage {
+  max-width: 100%;
+  display: block;
+  max-height: 216px;
+  object-fit: contain;
+  margin: 0 auto 23px;
+}
+.wedgwoodText {
+  font-family: "Orpheus Pro bold";
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #07202c;
+}
+.prod__title {
+  width: 214px;
+  max-width: 100%;
+  margin: 0 auto 21px;
+}
+.prod__price {
+  font-family: "Orpheus Pro bold";
+  font-weight: 700;
+  line-height: 19px;
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.prod__price > p {
+  font-family: "Orpheus Pro bold";
+  font-weight: 700;
+  line-height: 19px;
+  font-size: 16px !important;
+}
+.prod__price .unit-price.striked,
+.prod__price .c-c-product-card_unit-price.striked {
+  text-decoration: line-through;
+  font-family: Orpheus Pro, Helvetica, Arial, serif;
+  font-weight: normal;
+  font-style: normal;
+  margin-left: 16px;
+}
+.prod__qty {
+  font-family: "Orpheus Pro bold";
+  font-weight: 700;
+  opacity: 0.4;
+  line-height: 19px;
+  margin-bottom: 21px;
+}
+.cartMsg {
+  line-height: 26px;
+  margin-bottom: 14px;
+  color: #08202c;
+  opacity: 0.6;
+}
+.btnsArea {
+  padding-top: 25px;
+}
+.btnsArea a {
+  width: 100% !important;
+  display: block !important;
+  text-align: center !important;
+  margin-top: 10px !important;
+  font-size: 20px !important;
+}
+@media (max-width: 575px) {
+  .v_content {
+    height: auto;
+    max-height: 100%;
+    padding: 16px 25px 45px;
+  }
+  .btnsArea {
+    padding-top: 10px;
+  }
+  .btnsArea a {
+    padding: 18px 20px !important;
+  }
+  #v__prodImage {
+    max-height: 297px;
+  }
+  .eg-free-shipping .mb_only{
+      display: block;
+  }
+}
+
+.eg-progress-background {
+  background: #fff;
+  border-radius: 30px;
+  margin: 0px auto 0px auto;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 10px;
+
+border: 1px solid #00000024;}
+
+.eg-free-shipping .eg-progress-bar {
+  border-radius: 30px;
+  height: 12px;
+  position: relative;
+  transition: width .2s ease-in-out;
+  background: #2e2c6a;
+  
+}
+
+.eg-free-shipping .eg-progress-text {
+  text-align: center;
+  font-size: 17px;
+  color: #07202c;
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  display: inline-block;
+  line-height: 1.5;
+}
+
+.eg-free-shipping {
+  padding: 20px 20px;
+  background: #f2f2f2;
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.eg-free-shipping .eg-icon {
+  text-align: center;
+    display: inline-flex;
+    max-width: 30px;
+    margin-right: 10px;
+}
+.eg-free-shipping .eg-icon svg {
+  width: 100%;
+}
+.mb_only{
+    display: none;
+}
+@media screen and (max-width: 767px){
+  html body .eg-free-shipping .mb_only {
+      display: block;
+  }
+  html body .textWithButtons > .btnsArea a[href="/en-us/checkout-page"],
+  html body .textWithButtons > .text{
+      display: none !important;
+  }
+
+html body .mb_only .text__success {font-size: 16px;margin-bottom: 0px !important;margin-top: 0px;}
+
+html body .mb_only .product_name {margin-top: 3px;font-size: 12px;margin-bottom: 10px;}
+
+html body .mb_only {display: flex;align-items: center;}
+
+html body .mb-image-section {margin-right: 21px;margin-left: -7px;}
+
+html body .eg-free-shipping {margin-top: 10px;}
+
+html body .v_content button.close {left: auto;right: 0px;margin-right: 0px;top: 8px;}
+
+html body .v_content button.close svg {width: 20px;height: 21px;}
+
+html body.cartpopOpened .v_overlay {display: none;}
+
+html body.cartpopOpened .v_content {box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.39);
+-webkit-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.39);
+-moz-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.39);max-width: 95%;width: 95%;left: 50% !important;transform: translateX(-50%) !important;right: auto;top: 20px;padding-bottom: 25px;}
+
+html body .eg-free-shipping .eg-progress-text {font-size: 16px;}
+}

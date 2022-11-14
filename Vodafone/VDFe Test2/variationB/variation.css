@@ -1,0 +1,44 @@
+html body .eg-banner {
+    background: linear-gradient(
+45deg, #990000 0%, #E60000 99%) !important;
+    color: #fff;
+    padding: 16px;
+}
+
+html body .eg-banner .eg-banner-container{
+    font-size: 1rem;
+    padding-right: 1em;
+    padding-left: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1024px;
+}
+
+html body .eg-banner .eg-banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+html body .eg-banner .eg-heading {
+    margin-bottom: 8px !important;
+}
+
+html body .eg-banner .eg-subheading {
+    margin-bottom: 0px;
+}
+@media (min-width: 64em){
+    html body .eg-banner .eg-banner-text {
+        padding-right: 48px;
+    }
+}
+@media (max-width: 63.99em){
+
+    html body .eg-banner .eg-banner-text{
+        padding-right: 10px;
+    }
+    html body .eg-banner .eg-subheading {
+        display: none;
+    }
+        
+}

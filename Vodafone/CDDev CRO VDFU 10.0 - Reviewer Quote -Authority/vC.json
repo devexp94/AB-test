@@ -1,0 +1,10 @@
+{
+	"files": [
+		"./variationC/variation.css",
+		"./variationC/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.vodafone.co.uk/business/business-connectivity/broadband-and-phone"
+	]
+}

@@ -1,0 +1,15 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.vodafone.es/c/empresas/autonomos/es/tienda/tarifas-moviles/",
+		"https://www.vodafone.es/c/empresas/autonomos/es/tienda/tarifas-moviles/tarifa-movil-3/",
+		"https://www.vodafone.es/c/empresas/autonomos/es/tienda/tarifas-moviles/tarifa-movil-3/",
+		"https://www.vodafone.es/c/empresas/autonomos/es/tienda/tarifas-moviles/tarifa-movil-4/",
+		"https://www.vodafone.es/c/empresas/autonomos/es/tienda/tarifas-moviles/tarifa-movil-5/"
+
+	]
+}

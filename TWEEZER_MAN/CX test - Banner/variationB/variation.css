@@ -1,0 +1,71 @@
+@media screen and (min-width:991px) and (max-width:1439px){    
+    html body .eg-promotional-banner .eg-banner-inr {
+        justify-content: space-around !important;
+    }
+}
+html body .eg-promotional-banner{
+    background: #000000;
+}
+
+html body .eg-promotional-banner .eg-banner-inr {
+    max-width: 1306px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+html body .eg-promotional-banner .eg-option {
+    display: flex;
+    align-items: center;
+}
+html body .eg-promotional-banner .eg-option .eg-option-text {
+    color: #fff;
+    padding-left: 20px;
+    font-style: normal !important;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.3;
+    margin-bottom: 0px;
+}
+@media screen and (max-width:767px) {
+    html body .eg-promotional-banner .eg-banner-inr{
+        padding: 10px;
+    }
+    html body .page-header{
+        margin-bottom: 0px;
+    }
+}
+@media screen and (max-width:500px) {
+    html body .eg-promotional-banner .eg-option .eg-option-text{
+        padding-left: 6px;
+        font-size: 11px;
+    }
+    html body .eg-promotional-banner .eg-option img {
+        max-width: 26px;
+    }
+}
+@media screen and (max-width:360px) {
+    html body .eg-promotional-banner .eg-option .eg-option-text{
+        font-size: 9.5px;
+        padding-left: 4px;
+    }
+    html body .eg-promotional-banner .eg-banner-inr{
+        padding: 10px 5px;
+    }
+}
+@media screen and (max-width:319px) {
+    html body .eg-promotional-banner .eg-banner-inr{
+        flex-wrap: wrap;
+    }
+    html body .eg-promotional-banner .eg-option:last-child {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    html body .eg-promotional-banner .eg-option {
+        width: 50%;
+        justify-content: center;
+    }
+}

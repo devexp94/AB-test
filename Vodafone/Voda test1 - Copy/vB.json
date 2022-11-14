@@ -1,0 +1,11 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.vodafone.it/nw/business/ecare/HPBO.html",
+		"https://www.vodafone.it/nw/business/ecare/catalogo.html"
+	]
+}

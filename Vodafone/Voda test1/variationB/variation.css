@@ -1,0 +1,28 @@
+html body .eg-tooltip {
+    background: #488700;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px 12px;
+    position: relative;
+    filter: drop-shadow(0px 0px 1px #488700);
+}
+
+html body .eg-tooltip:after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #488700;
+    top: -8px;
+    left: 123px;
+}
+
+html body .eg-tooltip .eg-tooltip-text {
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 0px;
+    font-weight: 500;
+}

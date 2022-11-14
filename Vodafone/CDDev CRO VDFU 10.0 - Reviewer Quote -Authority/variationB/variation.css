@@ -1,0 +1,172 @@
+
+html body .eg-rating-section .eg-rating-inr {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+html body .eg-rating-section .eg-rating-inr > div {
+    width: 50%;
+}
+html body .eg-rating-section .eg-image-section img[alt="rating"] {
+    visibility: hidden;
+}
+
+html body .eg-rating-section .eg-image-section {
+    background: url('https://cfactory-img.s3.amazonaws.com/VDFU/10.0/reviewImg.svg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+html body .eg-rating-section .eg-image-section .eg-startup-img {
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    padding: 8px 10px;
+    background: #fff;
+    text-align: center;
+}
+html body .eg-rating-section .eg-text-section {
+    background: #333333;
+    display: flex;
+    align-items: center;
+}
+
+
+html body .eg-rating-section .eg-text-section-inr {
+    padding-left: 9%;
+    padding-right: 5%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 558px;
+}
+
+
+html body .eg-rating-section .eg-text-section .eg-subheading {
+    font-size: 24px;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    font-weight: 100;
+}
+
+html body .eg-rating-section .eg-text-section .eg-heading {
+    font-size: 40px;
+    color: #fff;
+}
+html body .eg-rating-section .eg-author img{
+    margin-right: 40px;
+}
+html body .eg-rating-section .eg-author{
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.1px;
+}
+
+html body .eg-rating-section .eg-author a {
+    text-decoration: none;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+html body .eg-rating-section .eg-author a:hover {
+    text-decoration: underline;
+}
+@media screen and (min-width:1650px) {
+    html body .eg-rating-section .eg-text-section-inr {
+        padding-left: 4rem;
+        padding-right: 3rem;
+        max-width: 571px;
+    }        
+}
+@media screen and (min-width:1024px) and (max-width: 1120px){        
+    html body .eg-rating-section .eg-text-section .eg-heading{
+        font-size: 34px;
+    }
+    html body .eg-rating-section .eg-text-section .eg-subheading{
+        font-size: 22px;
+        padding-right: 26px;
+    }
+}
+@media screen and (min-width:881px) and (max-width: 1023px){        
+    html body .eg-rating-section .eg-text-section .eg-heading{
+        font-size: 30px;
+    }
+    html body .eg-rating-section .eg-text-section .eg-subheading{
+        font-size: 18px;
+        padding-right: 33px;
+        max-width: 383px;
+    }
+    html body .eg-rating-section .eg-author img {
+        margin-right: 11px;
+    }
+    html body .eg-rating-section .eg-author {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:880px) {
+    html body .eg-rating-section .eg-text-section-inr {
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 499px;
+        margin-top: 1px;
+    }
+    html body .eg-rating-section .eg-rating-inr {
+        flex-direction: column;
+    }
+    
+    html body .eg-rating-section .eg-rating-inr > div {
+        width: 100%;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:500px) {
+    html body .eg-rating-section .eg-text-section-inr {
+        padding: 25px 16px 30px
+    }
+    html body .eg-rating-section .eg-text-section .eg-heading {
+        font-size: 26px;
+    }
+    html body .eg-rating-section .eg-text-section .eg-subheading {
+        font-size: 16px;
+        padding-right: 48px;
+    }
+
+    html body .eg-rating-section .eg-author img {
+        max-width: 100px;
+        margin-right: 16px;
+    }
+    
+    html body .eg-rating-section .eg-author {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:359px) {
+    html body .eg-rating-section .eg-text-section .eg-heading {
+        font-size: 24px;
+    }
+    html body .eg-rating-section .eg-text-section .eg-subheading {
+        padding-right: 24px;
+    }
+    html body .eg-rating-section .eg-author img {
+        max-width: 85px;
+        margin-right: 10px;
+        vertical-align: text-bottom;
+    }
+    html body .eg-rating-section .eg-author {
+        font-size: 13px;
+        display: inline-block;
+    }
+}
+@media screen and (max-width: 319px){
+    html body .eg-rating-section .eg-author img {
+        display: block;
+        margin-bottom: 10px;
+    }
+    html body .eg-rating-section .eg-text-section .eg-subheading {
+        padding-right: 5px;
+    }
+}

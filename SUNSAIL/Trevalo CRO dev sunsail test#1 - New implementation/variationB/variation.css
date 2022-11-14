@@ -1,0 +1,458 @@
+@media screen and (min-width: 1440px){
+    html body #header > .container-fluid {
+        max-width: 1400px !important;
+    }
+    html body .navbar .navbar-nav > li > a{
+        margin-right: 19px;
+    }
+    html body .navbar .navbar-nav > li.menu-link-blog > a{
+        margin-right: 0px !important;
+    }
+}
+html body .contact-bar {
+    background: #0C4A8B;
+    margin-bottom: 16px;
+    width: 100%;
+}
+html body #header > .container-fluid {
+    max-width: 1200px;
+}
+@media screen and (max-width:767px) {
+    nav#shortlist {
+        padding-top: 0px !important;
+    }
+    html body header#header {
+        padding-bottom: 0px !important;
+    }    
+}
+nav#shortlist {padding-top: 0px;}
+html body header#header {
+    padding-bottom: 0px !important;
+    position: relative;
+    z-index: 99;
+    background: #fff;
+    padding-top: 0px !important;
+}
+.navbar #header-info .no-margin.phone > svg {
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 5px 0 0;
+    background: transparent !important;
+}
+.navbar #header-info.sticky .no-margin.phone > svg,
+.navbar #header-info:not(.sticky) .no-margin.phone > i{
+    display: none;
+}
+html body .header-info:not(.sticky) > p, 
+html body .header-info:not(.sticky) > p strong {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+}
+html body #header-info:not(.sticky) .phone a {
+    font-size: 18px;
+    color: #fff;
+}
+nav.navbar #block-menu-menu-locale-menu{
+    top: -58px!important;
+}
+html body #header-info:not(.sticky){
+    top: -67px!important;
+    align-items: center;
+}
+html body #header-info:not(.sticky).phone .number {
+    padding-top: 2px;
+}
+html body #mega-menu-39821 .sub-menu > div:nth-child(4),
+html body .nav.navbar-nav .menu-link-home,
+html body .nav.navbar-nav .menu-link-yacht-ownership,
+html body nav.mega-menu > h3 > a,
+html body.eg-blog-page header #main-menu .leaf.menu-link-blog:not(.last),
+#header-info .phone::after {
+    display: none;
+}
+nav.mega-menu .sub-menu h4 > a {
+    font-family: 'Soin Sans Neue', sans-serif;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+html body nav.mega-menu .sub-menu ul li > a {
+    font-family: 'Soin Sans Neue', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+html body nav.mega-menu .sub-menu ul li > a:hover {
+    color: #5F9BD6;
+}
+html body nav.navbar.flex-container-lg-navbar {
+    display: flex;
+    align-items: center;
+}
+
+html body .navbar .navbar-header {
+    margin: 0px;
+}
+
+html body .navbar .navbar-collapse {
+    margin: 0px;
+}
+
+html body ul#main-menu {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
+
+html body .d-manage-booking {
+    position: static;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #309AE1;
+    margin: 0px 0px 0px 4px;
+    border: 1px solid #309AE1;
+}
+html body .d-manage-booking:hover {
+    border: 1px solid #2c4383;
+}
+
+html body .navbar .navbar-nav > li > a {
+    background: none !important;
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-right: 25px !important;
+}
+html body .nav.navbar-nav .menu-link-blog .eg-arrow,
+html body .nav.navbar-nav .menu-link-offers .eg-arrow {
+    display: none;
+}
+html body .nav.navbar-nav .menu-link-blog a,
+html body .nav.navbar-nav .menu-link-offers a {
+    padding-right: 15px !important;
+}
+
+html body .navbar .navbar-nav > li > a .eg-arrow {
+    position: absolute;
+    transform: rotate(90deg);
+    display: inline-block;
+    top: 16px;
+    right: 9px;
+}
+.mega-menu-text .flotilla.orange-bk,
+.mega-menu-text .sailing-schools.magenta-bk,
+nav.mega-menu .sub-menu .magenta-bk,
+nav.mega-menu .sub-menu .orange-bk{
+    background: none !important;
+    display: inline-flex;
+    align-items: end;
+    width: 16px;
+}
+html body #mega-menu-58151 .sub-menu a[href="/yachts-for-sale"] .eg-arrow {
+    display: inline-flex;
+    align-items: center;
+    height: auto;
+    width: auto;
+    margin-left: 8px;
+}
+
+html body #mega-menu-58151 .sub-menu a[href="/yachts-for-sale"] {
+    display: inline-flex;
+    align-items: end;
+}
+html body #mega-menu-58151 .sub-menu a[href="/yachts-for-sale"] .eg-arrow svg {
+    background: none;
+}
+
+html body #mega-menu-58151 .sub-menu a[href="/yachts-for-sale"] .eg-arrow svg path {
+    fill: #5F9BD6;
+}
+html body .navbar .navbar-nav > .expanded.open .eg-arrow svg path,
+html body #mega-menu-58151 .sub-menu a[href="/yachts-for-sale"]:hover .eg-arrow svg path{
+    fill: #2c4383;
+}
+html body header #main-menu .menu-link-offers {
+    order: 8;
+}
+
+html body header #main-menu .menu-link-blog {
+    order: 9;
+}
+html body .eg-arrow svg {
+    background: transparent;
+}
+html body .navbar .navbar-nav > li > a {
+    font-family: 'Soin Sans Neue', sans-serif;
+}
+
+html body .navbar .navbar-nav > li > a:hover {
+    color: #0C4A8B;
+}
+html body .navbar .navbar-nav > .menu-link-sailing-courses.open .eg-arrow ,
+html body .navbar .navbar-nav > .expanded.open .eg-arrow {
+    transform: rotate(-90deg);
+}
+html body.eg-desktop-overlay .desktop-menu-overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 98;
+    background: #00000099;
+    width: 100%;
+    height: 100%;
+}
+@media screen and (min-width : 1100px) {
+    html body .eg-mobile-menu,
+    html body .eg-telephone,
+    html body .navbar-header > .navbar-toggle{
+      display: none;
+    }
+    html body .block-menu-menu-locale-menu .fa-caret-down:before {
+        color: #fff;
+    }
+}
+@media screen and (max-width : 1099px) {
+    html body .eg-mobile-menu .magenta-bk,
+    html body .eg-mobile-menu .orange-bk {
+        background: none !important;
+        display: flex;
+        align-items: center;
+        margin-left: 8px;
+    }
+
+    html body header .navbar #main-menu,
+    html body header .navbar #header-manage-booking,
+    html body .mobile-highlight-menu,
+    html body #header nav.mega-menu,
+    html body #header nav.navbar .navbar-header > button[data-target="#header-info"],
+    html body header nav div#navbar-collapse {
+        display: none;
+    }
+    html body #header nav.navbar  #block-menu-menu-locale-menu {
+        position: static;
+    }
+    html body .eg-telephone svg {
+        background: transparent;
+    }
+    html body .navbar-header .navbar-brand {
+        float: none;
+        position: static;
+        margin-left: auto;
+        display: inline-flex;
+        align-items: center;
+    }
+    html body .navbar-header > button[data-target="#navbar-collapse"] .text {
+        display: none;
+    }
+    html body .navbar-header > button[data-target="#navbar-collapse"] {
+        float: none;
+        display: block;
+    }
+    
+    html body nav.navbar.flex-container-lg-navbar {
+        width: 100%;
+    }
+    
+    html body .navbar-brand > img {
+        display: inline-block;
+    }
+    
+    html body .eg-telephone {
+        display: inline-flex;
+        margin-left: auto;
+        align-items: center;
+        margin-right: 10px;
+    }
+    html body .navbar .navbar-header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* Mobile Menu */
+    html body .eg-mobile-menu {
+        position: fixed;
+        top: 0px;
+        left: -1000px;
+        z-index: 999;
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        transition: -webkit-transform .5s ease;
+        transition: transform .5s ease;
+        -webkit-transform: translateX(-110%);
+        -ms-transform: translateX(-110%);
+        transform: translateX(-110%);
+        max-width: 450px;
+    }
+    html body.eg-mobile-nav-show .eg-mobile-menu{
+    -webkit-transform: translateX(1000px);
+    -ms-transform: translateX(1000px);
+    transform: translateX(1000px)
+}
+    html body.eg-mobile-nav-show .eg-mobile-nav-overlay{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 998;
+        background: #00000099;
+        width: 100%;
+        height: 100%;
+    }
+    html body .eg-mobile-menu .eg-back-button {
+        padding: 16px 20px;
+        margin-bottom: 20px;
+        font-family: 'Soin Sans Neue', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        cursor: pointer;
+    }
+    
+    html body .eg-mobile-menu .eg-back-button svg {
+        margin-right: 12px;
+        background: transparent;
+    }
+    html body .eg-menu-inr ul li {
+        list-style: none;
+    }
+
+    html body .eg-menu-inr ul {
+        padding-left: 0px;
+    }
+    html body .eg-menu-inr .eg-main-option > a {
+        font-size: 18px !important;
+    }
+    html body .eg-menu-inr .eg-menu-option .eg-main-option a {
+        padding: 8px 0px 8px 20px;
+        display: block;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+        font-family: 'Soin Sans Neue', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+    html body .eg-menu-inr .eg-menu-option .eg-main-option a:focus,
+    html body .eg-menu-inr .eg-menu-option .eg-main-option a:active,
+    html body .eg-menu-inr .eg-menu-option .eg-main-option a:hover{
+        text-decoration: none;
+    }
+    html body .eg-menu-inr .eg-main-option> a.eg-active{
+        font-weight: 600;
+    }
+
+    html body .eg-menu-inr .eg-sub-menu .eg-sub-menu-link .eg-sub-menu-link-option > a {
+        padding-left: 40px; 
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+
+    html body .eg-mobile-menu-inr .eg-booking-container {
+        position: absolute;
+        bottom: 0px;
+        padding: 20px;
+        width: 100%;
+        background: #FFFFFF;
+        border: 1px solid #D9D6CF;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    html body .eg-mobile-menu-inr .eg-booking-container .eg-booking {
+        background: #FFFFFF;
+        border: 1px solid #309AE1;
+        box-sizing: border-box;
+        display: inline-block;
+        padding: 8px 20px;
+        width: 100%;
+        font-family: 'Soin Sans Neue', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #309AE1;
+        cursor: pointer;
+    }
+    html body .eg-mobile-menu-inr .eg-booking-container .eg-booking:focus,
+    html body .eg-mobile-menu-inr .eg-booking-container .eg-booking:hover,
+    html body .eg-mobile-menu-inr .eg-booking-container .eg-booking:active{
+        background: #255398;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    html body .eg-menu-inr .eg-menu-option .eg-arrow {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 40px;
+        position: absolute;
+        right: 0px;
+        height: 100%;
+        z-index: 1;
+    }
+    html body .eg-menu-inr .eg-menu-option .eg-main-option > a:not(.eg-active){
+        opacity: .6;
+    }
+    html body .eg-mobile-menu-inr .eg-menu-inr {
+        height: calc(100vh - 150px);
+        overflow-y: scroll;
+    }
+    html body .eg-menu-inr .eg-main-option a.eg-active svg {
+        transform: rotate(90deg);
+        transition: all 0.35s;
+    }
+    html body .eg-menu-inr .eg-main-option a svg {
+        transform: rotate(0deg);
+        transition: all 0.35s;
+    }
+
+    html body .eg-menu-inr .eg-sub-menu-option .eg-sub-menu-link,
+    html body .eg-menu-inr ul.eg-sub-menu {
+        max-height: 0px;
+        overflow: hidden;
+        opacity: 0;
+        transition: all 0.35s;
+    }
+    html body .eg-menu-inr .eg-sub-menu-option > .eg-active + .eg-sub-menu-link,
+    html body .eg-menu-inr .eg-main-option > .eg-active + .eg-sub-menu {
+        max-height: 100vh;
+        overflow: visible;
+        opacity: 1;
+        transition: all 0.35s;
+    }
+    html body .navbar-collapse.main-menu-navbar, 
+    html body .navbar-collapse.main-menu-navbar + .menu-overlay {
+        display: none !important;
+    }
+    header#header .container-fluid {
+        padding-right: 0px;
+    }
+
+}

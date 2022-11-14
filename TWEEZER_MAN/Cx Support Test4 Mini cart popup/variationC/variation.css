@@ -1,0 +1,70 @@
+#confirmBox #confirmButtons button[title="View Cart"],
+html body #confirmBox #am-qty,
+#confirmBox #messageBox > .added-item + p.text,
+#confirmBox #messageBox > .added-item {
+    display: none;
+}
+html body #confirmBox {
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+html body #confirmButtons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    padding-bottom: 20px;
+}
+
+html body #confirmButtons button[title="Continue"] {
+    margin-left: 20px;
+    margin-right: 0px;
+}
+div#confirmButtons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+html body #confirmButtons button[title="Continue"]:hover{
+    opacity: 0.8;
+}
+
+html body #confirmButtons button[title="Continue"] {
+    margin-left: 20px;
+    margin-right: 0px;
+    background-color: #000000;
+}
+
+html body #confirmButtons .checkout {
+    position: relative;
+    display: inline-flex;
+    height: 50px;
+    width: 45%;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0 -2px 0 rgb(0 0 0 / 15%) inset;
+    padding: 0px;
+    background-color: #BBBBBB;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+html body #confirmButtons .checkout {
+    text-decoration: none;
+}
+
+html body .eg-text.text, 
+html body .eg-text.text a {
+    font-size: 16px !important;
+    display: contents;
+}
+
+html body #confirmBox > .cross {
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 600;
+    font-size: 22px;
+}

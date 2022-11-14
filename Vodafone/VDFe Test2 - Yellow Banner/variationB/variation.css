@@ -1,0 +1,20 @@
+html body .eg-strip {
+    background-color: #fecb00;
+    border-radius: 6px 6px 0 0;
+    padding: 8px 16px;
+    text-align: center;
+}
+
+html body .eg-strip .eg-strip-text {
+    margin: 0px;
+}
+html body .ws10-m-card-rate-ticket-detail__card-rate-ticket-section > section,
+html body .ws10-c-header-secondary__i .ws10-m-card-rate-ticket-detail__card-rate-ticket-section > section {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+@media screen and (min-width: 48em){
+    html body .eg-strip .eg-strip-text {
+        font-size: 16px;
+    }
+}

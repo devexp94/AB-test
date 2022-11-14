@@ -1,0 +1,90 @@
+.vf_ps_sidePanel small, .vf_ps_sidePanel header + h3 .vf_ps_ylwStrip{
+    display: none !important;
+}
+.vf_ps_sidePanel h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+html body .eg-promo-timer {
+    order: 3;
+    padding: 0px 20px;
+    margin-top: 15px;
+}
+
+html body .eg-promo-timer .eg-promo-timer-inr {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+html body .eg-promo-timer .eg-box .eg-text {
+    font-size: 15px;
+}
+
+html body .eg-promo-timer .eg-box {
+    display: flex;
+    align-items: center;
+}
+html body .eg-promo-timer .eg-number {
+    padding: 2px 6px;
+    background: #fff;
+    border-radius: 4px;
+    margin-right: 5px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    font-family: 'vodafone_rgregular',sans-serif;
+    color: #333333;
+}
+span.eg-crossvalue {
+    position: relative;
+    font-size: 23px;
+    font-weight: 100;
+    font-family: 'vodafone_rgregular',sans-serif;
+    margin-right: 3px;
+    color: #333333;
+}
+
+
+span.eg-crossvalue:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: black;
+    top: 55%;
+    left: 0px;
+}
+@media screen and (max-width:767px){
+    html body .eg-promo-timer {
+        margin-bottom: 15px;
+    }
+    .vf_ps_sidePanel .vf_ps_expand{
+        top: 108px !important;
+    }
+    td.vf_ps_prize {
+        position: relative;
+    }
+    
+    span.eg-crossvalue {
+        position: absolute;
+        bottom: 8px;
+        left: -8px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:500px){
+    html body .eg-promo-timer .eg-promo-timer-inr{
+        justify-content: space-between;
+    }
+}    
+@media screen and (max-width:350px){
+    html body .eg-promo-timer .eg-box .eg-text {
+        font-size: 13px;
+    }
+    html body .eg-promo-timer .eg-number{
+        margin-right: 4px;
+        font-size: 14px;
+    }
+}

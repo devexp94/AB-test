@@ -1,0 +1,176 @@
+html body.eg-timer-show .eg-popup{
+    display: block;
+}
+html body .eg-toster-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 33px;
+}
+
+
+html body .eg-toster-heading {
+    font-size: 24px !important;
+    font-weight: bold !important;
+    color: #1f3d5c;
+    letter-spacing: 0.66px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+html body .eg-promo-timer .eg-hours, 
+html body .eg-promo-timer .eg-date,
+html body .eg-toster-image .content-bloc .content-text {
+    display: none;
+}
+html body .eg-toster-subheading {
+    color: #333333;
+    font-size: 16px;
+    letter-spacing: 0.53px;
+    line-height: 24px;
+    text-align: center;
+    margin: 16px 10px 22px;
+}
+
+html body .eg-toster-cross {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    font-size: 30px;
+    line-height: 18px;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 3px;
+    display: inline-flex;
+    width: auto;
+    z-index: 9;
+    font-weight: 600;
+}
+.eg-promo-timer-inr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.eg-promo-timer  .eg-hours,
+.eg-promo-timer .eg-date {
+    display: none;
+}
+.eg-promo-timer .eg-box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0px 5px;
+    align-items: baseline;
+}
+
+.eg-promo-timer .eg-box .eg-text {
+    text-transform: capitalize;
+    color: #1f3d5c;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.eg-toster .eg-link {
+    display: inline-flex;
+    background: #2e7182;
+    padding: 9px 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-radius: 4px;
+}
+
+.eg-toster .eg-link:hover {
+    opacity: .9;
+}
+.eg-promo-timer .eg-box .eg-number {
+    border-radius: 2px;
+    color: #1f3d5c;
+    font-weight: 600;
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+}
+.eg-promo-timer .eg-promo-timer-inr .eg-colon {
+    display: none;
+}
+
+.eg-promo-timer .eg-promo-timer-inr > span {
+    font-size: 18px;
+    margin-right: 10px;
+}
+@media screen and (max-width:767px) {
+
+    html body .eg-toster {
+        max-width: 375px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+    }
+    
+}
+.thankyou_content > div:nth-child(1) {
+    text-align: center;
+}
+.thankyou_content > div:nth-child(1) .main_heading {
+    position: relative;
+    line-height: 50px;
+    padding-left: 10px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 60px;
+}
+.eg-toster {
+    background: #47acad;
+    color: #fff;
+    border-radius: 25px;
+    padding: 30px 25px 5px;
+    margin-top: 11px;
+}
+html body .eg-toster-heading {
+    font-size: 24px !important;
+    font-weight: bold !important;
+    color: #ffffff;
+    letter-spacing: 0.66px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+.eg-toster .eg-link {
+    display: block;
+    background: #203d5a;
+    padding: 18px 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    margin-top: 25px;
+    width: 80%;
+}
+.eg-promo-timer .eg-box .eg-number {
+    border-radius: 2px;
+    color: #1f3d5c;
+    font-weight: 600;
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    background: #fff;
+}
+.eg-promo-timer .eg-box .eg-text {
+    text-transform: capitalize;
+    color: #1f3d5c;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 10px;
+}

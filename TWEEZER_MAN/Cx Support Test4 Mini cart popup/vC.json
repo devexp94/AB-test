@@ -1,0 +1,10 @@
+{
+	"files": [
+		"./variationC/variation.css",
+		"./variationC/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://mcstaging.tweezerman.com/shop-by-product/brows.html"
+	]
+}

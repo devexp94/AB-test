@@ -1,0 +1,106 @@
+.product__description {
+    margin-top: 40px;
+}
+
+.product__description .eg-benefit {
+    margin-bottom: 16px !important;
+    font-size: 17px !important;
+    line-height: 1.3 !important;
+}
+
+.product__description .eg-benefit span {
+    box-shadow: inset 0 -10px 0 0 #ebe388;
+    font-weight: bold;
+}
+
+.ic-list--product {
+    display: none;
+}
+
+.product__description .eg-benefit svg {
+    width: 22px;
+    display: inline-block;
+    height: 19px;
+    position: relative;
+    top: 3px;
+    margin-right: 4px;
+}
+
+
+.product-template__container+.page-width blockquote {
+    padding: 10px;
+    font-size: 17px;
+    text-align: left;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 0px;
+    border-radius: 25px;
+}
+
+.product-template__container+.page-width {
+    padding: 20px 20px 40px 20px;
+    background: #fbf7f6;
+}
+
+.product-template__container blockquote:before,
+.product-template__container+.page-width blockquote:before {
+    content: "";
+    background-image: url('https://cdn.shopify.com/s/files/1/0554/3670/5969/files/arrow-qoute.png?v=1633671302');
+    position: absolute;
+    width: 51px;
+    height: 20px;
+    top: -15px;
+    left: 29%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.product-template__container blockquote:after,
+.product-template__container+.page-width blockquote:after {
+    content: "";
+    background-image: url(https://cdn.shopify.com/s/files/1/0554/3670/5969/files/Icon_ionic-ios-quote_2x_5974dda5-6b9f-45d3-bad1-c3e118cd6982_256x256_crop_center.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    background-position: center center;
+    height: 30px;
+    position: absolute;
+    top: -13px;
+    right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .product-template__container+.page-width blockquote {
+        display: none;
+    }
+
+    .product-template__container blockquote {
+        padding: 10px;
+        text-align: left;
+        position: relative;
+        margin-top: 28px;
+        border-radius: 25px;
+        background: #fff;
+        display: block;
+        font-size: 20px;
+    }
+
+    .product-template__container blockquote:after {
+        top: -18px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .product-template__container blockquote {
+        display: none;
+    }
+
+    .product-template__container+.page-width blockquote:after {
+        top: -18px;
+    }
+
+    .product-template__container+.page-width blockquote:before {
+        left: auto;
+        right: 60px;
+    }
+}
