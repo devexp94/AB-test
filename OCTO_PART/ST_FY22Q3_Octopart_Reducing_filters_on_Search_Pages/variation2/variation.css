@@ -40,11 +40,11 @@ input#eg-drop-down-radio:checked+label span>svg {
 }
 
 /*category buttons css*/
-.eg-search-title+div>button {
+#__next div.results>div:nth-child(1)>div.applied-category-row div[role='breadcrumb'] + div>button {
     margin: 0;
 }
 
-.eg-search-title+div {
+#__next div.results>div:nth-child(1)>div.applied-category-row div[role='breadcrumb'] + div {
     display: flex;
     gap: 8px;
     padding-inline: 10px;
@@ -57,7 +57,7 @@ input#eg-drop-down-radio:checked+label span>svg {
         gap: 10px;
     }
 
-    .eg-search-title+div {
+   #__next div.results>div:nth-child(1)>div.applied-category-row div[role='breadcrumb'] + div {
         padding-inline:0px;
         flex-wrap: wrap;
     }

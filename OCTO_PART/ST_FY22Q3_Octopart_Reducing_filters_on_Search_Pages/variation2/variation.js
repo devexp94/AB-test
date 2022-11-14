@@ -71,15 +71,19 @@
                     egSearchTitle.insertAdjacentHTML("beforebegin", `<strong class="eg-search-title">${egTotalSearch} Results Found For Your Search: ${egQuery}</strong>`);
                 } else {
                     egSearchTitle.insertAdjacentHTML("beforebegin", `<strong class="eg-search-title">${egTotalSearch} Results Found For Your Search: ${egQuery}</strong>`);
-                }
                 
-                // moving category names boxes just right to the search title
-
-                const egCategoryElementBox = document.querySelector("#__next div.results>div:nth-child(1)>div:nth-child(2)");
-                if (egCategoryElementBox && egCategoryElementBox.tagName === "DIV") {
-                    document.querySelector(".eg-search-title").insertAdjacentElement("afterend", egCategoryElementBox);
                 }
+
+            
             }, 800);
+
+
+            // moving category names boxes just right to the search title
+
+            const egCategoryElementBox = document.querySelector("#__next div.results>div:nth-child(1)>div:nth-child(2)");
+            if (egCategoryElementBox && egCategoryElementBox.tagName === "DIV") {
+                egSearchTitle.insertAdjacentElement("afterend", egCategoryElementBox);
+            }
 
             // iserting a drop down button to show filters
             if (!document.querySelector(".eg-filters-drop-down-btn")) {
