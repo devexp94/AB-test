@@ -1,0 +1,108 @@
+.eg-body {
+    position: relative;
+}
+
+.eg-popup-overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(1, 1, 1, 0.80);
+    z-index: 9999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eg-popup-wrapper {
+    border: 1px solid rgba(0, 0, 0, .5);
+    background: white;
+    outline: 0;
+    width: 346px;
+    height: fit-content;
+    max-width: calc(100vw - 40px);
+    padding: 27px;
+    position: relative;
+}
+
+/*close icon*/
+.eg-close-icon {
+    position: absolute;
+    z-index: auto;
+    top: 16px;
+    right: 16px;
+}
+
+.eg-close-icon svg {
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.eg-added-notice {
+    width: 100%;
+}
+
+
+.eg-benifits {
+    text-align: left !important;
+    padding: 0 !important;
+    margin-inline: auto;
+    width: 68%;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.eg-benifits li {
+    padding-left: 0 !important;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.eg-benifits li::before {
+    position: static !important;
+    left: 0;
+    display: inline-block;
+}
+
+.eg-cart-icon svg {
+    width: 50px;
+    height: 50px;
+}
+
+.eg-cart-icon {
+    margin-bottom: 36px;
+}
+
+.eg-notice-title {
+    font-weight: 400 !important;
+    line-height: 1.4;
+    margin-bottom: 10px !important;
+    font-size: 19px !important;
+}
+
+.eg-confirmation-text {
+    font-size: 16px;
+}
+
+.eg-tabel-list {
+    margin: 0 !important;
+    padding-top: 18px;
+}
+
+.eg-continue a {
+    margin-bottom: 0 !important;
+    margin-top: 27px !important;
+    color: #7c8d96;
+}
+
+.eg-checkout {
+    max-width: 100% !important;
+}
+
+.eg-checkout a {
+    color: black;
+    font-size: 15px !important;
+}
