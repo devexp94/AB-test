@@ -15,7 +15,7 @@
 
 .eg-popup-wrapper-outer {
     position: fixed;
-    top: 117px;
+    bottom: 0;
     right: 20px;
     z-index: 9999999;
 }
@@ -219,7 +219,7 @@ span.whole-time-block span {
     }
 
     .eg-popup-wrapper-outer {
-        position: fixed;
+
         top: 50%;
         right: unset;
         left: 50%;
