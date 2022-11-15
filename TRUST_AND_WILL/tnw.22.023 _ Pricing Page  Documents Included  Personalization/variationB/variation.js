@@ -37,7 +37,7 @@
 
     let tooltip = 
    ` <div class="egtooltip">${eg_tooltip}
-  <span class="egtooltiptext">The central hub of your estate plan with provisions for the management, control, and distribution of your assets during life and after death..<br/>
+  <span class="egtooltiptext">The central hub of your estate plan with provisions for the management, control, and distribution of your assets during life and after death.<br/>
   <a class="egLink" href="https://trustandwill.com/learn/living-trust-vs-revocable-trust">Learn more about Living Trusts ${eg_link}</a>
   </span>
 </div>`
