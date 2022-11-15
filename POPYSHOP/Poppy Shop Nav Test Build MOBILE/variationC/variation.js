@@ -193,6 +193,8 @@ var htmlString = `<div class="eg_collections">
         egMainSubMenu[i].addEventListener('click', function(e){
             e.preventDefault()
             e.stopImmediatePropagation();
+            
+            
             var self = this;
             egMainSubMenu.forEach(function(item) {
                 if(item != self) {

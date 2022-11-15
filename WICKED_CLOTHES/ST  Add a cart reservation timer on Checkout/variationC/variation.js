@@ -92,7 +92,7 @@ clearInterval(intervalFn);
       document.querySelector('.s001-timer-s').innerHTML=ss02seconds;
     
   }, 1000);
-}
+};
 
 timerfn();
 
@@ -100,5 +100,5 @@ timerfn();
     waitForElement("div.main > div.main__header", init, 50, 15000);
   } catch (e) {
   if(debug) console.log(e, "error in Test");
-  }
+  };
 })();
