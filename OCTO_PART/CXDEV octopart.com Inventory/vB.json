@@ -1,0 +1,11 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://octopart.com/datasheet/prt2s-m3-panduit-380782",
+		"https://octopart.com/datasheet/ab308-12.000mhz-abracon-750522"
+	]
+}

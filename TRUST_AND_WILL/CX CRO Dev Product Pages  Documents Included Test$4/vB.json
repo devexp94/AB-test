@@ -1,0 +1,12 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://trustandwill.com/trust/",
+		"https://trustandwill.com/will/",
+		"https://trustandwill.com/guardian/"
+	]
+}

@@ -1,0 +1,35 @@
+.address-table app-grid-card .select-block-wrapper {
+    visibility: hidden;
+}
+.address-table app-grid-card .item-card .btn-danger:hover,
+.address-table app-grid-card .item-card.selected-variant-2 .btn-danger {
+    background-color: #ff647c !important;
+    border: 1px solid #ff647c !important;
+    color: #fff !important;
+}
+.address-table app-grid-card .item-card .center-price.text-center {
+    position: absolute;
+    top: 203px;
+    background: #0000008a;
+    color: white;
+    padding: 0 15px;
+}
+  .address-table app-grid-card .item-card .btn-danger {
+    
+color: #000 !important;background: transparent !important;border: 1px solid #ff647c !important;}
+.new-layout .item-card.selected-variant-2 .btn{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+html body .eg-button + div{
+    display: none;
+}
+html body .eg-button{
+    text-align: center;
+    margin-top: 20px;
+}
+html body .eg-button .btn.btn-danger{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}

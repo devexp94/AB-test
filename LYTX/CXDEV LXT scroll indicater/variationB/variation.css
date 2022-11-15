@@ -1,0 +1,11 @@
+.eg-progress-container {
+    width: 100%;
+    height: 6px;
+    background: #ccc;
+  }
+  
+  .eg-progress-bar {
+    height: 6px;
+    background: #009cde;
+    width: 0%;
+  }

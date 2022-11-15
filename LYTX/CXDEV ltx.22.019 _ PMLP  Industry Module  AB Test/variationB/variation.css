@@ -1,0 +1,83 @@
+.eg-industries-section-inr {
+    display: flex;
+}
+
+.eg-industries-section-inr .eg-industries-image {
+    width: 66%;
+}
+
+.eg-industries-section-inr .eg-industries-content {
+    width: 33%;
+    padding-right: 2rem;
+}
+.eg-industries-section{
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    background-color: #27343c;
+}
+html body .eg-industries-section .eg-para {
+    color: #fff;
+    margin-top: 1.5em;
+    margin-bottom: 0px;
+}
+
+.eg-industries-section .eg-filter label {
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    font-size: .875rem;
+    
+}
+.eg-industries-section select#eg-filter-vehicle {
+    border: 1px solid #fff;
+    font-family: 'DINNextLTPro-Bold',sans-serif;
+    height: 40px;
+    height: 2.5rem;
+    max-width: none;
+    padding: 0 0.875rem;
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    background-image: url('https://www.lytx.com/App_Themes/TurnWithUs/public/images/icon-arrow-down-white.svg');
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+    background-position: center right 17px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+}
+@media screen and (min-width: 768px){
+    .eg-industries-section{
+        padding-bottom: 6rem;
+        padding-top: 6rem;
+    }
+}
+
+@media screen and (max-width:895px) {
+    html body .full-width-video-wrapper {
+        margin-top: 0px !important;
+    }
+    html body .eg-industries-section-inr .eg-industries-content {
+        width: 100%;
+        padding-right: 0px;
+    }   
+    html body .eg-industries-section-inr .eg-industries-image{
+        margin-top: 2rem;
+        width: 100%;
+    }
+    html body .eg-industries-section-inr {
+        flex-direction: column;
+    }
+    html body .eg-industries-section .eg-heading {
+        margin-top: 2rem !important;
+        font-size: 14px !important;
+    }
+    
+    html body .eg-industries-section .eg-para {
+        font-size: 14px;
+    }    
+    .eg-industries-section .container {
+        padding: 0 1rem;
+    }
+}

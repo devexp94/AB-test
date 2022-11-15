@@ -1,0 +1,30 @@
+section.testimonial-logo {
+  background-color: #e5e5e5!important;
+  padding: 3.5rem;
+}
+
+.testimonial-logo .reputation-of-trust {
+letter-spacing: 1.5px;
+}
+
+.testimonial-logo-inner {
+  text-align:center
+}
+
+.testimonial-logo-inner img {
+  max-height:75px;
+  margin-right:20px;
+  padding-right: 60px;
+}
+
+.testimonial-logo-inner a.ruhzbam{
+  overflow:hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .testimonial-logo-inner img {
+      margin-bottom:10px;
+      margin-right:0px;
+      padding-right: 10px;
+}
+}

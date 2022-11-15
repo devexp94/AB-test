@@ -1,0 +1,10 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://info.lytx.com//oa-21-11-display-gdn-intent-fs-awareness_lp.html"
+	]
+}

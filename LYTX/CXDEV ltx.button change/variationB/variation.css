@@ -1,0 +1,45 @@
+html body .eg-specification-button{
+    display: inline-flex;
+    padding: 0.66rem 2.75rem;
+    background-color: #009cde;
+    border-color: #009cde;
+    color: white;
+    border: 1px solid;
+    border-radius: 25px;
+    cursor: pointer;
+}
+html body .eg-specification-button:hover {
+    color: #fff;
+    background-color: #27343c;
+    border-color: #27343c;
+}
+.eg-open .spec-sheet__show {
+    display: none;
+}
+
+.eg-open .spec-sheet__hide {
+    display: block;
+}
+.img-with-feature-icons > .wrapper > div:last-child a{
+    margin-right: 20px;
+}
+html body .spec-sheet>.spec-sheet__summary{
+    display: none
+}
+
+@media screen and (max-width: 767px) {
+    html body .img-with-feature-icons > .wrapper > div:last-child {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    html body .img-with-feature-icons > .wrapper > div:last-child a {
+        margin-right: 0px;
+    }
+    
+    html body .eg-specification-button {
+        margin: 20px 0px;
+    }   
+}

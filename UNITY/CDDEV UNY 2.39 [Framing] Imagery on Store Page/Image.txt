@@ -1,0 +1,12 @@
+https://cfactory-img.s3.amazonaws.com/UNY/2.39new/Background-Desktop.png
+https://cfactory-img.s3.amazonaws.com/UNY/2.39new/Background-Mobile.png
+https://cfactory-img.s3.amazonaws.com/UNY/2.39new/IMG_9261%201%20%281%29.png
+https://cfactory-img.s3.amazonaws.com/UNY/2.39new/IMG_9261%201%20%282%29.png
+https://cfactory-img.s3.amazonaws.com/UNY/2.39new/IMG_9261%201%20%283%29.png
+https://cfactory-img.s3.amazonaws.com/UNY/2.39new/IMG_9261%201%20%284%29.png
+https://cfactory-img.s3.amazonaws.com/UNY/2.39new/IMG_9261%202%20%281%29.png
+https://cfactory-img.s3.amazonaws.com/UNY/2.39new/IMG_9261%202.png
+https://cfactory-img.s3.amazonaws.com/UNY/2.39new/IMG_9261%203%20%281%29.png
+https://cfactory-img.s3.amazonaws.com/UNY/2.39new/IMG_9261%203.png
+
+https://www.figma.com/file/qzS668qfzpAjxP5rVPuP1O/UNY-2.39-%5BFraming%5D-Imagery-on-store-page-(Copy)?node-id=1310%3A1252

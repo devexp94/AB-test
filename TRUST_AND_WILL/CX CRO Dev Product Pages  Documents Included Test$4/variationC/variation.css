@@ -1,0 +1,12 @@
+html body .eg-link {
+    display: inline;
+    margin-left: 3px;
+    cursor: pointer;
+    color: #4c70b8;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+html body .eg-link:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,8 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"urls": ["https://thespanishgroup.org/translations/spanish-document-translations/"],
+	"inject": ""
+}

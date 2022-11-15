@@ -1,0 +1,131 @@
+html body .navbar > div:nth-child(2) .main-column > .menu-header,
+html body .navbar > div:nth-child(2) .small-column.left-border:not(.eg-small-colum),
+html body .navbar > div:nth-child(2) .menu-container.menu-products .menu .main-column:nth-child(2),
+html body header .menu-container.menu-blog .menu .col-left_wrapper .latest-articles > div:nth-child(2){
+    display: none;
+}
+
+header .menu-container.uk-us.menu-products  .menu-columns .main-column,
+html body .navbar > div:nth-child(2) .menu-business-service .menu-columns .main-column{
+  flex: 0 0 100% !important;
+}
+html body .navbar > div:nth-child(2) .menu-products .main-column:nth-child(1) .list-unstyled li:nth-child(1){
+  order: -6;
+}
+html body .navbar > div:nth-child(2) .menu-products .main-column:nth-child(1) .list-unstyled li:nth-child(3){
+  order: -5;
+}
+html body .navbar > div:nth-child(2) .main-column:nth-child(1) .list-unstyled li:nth-child(5){
+  order: -4;
+}
+html body header .menu-container.menu-locations .menu-header.mb-3 {
+  font-weight: 600;
+}
+html body header .menu-container.menu-blog .menu .col-left_wrapper .latest-articles > div{
+  flex: 0 0 50%;
+}
+
+.eg-small-colum {
+  flex: 0 0 20%;
+  padding-left: 28px;
+}
+header .menu-blog .col_wrapper .eg-small-colum a {color: #000000;}
+
+@media screen and (min-width:992px) {
+  header .menu-blog .col_wrapper .col-right_wrapper {
+    padding-right: 50px;
+  }  
+  html body .navbar > div:nth-child(2) .menu-business-service .main-column:nth-child(1) .list-unstyled,
+html body .navbar > div:nth-child(2) .menu-products .main-column:nth-child(1) .list-unstyled{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+html body .navbar > div:nth-child(2) .menu-business-service .main-column:nth-child(1) .list-unstyled li,
+html body .navbar > div:nth-child(2) .menu-products .main-column:nth-child(1) .list-unstyled li{
+  width: 33%;
+  max-width: 339px;
+  padding-right: 10px;
+}
+}
+
+
+/* Video Overlay */
+html body.eg-video-show .eg-video-section {
+  display: block;
+}
+html body .eg-video-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: none;
+}
+html body .eg-video-section .eg-video-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+html body .eg-video-section .eg-video-content{
+  width: 903px;
+  height: 510px;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 999;
+}
+html body .eg-video-section .eg-thumbnail-container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+html body .eg-thumbnail-container img[alt="thumbnail button"] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  background-size: cover;
+  width: 119px;
+  height: 76px;
+  padding: 0;
+  cursor: pointer;
+  z-index: 99;
+}
+html body .eg-video-section.eg-video-play .eg-video {
+  display:  block;
+}
+html body .eg-video-section .eg-video {
+  padding: 56.25% 0 0 0;
+  position: relative;
+  display: none;
+}
+
+html body .eg-video-section .eg-video iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+html body .eg-video-section.eg-video-play .eg-thumbnail-container {
+  display: none;
+}
+@media (max-width: 1200px){
+  html body .eg-video-section .eg-video-content{
+    width: 608px;
+    height: 344px;
+}
+}

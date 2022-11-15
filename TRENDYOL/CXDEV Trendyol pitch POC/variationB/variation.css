@@ -1,0 +1,117 @@
+  .egswiper .swiper-button-prev:after, 
+  .egswiper .swiper-container-rtl .swiper-button-next:after,
+  .egswiper .swiper-button-next:after, 
+  .egswiper .swiper-container-rtl .swiper-button-prev:after {
+      display: none;
+  }
+  .egswiper .swiper-button-prev, 
+  .egswiper .swiper-container-rtl .swiper-button-next {
+      left: -3px;
+  }
+  .egswiper .swiper-button-next, 
+  .egswiper .swiper-container-rtl .swiper-button-prev{
+    right: -3px;
+  }
+  .egswiper .swiper-button-prev, 
+  .egswiper .swiper-container-rtl .swiper-button-next, 
+  .egswiper .swiper-button-next, 
+  .egswiper .swiper-container-rtl .swiper-button-prev {
+    background-image: none;
+    width: 32px;
+    height: 100%;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+  .egswiper .swiper-button-next, 
+  .egswiper .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    width: 27px;
+    height: 44px;
+    z-index: 10;
+    cursor: pointer;
+    margin-top: 0px !important;
+    transform: translateY(-50%);
+    color: #000000;
+}
+  
+  @media screen and (max-width:699px) {
+    html body .swiper.egswiper {
+      max-width: 483px;
+    }
+  }
+  .eg-review-card-outer {
+      padding: 20px 25px;
+    }
+
+  .eg-review-card {
+      background: #f3f3f3;
+      padding: 15px;
+  }
+    .swiper.egswiper {
+        max-width: 530px;
+    }
+    .eg-verified-text span {
+        margin-right: 0px;
+    }
+.eg-review-top {
+    display: flex;
+    align-items: center;
+}
+.review-info-divider {
+    border-left: 1px solid #d8d8d8;
+    height: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.eg-review-text {
+    padding: 15px 0px;
+    line-height: 1.3;
+    font-size: 13px;
+}
+.eg-review-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+p.eg-verified-text svg {
+    margin-right: 5px;
+}
+
+.eg-date {
+    color: #999;
+}
+
+.eg-review-link {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.eg-review-link:hover{
+    text-decoration: none;
+}
+.eg-verified-text {
+    display: flex;
+    align-items: center;
+}
+.eg-star span:before {width: 14px !important;display: inline-block;
+}
+@media screen  and (min-width:768px){
+    html body .eg-review-card{
+        position: relative;
+    }
+    html body .eg-review-link {
+        margin-left: auto;
+    }
+    html body .eg-date {
+        position: absolute;
+        top: 16px;
+        right: 20px;
+    }
+}
+@media screen  and (max-width:767px){
+    html body .product-detail .swiper.egswiper {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+}

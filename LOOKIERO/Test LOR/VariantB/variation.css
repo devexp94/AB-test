@@ -1,0 +1,28 @@
+@media screen and (min-width:840px) {
+    html body section.home-intro {
+        height: 100% !important;
+    }
+}
+@media screen and (max-width:839px) {
+    html body .home-intro__content .home-intro__content-top{
+        justify-content: center;
+        text-align: center;
+    }
+}
+@media screen and (max-width:1000px) and (min-width:840px){
+    html body .home-intro__content .text.heading{
+        font-size: 86px;
+        line-height: 77px;
+    }
+    html body .home-intro .home-intro__content {
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width:350px) {
+    
+    html body .home-intro__content .text.heading {
+        font-size: 62px;
+        line-height: 55px;
+    }
+
+}

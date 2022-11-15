@@ -1,0 +1,9 @@
+
+html body .pdp-tile .add-to-cart-button:not(.d-disable) button.add-to-cart:not(.disabled){
+    background-color: #1475c1;
+    border-color: #1475c1;
+}
+html body .pdp-tile .add-to-cart-button:not(.d-disable) button.add-to-cart:hover {
+    background-color: #222a87;
+    border-color: #222a87;
+}

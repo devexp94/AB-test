@@ -1,0 +1,32 @@
+{
+	"files": [
+		"./variationC/variation.css",
+		"./variationC/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.tweezerman.com/facial-razor.html",
+		"https://www.tweezerman.com/mini-cuticle-nipper.html",
+		"https://www.tweezerman.com/stainless-steel-nail-clipper-set.html",
+		"https://www.tweezerman.com/essential-grooming-kit.html",
+		"https://www.tweezerman.com/curl-38-lashcomb.html",
+		"https://www.tweezerman.com/lash-gaurd-and-comb.html",
+		"https://www.tweezerman.com/pushy-and-nail-cleaner.html",
+		"https://www.tweezerman.com/rose-gold-slant-tweezer.html",
+		"https://www.tweezerman.com/rose-gold-classic-curler.html",
+		"https://www.tweezerman.com/mens-pushy-and-cleaner.html",
+		"https://www.tweezerman.com/sole-smoother-antibacterial-callus-stone.html",
+		"https://www.tweezerman.com/polish-removal-cloths.html",
+		"https://www.tweezerman.com/travel-tool-essentials.html",
+		"https://www.tweezerman.com/polish-removal-kit.html",
+		"https://www.tweezerman.com/angled-brow-brush-spoolie.html",
+		"https://www.tweezerman.com/professional-nail-files.html",
+		"https://www.tweezerman.com/slant-tweezer-pretty-in-pink.html",
+		"https://www.tweezerman.com/curl-38-eyelash-curler.html",
+		"https://www.tweezerman.com/pedicure-rasp-callus-remover.html",
+		"https://www.tweezerman.com/rose-gold-manicure-set.html",
+		"https://www.tweezerman.com/curl-60-eyelash-curler.html",
+		"https://www.tweezerman.com/glass-nail-file.html",
+		"https://www.tweezerman.com/filemate-chevron-blue-pattern.html"
+	]
+}

@@ -1,0 +1,43 @@
+.footer-links .h3-footer.active+div {
+    height: 0px;
+    overflow: hidden;
+}
+
+.footer-links .h3-footer {
+    cursor: pointer;
+    position: relative;
+}
+
+.footer-links .h3-footer::before,
+.footer-links .h3-footer::after {
+    position: absolute;
+    content: ' ';
+    width: 16px;
+    height: 2px;
+    top: 5px;
+    background: #000000;
+}
+
+.footer-links .h3-footer.active::after {
+    transform: rotate(-90deg);
+    width: 13px;
+    right: 11px;
+}
+
+@media screen and (max-width: 767px) {
+
+    html body .footer-links,
+    html body .footer-links__column {
+        width: 100%;
+        margin-left: 0px !important;
+    }
+
+    html body .footer-links__row {
+        flex-direction: column;
+    }
+
+    .footer-links .h3-footer::before,
+    .footer-links .h3-footer::after {
+        right: 10px;
+    }
+}

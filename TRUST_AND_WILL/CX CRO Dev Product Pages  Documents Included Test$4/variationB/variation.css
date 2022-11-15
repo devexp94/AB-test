@@ -1,0 +1,19 @@
+html body .eg-link {
+    display: inline-block;
+    margin-left: 25px;
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+html body .eg-link:hover {
+    text-decoration: none;
+}
+@media screen and (max-width: 894px) {
+    html body .eg-link {
+        display: block;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+}

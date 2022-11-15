@@ -1,0 +1,146 @@
+@media screen and (min-width: 992px) {
+    html body.cv-2-39 .component-fluid-tabs__content[data-tab-content-id='tab-pricing-3'] .optimize-variant--business--original > div > div > div:not(.cv-uny0-15-custom),
+    html body.cv-2-39 .cv-bullets-outer{
+        padding: 16px !important;
+    }
+    html body.cv-2-39 .cv-bullets-outer .component-pricing-card__feature-list{
+        padding: 10px 10px 2px 10px !important;
+        max-width: 340px !important;
+        background: rgba(33, 33, 33, 0.9) !important;
+    }
+    html body.cv-2-39  div[data-tab-content-id="tab-pricing-2"] .component-pricing-card.unity-pro,
+    html body.cv-2-39 .component-pricing-card.unity-pro{
+        -webkit-box-shadow: 0 6px 15px rgb(33 150 243 / 33%), inset 0 8px 0 #2196f3 !important;
+        box-shadow: 0 6px 15px rgb(33 150 243 / 33%), inset 0 8px 0 #2196f3 !important;
+    }
+    html body.cv-2-39 .component-pricing-card.unity-pro {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    html body.cv-2-39 .cv-bullets-outer {
+        width: 100% !important;
+        background: url('https://cfactory-img.s3.amazonaws.com/UNY/2.39new/unity-pro-enemies.jpg') !important;
+        background-size: 770px 100% !important;
+        background-position: center left -1px !important;
+        background-repeat: no-repeat !important;
+    }
+    html body .cv-bullets-outer .cv-pro-list {
+        padding-left: 0px !important;
+    }
+    
+    .cv-bullets-outer .cv-pro-list .cv-pro-sub li,
+    html body .cv-bullets-outer .component-list > li:not(:last-child) {
+        padding-left: 30px !important;
+    }
+    
+    html body .cv-bullets-outer .component-list.component-list--is-nested {
+        padding-left: 10px;
+    }
+    html body .cv-bullets-outer .component-list >li:before{
+        left: 20px !important;
+        top: 3px;
+    }
+
+    html body .cv-bullets-outer .component-list >li {
+        display: flex !important;
+    }
+    html body .cv-bullets-outer .component-pricing-card__feature-list  .component-list:not(.component-list--is-nested) > li:last-child {
+        display: flex !important;
+        flex-direction: column;
+        align-items: inherit;
+    }
+    
+    html body .cv-bullets-outer .component-list >li:not(:last-child) {
+        align-items: center;
+    }
+
+    html body.cv-2-39 .cv-bullets-outer .cv-pro-sub li {
+        display: flex;
+        align-items: center;
+    }
+    html body.cv-2-39 .cv-bullets-outer .cv-pro-sub li:last-child {
+        margin-bottom: 0px;
+    }
+    html body.cv-2-39 .cv-mobile-image{
+      display: none !important;
+    }
+}
+.cv-2-39  div[data-tab-content-id="tab-pricing-2"] .component-pricing-card.unity-pro {
+    padding-top: 8px !important;
+    padding-bottom: 0px !important;
+}
+html body .cv-bullets-outer .component-list >li {
+    padding-bottom: 0px;
+}
+html body .cv-bullets-outer .component-list >li:not(:last-child) {
+    margin-bottom: 5px;
+}
+div[data-tab-content-id="tab-pricing-2"] .cv-2-42_cont > .row > div:nth-child(2) .component-pricing-card > h2,
+div[data-tab-content-id="tab-pricing-3"] .optimize-variant--business--original > .row > div:nth-child(1) .component-pricing-card__title,
+div[data-tab-content-id="tab-pricing-3"] .optimize-variant--business--original > .row > div:nth-child(2) .component-pricing-card__title,
+.optimize-variant--individual--original > .row > div:nth-child(1) .component-pricing-card__title,
+.optimize-variant--individual--original > .row > div:nth-child(2) .component-pricing-card__title{
+    margin-top: 24px;
+}
+html body.cv-2-39 .component-fluid-tabs__content .component-pricing-card p.component-pricing-card__plan-description, 
+html body.cv-2-39 .component-pricing-card.component .component-pricing-card__plan-description{
+    margin-bottom: 16px!important;
+    height: auto!important;
+}
+html body.cv-2-39 .component-pricing-card__price-container {
+    margin-bottom: 0px !important;
+    height: auto!important;
+}
+html body.cv-2-39 .component-select__current{
+    height: auto!important;
+}
+html body.cv-2-39 .component-fluid-tabs__content[data-tab-content-id='tab-pricing-1'] .optimize-variant--individual--original > div > div.col-xs-12.col-md-4 > div:not(.component-pricing-card--grey),
+html body.cv-2-39 .component-fluid-tabs__content[data-tab-content-id='tab-pricing-3'] .optimize-variant--business--original > div > div > div:not(.cv-uny0-15-custom){
+    /* height: 100% !important; */
+    padding: 24px 16px 16px 16px !important;
+}
+html body.cv-2-39 .component-pricing-card.component-pricing-card--black{
+    padding: 24px 16px 16px 16px !important;
+}
+html body.cv-2-39 .component-pricing-card__feature-list{
+    margin-top: 20px !important;
+}
+@media screen and (max-width:991px) {
+    .component-pricing-card.component-pricing-card--black,
+    html body.cv-2-39 .component-fluid-tabs__content[data-tab-content-id='tab-pricing-3'] .optimize-variant--business--original > div > div > div:not(.cv-uny0-15-custom),
+    html body.cv-2-39 .cv-bullets-outer,
+    html body.cv-2-39 .component-pricing-card {
+        padding: 24px 16px 16px 16px !important;
+    }
+}
+@media screen and (min-width: 78.75em){
+    html body.cv-2-39 .component-fluid-tabs__content[data-tab-content-id='tab-pricing-3'] .col-md-4,
+    html body.cv-2-39 .component-fluid-tabs__content .optimize-variant--individual--original .col-md-4{
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+    html body.cv-2-39 .component-pricing-card a[data-action="learn more"] {
+        margin-left: 14px !important;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+html body.cv-2-39 div[data-tab-content-id="tab-pricing-2"] .component-pricing-card__info {
+    padding: 16px !important;
+}
+html body.cv-2-39 div[data-tab-content-id="tab-pricing-2"] .component-pricing-card.unity-pro,
+html body.cv-2-39 div[data-tab-content-id="tab-pricing-2"] .component-pricing-card.unity-plus{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-bottom: 0px !important;
+}
+html body.cv-2-39 .component-pricing-card.unity-plus .component-pricing-card__info-pricing,
+html body.cv-2-39 .component-pricing-card.unity-plus .component-pricing-card__feature-list {
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
+}
+  div[data-tab-content-id="tab-pricing-2"] .optimize-variant--business--original .component-pricing-card__title{
+    margin-top: 15px;
+}

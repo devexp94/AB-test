@@ -1,0 +1,11 @@
+html body section.home-intro + section > .box .layout.marginBottomLayoutS .box.one-third {
+    max-width: 100%;
+}
+html body section.home-intro + section > .box .layout.marginBottomLayoutS .text.body{
+    margin-bottom: 5px;
+}
+@media screen and (max-width:550px){
+    html body section.home-intro + section > .box .layout.marginBottomLayoutS .text.body br{
+        display: none;
+    }    
+}

@@ -1,0 +1,15 @@
+html body .add-to-cart-button .add-to-cart:not(:disabled) {
+    background-color: #1475c1;
+    border-color: #1475c1;
+    color: #fff;
+}
+
+html body .add-to-cart-button .btn.btn-tertiary:active,
+html body .add-to-cart-button .add-to-cart:not(:disabled):focus-visible,
+html body .add-to-cart-button .add-to-cart:not(:disabled):active,
+html body .add-to-cart-button .add-to-cart:not(:disabled):hover {
+    background-color: #222a87 !important;
+    border-color: #222a87 !important;
+    color: #fff !important;
+    box-shadow: none !important;
+}

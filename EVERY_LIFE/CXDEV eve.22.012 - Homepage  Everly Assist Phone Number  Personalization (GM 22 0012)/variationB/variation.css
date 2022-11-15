@@ -1,0 +1,44 @@
+header nav ul > li:nth-child(5) {
+  position: relative;
+}
+.eg-telephone {
+  padding: 0px !important;
+  background: transparent !important;
+  color: #ffffff !important;
+  position: absolute;
+  margin-top: 5px;
+  font-family: var(--body-font);
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.eg-telephone svg {
+    display: none;
+}
+header.TnHII,
+header.gmBRTy {
+    height: 105px;
+}
+header.TnHII .eg-telephone-mobile,
+header.TnHII .eg-telephone {
+    color: #121b6b !important;
+}
+header.gmBRTy .eg-telephone-mobile {
+  color: #fff;
+}
+
+.eg-telephone-mobile svg {
+  display: none;
+}
+
+.eg-telephone-mobile {
+  margin-left: auto;
+  margin-right: 10px;
+  margin-top: -6px;
+}
+
+@media screen  and (min-width: 1200px){
+  html body .eg-telephone-mobile{
+    display: none;
+  }
+}

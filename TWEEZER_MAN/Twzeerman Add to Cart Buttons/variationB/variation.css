@@ -1,0 +1,85 @@
+html body #confirmBox #confirmButtons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+html body .amcart-confirm-buttons .checkout {
+    padding: 7px 10px !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 50px;
+    width: 42%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0 -2px 0 rgb(0 0 0 / 15%) inset;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #FFFFFF !important;
+    font-family: 'Futura MdCn BT',sans-serif !important;
+    text-transform: uppercase;
+}
+
+html body #confirmBox #confirmButtons button[title="Continue"] {
+    order: 3;
+    display: block;
+    padding: 25px 0 8px;
+    font-size: 16px;
+    font-family: 'Futura Bk BT',sans-serif;
+    text-transform: capitalize;
+    width: 100%;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    color: #000000;
+}
+
+html body #confirmBox #confirmButtons button[title="Continue"]:hover{
+    text-decoration: underline;
+}
+html body #confirmBox #confirmButtons button[title="View Cart"]:hover,
+html body .amcart-confirm-buttons .checkout:hover {
+    text-decoration: none;
+    opacity: .8;
+}
+html body #confirmBox #confirmButtons button[title="View Cart"] {
+    margin-right: 20px;
+    text-decoration: none;
+    opacity: .8;
+    background-color: #BBBBBB;
+    padding: 7px 10px !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 50px;
+    width: 42%;
+    font-weight: 400;
+    font-size: 20px !important;
+    line-height: 23px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0 -2px 0 rgb(0 0 0 / 15%) inset;
+    box-sizing: border-box;
+    color: #FFFFFF !important;
+    font-family: 'Futura MdCn BT',sans-serif !important;
+    text-transform: uppercase;
+}
+html body #confirmBox #confirmButtons button[title="Continue"]:after {
+    content: ' Shopping';
+}
+html body #confirmBox #confirmButtons .checkout:after {
+    content: 'CHECKOUT';
+    font-size: 20px;
+    position: absolute;
+}
+
+html body #confirmBox #confirmButtons .checkout {
+    font-size: 0px;
+    position: relative;
+}

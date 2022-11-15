@@ -1,0 +1,975 @@
+.fullwidth-wrapper.colour-lighter.module-large.bird-bg,
+body>div.content-overlay>div>div:nth-child(7),
+body>div.content-overlay>div>div:nth-child(6),
+.bg-cottoncream,
+.bg-cottoncream+div,
+.news-snippets {
+    display: none;
+}
+
+.eg-phone-text strong {
+    font-weight: 550;
+}
+
+html body .hero-title-wrapper .your-home-for {
+    line-height: 1.2;
+    max-width: 354px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    color: #002d72;
+}
+
+html body .hero-title-wrapper .tooltip-wrapper#were-free-tooltip-wrapper {
+    top: -15px;
+    left: calc(50% + 85px);
+}
+
+.home .fullwidth-wrapper-hero .page-hero h1.hero-title {
+    color: #e56a54 !important;
+    font-size: 34px;
+}
+
+.home .fullwidth-wrapper-hero .lc-info svg {
+    color: #e56a54;
+    fill: #e56a54;
+    stroke: #e56a54;
+}
+
+.eg-option-container {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.eg-option-container .eg-link-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.eg-option-container .top-heading {
+    text-align: left;
+    margin-bottom: 0px;
+    color: #54585A;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.eg-option-container .eg-link-container a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 10px 6px 24px;
+    box-shadow: 0px 3px 6px #002D721A;
+    border-radius: 4px;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 5px 0 5px 0px;
+    height: 68px;
+    color: #fff;
+}
+
+.eg-option-container .eg-link-container .eg-property-link {
+    background: #E56A54 0% 0% no-repeat padding-box;
+}
+
+.eg-option-container .eg-link-container .eg-remortgage-link {
+    background: #00B5E2 0% 0% no-repeat padding-box;
+}
+
+.eg-option-container .eg-link-container .eg-information-link {
+    background: #6CC24A 0% 0% no-repeat padding-box;
+}
+
+.eg-phone-text {
+    margin-bottom: 0px;
+    font-size: 13px;
+    line-height: 1.1;
+    font-weight: 100;
+    text-align: left;
+    font-family: "gothamRounded-book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #002d72;
+}
+
+.home .fullwidth-wrapper-hero .page-hero #heroContactNumber {
+    text-align: left !important;
+    padding: 12px 20px 12px 70px;
+    background: #f8f8f8;
+    margin-top: 24px;
+    border-radius: 4px;
+    position: relative;
+    border: 1px solid #70707027;
+}
+
+.hero-phone svg {
+    fill: #e56a54;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero-phone a[href^="tel"] {
+    font-size: 20px;
+    line-height: 1.1;
+    color: #002d72;
+}
+
+.main-nav .main-nav-items,
+.home-icon.show-phone+div,
+.home .fullwidth-wrapper-hero .page-hero #heroContactNumber+div,
+.home .oef-buttons-area,
+.home.swan .home-icon {
+    display: none !important;
+}
+
+.home.swan .fullwidth-wrapper-hero>.container {
+    padding-bottom: 30px;
+    padding-top: 81px;
+}
+
+.eg-review p img {
+    width: 90px;
+    margin: 0px 3px;
+    vertical-align: middle;
+}
+
+@media screen and (min-width: 480px) {
+    html body.home.swan .fullwidth-wrapper-hero {
+        background-image: url("https://expogrowth.in/wp-content/uploads/2022/09/LCbackground-min-2.png") !important;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    html body.home.swan .fullwidth-wrapper-hero {
+        background-image: url("https://expogrowth.in/wp-content/uploads/2022/09/mobilebackground.png") !important;
+        background-position: top center;
+        background-size: cover;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    html body .container .col-md-3:nth-child(4) .callout.large .title {
+        height: auto !important;
+    }
+
+    html body.home .eg-review p img {
+        width: 80px;
+    }
+
+    html body.home .eg-review p img:nth-child(2) {
+        width: 70px;
+    }
+
+    html body.home .fullwidth-wrapper-hero .page-hero h1.hero-title {
+        font-size: 25px;
+    }
+
+    html body.home .fullwidth-wrapper-hero .page-hero .your-home-for {
+        font-size: 18px;
+    }
+
+    html body .hero-title-wrapper .tooltip-wrapper#were-free-tooltip-wrapper {
+        top: -15px !important;
+        left: calc(50% + 104px) !important;
+    }
+
+    html body.home.swan .fullwidth-wrapper-hero>.container {
+        padding-top: 40px;
+    }
+
+    html body.home .eg-option-container .top-heading {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .eg-review {
+        margin-bottom: 30px;
+    }
+
+    html body .callout.large .copy.match-heights {
+        font-size: 14px;
+    }
+}
+
+.eg-review {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.eg-review p {
+    text-align: center;
+    display: inline;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 0px;
+}
+
+.eg-review p b {
+    margin: 0px 3px;
+    font-weight: 700;
+    font-family: "gothamRounded-medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #1C1C1B;
+}
+
+
+/* New CSS */
+html body .callout.large.help {
+    padding-left: 177px;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+html body .callout.large.help .subpage-icons {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 177px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html body .callout.large.help .subpage-icons>svg {
+    width: 63px;
+    height: 100px;
+}
+
+.callout.large.colour-red-theme {
+    background: #FBF0EE !important;
+}
+
+.callout.large.colour-red-theme .subpage-icons {
+    background: #e56a54 !important;
+}
+
+.callout.large .title {
+    padding-left: 28px;
+    min-height: auto !important;
+    min-width: 95%;
+    font-weight: 600;
+}
+
+.callout.large.colour-red-theme .title {
+    color: #E56A54;
+}
+
+.callout.large .copy.match-heights {
+    padding-left: 28px;
+    color: #54585A;
+    margin-bottom: 10px;
+}
+
+.callout.large.help.colour-green-theme .title {
+    color: #6CC24A;
+}
+
+.callout.large.help.colour-green-theme {
+    background: #F0F8EC !important;
+}
+
+.callout.large.help.colour-green-theme .subpage-icons {
+    background: #6CC24A !important;
+}
+
+.callout.large.help.colour-blue-theme {
+    background: #ECF8FC !important;
+}
+
+.callout.large.help.colour-blue-theme .title {
+    color: #00B5E2;
+}
+
+.callout.large.help.colour-blue-theme .subpage-icons {
+    background: #00B5E2 !important;
+}
+
+.callout.large.help.colour-purple-theme .title {
+    color: #576BAA;
+}
+
+.callout.large.help.colour-purple-theme {
+    background: #EEF0F6 !important;
+}
+
+.callout.large.help.colour-purple-theme .subpage-icons {
+    background: #576BAA !important;
+}
+
+.callout.large.help .btn {
+    margin-left: 28px;
+    width: 133px;
+    height: 49px;
+    font-size: 16px;
+    border-radius: 6px;
+    background: transparent;
+}
+
+.callout.large.help.colour-blue-theme .btn {
+    border: 1px solid #00B5E2;
+    color: #00B5E2;
+
+}
+
+.callout.large.help.colour-purple-theme .btn {
+    border: 1px solid #576BAA;
+    color: #576BAA;
+
+}
+
+.callout.large.help.colour-green-theme .btn {
+    border: 1px solid #6CC24A;
+    color: #6CC24A;
+}
+
+.callout.large.colour-red-theme .btn {
+    border: 1px solid #E56A54;
+    color: #E56A54;
+}
+
+.eg-title {
+    font-size: 32px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    color: #000000;
+}
+
+.home .mini-box-copy>h4.box-title {
+    font-size: 0px !important;
+}
+
+/* Tools */
+.eg-tools {
+    background: #F0F8EC !important;
+    padding: 70px 0px;
+}
+
+.eg-calculator-section .eg-heading.title {
+    margin-top: 25px;
+    min-height: 60px;
+    color: #6CC24A;
+}
+
+.eg-calculator-section .btn {
+    border: 1px solid #6CC24A;
+    border-radius: 6px;
+    color: #6CC24A;
+    font-size: 16px;
+    width: 115px;
+    height: 49px;
+    position: absolute;
+    bottom: 20px;
+}
+
+
+.eg-calculator-section {
+    padding: 25px 20px 70px 20px;
+    height: 100%;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+.eg-tools a[href="/calculators/"] {
+    background: #6CC24A 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    width: 194px;
+    height: 49px;
+    font-size: 16px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto 0px auto;
+}
+
+/* Your best mortgage deal */
+.mini-box-copy .box-title {
+    font-size: 0px;
+}
+
+.brand-green .box-title:after,
+.brand-yellow .box-title:after,
+.brand-purple .box-title:after,
+.brand-blue .box-title:after {
+    font-size: 20px;
+    display: block;
+    line-height: 28px;
+}
+
+.brand-blue .box-title:after {
+    content: '1. Compare & check';
+}
+
+.brand-purple .box-title:after {
+    content: '2. See if you qualify';
+}
+
+.brand-yellow .box-title:after {
+    content: '3. Apply online';
+}
+
+.brand-green .box-title:after {
+    content: '4. Track and chase';
+}
+
+/* best buy mortgages */
+html body .bgcolour-beige,
+html body .purple-theme .colour-lighter,
+html body .red-theme .colour-lighter,
+html body .related-best-buys .hidden-xs .table {
+    background: #fff !important;
+}
+
+html body #resiMiniBestBuyHome .related-best-buys {
+    background: #FBF0EE;
+}
+
+html body #btlMiniBestBuyHome .related-best-buys {
+    background: #EEF0F6;
+}
+
+html body tbody .colour-lighter .duration,
+html body .table .provider {
+    display: none;
+}
+
+.related-best-buys .duration+td .extra {
+    max-width: 82px;
+}
+
+tbody .colour-lighter .details {
+    display: flex;
+
+}
+
+html body .related-best-buys .more {
+    margin-top: 0px;
+}
+
+html body .related-best-buys .duration+td+td {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+html body .red-theme.mini .visible-xs .more,
+html body .red-theme.mini .related-best-buys .duration+td+td a {
+    border: 1px solid #e56a54;
+    border-radius: 4px;
+    color: #e56a54;
+    background: #ffffff;
+}
+
+html body .red-theme.mini .visible-xs .more:hover,
+.red-theme.mini .related-best-buys .duration+td+td a:hover {
+    background: #e56a54;
+    color: #ffffff;
+}
+
+html body .purple-theme.mini .visible-xs .more:hover,
+html body .purple-theme.mini .related-best-buys .duration+td+td a:hover {
+    background: #576baa;
+    color: #ffffff;
+}
+
+html body .purple-theme.mini .visible-xs .more,
+html body .purple-theme.mini .related-best-buys .duration+td+td a {
+    border: 1px solid #576baa;
+    border-radius: 4px;
+    color: #576baa;
+    background: #ffffff;
+}
+
+html body .mini .related-best-buys .duration+td+td a {
+    background: #fff;
+    border-radius: 4px;
+    width: 107px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+html body .red-theme #resiMiniBestBuyHome a.text-colour-base,
+html body .purple-theme #btlMiniBestBuyHome a.text-colour-base {
+    border-radius: 6px;
+    width: auto;
+    height: 49px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+html body .purple-theme #btlMiniBestBuyHome a.text-colour-base {
+    background: #576BAA;
+    color: #fff;
+}
+
+html body .red-theme #resiMiniBestBuyHome a.text-colour-base {
+    background: #E56A54;
+    color: #fff;
+}
+
+html body .mini .related-best-buys,
+html body .mini {
+    border: none;
+}
+
+/* Review */
+html body .eg-trust-image img {
+    max-width: 100px;
+}
+
+html body .eg-review-section .eg-rating {
+    font-size: 14px;
+    color: #54585A;
+}
+
+html body .eg-review-section .eg-author {
+    margin-bottom: 0px !important;
+    color: #54585A !important;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+html body .eg-trust-review .row {
+    height: 100%;
+}
+
+.eg-review-section .eg-heading {
+    margin-top: 35px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1C1C1B;
+    margin-bottom: 10px;
+}
+
+html body .eg-review-section .eg-para {
+    margin-bottom: 10px !important;
+    font-size: 16px;
+}
+
+html body .eg-review-section {
+    padding: 25px 20px 40px 20px;
+    background: #F4F0EF;
+    height: 100%;
+    position: relative;
+}
+
+html body .eg-trust-review .row:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+html body .eg-trust-review {
+    padding-top: 40px;
+    padding-bottom: 35px;
+}
+
+/* Breaking News */
+
+.eg-breaking-news {
+    padding-top: 40px;
+    padding-bottom: 35px;
+}
+
+.eg-breaking-news .col-sm-5 img {
+    width: 100%;
+}
+
+.eg-breaking-news .col-sm-5 {
+    padding-right: 0px;
+}
+
+.eg-breaking-news .col-sm-7 {
+    background: #00b5e21a;
+    padding: 38px 30px 30px 40px;
+}
+
+.eg-breaking-news .eg-date {
+    letter-spacing: 0px;
+    color: #54585A;
+    font-size: 14px;
+    font-weight: 550;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.eg-breaking-news .eg-news-content .title {
+    color: #00B5E2;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+.eg-breaking-news .eg-news-content .eg-copy {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 25px;
+    max-width: 545px;
+}
+
+.eg-breaking-news .eg-news-content .btn {
+    background: #00B5E2;
+    border-radius: 6px;
+    width: 128px;
+    height: 48px;
+    font-size: 16px;
+}
+
+.eg-breaking-news .eg-news-content .btn:hover {
+    background: #fff;
+    color: #00B5E2;
+    border: 1px solid #00B5E2;
+}
+
+/* Offer Free */
+
+.eg-breaking-news+div .col-sm-6.content:nth-child(1) {
+    width: 60%;
+}
+
+.eg-breaking-news+div .col-sm-6.content:nth-child(2) {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eg-breaking-news+div .container>h3 {
+    display: none;
+}
+
+.eg-breaking-news+div .container .content .section-title {
+    color: #00B5E2;
+}
+
+
+.eg-breaking-news+div .col-sm-6.content:nth-child(1) .copy {
+    font-size: 16px;
+    max-width: 639px;
+}
+
+.eg-breaking-news+div {
+    background: #4BB6E21A;
+}
+
+/* News Section */
+.eg-news-insights {
+    padding: 75px 0px;
+}
+
+.eg-news-insights .eg-news-section {
+    background: #E56A541A;
+    height: 100%;
+}
+
+.eg-news-insights .eg-module-content {
+    padding: 30px 12px 20px;
+}
+
+.eg-news-insights .eg-news-date {
+    font-size: 14px;
+    color: #E56A54;
+    margin-bottom: 10px;
+}
+
+.eg-news-insights .container>.row:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.eg-news-insights .eg-news-heading {
+    color: #1C1C1B;
+    font-size: 20px;
+    margin-bottom: 10px;
+    min-height: 56px;
+    margin-top: 0px;
+    max-width: 216px;
+}
+
+.eg-news-insights .col-md-3:nth-child(1) .eg-news-section .eg-news-heading {
+    max-width: 196px;
+}
+
+.eg-news-insights .copy {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.eg-news-insights .container>.row .buttons {
+    margin-top: 31px;
+}
+
+.eg-news-insights .container>.row .buttons .btn {
+    width: 164px;
+    height: 48px;
+    background: #E56A54 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:1199px) {
+    html body .col-md-3:nth-child(4) .callout.large .title {
+        height: 50px !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    html .home .mini-box-copy {
+        margin: 0 3px;
+    }
+
+    html body .col-md-3:nth-child(2) .callout.large .copy.match-heights,
+    html body .col-md-3:nth-child(1) .callout.large .copy.match-heights {
+        max-width: 307px;
+    }
+
+    html body .col-md-3:nth-child(3) .callout.large .copy.match-heights,
+    html body .col-md-3:nth-child(4) .callout.large .copy.match-heights {
+        max-width: 275px;
+    }
+
+    html body .eg-calculator-section.related-page .copy {
+        max-width: 287px;
+    }
+
+    .eg-breaking-news+div .row,
+    html body .eg-breaking-news .row,
+    html body .eg-trust-review .row,
+    html body .eg-tools .row {
+        display: flex;
+    }
+
+    html body>div.content-overlay>div>div.container.container-xl>.row>.col-md-3 {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    html body .callout.large.help {
+        padding-left: 120px !important;
+    }
+
+    html body .callout.large.help .subpage-icons {
+        width: 120px !important;
+    }
+
+    .eg-news-insights .container>.row:nth-child(2)>.col-md-3,
+    html body .eg-trust-review .row:nth-child(2)>.col-md-3,
+    .eg-tools .row .col-md-4 {
+        margin-bottom: 30px;
+    }
+
+    html body .eg-trust-review .row:nth-child(2) {
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .eg-breaking-news+div .container .content .section-title {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .eg-trust-review-mobile,
+    .eg-news-insights-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    tbody .colour-lighter .details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home .fullwidth-wrapper-hero .page-hero {
+        padding: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        display: block !important;
+        margin: auto !important;
+    }
+
+    .eg-phone-text strong {
+        font-weight: 550;
+    }
+
+    .social-links {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .footer .social-links a {
+        max-width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer .social-links a img {
+        width: 30px;
+        margin-top: 0px !important;
+    }
+
+    .row.footer-post {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* .red-theme .text-colour-base {
+        display: flex !important;
+        width: 75px !important;
+        height: 75px;
+    } */
+
+    .footer-award {
+        width: calc(100% - 100px);
+    }
+
+    .eg-trust-review:not(.eg-trust-review-mobile),
+    .eg-news-insights:not(.eg-news-insights-mobile) {
+        display: none;
+    }
+
+    html body .eg-breaking-news+div .container .content .section-title,
+    html body .eg-breaking-news+div .col-sm-6.content:nth-child(1) {
+        width: 100%;
+        text-align: left;
+    }
+
+    html body .eg-breaking-news+div .col-sm-6.content:nth-child(2) {
+        margin-left: auto;
+        margin-left: auto;
+        width: 100%;
+        max-width: 220px;
+    }
+
+    html body .eg-title {
+        font-size: 24px;
+    }
+
+    html body .eg-calculator-section .eg-heading.title {
+        height: auto;
+    }
+
+    html body .eg-breaking-news+div .col-sm-6.content:nth-child(1) .copy {
+        font-size: 14px;
+    }
+}
+
+.mini .related-best-buys thead>tr>th.cost:after {
+    content: "Overall cost \A for comparison";
+    font-size: 14px;
+}
+
+.mini .related-best-buys thead>tr>th.cost {
+    font-size: 0px;
+    white-space: pre;
+    border-bottom: none;
+}
+
+.related-best-buys tbody>tr>td.duration+td {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.related-best-buys tbody>tr.colour-lighter {
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.eg-footer.fullwidth-wrapper {
+    background: #f1f1f1;
+    padding-top: 50px;
+}
+
+.news-snippets+div {
+    margin-bottom: 0px;
+}
+
+#resiMiniBestBuyHome .title,
+#btlMiniBestBuyHome .title {
+    margin-bottom: 13px;
+    width: 100% !important;
+    height: auto !important;
+}
+
+#resiMiniBestBuyHome .copy,
+#btlMiniBestBuyHome .copy {
+    max-width: 413px;
+}
+
+.related-best-buys .colour-lighter .rate {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+html body .box.mini-box .icon {
+    max-width: 75%;
+    max-height: 75%;
+}
+
+.home .boxes.boxes-box-separator>div:after {
+    display: none !important;
+}
+
+
+#resiMiniBestBuyHome .copy,
+#btlMiniBestBuyHome .copy,
+html #resiMiniBestBuyHome .colour-lighter th,
+html #resiMiniBestBuyHome .colour-lighter td div {
+    color: #000000;
+    font-family: "gothamRounded-book", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+#btlMiniBestBuyHome td .value,
+#btlMiniBestBuyHome .table-cell .value {
+    font-family: "gothamRounded-book", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.related-best-buys td.duration+td div,
+.related-best-buys td.duration+td+td div {
+    color: #000000;
+}
+
+.hero-phone .bm-telephone-img {
+    display: none;
+}
+
+
+.oef-steps-header+div .slider.slider-nav .eg-arrow-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+}
+
+.oef-steps-header+div .slider.slider-nav .eg-arrow-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+}

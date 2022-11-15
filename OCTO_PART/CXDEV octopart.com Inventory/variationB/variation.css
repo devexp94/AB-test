@@ -1,0 +1,64 @@
+html body .eg-inventory-button {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    font: inherit;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: normal;
+    margin-bottom: 0;
+    text-align: center;
+    touch-action: manipulation;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    border: none;
+    border-radius: 0;
+    line-height: 20px;
+    padding: 0 14px 0 14px;
+    height: 44px;
+    font-size: 16px;
+    color: #333333;
+    background: #f2f2f2;
+    text-decoration: none;
+    background: #ffffff;
+    border: 2px solid #3671B0;
+    border-radius: 2px;
+    color: #3671B0;
+    font-size: 14px;
+    height: 35px;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    margin-left: 3px;
+}
+
+html body .eg-inventory-button .inventory-icon,
+html body .eg-inventory-button .inventory-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html body .eg-inventory-button .inventory-icon {
+    margin-right: 4px;
+}
+
+.eg-inventory-button .inventory-icon,
+.eg-inventory-button .inventory-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eg-inventory-button .inventory-icon {
+    margin-right: 4px;
+}
+
+.eg-inventory-button:hover {
+    border: 2px solid #18324e;
+    color: #18324e;
+}
+
+.eg-inventory-button:hover svg path {
+    fill: #18324e;
+}

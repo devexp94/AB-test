@@ -1,0 +1,83 @@
+#eg-action-video iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+
+#eg-action-video {
+    width: 318px;
+    height: 318px;
+    /* float: left; */
+}
+
+section.product-section.product-tooltips {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.product-section.product-tooltips h2 {
+    width: 100%;
+}
+
+.product-tooltips__content {
+    width: calc(100% - 318px);
+    padding-left: 0px;
+    box-sizing: border-box;
+}
+
+.product-section img[alt="Tool Tips"] {
+    display: none;
+}
+
+#prod-descriptions+#eg-action {
+    display: none !important;
+}
+
+#prod-descriptions #eg-action {
+    padding-left: 20px;
+}
+
+.product-info-main>#eg-action {
+    font-weight: 700;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    padding-left: 0px;
+}
+
+.arrow {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 2px 2px 0px;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+}
+
+.product-info-main>#eg-action span {
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 767px) {
+    html body #eg-action-video {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
+
+.eg-thumb {
+    padding: 14px 14px 0px 0px;
+    height: 75px;
+    width: 75px;
+}
+
+.eg-thumb img {
+    background: #fff;
+    border: solid 1px #000;
+    box-sizing: border-box;
+    cursor: pointer;
+}

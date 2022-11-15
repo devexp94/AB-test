@@ -1,0 +1,71 @@
+
+.eg-logo-section .eg-logo-conatiner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.eg-logo-section {
+    padding: 50px 0px;
+}
+.eg-logo-section .eg-heading {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.eg-logo-section .logo-box {
+    width: 20%;
+    margin-bottom: 20px;
+}
+
+.eg-logo-section .logo-box-inr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    -webkit-transition: -webkit-filter .5s ease-in;
+    transition: -webkit-filter .5s ease-in;
+    transition: filter .5s ease-in;
+    transition: filter .5s ease-in,-webkit-filter .5s ease-in;
+    filter: grayscale(1);
+}
+.eg-logo-section .logo-box-inr:hover {
+    filter: grayscale(0);
+}
+.eg-logo-section .logo-box img {
+    width: 100%;
+}
+.eg-logo-section .logo-box a{
+    margin: 0 auto;
+}
+.eg-logo-section .us-concrete a {
+    max-width: 160px;
+}
+.eg-logo-section .pearce-services a {
+    max-width: 185px;
+}
+.eg-logo-section .genpt a {
+    max-width: 150px;
+}
+.eg-logo-section .state-gov a {
+    max-width: 145px;
+}
+.eg-logo-section .frontier-waste a {
+    max-width: 165px;
+}
+
+@media screen and (max-width: 767px){
+    html body .eg-logo-section .logo-box {
+        width: 50%;
+    }
+    .eg-logo-section .logo-box-inr{
+        padding: 10px 15px;
+    }
+}
+@media screen and (max-width: 350px){
+    html body .eg-logo-section .logo-box {
+        width: 100%;
+    }
+}

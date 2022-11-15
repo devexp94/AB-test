@@ -1,0 +1,31 @@
+html body .eg-start a:hover {
+  background-color: var(--blue-75);
+}
+html body .eg-start a {
+  color: var(--blue);
+  background-color: var(--white);
+  font-family: var(--header-font);
+  font-size: 16px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 188px;
+  height: 48px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease 0s;}
+
+  html body .eg-start {
+    margin-top: 10px;
+    
+  }
+  html body.eg-tax-page main h1 + p {
+    margin-bottom: 40px !important;
+}
+  html body.eg-tax-page .eg-start{
+    margin-bottom: 62px;
+    margin-top: 0px;
+  }

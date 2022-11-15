@@ -1,0 +1,24 @@
+html body .eg-headline {
+    margin-top: 40px;
+    color: #19191999;
+    font-size: 16px;
+    margin-bottom: 5px;
+    
+}
+
+html body .eg-link {
+    color: #4c70b8;
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 800;
+    display: inline-block;
+}
+
+html body .eg-link:not(:last-child){
+    margin-right: 10px;
+}
+
+html body .eg-link-container {
+    margin-bottom: 20px;
+}

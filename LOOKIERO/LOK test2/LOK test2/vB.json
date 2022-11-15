@@ -1,0 +1,10 @@
+{
+	"files": [
+		"VariantB/variation.css",
+		"VariantB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://web2.dev.aws.lookiero.co.uk/"
+	]
+}

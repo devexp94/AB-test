@@ -1,0 +1,11 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"urls": [
+		"https://info.lytx.com/oa-19-01-search-branded-lytx_lp-c.html",
+		"https://www.lytx.com/en-us/fleet-management/drivecam"
+	],
+	"inject": ""
+}

@@ -1,0 +1,10 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.trendyol.com/en/trendyol-collection/leggings-black-high-waist-p-30560409?merchantId=968&boutiqueId=602615"
+	]
+}

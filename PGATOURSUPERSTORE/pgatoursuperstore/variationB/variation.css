@@ -1,0 +1,35 @@
+.product-info .tabs .tab {
+    position: relative;
+}
+
+.product-info .tabs .tab .cust-tab {
+    position: absolute;
+    z-index: 99;
+    top: 0px;
+    left: 0px;
+    height: 53px;
+    width: 100%;
+    border-radius: 0px;
+    opacity: 0;
+}
+.product-info .tabs .tab .cust-tab ~ .tab-label{
+    color: rgb(255, 255, 255) !important;
+    background: rgb(60, 60, 60) !important;
+}
+.product-info .tabs .tab .cust-tab.active ~ .tab-label{
+    background: rgb(255, 255, 255) !important;
+    color: rgb(60, 60, 60) !important;
+}
+html body .product-info .tabs .tab .cust-tab.active ~ .tab-label:after{
+    content: url("https://www.pgatoursuperstore.com/on/demandware.static/Sites-pgatss-Site/-/en_US/v1651144153194/images/svg-icons/right-arrow-black2-icon.svg") !important;
+    transform: rotate(-90deg);
+}
+html body .product-info .tabs .tab .cust-tab ~ .tab-label:after{
+    content: url("https://www.pgatoursuperstore.com/on/demandware.static/Sites-pgatss-Site/-/en_US/v1651144153194/images/svg-icons/right-arrow-white2-icon.svg") !important;
+    float: right;
+    transform: rotate(90deg);
+}
+
+.tab .tab-switch:checked+.tab-label:before{
+    display: none;
+}
