@@ -1,0 +1,120 @@
+html body .cv-UTY-2-18-categories__section{
+  margin-top: 24px;
+}
+
+html body .cv-UTY-2-18-category__wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 12px;
+  row-gap: 24px;
+}
+html body .cv-UTY-2-18-category__content:hover {
+  border: 1px solid var(--color-cta-primary);
+}
+html body .cv-UTY-2-18-category__content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  padding: 4px 17px;
+  border: 1px solid var(--color-bg-gray-6);
+  border-radius: 5px;
+}
+
+html body .cv-UTY-2-18-category__img div{
+  text-align: center;
+  font-size: 24px;
+  color: var(--color-icon);
+}
+html body .cv-UTY-2-18-category__img div::before{
+  font-family: ifont!important;
+  font-style: normal;
+  font-weight: 400!important;
+  vertical-align: top;
+}
+html body .cv-UTY-2-18-3D::before{
+  content: "\f119";
+}
+html body .cv-UTY-2-18-2D::before{
+  content: "\f118";
+}
+
+html body .cv-UTY-2-18-tools::before{
+  content: "\f120";
+}
+html body .cv-UTY-2-18-audio::before{
+  content: "\f11b";
+}
+html body .cv-UTY-2-18-templates::before{
+  content: "\f11f";
+}
+html body .cv-UTY-2-18-vfx::before{
+  content: "\f121";
+}
+html body .cv-UTY-2-18-addOns::before{
+  content: "\f11a";
+}
+html body .cv-UTY-2-18-essentials::before{
+  content: "\f11c";
+}
+
+/* please update these extra 4 categories Icons below */
+
+
+html body .cv-UTY-2-18-new::before,
+html body .cv-UTY-2-18-onSale::before,
+html body .cv-UTY-2-18-topSelling::before,
+html body .cv-UTY-2-18-trending::before{
+  content: 'no';
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
+}
+html body .cv-UTY-2-18-new::before{
+  background: url('https://cfactory-img.s3.amazonaws.com/UTY/2.18/new_releases_black_24dp%201.svg');
+}
+html body .cv-UTY-2-18-onSale::before{
+  background: url('https://cfactory-img.s3.amazonaws.com/UTY/2.18/percent_black_24dp%201.svg');
+}
+
+html body .cv-UTY-2-18-topSelling::before{
+  background: url('https://cfactory-img.s3.amazonaws.com/UTY/2.18/align_vertical_top_black_24dp%201.svg');
+}
+
+html body .cv-UTY-2-18-trending::before{
+  background: url('https://cfactory-img.s3.amazonaws.com/UTY/2.18/trending_up_black_24dp%201.svg');
+}
+
+/* please update these extra 4 categories Icons above */
+
+
+
+html body .cv-UTY-2-18-category__name{
+  font-size: 16px;
+  color: var(--color-font-header);
+  max-width: 160px;
+  text-align: center;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 1240px) {
+  html body .cv-UTY-2-18-categories__section{
+      padding: 0 90px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html body .cv-UTY-2-18-hide{
+      display: none;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  html body .cv-UTY-2-18-categories__section{
+      display: none;
+  }
+}

@@ -1,0 +1,7 @@
+div#custplace {
+    max-width: 1215px !important;
+    width: 100% !important;
+}
+#custplace #cust-widget-note{
+    display: none;
+}

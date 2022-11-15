@@ -1,0 +1,138 @@
+.c-product-description p.desc_text {
+  font-family: "Mallory bold",Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.333;
+  font-size: 1.25rem;
+  display: block;
+  margin: 0px 0px 15px 0px;
+}
+.c-product-description + section.layout-section {
+  color: var(--theme-full-text-color);
+  background-color: unset;
+}
+.wrappperforimages + div.c-product-image-gallery {
+  display: none;
+}
+.wrappperforimages > div {
+  cursor: pointer;
+}
+
+.wrappperforimages .slide-item.video figure figure.c-video-image-gallery {
+  display: none;
+}
+.wrappperforimages .slide-item.video figure.c-video-image-gallery {
+  display: none;
+}
+.wrappperforimages .slide-item.video figure.c-video-image-gallery {
+  margin: 0px;
+}
+
+.wrappperforimages .slide-item.video figure.c-video-image-gallery .wrapper {
+  position: unset;
+  transform: translate(0px);
+}
+.b-f-product-detail-main-info.c-product-detail-main-info.stickyafterscroll {
+  position: sticky;
+  top: 100px;
+}
+.wrappperforimages .slide-item.video:after {
+  content: "";
+  font-family: "Vita-iconfont";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 40px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  display:block;
+}
+.wrappperforimages .slide-item.video {
+position: relative;
+}
+
+.wrappperforimages_4 > div {
+  width: 48%;
+  margin: 1%;
+  cursor: pointer;
+}
+
+.wrappperforimages_4 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrappperforimages_4 + div.c-product-image-gallery {
+  display: none;
+}
+
+.wrappperforimages_4 .slide-item.video figure.c-video-image-gallery {
+  display: none;
+}
+
+.wrappperforimages_4 .slide-item.video figure.c-video-image-gallery {
+  margin: 0px;
+}
+
+.wrappperforimages_4 .slide-item.video figure.c-video-image-gallery .wrapper {
+  position: unset;
+  transform: translate(0px);
+}
+.b-f-product-detail-main-info.c-product-detail-main-info.stickyafterscroll {
+  position: sticky;
+  top: 100px;
+}
+
+
+.c-product-description + section.layout-section .col-12.col-md-6:nth-child(1) {
+  display: none;
+}
+
+.c-product-description + section.layout-section .component.c-product-features-specifications {
+  padding: 1em 0;
+  text-align: left;
+}
+.c-product-description + section.layout-section > .component.c-product-features-specifications > .container {
+  padding: 0px;
+}
+
+.wrappperforimages_4 .slide-item.video:after {
+  content: "";
+  font-family: "Vita-iconfont";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 40px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  display:block;
+}
+.wrappperforimages_4 .slide-item.video {
+position: relative;
+}
+.collapse-content__item p span {
+  background-color: transparent !important;
+}
+.wrappperforimages_4 .slide-item {
+  background-color: #fff;
+}
+.wrappperforimages > div {
+  padding: 5px;
+}

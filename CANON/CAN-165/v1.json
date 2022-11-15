@@ -1,0 +1,10 @@
+{
+	"files": [
+		"./variation1/variation.css",
+		"./variation1/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.canon.co.uk/lenses/ef-50mm-f-1-8-stm-lens/"
+	]
+}

@@ -1,0 +1,13 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.canon.co.uk/cameras/interchangeable-lens-cameras/",
+		"https://www.canon.co.uk/cameras/compact-digital-cameras/",
+		"https://www.canon.co.uk/cameras/dslr-cameras/",
+		"https://www.canon.co.uk/cameras/mirrorless-cameras/"
+	]
+}

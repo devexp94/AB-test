@@ -1,0 +1,12 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.royaldoulton.com/en-gb/dinnerware/dinnerware-sets/bowl-sets/pacific-blue-tapas-bowls-set-of-6-40009467",
+		"https://www.royaldoulton.com/en-us/holiday/thanksgiving/thanksgiving/maze-grill-hammer-white-16-piece-dinner-set-40034497",
+		"https://www.royaldoulton.com/en-us/collections/a-to-z/ed-ellen-degeneres/ed-taupe-accent-plates-mixed-set-of-4-1055559"
+	]
+}

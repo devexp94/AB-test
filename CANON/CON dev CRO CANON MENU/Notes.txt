@@ -1,0 +1,11 @@
+Users will see the updated flow if they click on ‘Pro Photo & Video’ journey.
+E.g https://www.canon.co.uk/pro/
+The navigation will appear as below.
+
+The URLs will be as follows: 
+Business Imaging solutions URL: https://www.canon.co.uk/business/imaging-solutions/
+Commerce Photo Solutions: https://www.canon.co.uk/business/imaging-solutions/photo-video-and-software-solutions/
+3D Photogrammetry: https://www.canon.co.uk/business/imaging-solutions/3d-photogrammetry/ 
+Inspection Solutions: https://www.canon.co.uk/business/imaging-solutions/inspection/
+SDK: https://www.canon.co.uk/business/imaging-solutions/sdk/ 
+Photo Booth: https://www.canon.co.uk/business/imaging-solutions/photo-booth

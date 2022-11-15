@@ -1,0 +1,76 @@
+@media (min-width: 4000px){
+    html body .panel-pane.hero-title-box .hero-banner__image {
+        height: 700px;
+    }
+}
+#hero-title-box .carousel {
+    visibility : hidden;
+    display : none !important;
+    opacity : 0 !important;
+  }
+  
+  #hero-title-box>.pane-content:first-child {
+    bottom : 0px !important;
+    padding-bottom : 0px !important;
+    /* background-color : rgb(0, 0, 0) !important; */
+  }
+  
+  .cro-btn:hover {
+    background-color : rgb(255, 255, 255) !important;
+    color : rgb(30, 18, 72) !important;
+  }
+  @media (max-width: 999px) {
+    #hero-title-box .panel-pane {
+      bottom : 0px;
+      position : static !important;
+      transform : none !important;
+    }
+  }
+  .panel-pane.hero-title-box {
+    height : auto !important;
+  }
+  
+  .cro-banner .cro-btn {
+    background: #1e1248 !important;
+    border-color: #1e1248 !important;
+    color: #ffffff !important;
+  }
+
+  .cro-banner .cro-btn:hover {
+    color: #1e1248 !important;
+    background: #ffffff !important;
+  }
+
+  #hero-title-box::after {
+    display : none !important;
+    height : auto !important;
+  }
+  
+  #hero-title-box .hero-banner__content, #hero-title-box .hero-banner__image {
+    min-height : 400px;
+  }
+  
+  #hero-title-box.hero-title-box--loaded::after {
+    display : none;
+  }
+  
+  html body .panel-pane.hero-title-box.rebrand-homepage .hero-banner .field-name-field-hero-banner-headline h2, html body .panel-pane.hero-title-box.rebrand-homepage .hero-banner .field-name-field-hero-banner-message p {
+    color : rgb(17, 17, 17);
+  }
+  @media screen and (max-width:767px){
+    html body .panel-pane.hero-title-box.rebrand-homepage .hero-banner .field-name-field-hero-banner-headline h2, 
+    html body .panel-pane.hero-title-box.rebrand-homepage .hero-banner .field-name-field-hero-banner-message p,
+    html body .cro-banner .cro-btn {
+        color: #fff !important;
+    }
+    }
+
+    @media screen and (min-width: 1000px) {
+      div.col-lg-6>div>div:nth-of-type(2)>p {
+        width : 587.99px;
+      }
+      
+      /* div.col-lg-6 {
+        width : 904.99px;
+      } */
+    }

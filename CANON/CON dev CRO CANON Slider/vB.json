@@ -1,0 +1,23 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"www.canon.co.uk/cameras/eos-r5/",
+		"www.canon.co.uk/cameras/eos-r6/",
+		"www.canon.co.uk/cameras/eos-250d/",
+		"www.canon.co.uk/video-cameras/xf605/",
+		"www.canon.co.uk/cameras/eos-90d/",
+		"www.canon.co.uk/cameras/eos-r3/",
+		"www.canon.co.uk/cameras/eos-m50-mark-ii/",
+		"www.canon.co.uk/cameras/eos-850d/",
+		"www.canon.co.uk/cameras/powershot-px/",
+		"www.canon.co.uk/cameras/eos-m6-mark-ii/",
+		"www.canon.co.uk/cameras/eos-1d-x-mark-iii/",
+		"www.canon.co.uk/cameras/eos-m50/",
+		"www.canon.co.uk/cameras/canon-powershot-zoom/",
+		"www.canon.co.uk/cameras/eos-r/"
+	]
+}

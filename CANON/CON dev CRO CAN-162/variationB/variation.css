@@ -1,0 +1,69 @@
+@media screen and (min-width:768px) {
+    html body .gcdc-form-render {
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    html body .gcdc-form-render > .gcdc-form-group-formFirstname, 
+    html body .gcdc-form-render > .gcdc-form-group-formLastname,
+    html body .gcdc-form-render > .gcdc-form-group-formEmailAddress,
+    html body .gcdc-form-render > .gcdc-form-group-multiphone,
+    html body .gcdc-form-render > .gcdc-form-group-formCompany,
+    html body .gcdc-form-render > .gcdc-form-group-formPostcode,
+    html body .gcdc-form-render > .gcdc-form-group-formAddress1,
+    html body .gcdc-form-render .gcdc-form-group-formAddress2,
+    html body .gcdc-form-render .gcdc-form-group-formAddress3,
+    html body .gcdc-form-render .gcdc-form-group-formCity,
+    html body .gcdc-form-render .gcdc-form-group-formTitle,
+    html body.cv-can-162-post-hidden .gcdc-form-render > .gcdc-form-group-formCompany
+    html body.cv-can-162-post-hidden.cv-can-162-business-digital-presses-page .gcdc-form-render > .gcdc-form-group-formCompany{
+        width: 48%;
+    }
+    html body.cv-can-162-faalkosten-verlagen-page .gcdc-form-render > .gcdc-form-group-formCompany,
+    html body.cv-can-162-digitaal-factuur-page .gcdc-form-render > .gcdc-form-group-formPostcode,
+    html body.cv-can-162-digitaal-factuur-page .gcdc-form-render > .gcdc-form-group-Answer1,
+    html body.cv-can-162-insight-report-2020-page .gcdc-form-render > .gcdc-form-group-formCity,
+    html body.cv-can-162-insight-report-2020-page .gcdc-form-render > .gcdc-form-group-formDepartment,
+    html body.cv-can-162-insight-report-2020-page .gcdc-form-render > .gcdc-form-group-formCompany,
+    html body.cv-can-162-canon-ascent-programme-page .gcdc-form-render > .gcdc-form-group-formCompany,
+    html body.cv-can-162-digitalisering-in-de-bouw-page .gcdc-form-render > .gcdc-form-group-formCompany,
+    html body.cv-can-162-post-hidden.cv-can-162-business-digital-presses-page .gcdc-form-render > .gcdc-form-group-formCompany,
+    html body.cv-can-162-digital-wallpaper-printing-done-right .gcdc-form-group-formBusinessPhone + .gcdc-form-group-formCompany,
+    html[lang^="pl"] .cv-can-162-business-page .gcdc-form-render .gcdc-form-group-formEmailAddress ~ .gcdc-form-group-formCompany{
+        width: 48% !important;
+    }
+    html[lang^="pl"] .cv-can-162-business-page .gcdc-form-render .gcdc-form-group-formBusinessPhone + .gcdc-form-group-formCompany,
+    html[lang^="pl"] .cv-can-162-insight-report-2020-page .gcdc-form-render > .gcdc-form-group-formBusinessPhone + .gcdc-form-group-formCompany,
+    html body.cv-can-162-partner-with-us-right .gate-32568905-864a-4b56-86eb-b51be857f66d .gcdc-form-group-formEmailAddress,
+    html body.cv-can-162-nieuwe-inzichten-voor-inkoopprofessionals-page .gcdc-form-group-formCountry + .gcdc-form-group-emailAddress,
+    html body.cv-can-162-digitalisering-in-de-bouw-page .gcdc-form-group-formBusinessPhone + .gcdc-form-group-formCompany,
+    html body.cv-can-162-faalkosten-verlagen-page .gcdc-form-group-formBusinessPhone + .gcdc-form-group-formCompany{
+        width: 100% !important;
+    }
+    
+    html body.cv-can-162-eos-r3-page .gcdc-form-render .gcdc-form-group-formTitle,
+    html body .gcdc-form-render > .gcdc-form-group-formAddress3.hidden + .gcdc-form-group-formPostcode,
+    html body.cv-can-162-post-hidden .gcdc-form-render > .gcdc-form-group-formCompany,
+    html body .gcdc-form-render > div {
+        width: 100%;
+    }
+    html body .gcdc-gate .gcdc-form-render>div.gcdc-form-group.gcdc-form-group-multiphone .gcdc-select-wrapper, 
+    html body .gcdc-gate .gcdc-content-render>div.gcdc-form-group.gcdc-form-group-multiphone .gcdc-select-wrapper{
+        width: 25%;
+    }
+    html body .gcdc-gate .gcdc-form-render>div.gcdc-form-group.gcdc-form-group-multiphone input.gcdc-form-field.gcdc-phonemulti-main, .gcdc-gate .gcdc-content-render>div.gcdc-form-group.gcdc-form-group-multiphone input.gcdc-form-field.gcdc-phonemulti-main {
+        width: 75%;
+    }    
+    html[lang^="es"] body.cv-can-162-business-page .gcdc-form-group-formEmailAddress ~ .gcdc-form-group-formCompany > label,
+    html[lang^="es"] body.cv-can-162-business-page .gcdc-form-group-formEmailAddress + .gcdc-form-group-formBusinessPhone > label,
+    html[lang^="es"] body.cv-can-162-make-it-print-event .gcdc-form-group-formEmailAddress ~ .gcdc-form-group-formCompany > label,
+    html[lang^="es"] body.cv-can-162-partner-programme-page .gcdc-form-group-formEmailAddress + .gcdc-form-group-formBusinessPhone > label,
+    html[lang^="es"] body.cv-can-162-colortrac_smartlf_sc36_xpress-page .gcdc-form-group-formEmailAddress + .gcdc-form-group-formBusinessPhone > label{
+        min-height: 45px;
+        display: block;
+    }
+    html[lang^="es"] body.cv-can-162-business-page .gcdc-form-group-formBusinessPhone + .gcdc-form-group-formCompany > label{
+        display: inline;
+    }
+}
