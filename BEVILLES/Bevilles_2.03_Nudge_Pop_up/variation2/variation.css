@@ -14,7 +14,7 @@
 }
 
 .eg-popup-wrapper-outer {
-    position: absolute;
+    position: fixed;
     top: 117px;
     right: 20px;
     z-index: 9999999;
