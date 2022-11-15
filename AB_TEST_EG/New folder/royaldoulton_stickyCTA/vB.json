@@ -1,8 +1,0 @@
-{
-	"files": [
-		"./variationB/variation.css",
-		"./variationB/variation.js"
-	],
-	"urls": ["https://www.royaldoulton.com/en-gb"],
-	"inject": ""
-}

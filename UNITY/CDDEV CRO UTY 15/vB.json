@@ -1,0 +1,11 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://assetstore.unity.com/3d",
+		"https://assetstore.unity.com/2d"
+	]
+}

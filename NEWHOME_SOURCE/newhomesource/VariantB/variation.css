@@ -1,0 +1,37 @@
+html body .nhs_AskBuilderAQuestion{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex !important;
+    justify-content: space-between;
+    padding: 5px;
+    background: #fff;
+    z-index: 999;
+}
+html body #nhs_AskBuilderAQuestion > button {
+    width: 49% !important;
+    position: static;
+    border-radius: 4px;
+}
+html body #nhs_AskBuilderAQuestion > button.btn_Cta1:active{
+    box-shadow: none;
+}
+html body #nhs_AskBuilderAQuestion > .eg-tour {
+    background: #ffce34;
+    color: #000!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    padding: 0 5px;
+}
+html body #nhs_AskBuilderAQuestion > button.btn_Cta1 {
+    background: #fff;
+    border: 1px solid #0079d2;
+    color: #0079d2 !important;
+}
+
+.nhs_Footer .nhs_Copyright{
+    padding-bottom: 60px;
+}

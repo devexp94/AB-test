@@ -1,0 +1,205 @@
+@media (min-width: 74.5em){
+    html body .cv-1-3-review-section{
+        padding: 5.25rem 0 5.0625rem;
+    }
+    .cv-1-3-review-section .testimonial .testimonial__inner .testimonial__content {
+        grid-template-rows: 90px 20px 108px;
+        display: grid;
+        align-items: flex-start;
+        margin-bottom: 0px;
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1199px){
+    .cv-1-3-review-section .testimonial .testimonial__inner .testimonial__content {
+        grid-template-rows: 90px 20px 115px;
+        display: grid;
+        align-items: flex-start;
+        margin-bottom: 0px;
+    }
+}
+h2.cv-1-3-review-heading {
+    margin-bottom: 38px;}
+.swiper-button-disabled{
+    display: none !important;
+}
+.cv-1-3-review-section{
+    background: #eee;
+    overflow: hidden;
+    padding: 2.4375rem 0 2.5rem;
+}
+html body .swiper-button-next,
+html body .swiper-button-prev {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+    z-index: 99;
+    top: 35%;
+    /* transform: translateY(-50%); */
+    font-size: 0;
+    box-shadow: 0 2px 14px 0 rgb(0 0 0 / 31%);
+    transition: opacity .4s,visibility .4s,background .4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background: #fba528;
+}
+html body .swiper-button-prev:after,
+html body .swiper-button-next:after {
+    content: "";
+    display: block;
+    width: 0.4375rem;
+    height: 0.75rem;
+    background-size: 0.4375rem 0.75rem;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    position: relative;
+    background:url('https://www.ironmongerydirect.co.uk/assets/svg/ico-arrow-right.svg')
+}
+
+html body .swiper-button-prev:after{
+background:url('https://www.ironmongerydirect.co.uk/assets/svg/ico-arrow-left.svg')
+}
+html body .cv-1-3-main-heading {
+    margin-bottom: 40px;
+}
+html body .swiper-slide .testimonial{
+    position: relative;
+}
+
+html body .swiper-slide .testimonial:after{
+    content: '';
+    background: url('https://cfactory-img.s3.amazonaws.com/IRM/1-3/stars-5.svg');
+    width: 135px;
+    height: 25px;
+    top: -9px;
+    left: 50%;
+    position: absolute;
+    z-index: 999;
+    transform: translateX(-50%);
+    background-size: cover;
+}
+html body .swiper-slide{
+    padding-top: 25px !important;
+}
+html body .swiper-slide .list-ratings{
+    display: none
+}
+
+html body .testimonial-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+    margin-top: 30px;
+}
+html body .testimonial-header img {
+    margin-right: 12px;
+}
+html body .testimonial-header .cv-1-3-heading {
+    margin-bottom: 5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+html body .testimonial-header .cv-1-3-subheading{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #C1C1C1;
+}
+html body .testimonial .testimonial__content h3{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+html body .testimonial__content > p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #484848;
+}
+
+.cv-1-3-trust-container {
+    margin-top: 38px;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    width: 100%;
+    margin-right: auto;
+}
+
+p.cv-1-3-trust-text {
+    margin-bottom: 15px;
+    font-size: 19px;
+}
+
+p.cv-1-3-trust-text span {
+    border-bottom: 1px solid #000000;
+}
+
+h2.cv-1-3-review-heading {
+    margin-bottom: 38px;
+}
+
+.cv-1-3-review-section .testimonial .testimonial__inner {
+    background: #fff;
+    border: 0.09375rem solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 1.125rem 1.4375rem;
+    box-shadow: 4px 8px 8px rgb(0 0 0 / 5%);
+    border-radius: 8px;
+}
+.cv-1-3-trust-container a:hover {text-decoration: none;}
+html body .section-testimonials{
+    display: none;
+}
+html body .section-testimonials + section{
+    padding-top: 0 !important;
+}
+
+
+@media screen and (max-width:1024px) and (max-width:1199px){
+    .cv-1-3-review-section .testimonial .testimonial__inner .testimonial__content {
+        grid-template-rows: 90px 20px 120px;
+        display: grid;
+        align-items: flex-start;
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .cv-1-3-review-section .testimonial .testimonial__inner .testimonial__content {
+        grid-template-rows: 110px 20px 154px;
+        display: grid;
+        align-items: flex-start;
+        margin-bottom: 0px;
+    }
+}

@@ -1,0 +1,69 @@
+.css-7usorf-heroSection-WHITE .wrap .container_image {
+    display: none !important;
+}
+
+html body .css-7usorf-heroSection-WHITE .wrap .container_content {
+    position: static;
+    width: 100%;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+html body .css-7usorf-heroSection-WHITE .container_content .container_cta {
+    -webkit-box-pack: center !important;
+    -webkit-justify-content: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+}
+
+.css-7usorf-heroSection-WHITE .wrap .container_content .headline, 
+.css-7usorf-heroSection-WHITE .wrap .container_content .subhead, 
+.css-7usorf-heroSection-WHITE .css-b14f5 {
+    color: #fff !important;
+}
+
+@media screen and (min-width:1025px) {
+    
+    .wrap .container_content .headline{
+        font-size: 80px;
+        line-height: 100%;
+        max-width: 943px !important;
+    }
+}
+@media screen and (min-width:767px) and (max-width:1023px) {
+    
+    .wrap .container_content .headline{
+        font-size: 64px;
+        line-height: 100%;
+        max-width: 943px !important;
+    }
+}
+@media screen and (max-width:991px) {
+    html body .css-7usorf-heroSection-WHITE .wrap .container_content {
+        padding-bottom: 120px;
+    }
+}
+@media screen and (min-width:768px) {
+    .css-18mbe9t-fixed-ctaUp + div > div > section,
+    .css-o7lkgb-fixed + div > div > section {
+        background: url('https://cfactory-img.s3.amazonaws.com/RTI/0-6/cv-rti-0-6-desktop.png') !important;
+        background-size: cover !important;
+        background-position: top !important;
+        background-repeat: no-repeat !important;
+    }
+}
+@media screen and (max-width:767px) {
+    .css-18mbe9t-fixed-ctaUp + div > div > section,
+    .css-o7lkgb-fixed + div > div > section {
+        background: url('https://cfactory-img.s3.amazonaws.com/RTI/0-6/cv-rti-0-6-mob.png') !important;
+        background-size: cover !important;
+        background-position: top !important;
+        background-repeat: no-repeat !important;
+    }
+}

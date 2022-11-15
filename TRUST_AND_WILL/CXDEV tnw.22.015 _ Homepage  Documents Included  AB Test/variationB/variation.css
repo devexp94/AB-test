@@ -1,0 +1,16 @@
+html body main [id^="auto-tiles_section"] .richtext:not(.text-grey) p {
+    margin-bottom: 0px;
+}
+
+html body .eg-will-link {
+    margin-bottom: 0.75rem;
+    display: inline-block;
+    text-transform: capitalize;
+    color: #4c70b8;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+html body .eg-will-link:hover {
+    text-decoration: none;
+}

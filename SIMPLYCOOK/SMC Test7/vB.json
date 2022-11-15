@@ -1,0 +1,11 @@
+{
+	"files": [
+		"VariantB/variation.css",
+		"VariantB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.simplycook.com/facebook/FB19",
+		"https://www.simplycook.com/recipes/checkout"	
+	]
+}

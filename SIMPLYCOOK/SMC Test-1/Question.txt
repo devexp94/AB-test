@@ -1,0 +1,4 @@
+1. On check out page I guess there are dynamic classes so I have entered the selector as per my assumption. Please check.   
+
+
+2. And I didn't get any cross currency price but still I put there you can do JS for that. 

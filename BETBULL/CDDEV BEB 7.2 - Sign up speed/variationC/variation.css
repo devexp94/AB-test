@@ -1,0 +1,67 @@
+html body.eg-casino-c-live #lp-pom-image-927,
+html body.eg-casino-c-slots #lp-pom-image-831,
+html body.eg-casino-a-slots #lp-pom-image-831 {
+  z-index: 99;
+}
+
+html body.eg-casino-c-slotsnew #lp-pom-image-1009:after,
+html body.eg-casino-c-live #lp-pom-image-927:after,
+html body.eg-casino-c-slots #lp-pom-image-831:after,
+html body.eg-casino-a-slots #lp-pom-image-831:after,
+html body.eg-casino-b-slots #lp-pom-image-908:after {
+  content: 'Register in under 1 minute!';
+  font-family: 'Montserrat',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 9px 15px 9px 34px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('https://cfactory-img.s3.amazonaws.com/BEB/7-2/np_quick.svg');
+  background-repeat: no-repeat;
+  background-position: top 8px left 11px;
+  width: 214px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #041c42;
+  text-transform: uppercase;
+  border-radius: 30px;
+}
+html body.eg-casino-b-slots #lp-pom-text-907 {
+  margin-top: 57px;
+}
+html body.eg-casino-c-slotsnew #lp-pom-text-830,
+html body.eg-casino-c-slotsnew #lp-pom-text-829,
+html body.eg-casino-c-live #lp-pom-text-829,
+html body.eg-casino-c-slots #lp-pom-text-829,
+html body.eg-casino-a-slots #lp-pom-text-829 {
+  margin-top: 45px;
+}
+@media screen and (max-width: 600px){
+  html body.eg-casino-c-slotsnew #lp-pom-block-824,
+  html body.eg-casino-c-live #lp-pom-block-824,
+  html body.eg-casino-c-slots #lp-pom-block-824,
+  html body.eg-casino-a-slots #lp-pom-block-824,
+  html body.eg-casino-b-slots #lp-pom-block-902 {
+    width: 100%;
+  }
+
+  html body.eg-casino-c-live #lp-pom-text-830{
+    top: 386px;
+  }
+  html body.eg-casino-c-live #lp-pom-image-931 .lp-pom-image-container img,
+  html body.eg-casino-c-live #lp-pom-image-931 .lp-pom-image-container{
+    width: 170px;
+    height: 222px;
+  }
+  html body.eg-casino-c-live #lp-pom-image-931{
+      left: 69px;
+      top: 414px;
+  }
+}

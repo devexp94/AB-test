@@ -1,0 +1,108 @@
+.cv-beb-2-3_banner-space{
+    background: #fff;
+    width: 100%;
+    height: 10px;
+    position: relative;
+}
+.cv-beb-2-3_banner-games .lp-pom-block-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1012px;
+    height: 488px;
+    display: flex;
+    align-items: center;
+}
+@media screen and (min-width:601px) {
+    html body.cv-2-3 #lp-pom-image-674,
+    html body.cv-2-3 #lp-pom-image-671,
+    html body.cv-2-3 #lp-pom-text-753,
+    html body.cv-2-3 #lp-pom-image-671,
+    html body.cv-2-3 #lp-pom-image-673{
+        display: block !important;
+    }
+
+    .cv-beb-2-3_banner-games .cv-beb-2-3_img_mobile{
+        display: none;
+    }
+
+    html body.cv-2-3 .cv-beb-2-3_banner-text{
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    html body.cv-2-3 .cv-beb-2-3_banner-games .cv-beb-2-3_img-right-pc img{
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        height: 90%;
+    }
+    html body.cv-2-3 .cv-beb-2-3_img-left-pc {
+        padding-left: 30px;
+    }
+    html body.cv-2-3 .cv-beb-2-3_banner-games{
+        overflow: hidden;
+        background: linear-gradient(100.53deg, #001C44 3.74%, #02214D 9.88%, #2265C1 87.95%);
+    }
+    
+    
+}
+@media screen and (max-width:600px) {
+    html body.cv-2-3 .cv-beb-2-3_banner-text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    html body.cv-2-3 .cv-beb-2-3_banner-games{
+        overflow: hidden;
+        background: linear-gradient(218.31deg, #032C66 38.07%, #2265C1 96.88%);
+    }
+    .cv-beb-2-3_banner-games .cv-beb-2-3_img-right-pc img{
+        width: 200px;
+    }
+    .cv-beb-2-3_banner-games .cv-beb-2-3_img_mobile{
+        display: block;
+    }
+    html body .cv-beb-2-3_banner-games .cv-beb-2-3_img_desktop{
+        display: none;
+    }        
+    html body .cv-beb-2-3_banner-games .lp-pom-block-content{
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px 10px;
+    }
+    .cv-beb-2-3_img-left-pc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 60px 15px;
+    }
+}
+@media screen and (min-width:991px) and (max-width:1200px) {
+    html body .cv-beb-2-3_banner-games .cv-beb-2-3_img-right-pc .cv-beb-2-3_img_desktop{
+        height: 90%;    
+    }
+}
+@media screen and (max-width: 360px) {
+    .cv-beb-2-3_img-left-pc img[alt="winner story"]{
+        max-width: 290px;
+    }
+}
+p.cv-beb-2-3_banner-text {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}

@@ -1,0 +1,29 @@
+.eg-selection-div .option {
+    margin-bottom: 0px;
+    padding: 10px;
+    background: #f7f7f7;
+    width: 48%;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.eg-selection-div {
+    display: flex;
+    justify-content: space-between;
+    margin: 13px 0px;
+}
+
+p.option.eg-active {
+    -webkit-box-shadow: 1px 1px 5px #c6c6c6 !important;
+    -moz-box-shadow: 1px 1px 5px #c6c6c6 !important;
+    box-shadow: 1px 1px 5px #c6c6c6 !important;
+}
+.selector-wrapper:not(:first-child) > select{
+    display: none;
+}
+.eg-selection-div.eg-sec-selection .option:nth-child(2) {
+    position: relative;
+}
+
+.eg-selection-div.eg-sec-selection .option:nth-child(2):after {content: 'Nur +15€';position: absolute;top: -8px;right: 0px;padding: 2px 4px;background: rgb(233 243 235);border-radius: 4px;font-size: 9px;color: #00b14d;box-shadow: 0px 0px 4px 0px rgba(233,243,235,0.21);-webkit-box-shadow: 0px 0px 4px 0px rgba(233,243,235,0.21);-moz-box-shadow: 0px 0px 4px 0px rgba(233,243,235,0.21);}

@@ -1,0 +1,64 @@
+@media screen and (max-width:749px) {
+    html body header.site-header {
+        position: relative;
+    }
+    html body header.site-header .site-header__icons-wrapper .site-header__menu {
+        order: -1;
+    }
+    html body header.site-header .site-header__logo {
+        padding: 0px;
+        margin: 0px;
+    }
+    html body header.site-header .grid__item:first-child {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0px;
+        max-width: 80px;
+        margin: 0px !important;
+        z-index: 2;
+    }
+    
+    html body header.site-header .grid__item:nth-child(3) {
+        width: 100%;
+        padding-right: 0px;
+    }
+    
+    header.site-header .site-header__icons-wrapper .site-header__search-toggle {
+        margin-right: auto;
+    }
+    header.site-header .site-header__icons-wrapper {
+        padding: 10px 0px;
+        padding-right: 10px;
+    }
+    html body header.site-header .site-header__icons-wrapper .site-header__menu:after {
+        content: 'MENU';
+        display: block;
+        font-size: 7px;
+        font-weight: 600;
+        margin-top: 8px;
+    }
+    
+    button.btn--link.site-header__icon.site-header__search-toggle.js-drawer-open-top:after {
+        content: 'SEARCH';
+        display: block;
+        font-size: 7px;
+        font-weight: 600;
+        margin-top: 8px;
+    }    
+    .site-header__icon.site-header__cart .site-header__cart-count{
+        right: 16px;
+        background: #02af4f !important;
+    }
+    .site-header__icon.site-header__cart {
+        text-align: center;
+    }
+    .site-header__icon.site-header__cart:after {
+        content: 'WARENKORB';
+        display: block;
+        font-size: 7px;
+        font-weight: 600;
+        margin-top: 8px;
+    }
+}

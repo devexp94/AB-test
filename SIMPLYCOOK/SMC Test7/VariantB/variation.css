@@ -1,0 +1,426 @@
+/* For FB Page */
+html body.eg-banner-hide .eg-Banner{
+    display: none;
+}
+html body .eg-Banner{
+    background: #62a744;
+}
+
+html body .eg-Banner .eg-Banner-inr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 10px;
+    position: relative;
+}
+
+html body .eg-Banner .eg-Banner-text {
+    margin: 0px;
+    font-family: 'SimplyCook2',sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    line-height: 25px;
+}
+
+html body .eg-Banner .eg-cross {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+html body .eg-Banner img {
+    margin-right: 20px;
+    margin-bottom: 3px;
+}
+
+html body .eg-Banner .eg-Banner-text span {
+    font-weight: 100;
+    font-size: 13px;
+    margin-left: 13px;
+}
+
+/* For Checkout page */
+
+html body .eg-gift-section {
+    background: #f8f8f8;
+    padding: 16px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+html body .eg-gift-section .eg-heading {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    letter-spacing: -.3px;
+}
+
+html body .eg-gift-section img {
+    max-width: 77px;
+    margin-right: 25px;
+}
+
+html body .eg-gift-section .eg-gift-content p {
+    margin: 0px;
+}
+
+html body .eg-gift-section .eg-gift-content .eg-para {
+    font-size: 13px;
+}
+
+html body .eg-gift-section .eg-gift-content .eg-link {
+    font-size: 15px;
+    color: #63a431;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+html body .eg-gift-section .eg-gift-content .eg-link:hover {
+    text-decoration: none;
+}
+
+
+/* Popup */
+html body.fe-popup-show .eg-gift-model {
+    display: block;
+}
+html body .eg-gift-model {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    display: none;
+}
+
+html body .eg-gift-model .eg-gift-overlay {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #00000030;
+}
+
+html body .eg-gift-model .eg-content {
+    position: absolute;
+    width: 942px;
+    background: #ffffff;
+    box-shadow: 0 -20px 50px 0 rgb(0 0 0 / 10%);
+    border-radius: 10px;
+}
+
+html body .eg-gift-model .eg-box {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 10px;
+    max-width: 200px;
+}
+
+
+html body .eg-gift-model .eg-top-section .eg-top-para {
+    font-size: 13px;
+    margin-bottom: 0px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #212121;
+}
+
+html body .eg-gift-model .eg-top-section {
+    padding: 16px 44px 16px 44px;
+    background: #eff6ea;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+html body .eg-gift-model .eg-top-section .eg-top-heading svg {
+    margin-right: 10px;
+    fill: #6ba83a;
+    position: absolute;
+    top: -3px;
+    left: -32px;
+}
+html body .eg-gift-model .eg-top-section .eg-cross svg {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    fill: #414042;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+html body .eg-gift-model .eg-top-section .eg-top-heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #6ba83a;
+    position: relative;
+    letter-spacing: -.9px;
+}
+
+html body .eg-gift-model .eg-top-para b ~ b {
+    font-size: 17px;
+    font-weight: 600;
+    color: #494b49;
+}
+
+html body .eg-gift-model .eg-cross {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+html body .eg-gift-model .eg-middle-section {
+    display: flex;
+    align-items: center;
+    padding: 30px 44px 0px 44px;
+}
+
+html body .eg-gift-model .eg-middle-section .eg-middle-left{
+    width: 50%;
+}
+html body .eg-gift-model .eg-middle-section .eg-middle-right{
+    width: 50%;
+    text-align: center;
+}
+html body .eg-gift-model .eg-middle-heading {
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: -.5px;
+    margin-top: 10px;
+    color: #484a48;
+}
+html body .eg-gift-model .eg-middle-right img {
+    max-width: 258px;
+    width: 100%;
+}
+html body .eg-gift-model .eg-middle-para {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #686b6a;
+}
+html body .eg-gift-model .eg-bottom-section {
+    padding: 20px 44px;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+html body .eg-gift-model .eg-box-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px -10px;
+}
+html body .eg-box-section .eg-title {
+    margin-bottom: 0px;
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 600;
+    letter-spacing: -.5px;
+    margin-top: 7px;
+    color: #484a48;
+}
+html body .eg-gift-model .eg-bottom-para {
+    font-size: 12px;
+    margin-top: 5px;
+    letter-spacing: -.5px;
+    color: #9c9c9c;
+}
+html body .eg-gift-model .eg-box-section .eg-image {
+    text-align: center;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 123px;
+}
+html body .eg-gift-model .eg-box-section .eg-box1 .eg-image,
+html body .eg-gift-model .eg-box-section .eg-box2 .eg-image,
+html body .eg-gift-model .eg-box-section .eg-box3 .eg-image,
+html body .eg-gift-model .eg-box-section .eg-box4 .eg-image{
+    background-size: 100% 92px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+}
+html body .eg-gift-model .eg-box-section .eg-box1 .eg-image{
+    background-image: url('https://cfactory-img.s3.amazonaws.com/SMC/7.4/revitalising2_1-removebg-preview-1.svg');
+    position: relative;
+}
+html body .eg-gift-model .eg-box-section .eg-box1 .eg-image:after {
+    position: absolute;
+    content: 'TOP PICK';
+    top: -12px;
+    left: 9px;
+    padding: 2px 9px;
+    background: #d26b75;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    display: block;
+    font-weight: 500;
+}
+html body .eg-gift-model .eg-box-section .eg-box2 .eg-image{
+    background-image: url('https://cfactory-img.s3.amazonaws.com/SMC/7.4/kori-1-1.svg');
+}
+html body .eg-gift-model .eg-box-section .eg-box3 .eg-image{
+    background-image: url('https://cfactory-img.s3.amazonaws.com/SMC/7.4/altruist-large-2.svg');
+}
+html body .eg-gift-model .eg-box-section .eg-box4 .eg-image{
+    background-image: url('https://cfactory-img.s3.amazonaws.com/SMC/7.4/pur-desktop-1.svg');
+}
+#sulu-headless-container > div > .flex > .eg-gift-section,
+html body .eg-gift-model .eg-mobile-cross{
+    display: none !important;
+}
+/*  */
+@media screen and (max-width: 1023px) {
+    html body .eg-gift-model .eg-content{
+        width: 95%;
+    }
+    html body .eg-gift-section {
+        max-width: 350px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    #sulu-headless-container > div > .flex > .eg-gift-section{
+        display: flex !important;
+        margin-bottom: 20px;
+    }
+    #sulu-headless-container > div > .flex > div:nth-child(2) .eg-gift-section{
+        display: none;
+    }    
+}
+
+@media screen and (min-width:768px) {
+    html body .eg-gift-model .eg-content {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    html body .eg-gift-section {
+        max-width: 333px;
+    }
+    html body .eg-gift-model .eg-content{
+        max-width: 500px !important;
+        width: 100% !important;
+    }
+
+    html body.fe-popup-slide .eg-gift-model .eg-content{
+        transform: translate(-50%, 0%);
+        left: 50%;
+        width: 100%;
+        opacity: 1 !important;
+    }
+    html body  .eg-gift-model .eg-content{
+        top: 0px !important;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, 1000%);
+        opacity: 0 !important;
+        transition: transform 2s ease, opacity 2s ease !important;
+    }
+
+
+    html body .eg-gift-model .eg-content-inr {
+        overflow-y: scroll;
+        max-height: 100vh;
+        padding-top: 40px;
+        position: relative;
+    }
+    #sulu-headless-container > div > .flex > .eg-gift-section {
+        margin-bottom: 20px;
+    }
+    html body .eg-gift-model .eg-top-section,
+    html body .eg-gift-model .eg-bottom-section,
+    html body .eg-gift-model .eg-middle-section{
+        padding: 20px 15px 0px 15px;
+    }
+    html body .eg-gift-model .eg-bottom-section {
+        padding-top: 0px;
+    }
+
+    html body .eg-gift-model .eg-content-inr > .eg-mobile-cross {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        cursor: pointer;
+    }
+    html body .eg-gift-model .eg-content-inr > .eg-mobile-cross svg{
+        fill: #414042;
+    }
+    html body .eg-gift-model .eg-mobile-cross{
+        display: flex !important;
+    }
+    html body .eg-gift-model .eg-cross{
+        display: none;
+    }    
+
+    html body .eg-gift-model .eg-middle-section .eg-middle-left{
+        width: 100%;
+    }
+    html body .eg-gift-model .eg-middle-section .eg-middle-right{
+        display: none;
+    }
+    html body .eg-gift-model .eg-box-section{
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+    }
+    html body .eg-gift-model .eg-bottom-para {
+        order: -1;
+        margin-top: 0px;
+    }
+    html body .eg-gift-model .eg-box{
+        width: 50%;
+    }
+    html body .eg-gift-model .eg-top-section .eg-top-heading svg{
+        position: static;
+    }        
+    html body .eg-gift-model .eg-middle-para {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    html body .eg-gift-model .eg-middle-heading{
+        font-size: 18px;
+    }
+    html body .eg-gift-model .eg-top-section .eg-top-heading{
+        font-size: 17px;
+    }
+}
+
+/* For FB Page */
+@media screen and (max-width: 680px) {
+    html body .eg-Banner .eg-Banner-text {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    html body .eg-Banner .eg-Banner-text span {
+        margin-left: 0px;
+    }
+    html body .eg-Banner .eg-cross {
+        top: 6px;
+        transform: none;
+        right: 7px;
+    }   
+    html body .eg-Banner img {
+        margin-right: 15px;
+        margin-bottom: 0px;
+    }
+}

@@ -1,0 +1,22 @@
+html body .eg-mobile-text {
+    display: flex;
+    align-items: center;
+    background: #1882f0;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 0px;
+    letter-spacing: .39px;
+    line-height: 14px;
+    font-family: "Proxima Nova Soft regular";
+}
+
+html body .eg-mobile-text  svg {
+    margin-right: 10px;
+}
+
+html body .eg-mobile-text b {
+    margin-left: 9px;
+}
+html body .invite-banner {
+    margin-bottom: 0px;
+}

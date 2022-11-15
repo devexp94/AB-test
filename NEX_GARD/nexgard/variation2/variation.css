@@ -1,0 +1,4 @@
+.locator-page .view-online-account .view-content .account .views-field-field-icon img, 
+.locator-page .view-online-account .view-content .account h3 {
+    cursor: pointer;
+}

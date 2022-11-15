@@ -6,7 +6,7 @@ html body .eg-toster-content {
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 33px;
+    margin-bottom: 40px;
 }
 
 
@@ -54,6 +54,7 @@ html body .eg-toster-cross {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 11px;
 }
 .eg-promo-timer  .eg-hours,
 .eg-promo-timer .eg-date {
@@ -107,70 +108,7 @@ html body .eg-toster-cross {
 }
 @media screen and (max-width:767px) {
 
-    html body .eg-toster {
+    .eg-toster {
         max-width: 375px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 25px;
     }
-    
-}
-.thankyou_content > div:nth-child(1) {
-    text-align: center;
-}
-.thankyou_content > div:nth-child(1) .main_heading {
-    position: relative;
-    line-height: 50px;
-    padding-left: 10px;
-    text-align: center;
-    display: inline-block;
-    margin-top: 60px;
-}
-.eg-toster {
-    background: #47acad;
-    color: #fff;
-    border-radius: 25px;
-    padding: 30px 25px 5px;
-    margin-top: 11px;
-}
-html body .eg-toster-heading {
-    font-size: 24px !important;
-    font-weight: bold !important;
-    color: #ffffff;
-    letter-spacing: 0.66px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    width: 100%;
-    text-align: center;
-}
-.eg-toster .eg-link {
-    display: block;
-    background: #203d5a;
-    padding: 18px 30px;
-    text-align: center;
-    color: #fff;
-    font-size: 18px;
-    letter-spacing: 1px;
-    border-radius: 4px;
-    margin-top: 25px;
-    width: 80%;
-}
-.eg-promo-timer .eg-box .eg-number {
-    border-radius: 2px;
-    color: #1f3d5c;
-    font-weight: 600;
-    padding: 4px 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 27px;
-    background: #fff;
-}
-.eg-promo-timer .eg-box .eg-text {
-    text-transform: capitalize;
-    color: #1f3d5c;
-    font-weight: 600;
-    margin-top: 10px;
-    margin-left: 10px;
 }

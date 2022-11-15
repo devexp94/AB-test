@@ -1,0 +1,20 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://lp.betbull.com/sport_a_mixeda_gale/",
+		"https://lp.betbull.com/sport_a_mixed_fbec/",
+		"https://lp.betbull.com/sport_a_oc_fbec/",
+		"https://lp.betbull.com/sport_a_mixed_sepg/",
+		"https://lp.betbull.com/sport_c_footballbfgf_gale/",
+		"https://lp.betbull.com/sport_c_footballqs_gale/",
+		"https://lp.betbull.com/sport_c_brand_coak/",
+		"https://lp.betbull.com/sport_ps_mixed_sepg/",
+		"https://lp.betbull.com/sport_ps_mixed_yfce/",
+		"https://lp.betbull.com/bet-with-bulls-2/",
+		"https://lp.betbull.com/sport_b_branding_coak/"
+	]
+}

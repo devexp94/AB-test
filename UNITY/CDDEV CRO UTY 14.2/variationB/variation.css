@@ -1,0 +1,117 @@
+html body .cv-uny-14-heading {
+    font-size: 0.8125rem;
+    line-height: 1.8125rem;
+    position: relative;
+    padding-bottom: 0;
+    font-weight: 400;
+    list-style-type: none;
+    margin-bottom: 0px;
+    cursor: pointer;
+    padding-left: 26px;
+    margin-left: -26px;
+    background: #fff;
+}
+html body .cv-uny-14-heading:after{
+    font-size: 22px;
+    content: "\f2f9";
+    font-family: "Material-Design-Iconic-Font",sans-serif;
+    position: absolute;
+    right: 10px;
+    width: 18px;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #000000;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transition: -webkit-transform 350ms ease-in-out;
+    transition: -webkit-transform 350ms ease-in-out;
+    transition: transform 350ms ease-in-out;
+    transition: transform 350ms ease-in-out,-webkit-transform 350ms ease-in-out;
+    background: #ebf6ff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 10px;
+    padding: 3px 0px;
+}
+html body .cv-uny-14-heading.cv-uny-14-active:after{
+    transform: translateY(-50%) rotate(180deg);
+    -webkit-transition: -webkit-transform 350ms ease-in-out;
+    transition: -webkit-transform 350ms ease-in-out;
+    transition: transform 350ms ease-in-out;
+    transition: transform 350ms ease-in-out,-webkit-transform 350ms ease-in-out;
+}
+html body .cv-uny-14-heading + ul {
+    max-height: 0px;
+    overflow: hidden;
+    opacity:0;
+    transition: max-height 350ms ease, opacity 350ms ease;
+}
+html body .cv-uny-14-heading + ul {
+    padding-left: 26px !important;
+}
+
+html body .cv-uny-14-heading.cv-uny-14-active + ul {
+    max-height: 500px;
+    opacity: 1;
+    overflow: visible;
+    transition: max-height 350ms ease, opacity 350ms ease;
+}
+html body .cv-uny-14-heading:before{
+    font-size: 1.3125rem;
+    display: block;
+    position: absolute;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    font-family: "Material-Design-Iconic-Font",sans-serif;
+    left: 17px;
+    content: "\f278";
+    color: #2196f3;
+}
+html body .cv-uny-14-heading.cv-uny-14-active:before{
+    content: "\f273";
+}
+html body .cv-uny-14-heading:hover{
+    background: #e8f6ff;
+}
+html body .cv-all-bullets .cv-uny-14-heading{
+    background: transparent;
+    margin-left: -36px;
+    padding-left: 37px;
+}
+
+.cv-all-bullets .cv-uny-14-heading {
+    background: transparent;
+    margin-left: -37px;
+    padding-left: 37px;
+}
+
+
+.cv-all-bullets .cv-uny-14-heading:hover{
+    background: #ffffff26;
+}
+
+.cv-all-bullets > .component-list:not(.cv-plus-bullets) > li:last-child:before{
+    display: none;
+}
+html body .cv-all-bullets .cv-uny-14-heading:after{
+    background: transparent !important;
+}
+@media screen and (min-width:1006px) {
+        
+    .cv-all-bullets .cv-uny-14-heading:before{
+        color: #fff;
+    }
+
+    .cv-all-bullets .cv-uny-14-heading:after{
+        color: #fff;
+    }
+}

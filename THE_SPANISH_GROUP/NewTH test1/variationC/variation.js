@@ -74,7 +74,7 @@
 
     function init() {
     
-        document.querySelector('.wrapper .thankyou_content .main_heading').insertAdjacentHTML('afterend', egToster);
+        document.querySelector('.wrapper .thankyou_content > div:first-child').insertAdjacentHTML('beforebegin', egToster);
         document.querySelector('body').classList.add('eg-timer-show');
         
       // document.querySelector('.eg-toster-cross').addEventListener('click', function(){

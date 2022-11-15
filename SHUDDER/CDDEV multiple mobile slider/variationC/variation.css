@@ -1,0 +1,63 @@
+@media screen and (max-width:767px) {
+  
+.eg-wrapper {
+  max-width: 358px;
+  margin: 0 auto;
+}
+.eg-wrapper .eg-link {
+  display: flex;
+}
+
+.eg-wrapper .eg-link img {
+  width: 100%;
+}
+div[class^="eg-"] .swiper-container {
+  max-width: 500px; 
+  margin: 0 auto;
+}
+
+ div[class^="eg-"] .swiper-button-prev svg{  
+  transform: rotate(180deg);
+} 
+
+div[class^="eg-"] .swiper,
+div[class^="eg-"] .swiper-container {
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: -24px;
+    margin-right: -24px;
+}
+
+div[class^="eg-"] .swiper-button-next, 
+div[class^="eg-"] .swiper-button-prev{
+  margin-top: 0px;
+  transform: translateY(-50%);
+  height: 100%;
+}
+div[class^="eg-"] .swiper-button-prev{
+    left: 27px !important;
+    width: 27px;
+    height: 31px;   
+    background: none !important;
+}
+div[class^="eg-"] .swiper-button-next {
+    right: 27px !important;
+    width: 27px;
+    height: 31px;
+    background: none !important;
+}
+
+div[class^="eg-"] .swiper-button-prev:after,
+div[class^="eg-"] .swiper-button-next:after {
+    display: none;
+}
+.eg-meet-section .heading,
+.eg-classics-section .heading,
+.eg-exclusive-section .heading,
+.eg-original-section .heading,
+.eg-trending-section .heading {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+}

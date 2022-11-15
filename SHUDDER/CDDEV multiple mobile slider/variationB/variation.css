@@ -1,0 +1,74 @@
+.eg-wrapper {
+  padding: 16px;
+  max-width: 358px;
+  margin: 0 auto;
+}
+.swiper-container {
+  max-width: 500px; 
+  margin: 0 auto;
+}
+
+.egswiper .swiper-button-prev:after, 
+.egswiper .swiper-button-next:after{
+  display: none;
+  background: transparent !important;
+}
+
+.egswiper .swiper-button-prev, 
+.egswiper .swiper-button-next {
+    background: none !important;
+}
+.egswiper .swiper-button-prev svg{
+  fill: #ffffff;
+  transform: rotate(180deg);
+}
+
+.egswiper .swiper-button-next svg{
+  fill: #ffffff;
+}
+
+@media screen and (max-width: 600px) {
+  .swiper.egswiper,
+  .egswiper .swiper-container {
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: -24px;
+    margin-right: -24px;
+}
+.egswiper .swiper-button-prev{
+  left: -2px;
+} 
+.egswiper .swiper-button-next{
+  right: -2px;
+}
+.egswiper .swiper-button-next, 
+.egswiper .swiper-button-prev{
+  margin-top: 0px;
+  transform: translateY(-50%);
+}
+}
+.swiper-button-prev, 
+.swiper-button-next {
+    color: #fff !important;
+    background: none !important;
+    font-size: 18px !important;
+    width: 20px !important;
+}
+.swiper-button-prev{
+    left: -2px !important;
+}
+.swiper-button-next {
+    right: -2px !important;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    font-size: 20px !important;
+}
+.eg-meet-section .heading,
+.eg-classics-section .heading,
+.eg-exclusive-section .heading,
+.eg-original-section .heading,
+.eg-trending-section .heading {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}

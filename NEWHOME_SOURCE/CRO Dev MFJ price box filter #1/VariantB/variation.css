@@ -1,0 +1,58 @@
+.eg-filter {
+    width: calc(100% - 73px);
+}
+
+.eg-filter-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
+    background: #fff;
+    padding: 7px;
+}
+
+p.eg-heading {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.eg-filter select {
+    box-sizing: border-box;
+    width: 44.1388%;
+    height: 45px;
+    border-radius: 4px;
+    border: none;
+    padding: 12px 4.8611%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: 0 0;
+    max-width: 115px;
+    text-align: center;
+    background: #e6e6e6;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span.eg-SeparatorForm {
+    display: inline-block;
+    padding: 0px 5px;
+    margin: 0px;
+}
+
+button.eg-button {
+    font-size: 16px;
+    height: 45px;
+    padding: 0px 20px;
+    background: #ffce34;
+    border-radius: 4px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+@media screen and (max-width:350px) {
+    .eg-filter select{
+        max-width: 90px;
+    }
+}

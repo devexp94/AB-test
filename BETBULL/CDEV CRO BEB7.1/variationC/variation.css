@@ -1,0 +1,107 @@
+@media screen and (min-width:2000px) {
+  html body.cv-7-1 .cv-beb-7-1_banner-games  .cv-beb-7-1_banner-pc{
+    background-size: contain !important;
+  }
+}
+@media screen and (min-width:768px) {
+  html body.cv-7-1 .cv-beb-7-1-banner-left-srction{
+    width: 44%;
+    top: calc(50% - 20px) !important;
+    left: 15% !important;
+  }
+}
+@media screen and (min-width:1280px) {
+  html body .cv-beb-7-1_banner-games .cv-beb-7-1_banner-pc{
+    background-image: url("https://cfactory-img.s3.amazonaws.com/BEB/7-1/beb-7-1-back.jpg") !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: top center !important;
+    position: relative;
+    background-color: #0761BE;
+  }
+  html body .cv-beb-7-1-img-desktop {
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.cv-beb-7-1_banner-games .cv-beb-7-1_banner-space {
+  height: 10px;
+  background: #fff;
+}
+.cv-beb-7-1-banner{
+  display: flex;
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+}
+.cv-beb-7-1-banner-inr {
+  position: relative;
+  width: 100%;
+}
+.cv-beb-7-1-banner-left-srction {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 14%;
+  width: 46%;
+  transform: translateY(-50%);
+}
+.cv-beb-7-1_banner-pc .cv-beb-7-1-banner-left-srction img {
+  width: 100%;
+}
+img.cv-beb-7-1-img-desktop {
+  height: 100%;
+  width: 100%;
+}
+html body.cv-7-1 #lp-pom-block-588 {
+  display: none;
+}
+@media screen and (min-width:601px) {
+  .cv-beb-7-1-mobile-text,
+  img.cv-beb-7-1-img-mobile{
+    display: none;
+  }
+  #lp-pom-text-609 li p {
+    margin-bottom: 12px;
+  }
+  html body.cv-7-1 .cv-beb-2-2_banner-left-top-pc img {
+    width: 100%;
+  }
+  html body.cv-7-1 .cv-beb-2-2_banner-left-top-pc {
+    width: 74.5px;
+  }
+}
+@media screen and (max-width:600px) {
+  
+  html body .cv-beb-7-1-banner{
+    background: #ffffff !important;
+  }
+  html body img.cv-beb-7-1-desktop-text,
+  html body img.cv-beb-7-1-img-desktop{
+    display: none !important;
+  }
+  html body .cv-beb-7-1_banner-games,
+  html body .cv-beb-7-1-img-mobile {
+    width: 100%;
+  }
+  html body .cv-beb-7-1_banner-games .cv-beb-7-1-banner-left-srction {
+    width: 68%;
+    left: 5%;
+    top: 42%;
+  }
+  html body .cv-beb-7-1-mobile-text img:nth-child(2) {
+    margin-top: 10px;
+  }
+  html body.cv-7-1 #lp-pom-text-622 li p {
+    margin-bottom: 11px;
+  }
+  html body.cv-7-1 .cv-beb-2-2_banner-locker-mo {
+    width: 47.5px;
+    height: 64px;
+  }
+  html body.cv-7-1 .cv-beb-2-2_banner-locker-mo img{
+    width: 100%;
+  }
+
+}

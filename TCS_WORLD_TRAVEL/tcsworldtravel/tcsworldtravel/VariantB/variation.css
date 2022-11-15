@@ -1,0 +1,39 @@
+#mobile-filter-container-ui {
+	position: fixed;
+  	width: 100%;
+  	left: 0;
+  	margin-top: 0;
+  	z-index: 9;
+}
+
+@media screen and (max-width: 720px) {
+  #mobile-filter-container-ui {
+  	display: block;
+  }
+  .eg-sticky-tab #mobile_tabs {
+	position: fixed;
+    z-index: 99;
+    top: 163px;
+    width: 100%;
+    left: 0px;
+    background: #fff;
+    /* border-left: 1px solid;
+    border-right: 1px solid; */
+	}
+	.eg-sticky-tab #mobile_tabs a {
+		width: 33.33%;
+		margin-bottom: 0px !important;
+		margin-top: 0px !important;
+	}
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 720px) {
+  #btn-filters-close {
+  	display: block;
+  }
+  
+  .btn-view-trips {
+  	display: block;
+  }
+}

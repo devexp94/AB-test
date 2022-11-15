@@ -1,0 +1,11 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.wateraid.org/uk/",
+		"https://www.wateraid.org/uk/pay-in-your-fundraising"
+	]
+}

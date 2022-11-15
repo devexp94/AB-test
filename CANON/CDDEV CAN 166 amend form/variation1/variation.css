@@ -1,0 +1,63 @@
+#err_callback-first-name + .pl-m-b2b-request-callback-form-fields__label,
+#err_callback-last-name + .pl-m-b2b-request-callback-form-fields__label,
+#err_callback-email ~ .pl-m-b2b-request-callback-form-fields__label{
+    display: none;
+}
+
+html body .pl-m-b2b-click2connect-formTab__selector,
+html body .pl-m-b2b-click2connect-form-callback-panel1{
+    padding-top: 0px;
+}
+
+.pl-m-b2b-clicktoconnect-form-fields .pl-m-b2b-clicktoconnect-form-fields__group:nth-child(6) .pl-m-b2b-request-callback-form-fields__label {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+html body textarea#pl-m-b2b-clicktoconnect-form-fields__textarea {
+    min-height: 20px !important;
+    resize: none;
+    white-space: nowrap;
+    overflow-x: auto;
+    max-height: 54px !important;
+    overflow: auto;
+    margin-bottom: 20px;
+    padding: 10px 8px;
+    box-shadow: none;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+html body .pl-m-b2b-click2connect-formTab__selector {
+    margin-bottom: 45px;
+    }
+html body .ppContainer a[href="/terms_and_conditions/"] {
+    text-align: center;
+    padding-bottom: 10px;
+}
+.pl-m-b2b-click2connect-panel .ppContainer {
+    padding-top: 10px !important;
+}
+html body .pl-m-b2b-clicktoconnect-form-submit .pl-spacer--in--small,
+.pl-m-b2b-click2connect-form-callback-panel1 form {
+    padding-bottom: 30px;
+}
+html body form input[type=text].pl-b2b-input, 
+html body form input[type=email].pl-b2b-input, 
+html body form input[type=password].pl-b2b-input, 
+html body form input[type=tel].pl-b2b-input, 
+html body form textarea,
+html body form .pl-b2b-selectbox__label__text{
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    color: #323232 !important;
+}
+
+@media screen and (max-width:767px) {
+    html body .ppContainer a[href="/terms_and_conditions/"] {
+        width: 83.33333% !important;
+        display: inline-block !important;
+        max-width: 483px !important;
+    }
+
+}

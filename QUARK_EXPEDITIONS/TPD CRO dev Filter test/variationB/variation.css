@@ -1,0 +1,242 @@
+    html body .component--hero-slide>picture, 
+    html body .component--hero-slide>picture>img {
+        height: calc(80vh - 4px) !important;
+    }
+
+.eg-search-trips{
+    padding: 1rem 0px;
+}
+html body .eg-search-trips-inr,
+.eg-search-trips-inr .eg-language-option23-outer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+html body .eg-language-option23 .eg-dropdown {
+    box-sizing: border-box;
+    width: 220px;
+    position: relative;
+}
+.eg-dropdown .facet__toggle-icon {
+    margin-bottom: 0px !important;
+}       
+.eg-language-option23-outer {
+    padding: 4px 0px;
+    background: #e1e4e8;
+}
+
+.eg-button {
+    margin-left: 1rem;
+}
+
+.eg-language-option23.eg-departure {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+/* Dropdown Start */
+html body .eg-language-option23 .eg-dropdown > span {
+    padding: 8px 16px;
+    background: #e1e4e8;
+    height: auto;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+}
+
+/* html body .eg-language-option23 .eg-dropdown > span:before {
+    background: -webkit-gradient(linear,left top,right top,color-stop(10%,rgba(255,255,255,.1)),color-stop(20%,#fff));
+    background: linear-gradient(to right,rgba(255,255,255,.1) 10%,#fff 20%);
+    border: none;
+    content: '\f107';
+    font-family: "Font Awesome 5 Pro";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    pointer-events: none;
+    line-height: 52px;
+    width: 30px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 23px;
+    transform: translateY(-50%);
+}
+html body .eg-language-option23 .eg-dropdown.eg-active > span:before {
+    transform: translateY(-50%) rotate(180deg);
+} */
+html body .eg-language-option23 .eg-dropdown-options {
+    cursor: pointer;
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    display: flex !important;
+    flex-direction: column;
+    width: 100%;
+    z-index: 999;
+    left: 0px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    max-height: 0px; 
+    overflow: hidden;
+    /* transition: max-height 250ms ease, overflow 250ms ease; */
+    -webkit-box-shadow: 0 0 2px 0 rgb(22 44 116 / 16%);
+    box-shadow: 0 0 2px 0 rgb(22 44 116 / 25%);
+    margin-top: 12px;
+    font-weight: 700;
+}
+html body .eg-language-option23 .eg-dropdown.eg-active .eg-dropdown-options {
+    max-height: calc(100vh - 23rem); 
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 2px solid #f7f9fb;
+    /* transition: max-height 250ms ease, overflow 250ms ease; */
+}
+
+.eg-search-trips .eg-button .eg-button-link {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+html body .eg-language-option23.eg-expedition .eg-dropdown .eg-dropdown-options {
+    width: 230px;
+}
+html body .eg-language-option23 .eg-dropdown-item {
+    display: block;
+    padding: 5px 16px;
+    background: #ffffff none repeat scroll 0 0;
+}
+
+html body .eg-language-option23 .eg-dropdown-item:last-child {
+    border-bottom: none;
+}
+
+html body .eg-language-option23 .eg-dropdown-item img {
+    margin-right: 10px;
+}
+
+
+html body .eg-language-option23 .eg-dropdown > span img {
+    margin-right: 10px;
+}
+
+html body .eg-language-option23 .eg-dropdown-item:hover {
+    background: #f8f9fa;
+    color: #153bff;
+}
+/* Dropdown end */
+
+html body .eg-language-option23 .eg-language-heading {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+html body .eg-language-option23 .eg-button a {
+    padding: 15px 30px!important;
+    width: 100%;
+    background: #153BFF;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}    
+
+@media screen and (max-width:950px) and (min-width:768px) {
+html body .eg-language-option23 .eg-dropdown{
+    width: auto;
+}
+}
+
+
+@media screen  and (max-width:767px){
+html body .eg-language-option23 .eg-dropdown{
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+}
+html body .eg-search-trips-inr .eg-button{
+    margin-left: 0px;
+    width: 100%;
+}
+html body .eg-search-trips-inr.container-fluid,
+html body .eg-search-trips-inr.container-fluid .eg-language-option23-outer{
+    flex-direction: column;
+    width: 100%;
+    background: none !important;
+}
+html body .eg-language-option23.eg-expedition .eg-dropdown .eg-dropdown-options,
+html body .eg-search-trips-inr .eg-button,
+html body .eg-search-trips-inr .eg-language-option23 {
+    width: 100% !important;
+}
+
+html body .eg-search-trips .eg-button .eg-button-link {
+    justify-content: center;
+}
+html body .eg-search-trips .eg-language-option23.eg-departure {
+    border: none;
+}
+html body .eg-search-trips .eg-language-option23 .eg-dropdown > span{
+    padding: 10px 16px !important;
+}
+}
+
+.scroll-animation {
+text-align: center;
+margin-top: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.scroll-animation .mouse {
+width: 18px;
+height: 27px;
+border: 1px solid #f2a900;
+border-radius: 60px;
+position: relative;
+margin-right: 10px;
+}
+.scroll-animation .mouse::before {
+content: "";
+width: 4px;
+height: 8px;
+position: absolute;
+top: 2px;
+left: 50%;
+transform: translateX(-50%);
+background-color: #f2a900;
+border-radius: 3px;
+opacity: 1;
+animation: wheel 2s infinite;
+-webkit-animation: wheel 2s infinite;
+}
+@keyframes wheel {
+to {
+    opacity: 0;
+    top: 22px;
+}
+}
+
+@-webkit-keyframes wheel {
+to {
+    opacity: 0;
+    top: 22px;
+}
+}

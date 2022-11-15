@@ -1,0 +1,290 @@
+.main-header .menu .content{
+    background-color: #262e39;
+}
+.top-bar .content {
+    background: #171b23 !important;
+}
+html body .main-content {
+    padding-top: 6.25rem !important;
+}
+
+html body .main-header .nav .top-bar ul.items li:not(:empty) {
+    margin-left: 2.8rem;
+}
+html body .main-header .nav .top-bar ul.items {
+    margin-left: 10%;
+}
+
+
+p.eg-play-button img {
+    max-width: 38px;
+    margin-left: 10px;
+}
+.eg-image-container {
+    display: flex;
+    justify-content: space-between;
+}
+.eg-video-link {
+    width: 50%;
+}
+html body .eg-list {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.eg-image-container .eg-image-box{
+    width: 48%;
+    position: relative;
+}
+.eg-image-container .eg-image-box a{
+    display: inline-block;
+}
+.eg-image-container .eg-image-box .title{
+    position: absolute;
+    bottom: 49px;
+    font-size: 20px;
+    padding-left: 20px;
+    z-index: 999;
+    font-weight: 500;
+}
+.eg-image-container .eg-image-box .eg-play-button {
+    position: absolute;
+    bottom: 10px;
+    font-size: 17px;
+    padding-left: 20px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    z-index: 999;
+    font-weight: 500;
+    color: #04c3fc;
+}
+.eg-image-container-inr {
+    position: relative;
+}
+.eg-image-container .eg-image-box .eg-image-container-inr:after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #0000004f;
+    z-index: 998;
+    content: '';
+    left: 0px;
+    top: 0px;
+}
+
+.eg-list a:hover{
+    color: #04c3fc;
+}
+.eg-list a {
+    display: inline-block;
+    color: #fff;
+    font-size: 120%;
+    margin-top: 0.625rem;
+    margin-bottom: 0;
+    transition: color .3s ease-in-out;
+    white-space: nowrap;
+    min-width: 8.875rem;
+}
+.video-link-heading {
+    display: block;
+    color: #fff;
+    font-size: 120%;
+    margin-top: -20px;
+    margin-bottom: 0;
+    transition: color .3s ease-in-out;
+    white-space: nowrap;
+    min-width: 8.875rem;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff;
+}
+@media screen and (max-width:1199px) {
+    html body .main-header .nav .top-bar ul.items{
+        margin-left: 2%;
+    }
+    html body .main-header .nav .top-bar ul.items li:not(:empty) {
+        margin-left: 18px !important;
+    }
+}
+@media screen and (max-width:1023px) {
+    html body .main-header .nav .top-bar ul.items{
+        display: none;
+    }
+}
+html body nav .top-bar + .menu .content{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* mobile menu */
+
+
+html body .eg-hamburger{
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 39px;
+}
+
+html body .eg-hamburger span {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    display: inline-block;
+    position: relative;
+}
+
+.eg-mobile-menu-open .eg-hamburger span:before {
+    transform: rotate(45deg);
+    bottom: 0px;
+}
+
+.eg-mobile-menu-open .eg-hamburger span:after {
+    transform: rotate(-45deg);
+    top: 0px;
+}
+
+.eg-mobile-menu-open .eg-hamburger span {
+    background: transparent;
+}
+
+html body .eg-hamburger span:after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    top: -10px;
+}
+html body .eg-hamburger span:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    bottom: -10px;
+    cursor: pointer;
+}
+body.eg-mobile-menu-open {
+    overflow-y: hidden;
+}
+body.eg-mobile-menu-open.eg-mobile-sub-menu-open .eg-mobile-menu .sub-menu, 
+body.eg-mobile-menu-open .eg-mobile-menu-outer {
+    backface-visibility: visible;
+     -webkit-transform: translateX(0);
+    transform: translateX(0);  
+    -webkit-transition: webkit-transform 220ms ease-in-out;
+    transition: transform 220ms ease-in-out;
+}
+.eg-mobile-menu-outer {
+    position: fixed;
+    top: 94px;
+    left: 0px;
+    z-index: 999;
+    background: #262e39;
+    width: 100%;
+    height: calc(100vh - 94px);
+    overflow-y: auto;
+    backface-visibility: hidden;
+     -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);  
+    -webkit-transition: webkit-transform 220ms ease-in-out;
+    transition: transform 220ms ease-in-out;
+}
+  
+ul.sub-menu > li > a ,
+ul.eg-mobile-menu > li > a {
+    display: block;
+    color: #fff;
+    font-size: 120%;
+    margin: 0;
+    transition: color .3s ease-in-out;
+    padding: 20px 20px;
+    opacity: .8;
+}
+ul.eg-mobile-menu .sub-menu > li > a:hover ,
+ul.eg-mobile-menu > li > a:hover {
+    opacity: 1;
+}
+ul.eg-mobile-menu .sub-menu{
+    margin: 0px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    backface-visibility: hidden;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: webkit-transform 220ms ease-in-out;
+    transition: transform 220ms ease-in-out;
+    z-index: 99;
+    background: #262e39;
+}
+.eg-collection .sub-menu >li:first-child a,
+.eg-collection > a{
+    display: flex !important;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.eg-collection > a img {
+    transform: rotate(-90deg);
+}
+.eg-collection .sub-menu >li:first-child a{
+    opacity: 1;
+    border-bottom: 1px solid #fff;
+}
+.eg-collection .sub-menu >li:first-child a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.eg-collection .sub-menu >li:first-child a{
+    opacity: 1;
+    border-bottom: 1px solid #fff;
+}
+.eg-collection .eg-image-container{
+    display: flex;
+    padding: 0px 15px;
+}
+
+.eg-collection .eg-image-container .eg-image-box .title {
+    font-size: 13px;
+    left: 0px;
+    padding-left: 5px;
+    bottom: 38px;
+    line-height: 1.2;
+}
+
+.eg-collection .eg-image-container .eg-image-box .eg-play-button {
+    bottom: 12px;
+    font-size: 13px;
+    padding-left: 5px;
+    left: 0px;
+}
+
+.eg-collection .eg-image-container .eg-image-box .eg-play-button img {
+    max-width: 25px;
+}
+
+.eg-collection .eg-image-container .eg-image-box:after {
+    background: #00000061;
+}
+.eg-collection .eg-image-section {
+    padding: 10px 20px;
+}
+
+.eg-collection .video-link-heading {
+    margin-top: 0px;
+}
+@media screen and (min-width:1025px) {
+    .eg-hamburger,
+    .eg-mobile-menu-outer{
+        display: none !important;
+    }
+}

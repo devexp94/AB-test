@@ -1,0 +1,8 @@
+When a user activates the experiment...
+
+The user will see social proof related headers on each PLP. This should sit below the standard H1 of each page, and above the blurb content where applicable
+For the /3D and /2D category pages, the copy should be as follows:  Join thousands of other creators in building {category} projects
+For the other main category pages, the copy should be as follows: Find the perfect {category} asset to build your project
+For all sub categories and search categories, the copy should be as follows:
+-  Join thousands of other creators in building amazing projects
+For pages such as https://assetstore.unity.com/3d/characters there already exists a subheader short paragraph. In these scenarios NEW social header should be placed between 3D Characters and the supporting copy, e.g. “Populate your gaming project with our collection”

@@ -1,5 +1,0 @@
-{
-  "files": ["./variationB/variation.css", "./variationB/variation.js"],
-  "inject": "",
-  "urls": ["https://autobarn.com.au/ab/"]
-}

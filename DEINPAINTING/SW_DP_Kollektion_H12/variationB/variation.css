@@ -1,0 +1,19 @@
+html body .product-card .price.price--listing .price__sale dd {
+    order: 3;
+}
+
+html body .product-card .price.price--listing .price__sale dd .price-item--sale {
+    color: #52b774;
+}
+html body .product-card .price.price--listing .price__sale .price__compare .price-item--regular{
+    color: #161616;
+}
+html body .product-card .price.price--listing .price__sale dd .price-item--sale,
+html body .product-card .price.price--listing .price__sale .price__compare .price-item--regular {
+    font-weight: 600;
+    font-size: 16px;
+}
+html body .product-card .price.price--listing .price__badge.price__badge--sale{
+    font-size: .7em;
+    padding: 0.5rem 0.55rem;
+}
