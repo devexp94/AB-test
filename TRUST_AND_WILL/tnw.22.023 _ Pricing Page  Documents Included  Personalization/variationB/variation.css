@@ -1,11 +1,12 @@
-.tooltip {
+.egtooltip{
   position: relative;
   display: inline-block;
+  cursor: pointer;
 }
 
-.tooltip .tooltiptext {
-  width: 295px;
-  background-color: #e6e7ea;
+.egtooltip .egtooltiptext {
+  width: 280px;
+  background-color: #edf1f8;
   color: #000;
   text-align: center;
   border-radius: 6px;
@@ -21,16 +22,16 @@
   visibility: hidden;
 }
 
-.tooltip:hover .tooltiptext {
+.egtooltip:hover .egtooltiptext {
   visibility: visible;
   opacity: 1;
   font-family: inherit;
   font-size: 14px;
 }
 
-span.tooltiptext::after {
+span.egtooltiptext::after {
   content: "";
-   background-color: #e6e7ea;
+   background-color: #edf1f8;
   width: 20px;
   height: 20px;
   position: absolute;
@@ -50,7 +51,7 @@ span.tooltiptext::after {
   gap: 10px;
 }
 
-a.link {
+a.egLink {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -59,4 +60,8 @@ a.link {
   text-decoration: underline;
   font-weight: 600;
   padding-top: 10px;
+}
+
+.eg_location {
+  margin-top: 2px;
 }
