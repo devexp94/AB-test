@@ -102,12 +102,7 @@
 
             // logic to hide popup
             document.querySelector(".eg-close-icon").addEventListener("click", (e) => {
-                document.querySelector(".eg-popup-overlay").style.cssText = `
-                    z-index:-1000;
-                    display:none;
-                    overflow:hidden;
-                  `;
-                document.querySelector(".eg-popup-wrapper-outer").style.cssText = `
+                document.querySelector(".eg-popup-overlay").style.cssText = document.querySelector(".eg-popup-wrapper-outer").style.cssText = `
                     z-index:-1000;
                     display:none;
                     overflow:hidden;
