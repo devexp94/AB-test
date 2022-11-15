@@ -1,0 +1,174 @@
+.eg-secondry-nav {
+    background: #000;
+}
+html body .eg-secondry-nav-inr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+html body .eg-secondry-nav-inr p {
+    margin-bottom: 0px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+html body .eg-secondry-nav-inr .eg-nav .eg-scroll-button {
+    display: inline-flex;
+    padding: 4px 0px;
+    font-weight: 600;
+    margin: 4px 15px;
+    position: relative;
+}
+html body .eg-secondry-nav-inr .eg-nav .eg-scroll-button:after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #cf132f;
+    transition: width .2s ease-in-out;
+}
+html body .eg-secondry-nav-inr .eg-nav .eg-scroll-button:hover:after,
+html body .eg-secondry-nav-inr .eg-nav .eg-scroll-button.eg-active:after {
+    width: 100%;
+    transition: width .2s ease-in-out;
+}
+@media screen and (min-width: 1025px){
+    html body .global-search-bar-container-mob {
+        top: -159px;
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+    
+    html body {
+        padding-top: 48px;
+    }
+    html body .eg-secondry-nav-inr .eg-nav .eg-scroll-button{
+        margin-bottom: 6px;
+    }
+    html body .eg-secondry-nav-inr {
+        padding: 0px;
+    }
+    html body .eg-secondry-nav-inr p{
+        display: none;
+    }
+    .main-nav.header-mobile {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    
+    .eg-secondry-nav {
+        width: 100%;
+    }
+    
+    .eg-secondry-nav .eg-nav {
+        flex-wrap: nowrap;
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+        white-space: nowrap;
+        justify-content: center;
+    }   
+}
+@media screen and (min-width:768px) {
+    .eg-nav-container-mobile{
+        display: none;
+    }
+}
+@media screen and (max-width:767px) {
+    html body .header{
+        height: 118px !important;
+    }
+    
+    .eg-dropdown.drop-open svg {
+        transform: rotate(180deg);
+        transition: all 250ms ease-in-out;
+    }
+    .eg-dropdown svg {
+        transform: rotate(0deg);
+        transition: all 250ms ease-in-out;
+    }
+    html body .eg-secondry-nav{
+        display: none;
+    }
+    html body .eg-dropdown-options {
+        display: flex;
+        flex-direction: column;
+        max-height: 0px;
+        overflow: hidden;
+        transition: all 250ms ease-in-out;
+        opacity: 0;
+    }
+    html body .eg-dropdown.drop-open + .eg-dropdown-options {
+        max-height: 500px;
+        overflow: visible;
+        transition: all 350ms ease-in-out;
+        opacity: 1;
+    }
+    .eg-dropdown-item .eg-dropdown-item-text,
+    .eg-nav-container-mobile .eg-default-option,
+    .eg-default-option {
+        position: relative;
+        display: inline-block;
+    }
+    .eg-nav-container-mobile .eg-default-option:after{
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #cf132f;
+    }
+    .eg-dropdown-item .eg-dropdown-item-text:after,
+    html body .eg-default-option:after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: #cf132f;
+        transition: width .2s ease-in-out;
+    }
+    .eg-dropdown-item.eg-active .eg-dropdown-item-text:after,
+    html body .eg-default-option:hover:after,
+    html body .eg-default-option.eg-active:after {
+        width: 100%;
+        transition: width .2s ease-in-out;
+    }
+    html body .eg-dropdown-options .eg-dropdown-item{
+        font-size: .875rem;
+        line-height: 1.5;
+        text-decoration: none;
+        font-weight: 600;
+        text-shadow: none;
+    }
+    html body .eg-dropdown-options .eg-dropdown-item {
+        display: block;
+        width: 100%;
+        padding: 10px;
+
+    }
+    html body .eg-dropdown-options .eg-dropdown-item:first-child {
+        padding-top: 20px;
+    }
+    html body .eg-dropdown {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 20px 10px;
+        font-size: 20px;
+    }
+    html body .eg-nav-container-mobile {
+        width: 100%;
+    }      
+}

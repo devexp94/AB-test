@@ -1,0 +1,27 @@
+html body .trustpilot-reviews .reviews .review-container,
+html body .trustpilot-reviews .heading{
+    height: auto !important;
+}
+html body .homepage .awards, 
+html body .homepage .home-secure-in-page{
+        height: 800px !important;
+
+}
+html body .homepage-banner{
+    min-height: calc(100vh - 40vh) !important;
+    height: 786px !important;
+}
+html body .homepage-banner .homepage-video>div{
+    height: calc(100vh - 40vh) !important;
+    height: 786px !important;
+}
+html body .trustpilot-reviews.mt-5.mt-lg-0{
+    height: 400px !important;
+}
+html body .home-secure-in-page .hs-inner .hs-viruses{
+    top: -100px !important;
+    margin-bottom: 0px !important;
+}
+html body .trustpilot-reviews .reviews>.bg svg path {
+    fill: none !important;
+}

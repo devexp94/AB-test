@@ -1,0 +1,10 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.audi.com.au/au/web/en/models/q3/q3/summary.html"
+	]
+}

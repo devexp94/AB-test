@@ -1,0 +1,32 @@
+@media screen and (max-width:767px) {
+    .homepage-banner > .d-lg-none:last-child {
+        display: flex;
+        flex-direction: column;
+    }
+    .homepage-banner > .d-lg-none:last-child > a:first-child {
+        order: 10;
+    }
+    .homepage-banner .speech-bubble-mobile {
+        position: static;
+        transform: none;
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+    .homepage .homepage-banner{
+        padding-top: 44px;
+    }
+    .homepage-banner .mobile-sq h2{
+        display: none;
+    }
+    .homepage .homepage-banner > .mobile-sq {
+        margin-bottom: 10px;
+    }    
+    .homepage .homepage-banner > .mobile-sq .inner {
+        height: 60px !important;
+        padding: 0px;
+        background: #fff;
+    }
+    .homepage .homepage-banner > .mobile-sq .inner input{
+        background: #fff !important;
+    }
+}

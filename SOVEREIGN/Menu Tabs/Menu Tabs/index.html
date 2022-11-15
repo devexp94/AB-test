@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tabs</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div class='toggle'>
+    <div class='tabs'>
+      <div class='tab tablinks active' onclick="openCountry(event, 'Europe')">Europe</div>
+      <div class='tab tablinks' onclick="openCountry(event, 'Mexico')">Caribben & Mexico</div>
+      <div class='tab tablinks' onclick="openCountry(event, 'Indian')">Indian Ocean</div>
+      <div class='tab tablinks' onclick="openCountry(event, 'Arab')">United Arab Emirates</div>
+      <div class='tab tablinks' onclick="openCountry(event, 'Bali')">Bali</div>
+      <div class='tab tablinks' onclick="openCountry(event, 'Thailan')">Thailan</div>
+      <a href="#" class="tab-last-links">Luxiary Holiday Finder &nbsp; ></a>
+    </div>
+    <div class='panels'>
+      <!-- Tab-1-->
+      <div class='panel tabcontent' id="Europe">
+        <div class="parent ">
+          <div class="child">
+            <div><a href="#">Croatia</a></div>
+            <div><a href="#">Cyprus</a></div>
+            <div><a href="#">Greece</a></div>
+            <div><a href="#">Italy</a></div>
+          </div>
+          <div class="child">
+            <div><a href="#">Malta</a></div>
+          </div>
+          <div class="child-new">
+            <div><img src="dummy.jpg"></div>
+            <div>
+              <h3>Explore Greece on your next luxury escape</h3>
+              <p>Go beyond te sugar cube-houses and blue minaret domes to unravel a rich and inspiring history.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End-Tab-1-->
+
+      <!-- Tab-2-->
+      <div class='panel tabcontent' id="Mexico">
+        <div class="parent ">
+          <div class="child">
+            <div><a href="#">Mexico</a></div>
+            <div><a href="#">Barbados</a></div>
+            <div><a href="#">Antigua</a></div>
+            <div><a href="#">St Lucia</a></div>
+          </div>
+          <div class="child">
+            <div><a href="#"> Grenada</a></div>
+            <div><a href="#"> Dominican Republic</a></div>
+            <div><a href="#"> Jamaica</a></div>
+
+          </div>
+
+          <div class="child-new">
+            <div><img src="dummy.jpg"></div>
+            <div>
+              <h3>Explore Greece on your next luxury escape</h3>
+              <p>Go beyond te sugar cube-houses and blue minaret domes to unravel a rich and inspiring history.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- END-Tab-2-->
+
+      <!-- Tab-3-->
+      <div class='panel tabcontent' id="Indian">
+        <div class="parent ">
+          <div class="child">
+            <div><a href="#">Maldives</a></div>
+            <div><a href="#">Mauritius</a></div>
+            <div><a href="#">Seychelles</a></div>
+          </div>
+          <div class="child-new">
+            <div><img src="dummy.jpg"></div>
+            <div>
+              <h3>Explore Greece on your next luxury escape</h3>
+              <p>Go beyond te sugar cube-houses and blue minaret domes to unravel a rich and inspiring history.</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <!-- END-Tab-3-->
+
+      <!-- Tab-4-->
+      <div class='panel tabcontent' id="Arab">
+        <div class="parent ">
+          <div class="child">
+            <div><a href="#">All UAE</a></div>
+            <div><a href="#">Dubai</a></div>
+            <div><a href="#">Abu Dhabi</a></div>
+            <div><a href="#"> Ras Al Khaimah</a></div>
+          </div>
+          <div class="child-new">
+            <div><img src="dummy.jpg"></div>
+            <div>
+              <h3>Explore Greece on your next luxury escape</h3>
+              <p>Go beyond te sugar cube-houses and blue minaret domes to unravel a rich and inspiring history.</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <!-- END-Tab-4-->
+
+      <!-- Tab-5-->
+      <div class='panel tabcontent' id="Bali">
+        <div class="parent ">
+          <div class="child">
+            <div><a href="#">Bali</a></div>
+          </div>
+          <div class="child-new">
+            <div><img src="dummy.jpg"></div>
+            <div>
+              <h3>Explore Greece on your next luxury escape</h3>
+              <p>Go beyond te sugar cube-houses and blue minaret domes to unravel a rich and inspiring history.</p>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <!-- END-Tab-5-->
+
+      <!-- Tab-6-->
+      <div class='panel tabcontent' id="Thailan">
+        <div class="parent">
+          <div class="child">
+            <div><a href="#">See All</a></div>
+            <div><a href="#">Bangkok</a></div>
+            <div><a href="#">Chiang Mai</a></div>
+            <div><a href="#">Khao Lak</a></div>
+          </div>
+          <div class="child">
+            <div><a href="#">Khao Sok</a></div>
+            <div><a href="#">Koh Phangan</a></div>
+          </div>
+          <div class="child-new">
+            <div><img src="dummy.jpg"></div>
+            <div>
+              <h3>Explore Greece on your next luxury escape</h3>
+              <p>Go beyond te sugar cube-houses and blue minaret domes to unravel a rich and inspiring history.</p>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <!-- END-Tab-6-->
+
+    </div>
+  </div>
+  <!-- partial -->
+
+
+  <script>
+    function openCountry(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+
+
+</html>
+
+<div class="model">
+  <div class="overwlay"></div>
+  <div class="content">
+    <div class="cross"></div>
+  </div>
+</div>

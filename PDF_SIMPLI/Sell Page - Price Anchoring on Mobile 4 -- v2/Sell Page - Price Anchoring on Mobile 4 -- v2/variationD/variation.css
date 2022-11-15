@@ -1,0 +1,170 @@
+@media (max-width: 991px) {
+    body#pricing-page #pricing {
+        background-color: #fff !important;
+    }
+    body#pricing-page #pricing h1 {
+        color: #424A5C;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 0;
+    }
+    html body#pricing-page #pricing .pricing-mobile h2 {
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18px;
+        text-align: center;
+        color: #424A5C;
+        letter-spacing: normal;
+        width: 84%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    #pricing-page .mNavbar#mainHeader {
+        display: none !important;
+    }
+    #pricing-page .mNavbar:not(#mainHeader) .navbar-header {
+        margin: 0 !important;
+        padding: 7px 0;
+    }
+    #pricing-page .mNavbar:not(#mainHead) .container {
+        padding: 0 !important;
+    }
+    #pricing-page .mNavbar:not(#mainHeader) .navbar-header img {
+        margin: 0 !important;
+    }
+    #pricing-page .mNavbar:not(#mainHeader) .navbar {
+        min-height: 49px;
+    }
+    #pricing-page section#pricing {
+        margin-top: 15px;
+    }   
+
+    .simp-collapse {
+        padding: 10px;
+        margin: 0 10px;
+    }
+    
+    .simp-collapse-cta .simp-label {
+        font-family: Poppins, sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 18px;
+        color: #424A5C;
+    }
+    
+    span.simp-price {
+        font-family: Poppins, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 33px;
+        color: #424A5C;
+    }
+    
+    .simp-collapse-cta {
+        background: #F5F7F8;
+        border-radius: 2px;
+        padding: 20px;
+        padding-left: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M5.5 10.45L8.2 13.15L14.5 6.84998' stroke='%23828282' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10 19C14.9707 19 19 14.9707 19 10C19 5.0293 14.9707 1 10 1C5.0293 1 1 5.0293 1 10C1 14.9707 5.0293 19 10 19Z' stroke='%23828282' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); */
+        background-repeat: no-repeat;
+        background-position: 20px center;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .eg-tick {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 20px;
+        line-height: 1px;
+    }
+    .simp-collapse-cta i {
+        height: 18px;
+        width: 18px;
+        line-height: 25px;
+        border-radius: 100%;
+        background: #959595;
+        color: #fff;
+        text-align: center;
+        position: relative;
+    }
+    
+    .simp-collapse-cta i:before {
+        font-size: 11px;
+        top: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        line-height: 12px;
+    }
+    .simp-collapse-tab.simp-open .simp-collapse-cta i{
+        background: #0f67cb;
+    }
+    .simp-collapse-content ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .simp-collapse-content li {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #424A5C;
+        font-family: "Poppins",sans-serif;
+        margin-bottom: 25px;
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    p.simp-sub {
+        font-family: Poppins, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #424A5C;
+    }
+    
+    .simp-collapse-content {
+        padding: 25px 10px;
+    }
+
+    span.simp-price sup:first-child {
+        vertical-align: baseline;
+        top: auto;
+        font-size: inherit;
+    }
+    
+    span.simp-price sup:last-child {
+        vertical-align: baseline;
+        top: auto;
+        font-size: inherit;
+    }
+
+    .simp-collapse-content {
+        display: none;
+    }
+
+    .simp-open .simp-collapse-content {
+        display: block;
+    }
+    .simp-collapse-tab.simp-open .simp-collapse-cta {
+        border: 1px solid #0F67CB;
+    }
+    section#pricing div.pricing-mobile .tab-content,
+    section#pricing div.pricing-mobile .nav-tabs {
+        display: none;
+    }
+}

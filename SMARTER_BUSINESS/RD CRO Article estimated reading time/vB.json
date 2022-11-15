@@ -1,0 +1,13 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.smarterbusiness.telstra.com.au/trends/customer-trends/Could-selling-on-social-media-help-boost-your-sales",
+		"https://www.smarterbusiness.telstra.com.au/growth/business-strategy/first-impressions-what-your-clothing-says-about-you",
+		"https://www.smarterbusiness.telstra.com.au/growth/business-strategy/Our-hook-A-look-behind-Freddys-branding"
+
+	]
+}

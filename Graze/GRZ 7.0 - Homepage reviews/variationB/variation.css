@@ -1,0 +1,136 @@
+.trust-and-review-section {
+  margin-top: 10px;
+}
+
+.eg-review-section {
+  padding: 40px 0px;
+}
+
+.eg-review-section .section-title {
+  color: #604232;
+  margin-bottom: 0px;
+}
+
+.eg-author-name {
+  font-size: 16px;
+  opacity: .8;
+  margin-bottom: 0px;
+  margin-top: 30px;
+}
+
+.swiper-container-autoheight .swiper-wrapper {
+  height: 100% !important;
+}
+
+.eg-review-section .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+}
+
+.eg-review-section .eg-heading {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  font-family: sofiapro-bold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.eg-review-section .eg-para {
+  text-align: center;
+  font-size: 20px;
+}
+
+.eg-review-section .swiper-pagination-bullet-active {
+  opacity: .6;
+  background: #000;
+}
+
+.eg-wrapper {
+  padding: 0px 20px 20px 20px;
+  max-width: 321px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.eg-review-section .swiper.egswiper {
+  padding-top: 30px;
+}
+
+.eg-review-section .swiper-slide {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 100% !important;
+}
+
+.eg-review-section .swiper-pagination {
+  position: static !important;
+}
+
+.eg-review-section .swiper-container {
+  max-width: 1060px;
+  padding: 0 0.8rem;
+  width: 100%;
+}
+
+@media screen and (max-width:1199px) {
+  /* html body .eg-review-section .swiper.egswiper {
+    padding-left: 46px;
+  } */
+
+  html body .eg-review-section .eg-wrapper {
+    width: auto !important;
+    max-width: 100% !important;
+  }
+}
+
+.eg-star-container {
+  display: flex;
+}
+
+.eg-star-container svg {
+  width: 24px;
+  fill: #ffce05;
+  margin-right: 1px;
+  margin-bottom: 15px;
+}
+
+.egswiper .swiper-button-prev:after,
+.egswiper .swiper-button-next:after {
+  display: none;
+  background: transparent !important;
+}
+
+.egswiper .swiper-button-prev,
+.egswiper .swiper-button-next {
+  background: none !important;
+}
+
+.egswiper .swiper-button-prev svg {
+  fill: #121b6b;
+  transform: rotate(180deg);
+}
+
+.egswiper .swiper-button-next svg {
+  fill: #121b6b;
+}
+
+@media screen and (max-width: 767px) {
+
+  .eg-review-section .section-title {
+    font-size: 28px;
+  }
+
+  .eg-review-section {
+    padding-bottom: 0px;
+  }
+
+  .eg-review-section .lohp-2022-header__subtitle {
+    margin-top: 40px;
+    font-size: 20px;
+  }
+}

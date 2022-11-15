@@ -1,0 +1,297 @@
+html body .main .inquiry-form__steps+.inquiry-form__block {
+    border-radius: 10px;
+}
+
+html body .inquiry-form--has-steps .inquiry-form__container,
+html body .inquiry-form--has-steps .banner__title {
+    margin-top: 0px !important;
+}
+
+html body .main .inquiry-form__bottom {
+    background: #f5f5f5;
+    padding-top: 70px;
+}
+
+html body .main .inquiry-form .social-badges.wrapper,
+html body .main .section--seamless+.section--seamless,
+html body .main .section--seamless+.section--has-background-image,
+html body .main .inquiry-form__bottom .inquiry-form__steps,
+html body .main .step-banner__item+.step-banner__item .step-banner__content::before,
+html body .main .banner__content .btn-cta-call {
+    display: none;
+}
+
+html body .inquiry-form--has-steps .inquiry-form__container {
+    -webkit-box-shadow: 0 0 15px 0 rgb(0 0 0 / 13%);
+    -moz-box-shadow: 0 0 15px 0 rgb(0 0 0 / 13%);
+    box-shadow: 0 0 15px 0 rgb(0 0 0 / 13%);
+    flex: 1;
+    max-width: 810px;
+}
+
+html body .main .inquiry-form__bottom .wrapper {
+    max-width: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+html body .main .eg-aside {
+    width: 38.4210526316%;
+    margin-left: 40px;
+    margin-top: 0;
+    max-width: 490px;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+    box-sizing: border-box;
+}
+
+.eg-book {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.eg-book a:hover {
+    border: 1px solid #000000;
+}
+
+.eg-book a {
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+    color: #000000;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    text-align: center;
+    padding: 13px 25px;
+    background-color: transparent;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+    border: 1px solid #0000005e;
+}
+
+/* Trust Section */
+.eg-tp-widget-outer {
+    padding: 20px;
+    background: #fff;
+    margin-top: 50px;
+}
+
+.eg-aside .tp-widget-wrapper {
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    border: 8px solid #e3e3e3;
+}
+
+.eg-aside .tp-widget-wrapper a {
+    max-width: 185px;
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 200px) {
+    .eg-aside .tp-widget-logo {
+        max-width: 140.25px;
+    }
+
+    .eg-aside .tp-widget-businessinfo {
+        font-size: 14px;
+        max-width: 255px;
+    }
+
+    .eg-aside .tp-widget-businessinfo__trustscore,
+    .eg-aside .tp-widget-businessinfo__total {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .eg-aside .tp-widget-businessinfo__trustscore::after {
+        content: '|';
+        margin: 0 2px;
+    }
+}
+
+.eg-aside .tp-widget-businessinfo__trustscore,
+.eg-aside .tp-widget-businessinfo__total {
+    text-transform: none;
+}
+
+.eg-aside .tp-widget-businessinfo {
+    font-size: 11px;
+    line-height: 1.2;
+    color: #000;
+    text-align: center;
+}
+
+.eg-aside .tp-widget-logo {
+    margin: 0 0 8px;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.eg-aside .tp-widget-stars {
+    margin: 0 0 8px;
+    width: 74%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.eg-aside .tp-stars--5 .tp-star:nth-of-type(-n+5) .tp-star__canvas,
+.eg-aside .tp-stars--5 .tp-star:nth-of-type(-n+5) .tp-star__canvas--half {
+    fill: #00b67a;
+}
+
+.eg-aside .tp-stars .tp-star__canvas,
+.eg-aside .tp-stars .tp-star__canvas--half {
+    fill: #dcdce6;
+}
+
+.eg-aside .tp-stars .tp-star__shape {
+    fill: #fff;
+}
+
+.select2-container--default .select2-search--inline .select2-search__field {
+    width: 100% !important;
+}
+
+.eg-aside-top-section {
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.eg-aside-top-section:after {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 60px;
+    content: '';
+    background: #000000a3;
+    height: 2px;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+    html body .inquiry-form--has-steps .inquiry-form__container {
+        width: 60%;
+    }
+
+    html body .main .inquiry-form__steps+.inquiry-form__block {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    html body .main .eg-book {
+        flex-direction: column;
+    }
+
+    html body .main .eg-book a {
+        width: 100%;
+    }
+
+    html body .main .eg-book .eg-call {
+        margin-bottom: 15px;
+    }
+
+    html body .main .eg-signup-section {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    html body .main .inquiry-form .banner {
+        min-height: 500px;
+    }
+
+    html body .main .banner__content .btn-cta-call {
+        display: inline-block;
+    }
+
+    html body .main .inquiry-form__bottom .wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    html body .main .eg-aside {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+
+    html body .main .eg-aside .eg-tp-widget-outer {
+        display: none;
+    }
+
+    .eg-signup-section {
+        margin-top: 40px;
+    }
+
+    .eg-signup-section button:hover {
+        border: 1px solid #000000;
+        color: #000000 !important;
+    }
+
+    .eg-signup-section button {
+        font-size: 15px;
+        text-decoration: none;
+        display: inline-block;
+        color: #000000;
+        letter-spacing: 1px;
+        line-height: 1.1;
+        text-align: center;
+        padding: 13px 25px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.15s ease-in;
+        border: 1px solid #0000005e;
+        width: 100%;
+        background: transparent !important;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    html body .main .eg-book {
+        flex-direction: column;
+    }
+
+    html body .main .eg-book a {
+        width: 100%;
+    }
+
+    html body .main .eg-book .eg-call {
+        margin-bottom: 15px;
+    }
+
+    html body .main .eg-aside {
+        max-width: 100%;
+        padding: 0px;
+    }
+
+    html body .main .inquiry-form .banner {
+        min-height: 600px !important;
+    }
+
+    html body .main .inquiry-form__bottom {
+        padding-top: 40px !important;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    html body .main .inquiry-form .banner {
+        min-height: 430px !important;
+        max-height: 430px !important;
+    }
+}

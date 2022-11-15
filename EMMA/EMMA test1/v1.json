@@ -1,0 +1,10 @@
+{
+	"files": [
+		"./variation1/variation.css",
+		"./variation1/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.emma-materasso.it/"
+	]
+}

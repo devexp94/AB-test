@@ -1,0 +1,10 @@
+{
+	"files": [
+		"VariantSearch/variation.css",
+		"VariantSearch/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://mobiletyreshop.com.au/"
+	]
+}

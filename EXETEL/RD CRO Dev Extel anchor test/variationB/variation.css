@@ -1,0 +1,75 @@
+html body.eg-icon-show .eg-order {
+    transform: translateY(0px);
+    transition: transform .75s ease-in-out;
+    -moz-transition: transform .75s ease-in-out;
+    -webkit-transition: transform .75s ease-in-out;
+}
+.eg-order {
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+    z-index: 9999;
+    transform: translateY(1000px);
+}
+
+.eg-order-inr{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: #c1eecd;
+    padding: 12px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.eg-order-inr .eg-icon{
+    width: 90px;
+    height: 90px;
+    background-image: url('https://www.exetel.com.au/images/icon-truck.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.eg-order-inr .eg-icon .eg-text {
+    Color: #004346;
+    Font-Family: engrezbold,sans-serif;
+    Font-Size: 16px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.3;
+    background-color: #c1eecd;
+    opacity: 0;
+    transition: opacity .75s ease-in-out;
+    -moz-transition: opacity .75s ease-in-out;
+    -webkit-transition: opacity .75s ease-in-out;
+}
+.eg-order-inr .eg-icon:hover{
+    background-image: none;
+    transition: background-image .75s ease-in-out;
+    -moz-transition: background-image .75s ease-in-out;
+    -webkit-transition: background-image .75s ease-in-out;
+}
+.eg-order-inr:hover .eg-icon .eg-text {
+    opacity: 1;
+    transition: opacity .75s ease-in-out;
+    -moz-transition: opacity .75s ease-in-out;
+    -webkit-transition: opacity .75s ease-in-out;
+}
+@media screen and (max-width:767px) {
+    html body .eg-order{
+        right: 20px;
+    }   
+    html body .eg-order-inr .eg-icon{
+        background-image: none;
+    }
+    html body .eg-order-inr .eg-icon .eg-text{
+        opacity: 1;
+    }
+}

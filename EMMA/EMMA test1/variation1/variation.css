@@ -1,0 +1,81 @@
+html body .header-wrapper.header__cell {
+    margin-top: 54px !important;
+}
+html body .eg-banner {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    top: -54px;
+}
+
+html body .eg-banner .eg-banner-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #b70d23;
+    padding: 15px 1.125rem;;
+}
+
+html body .eg-banner-text {
+    display: flex;
+    align-items: center;
+}
+html body .eg-banner-text svg {
+    margin-right: 8px;
+}
+
+html body .eg-mobile-text {
+    display: none;
+}
+
+html body .eg-banner .eg-banner-link p {
+    margin: 0px;
+    color: #ffffff;
+}
+
+html body .eg-banner-text b {
+    margin-left: 4px;
+    font-size: 14px;
+}
+@media screen and (max-width:767px){
+    html body .eg-mobile-text {
+        display: flex;
+    }
+ 
+    html body .eg-banner .eg-banner-link {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    html body .eg-banner-text svg {
+        max-width: 20px;
+    }
+    html body .eg-banner .eg-banner-link b,
+    html body .eg-banner .eg-banner-link p {
+        font-size: 12px;
+        align-items: center;
+    }
+        
+    html body .eg-banner .eg-mobile-text svg {
+        fill: #fff;
+        max-width: 11px !important;
+        margin-left: 7px;
+    }
+}
+@media screen and (max-width:350px){
+    html body .eg-banner .eg-banner-link p {
+        font-size: 10px;
+    }
+    html body .eg-banner .eg-banner-link b {
+        font-size: 10px;
+    }
+    html body .eg-banner-text svg {
+        max-width: 19px;
+        margin-right: 5px;
+    }
+    html body .eg-banner .eg-mobile-text svg {
+        max-width: 10px !important;
+        margin-left: 6px;
+    }
+
+}

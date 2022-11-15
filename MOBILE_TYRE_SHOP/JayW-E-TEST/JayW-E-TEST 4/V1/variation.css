@@ -1,0 +1,24 @@
+html body #navigation-spacer {
+    display: none !important;
+}
+
+html body .navigation .navigation-submenu {
+    z-index: 2;
+}
+
+html body .navigation {
+    position: relative !important;
+}
+
+html body .navigation>.content-wrapper {
+    position: relative;
+    z-index: 4;
+}
+.navigation .overlay-banner{
+    z-index: 6;
+}
+
+.woocommerce .checkout-nav {
+    position: relative !important;
+    top: 0px !important;
+}

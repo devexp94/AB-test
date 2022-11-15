@@ -1,0 +1,46 @@
+html body .main-container .checkout-page .persistent-title {
+    margin-top: 30px;
+}
+
+html body .eg-promo-banner .eg-promo-timer-inr {
+    padding: 10px 10px;
+    color: #fff;
+    background: #ff563d;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+html body .eg-promo-banner .promo-heading {
+    margin-right: 8px;
+}
+html body .eg-promo-banner .eg-number {
+    width: 22px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+html body .eg-promo-banner .eg-box {
+    margin-right: 3px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (max-width:576px) {
+    html body .eg-promo-banner .promo-heading {
+        width: 100%;
+        text-align: center;
+        margin-right: 0px;
+    }
+}
+@media screen and (max-width:350px) {
+    html body .eg-promo-banner .eg-promo-timer-inr{
+        font-size: 12px;
+    }
+    html body .eg-promo-banner .eg-number {
+        width: 20px;
+    }
+}

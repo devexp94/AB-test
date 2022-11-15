@@ -1,0 +1,46 @@
+/* #sub-navigation-floating>div>div>div>div>a:nth-child(4) {
+  order : 1;
+}
+
+#sub-navigation-floating>div>div>div>div>a:nth-child(1) {
+  order : 2;
+}
+
+#sub-navigation-floating>div>div>div>div>a:nth-child(5) {
+  order : 3;
+}
+
+#sub-navigation-floating>div>div>div>div>a:nth-child(2) {
+  order : 4;
+}
+
+#sub-navigation-floating>div>div>div>div>a:nth-child(3) {
+  order : 5;
+}
+
+#sub-navigation-floating>div>div>div>div>a:nth-child(6) {
+  order : 6;
+}
+
+*/
+html body #sub-navigation-floating [title="Exetel-a-friend"] {
+    order: 9;
+}
+html body #sub-navigation-floating [title="Phone"],
+html body #sub-navigation-floating [title="About speeds"] {
+    display: none;
+}
+
+@media screen and (max-width:991px) {
+  html body.eg-scroll .sub-navigation-floating-mobile {
+    position: fixed;
+    top: 0px;
+    z-index: 99;
+    width: 100%;
+    margin-top: 0px;
+}
+body.eg-scroll {
+    padding-top: 60px;
+}
+  
+}

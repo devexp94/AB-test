@@ -1,0 +1,6 @@
+html body .audi-basket-overview-button.eg-button {
+    margin-left: 0px;
+}
+html body .eg-button + .audi-basket-overview-button{
+    margin-left: 40px;
+}

@@ -1,0 +1,247 @@
+/* new CSS */
+@media screen and (max-width: 1198px){
+  html body .eg-hero{
+      display: none;
+  }
+}
+
+
+@media screen and (min-width: 1199px) and (max-width:1439px){
+  html body .static-hero .eg-hero {
+    background-position: 530px 25px !important;
+  }
+  }
+
+@media screen and (min-width: 1199px){
+
+  html body picture.static-hero__img {
+      opacity: 0;
+      visibility: hidden;
+  }
+  html body .static-hero {
+      padding: 80px 0px;
+      padding-top: 100px;
+  }
+  html body .static-hero .eg-hero {
+      background-image: url("https://mobiletyreshop.com.au/wp-content/uploads/2021/08/van-1-1.png");
+      background-repeat: no-repeat;
+      background-position: right 25px;
+      background-size: contain;
+  }
+  html body .static-hero .static-hero__btn{
+      display: none;
+  }
+  
+  html body .eg-hero {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 0px;
+      height: 100%;
+      width: 100%;
+  }
+  
+  html body .eg-hero h1.eg-hero-heading {
+      line-height: 50px;
+      font-weight: bold;
+      font-size: 47px;
+  }
+  html body .eg-hero .eg-hero-heading span {
+      display: block;
+      line-height: 1.4;
+      color: #c0c0c0;
+      margin-bottom: 30px;
+  }
+  
+  html body .eg-hero .eg-list {
+      padding-left: 0px;
+  }
+  
+  html body .eg-hero .eg-list li {
+      list-style: none;
+     line-height: 40px;
+      font-size: 22px;
+      position: relative;
+      padding-left: 50px;
+      font-family: Montserrat;
+      color: #000000;
+      font-weight: normal;
+  }
+  html body .eg-hero .eg-list li:before {
+      content: ' ';
+      margin-right: 27px;
+      background: url("https://mobiletyreshop.com.au/wp-content/uploads/2021/08/noun_tick_576510_1.svg");
+      width: 25px;
+      height: 25px;
+      background-size: cover;
+      position: absolute;
+      left: 0px;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+}
+
+
+.running3553v4 .static-hero__btn.static-hero__btn--red {
+  display: none;
+}
+.running3553v4 .mts_form {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.running3553v4 .mts_form_control {
+  flex: 0 0 218px;
+  max-width: 218px;
+  padding: 0 15px;
+  border: 1px solid #6C6C6C;
+  border-right: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px 0 0 5px;
+  height: 50px;
+}
+.running3553v4 .mts_form_control:placeholder {
+  color: #B2B2B2
+}
+.running3553v4 .mts_form_btn {
+  border: none;
+  flex: 0 0 93px;
+  background: #509E31;
+  border-radius: 0 5px 5px 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  height: 50px;
+  color: #fff;
+  padding: 0;
+  white-space: nowrap;
+}
+.running3553v4 .mts_form_box {
+  z-index: 9;
+  box-sizing: border-box;
+  position: absolute;
+  margin-top: 30px;
+  text-align: center;
+  width: 310px;
+  height: 50px;
+}
+.running3553v4 .mts_form_result {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  font-size: 12px;
+}
+.mts_result_list {
+  list-style: none;
+  font-size: 10px;
+  text-align: left;
+  background: white;
+  padding: 0;
+}
+.mts_result_list li {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.mts_result_list li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+
+.running3553v4 .pac-container {
+  min-width:310px !important;
+}
+
+.static-hero {
+  min-height:320px;
+}
+
+@media all and (max-width: 480px) {
+  .running3553v4 .mts_form_box {
+    bottom: 25px;
+  }
+}
+
+
+/*widget as a popup starts here */
+
+.running3553v4  .tyreWidget-sections {
+  padding:0px !important
+}
+.running3553v4  .tyreWidget.-active:before {
+  content:'';
+  background:rgba(0,0,0,0.7);
+  width:100%;
+  height:100%;
+  z-index:0;
+  position:fixed;
+  top:0;
+  left:0px;
+}
+
+
+.running3553v4  .tyreWidget.-active {
+  position:fixed;
+  left:auto !important;
+  right:auto!important;
+  border-radius:20px !important;
+  margin-left:50%;
+}
+
+.running3553v4  .tyreWidget .tyreWidget-bar {
+  display:none !important
+}
+
+
+.running3553v4  .tyreWidget.-active .tyreWidget-sections {
+  position:static;
+  padding:0px !important;
+  background:none !important;
+  border-radius:20px !important;
+  transform:unset;
+  transform: translateX(-50%) !important;
+}
+
+.running3553v4 .tyreWidget.-active .tyreWidget-sections .mobile-close {
+  display: block !important;
+  background: #000;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 100%;
+  line-height: 31px;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  cursor: pointer;
+}
+
+
+
+@media all and (max-width: 720px) {
+  .running3553v4   .tyreWidget-sections {
+    width: 90%;
+    left: 0;
+    transform: translateX(0);
+    height: auto;
+    background: #e1e1e1;
+    margin: 0;
+    padding: 15px 15px 8px;
+  }
+  .running3553v4   .tyreWidget {
+    z-index: 999;
+  }
+}

@@ -1,0 +1,167 @@
+html body .au-pricing-tab {
+    display: none;
+}
+html body .au-pricing-tab.au-tab-active {
+    display: block;
+}
+html body .au-pricing-section.eg-content {
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-top: 25px;
+}
+
+html body .eg-content .au-pricing-nav {
+    padding-right: 40px;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+html body .eg-content .au-pricing-nav-item a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px 3px 12px 3px;
+    border: 1px solid #0F67CB;
+    box-sizing: border-box;
+    width: 107px;
+    background: #fff;
+    border-radius: 2px;
+}
+html body .eg-content .au-pricing-nav-item .au-nav-active .eg-text{
+    color: #FFFFFF;
+}
+html body .eg-content .au-pricing-nav-item a .eg-text {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 15px;
+    color: #0F67CB;
+}
+
+html body .eg-content .au-pricing-nav li:nth-child(2) {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+html body .eg-content .au-pricing-nav .au-pricing-nav-item .au-nav-active {
+    background: #0F67CB;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+html body .eg-content .au-pricing-nav-item a.au-nav-active .eg-price {
+    color: #FFFFFF;
+}
+html body .eg-content .au-pricing-nav-item a .eg-price {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 33px;
+    color: #0F67CB;
+}
+html body .eg-content .au-tab-list ul {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 26px;
+}
+
+html body .eg-content .au-tab-list ul li {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #424A5C;
+    font-family: "Poppins",sans-serif;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+html body .eg-content .au-tab-list ul li:last-child {
+    font-weight: 600;
+}
+
+html body .eg-content .au-tab-pricing p {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #424A5C;
+    width: 298px;
+    margin: 0 auto;
+}
+
+html body .eg-content .au-tab-desc p:first-child {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #424A5C;
+    text-align: center;
+    margin-top: 27px;
+}
+
+html body .eg-content .au-tab-desc .au-price {
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #424A5C;
+}
+
+html body .eg-content .au-pricing-tab-content {
+    margin-top: -54px;
+    padding-top: 54px;
+    box-shadow: 0px 3px 15px 0px rgb(59 58 58 / 25%);
+    -webkit-box-shadow: 0px 3px 15px 0px rgb(59 58 58 / 25%);
+    -moz-box-shadow: 0px 3px 15px 0px rgba(59,58,58,0.25);
+    border-radius: 8px;
+}
+
+html body .eg-content + .nav, 
+html body .eg-content ~ .tab-content, 
+html body .eg-content ~ .pricing-mobile-button {
+    display: none !important;
+}
+
+html body .eg-content .au-tab-desc {
+    margin-bottom: 120px;
+    padding-bottom: 120px;
+}
+
+html body .pricing_section_mobile .pricing-mobile h1 {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #424A5C;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto 17px auto;
+}
+
+html body .pricing_section_mobile .pricing-mobile h2 {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #424A5C;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 0 auto;
+}

@@ -1,0 +1,195 @@
+
+html body ul#menu-main-menu li#quiz-menu > a {
+    background: #e2b624;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+html body ul#menu-main-menu li#quiz-menu > a:hover{
+    background: #897d83;
+}
+
+@media screen and (min-width:768px){
+/* When User loggedin */
+/* html body.logged-in .topbar-header .navbar-header{
+    width: 20%;
+}
+html body.logged-in .topbar-header .topbar-nav{
+    width: 80%;
+} */
+html body.logged-in ul#menu-main-menu li > a{
+    padding: 10px 5px;
+}
+html body.logged-in .topbar-nav .navbar-nav .menu-item{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+html body.logged-in ul#menu-main-menu li > a {
+    font-size: 13.5px;
+}
+/* ----------End-------- */
+
+html body .topbar-header.navbar .container {
+    align-items: center;
+}
+html body ul#menu-main-menu li > a {
+    font-size: 14px;
+    padding: 10px;
+}
+
+html body .topbar-nav .navbar-nav li {
+    float: none;
+}
+
+html body .topbar-nav .navbar-nav {
+    display: flex;
+}
+
+html body li#login-menu {
+    order: 8;
+    margin-left: 0.8em !important;
+}
+
+html body li#quiz-menu {
+    order: 9;
+    margin-left: 5px;
+    height: 25px;
+}
+html body .topbar-header .navbar-header {
+    width: 25%;
+}
+
+html body .topbar-header .topbar-nav {
+    width: 75%;
+}
+
+}
+@media screen and (max-width: 1080px) and (min-width:992px) {
+    html body li#login-menu{
+        margin-left: 0px !important;
+    }
+    html body .topbar-header .navbar-header {
+        width: 25%;
+    }
+    html body .topbar-header .topbar-nav {
+        width: 75%;
+    }
+}
+@media screen and (max-width:812px) and (min-width:768px){
+    html body.logged-in .topbar-nav #wpmenucartli {
+        margin-top: 10px !important;
+    }
+    html body.logged-in .topbar-nav li#login-menu {
+        width: 100px !important;
+    }
+}
+@media screen and (max-width:1199px) and (min-width:768px){
+    html body.logged-in ul#menu-main-menu li > a {
+        font-size: 14px !important;
+    }    
+    html body.logged-in .topbar-header .topbar-nav{
+        width: 75% !important;
+    }
+    html body.logged-in .topbar-header .navbar-header {
+        width: 25% !important;
+    }
+    html body.logged-in .topbar-nav .navbar-nav {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    html body.logged-in .topbar-nav li#login-menu {
+        width: 200px;
+        text-align: right;
+        margin-top: 4px !important;
+        margin-right: 8px;
+        margin-left: 0px;
+        padding: 8px 0px !important;
+    }
+ 
+    html body.logged-in .topbar-nav li#quiz-menu{
+        margin-top: 12px;
+    }
+
+}
+@media screen and (max-width:991px) and (min-width:768px){
+    
+    html body .topbar-nav .navbar-nav {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    html body li#quiz-menu{
+        margin-left: 0px;
+        margin-top: 12px;
+        
+    }
+    html body .topbar-nav li#login-menu {
+        width: 200px;
+        text-align: right;
+        margin-top: 12px;
+        margin-right: 10px;
+        margin-left: 0px;
+    }
+}
+
+
+
+@media screen and (max-width:767px) {
+    html body #menu-main-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .topbar-nav li {
+        width: 100%;
+    }
+    
+    html body li#login-menu {
+        order: 9;
+        width: 45%;
+        padding: 8px 0px !important;
+        border: none;
+        margin: 0px;
+        
+    }
+    
+    html body li#quiz-menu {
+        order: 8;
+        width: 45%;
+        margin-right: 10px;
+    }
+    
+    html body #menu-main-menu li a[title="Resources"] {
+        border-bottom: 1px solid #a19aaa
+    }
+    
+    html body li#login-menu a {
+        margin-bottom: 0px !important;
+    }
+    html body ul#menu-main-menu li#quiz-menu > a,
+    html body ul#menu-main-menu #login-menu > a {
+        padding: 14px !important;
+        border-radius: 10px !important;
+        width: 170px;
+    }
+}
+@media screen and (max-width:360px) {
+    html body ul#menu-main-menu li#quiz-menu,
+    html body ul#menu-main-menu #login-menu {
+        width: 100% !important;
+    }
+    #menu-main-menu {
+        overflow-y: scroll;
+        max-height: calc(100vh - 209px) !important;
+    }
+    html body li#quiz-menu,
+    html body li#login-menu{
+        margin-right: 0px !important;
+    }
+}
+
+@media screen and (max-height:450px) {
+    html body #menu-main-menu {
+        overflow-y: scroll;
+        max-height: calc(100vh - 186px) !important;
+    }
+}

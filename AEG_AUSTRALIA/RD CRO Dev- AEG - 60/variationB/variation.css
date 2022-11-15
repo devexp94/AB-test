@@ -1,0 +1,355 @@
+/* html body.eg-show-strip .eg-sticky-nav {    
+    transform: translateY(0);
+    opacity: 1;
+}
+
+html body .eg-sticky-nav {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 999;
+    background: #FFFFFF;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 750ms ease, opacity 750ms ease;
+    box-shadow: 0px 2px 15px rgba(5, 61, 109, 0.25);
+}
+html body .eg-sticky-nav .eg-sticky-inr{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1680px;
+}
+
+html body .eg-sticky-nav .eg-content-section {
+    display: flex;
+    align-items: center;
+}
+
+html body .eg-sticky-nav .eg-scroll-button {
+    width: 186.4px;
+    text-align: center;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #053D6D;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+html body .eg-sticky-nav .eg-popup-button {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #3AA1DB;
+    border-radius: 5px;
+    justify-content: center;
+    cursor: pointer;
+    padding: 10px 32px;
+}
+@media (min-width: 1025px){
+    html body .eg-sticky-nav .eg-sticky-inr{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+html body .eg-sticky-nav .eg-scroll-button.eg-active{
+    background: linear-gradient(0deg, rgba(215, 233, 244, 0.6), rgba(215, 233, 244, 0.6)), #FFFFFF;
+    box-shadow: inset 0px -4px 0px #3AA1DB;
+    font-weight: bold;
+}
+
+@media screen and (max-width:1199px) {
+    html body .eg-sticky-nav .eg-scroll-button{
+        width: 120px;
+    }
+    html body .eg-sticky-nav .eg-popup-button{
+        padding: 10px 16px;
+        font-size: 15px;
+    }
+}
+
+.eg-sticky-header .eg-sticky-inr {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-X: scroll;
+    width: 100%;
+    background: #fff;
+}
+
+.eg-sticky-header .eg-content-section .eg-scroll-button{
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #053D6D;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: auto;
+}
+.eg-sticky-header .eg-sticky-inr .eg-content-section {
+    display: flex;
+    flex-wrap: nowrap;
+    background: #fff;
+}
+
+.eg-sticky-header .eg-content-section .eg-scroll-button.eg-active{
+    background: linear-gradient(0deg, rgba(215, 233, 244, 0.6), rgba(215, 233, 244, 0.6)), #FFFFFF;
+    box-shadow: inset 0px -4px 0px #3aa1db;
+    font-weight: bold;
+}
+
+
+.eg-sticky-header .eg-content-section .eg-scroll-button.eg-plan {
+    width: 140px !important;
+}
+ .eg-sticky-header .eg-sticky-inr{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.eg-sticky-header .eg-sticky-inr::-webkit-scrollbar{ 
+    display: none;
+} 
+@media screen and (min-width:768px) {
+    .eg-sticky-header{
+        display: none;
+    }
+}
+@media screen and (max-width:767px) {
+    html body.eg-show-strip .eg-sticky-nav, html body .eg-sticky-nav {
+        transform: none !important;
+        opacity: 1 !important;
+    }
+ 
+    html body .eg-sticky-nav .eg-scroll-button {
+        display: none;
+    }
+    
+    html body .eg-sticky-nav .eg-sticky-inr {
+        background: transparent;
+        padding: 0px;
+    }
+    
+    html body .eg-sticky-nav {
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 20px;
+        width: auto;
+    }
+    #pricing-faq,
+    #pricing-pricing-comparison-grid {
+        display: block !important;
+        margin-top: 40px !important;
+    }
+    #pricing-faq .title p,
+    #pricing-pricing-comparison-grid .title p {
+        font-size: 20px;
+    }
+    #pricing-faq .title,
+    #pricing-pricing-comparison-grid .title {
+        margin: 20px 0px;
+    }
+} */
+
+
+.eg-secondry-nav {
+    background: #000;
+}
+html body .eg-secondry-nav-inr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+html body .eg-secondry-nav-inr p {
+    margin-bottom: 0px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+html body .eg-secondry-nav-inr .eg-nav .eg-scroll-button {
+    display: inline-flex;
+    padding: 4px 0px;
+    font-weight: 600;
+    margin: 4px 15px;
+    position: relative;
+}
+/* html body .eg-secondry-nav-inr .eg-nav .eg-scroll-button.eg-active{
+    border-bottom: 2px solid #cf132f;
+} */
+html body .eg-secondry-nav-inr .eg-nav .eg-scroll-button:after {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #cf132f;
+    transition: width .2s ease-in-out;
+}
+html body .eg-secondry-nav-inr .eg-nav .eg-scroll-button:hover:after,
+html body .eg-secondry-nav-inr .eg-nav .eg-scroll-button.eg-active:after {
+    width: 100%;
+    transition: width .2s ease-in-out;
+}
+
+
+@media screen and (min-width: 1025px){
+    html body .global-search-bar-container-mob {
+        top: -159px;
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+    
+    html body {
+        padding-top: 48px;
+    }
+    html body .eg-secondry-nav-inr .eg-nav .eg-scroll-button{
+        margin-bottom: 6px;
+    }
+    html body .eg-secondry-nav-inr {
+        padding: 0px;
+    }
+    html body .eg-secondry-nav-inr p{
+        display: none;
+    }
+    .main-nav.header-mobile {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    
+    .eg-secondry-nav {
+        width: 100%;
+    }
+    
+    .eg-secondry-nav .eg-nav {
+        flex-wrap: nowrap;
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+        white-space: nowrap;
+        justify-content: center;
+    }   
+}
+
+@media screen and (min-width:768px) {
+    .eg-nav-container-mobile{
+        display: none;
+    }
+}
+@media screen and (max-width:767px) {
+    html body .header{
+        height: 118px !important;
+    }
+    html body .eg-secondry-nav{
+        display: none;
+    }
+        
+    .eg-dropdown.drop-open svg {
+        transform: rotate(180deg);
+        transition: all 250ms ease-in-out;
+    }
+    .eg-dropdown svg {
+        transform: rotate(0deg);
+        transition: all 250ms ease-in-out;
+    }
+    html body .eg-dropdown-options {
+        display: flex;
+        flex-direction: column;
+        max-height: 0px;
+        overflow: hidden;
+        transition: all 250ms ease-in-out;
+        opacity: 0;
+    }
+    html body .eg-dropdown.drop-open + .eg-dropdown-options {
+        max-height: 500px;
+        overflow: visible;
+        transition: all 350ms ease-in-out;
+        opacity: 1;
+    }
+    .eg-dropdown-item .eg-dropdown-item-text,
+    .eg-nav-container-mobile .eg-default-option,
+    .eg-default-option {
+        position: relative;
+        display: inline-block;
+    }
+    .eg-nav-container-mobile .eg-default-option:after{
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #cf132f;
+    }
+    .eg-dropdown-item .eg-dropdown-item-text:after,
+    html body .eg-default-option:after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: #cf132f;
+        transition: width .2s ease-in-out;
+    }
+    .eg-dropdown-item.eg-active .eg-dropdown-item-text:after,
+    html body .eg-default-option:hover:after,
+    html body .eg-default-option.eg-active:after {
+        width: 100%;
+        transition: width .2s ease-in-out;
+    }
+    html body .eg-dropdown-options .eg-dropdown-item{
+        font-size: .875rem;
+        line-height: 1.5;
+        text-decoration: none;
+        font-weight: 600;
+        text-shadow: none;
+    }
+    html body .eg-dropdown-options .eg-dropdown-item {
+        display: block;
+        width: 100%;
+        padding: 10px;
+
+    }
+    html body .eg-dropdown-options .eg-dropdown-item:first-child {
+        padding-top: 20px;
+    }
+    html body .eg-dropdown {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 20px 10px;
+        font-size: 20px;
+    }
+    html body .eg-nav-container-mobile {
+        width: 100%;
+    }      
+}

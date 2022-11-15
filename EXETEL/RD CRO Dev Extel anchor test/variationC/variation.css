@@ -1,0 +1,45 @@
+.eg-order .eg-text {
+    padding: 24px 20px;
+    border-radius: 10px;
+    background: #63d481;
+    color: #004346;
+    max-width: 485px;
+    width: 100%;
+    Font-Family: engrezbold,sans-serif;
+    font-size: 24px;
+    margin: 0 auto;
+    cursor: pointer;
+    line-height: 1.3;
+}
+
+.eg-order .eg-text:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    z-index: 2;
+    -webkit-box-shadow: 0 6px 18px -7px rgb(0 0 0 / 41%);
+    box-shadow: 0 6px 18px -7px rgb(0 0 0 / 41%);
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+@media screen and (max-width:992px) {
+    html body .eg-order .eg-text{
+        margin-top: 40px;
+        max-width: fit-content;
+    }
+    html body .eg-order-inr {
+        padding: 0px 46px;
+    }
+}
+.eg-text br{
+    display: none;
+}
+@media screen and (max-width:415px) {
+    
+    html body .eg-order .eg-text:hover {
+        -webkit-transform: scale(1.02);
+        transform: scale(1.02);
+    }
+    html body .eg-text br{
+        display: block;
+    }
+}

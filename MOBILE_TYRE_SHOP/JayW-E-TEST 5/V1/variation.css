@@ -1,0 +1,60 @@
+
+html body .eg-button-outer {
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+html body .eg-button-outer .eg-button-inr {
+  width: 77.5%;
+}
+
+html body .eg-button-outer .eg-range-button {
+  border: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 15px 20px;
+  font-weight: 700;
+  font-size: 21px;
+  min-width: 275px;
+  transition: background-color .3s,color .3s;
+  transition-timing-function: ease-out;
+  color: #fff;
+  background: #000000;
+}
+html body .eg-button-outer .eg-range-button:hover {
+  background: #0000006b;
+}
+html body.eg-full-range-show .eg-button-outer{
+  display: none;
+}
+html body .recommended.-show+div {
+  height: 0px;
+  overflow: hidden;
+  display: block;
+  opacity: 0;
+  transition: height 750ms ease, opacity 750ms ease;
+}
+html body.eg-full-range-show .recommended.-show+div {    
+  height: 100%;
+  overflow: visible;
+  opacity: 1;
+  transition: height 750ms ease, opacity 750ms ease;
+  display: initial;
+}
+
+@media screen  and (max-width:1200px){
+  html body .eg-button-outer .eg-button-inr {
+    width: 100%;
+  }
+    
+}
+
+@media screen and (max-width:767px) {
+  
+html body .eg-button-outer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+}

@@ -1,0 +1,59 @@
+html body .eg-search-options {
+    background: #fff;
+}
+html body .eg-search-options .eg-search-options-inr {
+    max-width: 1264px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 10px;
+}
+@media screen and (max-width:1024px) {
+    html body .eg-search-options .eg-search-options-inr {
+        max-width: 990px;
+    }
+}
+html body .eg-search-options .eg-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+html body .eg-search-options .eg-option-box {
+    padding: 12px 25px;
+    background: #edeae5;
+    border-radius: 30px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #3d3935;
+    margin-bottom: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+html body .eg-search-options .eg-option-box:hover{
+    color: #ba0000;
+}
+
+html body .eg-search-options .eg-option-box {
+    margin-right: 10px;
+    margin-left: 10px;
+}    
+html body .eg-search-options .eg-option-box:hover svg{
+    fill: #ba0000;
+}
+html body .eg-search-options .eg-option-box svg {
+    width: 16px;
+    height: 16px;
+    fill: #3d3935;
+    margin-right: 8px;
+}
+html body .eg-search-options .eg-heading {
+    margin-top: 0px;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #3d3935;
+}
+
