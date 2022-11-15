@@ -107,6 +107,11 @@
                     display:none;
                     overflow:hidden;
                   `;
+                document.querySelector(".eg-popup-wrapper-outer").style.cssText = `
+                    z-index:-1000;
+                    display:none;
+                    overflow:hidden;
+                  `;  
             });
 
             // running timer function after showing popup
