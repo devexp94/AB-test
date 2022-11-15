@@ -120,9 +120,16 @@
 
         // timer function
         function timerfn() {
-            let ss02hours = 12;
-            let ss02minutes = 59;
-            let ss02seconds = 0;
+            const date = new Date();
+            let hours = date.getHours();
+            let ss02hours = 0;
+            if(hours > 12){
+                ss02hours = 11 - (hours - 12);
+            } else {
+                ss02hours = 11 - hours;
+            }
+            let ss02minutes = 60 - date.getMinutes();
+            let ss02seconds = 60 - date.getSeconds();
             intervalFn = setInterval(function() {
                 --ss02seconds;
                 if (ss02hours === 0) {
