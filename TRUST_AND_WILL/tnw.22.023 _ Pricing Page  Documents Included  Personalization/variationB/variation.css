@@ -6,6 +6,8 @@
 
 .egtooltip .egtooltiptext {
   width: 280px;
+  font-weight: 600;
+    line-height: 1.3;
   background-color: #edf1f8;
   color: #000;
   text-align: center;
@@ -65,3 +67,4 @@ a.egLink {
 .eg_location {
   margin-top: 2px;
 }
+
