@@ -61,7 +61,9 @@ div.eg-usp svg {
     }
 
     .header-wrapper {
-        background-position: left;
+        background-position: center;
+        background-color: rgba(0,0,0,0.5);
+        background-blend-mode: overlay;
     }
 
     .heading-container .heading-content>h1 {
