@@ -131,7 +131,8 @@
     margin-top: 0;
 }
 
-.eg-dispatch-link:hover , .eg-dispatch-link:focus{
+.eg-dispatch-link:hover,
+.eg-dispatch-link:focus {
     background: #b3cae8;
     border: 1px solid #83afe0;
     color: white;
@@ -213,7 +214,13 @@ span.whole-time-block span {
 
 /*timer css end*/
 
-@media(max-width: 767px) {
+@media(max-width: 768px) {
+
+    /*setting z index of sticky add to cart*/
+    .product__sticky {
+        z-index: 2147483645;
+    }
+
     .eg-popup-overlay {
         display: block;
     }

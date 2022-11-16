@@ -106,3 +106,11 @@
     color: black;
     font-size: 15px !important;
 }
+
+@media(max-width: 768px) {
+
+    /*setting z index of sticky add to cart*/
+    .product__sticky {
+        z-index: 2147483645;
+    }
+}
