@@ -1,26 +1,28 @@
 @media screen and (max-width: 767px) {
-  .eg_trust{
-    text-align: center;
-    padding-inline: 1px;
-  }
-  .eg_trust h4 {
-    color: #fff;
-    text-align: center;
-    font-family: 'futura-pt';
-    font-size: 32px;
-    padding: 10px !important;
-    margin-bottom: 8px;
-    font-weight: bold;
-  }
+    .eg_trust {
+        text-align: center;
+        padding-inline: 1px;
+        display: block;
+        padding-inline: 20px;
+    }
 
-  .mobile__nav .nav--content {
-    margin-bottom: -5px;
-}
+    .eg_trust h4 {
+        color: #fff;
+        text-align: center;
+        font-family: 'futura-pt';
+        font-size: 32px;
+        padding-block: 10px !important;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
 
-  .eg_img img {
-    width: 100%;
-    max-width: 530px;
-    padding-inline: 20px;
-}
+    .mobile__nav .nav--content {
+        margin-bottom: -5px;
+    }
+
+    .eg_img img {
+        width: 100%;
+        max-width: 530px;
+    }
 
 }
