@@ -15,7 +15,7 @@
 
 .eg-popup-wrapper-outer {
     position: fixed;
-    top: 92px;
+    top: 150px;
     right: 20px;
     z-index: 9999999;
 }
@@ -183,7 +183,7 @@
 /*timer css*/
 .s001-banner-wrapper {
     display: block;
-    padding-bottom: 16px;
+    padding-block: 16px;
 }
 
 span.whole-time-block {
