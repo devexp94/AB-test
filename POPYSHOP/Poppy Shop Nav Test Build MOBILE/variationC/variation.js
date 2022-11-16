@@ -222,7 +222,7 @@ var htmlString = `<div class="eg_collections">
       }
       document.querySelector("#shopify-section-1583400657542").insertAdjacentHTML('afterend',htmlString)
       document.querySelectorAll('.eg_collections .eg_innr').forEach(function(el){
-    el.addEventListener('click',function(){
+     el.addEventListener('click',function(){
       window.location.href = this.getAttribute('eg-href');
     });
       });

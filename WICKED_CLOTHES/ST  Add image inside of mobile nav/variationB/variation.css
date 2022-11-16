@@ -1,15 +1,16 @@
 @media screen and (max-width: 767px) {
   .eg_trust{
     text-align: center;
+    padding-inline: 1px;
   }
   .eg_trust h4 {
     color: #fff;
     text-align: center;
     font-family: 'futura-pt';
     font-size: 32px;
-    font-weight: 600;
     padding: 10px !important;
     margin-bottom: 8px;
+    font-weight: bold;
   }
 
   .mobile__nav .nav--content {
@@ -20,4 +21,5 @@
     width: 100%;
     max-width: 530px;
 }
+
 }

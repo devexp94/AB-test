@@ -20,12 +20,11 @@
       setTimeout(function () {
         clearInterval(interval);
       }, delayTimeout);
-    }
-
+    };
 
     /* Variation functions */
 
-    let egImgContent = `<div class="eg_trust">
+    let egImgContent = `<div class="eg_trust" eg-href="https://www.wickedclothes.com/collections/cats">
                          <h4>Over 717,000+ happy customers</h4>
                          <div class="eg_img">
                          <img src="https://expogrowth.in/wp-content/uploads/2022/11/wc.png" alt="img">
@@ -36,9 +35,13 @@
 
       if (window.innerWidth < 768) {
         document.querySelector("#shopify-section-navigation > div.mobile__nav > div.creep-it-real__container").insertAdjacentHTML("beforebegin", egImgContent); 
-      }
-      
-    }
+
+        let eg_link = document.querySelector('.eg_trust');
+        eg_link.addEventListener('click',function(){
+            window.location.href = this.getAttribute('eg-href');
+          });
+      };
+    };
     /* Initialize variation */
     waitForElement("#shopify-section-navigation div.nav--content", init, 50, 15000);
 
