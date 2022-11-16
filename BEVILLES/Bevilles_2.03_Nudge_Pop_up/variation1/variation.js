@@ -69,24 +69,37 @@
         /* Variation Init */
         function init() {
             /* start your code here */
-            // adding class to body
-            document.body.classList.add("eg-body");
+            setTimeout(() => {
+                // showing popup only when there is some items in cart
+                const egTotalCartItems = parseInt(document.querySelector("#shopify-section-header .menu-cart  span.beside-svg").textContent);
 
-            document.body.insertAdjacentHTML("afterbegin", egPopupHTML);
+                if (egTotalCartItems && egTotalCartItems > 0) {
+                    // adding class to body
+                    document.body.classList.add("eg-body");
 
-            // logic to hide popup
-            document.querySelector(".eg-close-icon").addEventListener("click", (e) => {
-                document.querySelector(".eg-popup-overlay").style.cssText = `
-                    z-index:-1000;
-                    display:none;
-                    overflow:hidden;
-                  `;
-            });
+                    document.body.insertAdjacentHTML("afterbegin", egPopupHTML);
 
+                    // logic to hide popup
+                    const egCloseBtn = document.querySelector(".eg-close-icon");
+                    const egContinue = document.querySelector(".eg-continue");
+
+                    [egCloseBtn, egContinue].forEach((btn) => {
+                        btn.addEventListener("click", (e) => {
+                            document.querySelector(".eg-popup-overlay").style.cssText = `
+                            z-index:-1000;
+                            display:none;
+                            overflow:hidden;
+                          `;
+                        });
+                    })
+
+                }
+
+            }, 500);
         }
 
         /* Initialize variation */
-        waitForElement('body', init, 50, 15000);
+        waitForElement('#shopify-section-header .menu-cart  span.beside-svg', init, 50, 15000);
     } catch (e) {
         if (debug) console.log(e, "error in Test" + variation_name);
     }

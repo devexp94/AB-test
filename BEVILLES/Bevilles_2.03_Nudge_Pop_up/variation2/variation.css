@@ -14,8 +14,8 @@
 }
 
 .eg-popup-wrapper-outer {
-    position:absolute;
-    top: 117px;
+    position: fixed;
+    top: 92px;
     right: 20px;
     z-index: 9999999;
 }
@@ -23,7 +23,7 @@
 .eg-popup-wrapper {
 
     background: white;
-    outline: 0;
+
     width: 487px;
     height: fit-content;
     max-width: calc(100vw - 40px);
@@ -131,7 +131,7 @@
     margin-top: 0;
 }
 
-.eg-dispatch-link:hover {
+.eg-dispatch-link:hover , .eg-dispatch-link:focus{
     background: #b3cae8;
     border: 1px solid #83afe0;
     color: white;
