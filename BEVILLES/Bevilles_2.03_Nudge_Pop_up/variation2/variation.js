@@ -23,7 +23,6 @@
         }
 
         
-
         // timer block html
         const egTimerHtml = `
             <div class="s001-banner-wrapper">
@@ -33,7 +32,6 @@
                     <p class="eg-txt">to get your order dispatched next business day</p>
                 </div>
             </div>`;
-
 
         // variable for timer
         var intervalFn;
@@ -163,10 +161,9 @@
                                         overflow:hidden;
                                       `;
                         });
-
                     });
         }
-
+        
         // timer function
         function timerfn() {
 
