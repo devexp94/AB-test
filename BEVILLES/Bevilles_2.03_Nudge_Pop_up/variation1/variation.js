@@ -85,11 +85,7 @@
 
                     [egCloseBtn, egContinue].forEach((btn) => {
                         btn.addEventListener("click", (e) => {
-                            document.querySelector(".eg-popup-overlay").style.cssText = `
-                            z-index:-1000;
-                            display:none;
-                            overflow:hidden;
-                          `;
+                            document.querySelector(".eg-popup-overlay").style.display = `none`;
                         });
                     })
 

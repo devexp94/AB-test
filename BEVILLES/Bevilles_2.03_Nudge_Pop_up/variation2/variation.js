@@ -89,6 +89,8 @@
 
                     const egPopupHTML = `
                             <!-- overlay div -->
+                            <div class="eg-popup-main">
+
                             <div class="eg-popup-overlay"></div>
                              <!-- popup box -->
                                 <div class="eg-popup-wrapper-outer">
@@ -141,6 +143,7 @@
                                     </div>
                                 </div>
                                 </div>
+                                </div>
                                 `;
 
                     document.body.insertAdjacentHTML("afterbegin", egPopupHTML);
@@ -155,11 +158,7 @@
 
                     [egCloseBtn, egContinue].forEach((btn) => {
                         btn.addEventListener("click", (e) => {
-                            document.querySelector(".eg-popup-overlay").style.cssText = document.querySelector(".eg-popup-wrapper-outer").style.cssText = `
-                                        z-index:-1000;
-                                        display:none;
-                                        overflow:hidden;
-                                      `;
+                            document.querySelector(".eg-popup-main").style.display = "none";
                         });
                     });
         }
