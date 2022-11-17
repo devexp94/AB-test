@@ -1,0 +1,311 @@
+/* -----------------PDP ------------------------*/
+.eg-sale-banner * {
+    font-family: "Mallory Thin", Helvetica, Arial, sans-serif;
+}
+
+html body .eg-mid-season-sale-pdp .eg-sale-banner {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #86C8BC 70%, #2d8c9e 30%);
+    cursor: pointer;
+}
+
+html body .eg-mid-season-sale-pdp .eg-promo-timer {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 4px 20px 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+html body .eg-mid-season-sale-pdp .eg-promo-timer svg {
+    position: absolute;
+    top: -24px;
+    left: 0px;
+    width: 100%;
+    height: auto;
+}
+
+html body .eg-mid-season-sale-pdp {
+    background: #b2a8a1;
+    padding: 0px;
+    margin-bottom: 1.5rem;
+}
+
+html body .eg-mid-season-sale-pdp .banner-heading {
+    margin: 0px;
+    font-family: 'Mallory';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 99%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2D8C9E;
+}
+
+html body .eg-mid-season-sale-pdp .banner-heading span {
+    display: block;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+html body .eg-mid-season-sale-pdp .banner-content {
+    padding: 20px 10px 10px 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #85cbba;
+}
+
+html body .eg-mid-season-sale-pdp .banner-subheading {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    position: relative;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+html body .eg-mid-season-sale-pdp .promo-heading {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+html body .eg-promo-timer-inr {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    text-align: center;
+    position: relative;
+}
+
+html body .eg-mid-season-sale-pdp .eg-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+}
+
+html body .eg-mid-season-sale-pdp .eg-box span:nth-child(2) {
+    font-family: 'Mallory';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    color: #86C8BC;
+}
+
+html body .eg-mid-season-sale-pdp .eg-box span:first-child {
+    font-family: 'Mallory';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+html body .eg-mid-season-sale-pdp .eg-colon {
+    font-size: 15px;
+    line-height: 1px;
+    display: inline-flex;
+    align-items: initial;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: 'Mallory';
+}
+
+@media screen and (min-width: 1600px) {
+
+
+    html body .eg-mid-season-sale-pdp .eg-box {
+        min-width: 54px;
+    }
+
+    html body .eg-mid-season-sale-pdp .eg-box span:first-child {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 2px;
+    }
+
+    html body .eg-mid-season-sale-pdp .eg-box span:nth-child(2) {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    html body .eg-mid-season-sale-pdp .eg-promo-timer {
+        padding-top: 25px;
+    }
+
+    html body .eg-mid-season-sale-pdp .promo-heading,
+    html body .eg-mid-season-sale-pdp .eg-promo-timer .eg-promo-timer-inr {
+        max-width: 222px !important;
+        width: 100%;
+    }
+
+    html body .eg-mid-season-sale-pdp .eg-promo-timer .banner-subheading {
+        max-width: 350px !important;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:466px) and (max-width:767px) {
+    html body .eg-mid-season-sale-pdp .banner-heading {
+        font-size: 4vw;
+    }
+
+    html body .eg-mid-season-sale-pdp .eg-box span:first-child {
+        font-size: 5.2vw;
+    }
+
+    html body .eg-mid-season-sale-pdp .eg-box span:nth-child(2) {
+        font-size: 2.3vw;
+        line-height: 1.3;
+    }
+}
+
+@media screen and (min-width:1367px) {
+    html body .eg-mid-season-sale-pdp .promo-heading {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width:1101px) and (max-width:1300px) {
+    html body .eg-mid-season-sale-pdp .promo-heading {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    html body .eg-mid-season-sale-pdp .banner-heading {
+        font-size: 26px;
+    }
+
+    html body .eg-mid-season-sale-pdp .banner-heading span,
+    html body .eg-mid-season-sale-pdp .eg-box span:first-child,
+    html body .eg-mid-season-sale-pdp .banner-subheading {
+        font-size: 22px !important;
+        line-height: 1.2;
+    }
+
+    html body .eg-mid-season-sale-pdp .eg-box span:nth-child(2) {
+        font-size: 10px !important;
+        line-height: 1.2;
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    .product-details-main .description {
+        padding-top: 30px !important;
+    }
+}
+
+@media screen and (max-width:767px) {
+    html body .eg-mid-season-sale-pdp .banner-heading span {
+        margin-top: 3px;
+    }
+
+    html body .eg-mid-season-sale-pdp .banner-content {
+        padding-bottom: 22px !important;
+    }
+
+    html body .eg-mid-season-sale-pdp .eg-promo-timer {
+        padding-top: 10px !important;
+    }
+
+    html body .eg-mid-season-sale-pdp .banner-heading,
+    html body .eg-mid-season-sale-pdp .eg-promo-timer .banner-subheading {
+        max-width: 234px !important;
+    }
+
+    html body .eg-mid-season-sale-pdp .banner-heading span,
+    html body .eg-mid-season-sale-pdp .banner-subheading {
+        font-size: 13px !important;
+        line-height: 1.2;
+    }
+
+    html body .eg-mid-season-sale-pdp .banner-heading {
+        font-size: 20px !important;
+    }
+
+    html body .eg-mid-season-sale-pdp .banner-subheading br {
+        display: none;
+    }
+}
+
+html body .eg-mid-season-sale-pdp .eg-sale-banner>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+html body .eg-mid-season-sale-pdp .promo-heading,
+html body .eg-mid-season-sale-pdp .eg-promo-timer .eg-promo-timer-inr {
+    width: 100%;
+    max-width: 165px;
+}
+
+html body .eg-mid-season-sale-pdp .banner-heading,
+html body .eg-mid-season-sale-pdp .eg-promo-timer .banner-subheading {
+    max-width: 371px;
+    width: 100%;
+}
+
+@media screen and (max-width: 360px) {
+
+    html body .eg-mid-season-sale-pdp .eg-sale-banner .eg-box span:first-child {
+        font-size: 19px !important;
+    }
+
+    html body .eg-mid-season-sale-pdp .eg-sale-banner .banner-heading {
+        font-size: 16px !important;
+    }
+
+    html body .eg-mid-season-sale-pdp .promo-heading,
+    html body .eg-mid-season-sale-pdp .eg-sale-banner .banner-heading span,
+    html body .eg-mid-season-sale-pdp .eg-sale-banner .banner-subheading {
+        font-size: 10px !important;
+        line-height: 1.2;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width: 1199px) {
+    html body .eg-mid-season-sale-pdp .eg-sale-banner .banner-subheading {
+        font-size: 18px !important;
+    }
+
+    html body .eg-mid-season-sale-pdp .eg-sale-banner .banner-heading {
+        font-size: 24px !important;
+        margin-bottom: 12px;
+    }
+
+    html body .eg-mid-season-sale-pdp .eg-sale-banner .promo-heading {
+        margin-bottom: 15px;
+    }
+}

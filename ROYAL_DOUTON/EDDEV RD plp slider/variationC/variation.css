@@ -1,0 +1,106 @@
+.eg-img-slider,
+.c-c-product-card > a,
+.eg-img-slider > div,
+body .c-c-pl_results_container {
+    width: 100% !important;
+}
+.eg-img-slider img::after {
+    display: none;
+}
+/* body .c-c-product-card_img-container {
+    display: none;
+} */
+
+.eg-img-slider .slick-dots > li {
+    display: flex;
+    flex: 1 1 auto;
+    border-radius: 0;
+    margin: 0;
+    max-width: 100%;
+    padding: 16px 0;
+    cursor: pointer;
+    list-style: none;
+}
+.eg-img-slider .slick-dots > li > button{
+    cursor: pointer;
+    background: #f3f3f3;
+    font-size: 0;
+    width: 100%;
+    height: 1px;
+    border-radius: 0;
+    border: none;
+    padding: 0;
+}
+.eg-img-slider .slick-dots > li.slick-active > button {
+    border: 1px solid var(--product-img-gallery-slickDots-button-active-bg-color);
+    background: var(--product-img-gallery-slickDots-button-active-bg-color);
+    height: 3px;
+    margin-top: -1px;
+}
+.eg-img-slider .slick-dots{
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    left: 0px;
+    padding: 0px 10px;
+}
+.eg-img-slider .slick-arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0px 4px;
+    border: none;
+    background: transparent;
+    height: 88px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.eg-img-slider .slick-next.slick-arrow {
+    right: 0px;
+}
+.eg-img-slider .slick-prev.slick-arrow {
+    left: 0px;
+}
+.eg-img-slider-outer{
+    position: absolute !important;
+    top: 15px;
+    left: 15px;
+    width: calc(100% - 30px) !important;
+    z-index: 99;
+}
+.slick-arrow span {
+    background: #e3e3e3b5;
+    font-weight: 700;
+    font-size: 30px;
+    border-radius: 100%;
+}
+
+@media screen and (max-width:1199px) {
+    html body .eg-img-slider .slick-arrow{
+        display: none !important;
+    }
+}
+@media screen and (max-width:1199px) and (min-width:768px){
+    html body .eg-img-slider-outer {
+        top: 10px;
+        left: 10px;
+        width: calc(100% - 10px) !important;
+        z-index: 99;
+    }
+}
+@media screen and (max-width:767px) {
+    html body .eg-img-slider-outer{
+        width: calc(100% - 8px) !important;
+        top: 8px !important;
+        left: 8px !important;
+    }
+}
+
+html body .c-c-product-card_text-wrapper{
+    margin-top: 40px !important;
+}

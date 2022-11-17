@@ -1,0 +1,30 @@
+html body .eg-sale-tile .eg-sale-link {
+    visibility: hidden;
+    opacity: 0;
+}
+html body .c-c-product-card.eg-sale-tile:after{
+    background: transparent !important;
+}
+@media screen and (min-width:1200px){
+html body .c-c-product-card.eg-sale-tile{
+    background: url('https://gbl-oned-cdn-prod.azureedge.net/-/media/wedgwood/images/wedgwood/sale/SpendSaveSaleProductListingPageBannerDesktop.ashx');
+    background-size: cover;
+    background-position: center center;
+}
+}
+@media screen and (max-width:1199px) and (min-width:601px){
+    html body .c-c-product-card.eg-sale-tile{
+        background: url('https://gbl-oned-cdn-prod.azureedge.net/-/media/wedgwood/images/wedgwood/sale/SpendSaveSaleProductListingPageBannerDesktop.ashx');
+        background-size: contain !important;
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+        background-color: #bacbc3 !important;
+    }
+}
+@media screen and (max-width:600px){
+    html body .c-c-product-card.eg-sale-tile{
+        background: url('https://gbl-oned-cdn-prod.azureedge.net/-/media/wedgwood/images/wedgwood/sale/SpendSaveSaleProductListingPageBannerMobile.ashx');
+        background-size: cover !important;
+        background-position: center center !important;
+    }    
+}

@@ -1,0 +1,45 @@
+@media screen and (max-width: 767px) {
+
+    html body .product-desc-spec-info-box .prod-spec-title,
+    html body .product-desc-spec-info-box .prod-desc-title {
+        color: #666;
+        font-weight: 600;
+        font-size: 16px;
+        border: 1px solid #ECECEC;
+        padding: 7px 10px;
+        margin: 10px 0 0px;
+        position: relative;
+        background: #f9f9f9;
+    }
+
+    html body .product-desc-new-info-box,
+    html body .product-spec-new-info-box {
+        margin-bottom: 0px;
+        padding-right: 0px !important;
+    }
+
+    html body .product-desc-spec-info-box .prod-spec-title i,
+    html body .product-desc-spec-info-box .prod-desc-title i {
+
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        margin-top: -8px;
+    }
+
+    html body .product-desc-spec-info-box .prod-spec-title.active .fa-angle-down,
+    html body .product-desc-spec-info-box .prod-desc-title.active .fa-angle-down {
+        display: none !important;
+    }
+
+    html body .product-desc-spec-info-box .prod-spec-title.active .fa-angle-up,
+    html body .product-desc-spec-info-box .prod-desc-title.active .fa-angle-up {
+        display: block !important;
+    }
+
+    html body .product-desc-spec-info-box .prod-desc-txt,
+    html body .product-spec-new-info-box .prod-spec-txt {
+        padding: 10px !important;
+        border: 1px solid #ececec !important;
+    }
+}

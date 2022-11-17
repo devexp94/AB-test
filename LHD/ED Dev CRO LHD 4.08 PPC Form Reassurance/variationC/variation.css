@@ -1,0 +1,30 @@
+html body .eg-policy {
+    display: block;
+    position: relative;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #2251FF;
+    padding: 0px 20px 0px 100px;
+    margin-bottom: 10px;
+}
+
+html body .eg-policy svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+}
+
+html body .eg-policy a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media screen and (max-width:767px) {
+    html body form .eg-policy{
+        font-size: 12px;
+        padding: 0px 10px 0px 100px;
+    }
+}

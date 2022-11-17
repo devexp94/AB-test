@@ -1,0 +1,82 @@
+html body .page_title_module-cta,
+html body .standard_hero-cta {
+    display: none;
+}
+html body .eg-contact-section {
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+html body .eg-contact-section .eg-phone-link{
+    padding-top: 12px;
+}
+
+html body .eg-contact-section .eg-phone-link {
+    padding: 7px 15px;
+    font-size: 15px !important;
+    line-height: 1.125 !important;
+    font-weight: 700 !important;
+    font-family: "Overpass" !important;
+    outline: none;
+    background-color: #2251ff;
+    color: #ffffff !important;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 27px;
+    margin-bottom: 15px;
+    justify-content: center;
+    cursor: pointer;
+}
+html body .eg-contact-section .eg-phone-link span:first-child {
+    margin-left: 0px;
+}
+html body .eg-contact-section .eg-phone-link span {
+    font-size: 15px;
+    line-height: 1.125;
+    font-weight: 700;
+    font-family: "Overpass";
+    margin-left: 5px;
+    display: inline-flex;
+    margin-top: 1px;
+}
+
+html body .eg-contact-section .eg-check-eligibilty {
+    display: inline-flex;
+    border: 1px solid #2251ff;
+    padding: 7px 15px;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+html body .eg-contact-section .eg-check-eligibilty:hover {
+    -webkit-box-shadow: 0 0 0 0.0625rem #2251ff inset;
+    box-shadow: 0 0 0 0.0625rem #2251ff inset;
+    background-color: #2251ff;
+    color: #ffffff !important;
+}
+html body .eg-contact-section .eg-check-eligibilty:hover span {
+    color: #ffffff !important;
+}
+html body .eg-contact-section .eg-main-text {
+    font-size: 15px;
+    line-height: 1.125;
+    font-weight: 700;
+    font-family: "Overpass";
+    color: #2251ff;
+}
+
+html body .eg-contact-section .eg-sub-text {
+    font-size: 10px;
+    font-weight: 400;
+    font-family: "Overpass";
+    color: #2251ff;
+}
+html body .eg-contact-section .eg-phone-link, 
+html body .eg-contact-section .eg-check-eligibilty {
+    min-width: 198px;
+    height: 47px;
+}
+html body .eg-contact-section .eg-phone-link:hover {
+    background-color: #1e3fcf;
+    color: #ffffff;
+}

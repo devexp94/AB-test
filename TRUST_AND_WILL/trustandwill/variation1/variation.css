@@ -1,0 +1,88 @@
+body.overflow-y-hidden{
+    overflow-y: scroll !important;
+}
+html body #search-modal #search-modal_div_modal-close{
+    display: block !important;
+    left: 70px !important;
+    padding-top: 0 !important ;
+    padding-bottom: 0 !important;
+}
+
+html body #search-modal #search-modal_div_modal-close.w-full{
+    width: 0px;
+    transition: width 0.5s ease-in-out;
+}
+
+html body #search-modal #search-modal_div_modal-close.shadow-xl{
+    box-shadow: none !important;
+}
+
+html body #search-modal #search-modal_div_modal-close.overflow-y-scroll{
+    overflow-y: hidden !important;
+}
+
+html body #search-modal #search-modal_div_modal-close.h-screen{
+    height: auto !important;
+}
+
+html body #search-modal #search-modal_div_modal-close .container.flex.items-center.justify-center{
+    display: none !important;
+}
+
+html body #search-modal #search-modal_div_modal-close .container.flex.justify-center.text-grey-darken-45{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+html body #search-modal_input_search{
+    background: #edf0f8 !important;
+}
+html body #search-modal_input_search::placeholder{
+    color: #000;
+    font-weight: 500;
+}
+
+html body #search-modal_input_search:focus-visible{
+    outline: none !important;
+}
+
+@media screen and (max-width:767px) {
+    html body #search-modal #search-modal_div_modal-close.w-full{
+        width: 100% !important;
+    }
+    html body #search-modal #search-modal_div_modal-close.h-screen{
+        height: 71px !important;
+    }
+    html body #search-modal #search-modal_div_modal-close .container.flex.justify-center.text-grey-darken-45{
+        display: block !important;
+        margin-left: 0px !important;
+        max-width: 100% !important;
+    }
+    html body #search-modal #search-modal_div_modal-close{
+        left: 60px !important;
+    }
+    html body #search-modal_input_search{
+        padding-left: 0px !important;
+        max-width: 100% !important;
+    }
+}
+@media screen and (max-width:639px) {
+    html body #search-modal #search-modal_div_modal-close .container.flex.justify-center.text-grey-darken-45{
+        margin-top: 7px !important;
+    }
+}
+ html body #search-modal .container + div.hidden{
+    display:none;
+}
+@media (min-width: 768px){
+    html body #search-modal #search-modal_div_modal-close.h-screen{
+        margin-top: 9rem;
+    }
+    html body.eg-fixed #search-modal #search-modal_div_modal-close.h-screen,
+    html body main > section #search-icon {
+        margin-top: 5rem;
+    }
+    html body.eg-fixed main > section #search-icon{
+        margin-top: 1rem;
+    }
+}

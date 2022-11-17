@@ -1,0 +1,373 @@
+/* -----------------PDP ------------------------*/
+.eg-sale-banner * {
+    font-family: IvyMode Semi bold, Helvetica,Arial,sans-serif;
+}
+html body .eg-mid-season-sale-pdp .eg-sale-banner {
+    display: flex;
+    padding: 15px;
+    background: url('https://glb-oned-cdn-prod.azureedge.net/-/media/wedgwood/images/wedgwood/sale/Summer_Sale_product_page_banner_desktop_Background.ashx') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+html body .eg-mid-season-sale-pdp{
+    background: #4b7863!important;
+    padding: 0px;
+    margin-bottom: 1.5rem;
+}
+
+html body .eg-mid-season-sale-pdp .banner-heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0px;
+    margin-top: 18px;
+}
+
+html body .eg-mid-season-sale-pdp .banner-content {
+    background: url('https://glb-oned-cdn-prod.azureedge.net/-/media/wedgwood/images/wedgwood/sale/Summer_Sale_product_page_banner_desktop_Red_Box.ashx');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #e0313e;
+    padding: 10px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 350px;
+    padding-bottom: 15px;
+}
+
+html body .eg-mid-season-sale-pdp .banner-subheading {
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.2;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+    margin-top: 8px;
+}
+
+@media screen and (min-width: 1600px) {
+    
+    html body .eg-mid-season-sale-pdp .banner-heading {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 21px;
+    }    
+    html body .eg-mid-season-sale-pdp .banner-subheading {
+        font-style: normal;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:466px) and (max-width:767px) {
+    html body .eg-mid-season-sale-pdp .banner-heading {
+        font-size: 4vw;
+    }
+    html body .eg-mid-season-sale-pdp .banner-subheading {
+        font-size: 3vw;
+    }
+}
+@media screen and (max-width:1100px) and (min-width:1024px) {
+    html body .eg-mid-season-sale-pdp .eg-sale-banner{
+        padding: 12px 10px; 
+    }
+    html body .eg-mid-season-sale-pdp .banner-heading{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:1023px) and (min-width:768px) {
+    html body .eg-mid-season-sale-pdp .eg-sale-banner{
+        padding: 12px 10px; 
+    }
+
+    html body .eg-mid-season-sale-pdp .banner-subheading {
+        font-size: 10px;
+    }
+    html body .eg-mid-season-sale-pdp .banner-heading {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    html body .eg-mid-season-sale-pdp .banner-content {
+        background-size: contain !important;
+        background-color: #d7353d;
+    }
+}
+@media screen and (max-width:465px) {
+    html body .eg-mid-season-sale-pdp .banner-content{
+        padding: 10px 3px 15px 3px !important;
+        width: 95% !important;
+    }
+    html body .eg-mid-season-sale-pdp .banner-content .banner-heading {
+        margin-top: 18px;
+    }
+}
+
+
+
+@media screen and (max-width:350px) {
+    
+    html body .eg-mid-season-sale-pdp .eg-sale-banner .banner-content{
+        width: 87% !important;
+    }
+}
+
+/* --------------END---------------------------- */
+
+
+/* -----------------PLP--------------------- */
+html body .eg-mid-season-tile-plp .eg-sale-banner {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 60px);
+}
+html body .eg-mid-season-tile-plp .eg-mid-season-container .c-c-product-card_img-container{
+    visibility: hidden;
+}
+
+html body .eg-mid-season-tile-plp .eg-mid-season-link {
+    background: url('https://glb-oned-cdn-prod.azureedge.net/-/media/wedgwood/images/wedgwood/sale/Summer_Sale_Product_Listing_Page_Banner_Desktop_Background.ashx');
+    display: flex;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+    padding: 16px;
+    text-decoration: none;
+    align-items: flex-end;
+    background-position: top;
+}
+
+
+html body .eg-mid-season-tile-plp {
+    padding: 0px;
+}
+html body .eg-mid-season-tile-plp .eg-heading {
+    font-style: normal;
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 23px;
+    margin-top: 11px !important;
+    font-weight: bold !important;
+    line-height: 1.2;
+}
+
+html body .eg-mid-season-tile-plp .eg-sub-heading {
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.5;
+    margin-bottom: 4px;
+    /* margin-top: 35px; */
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+html body .eg-mid-season-tile-plp .eg-mid-season-container {
+    width: 100%;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+
+}
+
+
+ html body .eg-mid-season-tile-plp .eg-button{
+    text-align: center;
+    text-transform: none;
+    cursor: pointer;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #fff !important;
+    width: auto !important;
+    background: transparent !important;
+    color: #ffffff !important;
+    padding: 0px !important;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+html body .eg-mid-season-tile-plp .eg-mid-season-link:hover .eg-button{
+    border-bottom: 1px solid transparent !important;
+}
+
+html body .eg-mid-season-tile-plp .eg-image {
+    min-height: 300px;
+    background: url('https://gbl-oned-cdn-prod.azureedge.net/-/media/wedgwood/images/wedgwood/product-type/teaware-and-tea/title-components/wedgwood_tea_and_teaware.ashx?rev=8db02f144abc4dfd834ff08bed7ec068&q=70&iw=1150&ih=536&crop=1');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width:1440px){
+    html body .eg-mid-season-tile-plp .eg-heading{
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1199px){
+    html body .eg-mid-season-tile-plp .eg-heading{
+        font-size: 18px;
+    }
+    html body .eg-mid-season-tile-plp .eg-sub-heading{
+        font-size: 12px;
+    }
+    html body .eg-mid-season-tile-plp .eg-button{
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    html body .eg-mid-season-tile-plp .banner-content .banner-subheading{
+        font-size: 14px !important;
+    }
+}
+@media screen and (max-width:767px) {
+    html body .eg-mid-season-tile-plp .eg-heading{
+        font-size: 15px;
+    }
+    html body .eg-mid-season-tile-plp .eg-heading br {
+        display: none;
+    }
+    html body .eg-mid-season-tile-plp .eg-sub-heading,
+    html body .eg-mid-season-tile-plp .eg-button{
+        font-size: 12px;
+    }
+    html body .eg-mid-season-tile-plp .eg-mid-season-link{
+        padding: 8px;
+    }
+
+}
+
+
+html body .eg-mid-season-tile-plp .banner-heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+html body .eg-mid-season-tile-plp .banner-content {
+    background: url("https://glb-oned-cdn-prod.azureedge.net/-/media/wedgwood/images/wedgwood/sale/Summer_Sale_Product_Listing_Page_Banner_Desktop_Red_Box.ashx");
+    padding: 75px 15px 20px 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #e0313e;
+}
+html body .eg-mid-season-tile-plp .banner-subheading {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+    font-family: Orpheus Pro, Helvetica,Arial,serif !important;
+    font-weight: 400;
+}
+
+html body .eg-mid-season-tile-plp .eg-sale-banner * {
+       font-family: IvyMode Semi bold, Helvetica,Arial,sans-serif;
+}
+
+@media screen and (min-width: 1600px) {
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .eg-sale-banner {
+        width: calc(100% - 80px);
+    }
+    /* html body .eg-mid-season-tile-plp .eg-sale-banner{
+        bottom: 43px;
+    } */
+    html body .eg-mid-season-tile-plp .eg-sale-banner .banner-heading {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+    html body .eg-mid-season-tile-plp .banner-subheading{
+        font-size: 18px !important;
+    }
+}
+
+@media screen and (max-width: 1360px) and (min-width: 1161px) {
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .banner-heading{
+        font-size: 24px;
+    }
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .banner-subheading{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 1160px) {
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .banner-heading{
+        font-size: 26px;
+        line-height: 1.2;
+    }
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .banner-content {
+        padding: 50px 12px 20px 12px;
+    }
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .eg-sale-banner{
+        width: calc(100% - 20px);
+    }
+}
+
+@media screen and (max-width:900px) {
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .banner-subheading {
+        font-size: 13px;
+    }    
+}
+
+@media screen and (max-width:767px) {
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .banner-subheading {
+        font-size: 11px;
+    }
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .banner-heading {
+        font-size: 21px;
+    }
+}
+@media screen and (max-width:350px) {
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .banner-heading {
+        font-size: 18px;
+    }
+
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .banner-subheading {
+        font-size: 9px !important;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1199px){
+    html body .c-c-pl_results_list.-reduced .eg-mid-season-tile-plp .banner-heading{
+        font-size: 18px;
+    }
+    html body .c-c-pl_results_list.-reduced .eg-mid-season-tile-plp .banner-subheading{
+        font-size: 9px;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-height:430px) and (orientation: landscape) {
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .banner-heading br {
+        display: none !important;
+    }
+    
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .banner-heading {
+        margin-top: 14px;
+        font-size: 29px !important;
+    }
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .banner-subheading {
+        font-size: 16px !important;
+    }
+  }

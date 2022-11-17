@@ -1,0 +1,320 @@
+html body .eg-black-friday-tile .eg-sale-banner {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 40px);
+    background: #bacbc3;
+}
+html body .eg-black-friday-tile .eg-black-friday-container .c-c-product-card_img-container{
+    visibility: hidden;
+}
+
+html body .eg-black-friday-tile .eg-black-friday-link {
+    background: url('https://drive.google.com/uc?export=view&id=1eUHFVrkIKdWL61nm2Lkn-6nfbkz6hqS5');
+    display: flex;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+    padding: 16px;
+    text-decoration: none;
+    align-items: flex-end;
+    background-position: top;
+}
+
+
+html body .eg-black-friday-tile {
+    padding: 0px;
+}
+html body .eg-black-friday-tile .eg-heading {
+    font-style: normal;
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 23px;
+    margin-top: 11px !important;
+    font-weight: bold !important;
+    line-height: 1.2;
+}
+
+html body .eg-black-friday-tile .eg-sub-heading {
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.5;
+    margin-bottom: 4px;
+    /* margin-top: 35px; */
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+html body .eg-black-friday-tile .eg-black-friday-container {
+    width: 100%;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+
+}
+
+
+ html body .eg-black-friday-tile .eg-button{
+    text-align: center;
+    text-transform: none;
+    cursor: pointer;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #fff !important;
+    width: auto !important;
+    background: transparent !important;
+    color: #ffffff !important;
+    padding: 0px !important;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+html body .eg-black-friday-tile .eg-black-friday-link:hover .eg-button{
+    border-bottom: 1px solid transparent !important;
+}
+
+html body .eg-black-friday-tile .eg-image {
+    min-height: 300px;
+    background: url('https://gbl-oned-cdn-prod.azureedge.net/-/media/wedgwood/images/wedgwood/product-type/teaware-and-tea/title-components/wedgwood_tea_and_teaware.ashx?rev=8db02f144abc4dfd834ff08bed7ec068&q=70&iw=1150&ih=536&crop=1');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width:1440px){
+    html body .eg-black-friday-tile .eg-heading{
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1199px){
+    html body .eg-black-friday-tile .eg-heading{
+        font-size: 18px;
+    }
+    html body .eg-black-friday-tile .eg-sub-heading{
+        font-size: 12px;
+    }
+    html body .eg-black-friday-tile .eg-button{
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width:767px) {
+    html body .eg-black-friday-tile .eg-heading{
+        font-size: 15px;
+    }
+    html body .eg-black-friday-tile .eg-heading br {
+        display: none;
+    }
+    html body .eg-black-friday-tile .eg-sub-heading,
+    html body .eg-black-friday-tile .eg-button{
+        font-size: 12px;
+    }
+    html body .eg-black-friday-tile .eg-black-friday-link{
+        padding: 8px;
+    }
+
+}
+
+
+html body .eg-black-friday-tile .banner-heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+html body .eg-black-friday-tile .banner-content {
+    background: url("https://drive.google.com/uc?export=view&id=1BPPh4Hq1JqqyUUSYjUxtH904iRCTckjB");
+    padding: 75px 15px 20px 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #e0313e;
+}
+html body .eg-black-friday-tile .eg-promo-timer {
+    padding: 2px;
+}
+html body .eg-black-friday-tile .banner-subheading {
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+}
+
+html body .eg-black-friday-tile .eg-sale-banner * {
+       font-family: IvyMode Semi bold, Helvetica,Arial,sans-serif;
+}
+
+html body .eg-black-friday-tile .promo-heading {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.3;
+    text-align: center;
+    color: #081F2C;
+    margin-bottom: 8px;
+}
+
+html body .eg-promo-timer-inr {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+html body .eg-black-friday-tile .eg-date.eg-box {
+    display: none;
+}
+
+html body .eg-black-friday-tile .eg-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 67px;
+}
+html body .eg-black-friday-tile .eg-box span:nth-child(2){
+    color: #081F2C;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+html body .eg-black-friday-tile .eg-box span:first-child {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 39px;
+    line-height: 40px;
+    text-align: center;
+    color: #081F2C;
+}
+html body .eg-black-friday-tile .eg-colon {
+    font-size: 48px;
+    line-height: 1px;
+    display: inline-flex;
+    align-items: initial;
+    color: #081F2C;
+}
+
+@media screen and (min-width: 1600px) {
+    html body .eg-black-friday-tile .eg-sale-banner{
+        bottom: 43px;
+    }
+    html body .eg-black-friday-tile .eg-sale-banner .eg-box span:first-child {
+        font-size: 48px;
+        line-height: 50px;
+    }
+    html body .eg-black-friday-tile .eg-sale-banner .eg-colon {
+        font-size: 60px;
+        line-height: 1px;
+        display: inline-flex;
+        align-items: initial;
+        color: #081F2C;
+    }
+
+    html body .eg-black-friday-tile .eg-sale-banner .banner-heading {
+        font-size: 35px;
+        line-height: 1.5;
+    }
+    html body .eg-black-friday-tile .eg-sale-banner .banner-subheading {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+    html body .eg-black-friday-tile .eg-sale-banner .promo-heading {
+        font-size: 18px;
+    }   
+}
+
+@media screen and (max-width: 1360px) and (min-width: 1161px) {
+    html body .eg-black-friday-link .banner-heading{
+        font-size: 24px;
+    }
+    html body .eg-black-friday-link .banner-subheading{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 1160px) {
+    html body .eg-black-friday-link .banner-heading{
+        font-size: 20px;
+        line-height: 1.3;
+    }
+    html body .eg-black-friday-link .banner-content {
+        padding: 20px 12px;
+    }
+    html body .eg-black-friday-link .eg-box span:first-child{
+        font-size: 32px;
+    }
+    html body .eg-black-friday-link .eg-colon {
+        font-size: 40px;
+    }
+    html body .eg-black-friday-link .eg-sale-banner{
+        width: calc(100% - 20px);
+        bottom: 25px;
+        background: #bacbc3;
+        padding-bottom: 11px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    html body .eg-black-friday-link .banner-subheading {
+        font-size: 16px;
+    }    
+    html body .eg-black-friday-link .eg-box span:nth-child(2) {
+        font-size: 14px;
+        line-height: 12px;
+    }
+    html body .eg-black-friday-link .eg-box span:first-child {
+        font-size: 28px;
+    }
+    html body .eg-black-friday-link .eg-colon {
+        font-size: 34px;
+    }
+    html body .eg-black-friday-link .eg-box{
+        width: 44px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    html body .eg-black-friday-link .promo-heading {
+        font-size: 13px;
+        line-height: 1.2;
+        margin-bottom: 0px;
+    }
+    html body .eg-black-friday-link .banner-subheading {
+        font-size: 14px;
+    }
+    html body .eg-black-friday-link .banner-heading {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:350px) {
+    html body .eg-black-friday-link .banner-heading {
+        font-size: 16px;
+    }
+    html body .eg-black-friday-link .banner-subheading {
+        font-size: 12px;
+    }
+    html body .eg-black-friday-link .eg-box span:first-child {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+    html body .eg-black-friday-link .promo-heading {
+        margin-bottom: 5px;
+        font-size: 13px;
+        line-height: 1.4;
+    }
+}

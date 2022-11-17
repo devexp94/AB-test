@@ -1,0 +1,131 @@
+html body .main-content .auth_container .auth_container_form #referred_by_referral_code{
+    display: none;
+}
+html body .main-content .eg-referral {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #dafdff;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 35px 0px;
+    z-index: 2;
+}
+html body .main-content .auth_container_close{
+    z-index: 3;
+}
+html body .main-content .eg-referral .eg-referral-inr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 325px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -.2px;
+}
+html body,
+html body .main-content .auth_container {
+    background: #48f9fe;
+}
+@media screen and (min-width:1217px){
+    html body .main-content .eg-referral .eg-referral-inr{
+        flex-direction: column;
+    }
+
+    html body .main-content .auth_container .auth_container_logo {
+        position: static;
+        background: #fff;
+        text-align: center;
+        align-items: center;
+        display: flex !important;
+    }
+    html body .main-content .auth_container .auth_container_wrapper {
+        position: static;
+        margin: 0 auto;
+        text-align: center;
+        overflow: visible !important;
+    }
+    html body .main-content .auth_container .auth_container_wrapper .auth_container_form {
+        margin: auto;
+        position: relative;
+        overflow-x: hidden;
+        padding-top: 158px;
+    }
+    html body .main-content .auth_container .auth_container_form h1{
+        font-size: 29px;
+        line-height: 1.2;
+        letter-spacing: -0.4px;
+    }
+    html body .main-content .auth_container .auth_container_form > p {
+        text-align: left;
+    }    
+    html body .main-content .eg-referral img {
+        margin-bottom: 10px;
+    }
+    html body .main-content .auth_container_logo img{
+        width: 173px;
+    } 
+    html body .app .main-content .auth_container,
+    .app .main-content, 
+    .app .main-content-bg {
+        min-height: auto !important;
+        height: auto !important;
+    }
+    
+    html body .pushable>.pusher {
+        overflow: visible !important;
+    }
+}
+
+@media screen and (max-width:1216px) {
+    html body .auth_container_form h1 {
+        max-width: 325px;
+    }
+    html body .main-content .eg-referral .eg-referral-inr {
+        flex-direction: row;
+        justify-content: flex-start;
+        font-size: 16px;
+    }
+    
+    html body .main-content .eg-referral img {
+        margin-right: 30px;
+    }
+    html body .main-content .auth_container_form {
+        padding-top: 150px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    html body .main-content .auth_container_wrapper{
+        padding-top: 0px;
+    }
+}
+@media screen and (min-width:426px) {
+    html body .main-content .auth_container_wrapper > .eg-referral{
+        display: none;
+    }
+}
+@media screen and (max-width:425px) {
+    html body .main-content .auth_container_form .eg-referral{
+        display: none;
+    }
+    html body .auth_container_wrapper {
+        margin-top: 0px;
+    }
+    html body .main-content .auth_container_form {
+        padding-top: 85px;
+    }
+    html body .main-content .auth_container {
+        background: #ffffff;
+    }
+}
+@media screen and (max-width:340px) {
+    html body .main-content .auth_container_wrapper{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}

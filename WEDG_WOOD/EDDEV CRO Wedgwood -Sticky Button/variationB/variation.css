@@ -1,0 +1,30 @@
+@media screen and (max-width: 767px) {
+
+    .c-summary-details>.c-summary_continue .primary,
+    .c-checkout-foot .c-summary_continue .btn-checkout-continue {
+        position: fixed;
+        bottom: 20px;
+        z-index: 9999;
+        left: 20px;
+        width: calc(100% - 40px) !important;
+    }
+
+    .checkout-container .c-footer.-checkout {
+        margin-bottom: 60px;
+    }
+
+    body:before {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        background: #ffffff;
+        height: 98px;
+        content: '';
+        z-index: 1;
+    }
+
+    body {
+        margin-bottom: 98px;
+    }
+}

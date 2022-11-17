@@ -1,0 +1,23 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.lhd.com.au/office-location/sydney/",
+		"https://www.lhd.com.au/personal-injury/",
+		"https://www.lhd.com.au/personal-injury/workplace-accidents/",
+		"https://www.lhd.com.au/personal-injury/motor-vehicle-accident/",
+		"https://www.lhd.com.au/tpd-superannuation/total-permanent-disability/",
+		"https://www.lhd.com.au/tpd-superannuation/income-protection/",
+		"https://www.lhd.com.au/tpd-superannuation/death-benefits/",
+		"https://www.lhd.com.au/class-actions/current-class-actions/",
+		"https://www.lhd.com.au/personal-injury/workplace-accidents/back-injury-at-work/",
+		"https://www.lhd.com.au/personal-injury/workplace-accidents/falls-work/",
+		"https://www.lhd.com.au/personal-injury/workplace-accidents/hearing-loss/",
+		"https://www.lhd.com.au/personal-injury/workplace-accidents/bullying-harassment/",
+		"https://www.lhd.com.au/personal-injury/workplace-accidents/eye-injury/",
+		"https://www.lhd.com.au/class-actions/current-class-actions/hendra/"
+	]
+}

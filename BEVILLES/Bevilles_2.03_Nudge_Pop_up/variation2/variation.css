@@ -15,7 +15,11 @@
 
 .eg-popup-wrapper-outer {
     position: fixed;
+<<<<<<< HEAD
     top: 172px;
+=======
+    top: 173px;
+>>>>>>> 44fc4667a3725bdbc70ed2be90a59859b71deed1
     right: 20px;
     z-index: 9999999;
 }
@@ -241,7 +245,7 @@ span.whole-time-block span {
 
     .eg-show-item {
         display: flex;
-        padding: 0 10px 20px 10px;
+        padding: 0 10px 5px 10px;
     }
 
     .eg-show-item .eg-dispatch-link {

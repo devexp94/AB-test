@@ -1,0 +1,111 @@
+.shop-by-sale .shop-by-sale-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-by-sale .shop-by-sale-wrap .opt-by-category {
+    order: -1;
+    margin-bottom: 40px;
+}
+
+.shop-by-sale .shop-by-sale-wrap .opt-by-category .heading-group {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 0.19em;
+    color: #6092BD;
+    padding: 10px;
+    background: rgba(111, 165, 211, 0.12);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-by-sale .shop-by-sale-wrap .opt-by-category .heading-group .line {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    html body .shop-by-sale .shop-by-sale-wrap .opt-by-category .heading-group {
+        font-size: 22px;
+        line-height: 138.8%;
+        padding: 15px;
+    }
+
+    html body .shop-by-sale .shop-by-sale-wrap .opt-by-category .tile {
+        width: 50%;
+    }
+
+    html body .shop-by-sale .shop-by-sale-wrap .opt-by-category .content {
+        width: 100%;
+        margin: 0px;
+    }
+
+    html body .shop-by-sale .shop-by-sale-wrap .opt-by-category .tile-heading {
+        font-size: 16px;
+        line-height: 1.2;
+        margin-bottom: 8px;
+    }
+
+    .shop-by-sale .container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .shop-by-sale .container .opt-shop-sale,
+    .shop-by-sale .container .opt-by-category {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .shop-by-sale .shop-by-sale-wrap .opt-by-category {
+        background: #edf4fa;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    html body .shop-by-sale .shop-by-sale-wrap .opt-by-category .heading-group {
+        background: transparent;
+    }
+
+    html body .shop-by-sale .shop-by-sale-wrap .opt-by-category .tiles {
+        margin: 0px -20px !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    html body .shop-by-sale .shop-by-sale-wrap .opt-by-category .tile-heading {
+        font-size: 14px !important;
+    }
+
+    html body .shop-by-sale .shop-by-sale-wrap .opt-by-category .opt-link-cta {
+        font-size: 12px !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    html body .shop-by-sale .shop-by-sale-wrap .opt-by-category .tile {
+        display: flex;
+        flex-direction: row;
+    }
+
+    html body .shop-by-sale .shop-by-sale-wrap .opt-by-category .tile img {
+        width: 40%;
+        height: auto;
+    }
+
+    html body .shop-by-sale .shop-by-sale-wrap .opt-by-category .content {
+        height: auto;
+        margin: 0px;
+        width: 55%;
+    }
+
+    html body .shop-by-sale .shop-by-sale-wrap .opt-by-category .tile-heading {
+        font-size: 18px;
+        line-height: 1.2;
+        margin-bottom: 8px;
+    }
+}

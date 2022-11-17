@@ -1,0 +1,25 @@
+html body .layout-section .c-title-component-image {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  html body .layout-section .c-title-component-text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 40px 40px;
+    max-width: 1380px;
+  }
+  
+  html body .layout-section .c-title-component-text h1 {
+    width: 45%;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  
+  html body .layout-section .c-title-component-text p {
+    width: 55%;
+    padding-left: 25px;
+    padding-right: 25px;
+  }  
+}

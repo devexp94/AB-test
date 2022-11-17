@@ -1,0 +1,10 @@
+{
+	"files": [
+		"./variation2/variation.css",
+		"./variation2/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.instarem.com/en-my/"
+	]
+}

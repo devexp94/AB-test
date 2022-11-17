@@ -1,0 +1,108 @@
+/* Old Test Code */
+
+
+header nav.primary .wrapper > ul {
+    display: flex;
+}
+
+header nav.primary .wrapper > ul > li:nth-child(1) {
+    order: -3;
+}
+header nav.primary .wrapper > ul > li:nth-child(2) {
+    order: -2;
+}
+header nav.primary .wrapper > ul > li:nth-child(5) {
+    order: -1;
+}
+
+header nav.primary .wrapper > ul > li:nth-child(3) {
+    margin-left: auto;
+}
+
+nav.primary .search {
+    left: 50%;
+    transform: translateX(-60%);
+    right: 0px;
+}
+
+.search-expander .searchBox button span:before, 
+nav.primary .searchBox button span:before,
+.search-expander .searchBox input[type=text], 
+nav.primary .searchBox input[type=text],
+.search-expander .searchBox input[type=text]::placeholder, 
+nav.primary .searchBox input[type=text]::placeholder {
+    color:#333333 !important;  
+}
+
+.search-expander .searchBox, 
+nav.primary .searchBox {
+    background: #fff !important;
+    border-radius: 4px;
+    outline: 1px solid #b00b2c !important;
+}
+html body #sli_autocomplete {
+    left: 50% !important;
+    transform: translateX(-50%);
+}
+/* ------------------------------------------------------------------ */
+
+
+
+body.scrolled header .top {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    height: 70px;
+    box-shadow: 0px 2px 6px 1px rgb(0 0 0 / 20%);
+    -webkit-box-shadow: 0px 2px 6px 1px rgb(0 0 0 / 20%);
+    -moz-box-shadow: 0px 2px 6px 1px rgba(0,0,0,0.20);
+}
+body.scrolled header .top .links{
+    top: 20px;
+}
+body.scrolled header .top .brand{
+    top: 12px;
+}
+body.scrolled header .top .wrapper > a:nth-child(2) {
+    display: none;
+}
+
+body.scrolled header .top .wrapper > a.brand {
+    width: 141px;
+}
+
+
+body.scrolled header nav.primary ul li a {
+    padding-left: 6px;
+    padding-right: 6px;
+    font-size: 12.5px;
+    color: #000;
+}
+
+body.scrolled header nav.primary > .wrapper {
+    max-width: 850px;
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    width: 100%;
+    padding: 0px;
+    transform: translateX(-50%);
+}
+
+body.scrolled header nav.primary .search {
+    width: 190px;
+    left: 57% !important;
+}
+
+body.scrolled header .top .links a {
+    margin-left: 6px;
+    font-size: 13px !important;
+}
+
+body.scrolled header nav.primary {
+    position: static;
+}
+
+body.scrolled header nav.primary ul li.selected a {
+    color: #fff;
+}

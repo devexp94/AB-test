@@ -1,0 +1,7 @@
+{
+  "files": ["./variationB-PDP/variation.css", "./variationB-PDP/variation.js"],
+  "inject": "",
+  "urls": [
+    "https://www.royaldoulton.com.au/crystal-glassware/highballs-tumblers/"
+  ]
+}

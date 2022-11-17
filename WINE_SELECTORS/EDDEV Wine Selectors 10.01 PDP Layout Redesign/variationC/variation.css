@@ -1,0 +1,234 @@
+.overlayofadd {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+    cursor: pointer;
+}
+
+.overlayofadd.overlayshow {
+    display: block;
+}
+
+.overlay-wrapper {
+    width: 90%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    max-width: 784px;
+    background: white;
+    text-align: center;
+    padding: 40px 0px;
+    display: flex;
+    border-radius: 15px;
+}
+
+
+.overlay-wrapper .image_and_title {
+    width: 35%;
+    height: 250px;
+    max-width: 250px;
+    background: url("https://images.wineselectors.com.au/media/products/PETAL20117-main.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.overlay-wrapper .image_and_title img {visibility: hidden;}
+img.product_img_1 {
+    height: 100%;
+}
+
+.overlay-wrapper .info_container {
+    width: 55%;
+    margin: 0% 5%;
+    text-align: left;
+}
+
+.overlay_button_wrapper>button {
+    width: 100%;
+    margin: 0px 2% 0px;
+    height: 40px;
+    line-height: 24px;
+    max-width: 130px;
+    background: #B00A2C;
+    border-radius: 6px;
+}
+p.quantity_bottles {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #484944;
+}
+
+
+.overlay_button_wrapper>div {
+    width: 20%;
+    border: 1px solid;
+    height: 40px;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.overlay_button_wrapper {
+    display: flex;
+}
+
+.overlay_button_wrapper a {
+    width: 36%;
+    height: 40px;
+    max-width: 120px;
+}
+.overlay_button_wrapper a>div:hover{
+    text-decoration: none;
+}
+.overlay_button_wrapper a>div {
+    width: 100%;
+    margin: 0px 2% 0px;
+    height: 40px;
+    line-height: 40px;
+    background: white;
+    color: #b81237;
+    text-decoration: underline;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p.product_offer {
+    margin-bottom: 20px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 147.69%;
+    color: #484944;
+}
+
+p.product_name {
+    margin-bottom: 0px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #302D3D;
+}
+
+p.save_now {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 122.69%;
+    color: #B00A2C;
+    margin-bottom: 17px;
+}
+
+p.close_icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 49px;
+    font-weight: 600;
+    color: #adadad;
+    line-height: 21px;
+    margin: 0px !important;
+    cursor: pointer;
+    font-family: 'Poppins';
+}
+
+p.first_name {
+    font-size: 18px;
+    width: calc(100% - 30px);
+}
+
+@media (max-width:768px) {
+    .overlay-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 442px;
+    }
+
+    .image_and_title {
+        width: 100% !important;
+        height: 200px !important;
+    }
+
+    .info_container {
+        width: 100% !important;
+        text-align: center !important;
+        margin: 0px !important;
+        padding: 0px 20px !important;
+    }
+
+    .overlay_button_wrapper {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    .overlay_button_wrapper>a {
+        width: 88%;
+        margin: 10px 0px 0px;
+        max-width: unset;
+    }
+
+    p.close_icon {
+        right: 10px;
+    }
+    p.first_name {
+        margin-top: 20px;
+        width: 100% !important;
+        padding: 0 20px;
+    }
+}
+html body .quantity_bottles {
+    font-family: 'Helvetica Neue', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #484944;
+}
+
+
+@media screen and (max-height:450px) {
+    html body .overlay-wrapper {
+        display: flex;
+        top: 50%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        max-width: 442px;
+        max-height: 90vh;
+        overflow-y: auto;
+        transform: translateY(-50%);
+    }
+    html body .overlay_button_wrapper {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+    
+    html body .overlay_button_wrapper a {
+        width: 100% !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+    html body .overlay-wrapper .info_container {
+        width: 100% !important;
+        margin: 0% !important;
+        text-align: center !important;
+    }
+}

@@ -1,0 +1,161 @@
+.eg-overlayofadd {
+    position: fixed;
+    /* display: none; */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+    cursor: pointer;
+}
+
+/* .eg-overlayofadd.eg-overlayshow {
+    display: block;
+} */
+
+.eg-overlay-wrapper {
+    width: 90%;
+    position: relative;
+    top: 30%;
+    margin: auto;
+    max-width: 950px;
+    background: white;
+    text-align: center;
+    padding: 40px 0px;
+    display: flex;
+    border-radius: 15px;
+}
+
+
+.eg-overlay-wrapper .eg-image_and_title {
+    width: 35%;
+    height: 250px;
+}
+
+.eg-product_img_1 {
+    height: 100%;
+}
+
+.eg-overlay-wrapper .eg-info_container {
+    width: 55%;
+    margin: 0% 5%;
+    text-align: left;
+}
+
+.eg-overlay_button_wrapper>button {
+    width: 36%;
+    margin: 0px 2% 0px;
+    height: 40px;
+    line-height: 24px;
+    max-width: 150px;
+}
+
+.eg-overlay_button_wrapper>div {
+    width: 20%;
+    border: 1px solid;
+    height: 40px;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.eg-overlay_button_wrapper {
+    display: flex;
+}
+
+.eg-overlay_button_wrapper a {
+    width: 36%;
+    height: 40px;
+    max-width: 150px;
+}
+
+.eg-overlay_button_wrapper a>div {
+    width: 100%;
+    margin: 0px 2% 0px;
+    height: 40px;
+    line-height: 40px;
+    background: white;
+    color: #b81237;
+    text-decoration: underline;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.eg-product_offer {
+    color: grey;
+    font-weight: 600;
+}
+
+.eg-product_name {
+    font-size: 15px;
+}
+
+.eg-save_now {
+    color: #b81237;
+    font-size: 18px;
+}
+
+.eg-close_icon {
+    position: absolute;
+    right: 30px;
+    font-size: 20px;
+    width: 30px;
+    top: 5px;
+    font-size: 30px;
+    font-weight: 500;
+    color: gray;
+}
+
+.eg-first_name {
+    font-size: 18px;
+    width: calc(100% - 30px);
+}
+
+@media (max-width:768px) {
+    .eg-overlay-wrapper {
+        display: block;
+        top: 10%;
+    }
+
+    .eg-image_and_title {
+        width: 100% !important;
+        height: 200px !important;
+    }
+
+    .eg-info_container {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .eg-overlay_button_wrapper>div {
+        width: 40% !important;
+    }
+
+    .eg-overlay_button_wrapper {
+        flex-wrap: wrap;
+    }
+
+    .eg-overlay_button_wrapper>button {
+        width: 45%;
+    }
+
+    .eg-overlay_button_wrapper>a {
+        width: 88%;
+        margin: 10px 0px 0px;
+        max-width: unset;
+    }
+
+    .eg-close_icon {
+        right: 10px;
+    }
+
+    .eg-quantity_bottles {
+        text-align: left;
+    }
+
+    .eg-first_name {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,32 @@
+html body .layout-section .c-title-component-image {
+  display: none;
+}
+html body nav ~ .layout-section .c-title-component{
+  background: #ffffff;
+}
+
+html body .layout-section .c-title-component-text h1,
+html body .layout-section .c-title-component-text p {
+  color: #000000;
+}
+@media screen and (min-width: 992px) {
+  html body .layout-section .c-title-component-text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 40px 40px;
+    max-width: 1680px;
+  }
+  
+  html body .layout-section .c-title-component-text h1 {
+    width: 460px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  
+  html body .layout-section .c-title-component-text p {
+    width: calc(100% - 460px);
+    padding-left: 25px;
+    padding-right: 25px;
+  }  
+}

@@ -1,0 +1,12 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.instarem.com/monito",
+		"https://www.instarem.com/monito/smartCard-inline",
+		"https://www.instarem.com/monito?utm_source=monito&utm_medium=affiliate&utm_campaign=AU-PH&utm_term=l30cvxr220517aabbcdbchiz"
+	]
+}

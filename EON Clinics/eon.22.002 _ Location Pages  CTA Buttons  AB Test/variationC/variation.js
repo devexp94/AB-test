@@ -25,16 +25,6 @@
     /* Variation functions */
 
 
-    var eg_call =''+ 
-'      <div class="eg_veteran">'+ 
-'          <img class="eg_img" src="https://i.ibb.co/VmCDL2p/call.png" alt="call" border="0">'+ 
-'      </div>';
-
-    var eg_schedule =''+ 
-'      <div class="eg_veteran">'+ 
-'          <img class="eg_img" src="https://i.ibb.co/vjT0tVM/schedule.png" alt="schedule" border="0">'+ 
-'      </div>';
-
 
     function init() {
 

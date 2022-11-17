@@ -1,0 +1,36 @@
+.shop-by-sale .shop-by-sale-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-by-sale .shop-by-sale-wrap .opt-by-category {
+    order: -1;
+    margin-bottom: 40px;
+}
+
+.shop-by-sale .shop-by-sale-wrap .opt-by-category .heading-group {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 0.19em;
+    color: #6092BD;
+    padding: 10px;
+    background: rgba(111, 165, 211, 0.12);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-by-sale .shop-by-sale-wrap .opt-by-category .heading-group .line {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    html body .shop-by-sale .shop-by-sale-wrap .opt-by-category .heading-group {
+        font-size: 22px;
+        line-height: 138.8%;
+        padding: 15px;
+    }
+}

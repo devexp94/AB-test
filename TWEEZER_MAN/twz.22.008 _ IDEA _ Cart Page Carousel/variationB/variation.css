@@ -1,0 +1,247 @@
+.sov-hero-slider-wrapper .slick-slide img {
+    width: 100%;
+}
+.sov-hero-slider-wrapper .slick-prev:before,
+.sov-hero-slider-wrapper .slick-next:before {
+    color: black;
+}
+.sov-hero-slider-wrapper .slick-dots > li {
+    -webkit-transition: opacity .25s ease-in;
+    -moz-transition: opacity .25s ease-in;
+    -ms-transition: opacity .25s ease-in;
+    -o-transition: opacity .25s ease-in;
+    transition: opacity .25s ease-in;
+    opacity: .3;
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 90%);
+    background: #fff;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 8px;
+    box-shadow: none!important;
+    background-color: #DDD!important;
+    width: 12px!important;
+    height: 12px!important;
+    margin: 0 6px;
+    opacity: 1;
+}
+.sov-hero-slider-wrapper .slick-dots > li.slick-active {
+    background-color: #84c0b8!important
+}
+.sov-hero-slider-wrapper .slick-dots > li {
+    background: transparent;
+}
+.sov-hero-slider-wrapper .slick-dots > li > button::before {
+    display: none;
+}
+.sov-hero-slider-wrapper .slick-arrow,
+.slick-lightbox .slick-arrow {
+    color: #fff;
+    font-size: 0px;
+    margin-top: 0;
+    padding: 0 20px;
+    background: #372922;
+    height: 60px;
+    border-radius: 0;
+    opacity: 1;
+    z-index: 10;
+    cursor: pointer;
+    width: auto;
+}
+.slick-lightbox .slick-arrow {
+    background: #333333;
+    padding: 10px;
+}
+.sov-hero-slider-wrapper .slick-arrow:hover,
+.sov-hero-slider-wrapper .slick-arrow:focus,
+.slick-lightbox .slick-arrow:hover,
+.slick-lightbox .slick-arrow:focus {
+    opacity: 1;
+    background: #372922;
+    color: #fff;
+}
+.slick-lightbox .slick-arrow:hover,
+.slick-lightbox .slick-arrow:focus {
+    background: #333333;
+}
+.sov-hero-slider-wrapper .slick-arrow::before,
+.slick-lightbox .slick-arrow::before {
+    display: inline-block;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    border: none !important;
+    margin: 0 5px;
+    color: #fff;
+    opacity: 1;
+}
+.sov-hero-slider-wrapper .slick-arrow.slick-prev::before,
+.slick-lightbox .slick-arrow.slick-prev::before {
+    content: '\f053';
+}
+.sov-hero-slider-wrapper .slick-arrow.slick-next::before,
+.slick-lightbox .slick-arrow.slick-next::before {
+    content: '\f054';
+}
+.slick-lightbox .slick-arrow.slick-prev::before, 
+.slick-lightbox .slick-arrow.slick-next::before {
+    font-size: 35px;
+}
+.sov-hero-slider-wrapper .slick-arrow.slick-prev {
+    left: 0;
+}
+.sov-hero-slider-wrapper .slick-arrow.slick-next {
+    right: 0;
+}
+.sov-hero-slide.slick-slide {
+    position: relative;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+body .slick-lightbox-close:before {
+    font-size: 28px;
+}
+@media (min-width: 768px) {
+    
+
+.sov-hero-slide.slick-slide .product-item-inner {
+    position: static;
+    margin-bottom: 20px;
+}
+    .sov-hero-slide.slick-slide::before {
+        content: '';
+        position: absolute;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+        width: 100%;
+        height: 100%;
+    }
+    .sov-hero-slide.slick-slide.slick-active::before {
+        background: none;
+    }
+}
+.slick-slide.slick-lightbox-slick-item {
+    opacity: 1;
+}
+.sov-hero-slider {
+    position: relative;
+    margin-top: 175px;
+}
+.sov-hero-slider .slick-dots {
+    position: absolute;
+    bottom: 0px;
+}
+@media (max-width: 767px) {
+    .slick-lightbox .slick-arrow {
+        background-color: transparent;
+        transform: translateY(-50%);
+    }
+    .slick-lightbox .slick-arrow:hover,
+    .slick-lightbox .slick-arrow:focus {
+        background-color: transparent;
+    }
+    .slick-lightbox .slick-arrow.slick-prev {
+        left: 30px !important;
+    }   
+    .slick-lightbox .slick-arrow.slick-next {
+        right: 30px !important;
+    }
+}
+
+.slick-slide .product-item .price-box {
+    margin: 0px !important;
+}
+.slick-slide {
+    padding: 10px !important;
+    box-sizing: border-box;
+}
+
+.slick-slide > div {
+    -webkit-box-shadow: 0px 3px 7px 1px rgb(0 0 0 / 25%);
+    -moz-box-shadow: 0px 3px 7px 1px rgba(0,0,0,0.25);
+    box-shadow: 0px 3px 7px 1px rgb(0 0 0 / 25%);
+}
+.swatch-opt-9 {
+    display: none;
+}
+
+.slick-slide .product-item-info {
+    width: auto !important;
+}
+html body .product-items.slick-slider .slick-slide .product-item{
+    max-width: calc(100% - 40px) !important;
+    padding: 15px 0px;
+}
+.slick-slide .product-item-actions .actions-primary {
+    display: block !important;
+}
+.swatch-opt-9 {
+    display: none;
+}
+
+.slick-slide .product-item-info {
+    width: auto !important;
+}
+
+.slick-slide .product-item-actions .actions-primary {
+    display: block !important;
+}
+
+.slick-slide .product-item-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.slick-slide .product-item-details .product-item-name {
+    width: 100%;
+    height: 51px;
+}
+
+.slick-slide .product-item-details > .price-box {
+    order: 1;
+}
+
+.slick-slide .product-item-details > .yotpo {
+    order: 3;
+}
+
+.slick-slide .product-item-details > .price-box .price-label {
+    display: none !important;
+}
+.slick-slide .product-image-container-9 span.product-image-wrapper {
+    padding-bottom: 96.774193548387% !important;
+
+}
+.sov-hero-slider-wrapper {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+
+.slick-initialized .slick-slide {
+    position: relative;
+}
+html body .sov-hero-slider-wrapper .slick-arrow.slick-next:before, 
+html body .slick-lightbox .slick-arrow.slick-next:before,
+html body .sov-hero-slider-wrapper .slick-arrow.slick-prev:before, 
+html body .slick-lightbox .slick-arrow.slick-prev:before{
+    display: none !important;
+}
+html body .slick-slider .slick-arrow{
+    filter: invert(1) !important
+}
+.sov-hero-slider-wrapper .slick-arrow.slick-next {
+    right: 15px !important;
+}
+html body .slick-slide .product-item-inner {
+    height: auto;
+    opacity: 1;
+    position: static;
+    width: 100%;
+    margin-bottom: 20px;
+}
+html body .slick-slide li.item.product.product-item.eg-tag:after{
+    top: 10px;
+    right: 10px
+}

@@ -1,0 +1,44 @@
+
+html body .header-action_cta .h-button {
+    background: #2251FF;
+    color: #fff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+html body .header-action_cta .h-button:hover{
+    color: #2251FF !important;
+    background: #fff !important;
+}
+html body .header-action_cta .h-button:hover .eg-call-icon svg path {
+    fill: #2251ff;
+}
+html body .header-action_cta .h-button:hover .h-hide--mobile span{
+    color: #2251FF;
+}
+html body .header-action_cta .h-hide--mobile {
+    display: flex !important;
+    align-items: center;
+}
+.header-action_cta .h-hide--mobile .h-button-small{
+    display: none;
+}
+html body .header-action_cta .eg-call-icon{
+    font-size: 22px;
+    margin-right: 10px;
+}
+@media screen and (max-width:767px) {
+    .header-action_cta .h-hide--desktop,
+    html body .header-action_cta .h-hide--mobile > span:last-child {
+        display: none !important;
+    }
+    html body .header-action_cta .h-hide--mobile {
+        display: flex !important;
+    }
+    html body .header-action_cta .eg-call-icon{
+        margin-right: 0px !important;
+    }
+    html body .header-action_cta .h-button {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

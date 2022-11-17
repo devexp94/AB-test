@@ -1,0 +1,403 @@
+/* -----------------PDP ------------------------*/
+
+html body .eg-mid-season-sale-pdp .eg-sale-banner {
+    display: flex;
+    margin-bottom: 25px;
+    background: url('https://glb-oned-cdn-prod.azureedge.net/-/media/Waterford/Images/Sales/2022/summer-sale-uk/sale-timer/summer_sale_product_page_banner_desktop_background') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right !important;
+    position: relative;
+}
+html body .eg-mid-season-sale-pdp .banner-content img{
+    padding: 5px;
+}
+/* --------------END---------------------------- */
+
+
+/* -----------------PLP--------------------- */
+/* html body .eg-mid-season-tile-plp .eg-sale-banner {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 60px);
+}
+html body .eg-mid-season-tile-plp .eg-mid-season-container .c-c-product-card_img-container{
+    visibility: hidden;
+} */
+
+html body .eg-mid-season-tile-plp .eg-sale-banner .banner-content {visibility: hidden;}
+
+html body .eg-mid-season-tile-plp .eg-mid-season-link {
+    background: url('https://glb-oned-cdn-prod.azureedge.net/-/media/Waterford/Images/Sales/2022/summer-sale-uk/sale-timer/summer_sale_product_listing_page_banner_desktop_background');
+    display: flex;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+    padding: 16px;
+    text-decoration: none;
+    align-items: flex-end;
+    background-position: top;
+    user-select: none !important;
+    pointer-events: none !important;
+}
+
+html body .eg-mid-season-tile-plp .eg-mid-season-link:after {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: url('https://glb-oned-cdn-prod.azureedge.net/-/media/Waterford/Images/Sales/2022/summer-sale-uk/sale-timer/summer_sale_product_listing_page_banner_mobile_copy');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+html body .eg-mid-season-tile-plp {
+    padding: 0px;
+}
+html body .eg-mid-season-tile-plp .eg-heading {
+    font-style: normal;
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 23px;
+    margin-top: 11px !important;
+    font-weight: bold !important;
+    line-height: 1.2;
+}
+
+html body .eg-mid-season-tile-plp .eg-sub-heading {
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.5;
+    margin-bottom: 4px;
+    /* margin-top: 35px; */
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+html body .eg-mid-season-tile-plp .eg-mid-season-container {
+    width: 100%;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+    display: none
+}
+
+
+ html body .eg-mid-season-tile-plp .eg-button{
+    text-align: center;
+    text-transform: none;
+    cursor: pointer;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #fff !important;
+    width: auto !important;
+    background: transparent !important;
+    color: #ffffff !important;
+    padding: 0px !important;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+html body .eg-mid-season-tile-plp .eg-mid-season-link:hover .eg-button{
+    border-bottom: 1px solid transparent !important;
+}
+
+html body .eg-mid-season-tile-plp .eg-image {
+    min-height: 300px;
+    background: url('https://gbl-oned-cdn-prod.azureedge.net/-/media/wedgwood/images/wedgwood/product-type/teaware-and-tea/title-components/wedgwood_tea_and_teaware.ashx?rev=8db02f144abc4dfd834ff08bed7ec068&q=70&iw=1150&ih=536&crop=1');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width:1440px){
+    html body .eg-mid-season-tile-plp .eg-heading{
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1199px){
+    html body .eg-mid-season-tile-plp .eg-heading{
+        font-size: 18px;
+    }
+    html body .eg-mid-season-tile-plp .eg-sub-heading{
+        font-size: 12px;
+    }
+    html body .eg-mid-season-tile-plp .eg-button{
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    html body .eg-mid-season-tile-plp .promo-heading{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:767px) {
+    html body .eg-mid-season-tile-plp .eg-heading{
+        font-size: 15px;
+    }
+    html body .eg-mid-season-tile-plp .eg-heading br {
+        display: none;
+    }
+    html body .eg-mid-season-tile-plp .eg-sub-heading,
+    html body .eg-mid-season-tile-plp .eg-button{
+        font-size: 12px;
+    }
+    html body .eg-mid-season-tile-plp .eg-mid-season-link{
+        padding: 8px;
+    }
+    html body .eg-mid-season-tile-plp .eg-promo-timer{
+        width: calc(100% - 16px) !important;
+    }
+
+}
+
+
+html body .eg-mid-season-tile-plp .banner-heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0px;
+}
+/* 
+html body .eg-mid-season-tile-plp .banner-content {
+    background: url("https://glb-oned-cdn-prod.azureedge.net/-/media/wedgwood/images/wedgwood/sale/Mid-Season_Sale_Product_Listing_Page_Banner_Desktop_red_box.ashx");
+    padding: 75px 15px 20px 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #e0313e;
+} */
+html body .eg-mid-season-tile-plp .eg-promo-timer {
+    padding: 2px;
+    text-align: center;
+    position: absolute;
+    bottom: 50px;
+    width: calc(100% - 32px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+html body .eg-mid-season-tile-plp .banner-subheading {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+    font-family: Orpheus Pro, Helvetica,Arial,serif !important;
+    font-weight: 400;
+}
+
+html body .eg-mid-season-tile-plp .eg-sale-banner * {
+    font-family: "Baskerville italic",Helvetica,Arial,serif;
+}
+
+html body .eg-mid-season-tile-plp .promo-heading {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.3;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 14px;
+    padding-bottom: 8px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: 100;
+    font-family: Effra, Helvetica,Arial,sans-serif;
+    max-width: 171px;
+}
+html body .eg-mid-season-tile-plp .promo-heading:after{
+    display: none;
+}
+html body .eg-mid-season-tile-plp .eg-promo-timer-inr {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+html body .eg-mid-season-tile-plp .eg-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 67px;
+}
+html body .eg-mid-season-tile-plp .eg-box span:nth-child(2){
+    color: #ffffff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+}
+
+html body .eg-mid-season-tile-plp .eg-box span:first-child {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 38px;
+    text-align: center;
+    color: #ffffff;
+}
+html body .eg-mid-season-tile-plp .eg-colon {
+    font-size: 40px;
+    line-height: 1px;
+    display: inline-flex;
+    align-items: initial;
+    color: #ffffff;
+}
+
+@media screen and (min-width: 1600px) {
+    /* html body .eg-mid-season-tile-plp .eg-mid-season-link .eg-sale-banner {
+        width: calc(100% - 80px);
+    }
+    html body .eg-mid-season-tile-plp .eg-sale-banner{
+        bottom: 43px;
+    } */
+    html body .eg-mid-season-tile-plp .eg-sale-banner .eg-box span:first-child {
+        font-size: 36px;
+        line-height: 46px;
+    }
+    html body .eg-mid-season-tile-plp .eg-sale-banner .eg-colon {
+        font-size: 45px;
+        line-height: 1px;
+        display: inline-flex;
+        align-items: initial;
+        color: #ffffff;
+    }
+
+    html body .eg-mid-season-tile-plp .eg-sale-banner .banner-heading {
+        font-size: 35px;
+        line-height: 1.5;
+    }
+    html body .eg-mid-season-tile-plp .eg-sale-banner .promo-heading {
+        font-size: 23px;
+    }   
+}
+
+@media screen and (max-width: 1360px) and (min-width: 1161px) {
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .banner-heading{
+        font-size: 24px;
+    }
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .banner-subheading{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 1160px) {
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .banner-heading{
+        font-size: 26px;
+        line-height: 1.3;
+    }
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .banner-content {
+        padding: 50px 12px 20px 12px;
+    }
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .eg-box span:first-child{
+        font-size: 24px;
+    }
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .eg-colon {
+        font-size: 30px;
+    }
+    /* html body .eg-mid-season-tile-plp .eg-mid-season-link .eg-sale-banner{
+        width: calc(100% - 20px);
+    } */
+    html body .eg-mid-season-tile-plp .eg-box span:nth-child(2){
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .banner-subheading {
+        font-size: 13px;
+    }    
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .eg-box span:nth-child(2) {
+        font-size: 12px;
+        line-height: 12px;
+    }
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .eg-box span:first-child {
+        font-size: 21px;
+    }
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .eg-box{
+        width: 44px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .promo-heading {
+        font-size: 12px;
+        line-height: 1.2;
+        margin-bottom: 0px;
+    }
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .banner-subheading {
+        font-size: 11px;
+    }
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .banner-heading {
+        font-size: 21px;
+    }
+}
+@media screen and (max-width:350px) {
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .banner-heading {
+        font-size: 18px;
+    }
+
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .eg-box span:first-child {
+        line-height: 1.3;
+        font-size: 17px;
+    }
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .eg-box span:nth-child(2){
+        font-size: 11px;
+    }
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .eg-colon {
+        font-size: 19px;
+    }
+    html body .eg-mid-season-tile-plp .eg-mid-season-link .promo-heading {
+        margin-bottom: 0px;
+        padding-top: 8px;
+        padding-bottom: 0px;
+        font-size: 11px;
+        line-height: 1.4;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1199px){
+    html body .c-c-pl_results_list.-reduced .eg-mid-season-tile-plp .banner-heading{
+        font-size: 18px;
+    }
+    html body .c-c-pl_results_list.-reduced .eg-mid-season-tile-plp .banner-subheading{
+        font-size: 9px;
+        line-height: 1.5;
+    }
+    html body .c-c-pl_results_list.-reduced .eg-mid-season-tile-plp .eg-box span:nth-child(2),
+    html body .c-c-pl_results_list.-reduced .eg-mid-season-tile-plp .promo-heading{
+        font-size: 11px;
+    }
+    html body .c-c-pl_results_list.-reduced .eg-mid-season-tile-plp .eg-mid-season-link .eg-box span:first-child {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    
+}
+@media screen and (max-width:1023px) and (min-width:768px) {
+    html body .eg-mid-season-tile-plp .promo-heading{
+        font-size: 15px !important;
+    }
+}
+
+
+/* background: -webkit-linear-gradient(337deg, rgb(232, 197, 166) 0%, rgb(235, 157, 88) 25%, rgb(237, 129, 33) 33%, rgb(237, 129, 33) 67%, rgb(233, 187, 146) 92%);
+background: -o-linear-gradient(337deg, rgb(232, 197, 166) 0%, rgb(235, 157, 88) 25%, rgb(237, 129, 33) 33%, rgb(237, 129, 33) 67%, rgb(233, 187, 146) 92%);
+background: -ms-linear-gradient(337deg, rgb(232, 197, 166) 0%, rgb(235, 157, 88) 25%, rgb(237, 129, 33) 33%, rgb(237, 129, 33) 67%, rgb(233, 187, 146) 92%);
+background: -moz-linear-gradient(337deg, rgb(232, 197, 166) 0%, rgb(235, 157, 88) 25%, rgb(237, 129, 33) 33%, rgb(237, 129, 33) 67%, rgb(233, 187, 146) 92%);
+background: linear-gradient(113deg, rgb(232, 197, 166) 0%, rgb(235, 157, 88) 25%, rgb(237, 129, 33) 33%, rgb(237, 129, 33) 67%, rgb(233, 187, 146) 92%);
+ */
