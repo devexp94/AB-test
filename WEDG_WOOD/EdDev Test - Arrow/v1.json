@@ -1,0 +1,12 @@
+{
+	"files": [
+		"./variation1/variation.css",
+		"./variation1/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.wedgwood.com/en-gb/tea-and-teaware/teaware/all-teaware/wonderlust-menagerie-mug-1057273",
+		"https://www.wedgwood.com/en-gb/tableware/drinkware/wine-glasses/vera-wang-metropolitan-wine-goblet-set-of-2-40024341",
+		"https://www.wedgwood.com/en-gb/royal-albert/collections/cheeky-pink/royal-albert-cheeky-pink-vintage-tea-for-one-chepnk26585"
+	]
+}

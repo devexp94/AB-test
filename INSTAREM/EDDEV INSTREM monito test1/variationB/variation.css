@@ -1,0 +1,218 @@
+.sendMoneyCountry .tranfer-paid{
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 20px rgb(0 0 0 / 6%);
+    border-radius: 10px;
+    margin: auto auto 2rem auto !important;
+    width: 95%;
+}
+
+html body .paid-transfer-banner-box .currencyForm > div .card_custom{
+    box-shadow: 0px 10px 20px rgb(0 0 0 / 6%);
+}
+html body .sendMoneyCountry .tranfer-paid > img{
+    display: none;
+}
+html body .calculator .calculatorRow2 {
+    margin-top: auto !important;
+}
+html body .banner.page_section {
+    background: url('https://expogrowth.in/wp-content/uploads/2022/06/unsplash_208asI7iZiU-1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+html body .calculator .container {
+    max-width: 88%;
+}
+html body .foreign-exchange{
+    background: #FFFFFF;
+    border-bottom: 1px solid #f1f1f1;
+}
+html body .tranfer-paid .margin-30 .banner_subheading #monito-coupon-value {
+    color: #fe0095;
+    font-weight: bold;
+    font-family: "Hellix-Bold";
+}
+
+html body .tranfer-paid .margin-30 .banner_subheading b {
+    font-weight: bold;
+    font-family: "Hellix-Bold";
+}
+
+html body .tranfer-paid .margin-30 .banner_subheading {
+    font-weight: normal;
+    font-size: 20px;
+    max-width: 373px;
+}
+html body .banner h1 {
+    font-size: 42px !important;
+    line-height: 1.1 !important;
+}
+html body .tranfer-paid .margin-30 p:last-of-type {
+    font-family: "Hellix-Bold";
+    font-size: 34px;
+    line-height: 1;
+}
+html body .tranfer-paid .margin-30 p:last-of-type .monito-coupon-code {
+    color: #fe0095;
+}
+html body .tranfer-paid .margin-30 .banner_subheading + p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    text-transform: capitalize !important;
+}
+html body .tranfer-paid .tranfer-paid-text + p {
+    font-size: 21px;
+    margin-top: 20px !important;
+}
+form#currency_form {
+    display: flex;
+    flex-direction: column;
+}
+form#currency_form .currency_form_title {
+    order: -2;
+    text-align: left;
+}
+
+form#currency_form .currency_form_title h3 {
+    text-align: left;
+    margin-bottom: 0px;
+    font-size: 17px;
+    line-height: 1.1;
+}
+form#currency_form .view-deatil-bar {
+    order: -1;
+}
+
+form#currency_form .view-deatil-bar .login, 
+form#currency_form .view-deatil-bar .view-detail {
+    margin-bottom: 20px;
+}
+form#currency_form .currency_form_btn span,
+form#currency_form .currency_form_or{
+    display: none;
+}
+.paid-transfer-banner .checkbox-bar .checktermandcondition {
+    text-align: left;
+}
+.currencyForm .customBtn .btn {
+    font-family: Hellix-Regular, Helvetica, Arial, sans-serif;
+}
+form#currency_form .currency_form_btn {
+    order: 9;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+form#currency_form .currency_form_btn:before {
+    content: 'Or sign up with';
+    display: block;
+    width: 100%;
+    margin-bottom: 17px;
+    font-size: 14px;
+}
+form#currency_form .view-deatil-bar .view-detail,
+form#currency_form .currency_form_btn span {
+    display: none;
+}
+
+form#currency_form .currency_form_btn .currency_form_btn_social {
+    padding: 0px;
+    border: none;
+    width: auto;
+}
+
+form#currency_form .currency_form_btn .social-media {
+    border: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-bottom: 0px !important;
+    padding: 0px 5px !important;
+    height: 40px !important;
+}
+html body .currencyForm form .message {
+    font-size: 12px;
+    padding-right: 0px;
+    text-align: left;
+    margin: 10px 0px;
+    font-weight: 700;
+}
+form#currency_form .currency_form_btn .currency_form_btn_social {
+    margin-left: 8px;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+form#currency_form .currency_form_btn img {
+    filter: invert(1);
+    max-width: 25px;
+}
+
+form#currency_form .currency_form_btn .facebook {
+    background: #3667b8;
+}
+
+form#currency_form .currency_form_btn .gmail {
+    background: #2186fc;
+}
+html body .sendMoneyCountry .tranfer-paid {
+    margin-left: 0px !important;
+}
+html body .banner .paid-transfer-banner .mid-container {
+    max-width: 1080px;
+}
+
+@media screen and (min-width: 1024px) {
+ 
+    html body .paid-transfer-banner-box .currencyForm > div .card_custom{
+        max-width: 387px;
+        padding: 35px 40px;
+    }   
+    html body .sendMoneyCountry .tranfer-paid{
+        padding: 10%;
+    }
+    html body .tranfer-paid .margin-30 p:last-of-type{
+        font-size: 34px;
+    }
+}
+@media screen and (max-width:1023px) {
+    html body .sendMoneyCountry .tranfer-paid{
+        padding: 20px;
+        width: 100% !important;
+    }
+    html body .tranfer-paid .tranfer-paid-text + p br {
+        display: none;
+    }
+    html body .tranfer-paid .margin-30 p:last-of-type{
+        font-size: 32px;
+    }
+}
+@media screen and (max-width: 1023px) and (min-width:768px){
+    html body .paid-transfer-banner-box .currencyForm > div .card_custom{
+        max-width: 95% !important;
+    }
+}
+@media screen and (min-width:768px) {
+    html body .paid-transfer-banner-box .transferMoneytoCountry_row {
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    html body .tranfer-paid .margin-30 p:last-of-type {
+        font-size: 26px !important;
+    }
+    html body .paid-transfer-banner-box .currencyForm > div .card_custom{
+        padding: 30px 20px;
+    }
+    /* html body .banner .paid-transfer-banner-box h1 {
+        font-size: 32px !important;
+    } */
+}

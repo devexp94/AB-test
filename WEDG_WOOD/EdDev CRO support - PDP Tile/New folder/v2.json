@@ -1,0 +1,11 @@
+{
+	"files": [
+		"./variation2/variation.css",
+		"./variation2/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.wedgwood.com/en-gb/tea-and-teaware/teaware/all-teaware#aq=@categories%20==%20(%22teaware%22,%22cups_saucers%22,%22mugs%22,%22tea_accessories%22,%22tea_sets%22,%22teapots%22)&numberOfResults=28",
+		"https://www.wedgwood.com/en-us/tea-and-teaware/teaware/all-teaware#aq=@categories%20==%20(%22teaware%22,%22mugs%22,%22tea_accessories%22,%22tea_plates%22,%22tea_sets%22,%22teapots%22,%22cups_saucers%22)&numberOfResults=28"
+	]
+}

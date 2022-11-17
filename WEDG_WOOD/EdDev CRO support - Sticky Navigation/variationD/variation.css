@@ -1,0 +1,19 @@
+@media screen and (max-width:767px) {
+    html body header#header {
+        transform: translateY(0px) !important;
+    }
+
+    header#header.eg-search-show{
+        max-height: 0px;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 550ms ease-in-out, opacity 550ms ease-in-out;
+    }
+    
+    header#header {
+        max-height: 1200px;
+        overflow: visible;
+        opacity: 1;
+        transition: max-height 550ms ease-in-out, opacity 550ms ease-in-out;
+     }
+}

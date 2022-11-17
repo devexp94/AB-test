@@ -1,0 +1,15 @@
+html body .c-c-pl_products .c-c-product-card:nth-child(1){
+    background: url('https://gbl-oned-cdn-prod.azureedge.net/-/media/wedgwood/images/wedgwood/sale/winter%20sale%20plp%20banner.ashx');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+html body .c-c-pl_products .c-c-product-card:nth-child(1)::after{
+    display: none;
+}
+html body .c-c-pl_products .c-c-product-card:nth-child(1) a,
+html body .c-c-pl_products .c-c-product-card:nth-child(1) > div{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}

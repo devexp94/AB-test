@@ -1,0 +1,10 @@
+{
+	"files": [
+		"./variationD/variation.css",
+		"./variationD/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.royaldoulton.com/en-gb/drinkware/mugs-cups/all-mugs-cups"
+	]
+}

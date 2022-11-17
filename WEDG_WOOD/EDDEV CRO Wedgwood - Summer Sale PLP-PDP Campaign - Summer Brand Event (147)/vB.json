@@ -1,0 +1,11 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.wedgwood.com/en-gb/tea-and-teaware/teaware/all-teaware/wonderlust-pink-lotus-mug-1057272",
+		"https://www.wedgwood.com/en-us/dinnerware/dinner-sets/all-dinner-sets"
+	]
+}

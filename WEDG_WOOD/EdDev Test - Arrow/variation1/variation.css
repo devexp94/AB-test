@@ -1,0 +1,16 @@
+html body .eg-arrow .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #081f2c;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+html body .eg-arrow .icon-next {
+    right: 0px;
+}
+
+html body .eg-arrow .icon-prev {
+    left: 0px;
+}

@@ -1,0 +1,99 @@
+html body .eg-logo {
+  position : absolute;
+  top : -120px;
+  left : 50%;
+  transform : translateX(-50%);
+}
+
+html body .overlay--congrats {
+  background : rgb(17, 17, 17);
+}
+
+html body .overlay--confirmed__inner, html body .overlay--congrats__inner {
+  padding-top : 110px;
+}
+
+html body .overlay--congrats .congrats-form>.text-center h3 span {
+  display : block;
+  font-weight : 500;
+  font-size : 24px;
+  letter-spacing : -0.5px;
+}
+
+html body .overlay--congrats .congrats-form>.text-center h3 + p {
+  display : none;
+}
+
+html body .overlay--congrats .congrats-form>.text-center p + p {
+  max-width : 246px;
+  margin-left : auto;
+  margin-right : auto;
+}
+@media screen and (max-width: 47.99em) {
+  html body .overlay--congrats .congrats-form>.text-center h3 span {
+    font-size : 1.375rem !important;
+  }
+
+  html body .overlay--congrats .congrats-form .btn--secondary {
+    padding : 20px 4px;
+  }
+}
+@media only screen and (min-width: 768px) and (min-height: 650px) {
+  html body .overlay--confirmed__inner, html body .overlay--congrats__inner {
+    top : calc(50% + 69px) !important;
+  }
+}
+@media (min-width: 48em) {
+  html body .overlay--confirmed__inner, html body .overlay--congrats__inner {
+    padding-top : 135px;
+  }
+}html body .eg-logo {
+    position : absolute;
+    top : -120px;
+    left : 50%;
+    transform : translateX(-50%);
+  }
+  
+  html body .overlay--congrats {
+    background : rgb(17, 17, 17);
+  }
+  
+  html body .overlay--confirmed__inner, html body .overlay--congrats__inner {
+    padding-top : 110px;
+  }
+  
+  html body .overlay--congrats .congrats-form>.text-center h3 span {
+    display : block;
+    font-weight : 500;
+    font-size : 24px;
+    letter-spacing : -0.5px;
+  }
+  
+  html body .overlay--congrats .congrats-form>.text-center h3 + p {
+    display : none;
+  }
+  
+  html body .overlay--congrats .congrats-form>.text-center p + p {
+    max-width : 246px;
+    margin-left : auto;
+    margin-right : auto;
+  }
+  @media screen and (max-width: 47.99em) {
+    html body .overlay--congrats .congrats-form>.text-center h3 span {
+      font-size : 1.375rem !important;
+    }
+  
+    html body .overlay--congrats .congrats-form .btn--secondary {
+      padding : 20px 4px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (min-height: 650px) {
+    html body .overlay--confirmed__inner, html body .overlay--congrats__inner {
+      top : calc(50% + 69px) !important;
+    }
+  }
+  @media (min-width: 48em) {
+    html body .overlay--confirmed__inner, html body .overlay--congrats__inner {
+      padding-top : 135px;
+    }
+  }

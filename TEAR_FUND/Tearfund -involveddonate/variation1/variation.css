@@ -1,0 +1,89 @@
+html body .eg-heading {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 22px;
+    letter-spacing: .2px;
+}
+html body .eg-subheading {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 100;
+}
+html body .eg-donetation-goal {
+    padding-bottom: 0px;
+    padding-top: 40px;
+    margin-bottom: -2px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+html body .eg-donetation-goal-inr {
+    display: flex;
+    padding-bottom: 25px;
+    border-bottom: 3px solid #ffffff38;
+}
+html body .eg-text-section {
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+html body .eg-chart-section {
+    width: 34%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+html body .eg-chart-bg {
+    width: 105px;
+    height: 105px;
+    border-radius: 100%;
+    position: relative;
+    background: conic-gradient(#fcd500 91%, #ffffff 9%);
+}
+
+.eg-chart-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 18px);
+    height: calc(100% - 18px);
+    background: #173145;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+}
+.space-above-56 form[action="/api/sitecore/Giving/Donate"]:first-of-type {
+    flex-direction: column;
+}
+html body .eg-donetation-goal + div{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+@media screen and (min-width:768px){
+    html body .eg-text-section {
+        width: 75%;
+    }
+}
+@media screen and (max-width:380px){
+    html body .eg-donetation-goal-inr .eg-heading {
+        font-size: 21px;
+    }
+}
+@media screen and (max-width:350px){
+    html body .eg-donetation-goal-inr .eg-chart-bg {
+        width: 90px;
+        height: 90px;
+    }
+    .eg-donetation-goal-inr .eg-chart-text {
+        font-size: 22px;
+        width: calc(100% - 15px);
+        height: calc(100% - 15px);
+    }   
+}

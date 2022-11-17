@@ -1,0 +1,10 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://brochures.wearesno.com/congratulations?d=ZGlzY2lwbGluZT1Ta2kmYWJpbGl0eT03LTklMjBXZWVrcyZkb2ItZGF5cz0yMCZkb2ItbW9udGhzPTExJmRvYi15ZWFycz0xOTkzJm5hdGlvbmFsaXRpZXM9Q2FuYWRpYW4mYnJvY2h1cmUtc2x1Zz1pbnN0cnVjdG9yLWNvdXJzZXMmbG9jYXRpb249SGVscCUyME1lJTIwQ2hvb3NlJmxlYWRfc291cmNlPVJlZmVycmFsJTIwU2l0ZSUyMC0lMjBTZWFzb24lMjBXb3JrZXJzJTIwQmFubmVy"
+	]
+}

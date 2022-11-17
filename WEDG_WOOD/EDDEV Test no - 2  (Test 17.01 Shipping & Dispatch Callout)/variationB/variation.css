@@ -1,0 +1,11 @@
+.eg-shipping-days {
+  display: flex;
+  align-items: center;
+  justify-content:  space-between;
+  padding: 20px 0px;
+  border-bottom: 1px solid #e1e4e5;
+}
+
+.eg-shipping-days .eg-shipping-text {
+  font-weight: 600;
+}

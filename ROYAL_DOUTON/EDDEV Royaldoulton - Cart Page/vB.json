@@ -1,0 +1,10 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.colchoesemma.com.br/test-page-4/?049854245"
+	]
+}

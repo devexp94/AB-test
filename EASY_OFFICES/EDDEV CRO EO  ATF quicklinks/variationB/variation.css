@@ -1,0 +1,137 @@
+html body .office-search-form-wrap .office-search-form .office-search-fields {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.office-search-form-wrap .office-search-form .office-search-field svg {
+    display: none;
+}
+.office-search-form-wrap .office-search-form .office-search-field {
+    width: 100%;
+    flex: auto;
+    height: 42px;
+}
+
+.office-search-form-wrap .office-search-form .office-search-submit {
+    width: auto !important;
+    margin-top: 15px !important;
+    padding: 0px 31px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.office-search-form-wrap .office-search-form .office-search-locate {
+    display: inline-block !important;
+    width: auto;
+    font-size: 16px;
+    margin-right: 12px;
+    margin-bottom: 26px;
+    margin-top: 15px !important;
+}
+.office-search-form-wrap .office-search-form #use-location-container{
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+.office-search-form-wrap .office-search-form .office-search-submit svg {
+    margin-right: 11px;
+}
+
+.office-search .office-search-suggestions .office-search-suggestion[data-gtm-cta="London"]:after {
+    content: 'from £60 pm';
+}
+.office-search .office-search-suggestions .office-search-suggestion[data-gtm-cta="Bristol"]:after {
+    content: 'from £100 pm';
+}
+.office-search .office-search-suggestions .office-search-suggestion[data-gtm-cta="Manchester"]:after {
+    content: 'from £70 pm';
+}
+.office-search .office-search-suggestions .office-search-suggestion[data-gtm-cta="Birmingham"]:after {
+    content: 'from £99 pm';
+}
+.office-search .office-search-suggestions .office-search-suggestion:after{
+    display: block;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+html body .office-search .office-search-suggestions .office-search-suggestion {
+    font-weight: 600;
+}
+html body .office-search .office-search-form{
+    max-width: 405px !important;
+}
+html body .office-search .office-search-suggestions .office-search-suggestion:not(:first-child) {
+    margin-left: 10px;
+    padding-left: 10px;
+    position: relative;
+}
+
+html body .office-search .office-search-suggestions .office-search-suggestion:not(:first-child):before {
+    position: absolute;
+    left: -2px;
+    width: 1px;
+    height: 100%;
+    background: #f95658;
+    content: '';
+    margin: 0px;
+}
+
+@media screen and (max-width: 450px) {
+    html body .office-search-form-wrap .office-search-form .office-search-fields{
+        justify-content: space-between;
+    }
+    html body .office-search-form-wrap .office-search-form .office-search-locate{
+        font-size: 14px;
+        margin-right: 0px !important;
+    }
+    html body .office-search-form-wrap .office-search-form .office-search-submit{
+        padding: 0px 16px !important;
+    }
+    html body .office-search-form{
+        padding: 20px;
+    }
+    html body .office-search-form .icon-27-23 {
+        height: 19px;
+        width: 24px;
+    }
+    html body .office-search-form-wrap .office-search-form .office-search-submit svg {
+        margin-right: 10px !important;
+        width: 15px !important;
+    }
+    html body .office-search .office-search-suggestions .office-search-suggestion:not(:first-child) {
+        margin-left: 5px;
+        padding-left: 5px;
+        position: relative;
+    }
+    html body .office-search .office-search-form-wrap {
+        padding-left: 21px;
+        padding-right: 21px;
+    }
+    html body .office-search .office-search-suggestions .office-search-suggestion:after{
+        font-size: 9px;
+    }
+}
+@media screen and (max-width:360px) {
+    html body .office-search .office-search-suggestions .office-search-suggestion:after {
+        font-size: 8px;
+    }
+    html body .office-search .office-search-form-wrap {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    html body .office-search .office-search-suggestions .office-search-suggestion{
+        font-size: 9px;
+    }
+    html body .office-search-form-wrap .office-search-form .office-search-locate {
+        font-size: 12px;
+    }
+    html body .office-search-form-wrap .office-search-form .office-search-submit {
+        padding: 0px 12px !important;
+        font-size: 12px;
+    }
+}

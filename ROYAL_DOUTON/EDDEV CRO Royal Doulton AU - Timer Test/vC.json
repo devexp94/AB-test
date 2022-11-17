@@ -1,0 +1,12 @@
+{
+	"files": [
+		"./variationC-PLP/variation.css",
+		"./variationC-PLP/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.royaldoulton.com.au/crystal-glassware/highballs-tumblers/",
+		"https://www.royaldoulton.com/en-gb/sale/summer-sale/summer-sale",
+		"https://www.royaldoulton.com/en-gb/sale/summer-sale/summer-sale/highclere-double-old-fashioned-tumbler-set-of-4-1061005"
+	]
+}

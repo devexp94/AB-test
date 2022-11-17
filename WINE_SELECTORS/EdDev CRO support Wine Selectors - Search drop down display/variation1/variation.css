@@ -1,0 +1,87 @@
+header nav.primary .wrapper > ul {
+    display: flex;
+}
+
+header nav.primary .wrapper > ul > li:nth-child(1) {
+    order: -3;
+}
+header nav.primary .wrapper > ul > li:nth-child(2) {
+    order: -2;
+}
+header nav.primary .wrapper > ul > li:nth-child(5) {
+    order: -1;
+}
+
+header nav.primary .wrapper > ul > li:nth-child(3) {
+    margin-left: auto;
+}
+
+nav.primary .search {
+    left: 50%;
+    transform: translateX(-60%);
+    right: 0px;
+}
+
+.search-expander .searchBox button span:before, 
+nav.primary .searchBox button span:before,
+.search-expander .searchBox input[type=text], 
+nav.primary .searchBox input[type=text],
+.search-expander .searchBox input[type=text]::placeholder, 
+nav.primary .searchBox input[type=text]::placeholder {
+    color:#333333 !important;  
+}
+
+.search-expander .searchBox, 
+nav.primary .searchBox {
+    background: #fff !important;
+    border-radius: 4px;
+}
+html body #sli_autocomplete {
+    left: 50% !important;
+    transform: translateX(-50%);
+}
+@media screen and (min-width: 768px){
+    html body #sli_autocomplete {
+        max-width: 800px;
+    }
+}
+html body #sli_autocomplete > div {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+/* html body #sli_articles_search_suggestions {
+    border-left: 1px solid #e5e1f2;
+} */
+html body #sli_autocomplete > div > div {
+    width: 100% !important;
+}
+
+html body #sli_autocomplete .sts_suggestions {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    float: none !important;
+}
+
+html body #sli_autocomplete .sts_suggestions > div {
+    width: 49%;
+    box-sizing: border-box;
+}
+
+html body #sli_autocomplete .sli_products_heading,
+html body #sli_autocomplete #sli_ac_section_suggestions {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+.sts_view-more {
+    width: 100%;
+    display: inline-block;
+    text-align: center !important;
+    box-sizing: border-box;
+}
+
+#sli_autocomplete .sli_view_more_link_wrapper a {
+    width: auto !important;
+    display: inline-block !important;
+}

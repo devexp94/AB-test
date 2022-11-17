@@ -1,0 +1,80 @@
+html body .layout-section .c-title-component-image {
+  display: none;
+}
+html body .layout-section .c-title-component-text p {
+  position: relative;
+}
+
+html body .layout-section .c-title-component-text p .eg-toggle {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: inline-block;
+}
+
+span.eg-toggle:after {
+  content: "";
+  font-family: "Vita-iconfont";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 24px;
+  cursor: pointer;
+  transform: rotate(0deg);
+  /* transition: transform 550ms ease-in-out; */
+}
+
+html body .layout-section .c-title-component-text p.active .eg-toggle {
+  transform: rotate(180deg);
+  /* transition: transform 550ms ease-in-out; */
+}
+html body .layout-section .c-title-component-text p{
+  max-height: 27px;
+  overflow: hidden;
+  transition: max-height 550ms ease-in-out, overflow 550ms ease-in-out;
+}
+html body .layout-section .c-title-component-text p.active{
+  max-height: 1000px;
+  overflow: visible;
+  transition: max-height 550ms ease-in-out, overflow 550ms ease-in-out;
+}
+
+
+@media screen and (min-width: 992px) {
+  html body .layout-section .c-title-component-text {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding: 40px 40px;
+    max-width: 1680px;
+  }
+  
+  html body .layout-section .c-title-component-text h1 {
+    width: 460px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  
+  html body .layout-section .c-title-component-text p {
+    width: calc(100% - 460px);
+    padding-left: 25px;
+    padding-right: 30px;
+  }  
+}
+html body .layout-section .c-title-component-text p {
+  padding-right: 30px;
+}  
+@media screen and (max-width: 991px) {
+  html body .layout-section .c-title-component-text p{
+    max-height: 23px;
+  }
+  html body .layout-section .c-title-component-text p {
+    padding-right: 30px;
+  }  
+}

@@ -1,0 +1,226 @@
+html body .offices-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+html body .offices-list-item {
+    display: flex;
+    grid: none;
+    flex-direction: column;
+    margin-bottom: 0px;
+    height: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+    html body .offices-list>div {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width:992px) {
+    html body .offices-list>div {
+        width: 33.33%;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width:650px) {
+    html body .offices-list>div {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 649px) {
+    html body .offices-list>div {
+        width: 100% !important;
+        padding: 10px 0px !important;
+    }
+
+    html body .offices-list-item-data-link {
+        padding: 10px 10px !important;
+    }
+}
+
+html body .offices-list>div {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+html body main .search-content-aside {
+    display: none;
+}
+
+html body main .search-content {
+    -ms-grid-columns: minmax(944px, 1300px) minmax(0px, 0px) !important;
+    grid-template-columns: minmax(944px, 1300px) minmax(0px, 0px) !important;
+    grid-column-gap: 0px !important;
+}
+
+.eg-copy .facilities-list {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+}
+
+.facilities-list-item svg .eg-copy .facilities-list {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column-gap: 10px;
+    grid-row-gap: 4px;
+}
+
+.eg-copy .tab-content {
+    min-height: auto !important;
+
+}
+
+.eg-copy>.tab-content:nth-child(1),
+.eg-copy>.tab-content:nth-child(2) {
+    display: block !important;
+}
+
+.offices-list-item-data .offices-list-item-data-cta a[data-gtm-cta="Explore space"],
+.eg-copy>.tab-content:nth-child(1) .facilities-list-item svg,
+.eg-copy>.tab-content:nth-child(2) .facilities-list-item .facilities-list-item-name {
+    display: none;
+}
+
+.eg-copy>.tab-content:nth-child(2) .facilities-list-item {
+    max-width: 28px;
+}
+
+a.offices-list-item-data-link {
+    padding: 15px !important;
+}
+
+.eg-copy .tab-content.current .facilities-list-item-name {
+    font-size: 10px;
+    padding-top: 4px;
+    position: relative;
+}
+
+.eg-copy .tab-content.current .facilities-list-item-name:after {
+    content: '';
+    background: #1d1d1b;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    border-radius: 100%;
+}
+
+.eg-copy .tab-content.current .facilities-list-item {
+    width: auto;
+}
+
+.eg-copy .tab-content:not(.current) svg {
+    filter: grayscale(1);
+    height: 22px;
+    width: 28px;
+    margin-bottom: 6px;
+}
+
+.eg-copy .tab-content:not(.current) {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.offices-list-item .offices-list-item-data-title {
+    font-size: 16px;
+    line-height: 1.5;
+    min-height: 42px;
+    -webkit-line-clamp: 2 !important;
+}
+
+.offices-list-item .office-list-item-price {
+    background: none;
+    color: #000;
+    font-size: 12px;
+    max-width: 89px;
+    position: static;
+    padding-left: 0px;
+}
+
+.offices-list-item .offices-list-item-data-location {
+    display: none;
+}
+
+.offices-list-item .offices-list-item-data-cta a[data-gtm-cta="Book a viewing"] {
+    color: #f95658;
+    background: #fff;
+    padding: 6px 10px;
+    bottom: 47px !important;
+    border: 1px solid #f95658;
+}
+
+.offices-list-item .offices-list-item-data-cta a[data-gtm-cta="Book a viewing"]:hover {
+    color: #fff;
+    background: #f95658;
+}
+
+.offices-list-item .offices-list-item-data-cta {
+    bottom: 20px !important;
+}
+
+.eg-copy>.tab-content:nth-child(2) .facilities-list>li,
+.offices-list .js-get-quote-cta.get-quote-cta,
+.offices-list-item .offices-list-item-data-text {
+    display: none;
+}
+
+.eg-copy>.tab-content:nth-child(2) .facilities-list>li:nth-child(1),
+.eg-copy>.tab-content:nth-child(2) .facilities-list>li:nth-child(2),
+.eg-copy>.tab-content:nth-child(2) .facilities-list>li:nth-child(3),
+.eg-copy>.tab-content:nth-child(2) .facilities-list>li:nth-child(4),
+.eg-copy>.tab-content:nth-child(2) .facilities-list>li:nth-child(5) {
+    display: block;
+}
+
+.eg-copy>.tab-content:nth-child(2) .facilities-list {
+    position: relative;
+}
+
+.eg-copy>.tab-content:nth-child(2) .facilities-list:after {
+    content: 'See all facilities';
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #1d1d1b;
+    opacity: .8;
+    margin-top: 8px;
+}
+
+.eg-copy>.tab-content:nth-child(1) {
+    min-height: 48px !important;
+}
+
+.offices-list-item .offices-list-item-images img:first-child {
+    width: 100% !important;
+}
+
+.offices-list-item .offices-list-item-images {
+    grid: none !important;
+}
+
+.offices-list-item .offices-list-item-images img:not(:first-child) {
+    display: none !important;
+}
+
+.office-list-item-price span {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.offices-by-city {
+    display: none;
+}
+
+.eg-sort-by,
+.eg-more-filters,
+.eg-facilities {
+    cursor: pointer;
+
+}

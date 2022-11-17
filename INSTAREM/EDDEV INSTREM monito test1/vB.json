@@ -1,0 +1,11 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.instarem.com/monito",
+		"https://www.instarem.com/monito/smartCard-inline"
+	]
+}

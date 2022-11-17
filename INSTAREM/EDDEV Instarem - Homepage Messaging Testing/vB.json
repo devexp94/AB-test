@@ -1,0 +1,12 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.instarem.com/en-hk/",
+		"https://www.instarem.com/en-sg/",
+		"https://www.instarem.com/en-us/"
+	]
+}

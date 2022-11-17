@@ -1,0 +1,11 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.waterford.com/en-us/gift-ideas/gifts-by-occasion/wedding-and-anniversary#aq=@categories%20==%20(%22wedding_gifts%22)&numberOfResults=20",
+		"https://www.waterford.com/en-us/gift-ideas/gifts-by-occasion/wedding-and-anniversary/elegance-champagne-classic-flute-pair-40001101"
+	]
+}

@@ -1,0 +1,32 @@
+p.eg-button a {
+    border-radius: 5px;
+    width: 100px;
+    box-shadow: 3px 3px 8px #ccc;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    color: #000000;
+    border: 0;
+    background-color: #fece0a;
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: large;
+    white-space: nowrap;
+    transition: color .6s linear;
+    text-decoration: none;
+    text-align: center;
+}
+
+.eg-button a:hover {
+    color: #fff;
+    background-color: #61a209;
+    transition: .5s ease;
+}
+
+@media screen and (max-width:991px) {
+    html body .eg-button a{
+    margin-left: 5px;
+    box-shadow: 3px 3px 8px #888;
+    }
+}

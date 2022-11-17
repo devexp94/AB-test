@@ -1,0 +1,11 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.royaldoulton.com/en-gb/sale/summer-sale/summer-sale",
+		"https://www.royaldoulton.com/en-gb/sale/summer-sale/summer-sale/highclere-double-old-fashioned-tumbler-set-of-4-1061005"
+	]
+}

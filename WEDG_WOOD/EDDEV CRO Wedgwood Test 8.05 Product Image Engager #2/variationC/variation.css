@@ -1,0 +1,1045 @@
+.c-image,
+.c-title-component-image {
+    position: relative;
+}
+
+
+.c-image.eg_active .eg_sections,
+.c-title-component-image.eg_active .eg_sections {
+    display: none;
+}
+
+.eg_sections {
+    display: block;
+}
+
+
+.eg_component {
+    cursor: pointer;
+}
+
+.eg_product {
+    background-color: #5A739C;
+    width: max-content;
+    max-width: 210px;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    position: relative;
+}
+
+.eg_product a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.eg_product a:hover {
+    color: #fff;
+}
+
+.eg_product p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 17px;
+    color: #fff;
+}
+
+.eg_component_icon {
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    position: absolute;
+    top: -8px;
+    left: 15px;
+    border-radius: 100%;
+    border: 1px solid #5A739C;
+    z-index: 99;
+}
+
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.4);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.eg_component_icon {
+    animation: pulse 1s infinite;
+}
+
+.eg_component.eg_show .eg_product {
+    display: block;
+}
+
+.eg_component.eg_show .eg_component_icon {
+    /* border-radius: 0; */
+    transform: rotate(45deg);
+    animation: none;
+}
+
+.eg_component.eg_show .eg_component_icon:hover {
+    animation: none;
+}
+
+.eg_product_price::after {
+    content: "";
+    font-family: "Vita-iconfont";
+    position: absolute;
+    left: 70px;
+    transform: rotate(-90deg);
+    font-weight: 600;
+}
+
+/* all dinnerware component positioning*/
+.eg_allCollection .eg_component.eg_one {
+    position: absolute;
+    top: 12%;
+    left: 15%;
+}
+
+.eg_allCollection .eg_component.eg_two {
+    position: absolute;
+    top: 14%;
+    left: 45%;
+}
+
+.eg_allCollection .eg_component.eg_three {
+    position: absolute;
+    top: 50%;
+    right: 20%;
+}
+
+
+.eg_allCollection .eg_component.eg_four {
+    position: absolute;
+    bottom: 20%;
+    right: 28%;
+}
+
+.eg_allCollection .eg_component.eg_five {
+    position: absolute;
+    top: 80%;
+    left: 18%;
+}
+
+.eg_allCollection .eg_component.eg_three .eg_component_icon {
+    left: auto;
+    right: 15px;
+}
+
+.eg_allCollection .eg_component.eg_four .eg_component_icon {
+    top: inherit;
+    bottom: -8px;
+    left: auto;
+    right: 15px;
+    z-index: 999;
+}
+
+/* All DrinkWare component positioning */
+
+.eg_allDinnerSets .eg_component.eg_one {
+    position: absolute;
+    top: 25%;
+    left: 27%;
+}
+
+.eg_allDinnerSets .eg_component.eg_two {
+    position: absolute;
+    top: 47%;
+    left: 45%;
+}
+
+.eg_allDinnerSets .eg_component.eg_three {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+}
+
+.eg_allDinnerSets .eg_component.eg_four {
+    position: absolute;
+    top: 80%;
+    right: 23%;
+}
+
+.eg_allDinnerSets .eg_component.eg_five {
+    position: absolute;
+    top: 23%;
+    right: 28%;
+}
+
+.eg_allDinnerSets .eg_component.eg_seven .eg_component_icon,
+.eg_allDinnerSets .eg_component.eg_five .eg_component_icon,
+.eg_allDinnerSets .eg_component.eg_six .eg_component_icon,
+.eg_allDinnerSets .eg_component.eg_four .eg_component_icon {
+    left: auto;
+    right: 15px;
+}
+
+.eg_allDinnerSets .eg_component.eg_eight .eg_component_icon {
+    top: auto;
+    bottom: -8px;
+}
+
+.eg_allDinnerSets .eg_component.eg_six {
+    position: absolute;
+    top: 57%;
+    right: 5%;
+}
+
+.eg_allDinnerSets .eg_component.eg_seven {
+    position: absolute;
+    top: 32%;
+    right: 6%;
+}
+
+.eg_allDinnerSets .eg_component.eg_eight {
+    position: absolute;
+    bottom: 22%;
+    left: 38%;
+}
+
+/* All Teaware component positioning */
+.eg_allTeaware .eg_component.eg_one {
+    position: absolute;
+    top: 75%;
+    left: 20%;
+}
+
+.eg_allTeaware .eg_component.eg_two {
+    position: absolute;
+    bottom: 7%;
+    left: 9%;
+}
+
+.eg_allTeaware .eg_component.eg_three {
+    position: absolute;
+    top: 65%;
+    right: 45%;
+}
+
+.eg_allTeaware .eg_component.eg_four {
+    position: absolute;
+    bottom: 15%;
+    left: 34%;
+}
+
+.eg_allTeaware .eg_component.eg_five {
+    position: absolute;
+    bottom: 16%;
+    right: 25%;
+}
+
+.eg_allTeaware .eg_component.eg_six {
+    position: absolute;
+    bottom: 10%;
+    right: 40%;
+}
+
+
+.eg_allTeaware .eg_component.eg_six .eg_component_icon,
+.eg_allTeaware .eg_component.eg_five .eg_component_icon,
+.eg_allTeaware .eg_component.eg_three .eg_component_icon {
+    left: auto;
+    right: 15px;
+}
+
+.eg_allTeaware .eg_component.eg_six .eg_component_icon,
+.eg_allTeaware .eg_component.eg_five .eg_component_icon,
+.eg_allTeaware .eg_component.eg_four .eg_component_icon,
+.eg_allTeaware .eg_component.eg_two .eg_component_icon {
+    top: auto;
+    bottom: -8px;
+}
+
+
+/* All cupAndSaucers component positions */
+
+.eg_cupAndSaucers .eg_component.eg_one {
+    position: absolute;
+    top: 40%;
+    left: 42%;
+}
+
+.eg_cupAndSaucers .eg_component.eg_two {
+    position: absolute;
+    top: 82%;
+    left: 12%;
+}
+
+.eg_cupAndSaucers .eg_component.eg_three {
+    position: absolute;
+    top: 70%;
+    left: 38%;
+}
+
+.eg_cupAndSaucers .eg_component.eg_four {
+    position: absolute;
+    bottom: 27%;
+    right: 19%;
+}
+
+.eg_cupAndSaucers .eg_component.eg_five {
+    position: absolute;
+    bottom: 12%;
+    right: 48%;
+}
+
+.eg_cupAndSaucers .eg_component.eg_five .eg_component_icon,
+.eg_cupAndSaucers .eg_component.eg_four .eg_component_icon {
+    bottom: -8px;
+    top: inherit;
+    right: 15px;
+    left: auto;
+}
+
+/* All Bone China component positions */
+
+.eg_boneChina .eg_component.eg_one {
+    position: absolute;
+    top: 15%;
+    left: 8%;
+}
+
+.eg_boneChina .eg_component.eg_two {
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+}
+
+.eg_boneChina .eg_component.eg_five .eg_component_icon,
+.eg_boneChina .eg_component.eg_six .eg_component_icon {
+    left: auto;
+    right: 15px;
+}
+
+.eg_boneChina .eg_component.eg_five .eg_component_icon,
+.eg_boneChina .eg_component.eg_two .eg_component_icon {
+    top: auto;
+    bottom: -8px;
+}
+
+
+.eg_boneChina .eg_component.eg_five {
+    position: absolute;
+    bottom: 15%;
+    right: 30%;
+}
+
+/* All Wonder Lust positioning */
+
+.eg_wonderLust .eg_component.eg_one {
+    position: absolute;
+    top: 24%;
+    left: 0;
+}
+
+.eg_wonderLust .eg_component.eg_two {
+    position: absolute;
+    top: 60%;
+    left: 8%;
+}
+
+/* .eg_wonderLust .eg_component.eg_four .eg_component_icon{
+    left: auto;
+    right: 15px;
+} */
+
+.eg_wonderLust .eg_component.eg_three {
+    position: absolute;
+    top: 18%;
+    left: 16%;
+}
+
+.eg_wonderLust .eg_component.eg_four {
+    position: absolute;
+    top: 42%;
+    left: 42%;
+}
+
+.eg_wonderLust .eg_component.eg_five {
+    position: absolute;
+    top: 54%;
+    left: 40%;
+}
+
+/* All bowls component positioning */
+
+.eg_bestTeaSet .eg_component.eg_one {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
+
+.eg_bestTeaSet .eg_component.eg_two {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
+
+.eg_bestTeaSet .eg_component.eg_three {
+    position: absolute;
+    bottom: 15%;
+    right: 22%;
+}
+
+.eg_bestTeaSet .eg_component.eg_four {
+    position: absolute;
+    top: 43%;
+    right: 2%;
+}
+
+.eg_bestTeaSet .eg_component.eg_five {
+    position: absolute;
+    top: 68%;
+    right: 18%;
+}
+
+.eg_bestTeaSet .eg_component.eg_six {
+    position: absolute;
+    top: 18%;
+    left: 28%;
+}
+
+.eg_bestTeaSet .eg_component.eg_seven {
+    position: absolute;
+    top: 36%;
+    left: 24%;
+}
+
+.eg_bestTeaSet .eg_component.eg_eight {
+    position: absolute;
+    top: 18%;
+    right: 5%;
+}
+
+.eg_bestTeaSet .eg_component.eg_nine {
+    position: absolute;
+    top: 72%;
+    right: 18%;
+}
+
+
+.eg_bestTeaSet .eg_component.eg_ten {
+    position: absolute;
+    top: 36%;
+    right: 25%;
+}
+
+.eg_bestTeaSet .eg_component.eg_eleven {
+    position: absolute;
+    top: 25%;
+    right: 30%;
+}
+
+.eg_bestTeaSet .eg_component.eg_twelve {
+    position: absolute;
+    top: 30%;
+    right: 24%;
+}
+
+.eg_bestTeaSet .eg_component.eg_thirteen {
+    position: absolute;
+    top: 14%;
+    right: 20%;
+}
+
+.eg_bestTeaSet .eg_component.eg_fourteen {
+    position: absolute;
+    top: 42%;
+    right: 6%;
+}
+
+.eg_bestTeaSet .eg_component.eg_fifteen {
+    position: absolute;
+    top: 50%;
+    left: 28%;
+}
+
+.eg_bestTeaSet .eg_component.eg_sixteen {
+    position: absolute;
+    top: 70%;
+    left: 25%;
+}
+
+.eg_bestTeaSet .eg_component.eg_seventeen {
+    position: absolute;
+    top: 54%;
+    right: 25%;
+}
+
+
+.eg_bestTeaSet .eg_component.eg_eighteen {
+    position: absolute;
+    top: 26%;
+    left: 18%;
+}
+
+.eg_bestTeaSet .eg_component.eg_nineteen {
+    position: absolute;
+    top: 78%;
+    left: 2%;
+}
+
+.eg_bestTeaSet .eg_component.eg_twenty {
+    position: absolute;
+    top: 15%;
+    left: 55%;
+}
+
+.eg_bestTeaSet .eg_component.eg_twenty-one {
+    position: absolute;
+    top: 66%;
+    right: 30%;
+}
+
+.eg_bestTeaSet .eg_component.eg_twenty-two {
+    position: absolute;
+    top: 80%;
+    right: 8%;
+}
+
+
+.eg_bestTeaSet .eg_component.eg_twenty-three {
+    position: absolute;
+    top: 60%;
+    left: 25%;
+}
+
+.eg_bestTeaSet .eg_component.eg_twenty-four {
+    position: absolute;
+    top: 68%;
+    left: 36%;
+}
+
+.eg_bestTeaSet .eg_component.eg_twenty-five {
+    position: absolute;
+    top: 70%;
+    left: 18%;
+}
+
+.eg_bestTeaSet .eg_component.eg_twenty-six {
+    position: absolute;
+    top: 80%;
+    left: 5%;
+}
+
+.eg_bestTeaSet .eg_component.eg_twenty-seven {
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+}
+
+.eg_bestTeaSet .eg_component.eg_twenty-eight {
+    position: absolute;
+    top: 10%;
+    right: 24%;
+}
+
+.eg_bestTeaSet .eg_component.eg_twenty-nine {
+    position: absolute;
+    top: 19%;
+    right: 24%;
+}
+
+.eg_bestTeaSet .eg_component.eg_thirty {
+    position: absolute;
+    top: 84%;
+    left: 0;
+}
+
+.eg_bestTeaSet .eg_component.eg_thirty-one {
+    position: absolute;
+    top: 79%;
+    left: 4%;
+}
+
+.eg_bestTeaSet .eg_component.eg_thirty-two {
+    position: absolute;
+    top: 87%;
+    left: 12%;
+}
+
+.eg_bestTeaSet .eg_component.eg_thirty-three {
+    position: absolute;
+    bottom: 5%;
+    right: 38%;
+}
+
+.eg_bestTeaSet .eg_component.eg_thirty-four {
+    position: absolute;
+    bottom: 12%;
+    left: 0;
+}
+
+
+
+.eg_bestTeaSet .eg_component.eg_twenty-nine .eg_component_icon,
+.eg_bestTeaSet .eg_component.eg_twenty-eight .eg_component_icon,
+.eg_bestTeaSet .eg_component.eg_twenty-two .eg_component_icon,
+.eg_bestTeaSet .eg_component.eg_twenty-one .eg_component_icon,
+.eg_bestTeaSet .eg_component.eg_seventeen .eg_component_icon,
+.eg_bestTeaSet .eg_component.eg_fourteen .eg_component_icon,
+.eg_bestTeaSet .eg_component.eg_thirteen .eg_component_icon,
+.eg_bestTeaSet .eg_component.eg_twelve .eg_component_icon,
+.eg_bestTeaSet .eg_component.eg_eleven .eg_component_icon,
+.eg_bestTeaSet .eg_component.eg_ten .eg_component_icon,
+.eg_bestTeaSet .eg_component.eg_nine .eg_component_icon,
+.eg_bestTeaSet .eg_component.eg_eight .eg_component_icon,
+.eg_bestTeaSet .eg_component.eg_five .eg_component_icon,
+.eg_bestTeaSet .eg_component.eg_four .eg_component_icon {
+    left: auto;
+    right: 15px;
+}
+
+.eg_bestTeaSet .eg_component.eg_thirty-three .eg_component_icon,
+.eg_bestTeaSet .eg_component.eg_three .eg_component_icon {
+    left: auto;
+    right: 15px;
+    top: auto;
+    bottom: -8px;
+}
+
+.eg_bestTeaSet .eg_component.eg_thirty-four .eg_component_icon,
+.eg_bestTeaSet .eg_component.eg_twenty-seven .eg_component_icon {
+    top: auto;
+    bottom: -8px;
+}
+
+/* eg_teaAndTeaware positioning */
+
+.eg_teaAndTeaware .eg_component.eg_one {
+    position: absolute;
+    top: 24%;
+    left: 20%;
+}
+
+.eg_teaAndTeaware .eg_component.eg_two {
+    position: absolute;
+    top: 70%;
+    right: 20%;
+}
+
+.eg_teaAndTeaware .eg_component.eg_three {
+    position: absolute;
+    top: 74%;
+    left: 42%;
+}
+
+.eg_teaAndTeaware .eg_component.eg_four {
+    position: absolute;
+    top: 26%;
+    right: 40%;
+}
+
+.eg_teaAndTeaware .eg_component.eg_five {
+    position: absolute;
+    top: 20%;
+    right: 22%;
+}
+
+.eg_teaAndTeaware .eg_component.eg_six {
+    position: absolute;
+    top: 47%;
+    right: 30%;
+}
+
+.eg_teaAndTeaware .eg_component.eg_seven {
+    position: absolute;
+    top: 52%;
+    right: 2%;
+}
+
+.eg_teaAndTeaware .eg_component.eg_two .eg_component_icon,
+.eg_teaAndTeaware .eg_component.eg_seven .eg_component_icon,
+.eg_teaAndTeaware .eg_component.eg_six .eg_component_icon,
+.eg_teaAndTeaware .eg_component.eg_five .eg_component_icon,
+.eg_teaAndTeaware .eg_component.eg_four .eg_component_icon {
+    left: auto;
+    right: 15px;
+}
+
+
+
+/* All Bride and Groom positioning */
+.eg_brideAndGroom .eg_component.eg_one {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+
+.eg_brideAndGroom .eg_component.eg_two {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+
+.eg_brideAndGroom .eg_component.eg_three {
+    position: absolute;
+    top: 84%;
+    left: 28%;
+}
+
+.eg_brideAndGroom .eg_component.eg_four {
+    position: absolute;
+    top: 20%;
+    right: 24%;
+}
+
+.eg_brideAndGroom .eg_component.eg_five {
+    position: absolute;
+    top: 75%;
+    right: 12%;
+}
+
+.eg_brideAndGroom .eg_component.eg_six {
+    position: absolute;
+    top: 12%;
+    left: 12%;
+}
+
+.eg_brideAndGroom .eg_component.eg_seven {
+    position: absolute;
+    top: 40%;
+    left: 12%;
+}
+
+.eg_brideAndGroom .eg_component.eg_eight {
+    position: absolute;
+    top: 65%;
+    left: 10%;
+}
+
+.eg_brideAndGroom .eg_component.eg_nine {
+    position: absolute;
+    top: 15%;
+    right: 24%;
+}
+
+.eg_brideAndGroom .eg_component.eg_ten {
+    position: absolute;
+    top: 68%;
+    right: 12%;
+}
+
+.eg_brideAndGroom .eg_component.eg_eleven {
+    position: absolute;
+    top: 83%;
+    left: 30%;
+}
+
+.eg_brideAndGroom .eg_component.eg_twelve {
+    position: absolute;
+    top: 30%;
+    left: 18%;
+}
+
+.eg_brideAndGroom .eg_component.eg_thirteen {
+    position: absolute;
+    top: 80%;
+    left: 5%;
+}
+
+.eg_brideAndGroom .eg_component.eg_fourteen {
+    position: absolute;
+    top: 80%;
+    left: 30%;
+}
+
+.eg_brideAndGroom .eg_component.eg_fifteen {
+    position: absolute;
+    top: 15%;
+    right: 27%;
+}
+
+.eg_brideAndGroom .eg_component.eg_sixteen {
+    position: absolute;
+    top: 55%;
+    right: 5%;
+}
+
+.eg_brideAndGroom .eg_component.eg_seventeen {
+    position: absolute;
+    top: 83%;
+    right: 15%;
+}
+
+.eg_brideAndGroom .eg_component.eg_eighteen {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+}
+
+.eg_brideAndGroom .eg_component.eg_nineteen {
+    position: absolute;
+    top: 83%;
+    left: 26%;
+}
+
+.eg_brideAndGroom .eg_component.eg_twenty {
+    position: absolute;
+    top: 21%;
+    right: 22%;
+}
+
+.eg_brideAndGroom .eg_component.eg_twenty-one {
+    position: absolute;
+    top: 75%;
+    right: 15%;
+}
+
+.eg_brideAndGroom .eg_component.eg_twenty-one .eg_component_icon,
+.eg_brideAndGroom .eg_component.eg_twenty .eg_component_icon,
+.eg_brideAndGroom .eg_component.eg_seventeen .eg_component_icon,
+.eg_brideAndGroom .eg_component.eg_sixteen .eg_component_icon,
+.eg_brideAndGroom .eg_component.eg_fifteen .eg_component_icon,
+.eg_brideAndGroom .eg_component.eg_ten .eg_component_icon,
+.eg_brideAndGroom .eg_component.eg_nine .eg_component_icon,
+.eg_brideAndGroom .eg_component.eg_five .eg_component_icon,
+.eg_brideAndGroom .eg_component.eg_four .eg_component_icon {
+    left: auto;
+    right: 15px;
+}
+
+/* increase z-index */
+.eg_component.eg_show {
+    z-index: 99;
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .eg_teaAndTeaware .eg_component.eg_one {
+        top: 14%;
+    }
+
+    .eg_allDinnerSets .eg_component.eg_eight {
+        bottom: 18%;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .eg_allTeaware .eg_component.eg_six {
+        display: none;
+    }
+
+    .eg_wonderLust .eg_component.eg_one {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .eg_bestTeaSet .eg_component.eg_thirty-three {
+        right: 32%;
+    }
+}
+
+
+/* cart icon */
+
+.eg_cart {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    background: #00313c;
+    border-radius: 100%;
+    padding: 8px;
+    text-decoration: none;
+    border: 2px solid;
+    cursor: pointer;
+    z-index: 1;
+    color: #fff !important;
+}
+
+/* New CSS */
+
+span.eg_component_icon:after {
+    content: "";
+    font-family: "Vita-iconfont";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    letter-spacing: normal;
+    line-height: 3px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    color: #5A739C;
+    font-size: 13px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eg_allCollection .eg_component.eg_four .eg_product {
+    top: -21px;
+}
+
+.eg_wonderLust .eg_component.eg_four .eg_product,
+.eg_allTeaware .eg_component.eg_one .eg_product,
+.eg_allDinnerSets .eg_component.eg_two .eg_product {
+    top: -72px;
+}
+
+.eg_wonderLust .eg_component.eg_four .eg_product:after,
+.eg_boneChina .eg_component.eg_two .eg_product:after,
+.eg_allTeaware .eg_component.eg_two .eg_product:after,
+.eg_allTeaware .eg_component.eg_four .eg_product:after,
+.eg_allTeaware .eg_component.eg_one .eg_product:after,
+.eg_allDinnerSets .eg_component.eg_two .eg_product:after,
+.eg_allDinnerSets .eg_component.eg_eight .eg_product:after {
+    position: absolute;
+    bottom: -20px;
+    content: '';
+    left: 14px;
+    border: 10px solid #5a739c;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+
+.eg_boneChina .eg_component.eg_five .eg_product:after,
+.eg_cupAndSaucers .eg_component.eg_four .eg_product:after,
+.eg_allTeaware .eg_component.eg_five .eg_product:after,
+.eg_allCollection .eg_component.eg_four .eg_product:after {
+    position: absolute;
+    bottom: -20px;
+    content: '';
+    right: 14px;
+    border: 10px solid #5a739c;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+
+.eg_boneChina .eg_component.eg_five .eg_product,
+.eg_boneChina .eg_component.eg_two .eg_product,
+.eg_cupAndSaucers .eg_component.eg_four .eg_product,
+.eg_allTeaware .eg_component.eg_two .eg_product,
+.eg_allTeaware .eg_component.eg_four .eg_product,
+.eg_allTeaware .eg_component.eg_five .eg_product,
+.eg_allDinnerSets .eg_component.eg_eight .eg_product {
+    bottom: 20px;
+}
+
+.eg_cupAndSaucers .eg_component.eg_one .eg_product,
+.eg_teaAndTeaware .eg_component.eg_six .eg_product,
+.eg_teaAndTeaware .eg_component.eg_five .eg_product,
+.eg_teaAndTeaware .eg_component.eg_four .eg_product,
+.eg_teaAndTeaware .eg_component.eg_one .eg_product,
+.eg_allDinnerSets .eg_component.eg_seven .eg_product,
+.eg_allDinnerSets .eg_component.eg_six .eg_product,
+.eg_allDinnerSets .eg_component.eg_three .eg_product,
+.eg_allDinnerSets .eg_component.eg_four .eg_product,
+.eg_allDinnerSets .eg_component.eg_five .eg_product,
+.eg_allDinnerSets .eg_component.eg_one .eg_product,
+.eg_allCollection .eg_component.eg_one .eg_product,
+.eg_allCollection .eg_component.eg_two .eg_product,
+.eg_teaAndTeaware .eg_component.eg_two .eg_product,
+.eg_teaAndTeaware .eg_component.eg_three .eg_product,
+.eg_teaAndTeaware .eg_component.eg_seven .eg_product,
+.eg_allTeaware .eg_component.eg_three .eg_product,
+.eg_component.eg_show .eg_product .eg_product,
+.eg_boneChina .eg_component.eg_one .eg_product,
+.eg_wonderLust .eg_component.eg_three .eg_product,
+.eg_wonderLust .eg_component.eg_two .eg_product,
+.eg_cupAndSaucers .eg_component.eg_three .eg_product,
+.eg_bestTeaSet .eg_component.eg_one .eg_product,
+.eg_brideAndGroom .eg_component.eg_one .eg_product,
+.eg_wonderLust .eg_component.eg_one .eg_product,
+.eg_wonderLust .eg_component.eg_five .eg_product,
+.eg_cupAndSaucers .eg_component.eg_two .eg_product,
+.eg_brideAndGroom .eg_component.eg_two .eg_product,
+.eg_brideAndGroom .eg_component.eg_four .eg_product,
+.eg_brideAndGroom .eg_component.eg_three .eg_product,
+.eg_brideAndGroom .eg_component.eg_five .eg_product,
+.eg_brideAndGroom .eg_component.eg_seven .eg_product,
+.eg_brideAndGroom .eg_component.eg_eleven .eg_product,
+.eg_brideAndGroom .eg_component.eg_fifteen .eg_product,
+.eg_brideAndGroom .eg_component.eg_twelve .eg_product,
+.eg_brideAndGroom .eg_component.eg_nine .eg_product,
+.eg_brideAndGroom .eg_component.eg_thirteen .eg_product,
+.eg_brideAndGroom .eg_component.eg_seventeen .eg_product,
+.eg_brideAndGroom .eg_component.eg_fourteen .eg_product,
+.eg_brideAndGroom .eg_component.eg_twenty .eg_product,
+.eg_brideAndGroom .eg_component.eg_nineteen .eg_product,
+.eg_brideAndGroom .eg_component.eg_twenty-one .eg_product,
+.eg_allCollection .eg_component.eg_three .eg_product {
+    top: 20px;
+}
+
+.eg_brideAndGroom .eg_component.eg_twenty-one .eg_product:after,
+.eg_brideAndGroom .eg_component.eg_twenty .eg_product:after,
+.eg_brideAndGroom .eg_component.eg_four .eg_product:after,
+.eg_allTeaware .eg_component.eg_three .eg_product:after,
+.eg_teaAndTeaware .eg_component.eg_seven .eg_product:after,
+.eg_teaAndTeaware .eg_component.eg_two .eg_product:after,
+.eg_teaAndTeaware .eg_component.eg_six .eg_product:after,
+.eg_teaAndTeaware .eg_component.eg_five .eg_product:after,
+.eg_teaAndTeaware .eg_component.eg_four .eg_product:after,
+.eg_allDinnerSets .eg_component.eg_seven .eg_product:after,
+.eg_allDinnerSets .eg_component.eg_six .eg_product:after,
+.eg_allDinnerSets .eg_component.eg_five .eg_product:after,
+.eg_brideAndGroom .eg_component.eg_five .eg_product:after,
+.eg_brideAndGroom .eg_component.eg_fifteen .eg_product:after,
+.eg_brideAndGroom .eg_component.eg_nine .eg_product:after,
+.eg_allDinnerSets .eg_component.eg_four .eg_product:after,
+.eg_brideAndGroom .eg_component.eg_seventeen .eg_product:after,
+.eg_allCollection .eg_component.eg_three .eg_product:after {
+    position: absolute;
+    top: -20px;
+    content: '';
+    right: 14px;
+    border: 10px solid #5a739c;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+}
+
+.eg_brideAndGroom .eg_component.eg_nineteen .eg_product:after,
+.eg_brideAndGroom .eg_component.eg_fourteen .eg_product:after,
+.eg_brideAndGroom .eg_component.eg_thirteen .eg_product:after,
+.eg_brideAndGroom .eg_component.eg_twelve .eg_product:after,
+.eg_brideAndGroom .eg_component.eg_eleven .eg_product:after,
+.eg_brideAndGroom .eg_component.eg_seven .eg_product:after,
+.eg_brideAndGroom .eg_component.eg_three .eg_product:after,
+.eg_brideAndGroom .eg_component.eg_two .eg_product:after,
+.eg_brideAndGroom .eg_component.eg_one .eg_product:after,
+.eg_bestTeaSet .eg_component.eg_one .eg_product:after,
+.eg_wonderLust .eg_component.eg_two .eg_product:after,
+.eg_wonderLust .eg_component.eg_five .eg_product:after,
+.eg_wonderLust .eg_component.eg_one .eg_product:after,
+.eg_wonderLust .eg_component.eg_three .eg_product:after,
+.eg_boneChina .eg_component.eg_one .eg_product:after,
+.eg_cupAndSaucers .eg_component.eg_three .eg_product:after,
+.eg_cupAndSaucers .eg_component.eg_two .eg_product:after,
+.eg_component.eg_show .eg_product .eg_product:after,
+.eg_cupAndSaucers .eg_component.eg_one .eg_product:after,
+.eg_teaAndTeaware .eg_component.eg_three .eg_product:after,
+.eg_teaAndTeaware .eg_component.eg_one .eg_product:after,
+.eg_allDinnerSets .eg_component.eg_three .eg_product:after,
+.eg_allDinnerSets .eg_component.eg_one .eg_product:after,
+.eg_allCollection .eg_component.eg_one .eg_product:after,
+.eg_allCollection .eg_component.eg_two .eg_product:after {
+    position: absolute;
+    top: -20px;
+    content: '';
+    left: 14px;
+    border: 10px solid #5a739c;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+}

@@ -1,0 +1,11 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.perlego.com/sign-up",
+		"https://www.perlego.com/book/991647/architectural-detailing-function-constructibility-aesthetics-pdf?queryID=4f2bb271b30dbcbe1d2a202452925b0d&index=prod_BOOKS&gridPosition=6"
+	]
+}

@@ -1,0 +1,39 @@
+html body .main-content .auth_container .auth_container_form #referred_by_referral_code,
+html body .main-content .auth_container .auth_container_logo{
+    display: none;
+}
+html body,
+html body .main-content .auth_container {
+    background: #48f9fe;
+}
+html body .main-content .auth_container_form {
+    margin-left: auto;
+    margin-right: auto;
+}
+html body .main-content .auth_container_form_instarem {
+    display: block;
+    width: 135px;
+    height: auto;
+}
+html body .main-content .auth_container_form h1 {
+    font-size: 28px;
+}
+@media screen and (max-width:1216px) {
+    html body .auth_container_form h1 {
+        max-width: 325px;
+        width: 100%;
+    }
+}
+@media screen and (max-width:510px) {
+    html body .main-content .auth_container_form{
+        
+        border-radius: 0px;
+        box-shadow: none;
+        border: none;
+    }
+    html body .main-content .auth_container_wrapper {
+    
+        border-radius: 0px;
+        background: #fff;
+    }
+}

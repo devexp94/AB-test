@@ -1,0 +1,109 @@
+.s001-banner-wrapper {
+    /* background : rgb(80, 158, 49); */
+    display : block;
+    z-index : 9999;
+  }
+  
+  .s001-banner-data p {
+    margin-bottom: 0px;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .s001-banner-data .eg-text {
+    margin-bottom: 10px;
+    line-height: 1;
+}
+  @media only screen and (max-width: 600px) {
+     
+    .h2-custom {
+      margin-top : 20px;
+    }
+  
+    .s001-banner-data p {
+      font-size : 12px;
+    }
+  }
+  @media only screen and (max-width: 1242px) {
+    .s001-banner-wrapper.green-floating {
+      background : rgb(80, 158, 49);
+      display : block;
+      position : fixed;
+      top : 115px;
+      width : 80%;
+    }
+  }
+  @media only screen and (max-width: 1170px) {
+    .s001-banner-wrapper.green-floating {
+      top : 110px;
+      width : 80%;
+    }
+  }
+  @media only screen and (max-width: 1075px) {
+    .s001-banner-wrapper.green-floating {
+      top : 97px;
+      width : 86.2%;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    .s001-banner-wrapper.green-floating {
+      top : 97px;
+      width : calc(100% - 141px);
+    }
+  }
+  @media only screen and (max-width: 725px) {
+    .s001-banner-wrapper.green-floating {
+      top : 89px;
+      width : calc(100% - 62px);
+    }
+    html body .s001-banner-data p{
+        justify-content: flex-start;
+    }
+    html body .s001-banner-data p > svg {
+        margin-left: 20px;
+    }
+  }
+  span.whole-time-block {
+    font-weight : 700;
+  }
+  
+  .s001-banner-data span {
+    font-weight : 700;
+  }
+  .s001-banner-data p > svg {
+      margin-right: 10px;
+      max-width: 20px;
+      margin-bottom: 10px;
+    }
+
+.s001-banner-data p .eg-tooltip {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.s001-banner-data .eg-tooltip-text {
+    display: none;
+    width: 100%;
+    padding: 10px 7px;
+    background: #509e31;
+    color: #fff;
+    font-weight: 100;
+    text-align: center;
+}
+
+.s001-banner-data .eg-tooltip:hover + .eg-tooltip-text {
+    display: block;
+}
+
+.s001-banner-data .s001-timer-s{
+    width: 18px;
+    display: inline-block;
+}

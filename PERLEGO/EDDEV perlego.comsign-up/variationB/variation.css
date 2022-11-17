@@ -1,0 +1,115 @@
+main#main {
+    display: flex;
+    max-width: 1176px;
+    min-height: max-content;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+.eg-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 25px;
+    background: #fff;
+}
+
+p.eg-image-heading {
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+p.eg-image-sub-heading {
+    margin-bottom: 0px;
+    font-family: Inter, Helvetica, sans-serif;
+    margin-top: 0px;
+    font-size: 12px;
+}
+
+.eg-sidebar-inr {
+    pointer-events: initial;
+    opacity: 1;
+    box-shadow: rgb(233 233 235 / 70%) 0px 2px 40px 5px;
+    border-radius: 20px;
+    max-width: 90%;
+    margin-right: auto;
+    overflow: hidden;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 73px;
+}
+
+.eg-image-container img {
+    max-width: 80px;
+    margin-right: 23px;
+    border-radius: 15px;
+}
+
+.eg-sidebar {
+    width: 30%;
+    padding-top: 105px;
+}
+
+ul.eg-list {
+    background: #f9f8f6;
+    padding: 30px 25px;
+    margin: 0px;
+}
+
+ul.eg-list li {
+    list-style: none;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-family: Inter, Helvetica, sans-serif;
+    line-height: 1.3;
+}
+
+ul.eg-list li img {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media screen and (min-width: 992px) {
+    html body div#sign-up {
+        width: 70% !important;
+    }
+
+    html body #sign-up h1[data-test-locator="start-trial-a-header"]+div>div>div {
+        width: auto !important;
+        max-width: 700px !important;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    main#main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main#main .eg-sidebar {
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    main#main .eg-sidebar .eg-sidebar-inr {
+        margin: 0 auto;
+    }
+
+}
+
+html body #sign-up h1[data-test-locator="start-trial-a-header"]+div>div>div>div[data-test-locator="step-card-wrapper"] {
+    border: 2px solid #3327ec;
+    box-sizing: border-box;
+}

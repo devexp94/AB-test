@@ -1,0 +1,72 @@
+html body .banner_box .womenJump-img-box img.image1 {
+    width: 125%;
+    left: 0px;
+    top: 0px;
+    transform: none;
+}
+html body .banner_box .banner .banner_title{
+    line-height: 1.1;
+}
+html body .banner_box .banner .banner-quote {
+    font-size: 35px;
+}
+html body .banner_box .womenJump-img-box{
+    top: 50%;
+    margin-left: 0px;
+    transform: translateY(-50%);
+}
+@media screen and (max-width: 1199px) {
+    html body .banner_box .womenJump-img-box{
+        margin-right: 56px;
+    }
+}
+@media screen and (max-width: 1023px) and (min-width: 801px){
+    html body .banner_box .womenJump-img-box img.image1 {
+        width: 110% !important;
+        left: -48px !important;
+    }
+}
+@media screen and (max-width: 800px) and (min-width: 768px){
+    html body .banner h1.banner_title {
+        font-size: 48px !important;
+        line-height: 1;
+    }
+}
+@media screen and (max-width: 800px) {
+    html body .main_banner_row.home_banner {
+        padding: 80px 0px 80px 0px;
+    }
+    html body .banner_box{
+        min-height: auto !important;
+    }
+    html body .banner_box .womenJump-img-box{
+        display: none !important;
+    }
+    html body .banner.home_page {
+        background: url('https://www.instarem.com/images1/plain-us-banner.png');
+        background-repeat: no-repeat !important;
+        background-position: center right 0px;
+        background-size: 250px 250px;
+    }
+    
+    html body .banner_box .banner .banner-quote {
+        margin-top: 20px;
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 500px) {
+    html body .banner.home_page {
+        background-position: top 53px right 0px !important;
+        background-size: 160px 160px !important;
+    }
+}
+@media screen and (max-width: 360px){
+    html body .banner_box .banner.home_page {
+        background-position: top 61px right -34px !important;
+        background-size: 150px 150px !important;
+    }
+    html body .banner h1.banner_title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}

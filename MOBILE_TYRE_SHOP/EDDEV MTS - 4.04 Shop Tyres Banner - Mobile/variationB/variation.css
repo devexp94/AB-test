@@ -1,0 +1,202 @@
+@media screen and (max-width: 720px) {
+
+  html body .navigation-submenu .user-location .current {
+    width: 100%;
+
+  }
+
+  html body .navigation-submenu .user-location .current .line2 {
+    text-align: center;
+    position: static;
+  }
+
+  html body .navigation-submenu .user-location .current .line1 {
+    text-align: center;
+    padding-right: 20px;
+    margin-bottom: 10px;
+  }
+
+  html body .navigation-submenu .user-location .current .line2 .edit {
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  html body .navigation-submenu .user-location .icon {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .navigation .navigation-submenu .content-wrapper .eg-search-option {
+    display: flex !important;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .eg-search-option>.btn {
+    background-color: #509e31;
+    color: #ffffff !important;
+    padding: 10px 12px;
+    font-weight: 600;
+  }
+
+
+  .navigation-submenu .user-location {
+    width: 100% !important;
+    margin: 0 auto !important;
+    max-width: 320px;
+  }
+
+  .navigation-submenu>.content-wrapper {
+    justify-content: center !important;
+  }
+
+  html body .navigation-submenu .user-location .current.unavailable,
+  html body .navigation-submenu .user-location .current.unknown {
+    margin: 0 auto;
+    max-width: 320px !important;
+  }
+
+  html body .eg-steps .content-wrapper,
+  html body .carousel .carousel-item .content-wrapper {
+    padding: 0px !important;
+  }
+
+  html body .carousel .carousel-item .content-wrapper>a img {
+    width: 100%;
+    transform: scale(.9);
+    max-width: 800px;
+  }
+
+  html body .carousel .carousel-item .content-wrapper>a {
+    margin: 5vh auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0px !important;
+  }
+
+  html body .carousel .carousel-item_image {
+    height: auto;
+  }
+
+  html body .vc_section[data-vc-stretch-content],
+  html body .carousel .carousel-bg {
+    display: none;
+  }
+
+  html body .carousel .carousel-item {
+    height: auto !important;
+  }
+
+  .eg-steps {
+    background-color: #ffce00;
+    padding: 30px 20px;
+  }
+
+  .eg-steps .eg-steps-para {
+    margin-bottom: 0px;
+    width: 33%;
+    font-size: 24px;
+    padding-left: 20px;
+    line-height: 1.3;
+    max-width: 325px;
+    text-align: right;
+    font-weight: 500;
+  }
+
+  .eg-steps .eg-steps-inr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .eg-steps .eg-steps-inr .eg-steps-heding {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .eg-steps .eg-steps-image img {
+    width: 100%;
+  }
+
+  .module.brand-icons.-yellow {
+    background: #e5e5e5 !important;
+  }
+
+  .eg-steps-inr .easy-steps-content_text:last-child {
+    transform: none !important;
+  }
+
+  .easy-steps-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .eg-steps-image {
+    position: relative;
+    width: 100%;
+  }
+
+  .eg-steps-image img.active {
+    opacity: 1 !important;
+  }
+
+  .easy-steps-content_text {
+    position: static !important;
+    font-size: 14px;
+  }
+
+  .navigation_logo+a[href^="tel"] i.fas.fa-phone-alt {
+    font-size: 20px;
+    color: #000;
+  }
+
+  .navigation_logo+a[href^="tel"] {
+    margin-bottom: 0px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 12px;
+    margin-top: 3px;
+
+  }
+
+  .navigation_logo+a[href^="tel"]:hover {
+    background: none !important;
+  }
+
+  .navigation-search .navigation-search_button,
+  .navigation-submenu>.content-wrapper .mobile-widget-buttons {
+    display: none !important;
+  }
+
+  html body .navigation-search {
+    width: 0px !important;
+  }
+
+  .eg-search {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html body .easy-steps-wrapper {
+    max-width: 390px;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .eg-steps .eg-steps-inr .eg-steps-heding {
+    font-size: 20px;
+  }
+
+  html body .easy-steps-wrapper .easy-steps-content_text {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,249 @@
+@media screen and (min-width:1024px) {
+    .cart .cart-item .details-row {
+        display: flex;
+    }
+    
+    .cart .cart-item .details-row .name-column {
+        max-width: 50%;
+    }
+        
+}
+.cart-checkout-method.eg-shadow .checkout-type-form fieldset:nth-of-type(2),
+.cart .cart-form .cart-form-col:nth-child(1),
+.cart .cart-form .cart-form-col:nth-child(3),
+.cart .summary .cart-preview,
+.cart-checkout-method h2 {
+    display: none;
+}
+
+.cart .cart-form .cart-form-col:nth-child(2) h2 {
+    font-family: Helvetica Neue, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px !important;
+    text-transform: capitalize;
+}
+.cart .cart-form .cart-form-col:nth-child(2) {
+    width: 100%;
+}
+.cart .cart-form .cart-form-col:nth-child(2) h2 {
+    font-family: Helvetica Neue, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px !important;
+    text-transform: capitalize;
+    padding: 20px;
+    background: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.cart .cart-form .cart-form-col:nth-child(2) h2:not(.eg-active) span {
+    transform: rotate(180deg);
+    transition: transform 350ms ease-in-out;
+}
+.cart .cart-form .cart-form-col:nth-child(2) h2.eg-active span {
+    transform: rotate(0deg);
+    transition: transform 350ms ease-in-out;
+}
+.cart .cart-form .cart-form-col:nth-child(2) > div {
+    background: #f2f2f2;
+}
+
+.cart .cart-form .discount-form, 
+.cart .cart-form .freight-form, 
+.cart .cart-form .pin-form {
+    margin-top: 0px !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.cart .cart-form .cart-form-col:nth-child(2) h2 span {
+    font-size: 30px;
+}
+.cart .list-col .cart-form:last-child {
+    border-top: none !important;
+    padding: 0px !important;
+}
+
+html body .cart .summary table td, 
+html body .cart .summary table th{
+    font-family: Helvetica Neue, sans-serif !important;
+    font-style: normal;
+    font-size: 20px !important;
+    line-height: 1.4 !important;
+}
+html body .cart-item .price {
+    font-size: 20px;
+}
+.summary h2{
+    font-family: Helvetica Neue, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px !important;
+    line-height: 1.4;
+    text-align: left !important;
+}
+.summary .eg-free-delivery{
+    font-family: Helvetica Neue, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;    
+    color: #189204;
+    margin-bottom: 0px !important;
+    margin-top: 10px;
+}
+
+.cart-checkout-method .checkout-type-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-checkout-method .checkout-type-form fieldset:nth-of-type(2) {
+    order: -1;
+}
+.cart-checkout-method .checkout-type-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-checkout-method .checkout-type-form fieldset:nth-of-type(2) {
+    order: 1;
+}
+
+.checkout-type label:hover{
+    border: 0 solid #333;
+    background-color: #333;
+    color: #FFF;
+}
+
+.checkout-type label {
+    height: 49px;
+    line-height: 49px;
+    display: block !important;
+    box-shadow: 0 3px 0 rgb(0 0 0 / 30%);
+    background: #b81237;
+    margin-right: 0px !important;
+    display: inline-block;
+    -webkit-appearance: none;
+    border-radius: 4px;
+    border: 0 solid #b81237;
+    background-color: #b81237;
+    color: #FFF;
+    padding: 0 16px;
+    cursor: pointer;
+    -webkit-transition-property: background-color,color,border-color;
+    transition-property: background-color,color,border-color;
+    transition-duration: .35s;
+    transition-timing-function: ease-out;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.checkout-type label span {
+    visibility: hidden;
+}
+
+.cart .cart-checkout-method {
+    margin-top: 0px !important;
+    background: #f2f2f2 !important;
+    padding-top: 0px !important;
+}
+.cart .cart-checkout-method label.dynamic,
+.cart .cart-checkout-method .intro {
+    color: #484944 !important;
+}
+
+.checkout-type-form [for="checkoutTypeLogin"]:after{
+    content: 'LOGIN TO CHECKOUT';
+}
+.checkout-type-form [for="checkoutTypeRegister"]:after{
+   content: 'CREATE NEW ACCOUNT';
+}
+.checkout-type-form [for="checkoutTypeGuest"]:after{
+   content: 'GUEST CHECKOUT'; 
+}
+.checkout-type-form [for="checkoutTypeGuest"]:after,
+.checkout-type-form [for="checkoutTypeRegister"]:after,
+.checkout-type-form [for="checkoutTypeLogin"]:after{
+    font-family: Helvetica Neue, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+   }
+
+.checkout-type-form [for="checkoutTypeGuest"],
+.checkout-type-form [for="checkoutTypeRegister"],
+.checkout-type-form [for="checkoutTypeLogin"] {
+    font-size: 0px;
+}
+
+.checkout-type-form [for="checkoutTypeGuest"] {
+    background: #E5E5E5;
+    color: #484944;
+    box-shadow: none;
+}
+.pin-form label,
+.discount-form label {
+    font-size: 18px;
+}
+
+
+@media screen and (max-width:767px) {
+    .cart .cart-row .summary-col {
+        border-top: none;
+        padding-top: 0px !important;
+    }
+}
+p.eg-free-delivery-less {
+    font-size: 15px;
+    padding-top: 15px;
+    text-align: center;
+    margin-bottom: 0px;
+  font-style: normal;
+    font-weight: 500;
+} 
+ html body .cart .cart-checkout-method .checkout-guest-form.generic-form label, html body .cart .cart-checkout-method .checkout-register-form span.control-label {
+color: #484944;
+}
+html body .cart .cart-checkout-method .checkout-register-form label{
+color: #484944;
+}
+html body .cart-checkout-method.eg-shadow .back-button {
+    display: block !important;
+}
+html body .cart-checkout-method .back-button {
+    display: none;
+    width: 100%;
+    font-size: 17px;
+    background: #189204;
+    height: 49px;
+    line-height: 49px;
+    box-shadow: 0 3px 0 rgb(0 0 0 / 30%);
+}
+html body .cart-checkout-method  .back-button:hover {
+    border: 0 solid #333;
+    background-color: #333;
+    color: #FFF;
+}
+html body .checkout-type-form [for="checkoutTypeGuest"]:after, 
+html body .checkout-type-form [for="checkoutTypeRegister"]:after, 
+html body .checkout-type-form [for="checkoutTypeLogin"]:after{
+    font-size: 16px; 
+}
+ html body .checkout-type-form .submit-button .submit {
+        text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px; 
+ }
+ html body .checkout-type-form.eg-shadow .checkout-type label{
+    background: #e5e5e5;
+    color: #484944;
+    box-shadow: none;
+}

@@ -1,0 +1,182 @@
+html body .content-wrapper .tyreWidget-sections_sec[data-section="tyre"],
+html body .content-wrapper .tyreWidget-sections_sec[data-section="tyre"] .sizeSearch-section.-rego {
+  display: block !important;
+}
+
+.tyreWidget.floating .tyreWidget-sections {
+  width: auto;
+  max-width: 500px;
+  background: silver;
+  border: 6px solid silver;
+  border-radius: 22px !important;
+  padding: 0;
+  margin: 0 auto;
+}
+
+html body .content-wrapper .tyreWidget-sections_sec {
+  border-radius: 22px !important;
+}
+
+.sizeSearch-section {
+  overflow: hidden;
+}
+
+html body .content-wrapper .tyreWidget.floating .tyreWidget-sections {
+  position: static;
+  transform: none;
+  width: 425px;
+  left: auto;
+  right: 0px;
+}
+
+html body .tyreWidget .tyreWidget-bar {
+  display: none !important;
+}
+
+html body .carousel .content-wrapper .tyreWidget {
+  position: static;
+  z-index: 0;
+}
+
+html body .carousel .content-wrapper {
+  justify-content: space-between;
+}
+
+html body .carousel .carousel-item .content-wrapper>a {
+  margin-right: auto;
+  margin-left: 0px;
+  width: calc(100% - 450px);
+  align-items: center;
+  justify-content: center;
+}
+
+html body .carousel .tyreWidget .tyre-size_rego_input input {
+  font-size: 20px;
+}
+
+html body .carousel .tyreWidget-sections_sec-content_title {
+  font-size: 18px;
+}
+
+html body .carousel .tyreWidget-size-form_bottom>select,
+.tyreWidget-size-form_top>select {
+  width: 50%;
+  height: 30px;
+}
+
+html body .carousel .tyreWidget select {
+  padding: 3px 18px;
+}
+
+html body .carousel .carousel-item .content-wrapper>a img {
+  width: 100%;
+  /* transform: scale(.9); */
+}
+
+
+html body .carousel .carousel-item_image {
+  height: auto;
+}
+
+html body .carousel .carousel-bg {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  html body .carousel .content-wrapper {
+    flex-direction: column;
+  }
+
+  html body .carousel .carousel-item {
+    height: auto !important;
+  }
+
+}
+
+.eg-steps {
+  background-color: #ffce00;
+  padding: 50px 20px;
+}
+
+p.eg-steps-para {
+  margin-bottom: 0px;
+  width: 36%;
+  font-size: 30px;
+  line-height: 1.3;
+  text-align: left;
+  font-weight: 500;
+  max-width: 378px;
+}
+
+p.eg-steps-heding {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+
+.eg-steps-inr {
+  /* padding: 50px 20px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .eg-steps-image {
+  width: 55%;
+} */
+
+h2.eg-steps-heding {
+  width: 20%;
+  font-size: 32px;
+  margin-bottom: 0px;
+}
+
+.eg-steps-image img {
+  width: 100%;
+}
+
+.module.brand-icons.-yellow {
+  background: #e5e5e5 !important;
+}
+
+.carousel~.vc_section.grey-section {
+  display: none;
+}
+
+@media screen and (min-width: 1600px) {
+  .eg-steps-inr .eg-steps-para {
+    font-size: 36px;
+    line-height: 1.3;
+    max-width: 500px
+  }
+
+  .eg-steps-inr .easy-steps-content_text {
+    font-size: 1.9em;
+  }
+
+  html body .carousel .carousel-item .content-wrapper>a img {
+    transform: scale(.86);
+  }
+}
+
+.easy-steps-wrapper {
+  position: relative;
+  width: 55%;
+  padding-right: 5%;
+  padding-left: 3%;
+}
+
+.eg-steps-image {
+  position: relative;
+  width: 100%;
+}
+
+.eg-steps-image img.active {
+  opacity: 1 !important;
+}
+
+.easy-steps-content_text {
+  position: static !important;
+  font-size: 1.5em;
+}

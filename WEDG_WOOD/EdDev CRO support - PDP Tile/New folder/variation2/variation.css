@@ -1,0 +1,112 @@
+html body .eg-gift-tile .eg-gift-link {
+    display: flex;
+    height: 100%;
+    position: relative;
+    padding: 16px;
+    text-decoration: none;
+    background: #0e1f2a;
+}
+
+
+html body .eg-gift-tile {
+    padding: 0px;
+}
+html body .eg-gift-tile .eg-heading {
+    font-family: IvyMode Semi bold, Helvetica,Arial,sans-serif;
+    font-style: normal;
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 23px;
+    margin-top: 11px !important;
+    font-weight: bold !important;
+    line-height: 1.2;
+}
+.eg-gift-container .c-c-product-card_img-container figure {
+    margin-bottom: 0px !important;
+    padding-top: 0px;
+}
+html body .eg-gift-tile .eg-sub-heading {
+    font-family: Orpheus Pro, Helvetica,Arial,serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.5;
+    margin-bottom: 4px;
+    /* margin-top: 35px; */
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+html body .eg-gift-tile .eg-gift-container {
+    width: 100%;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+
+}
+
+
+ html body .eg-gift-tile .eg-button{
+    text-align: center;
+    text-transform: none;
+    cursor: pointer;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #fff !important;
+    width: auto !important;
+    background: transparent !important;
+    color: #ffffff !important;
+    padding: 0px !important;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+html body .eg-gift-tile .eg-gift-link:hover .eg-button{
+    border-bottom: 1px solid transparent !important;
+}
+
+html body .eg-gift-tile .eg-image {
+    min-height: 300px;
+    background: url('https://gbl-oned-cdn-prod.azureedge.net/-/media/wedgwood/images/wedgwood/product-type/teaware-and-tea/title-components/wedgwood_tea_and_teaware.ashx?rev=8db02f144abc4dfd834ff08bed7ec068&q=70&iw=1150&ih=536&crop=1');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media screen and (min-width:1440px){
+    html body .eg-gift-tile .eg-heading{
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1199px){
+    html body .eg-gift-tile .eg-heading{
+        font-size: 18px;
+    }
+    html body .eg-gift-tile .eg-sub-heading{
+        font-size: 12px;
+    }
+    html body .eg-gift-tile .eg-button{
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width:767px) {
+    html body .eg-gift-tile .eg-heading{
+        font-size: 15px;
+    }
+    html body .eg-gift-tile .eg-heading br {
+        display: none;
+    }
+    html body .eg-gift-tile .eg-sub-heading,
+    html body .eg-gift-tile .eg-button{
+        font-size: 12px;
+    }
+    html body .eg-gift-tile .eg-gift-link{
+        padding: 8px;
+    }
+
+}

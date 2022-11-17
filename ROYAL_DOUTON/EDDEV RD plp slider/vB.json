@@ -1,0 +1,10 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.royaldoulton.com/en-us/dinnerware/plates/dinner-plates#aq=@categories%20==%20(%22dinner%20plates%22)&numberOfResults=28"
+	]
+}
