@@ -6,9 +6,7 @@
         transform: translateX(-50%);
         width: 100% !important;
         z-index: 999;
-        background: #FFF !important;
-        padding: 5px;
-        bottom: 0;
+        bottom: 0.5%;
     }
 
     #masthead > div.mobile-header > div.mobile_cta > div.mobile-nav-cta > a::before {
@@ -21,6 +19,7 @@
     }
 
     #masthead > div.mobile-header > div.mobile_cta > div.mobile-nav-cta > a{
+    position: relative;
     padding: 5px 44px;
     text-align: left;
     }
@@ -40,5 +39,23 @@
             transform: scale(.8);
             z-index: 9999;
         }
+}
 
+@media screen and (min-width: 541px) {
+    
+#masthead > div.mobile-header > div.mobile_cta > div.mobile-nav-cta > a {
+    text-align: center;
+}
+
+#masthead > div.mobile-header > div.mobile_cta > div.mobile-nav-cta > a::before {
+    left: 13%;
+}
+
+a#mobile-nav-phone-number {
+    padding-left: 33%;
+}
+
+#mobile-nav-phone-number::before{
+    left: 19%;
+}
 }
