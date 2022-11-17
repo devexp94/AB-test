@@ -6,7 +6,11 @@
         transform: translateX(-50%);
         width: 100% !important;
         z-index: 999;
-        bottom: 0.5%;
+        bottom: 0;
+    }
+
+    #main div.ContactBubble{
+        top: 0 !important;
     }
 
     #masthead > div.mobile-header > div.mobile_cta > div.mobile-nav-cta > a::before {
