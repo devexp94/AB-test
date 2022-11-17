@@ -1,0 +1,33 @@
+
+@media(max-width: 767px) {
+    #masthead > div.mobile-header > div.mobile_cta {
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100% !important;
+        z-index: 999;
+        background: #FFF !important;
+        padding: 5px;
+        bottom: 0;
+    }
+    
+    .eg_veteran {
+        width: 25px;
+        margin: auto;
+    }
+    
+    #masthead > div.mobile-header > div.mobile_cta > div.mobile-nav-cta > a {
+        display: -webkit-inline-box;
+        gap: 10px;
+        text-align: left;
+    }
+
+    a#mobile-nav-phone-number {
+        display: flex;
+        margin: 0;
+        padding-block: 11px;
+        padding-right: 23%;
+        padding-left: 3%;
+        gap: 5px;
+    }
+}

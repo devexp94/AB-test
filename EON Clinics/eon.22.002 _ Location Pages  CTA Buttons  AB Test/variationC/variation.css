@@ -1,0 +1,44 @@
+
+@media(max-width: 767px) {
+    #masthead > div.mobile-header > div.mobile_cta {
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100% !important;
+        z-index: 999;
+        background: #FFF !important;
+        padding: 5px;
+        bottom: 0;
+    }
+
+    #masthead > div.mobile-header > div.mobile_cta > div.mobile-nav-cta > a::before {
+        content:url("https://i.ibb.co/vjT0tVM/schedule.png");
+        position: absolute;
+        left: 3%;
+        top: 20%;
+        transform: scale(.8);
+        z-index: 9999;
+    }
+
+    #masthead > div.mobile-header > div.mobile_cta > div.mobile-nav-cta > a{
+    padding: 5px 44px;
+    text-align: left;
+    }
+
+    #mobile-nav-phone-number{
+        position: relative;
+        padding-block:15px;
+        padding-left: 42px;
+        display: flex;
+        gap: 5px;
+    }
+    #mobile-nav-phone-number::before{
+            content:url("https://i.ibb.co/VmCDL2p/call.png");
+            position: absolute;
+            left: 3%;
+            top: 20%;
+            transform: scale(.8);
+            z-index: 9999;
+        }
+
+}

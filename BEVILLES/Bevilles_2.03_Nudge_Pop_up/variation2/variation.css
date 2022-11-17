@@ -15,7 +15,7 @@
 
 .eg-popup-wrapper-outer {
     position: fixed;
-    top: 150px;
+    top: 172px;
     right: 20px;
     z-index: 9999999;
 }
@@ -23,7 +23,6 @@
 .eg-popup-wrapper {
 
     background: white;
-
     width: 487px;
     height: fit-content;
     max-width: calc(100vw - 40px);
