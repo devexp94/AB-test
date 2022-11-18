@@ -1,0 +1,125 @@
+@media (min-width: 768px) and (max-width: 992px) {
+    .StickyBanner_icon {
+        padding: 10px 0;
+    }
+
+}
+@media (max-width: 992px){
+    .StickyBanner{
+        display: none;
+    }
+}
+@media (min-width: 993px) {
+    .StickyBanner_icon {
+        padding-left: 3rem;
+        line-height: 4rem;
+        position: relative;
+        font-size: 14px;
+    }
+    .StickyBanner {
+        top: 50%!important;
+        bottom: auto!important;
+        right: 0!important;
+        width: auto!important;
+        border-top: none!important;
+        background-color: transparent!important;
+        padding: 0!important;
+        transition: all 0.3s!important;
+        transform: translateY(-50%);
+        position: fixed;
+        z-index: 99999;
+    }
+    .StickyBanner.aligntop {
+        top: 30px!important;
+    }
+    .StickyBanner_inner {
+        display: block!important;
+        width: 170px!important;
+        padding: 0!important;
+    }
+    .StickyBanner_icon {
+        display:block!important;
+    }
+
+    .StickyBanner_btn {
+        display: block!important;
+        border:none!important;
+        margin: 0!important;
+        background-color: rgba(0,0,0,.5)!important;
+        padding: 0 20px!important;
+    }
+    .StickyBanner .banner-heading:hover,
+    .StickyBanner_btn:hover {
+        background-color: rgba(0,0,0,1)!important;
+    }
+    .StickyBanner_btn:link, .StickyBanner_btn:active, .StickyBanner_btn:visited {
+        color:#fff!important;
+    }
+    .StickyBanner_btn .StickyBanner_icon {
+        border-bottom:1px solid #fff!important;
+        text-align: left!important;
+    }
+    .StickyBanner_btn:last-of-type .StickyBanner_icon {
+        border:none!important;
+    }
+
+    .StickyBanner {
+        display: flex;
+        transform: translateX(calc(100% - 23px)) translateY(-50%);
+    }
+    .StickyBanner.active{
+        transform: translateX(0) translateY(-50%);
+    }
+    .StickyBanner .banner-heading{
+        writing-mode: tb;
+        position: relative;
+        height: auto;
+        top: 0px;
+        left: 0px;
+        transform: rotate(180deg);
+        margin: 0px !important;
+        padding: 10px 0px;
+        border-left: 1px solid #ffffff;
+        color: #ffffff;
+        background-color: rgba(0,0,0,.5)!important;
+        cursor: pointer;
+    }
+
+    .StickyBanner .banner-heading .lbt-icon-down {
+        position: relative;
+        display: inline-block;
+        transform: rotate(-90deg);
+    }
+    .StickyBanner.active .banner-heading .lbt-icon-down {
+        transform: rotate(90deg);
+    }
+    .StickyBanner_btn:hover {
+        text-decoration: none;
+    }
+}
+
+.StickyBanner_icon:after {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    content: '';
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+.icon-signin .StickyBanner_icon:after{
+    background: url('https://drive.google.com/uc?export=view&id=1ZuqH78Kgw46cHyz-vX2KK-8qBLDmyGj4');
+}
+.icon-quote .StickyBanner_icon:after{
+    background: url('https://drive.google.com/uc?export=view&id=1ggqU-8IN6th9Q7sqQHR0pFVCV_9zHba8');
+    filter: invert(1) !important;
+    background-size: cover !important;
+    width: 24px !important;
+    height: 24px !important;
+}
+.icon-request-brochure .StickyBanner_icon:after{
+    background: url('https://drive.google.com/uc?export=view&id=1EROcUdAUaf4PwAAGjcqlWygIFi8zslaj');
+}

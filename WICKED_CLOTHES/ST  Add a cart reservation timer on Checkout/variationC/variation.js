@@ -18,6 +18,7 @@
         clearInterval(interval);
       }, delayTimeout);
     }
+    
     function live(selector, event, callback, context) {
       /****Helper Functions****/
       // helper for enabling IE 8 event bindings

@@ -1,0 +1,215 @@
+html body.com-pages .new-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+html body.com-pages .new-nav-container p{
+    margin-bottom:0!important;
+}
+html body.com-pages .right-phone-container .call-time {
+    font-family: 'Effra';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: right;
+    color: #FFFFFF;
+    }
+    html body.com-pages .right-phone-container {
+        display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin: 5px 0;
+    }
+    html body.com-pages .right-phone-container a#phone {
+        font-family: 'Effra';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    color: #FFFFFF;
+    }
+    html body.com-pages .new-contact-us a {
+        font-family: 'Effra';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: right;
+    color: #FFFFFF;
+    }
+    html body.com-pages .main-nav .container{
+        max-width:1270px!important;
+        width: 100%!important 
+    }
+    html body.com-pages .main-nav .primary-menu>li>a:focus, html body.com-pages .main-nav .primary-menu>li>a:hover,html body.com-pages  .main-nav .primary-menu>li>a:active,html body.com-pages  .main-nav .primary-menu>li>a.open, html body.com-pages .main-nav .primary-menu>li>a.active {
+        border-radius: 8px;
+    }
+    html body.com-pages .main-nav .primary-menu>li:focus, html body.com-pages .main-nav .primary-menu>li:hover, html body.com-pages .main-nav .primary-menu>li:active {
+        border-radius: 8px;
+    }
+
+    /* .dropdown.menu-link-destinations-.open .container{
+        top: -507px!important;
+    } */
+    @media (min-width: 768px){
+    html body.com-pages .toggle-search,
+    html body.com-pages .info-bar.info-bar-processed{
+        visibility: hidden;
+        height: 0!important;
+        padding: 1px!important;
+    }
+    #main-wrapper.sticky-header{
+        padding-top:0px !important;
+    }
+    .lbt_header-wrap{
+        margin-bottom:0!important;
+    }
+}
+
+
+
+  
+@media (max-width: 767px){
+    html body.com-pages .info-bar.info-bar-processed{
+        display: block!important;
+    }
+    html body.com-pages .main-nav .dropdown>.container {
+      top: auto;
+      bottom: 100%;
+      height: calc(100vh - 327px) !important;
+    }
+    
+    html body.com-pages nav.main-nav {
+        position: fixed!important;
+        top: auto!important;
+      bottom: 0px;
+      z-index: 9999;
+    right:0;
+    left:0
+    }
+    html body.com-pages li.toggle-search.fixed{
+        display:none;
+      }
+ .webp header .logo{
+        background-image: url("https://expogrowth.in/wp-content/uploads/2022/04/on-dark.svg")!important;
+        height: 40px;
+    }
+    html body.com-pages section.info-bar.info-bar-processed {
+        background-color: #0c4587!important;
+    }
+    html body.com-pages a#phone {
+        color: #fff!important;
+    }
+    html body.com-pages .phone-number.text-right {
+        flex-direction: column-reverse;
+        display: flex;
+    }
+    html body.com-pages .info-bar .phone-number p {
+        color: #fff!important;
+    }
+    html body.com-pages #call-us > p:nth-child(2) > a{
+        color:#fff!important
+    }
+    html body.com-pages .new-nav-container .logo-container,
+    html body.com-pages .new-nav-container .right-phone-container{
+        display:none;
+    }
+    html body.com-pages .new-nav-container {
+    display: initial!important;
+}
+    }
+    @media (max-width: 375px){
+        html body.com-pages .main-nav .dropdown>.container {
+            top: auto;
+            bottom: 100%;
+            height: calc(100vh - 145px) !important;
+        }
+    }
+
+    @media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    html body.com-pages .main-nav .container {
+        max-width: auto!important;
+        width: 100%!important;
+        padding: 0 4%;
+    }
+
+     .hidden, .main-nav .primary-menu.loading,
+        .menu-link-more-.dropdown.fixed.hidden {
+            display: Block!important;
+        }
+        html body.com-pages .menu-link-own-a-boat, html body.com-pages .menu-link-new-to-boats, html body.com-pages.menu-link-book{
+            display: none!important;
+        }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .hidden, .main-nav .primary-menu.loading,
+    .menu-link-more-.dropdown.fixed.hidden,
+    .menu-link-special-offers {
+        display: Block!important;
+    }
+    .menu-link-own-a-boat, .menu-link-new-to-boats, .menu-link-book,
+    .menu-link-themes, .menu-link-good-to-know-, .menu-link-special-offers{
+        display: none!important;
+    }
+    html body.com-pages .main-nav .container {
+        max-width: auto!important;
+        width: 100%!important;
+        padding: 0 2%;
+    }
+
+}
+@media screen and (max-device-width: 768px) and (orientation : landscape){
+    html body .main-nav .dropdown>.container {
+        height: calc(100vh - 130px) !important;
+    }
+    .main-nav .primary-menu>li>a {
+        max-width: 167px!important;
+    }
+}
+
+
+
+/* New CSS */
+@media screen and (min-width:768px) and (max-width:1279px) {   
+    html body .expanded.dropdown.open:before {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        content: '';
+        left: 0px;
+        top: 100%;
+        background: #000000;
+        opacity: 0.5;
+    }
+    .main-nav .menu-link-more-.dropdown.open .container:before {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        content: '';
+        left: 0px;
+        top: 100%;
+        background: #000000;
+        opacity: 0.5;
+        transform: none;
+    }
+}    
+@media screen and (max-width:767px) {
+    body.eg-overlay-show .eg-overlay{
+        display: block;
+    }
+    body .eg-overlay{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        content: '';
+        background: #000000;
+        opacity: 0.5;
+        z-index: 9;
+        display: none;
+    }
+}

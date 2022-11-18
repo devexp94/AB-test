@@ -1,0 +1,192 @@
+@media screen and (max-width:540px) {
+    html body .eg-StickyBanner{
+        width: 100%;
+        right: 0px;
+        bottom: 0px;
+        height: 100%;
+    }
+    html body .eg-StickyBanner .banner-heading{
+        width: 100%;
+        border-radius: 0px;
+        background: #323436;
+        padding: 15px 20px;
+    }
+    html body .eg-StickyBanner .banner-heading:hover{
+        background: #323436;
+    }
+    html body .eg-StickyBanner .banner-heading > svg{
+        display: none;
+    }
+    html body .eg-StickyBanner .eg-StickyBanner_inner{
+        position: absolute;
+        border-radius: 0px;
+        width: 100%;
+        bottom: 0px;
+        left: 0px;
+        box-shadow: none;
+    }
+    html body .eg-StickyBanner .eg-StickyBanner_inner {
+        position: absolute;
+        border-radius: 0px;
+        width: 100%;
+        bottom: 0px;
+        left: 0px;
+        box-shadow: none;
+        z-index: 9;
+    }
+
+    html body .eg-StickyBanner .eg-banner-overlay {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background: #00000071;
+        z-index: 8;
+        display: none;
+    }
+    html body .eg-StickyBanner.active .eg-banner-overlay{
+        display: block;
+    }
+}
+html body.eg-StickyBanner_btn:hover {
+    background: #323436ab;
+}
+
+    .eg-StickyBanner_icon {
+        padding-left: 2rem;
+        line-height: 1.5;
+        position: relative;
+        font-size: 14px;
+    }
+    .eg-StickyBanner {
+        bottom: 20px;
+        right: 20px;
+        width: auto;
+        border-top: none;
+        padding: 0;
+        position: fixed;
+        z-index: 99999;
+        display: inline-flex;
+        flex-direction: column-reverse;
+        align-items: end;
+    }
+    .eg-StickyBanner.aligntop {
+        top: 30px;
+    }
+    .eg-StickyBanner_inner {
+        display: block;
+        width: 340px;
+        padding: 0;
+        background: #ffffff;
+        border-radius: 6px;
+        -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.25);
+        -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.25);
+        box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.25);
+        max-height: 0px;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 750ms ease, opacity 750ms ease, overflow 750ms ease;
+    }
+    .eg-StickyBanner.active .eg-StickyBanner_inner {
+        max-height: 100vh;
+        overflow: visible;
+        opacity: 1;
+        transition: max-height 750ms ease, opacity 750ms ease, overflow 750ms ease;
+    }
+    .eg-StickyBanner_icon {
+        display:block;
+    }
+
+    .eg-StickyBanner_btn {
+        display: block;
+        border:none;
+        margin: 0;
+        padding: 10px 20px;
+    }
+        
+    .eg-StickyBanner .icon-signin {
+        padding-top: 20px;
+    }
+
+    .eg-StickyBanner .icon-request-brochure {
+        padding-bottom: 20px;
+    }
+    .eg-StickyBanner_btn,
+    .eg-StickyBanner_btn:link, 
+    .eg-StickyBanner_btn:active, 
+    .eg-StickyBanner_btn:visited {
+        color: #323436;
+    }
+    .eg-StickyBanner_btn .eg-StickyBanner_icon {
+        /* border-bottom:1px solid #fff; */
+        text-align: left;
+    }
+    .eg-StickyBanner_btn:last-of-type .eg-StickyBanner_icon {
+        border:none;
+    }
+
+    .banner-heading > svg {
+        box-sizing: border-box;
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .eg-StickyBanner .banner-heading{
+        position: relative;
+        margin: 0px;
+        color: #ffffff;
+        background-color: rgb(50 52 54);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+        margin-top: 16px;
+        width: 50%;
+        padding: 15px 20px 15px 40px;
+    }
+    .eg-StickyBanner .banner-heading:hover{
+        background-color: rgb(50 52 54 / 84%);
+    }
+    .eg-StickyBanner_btn:hover {
+        text-decoration: none;
+    }
+
+
+.eg-StickyBanner_icon:after {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    content: '';
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    margin-top: 1px;
+}
+.icon-signin .eg-StickyBanner_icon:after{
+    background: url('https://drive.google.com/uc?export=view&id=1ZuqH78Kgw46cHyz-vX2KK-8qBLDmyGj4');
+    filter: invert(1) ;
+}
+.icon-quote .eg-StickyBanner_icon:after{
+    background: url('https://drive.google.com/uc?export=view&id=1ggqU-8IN6th9Q7sqQHR0pFVCV_9zHba8');
+    background-size: cover ;
+    width: 24px ;
+    height: 24px ;
+}
+.icon-request-brochure .eg-StickyBanner_icon:after{
+    background: url('https://drive.google.com/uc?export=view&id=1EROcUdAUaf4PwAAGjcqlWygIFi8zslaj');
+    filter: invert(1) ;
+}
+.eg-StickyBanner_btn{
+    text-decoration: none;
+}
+.eg-StickyBanner .eg-heading{
+    margin-bottom: 5px;
+    font-weight: 600;
+    
+}

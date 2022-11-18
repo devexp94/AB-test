@@ -1,0 +1,155 @@
+@media screen and (max-width:540px) {
+    html body .eg-StickyBanner{
+        top: auto;
+        left: 0px;
+        transform: translateX(0px) translateY(calc(100% - 41px));
+        bottom: 0px;
+        flex-direction: column;
+    }
+    html body .eg-StickyBanner .banner-heading {
+        writing-mode: inherit;
+        transform: none;
+        padding: 10px 20px;
+        border-bottom: 1px solid #ffffff;
+        border-left: none;
+        background: #142346;
+        border-radius: 0px;
+    }
+    html body .eg-StickyBanner_inner {
+        width: 100%;
+    }
+    html body .eg-StickyBanner.active{
+        transform: translateX(0) translateY(0%);
+    }
+    html body .eg-StickyBanner .banner-heading > .icon{
+        transform: rotate(0deg);
+    
+    }
+    html body .eg-StickyBanner.active .banner-heading > .icon {
+        transform: rotate(180deg);
+    }
+}
+html body.eg-StickyBanner_btn:hover {
+    background: #323436ab;
+}
+
+    .eg-StickyBanner_icon {
+        padding-left: 34px;
+        line-height: 4rem;
+        position: relative;
+        font-size: 14px;
+    }
+    .eg-StickyBanner {
+        top: 50%;
+        bottom: auto;
+        right: 0;
+        width: auto;
+        border-top: none;
+        padding: 0;
+        transition: all 0.3s;
+        transform: translateY(-50%);
+        position: fixed;
+        z-index: 99999;
+    }
+    .eg-StickyBanner.aligntop {
+        top: 30px;
+    }
+    .eg-StickyBanner_inner {
+        display: block;
+        width: 223px;
+        padding: 0;
+        background: #323436;
+    }
+    .eg-StickyBanner_icon {
+        display:block;
+    }
+
+    .eg-StickyBanner_btn {
+        display: block;
+        border:none;
+        margin: 0;
+        background-color: rgb(20 35 70);
+        padding: 0 20px;
+    }
+    .eg-StickyBanner .banner-heading:hover,
+    .eg-StickyBanner_btn:hover {
+        background-color: #1a3778;
+    }
+    .eg-StickyBanner_btn:link, .eg-StickyBanner_btn:active, .eg-StickyBanner_btn:visited {
+        color:#fff;
+    }
+    .eg-StickyBanner_btn .eg-StickyBanner_icon {
+        border-bottom:1px solid #fff;
+        text-align: left;
+    }
+    .eg-StickyBanner_btn:last-of-type .eg-StickyBanner_icon {
+        border:none;
+    }
+
+    .eg-StickyBanner {
+        display: flex;
+        transform: translateX(calc(100% - 26px)) translateY(-50%);
+    }
+    .eg-StickyBanner.active{
+        transform: translateX(0) translateY(-50%);
+    }
+    .banner-heading > .icon {
+        box-sizing: border-box;
+        font-size: 18px;
+        transform: rotate(-90deg);
+    }
+    .eg-StickyBanner.active .banner-heading > .icon{
+        transform: rotate(90deg);
+    }
+    .eg-StickyBanner .banner-heading{
+        writing-mode: tb;
+        position: relative;
+        height: auto;
+        top: 0px;
+        left: 0px;
+        transform: rotate(180deg);
+        margin: 0px;
+        padding: 10px 2px 4px;
+        border-left: 1px solid #ffffff;
+        color: #ffffff;
+        background-color: #142346;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 0px 6px 6px 0px;
+    }
+    .eg-StickyBanner_btn:hover {
+        text-decoration: none;
+    }
+
+
+.eg-StickyBanner_icon:after {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    content: '';
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    margin-top: 1px;
+}
+.icon-signin .eg-StickyBanner_icon:after{
+    background: url('https://drive.google.com/uc?export=view&id=1ZuqH78Kgw46cHyz-vX2KK-8qBLDmyGj4');
+}
+.icon-quote .eg-StickyBanner_icon:after{
+    background: url('https://drive.google.com/uc?export=view&id=1ggqU-8IN6th9Q7sqQHR0pFVCV_9zHba8');
+    filter: invert(1) ;
+    background-size: cover ;
+    width: 24px ;
+    height: 24px ;
+}
+.icon-request-brochure .eg-StickyBanner_icon:after{
+    background: url('https://drive.google.com/uc?export=view&id=1EROcUdAUaf4PwAAGjcqlWygIFi8zslaj');
+}
+.eg-StickyBanner_btn{
+    text-decoration: none;
+}
