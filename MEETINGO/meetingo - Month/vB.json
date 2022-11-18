@@ -1,0 +1,10 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.meetingo.com/en-gb/meeting-rooms/details/3?location=London__United_Kingdom"
+	]
+}

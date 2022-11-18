@@ -1,0 +1,10 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://hukitchen.com/?_atid=WND2LRdZUpRpr94SEienZYhOtuiMSm"
+	]
+}

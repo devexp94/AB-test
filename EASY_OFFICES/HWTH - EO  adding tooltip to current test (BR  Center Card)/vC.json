@@ -1,0 +1,7 @@
+{
+  "files": ["./variationC/variation.css", "./variationC/variation.js"],
+  "inject": "",
+  "urls": [
+    "https://www.easyoffices.com/br/espa%C3%A7o-de-escrit%C3%B3rio/bras%C3%ADlia?optimizely_disable=true"
+  ]
+}

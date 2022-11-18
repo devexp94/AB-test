@@ -1,0 +1,172 @@
+.over_add_to_cart {
+    height: 45px;
+    position: absolute;
+    width: calc(100% - 65px);
+    right: 0px;
+    z-index: 99999;
+    cursor: pointer;
+}
+
+.overlayofadd {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 100;
+  cursor: pointer;
+}
+.overlayofadd.overlayshow {
+	display: block;
+}
+button.btn.btn.btn--primary.btn--addtocart.js-btn.product-form-atc.btn--primary:after {
+    display: none;
+}
+.overlay-wrapper {
+    width: 90%;
+    position: relative;
+    top: 40%;
+    margin: auto;
+    max-width: 600px;
+    background: white;
+    text-align: center;
+    padding: 25px 0px;
+}
+
+.overlay_button_wrapper button {
+    width: 46%;
+    margin: 20px 2% 0px;
+    height: 45px;
+}
+
+button.view_cart_redirect {
+    background-color: #fdbd4c;
+    color: black;
+    border: 2px solid black;
+}
+
+button.continue_shop {
+    background: black;
+    color: white;
+    border: 1px solid white;
+}
+
+img.product_img_1 {
+    width: auto;
+    height: 200px;
+}
+
+span.product_added {
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
+}
+.overlay-wrapper p {
+    font-size: 14px;
+}
+
+@media (max-width:767px) {
+	
+
+.overlay-wrapper {
+    top: 25%;
+}
+.overlay_button_wrapper button  {
+    height:45px;
+}
+.overlay_button_wrapper button {
+    width: 80%;
+    margin: 10px 2% 0px;
+}
+}
+
+
+.over_add_to_cart_homepage {
+    position: absolute;
+    height: 50px;
+    z-index: 1000;
+    cursor: pointer;
+}
+.over_add_to_cart_plp {
+    width: 100%;
+    position: absolute;
+    height: 50px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.overlay-wrapper p {
+    color: black;
+}
+.size-selector__list.f.aic.jcc button.size-selector__list-item.aic.jcc.relative.single + .over_add_to_cart_homepage {
+	width: 100%;
+}
+.size-selector__list.f.aic.jcc button.size-selector__list-item.aic.jcc.relative.single + .over_add_to_cart_plp {
+	width: 100%;
+}
+.size-selector__list.f.aic.jcc.size-selector__list--multiple  .over_add_to_cart_homepage:nth-child(2) {
+    width: auto;
+    padding: 0 0px;
+    margin-bottom: 4px;
+    min-width: 70px;
+    transform: translateX(-78px);
+}
+.size-selector__list.f.aic.jcc.size-selector__list--multiple  .over_add_to_cart_homepage:nth-child(4) {
+    width: auto;
+    padding: 0 0px;
+    margin-bottom: 4px;
+    min-width: 70px;
+}
+.size-selector__list.f.aic.jcc.size-selector__list--multiple  .over_add_to_cart_homepage:nth-child(6) {
+    width: auto;
+    padding: 0 0px;
+    margin-bottom: 4px;
+    min-width: 70px;
+    transform: translateX(78px);
+}
+
+.size-selector__list.f.aic.jcc.size-selector__list--multiple  .over_add_to_cart_plp:nth-child(2) {
+    width: auto;
+    padding: 0 0px;
+    margin-bottom: 4px;
+    min-width: 70px;
+    transform: translateX(-78px);
+}
+.size-selector__list.f.aic.jcc.size-selector__list--multiple  .over_add_to_cart_plp:nth-child(4) {
+    width: auto;
+    padding: 0 0px;
+    margin-bottom: 4px;
+    min-width: 70px;
+}
+.size-selector__list.f.aic.jcc.size-selector__list--multiple  .over_add_to_cart_plp:nth-child(6) {
+    width: auto;
+    padding: 0 0px;
+    margin-bottom: 4px;
+    min-width: 70px;
+    transform: translateX(78px);
+}
+
+
+.size-selector__list.f.aic.jcc:not(.size-selector__list--multiple) button.size-selector__list-item.aic.jcc.relative:not(.single) + .over_add_to_cart_homepage:nth-child(2) {
+    width: calc(50% - 4px);
+    left: 0px;
+}
+.size-selector__list.f.aic.jcc:not(.size-selector__list--multiple) button.size-selector__list-item.aic.jcc.relative:not(.single) + .over_add_to_cart_homepage:nth-child(4) {
+     width: calc(50% - 4px);
+     right: 0px;
+}
+
+
+.size-selector__list.f.aic.jcc:not(.size-selector__list--multiple) button.size-selector__list-item.aic.jcc.relative:not(.single) + .over_add_to_cart_plp:nth-child(2) {
+    width: calc(50% - 4px);
+    left: 0px;
+}
+.size-selector__list.f.aic.jcc:not(.size-selector__list--multiple) button.size-selector__list-item.aic.jcc.relative:not(.single) + .over_add_to_cart_plp:nth-child(4) {
+     width: calc(50% - 4px);
+     right: 0px;
+}

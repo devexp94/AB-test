@@ -1,0 +1,134 @@
+.eg-top-strip-inr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.eg-top-strip .eg-top-strip-inr {
+    max-width: 1138px;
+    margin: 0 auto;
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.eg-top-strip {
+    position: fixed;
+    top: 110px;
+    width: 100%;
+    z-index: 11;
+    background: #fff;
+    border-bottom: 1px solid rgba(145, 141, 141, .4);
+    transition: transform 950ms ease;
+
+}
+
+body:not(.eg-sticky-button) .eg-top-strip {
+    transform: translateY(-1000px) !important;
+    transition: transform 850ms ease, opacity 850ms ease;
+    opacity: 0;
+}
+
+body.eg-sticky-button .eg-top-strip {
+    transform: translateY(0px) !important;
+    opacity: 1;
+    transition: transform 850ms ease, opacity 850ms ease;
+}
+
+.eg-top-strip .eg-strip-heading br {
+    display: none;
+}
+
+.eg-top-strip .eg-strip-heading {
+    font-size: 16px;
+}
+
+.eg-top-strip .eg-right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.eg-top-strip .eg-right>div {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 15px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.eg-top-strip .eg-strip-button {
+    background-color: #00819D;
+    border-radius: 14px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 10px;
+    border: 0;
+    cursor: pointer;
+    padding: 6px 24px;
+}
+
+.eg-strip-heading span {
+    display: block;
+    font-size: 14px;
+    font-weight: 100;
+    margin-bottom: 1px;
+}
+
+.eg-top-strip .eg-form {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 100;
+    margin-bottom: 0px;
+    line-height: 1;
+}
+
+@media screen and (max-width: 590px) {
+
+    html body .eg-strip-heading span {
+        position: absolute;
+        top: 4px;
+        width: 100%;
+        left: 15px;
+        font-size: 12px;
+    }
+
+    html body .eg-top-strip .eg-right>div {
+        position: absolute;
+        left: 15px;
+        bottom: 7px;
+        align-items: center;
+        font-weight: 100;
+    }
+
+    html body .eg-top-strip .eg-form {
+        width: auto;
+        order: 3;
+        margin-right: 7px;
+    }
+
+    html body .eg-top-strip .eg-strip-button {
+        font-size: 12px;
+        text-align: center;
+        padding: 6px 10px;
+    }
+
+    html body .eg-top-strip .eg-top-strip-inr {
+        /* flex-direction: column; */
+        padding: 22px 15px;
+    }
+
+    html body .eg-top-strip .eg-strip-heading {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    html body .eg-top-strip {
+        top: 52px;
+        border-top: 1px solid rgba(145, 141, 141, .4);
+    }
+}

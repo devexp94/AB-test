@@ -1,0 +1,37 @@
+@media screen and (min-width: 1200px) {
+    html body .template_banner > .container {
+        height: 490px;
+    }
+    
+    html body .template_banner > .container > .row {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }    
+    
+}
+.banner_text select#myonoffswitch {
+    display: none;
+}
+ul.english.banner_ul    {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+html body .english.banner_ul li {
+    max-width: 100% !important;
+    text-align: center !important;
+    display: inline-flex;
+}
+
+html body .banner_text h1.english {
+    text-align: center !important;
+}
+html body .english.banner_ul li:nth-child(2) .sky_blue {
+    margin-right: 4px;
+}
+
+html body .english.banner_ul li:nth-child(3) .sky_blue {
+    margin-left: 4px;
+}

@@ -1,0 +1,57 @@
+@media screen and (min-width: 1200px) {
+    html body .template_banner>.container {
+        height: 490px;
+    }
+
+    html body .template_banner>.container>.row {
+        display: flex;
+        height: 100%;
+    }
+
+}
+
+.banner_text select#myonoffswitch {
+    display: none;
+}
+
+ul.english.banner_ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+html body .english.banner_ul li {
+    max-width: 100% !important;
+    display: inline;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 32px;
+}
+
+
+
+html body .english.banner_ul li:nth-child(2) .sky_blue {
+    margin-right: 4px;
+}
+
+html body .english.banner_ul li:nth-child(3) .sky_blue {
+    margin-left: 4px;
+}
+
+@media screen and (min-width:768px) {
+    html body .banner_text h1.english {
+        font-size: 38px;
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+
+    html body ul.english.banner_ul {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 425px;
+    }
+
+}

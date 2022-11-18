@@ -1,0 +1,230 @@
+/* #build-a-box .rb-sticky-form {
+    display : none;
+  }
+   */
+  .tin-toggles {
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    justify-content : center;
+    border-top : 4px solid rgb(103, 197, 179);
+    /* border-bottom : 4px solid rgb(103, 197, 179); */
+    text-align : center;
+    /* padding : 0px 0px 20px 0px; */
+    margin : 0px 0px 20px 0px;
+  }
+  
+  .tin-toggles-title {
+    font-size : 24px;
+    margin : 20px 0px 10px 0px;
+  }
+  
+  .tin-toggle {
+    border : 2px solid rgb(235, 40, 72);
+    border-radius : 25px;
+    height : 50px;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    background-color : rgb(255, 255, 255);
+    padding : 5px;
+    z-index : 1;
+    position : relative;
+  }
+  
+  .tin-toggle::after {
+    content : "";
+    display : block;
+    position : absolute;
+    top : 0px;
+    left : 0px;
+    width : 100%;
+    height : 100%;
+    border-radius : 25px;
+    background-color : rgb(235, 40, 72);
+    mix-blend-mode : screen;
+    z-index : 4;
+  }
+  
+  .tin-toggle::before {
+    content : "";
+    height : 36px;
+    position : absolute;
+    border-radius : 25px;
+    background-color : rgb(0, 0, 0);
+    z-index : 2;
+    left : 5px;
+    transition-duration : 0.3s;
+    transition-timing-function : ease-in-out;
+    transition-delay : 0s;
+    transition-property : all;
+  }
+  
+  .tin-toggle[data-title="size"] {
+    width : 335px;
+  }
+  
+  .tin-toggle[data-title="qty"][data-variant="1L"] {
+    width : 335px;
+  }
+  
+  .tin-toggle[data-title="qty"][data-variant="Travel"] {
+    width : 335px;
+  }
+  
+  .tin-toggle[data-title="size"]::before {
+    width : 160px;
+  }
+  
+  .tin-toggle[data-title="qty"]::before {
+    width : 160px;
+  }
+  
+  .tin-toggle[data-title="size"][data-value="Travel Size"]::before {
+    right : 5px;
+    left : 50%;
+  }
+  
+  .tin-toggle[data-title="qty"][data-value="18-Pack (6 of each flavor)"]::before {
+    right : 5px;
+    left : 50%;
+  }
+  
+  .tin-toggle[data-title="qty"][data-value="48-Pack (12 of each flavor)"]::before {
+    right : 5px;
+    left : 50%;
+  }
+  
+  .tin-toggle[data-title="size"][data-value="1 Liter"] ~ .tin-toggle[data-title="qty"][data-variant="1L"] {
+    display : flex;
+  }
+  
+  .tin-toggle[data-title="size"][data-value="1 Liter"] ~ .tin-toggle[data-title="qty"][data-variant="Travel"] {
+    display : none;
+  }
+  
+  .tin-toggle[data-title="size"][data-value="Travel Size"] ~ .tin-toggle[data-title="qty"][data-variant="1L"] {
+    display : none;
+  }
+  
+  .tin-toggle[data-title="size"][data-value="Travel Size"] ~ .tin-toggle[data-title="qty"][data-variant="Travel"] {
+    display : flex;
+  }
+  
+  .tin-toggle-option {
+    color : rgb(255, 255, 255);
+    border-radius : 20px;
+    line-height : 36px;
+    font-weight : 700;
+    z-index : 3;
+    mix-blend-mode : difference;
+    font-size : 14px;
+  }
+  
+  .tin-toggle[data-title="size"] .tin-toggle-option {
+    flex-grow : 0;
+    flex-shrink : 0;
+    flex-basis : 160px;
+  }
+  
+  .tin-toggle[data-title="qty"][data-variant="1L"] .tin-toggle-option {
+    flex-grow : 0;
+    flex-shrink : 0;
+    flex-basis : 160px;
+  }
+  
+  .tin-toggle[data-title="qty"][data-variant="Travel"] .tin-toggle-option {
+    flex-grow : 0;
+    flex-shrink : 0;
+    flex-basis : 160px;
+  }
+  
+  .tin-toggle-option_tappable {
+    position : absolute;
+    z-index : 5;
+    top : 0px;
+    left : 0px;
+    width : 50%;
+    height : 100%;
+  }
+  
+  .tin-toggle-option_tappable + .tin-toggle-option_tappable {
+    left : 50%;
+  }
+  /* .tin-toggle[data-title="delivery"] {
+    width: 461px;
+}
+
+div[data-title="delivery"] .tin-toggle-option {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 170px;
+}
+  div[data-title="delivery"] .tin-toggle-option:nth-child(1) {
+    flex-basis: 110px;
+}
+div[data-title="delivery"] .tin-toggle-option_tappable {
+    width: 33.33%;
+}
+
+div[data-title="delivery"] .tin-toggle-option_tappable + .tin-toggle-option_tappable {
+    left: 33.33%;
+}
+
+div[data-title="delivery"] .tin-toggle-option_tappable + .tin-toggle-option_tappable + .tin-toggle-option_tappable {
+    left: 66.66%;
+} */
+
+
+.tin-toggle[data-title="delivery"] {
+  width: 320px;
+  flex-wrap: wrap;
+  height: auto;
+  flex-direction: column;
+}
+
+div[data-title="delivery"] .tin-toggle-option {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 36px;
+  width: 100%;
+}
+div[data-title="delivery"] .tin-toggle-option_tappable {
+  /* width: 24%; */
+  left: 0px;
+  width: 100%;
+  height: 36px;
+  top: 0px;
+}
+div[data-title="delivery"] .tin-toggle-option_tappable + .tin-toggle-option_tappable {
+  /* left: 33.33%; */
+  top: 41px;
+}
+div[data-title="delivery"] .tin-toggle-option_tappable + .tin-toggle-option_tappable + .tin-toggle-option_tappable {
+  /* left: 66.66%; */
+  top: 77px;
+}
+
+.tin-toggle[data-title="delivery"]::before {
+  top: 5px;
+  width: calc(100% - 10px);
+}
+.tin-toggle[data-title="delivery"][data-value="Delivery every 30 Days"]::before{
+  top: 41px;
+}
+.tin-toggle[data-title="delivery"][data-value="Delivery every 60 Days"]::before{
+  top: 77px;
+}
+
+
+html body .rb-container > form > div:first-child {
+  display: none;
+}
+
+html body #build-a-box .rb-sticky-form.sticky.pt3 > .rb-container {
+  background: #fff;
+}
+
+html body .rb-container > .rb-progress-bar-wrapper {
+  margin-top: 25px;
+}

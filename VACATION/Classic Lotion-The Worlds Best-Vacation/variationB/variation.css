@@ -1,0 +1,11 @@
+html body .product-lander div[data-marqy-inner]{
+    overflow-x: scroll !important;
+}
+html body .product-lander div[data-marqy-inner]::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+html body .product-lander div[data-marqy-inner]:hover [data-marqy-content]{
+    -webkit-animation-name: none;
+    animation-name: none;
+}

@@ -1,0 +1,12 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.rovva.com/en-us/virtual-office/plan-options/New-York-New-York-City-140-Broadway?a=x",
+		"https://www.rovva.com/en-ca/virtual-office/search",
+		"https://www.rovva.com/en-ca/virtual-office/personal-details"
+	]
+}

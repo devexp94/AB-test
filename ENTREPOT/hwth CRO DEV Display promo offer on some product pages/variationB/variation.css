@@ -1,0 +1,60 @@
+html body .eg-brico {
+    max-width: 310px;
+    display: inline-block;
+}
+html body .eg-location:hover{
+    text-decoration: none;
+}
+html body .eg-location {
+    display: inline-flex;
+    padding: 1.5rem;
+    align-items: flex-start;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+html body .eg-location img {
+    margin-right: 10px;
+    max-width: 50px;
+}
+
+html body .eg-location .eg-location-text {
+    color: #646464;
+    font-size: 13px;
+    font-weight: 500;
+}
+html body .eg-location .eg-location-text .eg-location-link{
+    font-weight: 100;
+    color: #646464;
+}
+
+@media screen and (max-width:1300px) {
+    html body .eg-brico {
+        display: inline-block;
+        max-width: 40rem;
+        margin-right: 1rem;
+    }
+    .o-product-stock {
+        flex-wrap: wrap;
+    }
+
+    .eg-brico-outer {
+        width: calc(100% - 40rem);
+    }
+
+}
+@media screen and (max-width:991px) {
+    html body .eg-brico-outer .eg-brico {
+        max-width: 100%;
+        margin-right: 0;
+    }
+  .eg-brico-outer {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+  html body .m-product-stock-item:last-of-type {
+    display: none;
+}
+  
+.eg-brico-outer .m-product-shipping {width: 100% !important;margin-bottom: 10px;}

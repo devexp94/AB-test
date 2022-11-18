@@ -1,0 +1,12 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://drinkgt.com/products/trial-pack",
+		"https://drinkgt.com/products/build-your-own-box",
+		"https://drinkgt.com/collections/single-flavor-packs"
+	]
+}

@@ -1,0 +1,30 @@
+@media (max-width: 501px){
+   html body #centre_filters {
+        height: 180px;
+        margin: 40px auto;
+        width: auto;
+    }
+
+    html body #centre_filters .facilities-list {
+        -ms-grid-columns: (minmax(80px,auto))[auto-fill];
+        grid-template-columns: repeat(auto-fill,minmax(80px,auto));
+        grid-column-gap: 18px;
+        grid-row-gap: 30px;
+    }
+    html body #centre_filters .facilities-list-item-name {
+        padding-top: 12px;
+    }
+    #centre_filters .facilities-list-item .icon-48-36 {
+        height: 35px;
+        width: 44px;
+    }
+}
+@media (max-width: 350px){
+    html body .search-content #centre_filters .facilities-list {
+        -ms-grid-columns: (minmax(70px,auto))[auto-fill];
+        grid-template-columns: repeat(auto-fill,minmax(70px,auto));
+    }
+    html body .search-content #centre_filters {
+        height: 200px;
+    }
+}

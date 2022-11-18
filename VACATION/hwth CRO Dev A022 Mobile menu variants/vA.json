@@ -1,0 +1,10 @@
+{
+	"files": [
+		"./variationA/variation.css",
+		"./variationA/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.vacation.inc/"
+	]
+}

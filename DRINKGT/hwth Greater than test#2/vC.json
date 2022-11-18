@@ -1,0 +1,11 @@
+{
+	"files": [
+		"./variationC/variation.css",
+		"./variationC/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://drinkgt.com/",
+		"https://drinkgt.com/pages/moms-lactation-drinks"
+	]
+}

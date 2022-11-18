@@ -1,0 +1,55 @@
+html body .pf.bottom div +.bt--black .mb1 {
+    display: none;
+    transition:all .7s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+html body .pf.bottom div +.bt--black .mb1.eg-active {
+    display: block;
+    transition:all .7s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+html body .eg-next svg,
+html body .eg-pre svg {
+    fill: #000000;
+}
+.pf.bottom div +.bt--black {
+    position: relative;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+html body .eg-pre {
+    position: absolute;
+    top: 15px;
+    left: 0px;
+}
+
+html body .eg-next {
+    position: absolute;
+    top: 15px;
+    right: 0px;
+}
+
+.pf.bottom div +.bt--black .mb1 {
+    margin-bottom: 0px !important;
+}
+
+html body .eg-next,
+html body .eg-pre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+html body .eg-next svg,
+html body .eg-pre svg {
+    width: 23px;
+    height: 23px;
+}
+
+html body span.eg-pre {
+    transform: rotate(-180deg);
+    padding: 10px 2px 5px 2px;
+}
+html body span.eg-next{
+    padding: 5px 2px 10px 2px;
+}

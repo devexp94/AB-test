@@ -1,0 +1,10 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.centrum24.pl/form/?stkn=KNP1365202203100910127747#/ro;formId=01PO20210618K17;productKey=kontodz;cardFilter=22230,22231,no_card;kodPolecajacego=true;accountTransfer=false;isAutomatic=true;ekycPid=12345;ekk=true;selfie=true;paths=s15w6k6p6;hash=fe029392a71897641d817a2e6d18442b;showMobileBanner=true;appId=portal;subId=kjc26_benefits;page=Page1"
+	]
+}

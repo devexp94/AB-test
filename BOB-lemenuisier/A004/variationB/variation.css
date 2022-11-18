@@ -1,0 +1,76 @@
+html body:not(.openPopup) .webcallbackwidget .eg-cross{
+    display: none;
+}
+html body.openPopup .webcallbackwidget {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 99999;
+  }
+  html body.openPopup  .webcallbackwidget .eg-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0 0 0 / 65%);
+    z-index: 1; 
+  }
+  html body.openPopup  .webcallbackwidget .container-bob {
+    max-width: 550px;
+    width: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    padding: 0px;
+  }
+  html body.openPopup  .webcallbackwidget .banner-call {
+    background-image: none !important;
+    padding: 0px;
+    margin: 0 auto;
+   }
+   html body.openPopup  .banner-call .bg-white{
+       max-width: 100%;
+   }
+  html body.openPopup  .webcallbackwidget .container-bob .icon-phone:before {
+    content: "";
+    }
+    html body.openPopup  .webcallbackwidget .container-bob .eg-cross {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        z-index: 99;
+        font-size: 37px;
+        line-height: 17px;
+        padding: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    html body.openPopup  .webcallbackwidget .container-bob .banner-call .bg-white .btn-div .close{
+        display: none;
+    }
+    @media (max-width: 767px){
+       html body.openPopup  .webcallbackwidget .container-bob .banner-call {
+            min-height: auto !important;
+        }
+        html body.openPopup  .webcallbackwidget .banner-call .bg-white{
+            width: 100%;
+        }
+        html body.openPopup  .webcallbackwidget .container-bob .banner-call .bg-white {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    @media (max-width: 350px){
+        html body.openPopup  .webcallbackwidget .container-bob .banner-call .bg-white {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }

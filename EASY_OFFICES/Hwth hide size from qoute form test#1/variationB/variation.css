@@ -1,0 +1,7 @@
+.modal-content .form-fields .select {
+    display: none;
+}
+
+.modal-content .form-fields .form-field:first-child {
+    grid-column: 1 / -1;
+}

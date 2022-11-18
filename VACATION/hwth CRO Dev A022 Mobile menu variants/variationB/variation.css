@@ -1,0 +1,123 @@
+header > .fill.bg--tan {
+    opacity: 1 !important;
+    background: rgb(39, 90, 159);
+}
+
+.header__nav.is-open .header__logo span .gara,
+.header__nav.is-open .fdrr button.gara .db,
+.header__nav.is-open button[aria-label="Toggle Navigation"]+ div a span{
+    color: #ffffff !important;
+}
+html body .header__logo.show--scroll{
+    opacity: 1;
+    top: 3px;
+}
+html body .header__logo.show--scroll span{
+    color: #ffffff;
+}
+html body #shopnow {
+    height: 32px;
+    margin-top: -5px;
+}
+
+html body #shopnow > span {
+    line-height: 31px;
+}
+html body .header__nav .fdrr .df.gara .db:first-child{
+    height: 31px;
+}
+button[aria-label="Toggle Navigation"] span.db {
+    position: relative;
+    height: 3px;
+    font-size: 0px;
+    width: 30px;
+    background: #fff;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button[aria-label="Toggle Navigation"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button[aria-label="Toggle Navigation"] span.db:after {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 3px;
+    content: '';
+    background: #fff;
+}
+.eg-homepage .header__nav:not(.is-scrolled) button[aria-label="Toggle Navigation"] span.db,
+.eg-homepage .header__nav:not(.is-scrolled) button[aria-label="Toggle Navigation"] span.db:after,
+.eg-homepage .header__nav:not(.is-scrolled) button[aria-label="Toggle Navigation"] span.db:before{
+    background: #ffffff !important;
+}
+
+button[aria-label="Toggle Navigation"] span.db:before {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    height: 3px;
+    content: '';
+    background: #fff;
+}
+
+button[aria-label="Toggle Navigation"] > svg {
+    left: -28px;
+    z-index: 99;
+    opacity: 0;
+}
+
+button[aria-label="Toggle Navigation"].is-open span.db:before {
+    transform: translateY(10px) rotate(45deg);
+}
+
+button[aria-label="Toggle Navigation"].is-open span.db:after {
+    transform: translateY(-10px) rotate(-45deg);
+}
+.eg-homepage .header__nav:not(.is-scrolled) button[aria-label="Toggle Navigation"].is-open span.db,
+header div.is-scrolled button[aria-label="Toggle Navigation"].is-open > span.db,
+button[aria-label="Toggle Navigation"].is-open > span.db {
+    background: transparent !important;
+}
+
+.header__nav.is-open{
+    padding-bottom: 16px;
+    background: #275a9f;
+}
+
+button[aria-label="Toggle Navigation"] + .pr .pa {
+    padding-top: 30px;
+    width: calc(100vw - 40px);
+}
+
+button[aria-label="Toggle Navigation"] + .pr .pa .header__nav-link {
+    padding: 8px 0px;
+    color: #ffffff !important;
+    border-bottom: 1px solid #ffffff;
+}
+/* .pf.bottom.left.right{
+    display: none;
+} */
+
+.header__nav .fdrr .df.gara .db:first-child svg {
+    max-width: 31px;
+    max-height: 31px;
+}
+
+html body:not(.eg-homepage) .header__nav:not(.is-open) .fdrr .df.gara .db:first-child svg path,
+.header__nav.is-scrolled:not(.is-open) .fdrr .df.gara .db:first-child svg path{
+    fill: #ffffff;
+}
+html body .header__nav .fdrr .df.gara .db:first-child,
+.header__logo span,
+.header__nav__count {
+    color: #fff;
+}

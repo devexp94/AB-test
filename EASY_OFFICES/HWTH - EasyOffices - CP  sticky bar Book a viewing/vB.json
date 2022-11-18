@@ -1,0 +1,7 @@
+{
+  "files": ["./variationB/variation.css", "./variationB/variation.js"],
+  "inject": "",
+  "urls": [
+    "https://www.easyoffices.com/de/b%C3%BCror%C3%A4ume/berlin/knesebeckstr-62-63-berlin-5375"
+  ]
+}

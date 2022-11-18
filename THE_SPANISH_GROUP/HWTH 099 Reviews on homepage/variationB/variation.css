@@ -1,0 +1,46 @@
+
+html body .banner_text + div tbody td{
+    border: none !important;
+}
+html body .sa_rounded .sa_review {
+    -moz-border-radius: 10px !important;
+    -webkit-border-radius: 10px !important;
+    -khtml-border-radius: 10px !important;
+    border-radius: 10px !important;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.18);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.18);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.18);
+}
+html body .sa_comments {
+    font-size: 18px !important;
+}
+@media screen and (max-width:1199px){
+    html body .feature-neka > .container > .row {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width:768px) {
+    html body .sa_rounded .sa_review {
+        width: 438px !important;
+    }
+    html body .feature-neka .shopperlink{
+        display: inline-block;
+        margin-left: 33px;
+    }
+    
+    html body .banner_text + div{
+        margin-top: 20px !important;
+    }
+}
+@media screen and (max-width:767px) {
+    html body .feature-neka > .container > .row > div {
+        max-width: 565px;
+    }
+    html body .feature-neka .shopperlink,
+    html body .banner_text + div{
+        margin-top: 20px !important;
+    }
+    
+}

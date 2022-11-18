@@ -1,0 +1,12 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.bob-lemenuisier.fr/pergolas",
+		"https://www.bob-lemenuisier.fr/pergola-bioclimatique-autoportee-lames-simples",
+		"https://www.bob-lemenuisier.fr/pergola-bioclimatique-autoportee-doubles-lames"
+	]
+}

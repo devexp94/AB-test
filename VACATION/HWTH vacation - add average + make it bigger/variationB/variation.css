@@ -1,0 +1,10 @@
+html body .star-ratings {
+  display: none !important;
+}
+
+html body .shopping-block-pusher .star-ratings + h4,
+html body .eg-avg {
+  font-size: 17px;
+  font-family: OptimaLTP;
+  font-weight: 600 !important;
+}

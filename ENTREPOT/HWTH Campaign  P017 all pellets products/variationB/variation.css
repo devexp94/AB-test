@@ -1,0 +1,41 @@
+.eg-order+.m-brico-expert {
+    margin-top: 10px;
+}
+
+.eg-order {
+    text-align: center;
+    background: #ffffcd;
+    padding: 20px 20px 20px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.eg-order .eg-icon svg {
+    max-width: 50px;
+    max-height: 50px;
+    text-align: center;
+}
+
+.eg-order .eg-icon {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eg-order .eg-order-text {
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 10px auto 0px auto;
+    max-width: 315px;
+}
+
+@media screen and (max-width: 991px) {
+    html body .eg-order {
+        margin-top: 10px;
+    }
+
+    html body .eg-order .eg-order-text {
+        max-width: 100%;
+    }
+}

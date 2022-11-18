@@ -1,0 +1,10 @@
+{
+	"files": [
+		"./variationC/variation.css",
+		"./variationC/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.bob-lemenuisier.fr/demande-de-devis"
+	]
+}

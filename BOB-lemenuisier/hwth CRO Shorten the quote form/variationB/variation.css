@@ -1,0 +1,31 @@
+html body:not(.show-more) .see-more,
+html body .form-group label.fb-text-label.label{
+    display: none !important;
+}
+html body.show-more .field-category.amform-layout-one .control .checkbox-group {
+    max-height: 104px;
+    overflow: hidden;
+}
+
+html body .see-more span {
+    display: inline-block;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 20px;
+    border: 1px solid #696969;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: 400;
+    font-family: 'WotfardMedium';
+    margin-right: 5px;
+    cursor: pointer;
+    background: #28a745;
+    -webkit-box-shadow: 0 10px 24px rgb(27 27 45 / 20%);
+    -o-box-shadow: 0 10px 24px rgba(27,27,45,.2);
+    box-shadow: 0 10px 24px rgb(27 27 45 / 20%);
+    width: 143px;
+}
+
+html body .see-more {
+    padding-top: 10px;
+}

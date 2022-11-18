@@ -1,0 +1,11 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.entrepot-du-bricolage.fr/mon-magasin/draguignan",
+		"https://www.entrepot-du-bricolage.fr/commande/finalisation"
+	]
+}

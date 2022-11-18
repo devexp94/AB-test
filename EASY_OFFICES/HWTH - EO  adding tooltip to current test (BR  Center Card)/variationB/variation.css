@@ -1,0 +1,370 @@
+/* @media screen and (max-width: 1365px) {
+    html body .search-content {
+        padding: 30px 0px 0px 20px !important;
+    }
+} */
+
+.eg-copy>.tab-content:nth-child(2) .facilities-list {
+    position: relative;
+}
+
+.eg-copy>.tab-content:nth-child(2) .facilities-list:after {
+    content: 'Veja todos';
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #1d1d1b;
+    opacity: .8;
+    margin-top: 8px;
+}
+
+.eg-copy .tab-content.current .facilities-list-item-name {
+    font-size: 10px;
+    padding-top: 4px;
+    position: relative;
+}
+
+.eg-copy .tab-content.current .facilities-list-item-name:after {
+    content: '';
+    background: #1d1d1b;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    border-radius: 100%;
+}
+
+
+.eg-copy .tab-content.current {
+    width: auto;
+}
+
+.eg-copy .tab-content:not(.current) svg {
+    filter: grayscale(1);
+    height: 22px;
+    width: 28px;
+    margin-bottom: 6px;
+}
+
+.eg-copy .tab-content:not(.current) {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.offices-list-item .offices-list-item-data-title {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 0px;
+}
+
+html body .offices-list-item-data-cta>a:not([data-gtm-id="book_a_viewing"]),
+html body .offices-by-city,
+html body .get-quote-cta,
+.offices-list-item-data .offices-list-item-data-text,
+.offices-list-item~.left-arrow,
+.offices-list-item+.right-arrow,
+.offices-list-item-data .offices-list-item-data-cta a[data-gtm-cta="Explore space"],
+.eg-copy>.tab-content:nth-child(1) .facilities-list-item svg,
+.offices-list-item .offices-list-item-images img:not(:first-child) {
+    display: none !important;
+}
+
+.offices-list-item .offices-list-item-images img:first-child {
+    width: 100% !important;
+}
+
+.offices-list-item .offices-list-item-images {
+    grid: none !important;
+}
+
+html body .offices-list-item {
+    -ms-grid-columns: 1fr 1.5fr !important;
+    grid-template-columns: 1fr 1.5fr !important;
+    position: relative;
+}
+
+.eg-copy .facilities-list {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+}
+
+.eg-copy>.tab-content:nth-child(2) .facilities-list-item {
+    max-width: 28px;
+    position: relative;
+}
+
+.eg-copy>.tab-content:nth-child(2) .facilities-list-item .facilities-list-item-name {
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: -50%;
+    background: #fff;
+    z-index: 9;
+    display: none;
+    width: auto;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 5px;
+    border-radius: 6px;
+    font-size: 11px;
+    min-width: 92px;
+}
+
+.eg-copy>.tab-content:nth-child(2) .facilities-list-item:hover .facilities-list-item-name {
+    display: block;
+}
+
+.eg-copy>.tab-content:nth-child(2) .facilities-list-item .facilities-list-item-name:after {
+    content: '';
+    border: 7px solid black;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    top: 100%;
+    left: 29px;
+    transform: translateX(-50%);
+}
+
+.eg-copy>.tab-content:nth-child(2) .facilities-list-item:nth-child(5) h5 {
+    right: -20px;
+    left: auto;
+}
+
+.eg-copy>.tab-content:nth-child(2) .facilities-list-item:nth-child(5) h5:after {
+    left: auto;
+    right: 20px;
+}
+
+.eg-copy .tab-content {
+    display: block !important;
+}
+
+.eg-copy .tab-content {
+    min-height: auto !important;
+}
+
+.offices-list-item-data-cta a[data-gtm-id="book_a_viewing"] {
+    position: static !important;
+    color: #f95658;
+    background: #fff;
+    padding: 6px 10px;
+    bottom: 47px !important;
+    border: 1px solid #f95658;
+    text-align: center;
+    width: auto;
+    font-size: 14px;
+    margin-left: auto;
+}
+
+html body .office-list-item-price {
+    background: none !important;
+    color: #000 !important;
+    font-size: 15px !important;
+    position: static !important;
+    padding-left: 0px;
+    margin-left: auto;
+    padding-right: 0px;
+    text-align: right;
+}
+
+html body .offices-list-item-data-cta {
+    bottom: 15px;
+    right: 15px;
+}
+
+
+/* ul.eg-filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul.eg-filters li {
+    width: 20%;
+    text-align: center;
+    list-style: none;
+    border: 1px solid #c8c7c6;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+ul.eg-filters li:not(:last-child) {
+    border-right: none;
+}
+
+ul.eg-filters li:hover,
+ul.eg-filters .eg-filter-active {
+    background: #f95658;
+    color: #fff;
+    border: 1px solid #f95658;
+} */
+
+/* Toggle Button */
+
+/* .eg-toggle {
+    position: relative;
+    width: 102px;
+    height: 34px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: -29px;
+    margin-left: auto;
+    top: -53px;
+}
+
+.checkbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.eg-list,
+.eg-map {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.eg-list:before,
+.eg-list:after,
+.eg-list span {
+    position: absolute;
+    top: 0px;
+    width: 53px;
+    height: 34px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+    transition: 0.3s ease all;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eg-list span {
+    display: flex;
+    left: 0px;
+    z-index: 1;
+    color: #4e4e4e;
+}
+
+.eg-list:after {
+    content: "Map";
+    right: 0px;
+    color: #4e4e4e;
+    width: 48px;
+}
+
+.eg-list {
+    z-index: 2;
+}
+
+.eg-map {
+    width: 100%;
+    background-color: transparent;
+    transition: 0.3s ease all;
+    z-index: 1;
+    border: 1px solid;
+    border-radius: 20px;
+}
+
+.eg-list:before {
+    content: "";
+    left: 0px;
+    background-color: transparent;
+    color: #4e4e4e !important;
+    border: 1px solid #4e4e4e;
+}
+
+.checkbox:checked+.eg-list:before {
+    left: 49px;
+}
+
+.checkbox:checked+.eg-list span {
+    color: #4e4e4e;
+}
+
+.checkbox:checked+.eg-list:after {
+    color: #4e4e4e;
+}
+
+.checkbox:checked~.eg-map {
+    background-color: transparent;
+    border: 1px solid #4e4e4e;
+    border-radius: 20px;
+} */
+
+.filter-fields.eg-distance {
+    display: block;
+    width: 100%;
+    padding: 20px;
+}
+
+.filter-fields.eg-distance .modal-close {
+    display: none;
+}
+
+.eg-filters li p {
+    font-size: 15px;
+}
+
+.eg-map-show #map {
+    display: block !important;
+    height: 800px;
+}
+
+.eg-map-show .why-choose-office,
+.eg-map-show .filter-nav,
+.eg-map-show #centre_filters,
+.eg-map-show .offices-list {
+    display: none !important;
+}
+
+.office-list-item-price span {
+    font-size: 10px;
+}
+
+.offices-list-item-data-link {
+    padding: 15px !important;
+}
+
+.eg-copy>.tab-content:nth-child(2) .facilities-list>li {
+    display: none !important;
+}
+
+html body .eg-copy>.tab-content:nth-child(2) .facilities-list>li:nth-child(1),
+html body .eg-copy>.tab-content:nth-child(2) .facilities-list>li:nth-child(2),
+html body .eg-copy>.tab-content:nth-child(2) .facilities-list>li:nth-child(3),
+html body .eg-copy>.tab-content:nth-child(2) .facilities-list>li:nth-child(4),
+html body .eg-copy>.tab-content:nth-child(2) .facilities-list>li:nth-child(5),
+html body .eg-copy>.tab-content:nth-child(2) .facilities-list>li:nth-child(6),
+html body .eg-copy>.tab-content:nth-child(2) .facilities-list>li:nth-child(7),
+html body .eg-copy>.tab-content:nth-child(2) .facilities-list>li:nth-child(8),
+html body .eg-copy>.tab-content:nth-child(2) .facilities-list>li:nth-child(9) {
+    display: block !important;
+}
+
+@media screen and (min-width: 768px) {
+
+    html body .offices-list-item>a {
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+
+}

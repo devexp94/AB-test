@@ -1,0 +1,30 @@
+html body .product-lander div[data-marqy]{
+    display: none;
+}
+html body .eg-new-section-inr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+html body .eg-new-section-inr p {
+    text-align: center;
+    margin: 15px 10px 15px 10px;
+}
+.eg-new-section {margin-top: 10px;}
+
+@media screen and (max-width:767px) {
+    html body .eg-new-section-inr p{
+        text-align: center;
+        font-size: 35px !important;
+        width: 100%;
+    }
+    
+}
+
+html body .filter-list-wrapper-mobile +div + .mt3.mb3{
+    margin-bottom: 0px;
+}

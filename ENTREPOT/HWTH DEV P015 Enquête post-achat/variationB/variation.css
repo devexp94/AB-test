@@ -1,0 +1,93 @@
+
+html body.form-popup-hide .eg-form-popup {
+    display: none;
+}
+.eg-form-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: auto;
+    z-index: 999;
+}
+.eg-form-popup .eg-form-popup-inr {
+    background: #000000;
+    padding: 15px;
+    border-radius: 3px;
+    padding-right: 35px;
+    -webkit-box-shadow: 0px 0px 12px 0px rgb(255 255 255 / 20%);
+    -moz-box-shadow: 0px 0px 12px 0px rgba(255,255,255,0.20);
+    box-shadow: 0px 0px 12px 0px rgb(255 255 255 / 20%);
+}
+.eg-form-container .eg-form-close {
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    padding: 2px;
+    cursor: pointer;
+    color: #ffffff;
+}
+.eg-form-container .eg-form-close:hover {
+    color: #fae016;
+}
+
+.eg-form-popup input {
+    padding: 5px 5px 5px 10px;
+    margin-right: 5px;
+    height: 35px;
+    border: none;
+}
+
+.eg-form-popup button {
+    background: #fae016;
+    padding: 0px 11px;
+    height: 35px;
+    box-sizing: border-box;
+    border: 1px solid #fae016;
+}
+.eg-form-popup button:hover {
+    border: 1px solid #fae016;
+    background: #000000;
+    color: #fae016;
+}
+.eg-form-popup input:focus {
+    outline: none;
+}
+
+
+
+@media screen and (max-width:600px) {
+    html body .eg-form-popup {
+        bottom: 0px;
+        right: 0px;
+        width: 100%;
+    }
+    
+    html body .eg-form-popup .eg-form-popup-inr form {
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    html body .eg-form-popup input {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .eg-form-popup .eg-form-popup-inr {
+        padding-top: 30px;
+        padding-right: 15px;
+    }
+}
+.eg-thanks {
+    color: #ffff;
+    text-align: center;
+    margin: 0px;
+    font-size: 20px;
+    font-weight: 500;
+    display: none;
+}

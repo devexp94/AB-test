@@ -1,0 +1,80 @@
+@media(max-width:767px) {
+    html body .breadcrum_custom p:after{
+        width: 14px;
+        height: 14px;
+    }
+    .breadcrum_custom {
+        flex-wrap: wrap;
+        display: flex;
+        height: 32px;
+        margin: 10px 0px;
+    }
+    .breadcrum_custom.for_build {
+        max-width: 540px;
+        margin: 10px auto;
+        padding: 0px 10px;
+    }
+    /* .breadcrum_custom >p:before {
+        display: contents;
+        content: ">";
+        font-size: 1.2rem;
+        line-height: 32px;
+    } */
+    .breadcrum_custom > p {
+        margin: 0px 0px 0px 7px;
+    }
+    }
+    @media(max-width:400px) {
+    .breadcrum_custom > p {
+        font-size: 13px;
+    }
+    }
+    @media (min-width:401px) and (max-width:500px) {
+    .breadcrum_custom > p {
+        font-size: 14px;
+    }
+    }
+    @media (min-width:501px) and  (max-width:600px) {
+    .breadcrum_custom > p {
+        font-size: 15px;
+    }
+    }
+    @media (min-width:601px) and (max-width:767px) {
+    .breadcrum_custom > p {
+        font-size: 17px;
+    }
+    }
+
+
+    .breadcrum_custom img {
+        max-width: 18px;
+        display: inline-block;
+        margin-top: -1px;
+    }
+    
+    .breadcrum_custom p {
+        display: inline-block;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        font-size: 12px;
+        font-weight: 600;
+        color: #6b6d76cf;
+        position: relative;
+        padding-left: 20px;
+    }    
+    .breadcrum_custom p:after {
+        position: absolute;
+        top: 0px;
+        left: 3px;
+        content: '';
+        background: url('https://expogrowth.in/wp-content/uploads/2022/03/right-arrow-2.png');
+        width: 15px;
+        height: 15px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .breadcrum_custom {
+        display: flex;
+        align-items: center;
+    }

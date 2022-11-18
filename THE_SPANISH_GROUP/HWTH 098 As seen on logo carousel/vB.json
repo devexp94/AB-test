@@ -1,0 +1,11 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://thespanishgroup.org/",
+		"https://thespanishgroup.org/translations/certified-translations-for-official-civil-documents/"
+	]
+}

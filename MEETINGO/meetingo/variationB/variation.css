@@ -1,0 +1,38 @@
+html body mrb-search-page {
+    display: flex;
+    flex-direction: column;
+}
+
+html body .mrb-promise{
+    order: -1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767.98px) {
+    html body .mrb-promise {
+        padding: 10px 10px;
+    }    
+    html body .mrb-promise .row.owl-carousel.owl-theme{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    html body .mrb-promise h2 {
+        font-size: 32px !important;
+    }
+}
+
+
+html body .mrb-promise h2 {
+    margin-bottom: 30px;
+    font-size: 42px;
+}
+
+html body .mrb-promise .btn-wrap {
+    display: none !important;
+}
+
+html body .mrb-promise .mrb-img-box .img-wrap {
+    margin-bottom: 10px;
+    height: 70px;
+}

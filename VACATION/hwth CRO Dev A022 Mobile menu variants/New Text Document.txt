@@ -1,0 +1,9 @@
+https://www.loom.com/share/142fb6a5817a45599aba74f49b0ed376
+
+hwth CRO Dev A022 Mobile menu variants
+URL- https://www.vacation.inc/
+Mobile only
+3 variants set up as 3 personalization campaigns (mobile-only):
+Reduced vibe generator (one setting shown only, carousel to slide to other settings)
+Solid background + icons instead of text on mobile menu + solid background behind open menu
+Solid background + icons instead of text on mobile menu + solid background behind open menu (ONLY when menu open)

@@ -1,0 +1,10 @@
+{
+	"files": [
+		"./variationC/variation.css",
+		"./variationC/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://nypost.com/2022/02/15/inside-rangers-7-possible-matchups-for-nhl-playoffs-2022/"
+	]
+}

@@ -1,0 +1,14 @@
+html body .eg-offer {
+    margin: 15px 0px 0px 0px;
+    font-size: 28px;
+}
+html body .gated-article-popup__container .gated-article-popup__trial-link{
+    max-width: 90%;
+}
+
+@media screen and (max-width:360px) {
+    html body .eg-offer {
+        margin: 15px 0px 0px 0px;
+        font-size: 26px;
+    }
+}

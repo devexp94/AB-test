@@ -1,0 +1,28 @@
+html body form.amform-form .control .class-step2:before {
+    content: '3';
+}
+.eg-number2 {
+    position: relative;
+    margin-bottom: 32px;
+    font-size: 18px;
+    color: #000;
+    font-weight: 600;
+    font-family: 'WotfardRegular';
+    line-height: 22px;
+    text-align: center;
+}
+.eg-number2:before {
+    content: '2';
+    font-size: 14px;
+    line-height: 14px;
+    padding: 6px;
+    border-radius: 20px;
+    background: #2f78f5;
+    color: #fff;
+    font-family: 'WotfardBold';
+    display: block;
+    width: 26px;
+    height: 26px;
+    margin: 0 auto;
+    text-align: center;
+}

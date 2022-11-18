@@ -1,0 +1,97 @@
+.swiper-wrapper {
+  pointer-events: none;
+  cursor: none;
+  user-select: none;
+}
+.eg-slider-heading {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600!important;
+  margin-top: 40px;
+}
+.swiper.egswiper {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+.egswiper .swiper-slide {
+  width: auto !important;
+}
+.eg-wrapper {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  filter: grayscale(1);
+}
+.eg-wrapper img {
+  width: 100%;
+}
+
+.egswiper .swiper-button-next, 
+.egswiper .swiper-button-prev{
+  display: none;
+}
+
+
+.eg-wrapper img[alt="Associated-Press"] {
+  max-width: 70px;
+}
+
+.swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.eg-wrapper img[alt="CNET"] {
+  width: 142px;
+}
+
+.eg-wrapper img[alt="mercurynews"] {
+  width: 220px !important;
+}
+
+.eg-wrapper img[alt="thelondoneconomic"] {
+  width: 130px;
+}
+
+.eg-wrapper img[alt="B2C"] {
+  width: 90px !important;
+}
+.eg-wrapper img[alt="time-logo"],
+.eg-wrapper img[alt="hrcom-logo"] {
+  width: 100px;
+  filter: invert(1)
+}
+.eg-wrapper img[alt="yourmoney"] {
+  width: 202px;
+}
+.eg-wrapper img[alt="dallasnews"] {
+  width: 250px;
+}
+.eg-wrapper img[alt="Forbes-logo"] {
+  width: 100px;
+}
+.eg-wrapper img[alt="houstonchronicle"] {
+    width: 220px;
+    filter: invert(1);
+}
+
+.eg-wrapper img[alt="Inc5000"] {
+    width: 80px;
+}

@@ -1,0 +1,11 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.bob-lemenuisier.fr/",
+		"https://www.kpark.fr/"
+	]
+}

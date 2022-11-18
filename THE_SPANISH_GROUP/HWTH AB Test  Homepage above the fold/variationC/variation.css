@@ -1,0 +1,169 @@
+#btbar .uspbar__options-list {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    html body .uspbar__container {
+        border: none;
+        position: absolute;
+        top: 50%;
+        display: initial;
+        right: 20px;
+        transform: translateY(-50%);
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    html body .template_banner .uspbar__container {
+        right: 96px !important;
+    }
+}
+
+.uspbar__options-list {
+    padding: 0px 10px !important;
+}
+
+html body .nfn__container {
+    position: static;
+    /* max-width: 100% !important; */
+    width: 100%;
+    display: flex;
+    margin-left: 0px;
+    margin-top: 20px;
+    padding: 0px;
+    background: none;
+    border: none;
+}
+
+.feature-neka a {
+    margin-bottom: 0px;
+}
+
+html body .banner_text {
+    display: none;
+}
+
+
+html body .nfn__content {
+    background: transparent;
+}
+
+/* html body section.template_banner.feature-neka {
+    background: url('https://thespanishgroup.org/wp-content/uploads/2020/08/Group-52-1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+html body .nfn__container {
+    padding: 0px;
+    background: transparent;
+}
+
+html body div#bg1-n {
+    display: none;
+}
+
+html body .uspbar__container {
+    border: none;
+}
+
+html body .uspbar__container .uspbar__options-list>li,
+html body .uspbar__options-list>li:first-child,
+html body .uspbar__options-list>.uspbar__option:not(:first-child) {
+    display: inline-block !important;
+}
+
+@media screen and (max-width: 991px) {
+    html body .nfn__container {
+        width: 100%;
+        max-width: 100% !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .uspbar__container .uspbar__option {
+        background: #fff;
+        margin-bottom: 15px;
+        width: 100% !important;
+    }
+
+    #whattypeoftranslation .container>.row {
+        display: flex;
+        align-items: center;
+    }
+
+    #whattypeoftranslation .uspbar__container {
+        max-width: 360px;
+    }
+
+    #whattypeoftranslation .uspbar__content.container {
+        width: 100% !important;
+    }
+
+    #whattypeoftranslation .uspbar__content .uspbar__options-list {
+        display: flex;
+        flex-direction: column;
+        max-width: 320px;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+
+    .template_banner .uspbar__options-list .uspbar__option {
+        margin: 10px !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .template_banner .nfn__container .nfn__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .template_banner .nfn__container .nfn__content .nfn__trust {
+        order: 10;
+        margin: 10px 0px 30px 0px;
+    }
+}
+
+@media screen and (max-width: 636px) {
+    html body .template_banner .uspbar__options-list {
+        max-width: 322px;
+        margin: 0 auto;
+        padding: 0px;
+    }
+
+    html body .template_banner .uspbar__options-list .uspbar__option:nth-child(2) {
+        margin: 20px 0px !important;
+    }
+
+    html body .template_banner .uspbar__options-list .uspbar__option {
+        width: 100%;
+        background: #fff;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
+    html body .template_banner .uspbar__option-title {
+        padding: 9px 16px 9px 16px !important;
+    }
+}
+
+html body .template_banner .uspbar__options-list .uspbar__option {
+    background: #fff;
+    position: relative;
+}
+
+@media screen and (max-width: 365px) {
+    html body .template_banner .uspbar__options-list {
+
+        padding: 10px !important;
+    }
+}
+
+html body .template_banner .uspbar__option-popup {
+    z-index: 99;
+}
