@@ -39,7 +39,7 @@
     function init2(){
       if(window.innerWidth > 1024){
         const egBtnHtml = `
-        <a href="#" class="eg-contact-us-cta">CONTACT US</a>`
+        <a href="https://www.landart.com.au/contact/" class="eg-contact-us-cta">CONTACT US</a>`
         document.querySelector(".section-3 #scroll > h1").insertAdjacentHTML("beforeend",egBtnHtml);
       }
     }
