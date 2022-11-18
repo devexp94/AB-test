@@ -28,7 +28,7 @@
         font-size: 20px;
         flex: 1;
         justify-content:space-between;
-        padding-left: 10px;
+        padding-left: 25px;
     }
 
     .main-header #menu-main-nav li:last-child,
@@ -50,6 +50,12 @@
         display: block;
         padding: 15px 15px 12px;
         width: fit-content;
+        margin-top: 22px;
+        color: white !important;
+    }
+
+    .eg-contact-us-cta:hover{
+        color: #191970 !important;
     }
 
 }
