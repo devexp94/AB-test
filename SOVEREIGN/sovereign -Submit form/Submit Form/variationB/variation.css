@@ -1,0 +1,461 @@
+.hs-form.eg_form.step1 .hs-main-font-element.step2,
+.hs-form.eg_form.step1 .hs-main-font-element.step2-3,
+.hs-form.eg_form.step1 .hs_submit,
+.hs-form.eg_form.step1 .legal-consent-container,
+.hs-form.eg_form.step1 .hs_contact_title,
+.hs-form.eg_form.step1 .hs_firstname,
+.hs-form.eg_form.step1 .hs_is_mailable_for_sovereign,
+ .hs-form.eg_form.step1 .hs_lastname,
+ .hs-form.eg_form.step1 .hs_phone,
+ .hs-form.eg_form.step1 .hs_email,
+ .hs-form.eg_form.step1 .hs_is_emailable,
+ .hs-form.eg_form.step2 .hs_destination_preferences,
+ .hs-form.eg_form.step2 .hs_departure_date,
+ .hs-form.eg_form.step2 .hs_preferred_duration,
+ .hs-form.eg_form.step2 .hs_total_budget_grouped_,
+ .hs-form.eg_form.step2 .hs_departure_airport,
+ .hs-form.eg_form.step2 .hs_flexible_dates,
+ .hs-form.eg_form.step2 .legal-consent-container,
+ .hs-form.eg_form.step2 .hs_number_of_passengers_adults,
+ .hs-form.eg_form.step2 .hs_number_of_passengers_children,
+ .hs-form.eg_form.step2 .hs_number_of_passengers_infants,
+ .hs-form.eg_form.step2 .hs_holiday_requirements,
+ .hs-form.eg_form.step2 .hs_children_s_age,
+ .hs-form.eg_form.step2 .hs-main-font-element.step2-3,
+ .hs-form.eg_form.step1 .ym_btn.step2,
+ .hs-form.eg_form.step2 .ym_btn.step1{
+    display: none;
+}
+
+
+html body .bm_form_heading > div{
+    padding-bottom: 70px;
+    border-bottom: 1px solid #d3d7d8;
+    margin-bottom: 20px !important;
+}
+
+html body .hs-form.eg_form .hs-main-font-element.step1{
+    margin-top: -15px !important;
+    padding-top: 15px !important;
+}
+
+html body .hs-form.eg_form .hs-main-font-element.step1,
+html body .bm_form_heading > div{
+    margin: 0 -2rem;
+    background-color: #f4f8f9;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.ym_btn{
+    width: 100%;
+    background: #477e78;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+ .hs-form.eg_form input[type=submit]:hover,
+.ym_btn:hover{
+    background: #38605c;
+}
+
+ .hs-form.eg_form input[type=submit]{
+    background: #477e78;
+    color: #fff
+}
+
+
+html body .StepsSection_bar {
+    width: 400px !important;
+    height: 2px;
+    border-radius: 10px;
+    position: relative;
+    background: #d3d7d8;
+    left: 5px;
+    margin: auto;
+}
+
+html body .StepsSection_bar .step1 {
+    left: -5px;
+}
+
+html body .StepsSection_bar .step1::before,
+html body .StepsSection_bar .step2::before,
+html body .StepsSection_bar .step3::before{
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    width: max-content;
+    color: #333;
+    font-weight: 500;
+}
+
+html body .StepsSection_bar .step1::before{
+    content: 'Your Travel Plans';
+
+}
+
+html body .StepsSection_bar .step2::before{
+    content: 'Contact Details';
+}
+
+html body .StepsSection_bar .step3::before{
+    content: 'Marketing';
+}
+
+
+html body .StepsSection_bar .step2 {
+    right: -5px;
+}
+html body .StepsSection_bar .step3 {
+    right: -2px;
+}
+
+.StepsSection_bar .step1, 
+.StepsSection_bar .step2,
+.StepsSection_bar .step3 {
+    height: 27px;
+    width: 27px;
+    border-radius: 50%;
+    margin-top: -12px;
+    position: absolute;
+    z-index: 9;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    border: 1px solid #d3d7d8;
+    background-color: #f4f8f9;
+    cursor: pointer;
+}
+
+.bm_form_heading .StepsSection_bar .step1,
+.bm_form_heading.step1Complete .StepsSection_bar .step2,
+.bm_form_heading.step2Complete .StepsSection_bar .step2,
+.bm_form_heading.step2Complete .StepsSection_bar .step3 {
+    background-color: #82C0B7;
+    color: #fff;
+}
+
+
+/* ui css */
+html body .Modal .legal-consent-container,
+html body .Modal .hs_error_rollup{
+    display: none;
+}
+html body .Modal{
+    z-index: 99999;
+}
+html body .Modal_header{
+    position: absolute;
+    right: -35px;
+    top: -15px;
+}
+
+
+
+.hs-form.eg_form .hs-dependent-field > div{
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+html body .hs-form.eg_form fieldset > div{
+    position: relative;
+}
+
+
+html body .hs-form.eg_form fieldset > div .hs-error-msgs,
+.hs-form.eg_form .hs-dependent-field > div .hs-error-msgs{
+    position: absolute;
+    bottom: -25px;
+}
+html body .hs-form.eg_form fieldset > div.hs_contact_title .hs-error-msgs{
+    bottom: -35px;
+}
+
+ .hs-form.eg_form fieldset[data-reactid*="$16"] > div{
+    width: 50%;
+    float: left;
+}
+ .hs-form.eg_form .hs_destination_preferences{
+    width: 50%;
+    float: left;
+    padding-top: 0;
+}
+
+html body .Modal_closeButton{
+    background: transparent;
+    padding: 0;
+    z-index: 999;
+}
+
+html body .Modal_closeButton::before{
+    content: "\f00d";
+    font-weight: 600;
+    font-size: 34px;
+    color: #fff;
+}
+
+html body .HubSpotForm .hs-form.eg_form .fieldset-title{
+    text-align: center;
+    font-size: 18px !important;
+    color: #000;
+}
+
+
+html body .hs-form.eg_form .hs_is_mailable_for_sovereign{
+    position: absolute;
+    top: -102px;
+    left: 50%; 
+    margin-left: 5px;
+}
+
+html body .hs-form.eg_form .hs_is_emailable{
+    position: relative;
+}
+
+html body .hs-form.eg_form .hs_is_mailable_for_sovereign ul.no-list.hs-error-msgs.inputs-list,
+html body .hs-form.eg_form ul.no-list.hs-error-msgs.inputs-list{
+    position: absolute;
+    top: 60px;
+}
+
+html body .hs-form.eg_form .hs_is_mailable_for_sovereign label,
+html body .hs-form.eg_form .hs_is_emailable label{
+    padding-right: 40px;
+}
+
+html body .hs-form.eg_form .hs_is_mailable_for_sovereign label .hs-form.eg_form-required,
+html body .hs-form.eg_form .hs_is_emailable label .hs-form.eg_form-required{
+    display: none;
+}
+
+html body .hs-form.eg_form .hs_flexible_dates{
+    padding-top: 0;
+}
+
+html body .hs-form.eg_form .hs_flexible_dates .inputs-list,
+html body .hs-form.eg_form .hs_flexible_dates .inputs-list, 
+html body .hs-form.eg_form .hs_is_mailable_for_sovereign .inputs-list, 
+html body .hs-form.eg_form .hs_is_emailable .inputs-list {
+    display: flex;
+    gap: 15px;
+}
+
+html body .HubSpotForm .hs-form.eg_form .hs-form-radio-display > span{
+    position: relative;
+}
+
+
+/* html body .hs-form.eg_form .hs-dependent-field > div{
+    width: 50%;
+    float: left;
+} */
+
+html body .hs-form.eg_form .hs-dependent-field > div ul.no-list.hs-error-msgs.inputs-list{
+    position: absolute;
+}
+
+
+html body  .hs-form.eg_form input[type=submit]{
+    background: #487E78;;
+    color: #fff
+}
+
+html body  .hs-form.eg_form input[type=submit]:hover{
+    background: #355e59;
+}
+
+html body  .hs-form.eg_form label{
+    font-size: 13px;
+    font-weight: 600;
+}
+
+html body  .hs-form.eg_form .hs_children_s_age,
+html body  .hs-form.eg_form .hs_holiday_requirements,
+html body  .hs-form.eg_form .hs_number_of_passengers_infants,
+html body  .hs-form.eg_form .hs_number_of_passengers_children, 
+html body  .hs-form.eg_form .hs_number_of_passengers_adults{
+    position: relative;
+}
+
+html body  .hs-form.eg_form .hs_children_s_age legend,
+html body  .hs-form.eg_form .hs_holiday_requirements legend,
+html body  .hs-form.eg_form .hs_number_of_passengers_infants legend,
+html body  .hs-form.eg_form .hs_number_of_passengers_children legend,
+html body  .hs-form.eg_form .hs_number_of_passengers_adults legend{
+    opacity: 0.5;
+    font-size: 11px;
+    position: absolute;
+    top: 3px;
+    width: max-content;
+}
+
+html body  .hs-form.eg_form .hs_number_of_passengers_infants legend,
+html body  .hs-form.eg_form .hs_number_of_passengers_children legend{
+    left: 115px;
+}
+
+html body  .hs-form.eg_form .hs_number_of_passengers_adults legend{
+    left: 110px;
+}
+html body  .hs-form.eg_form .hs_holiday_requirements legend{
+    left: 135px;
+}
+
+html body  .hs-form.eg_form .hs_children_s_age legend{
+    left: 105px;
+    font-size: 9px;
+}
+
+html body  .hs-form.eg_form .hs_children_s_age legend::before,
+html body  .hs-form.eg_form .hs_holiday_requirements legend::before,
+html body  .hs-form.eg_form .hs_number_of_passengers_infants legend::before,
+html body  .hs-form.eg_form .hs_number_of_passengers_children legend::before,
+html body  .hs-form.eg_form .hs_number_of_passengers_adults legend::before{
+    content: '(';
+    position: absolute;
+    left: 10px;
+}
+html body  .hs-form.eg_form label + legend {
+    padding-left: 15px;
+}
+
+html body  .hs-form.eg_form .hs_children_s_age legend::after,
+html body  .hs-form.eg_form .hs_holiday_requirements legend::after,
+html body  .hs-form.eg_form .hs_number_of_passengers_infants legend::after,
+html body  .hs-form.eg_form .hs_number_of_passengers_children legend::after,
+html body  .hs-form.eg_form .hs_number_of_passengers_adults legend::after{
+    content: ')';
+    position: absolute;
+    right: -5px;
+}
+
+html body .submitted-message {
+    font-size: 24px;
+    position: relative;
+    top: 60%;
+    transform: translateY(-50%);
+}
+
+html body .submitted-message::before{
+    font-family: 'Font Awesome 5 Free';
+    content: "\f058";
+    font-weight: 600;
+    font-size: 140px;
+    position: absolute;
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #477e78;
+}
+
+@media screen and (max-width: 800px) {
+    html body .Modal_header{
+        right: 14px;
+        top: -10px;
+    }
+
+    .Modal_closeButton::before{
+        color: rgba(0,0,0,.667) !important;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 481px){
+    html body  .hs-form.eg_form .hs_holiday_requirements legend,
+    html body  .hs-form.eg_form .hs_number_of_passengers_infants legend,
+    html body  .hs-form.eg_form .hs_number_of_passengers_children legend,
+    html body  .hs-form.eg_form .hs_number_of_passengers_adults legend{
+        position: inherit;
+        width: 100%;
+        left: 5px;
+    }
+
+    html body  .hs-form.eg_form .hs_holiday_requirements legend::after,
+    html body  .hs-form.eg_form .hs_number_of_passengers_infants legend::after,
+    html body  .hs-form.eg_form .hs_number_of_passengers_children legend::after,
+    html body  .hs-form.eg_form .hs_number_of_passengers_adults legend::after{
+        right: initial;
+    }
+}
+
+@media screen and (max-width: 480px){
+    html body .hs-form.eg_form .hs_is_mailable_for_sovereign{
+        position: inherit;
+        margin-left: 0;
+        top: 0;
+        left: 0;
+    }
+
+    html body .hs-form.eg_form .hs_is_emailable{
+        margin-bottom: 0;
+    }
+
+    html body  .hs-form.eg_form .hs_holiday_requirements legend{
+        position: inherit;
+        width: 100%;
+        left: 0;
+    }
+
+    html body  .hs-form.eg_form .hs_holiday_requirements legend::after{
+        right: initial;
+    }
+
+    html body .hs-form.eg_form .hs-dependent-field > div,
+    html body .hs-form.eg_form .hs_flexible_dates,
+    html body  .hs-form.eg_form .hs_destination_preferences{
+        width: 100%;
+    }
+
+    html body .hs-form.eg_form .hs_is_mailable_for_sovereign ul.no-list.hs-error-msgs.inputs-list,
+    html body .hs-form.eg_form ul.no-list.hs-error-msgs.inputs-list{
+        position: absolute;
+        top: 65px;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0){
+    ::i-block-chrome, 
+    html body  .hs-form.eg_form label,
+    html body  .hs-form.eg_form .hs_holiday_requirements legend, 
+    html body  .hs-form.eg_form .hs_number_of_passengers_infants legend, 
+    html body  .hs-form.eg_form .hs_number_of_passengers_children legend, 
+    html body  .hs-form.eg_form .hs_number_of_passengers_adults legend{
+        letter-spacing: -0.08em;
+        top: 3px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    html body .StepsSection_bar{
+        width: 250px !important;
+    }
+
+}
+
+@media screen and (max-width: 359px) {
+    html body .StepsSection_bar{
+        width: 210px !important;
+    }
+    .StepsSection_bar .step1, 
+    .StepsSection_bar .step2, 
+    .StepsSection_bar .step3{
+        font-size: 12px;
+    }
+}
+
+.Modal .HubSpotForm .hs-form.eg_form .hs-error-msgs.hide_error{
+    display: none !important;
+}
+
+html body .HubSpotForm .hs_departure_date .input input.hs-input:only-child {
+    width: 340px !important;
+    height: 40px;
+}
