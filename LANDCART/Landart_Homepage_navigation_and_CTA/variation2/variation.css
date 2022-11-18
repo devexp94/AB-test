@@ -9,15 +9,15 @@
     .main-header .header-container {
         justify-content: space-between;
     }
-    
+
     .main-header #menu-main-nav,
     .eg-contact-us-cta {
         font-family: 'Colgent';
         font-style: normal;
         font-weight: 400;
-         color: #FFFFFF;
-         line-height: 27px;
-         text-transform: uppercase;
+        color: #FFFFFF;
+        line-height: 27px;
+        text-transform: uppercase;
     }
 
     .main-header #menu-main-nav {
@@ -27,12 +27,12 @@
         padding-top: 16px;
         font-size: 20px;
         flex: 1;
-        justify-content: flex-end;
+        justify-content:space-between;
         padding-left: 10px;
     }
 
     .main-header #menu-main-nav li:last-child,
-    .eg-contact-us-cta{
+    .eg-contact-us-cta {
         border: 2px solid white;
     }
 
@@ -47,8 +47,9 @@
     .eg-contact-us-cta {
         font-size: 22px;
         text-decoration: none;
-        display: inline-block;
+        display: block;
         padding: 15px 15px 12px;
+        width: fit-content;
     }
 
 }
