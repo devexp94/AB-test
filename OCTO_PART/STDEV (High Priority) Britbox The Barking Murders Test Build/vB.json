@@ -1,0 +1,10 @@
+{
+	"files": [
+		"VariantB/variation.css",
+		"VariantB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://watch.britbox.com/us/the-barking-murders"
+	]
+}

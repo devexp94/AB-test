@@ -1,0 +1,15 @@
+.eg-select-section {
+    display: flex;
+    align-items: flex-end;
+    margin-top: -100px;
+    position: relative;
+    top: -38px;
+}
+
+.eg-select-section > form:nth-child(2) {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+#dmcsProductSelectArea #ProductOption {
+    display: none;
+}

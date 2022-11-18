@@ -1,0 +1,11 @@
+{
+	"files": [
+		"VariantB/variation.css",
+		"VariantB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://digitalsales.altium.com/StepsNew/Login/index",
+		"https://www.altium.com/"
+	]
+}

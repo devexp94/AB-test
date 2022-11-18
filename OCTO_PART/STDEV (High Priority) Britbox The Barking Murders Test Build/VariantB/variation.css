@@ -1,0 +1,37 @@
+html body #element-193 img,
+html body main > section:nth-child(6) {
+    display: none !important;
+}
+
+@media screen and (min-width:768px) {
+    html body #element-193{
+        left: 29.625rem;
+        width: 36.875rem;
+    }    
+    html body #element-77 {
+        width: 50%;
+        top: 6rem;
+    }
+    
+    html body #element-76 {
+        width: 50%;
+        top: 11.50rem;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    html body #element-193{
+        display: block !important;
+        top: 13.75rem;
+    }    
+    html body #page_block_header + section .section-block {
+        background: none !important;
+    }
+    html body #element-77 {
+        top: 0;
+    }
+    html body #element-76{
+        top: 4.25rem;
+    }
+}

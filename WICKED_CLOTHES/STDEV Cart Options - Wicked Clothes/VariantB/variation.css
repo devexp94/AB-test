@@ -1,0 +1,42 @@
+.inline-cart .inline-cart__footer .checkout-btn:before {
+    content: '';
+    background: url('https://expogrowth.in/wp-content/uploads/2022/07/lock-icon-big.svg');
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-size: cover;
+}
+
+.inline-cart .inline-cart__footer .checkout-btn {
+    position: relative;
+    background: #f7d537;
+    color: #000;
+}
+.inline-cart__total-amount-container {
+    position: relative;
+}
+.inline-cart .inline-cart__footer .inline-cart__total-amount {
+    position: absolute;
+    top: calc(100% + 17px);
+    left: calc(50% + 52px);
+    z-index: 99999;
+    font-weight: 700;
+    font-size: 15px !important;
+}
+
+.inline-cart .inline-cart__footer .inline-cart__total-amount:before {
+    content: '- ';
+}
+.inline-cart .inline-cart__footer .inline-cart__total-amount-title{
+    opacity: 0;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 991px) {
+    html body .inline-cart .inline-cart__footer .inline-cart__total-amount{
+        top: calc(100% + 12px);
+    }
+}

@@ -1,0 +1,51 @@
+html body .pdp--sizing-help {
+    display: none;
+}
+.pdp-fieldset-header-wrap {
+    flex-wrap: wrap;
+}
+
+.pdp-fieldset-header-wrap .eg-fit-option {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    padding: 15px 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    letter-spacing: normal;
+    background: #f5f5f5;
+    color: #000000;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 100;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.pdp-fieldset-header-wrap .eg-fit-option span {
+    margin-left: 5px;
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+    display: inline-block;
+}
+.pdp-fieldset-header-wrap .eg-size-label {
+    color: #000000;
+    font-family: FuturaPT, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.3;
+    letter-spacing: normal;
+}
+
+.pdp-fieldset-header-wrap .eg-size-option {
+    letter-spacing: normal;
+    text-decoration: underline;
+    color: #000000;
+    font-family: FuturaPT, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+}

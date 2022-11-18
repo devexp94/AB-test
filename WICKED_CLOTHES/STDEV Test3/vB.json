@@ -1,0 +1,11 @@
+{
+	"files": [
+		"VariantB/variation.css",
+		"VariantB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.wickedclothes.com/products/love-at-first-light-shirt?variant=40036337385529",
+		"https://www.wickedclothes.com/products/predict-the-future-sweatshirt?variant=32907886395449"
+	]
+}

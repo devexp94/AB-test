@@ -1,0 +1,48 @@
+html body.eg-discount-banner .eg-discount{
+    display: none;
+}
+html body .eg-discount{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 99;
+    background: #212121;
+}
+
+html body .eg-discount .eg-discount-inr {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+html body .eg-discount .eg-text{
+    color: #fff;
+    font-size: 20px;
+    padding: 16px 10px 15px 15px;
+    line-height: 1.1;
+    font-family: 'futura-pt', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.62px;
+    cursor: pointer;
+}
+/* html body .eg-discount .eg-cross:hover,
+html body .eg-discount .eg-text:hover{
+    background: #0e0e0e;
+} */
+html body .eg-discount .eg-cross {
+    color: #fff;
+    padding: 15px 15px 15px 5px;
+    font-size: 32px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'FontAwesome';
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 0.62px;
+}

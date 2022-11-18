@@ -1,0 +1,42 @@
+html body .eg-add-button {
+    width: 100%;
+    margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 10px 10px 0px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #000000;
+    font-family: "FuturaPT",sans-serif;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+html body .shop_dynamic_form .pdp--form__cta-container #add-to-bag{
+    width: 100% !important;
+}
+html body #smartwishlist__container {
+    display: none !important;
+}
+
+html body .eg-add-button i#wishlist_icon{
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    padding: 0;
+    display: block;
+    margin: 12px;
+}
+
+html body .eg-add-button .eg-icon {
+    border: 2px solid black;
+    padding: 0 !important;
+    height: auto !important;
+    border-radius: 100%;
+    margin-right: 11px;
+}
+html body .eg-add-button:hover i#wishlist_icon,
+html body .eg-add-button.eg-wishlist-show i#wishlist_icon{
+    background: url('https://cdn.shopify.com/s/files/1/0251/5984/files/wl-heart-icon-filled-red.svg') no-repeat 100% 100%;
+}

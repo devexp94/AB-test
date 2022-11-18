@@ -1,0 +1,41 @@
+@media screen and (max-width: 767px) {
+    html body #pdp #pdp--main-image {
+        order: -2;
+        margin-bottom: 0px;
+    }
+
+    .pdp--mobile-slider-dots {
+        order: -1;
+    }
+
+    .pdp--header.mobile {
+        margin-top: 23px;
+    }
+
+    #pdp--main-image .slick-arrow {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 32px;
+        height: 32px;
+    }
+
+    .slick-next:before,
+    .slick-prev:before {
+        display: none;
+    }
+
+    #pdp--main-image .slick-next {
+        right: 15px;
+    }
+
+    #pdp--main-image .slick-prev {
+        left: 15px;
+    }
+
+    #pdp--main-image .slick-arrow svg {
+        width: 32px;
+        height: 32px;
+    }
+}

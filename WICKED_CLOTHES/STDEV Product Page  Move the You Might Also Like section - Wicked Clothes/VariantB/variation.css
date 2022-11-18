@@ -1,0 +1,33 @@
+@media screen and (max-width: 767px) {
+    html body .pdp-findify--slider.mobile {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px 10px;
+    }
+
+    html body .pdp-findify--slider.mobile>div {
+        width: 50%;
+        padding: 10px 10px;
+    }
+
+    html body .findify-slide-container .findify-slide a img {
+        width: 100% !important;
+        padding: 0px 10px;
+        margin-top: 10px !important;
+    }
+
+    html body .findify-slide-container .findify-slide {
+        height: auto !important;
+        width: 100% !important;
+    }
+
+    html body .findify-slide-container .findify-slide p {
+        margin-top: 5px !important;
+    }
+
+    html body .findify-slide-container .findify-slide .quickAdd,
+    html body .findify-slide-container .findify-slide:hover .quickAdd {
+        display: none;
+    }
+}

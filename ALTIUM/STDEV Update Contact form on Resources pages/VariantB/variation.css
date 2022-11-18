@@ -1,0 +1,39 @@
+html body .eg-form-top .eg-heading{
+    font-size: 18px;
+    max-width: 274px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12px;
+}
+html body .eg-form-top .eg-logo{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+html body .eg-form-top .eg-para{
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 13px;
+    max-width: 286px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid;
+}
+html body .eg-form-top .eg-form-heading{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+html body .eg-form-top .eg-steps{
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+html body .form-sidebar .form-sidebar__head{
+    display: none;
+}

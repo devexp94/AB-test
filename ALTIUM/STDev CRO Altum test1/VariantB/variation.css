@@ -1,0 +1,19 @@
+html body .eg-icon-section .eg-icon-inr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto 0px auto;
+}
+
+html body .eg-icon-section .eg-icon-inr img[alt="Get App"] {
+    max-width: 80px;
+}
+
+html body .eg-icon-section .eg-icon-inr img[alt="Leader Fall"] {
+    max-width: 70px;
+}
+
+html body .eg-icon-section .eg-icon-inr img[alt="Capterra"] {
+    margin: 0px 20px;
+    max-width: 107px;
+}

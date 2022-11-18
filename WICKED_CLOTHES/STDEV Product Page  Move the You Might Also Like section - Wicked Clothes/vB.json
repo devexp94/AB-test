@@ -1,0 +1,10 @@
+{
+	"files": [
+		"VariantB/variation.css",
+		"VariantB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.wickedclothes.com/products/live-fast-eat-trash-shirt"
+	]
+}

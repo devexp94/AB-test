@@ -1,0 +1,10 @@
+{
+	"files": [
+		"VariantB/variation.css",
+		"VariantB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://resources.altium.com/p/pcb-design-basics-new-designers"
+	]
+}

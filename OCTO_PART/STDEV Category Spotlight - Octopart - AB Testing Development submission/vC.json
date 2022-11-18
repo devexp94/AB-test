@@ -1,0 +1,10 @@
+{
+	"files": [
+		"VariantC/variation.css",
+		"VariantC/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://octopart.com/"
+	]
+}

@@ -1,0 +1,27 @@
+.icons-grid .slick-arrow {
+    display: none !important;
+}
+
+.slick-dots li button {
+    display: none;
+}
+
+.slick-dots li {
+    list-style: none;
+    border: 3px solid #728287;
+    width: 15px;
+    height: 15px;
+    margin: 0px 10px;
+    border-radius: 100%;
+}
+
+.slick-dots {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slick-dots li.slick-active {
+    background: #728287;
+}

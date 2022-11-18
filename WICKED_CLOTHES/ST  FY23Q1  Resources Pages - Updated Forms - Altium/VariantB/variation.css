@@ -1,0 +1,14 @@
+@media screen and (max-width: 767px) {
+
+    html body .inline-cart__footer {
+        position: static !important;
+    }
+
+    html body .inline-cart__content-container {
+        height: auto !important;
+    }
+
+    html body .inline-cart__content-container .whitespace {
+        height: 20px !important;
+    }
+}

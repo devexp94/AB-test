@@ -1,0 +1,17 @@
+.inline-cart-gwp__container {
+    position: relative;
+}
+
+input#toggle {
+    position: absolute;
+    top: 21px;
+    left: 33px;
+    width: 16px;
+    height: 16px;
+}
+
+.inline-cart .inline-cart-gwp #toggle[type=checkbox]:checked ~ .inline-cart-gwp__gifts{
+ opacity: 0;
+  height: 0;
+  display: none;   
+}

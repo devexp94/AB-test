@@ -1,0 +1,16 @@
+/* @media screen and (max-width: 767px) { */
+
+html body .inline-cart .inline-cart__footer {
+    position: static !important;
+}
+
+html body .inline-cart .inline-cart__content-container {
+    height: auto !important;
+    overflow: auto;
+}
+
+html body .inline-cart .inline-cart__content-container .whitespace {
+    height: 20px !important;
+}
+
+/* } */

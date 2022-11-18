@@ -1,0 +1,95 @@
+html body .bg-section-media-seen {
+    background-image: none !important;
+}
+.eg-grip-size-section-inr{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1140px;
+    align-items: center;
+    /* border-top: 1px solid #c5c5c538; */
+}
+
+.eg-grip-size-section .eg-heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    padding: 0px 20px;
+}
+
+.eg-grip-size-section .eg-image-section,
+.eg-grip-size-section .eg-content-section {
+    width: 50%;
+    padding: 20px;
+}
+
+
+.eg-grip-size-section .eg-image-section img {
+    width: 100%;
+    max-width: 430px;
+}
+
+.eg-grip-size-section .eg-image-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.eg-grip-size-section .eg-content-heading {
+    font-size: 23px;
+    color: #000000;
+    font-weight: 600;
+    margin-top: 0px;
+    line-height: 1.2;
+}
+
+p.eg-content-para {
+    line-height: 1.5;
+    font-size: 16px;
+    max-width: 502px;
+}
+p.eg-detail1 {
+    color: #000000;
+    font-weight: bold;
+    text-transform: capitalize;
+    max-width: 269px;
+    line-height: 1.1;
+    margin: 0 auto;
+    font-size: 14px;
+}
+p.eg-detail1 {
+    color: #000000;
+    font-weight: bold;
+    text-transform: capitalize;
+    max-width: 212px;
+    line-height: 1.2;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+p.eg-detail2 {
+    margin-bottom: 0px;
+    text-transform: capitalize;
+    max-width: 341px;
+    line-height: 1.2;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+    html body .eg-content-heading,
+    html body .eg-content-para{
+        text-align: center;
+        max-width: 100%;
+    }
+    html body .eg-grip-size-section .eg-image-section, 
+    html body .eg-grip-size-section .eg-content-section{
+        width: 100%;
+        
+    }
+    html body .bg-section-media-seen .media-seen-container {
+        padding-bottom: 0px;
+    }
+}

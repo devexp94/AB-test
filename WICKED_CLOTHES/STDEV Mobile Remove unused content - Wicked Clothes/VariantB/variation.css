@@ -1,0 +1,4 @@
+html body .hp-popular-products,
+html body .shopify-section .hp-reviews {
+    display: none;
+}

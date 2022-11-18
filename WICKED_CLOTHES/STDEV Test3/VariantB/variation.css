@@ -1,0 +1,24 @@
+html body .eg-artist{
+    letter-spacing: normal;
+    font-weight: 600;
+    font-family: 'futura-pt', sans-serif;
+    width: auto;
+    display: inline-block;
+}
+
+html body .eg-artist span {
+    color: #200ebb;
+}
+html body .pdp--header.mobile .mi-content--shipping,
+html body #pdp--title ~ .mi-content--shipping{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+html body .pdp--header.mobile .mi-content--shipping .eg-artist{
+    margin-right: auto;
+    margin-top: 2px;
+}
+html body .pdp--header.mobile .mi-content--shipping {
+    display: inline-flex;
+    align-items: center;
+}

@@ -1,0 +1,36 @@
+.eg-select-section {
+    display: flex;
+    width: 28% !important;
+    flex: 28% !important;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.eg-select-section select {
+    width: 100%;
+}
+.dmcsDivMid h1 + div > div:nth-child(1) {
+    flex: 48% !important;
+}
+.dmcsDivMid #dmcsProductSelectArea {
+    flex: 21% !important;
+}
+#dmcsProductSelectArea #ProductOption {
+    display: none;
+}
+div#ChoicesImage{
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px;
+}
+div#ChoicesProduct {
+    display: none !important;
+}
+div#ChoicesImage .dmcsBestSellersCell {
+    width: 25%;
+}
+
+div#ChoicesImage > div:not(.dmcsBestSellersCell) {
+    margin-bottom: 20px;
+}

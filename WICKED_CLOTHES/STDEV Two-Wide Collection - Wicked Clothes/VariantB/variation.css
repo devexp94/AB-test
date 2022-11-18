@@ -1,0 +1,36 @@
+@media screen and (min-width: 767px) {
+    html body .eg-view-section {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    html body.eg-grid-active .findify-components-common--grid {
+        display: flex !important;
+    }
+
+    html body.eg-grid-active .findify-components-common--grid>div {
+        width: 50% !important;
+    }
+
+    .eg-view-section {
+        display: flex;
+        padding: 5px 20px 10px;
+    }
+
+    html body.eg-row-active .eg-row-view svg path,
+    html body.eg-grid-active .eg-grid-view svg path {
+        fill: #333;
+    }
+
+    .eg-view-section svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .eg-grid-view {
+        margin-right: 8px;
+        padding: 2px;
+    }
+
+}

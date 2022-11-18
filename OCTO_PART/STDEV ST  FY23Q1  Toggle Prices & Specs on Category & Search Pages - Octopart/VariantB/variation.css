@@ -1,0 +1,79 @@
+@media screen and (min-width: 1125px) {
+    html body .controls {
+        position: relative;
+        margin: 50px 0px 0px 0px !important;
+        padding: 15px;
+        border-top: 2px solid #3671B0;
+        border-left: 2px solid #3671B0;
+        border-right: 2px solid #3671B0;
+    }
+
+    html body .controls .widgets form {
+        position: absolute;
+        top: -40px;
+        left: -2px;
+    }
+
+    html body .controls .widgets form>.specs,
+    html body .controls .widgets form>.prices {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 10px;
+        width: 200px;
+        background-color: #ffffff;
+        border: 1px solid #d9d7d1;
+        cursor: pointer;
+        font-size: 14px !important;
+        height: 38px;
+        border-radius: 0px;
+    }
+
+    html body .controls .widgets form>div.specs,
+    html body .controls .widgets form>div.prices {
+        background: #3671B0;
+        color: #fff;
+        border: 1px solid #3671B0;
+    }
+
+    html body .widgets .eg-options>span {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 10px;
+        width: 200px;
+        background-color: #ffffff;
+        border: 1px solid #d9d7d1;
+        cursor: pointer;
+    }
+
+    html body .prices-view {
+        padding: 15px;
+        border: 2px solid #3671B0;
+        border-top: 0px;
+    }
+
+
+    /* New CSS */
+    .search .results>.sticky-content:nth-child(1),
+    .search .results table tr .image {
+        left: 14px;
+    }
+
+    .search .results table tr .mpn {
+        left: 89px;
+    }
+
+    .search .results table tr .image:before {
+        content: '';
+        background: #f0f0f0;
+        width: 15px;
+        height: 100%;
+        left: -14px;
+        top: 0px;
+        position: absolute;
+        z-index: 999999;
+        border-right: 2px solid #3671B0;
+    }
+
+}

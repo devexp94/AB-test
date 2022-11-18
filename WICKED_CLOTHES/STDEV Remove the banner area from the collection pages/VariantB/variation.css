@@ -1,0 +1,12 @@
+html body .collection-header .collection-header__heading{
+    color: #000000;
+}
+
+html body .collection-header .collection-header__background{
+    display: none;
+}
+
+html body .collection-header{
+    min-height: 150px;
+    margin-top: 14px;
+}

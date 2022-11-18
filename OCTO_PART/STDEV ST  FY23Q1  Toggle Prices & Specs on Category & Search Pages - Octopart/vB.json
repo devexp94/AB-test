@@ -1,0 +1,12 @@
+{
+	"files": [
+		"VariantB/variation.css",
+		"VariantB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://octopart.com/electronic-parts/integrated-circuits-ics",
+		"https://octopart.com/search?",
+		"https://octopart.com/electronic-parts"
+	]
+}

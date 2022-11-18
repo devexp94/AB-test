@@ -1,0 +1,158 @@
+.eg-search .eg-search-bar-menu input {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: none;
+    color: #333333;
+    font: inherit;
+    font-size: 14px;
+    padding: 0 42px 0 8px;
+}
+
+.eg-search .eg-search-bar-menu {
+    width: 338px;
+    height: 33px;
+    display: block;
+    background: #ffffff;
+    position: relative;
+    margin-left: 22px;
+}
+
+.eg-search .eg-search-bar-menu .input-group-append {
+    position: absolute;
+    right: 9px;
+    top: 9px;
+}
+
+.eg-search .eg-search-bar-menu .input-group-append svg {
+    width: 15px;
+    fill: currentColor;
+    color: #777777;
+    margin: 0;
+}
+
+/* Move search bar style from header */
+/* .eg-search .search-box {
+    width: 100%;
+    height: 43px;
+    display: block;
+    background: #ffffff;
+    position: relative;
+    margin: 0 auto;
+    max-width: 670px;
+} */
+
+.eg-search h2.heading-search {
+    text-align: center;
+    color: #3472bc;
+    font-size: 30px;
+    line-height: 40px;
+    max-width: 954px;
+    margin: 20px auto 8px;
+}
+
+body.eg-search .search-box input:focus {
+    border: 2px solid #3472bc;
+}
+
+
+/* New Search bar */
+body.eg-search .eg-search-bar {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-top: 1px solid;
+    padding: 18px 0 50px;
+}
+
+body.eg-search .eg-search-bar .input-group {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    height: auto;
+}
+
+body.eg-search .eg-search-bar .input-group .form-control {
+    width: 100%;
+    border: 2px solid #3472bc;
+    color: #333333;
+    font: inherit;
+    font-size: 14px;
+    padding: 15px 42px 15px 8px;
+}
+
+body.eg-search .eg-search-bar .input-group-append {
+    position: absolute;
+    right: 10px;
+    margin-top: -33px;
+    top: auto;
+}
+
+.eg-search-bar-middle .search-box{
+    width: 100%;
+    margin-left: 0px;
+    height: auto;
+    position: relative;
+}
+
+.eg-search-bar-middle input#search {
+    width: 100%;
+    border: 2px solid #3472bc;
+    color: #333333;
+    font: inherit;
+    font-size: 14px;
+    padding: 15px 42px 15px 8px;
+    height: auto;
+}
+
+.eg-search-bar-middle .search-box > button{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.eg-search-bar-middle .search-box > button svg{
+    fill: #777777;
+    width: 15px;
+    margin: 0;
+}
+.eg-search-bar-middle .eg-search-box {
+    position: relative;
+}
+
+.eg-search-bar-middle .eg-search-box svg {
+    fill: #777777;
+    width: 15px;
+    margin: 0;
+}
+@media screen and (max-width:768px) {
+    body.eg-search .eg-search-bar{
+        padding: 20px;
+    }
+}
+/* @media screen and (min-width: 540px){
+    html body .top .heading > h1, 
+    html body .top .heading > .description, 
+    html body .top .heading > .content {
+        padding-left: 0px;
+    }
+} */
+
+@media screen and (max-width:1124px) {
+    html body.eg-search .eg-search-bar-menu {
+        margin: 10px 13px 0 15px;
+        width: calc(100% - 28px);
+        height: 33px;
+    }
+}
+@media (max-width: 767px), (min-width: 768px) and (max-width: 1124px){
+    html body.eg-search .eg-search-bar .input-group .form-control,
+    html body.eg-search .eg-search-bar-menu input {
+        font-size: 16px;
+    }
+}
+
+html body.eg-search .search-box +.eg-search-box,
+html body.eg-search .search-box +.eg-search-bar-menu{
+    display: none;
+}
