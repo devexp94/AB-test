@@ -267,6 +267,9 @@
 
 
     var egSecondryNav =''+ 
+
+          // .eg-nav .eg-scroll-button.eg-active
+
     '  <div class="eg-secondry-nav">'+ 
     '      <div class="eg-secondry-nav-inr container">'+ 
     '          <p>Support</p>'+ 
@@ -424,3 +427,5 @@
     if (debug) console.log(e, "error in Test" + variation_name);
   }
 })();
+
+

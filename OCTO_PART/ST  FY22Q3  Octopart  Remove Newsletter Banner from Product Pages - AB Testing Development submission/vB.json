@@ -1,0 +1,11 @@
+{
+	"files": [
+		"VariantB/variation.css",
+		"VariantB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://octopart.com/mic1557ym5-tr-microchip-66800156?r=sp",
+		"https://octopart.com/mbr1100rlg-onsemi-330783?r=sp"
+	]
+}
