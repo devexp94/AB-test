@@ -1,0 +1,11 @@
+div.heading-container .heading-content a.cta-x {
+    width:fit-content !important;
+    max-width: 390px;
+}
+
+@media(max-width: 424px) {
+    div.heading-container .heading-content a.cta-x {
+        margin-inline: 13px;
+        font-size: 15px;
+    }
+}
