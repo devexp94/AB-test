@@ -1,0 +1,20 @@
+@media screen and (max-width: 576px) {
+    .plan-card .cta-wrap{
+        flex-direction: column;
+        order: 0;
+    }
+    
+    .cta-wrap .btn-wrap{
+        width: 90% !important;
+            margin-block: 6px;
+    }
+    
+    .plan-card .plan-card__footer {
+        background: #fff;
+        order: -1;
+    }
+    
+    div#postpaid-plan-card-items {
+        margin-bottom: 25px;
+    }
+}
