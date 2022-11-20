@@ -1,0 +1,15 @@
+@media(max-width: 767px) {
+    .form--product__field--Size {
+        order: 2;
+    }
+
+
+    .form--product__field--Size .form--product__dropdown-toggle-wrapper:not(:has(input[type="radio"]:checked)) .form--product__dropdown-toggle span:nth-child(1) {
+        background: #d7857a;
+    }
+
+    .form--product__field--Size {
+        margin-top: 10px;
+    }
+
+}
