@@ -5,7 +5,7 @@
     }
     
     .cta-wrap .btn-wrap{
-        width: 97% !important;
+        width: 98% !important;
         margin-block: 6px;
         margin-left: 0 !important;
     }
@@ -21,10 +21,6 @@
     
     div#postpaid-plan-card-items {
         margin-bottom: 25px;
-    }
-
-    .cta-wrap > div:nth-child(1) {
-        order: -1 !important;
     }
     
      .cta-wrap > div:nth-child(2) {
