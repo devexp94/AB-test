@@ -5,8 +5,13 @@
     }
     
     .cta-wrap .btn-wrap{
-        width: 90% !important;
-            margin-block: 6px;
+        width: 97% !important;
+        margin-block: 6px;
+        margin-left: 0 !important;
+    }
+
+    .cta-wrap .btn-wrap:nth-child(2) > a{
+        text-transform: capitalize;
     }
     
     .plan-card .plan-card__footer {
@@ -16,5 +21,13 @@
     
     div#postpaid-plan-card-items {
         margin-bottom: 25px;
+    }
+
+    .cta-wrap > div:nth-child(1) {
+        order: -1 !important;
+    }
+    
+     .cta-wrap > div:nth-child(2) {
+        order: -2;
     }
 }

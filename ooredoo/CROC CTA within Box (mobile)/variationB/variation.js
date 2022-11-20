@@ -27,18 +27,13 @@
     function init() {
       if (window.innerWidth < 576) {
         let eg_cta = document.querySelectorAll(".cta-wrap");
-        let eg_divs = document.querySelectorAll(
-          "#postpaid-plan-card-items > div.plan-card"
-        );
+        let eg_divs = document.querySelectorAll("#postpaid-plan-card-items > div.plan-card");
+        let eg_current = document.querySelectorAll(".btn-wrap .buyNewSIM");
+        let need = document.querySelectorAll(".plan-card__header__plan-name");
 
         eg_divs.forEach((egdiv, i) => {
           egdiv.insertAdjacentElement("beforeend", eg_cta[i]);
-        });
-
-        let eg_current = document.querySelectorAll(".btn-wrap .buyNewSIM");
-        let need = document.querySelectorAll(".plan-card__header__plan-name");
-        eg_current.forEach((cur, i) => {
-          cur.innerText = need[i].innerText;
+          eg_current[i].innerText = `Get Plan - ${need[i].innerText.replace("–","")}`;
         });
       }
     }
