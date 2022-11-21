@@ -1,0 +1,8 @@
+.egPar{
+    display: none;
+}
+
+.collections-hero__cards--desktop___2-cDD > div > div:nth-child(2) > div:hover .egPar{
+    display: block;
+    padding-top: 10px;
+}

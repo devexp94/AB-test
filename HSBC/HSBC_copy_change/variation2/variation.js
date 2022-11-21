@@ -61,11 +61,19 @@
         const eg_icon = `
         <div display="inline-flex" class="Box-sc-qbwqq9-0 Icon__IconWrapper-sc-y4p3lz-0 kIynDD Icon collection-card__title-icon___3Orz0" data-testid="Icon-ChevronRight" data-trackid="Icon-ChevronRight@1.5.0"><svg font-size="m" class="Box-sc-y5ctq9-0 SvgIcon__SvgIconBox-sc-1vnlbss-0 gZsoYO SvgIcon" focusable="false" viewBox="0 0 18 18" color="#333" aria-hidden="true" role="presentation" data-testid="ChevronRightIcon" data-id="Icon" opacity="1" fill="#fff"><path d="M4.196 17l7.998-8-7.998-8h1.696l8 8-8 8z"></path><path fill="none" d="M0 18V0h18v18z"></path></svg></div>`
 
-        const divs = document.querySelectorAll("#main div:nth-child(2) > div > a > div.collection-card__content___3SEC9");
+        const div = document.querySelector("#main div:nth-child(2) > div > a > div:nth-child(3)");
 
-        const eg_theme = document.querySelector(".collections-hero__cards--desktop___2-cDD  div:nth-child(2)  a > div.collection-card__content___3SEC9 > div.collection-card__type-label___2RC_h");
+        const eg_theme = document.querySelector("#main div:nth-child(2) > div > a > div:nth-child(3) > div");
 
-        const eg_title = document.querySelector(".collections-hero__cards--desktop___2-cDD  div:nth-child(2)  a > div.collection-card__content___3SEC9 > h3")
+        const eg_title = document.querySelector("#main div:nth-child(2) > div > a > div:nth-child(3) > h3")
+
+        const eg_para = `
+        <p class="egPar">
+        Keen on banking with us?</br>
+        Find out more about our account opening process and everything you need to get started
+        </p>`;
+        
+        eg_title.insertAdjacentHTML("afterend" , eg_para);
 
 
         /* Variation Init */
@@ -73,31 +81,25 @@
 
             updateContent();
 
-            live(".collections-hero__cards--desktop___2-cDD > div > div:nth-child(2)", 'click', () => {
+            live("#main div:nth-child(2) > div > a > div:nth-child(3) > div", 'click', () => {
                 updateContent();
-            });
-           
-        }
+            })
+        };
 
-        function updateContent(){
-            for (const div of divs) {
-                if(div.innerHTML.indexOf("Managing Cash Flow") !== -1) {
-                    eg_theme.style.display = "none";
-                    eg_title.innerHTML = "<h3>Opening an HSBC Business account </h3>" + eg_icon;
-    
-                    div.addEventListener("click" , function(){
-                        window.location.href = "https://www.business.hsbc.com.sg/en-sg/business-banking/business-account-opening-process"
-                    })
-                    }else{
-                    console.log(false)
-                    }
+        function updateContent() {
+            if (div.innerHTML.indexOf("Managing Cash Flow") !== -1) {
+                eg_theme.style.display = "none";
+                eg_title.innerHTML = `<h3>Opening an HSBC Business account ${eg_icon}</h3>`;
+                div.parentElement.href = "https://www.business.hsbc.com.sg/en-sg/business-banking/business-account-opening-process";
+
+                eg_para.insertAdjacentHTML("afterend" , eg_title)
+            } else {
+                console.log(false)
             }
         }
 
-
-
         /* Initialize variation */
-        waitForElement('.collection-cards__card___3N5Oq', init, 50, 15000);
+        waitForElement('.collections-hero__cards--desktop___2-cDD  div:nth-child(2)  a > div.collection-card__content___3SEC9 > div.collection-card__type-label___2RC_h', init, 50, 15000);
     } catch (e) {
         if (debug) console.log(e, "error in Test" + variation_name);
     }
