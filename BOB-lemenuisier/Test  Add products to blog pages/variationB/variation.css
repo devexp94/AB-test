@@ -1,3 +1,13 @@
+.eg-products-container {
+    margin-block: 40px;
+}
+
+h2.eg_title {
+    font-size: 26px !important;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
 .eg-products-container ul {
     display: flex;
     flex-wrap: wrap;
@@ -141,6 +151,11 @@
     .eg-products-container ul {
         gap: 16px;
     }
+
+    h2.eg_title {
+        font-size: 19px !important;
+        text-align: center;
+    }    
 
     .eg-products-container ul li {
         width: 100% !important;

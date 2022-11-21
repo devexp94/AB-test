@@ -138,6 +138,7 @@
             "/blog/volet-qui-ne-descend-ou-ne-remonte-plus-que-faire": ""
         }
         let htmlString = `<div class="eg-products-container">
+           <h2 class="eg_title">Produits qui pourraient vous intéresser : </h2>
             <ul>
             </ul>
         </div>`;
@@ -145,7 +146,7 @@
         /* Variation functions */
         function init() {
             // selecting both content div ( desktop and mobile) and adding custom html
-            document.querySelectorAll("article #amblog_content_post > div.amblog-post-container > div.amblog-post-container-content > div.amblog-content").forEach(target=>{
+            document.querySelectorAll("#amblog_content_post > div.amblog-post-container > div.amblog-post-container-content > div.amblog-content > p:nth-child(5)").forEach(target=>{
                 target.insertAdjacentHTML("beforeend",htmlString);
             });
 
