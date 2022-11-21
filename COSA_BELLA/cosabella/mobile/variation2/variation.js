@@ -26,7 +26,7 @@
         /* Variation Init */
         function init() {
             /* start your code here */
-            if (window.innerWidth < 768) {
+            if (window.innerWidth < 643) {
                 document.querySelector(".form--product__add-to-cart button span.js-label-atc_disabled").textContent = "Add to Cart";
             }
         }
