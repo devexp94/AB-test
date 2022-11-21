@@ -1,4 +1,6 @@
-.col-md-12, .calendar-calendar, .view .row>.list-group {
+.col-md-12,
+.calendar-calendar,
+.view .row>.list-group {
     width: 85%;
 }
 
@@ -11,7 +13,7 @@ span.qualifier {
 }
 
 .booking-flow .main .extra.child {
-    background-color:white; 
+    background-color: white;
 }
 
 .booking-flow .Collapsible__trigger:after {
@@ -21,7 +23,7 @@ span.qualifier {
 }
 
 .booking-flow .Collapsible {
-     border-bottom:none; 
+    border-bottom: none;
 }
 
 .booking-flow .Collapsible__trigger {
@@ -33,14 +35,16 @@ span.qualifier {
     margin-top: 0;
     height: 45px;
 }
-.booking-flow .steps .number{
-    height:28px;
+
+.booking-flow .steps .number {
+    height: 28px;
 }
 
 .booking-flow .main .extra .extra-line-item {
     display: grid;
     grid-template-columns: 170px 1fr;
 }
+
 .egImg {
     width: 170px;
     grid-row-start: 1;
@@ -50,11 +54,12 @@ span.qualifier {
 .extra-inner {
     border: 1px solid #d0cdc5;
 }
+
 .text {
     padding: 5px 25px 10px;
 }
 
-.booking-flow .Collapsible__trigger{
+.booking-flow .Collapsible__trigger {
     width: 96%;
     margin: auto;
 }
@@ -68,21 +73,21 @@ span.totalPrice {
     font-weight: 600;
 }
 
- .booking-flow .main .extra .price-quantity {
+.booking-flow .main .extra .price-quantity {
     float: none;
-      grid-row-start: 2;
+    grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 3;
     padding-left: 5%;
 
-}   
-
- .booking-flow .main .extra .extra-line-item {
-    padding:0;
 }
 
- .booking-flow .main .extra label { 
+.booking-flow .main .extra .extra-line-item {
+    padding: 0;
+}
+
+.booking-flow .main .extra label {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -92,11 +97,11 @@ span.totalPrice {
     padding-left: 5%;
 }
 
- .booking-flow input[type=checkbox]{
-    order:1;
- }
+.booking-flow input[type=checkbox] {
+    order: 1;
+}
 
- .notes {
+.notes {
     padding-left: 3%;
 }
 
@@ -105,12 +110,55 @@ span.totalPrice {
     gap: 15px;
 }
 
-.booking-flow .main .extra .notes .crew-message{
+.booking-flow .main .extra .notes .crew-message {
     border: none !important;
     padding: 0;
     margin: 0;
 }
 
-.steps {
-    width: 100%;
+@media(max-width: 767px) {
+    .steps {
+        width: 100%;
+    }
+
+    .egImg {
+        width: fit-content;
+    }
+
+
+    .extra-line-item {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .booking-flow .main .extra .extra-description {
+        width: 100%;
+        margin-inline: 0 !important;
+    }
+
+    .booking-flow .step {
+        font-size: 1.5rem;
+    }
+
+    .booking-flow .step {
+        padding-top: 9px;
+    }
+
+    .booking-flow .booking-details {
+        margin-bottom: 11px;
+    }
+
+    .booking-flow .main .extra label,
+    .booking-flow .main .extra .price-quantity {
+        padding: 10px;
+    }
+
+    .text {
+        padding: 0 10px 10px;
+        width: 100%;
+    }
+
+    .booking-flow .main .extra {
+         padding:0; 
+    }
 }
