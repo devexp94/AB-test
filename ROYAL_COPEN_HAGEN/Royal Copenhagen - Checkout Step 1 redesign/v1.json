@@ -1,0 +1,10 @@
+{
+	"files": [
+		"./variation.css",
+		"./variation.js"
+	],
+	"urls": [
+		"https://www.royalcopenhagen.com/en-us/checkout-page#contact-delivery",
+		"https://www.royalcopenhagen.com/da-dk/checkout-page#kontakt-og-levering"
+	]
+}

@@ -1,0 +1,180 @@
+
+html body .c-checkout-shipping.-only-address .c-checkout-shipping_container,
+html body .eg_shippingAddress > .col-md-6,
+html body .eg_shippingAddress > .col-lg-6{
+    display: none;
+}
+
+html body .c-checkout-shipping.-only-address.eg_show .c-checkout-shipping_container,
+html body .eg_shippingAddress.eg_show > .col-md-6,
+html body .eg_shippingAddress.eg_show > .col-lg-6{
+    display: block;
+}
+
+html body .c-checkout-customer-address{
+    border-bottom: 1px solid #d2d2d2;
+}
+
+html body .c-checkout-shipping.-only-address{
+    margin-top: 0;
+}
+
+html body .c-checkout-shipping.-only-address h2,
+html body #formCheckoutAddress h2{
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+    padding-right: 44px;
+    padding-top: 1.4em !important;
+    padding-bottom: 1.4em !important;
+}
+
+html body #formCheckoutAddress h2{
+    border-top: 1px solid #d2d2d2;
+}
+
+html body #formCheckoutAddress h2::after,
+html body .c-checkout-shipping.-only-address h2::after{
+    content: "";
+    font-family: RoyalCopenhagen-iconfont;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none;
+    letter-spacing: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    font-size: 24px;
+    position: absolute;
+    top: 1.2em;
+    right: 16px;
+    transform: rotate(270deg);
+    font-variant: normal;
+}
+
+html body .c-checkout-shipping.-only-address.eg_show h2::after,
+html body .eg_shippingAddress.eg_show h2::after{
+    transform: rotate(0deg) !important;
+}
+
+/* remove pop up css */
+
+html body.modal-open{
+    overflow: auto !important;
+}
+
+html body .c-checkout-login-modal .grecaptcha-legal-text,
+html body .c-checkout-customer-address_login-info>div:first-of-type,
+html body .c-checkout-login-modal .modal-dialog .modal-content .modal-header,
+html body.modal-open .modal-backdrop.show{
+    display: none;
+}
+
+html body.eg_guestSelected #checkoutLoginModal,
+html body .c-checkout-customer-address_login-info{
+    display: none !important;
+}
+
+html body.eg_guestSelected .c-checkout-customer-address_login-info{
+    display: flex !important;
+}
+
+html body #checkoutLoginModal{
+    position: inherit;
+    overflow: hidden;
+    margin-bottom: 32px;
+}
+
+html body .c-checkout-login-modal .modal-dialog{
+    position: inherit;
+    left: 0;
+    top: 0;
+    transform: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+html body #checkoutLoginModal .modal-dialog button.close{
+    display: none;
+}
+
+html body .c-checkout-login-modal .modal-dialog .modal-content{
+    padding: 0;
+}
+
+html body .c-checkout-login-modal .modal-dialog .modal-content .offset-md-1{
+    margin-left: 0;
+    padding-right: 0;
+    flex: 50%;
+    max-width: 50%;
+}
+
+html body .c-checkout-login-modal .modal-dialog .modal-content .modal-body .checkout-login-form{
+    border-top: none !important;
+    margin-top: 0;
+    padding: 0;
+}
+
+html body .c-checkout-login-modal #formCheckoutLogin button{
+    width: 100%;
+}
+
+html body .eg_loginTypeSelection {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 1.7em;
+}
+
+html body .eg_loginTypeSelection > div{
+    display: flex;
+    gap: 10px;
+}
+
+html body .eg_loginTypeSelection input{
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}
+
+html body .eg_loginTypeSelection label{
+    margin: 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+html body .eg_loginTypeSelection input[type='radio']:after {
+    border: 2px solid white;
+}
+
+html body .eg_loginTypeSelection input[type='radio']:checked:after {
+    width: 9px;
+    height: 9px;
+    border-radius: 15px;
+    top: 1px;
+    left: 1px;
+    position: relative;
+    background-color: #00244a;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    outline: 1px solid #00244a;
+}
+
+@media screen and (max-width: 768px){
+    html body .c-checkout-login-modal .modal-dialog .modal-content .offset-md-1{
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    html body .c-checkout-login-modal .modal-body > .row{
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 458px){
+    html body .eg_loginTypeSelection{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
