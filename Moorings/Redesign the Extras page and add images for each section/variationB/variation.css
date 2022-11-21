@@ -110,3 +110,7 @@ span.totalPrice {
     padding: 0;
     margin: 0;
 }
+
+.steps {
+    width: 100%;
+}
