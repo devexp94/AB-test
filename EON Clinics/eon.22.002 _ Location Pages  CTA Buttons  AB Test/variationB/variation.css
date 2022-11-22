@@ -1,5 +1,5 @@
 
-@media(max-width: 767px) {
+@media screen and (max-width: 767px) {
     #masthead > div.mobile-header > div.mobile_cta {
         position: fixed;
         left: 50%;
@@ -8,8 +8,11 @@
         z-index: 999;
         bottom: 0;
     }
+    iframe#podium-bubble {
+        margin-bottom: 18px !important;
+    }
 
-    #main div.ContactBubble{
-        top: 0 !important;
+    iframe#podium-prompt {
+        margin-bottom: 14px !important;
     }
 }
