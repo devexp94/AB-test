@@ -9,8 +9,12 @@
         bottom: 0;
     }
 
-    #main div.ContactBubble{
-        top: 0 !important;
+    iframe#podium-bubble {
+        margin-bottom: 20px !important;
+    }
+
+    iframe#podium-prompt {
+        margin-bottom: 17px !important;
     }
 
     #masthead > div.mobile-header > div.mobile_cta > div.mobile-nav-cta > a::before {
