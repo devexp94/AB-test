@@ -1,0 +1,6 @@
+.eg-calculator{
+	background-image: url("https://www.lytx.com/getmedia/6779ab59-c728-44e6-b624-73cbd0bb2c56/Get-Started-full-CTA-compressed.jpg?width=1600&height=513&ext=.jpg");
+}
+.eg-calculator + div{
+	display: none;
+}
