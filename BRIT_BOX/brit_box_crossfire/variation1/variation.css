@@ -1,0 +1,29 @@
+main>section:nth-last-child(4) {
+    height: 20rem !important;
+}
+
+main>section:nth-last-child(3) {
+    display: none;
+}
+
+main>section:nth-last-child(2) {
+    height: 14rem !important;
+}
+
+main>section:nth-last-child(2) .section-fit>div:nth-child(-n + 13) {
+    display: none;
+}
+
+main>section:nth-last-child(2) .section-fit>div:nth-last-child(2) {
+    top: 3.5rem !important;
+}
+
+main>section:nth-last-child(2) .section-fit>div:nth-last-child(1) {
+    top: 7.6rem !important;
+}
+
+@media(max-width: 767px) {
+    main>section:nth-last-child(2) {
+        height: 12rem !important;
+    }
+}
