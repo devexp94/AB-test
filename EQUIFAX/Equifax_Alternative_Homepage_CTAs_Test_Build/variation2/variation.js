@@ -27,7 +27,7 @@
         function init() {
             /* start your code here */
             const egHeroCta = document.querySelector("div.heading-container .heading-content a.cta-x")
-            egHeroCta.textContent =  'Try Equifax Credit Report & Score for FREE*';
+            egHeroCta.textContent =  'Try your Equifax Credit Report & Score for FREE*';
         }
 
         /* Initialize variation */
