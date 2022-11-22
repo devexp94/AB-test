@@ -1,8 +1,8 @@
 section.black-friday .hero__bg {
-    background:rgb(0 0 0 / 89%) !important;
+    background: rgb(0 0 0 / 89%) !important;
 }
 
-section.black-friday .hero__bg img{
+section.black-friday .hero__bg img {
     display: block !important;
 }
 
@@ -82,8 +82,8 @@ section.black-friday .black-friday__text>h2 {
     margin-bottom: 30px !important;
 }
 
-section.black-friday .black-friday__text>h2 + p{
-    font-size: 18px!important;
+section.black-friday .black-friday__text>h2+p {
+    font-size: 18px !important;
 }
 
 
@@ -155,17 +155,9 @@ section.black-friday .black-friday__text>.hero__note {
     display: none;
 }
 
-@media(max-width: 917px) {
-    .eg-message p {
-        font-size: 9px !important;
-    }
 
-    .eg-message a {
-        font-size: 8px;
-        width: 128px;
-        text-align: center;
-    }
-}
+
+
 
 @media(max-width: 869px) {
     section.black-friday .black-friday__text>h2 br {
@@ -183,5 +175,17 @@ section.black-friday .black-friday__text>.hero__note {
     section.black-friday .black-friday__text>h2 {
         font-size: 21px !important;
 
+    }
+}
+
+@media(max-width: 479px) {
+    .eg-message p {
+        font-size:10.7px !important; 
+    }
+
+    .eg-message a {
+        font-size: 9px;
+        width: 100px;
+        text-align: center;
     }
 }

@@ -72,9 +72,14 @@
             // adding a box below hero
             document.querySelector("section.black-friday").insertAdjacentHTML("afterend",`
                 <div class="eg-message">
-                    <p>Get Your First Month Of Altium Designer FREE!</p>
-                    <a href="#">See Offer</a>
+                    <p>Get access to Altium Designer FREE until 12/31/22</p>
+                    <a href="#" id="eg-offer-btn">See Offer</a>
                 </div>`);
+
+            document.querySelector("#eg-offer-btn").addEventListener("click",(e)=>{
+                e.preventDefault();
+                document.querySelector("#black-friday-buy").click();
+            });
 
         }
 
