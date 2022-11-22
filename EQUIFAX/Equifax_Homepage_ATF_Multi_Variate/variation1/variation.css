@@ -61,9 +61,11 @@ div.eg-usp svg {
     }
 
     .header-wrapper {
-        background-position: center;
-        background-color: rgba(0,0,0,0.4);
-        background-blend-mode: overlay;
+        background: url(https://www.equifax.co.uk/bubble/images/equifax-member-centre-blend.jpg) !important;
+        background-position: left !important;
+        background-size: cover !important;
+        /* background-color: rgba(0,0,0,0.5);
+        background-blend-mode: overlay; */
     }
 
     .heading-container .heading-content>h1 {

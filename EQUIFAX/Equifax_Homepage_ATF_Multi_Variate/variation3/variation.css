@@ -236,7 +236,9 @@ div.eg-usp svg {
     }
 
     .header-wrapper {
-        background-position: left;
+        background: url(https://www.equifax.co.uk/bubble/images/equifax-member-centre-blend.jpg) !important;
+        background-position: left !important;
+        background-position: cover !important;
     }
 
     .eg-video-carousel-wrapper {

@@ -156,7 +156,7 @@ div.eg-usp svg {
     }
 }
 
-@media(max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     /*showing navigation dots*/
     .carousel__navigation {
@@ -173,7 +173,8 @@ div.eg-usp svg {
     }
 
     .header-wrapper {
-        background-position: left;
+        background: url(https://www.equifax.co.uk/bubble/images/equifax-member-centre-blend.jpg) !important;
+        background-position: left !important;
+        background-size: cover !important;
     }
-
 }
