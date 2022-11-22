@@ -61,31 +61,22 @@
         function init() {
             /* start your code here */
 
-            changeContent();
+            updateCnt();
 
-            live(["button[aria-controls='product-theme-carousel']:nth-of-type(1)","#main > div > div:nth-child(1) > div > div.products-listing__navigation > div:nth-child(1)"],'click', (e) => {
-                if(e.target.tagName === "BUTTON" && e.target.disabled === true || e.target.tagName === "svg" && e.target.parentElement.disabled === true){
-                  changeContent();
-                }
-
-                
-                if(e.target.tagName === "DIV"){
-                  changeContent()
-                }
+            live(["button[aria-controls='product-theme-carousel']", "#main > div > div:nth-child(1) > div > div.products-listing__navigation > div:nth-child(1)"], 'click', (e) => {
+                updateCnt();
             });
         }
 
-        function changeContent() {
-            const egTitle = document.querySelector("#product-theme-carousel > div:nth-of-type(3) > div:nth-child(1) h3");
-
-            const egLearnMoreOutSide = document.querySelector("#product-theme-carousel > div:nth-of-type(3) > div:nth-child(1) > div > a");
-
-            const egLearnMoreInSide = document.querySelector("#product-theme-carousel > div:nth-of-type(3) > div:nth-child(1) > div > div > a");
-            egTitle.textContent = "Opening an HSBC Business account";
-
-            [egLearnMoreInSide, egLearnMoreOutSide].forEach(link => {
-                link.href = "/en-sg/business-banking/business-account-opening-process";
-            });
+        function updateCnt() {
+            const egTitles = document.querySelectorAll("#product-theme-carousel > div:nth-of-type(3) > div h3")
+            egTitles.forEach(titles => {
+                if (titles.textContent == 'Working capital') {
+                    titles.textContent = "Opening an HSBC Business account";
+                    titles.parentElement.querySelector("a").href = "/en-sg/business-banking/business-account-opening-process";
+                    titles.parentElement.nextElementSibling.href = "/en-sg/business-banking/business-account-opening-process";
+                }
+            })
         }
 
         /* Initialize variation */

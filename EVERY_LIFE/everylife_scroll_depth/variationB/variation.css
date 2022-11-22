@@ -1,0 +1,64 @@
+html body .eg-progress-bar-container .eg-progress-bar .eg-progress-bar-inr.completed {
+  background: #121b6b;
+}
+html body .eg-progress-container {
+  position: fixed;
+  top: 80px;
+  background: #fff;
+  width: 100%;
+  max-width: var(--standard-max-width);
+  padding: 8px var(--side-padding);
+  width: 100%;
+  z-index: 9;
+  box-shadow: var(--navigation-shadow);
+}
+
+html body .eg-progress-bar-container .eg-progress-bar {
+  width: 24.8%;
+  border-radius: 30px;
+  overflow: hidden;
+  background: #f2f2fb;
+}
+
+html body .eg-progress-bar-container .eg-progress-bar .eg-progress-bar-inr {
+  height: 8px;
+  width: 0%;
+  background: #1536a2;
+}
+
+html body .eg-progress-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+html body .eg-progress-container .eg-progress-step {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #918e8e;
+}
+
+html body .eg-progress-container .eg-section-title {
+  font-family: var(--mono-font);
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+html body #EstimatorIntro {
+  margin-top: 79px;
+}
+
+.eg-progress-container + form #EstimatorAside {
+  top: 171px;
+}
+
+@media screen and (max-width: 1199px) {
+  html body #EstimatorIntro,
+  html body .eg-progress-container {
+    top: 57px !important;
+  }
+
+  html body .eg-progress-container + form #EstimatorAside {
+    top: 152px;
+  }
+}

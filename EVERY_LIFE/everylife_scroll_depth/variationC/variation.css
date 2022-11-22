@@ -1,0 +1,69 @@
+html body .eg-progress-bar-container {
+  position: sticky;
+  top: 80px;
+  background: #f2f2fb;
+  width: 100%;
+  max-width: var(--standard-max-width);
+  padding: 8px var(--side-padding);
+  width: 100%;
+  z-index: 2;
+  margin-top: -2px;
+}
+
+.eg-progress-bar-container + form #EstimatorAside {
+  top: 171px;
+}
+
+.eg-progress-bar-inr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.eg-section-name:not(:last-child) {
+  margin-right: 10px;
+}
+
+p.eg-section-name {
+  color: var(--charcoal-100) !important;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: opacity 0.4s ease-in-out 0s;
+  position: relative;
+  cursor: pointer;
+}
+
+.eg-progress-bar-inr .eg-section-name.active {
+  color: #1536a2;
+  font-weight: 700;
+}
+
+p.eg-section-name::after {
+  content: '';
+  width: 100%;
+  height: 4px;
+  background: transparent;
+  border-radius: 4px 4px 0px 0px;
+  position: absolute;
+  bottom: -8px;
+  transition: opacity 0.4s ease-in-out 0s;
+  left: 0;
+  right: 0;
+}
+
+p.eg-section-name.active::after {
+  background: var(--storybook-blue);
+}
+@media screen and (max-width: 1199px) {
+  html body .eg-progress-bar-container {
+    top: 57px !important;
+  }
+
+  html body .eg-progress-bar-container + form #EstimatorAside {
+    top: 152px;
+  }
+}
