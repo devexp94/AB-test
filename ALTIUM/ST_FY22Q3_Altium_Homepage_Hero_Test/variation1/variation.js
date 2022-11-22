@@ -26,8 +26,8 @@
 
         const egMessage = `
         <div class="eg-message">
-            <p>Get Your First Month of Altium Designer FREE when you become a new Altium customer with Pro Subscription</p>
-            <a href="#">Get Offer</a>
+            <p>Get access to Altium Designer FREE until 12/31/22</p>
+            <a href="https://store.altium.com/flowmanager/flow/start?parameters=ProductId%3DADTB%26CouponId%3D93CCF7A8-3BCB-4501-B003-0A1B74C422F6%26CampaignId%3DA4E57844-B335-7B93-563E-F0FE7FB59655%26TrackingId%3DOM21&promo_name=ad-slider-promo-fy23q1&promo_position=home-kv&promo_creative=subscribe-today-v1&TrackingId=OM21">Get Offer</a>
         </div>`;
 
         /* Variation functions */
