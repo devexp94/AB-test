@@ -24,12 +24,9 @@ a.eg_learn {
     font-weight: 500;
 }
 
-.css-gw8ne9,
-.css-tk93o1,
-section:nth-child(6) picture {
+#root > div:nth-child(1) > section:nth-child(6) > div > div div {
     background: #fff !important;
 }
-
 
 .css-16f4053 img {
     display: block;

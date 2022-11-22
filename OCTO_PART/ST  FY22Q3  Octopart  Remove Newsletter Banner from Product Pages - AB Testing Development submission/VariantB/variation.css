@@ -1,3 +1,4 @@
-#__next > div.pdp > div.tower-advert{
+#__next > div.pdp > div.tower-advert,
+#__next .search .tower-advert{
     display: none;
 }
