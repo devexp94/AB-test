@@ -4,6 +4,8 @@
 		"./variationB/variation.js"
 	],
 	"urls": ["https://www.moorings.com/booking/extras#!departureId=23640186&pax=2&nid=1094",
-		"https://www.moorings.com/booking/extras#!departureId=19280526&pax=2&nid=571"],
+		"https://www.moorings.com/booking/extras#!departureId=19280526&pax=2&nid=571",
+		"https://www.moorings.com/booking/extras#!departureId=21886816&pax=2&nid=560"],
+
 	"inject": ""
 }
