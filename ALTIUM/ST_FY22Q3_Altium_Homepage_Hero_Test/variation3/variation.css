@@ -55,7 +55,8 @@ section.black-friday div.black-friday__text .hero__btns a {
 }
 
 section.black-friday div.black-friday__text .hero__btns a:hover {
-    background-image: linear-gradient(rgb(0 0 0/10%) 0 0) !important;
+    background: #226b9e !important;
+    color: white !important;
 }
 
 section.black-friday div.black-friday__text .hero__btns a:nth-child(1) {
@@ -132,7 +133,7 @@ section.black-friday div.black-friday__text .hero__btns a:nth-child(2) {
 }
 
 .eg-message a:hover {
-    background-image: linear-gradient(rgb(0 0 0/10%) 0 0) !important;
+    background: #226b9e !important;
 }
 
 /*hiding attribution*/

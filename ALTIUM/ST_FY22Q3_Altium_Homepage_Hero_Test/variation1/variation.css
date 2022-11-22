@@ -51,9 +51,7 @@ section.black-friday {
     font-size: 12px;
 }
 
-.eg-message a:hover {
-    background-image: linear-gradient(rgb(0 0 0/10%) 0 0) !important;
-}
+.eg-message a:hover {background: #226b9e !important;}
 
 .eg-message p {
     margin-bottom: 0;
@@ -96,7 +94,8 @@ section.black-friday div.black-friday__text .hero__btns a {
 }
 
 section.black-friday div.black-friday__text .hero__btns a:hover {
-    background-image: linear-gradient(rgb(0 0 0/10%) 0 0) !important;
+    background: #226b9e !important;
+    color: white !important;
 }
 
 section.black-friday div.black-friday__text .hero__btns a:nth-child(1) {
