@@ -2,8 +2,9 @@
 .eg_btm {
     display:flex;
     gap: 15px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    margin-left: 20px;
     margin-top: -5%;
 }
 
