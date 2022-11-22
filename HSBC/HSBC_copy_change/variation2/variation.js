@@ -58,48 +58,54 @@
         }
 
 
-        const eg_icon = `
-        <div display="inline-flex" class="Box-sc-qbwqq9-0 Icon__IconWrapper-sc-y4p3lz-0 kIynDD Icon collection-card__title-icon___3Orz0" data-testid="Icon-ChevronRight" data-trackid="Icon-ChevronRight@1.5.0"><svg font-size="m" class="Box-sc-y5ctq9-0 SvgIcon__SvgIconBox-sc-1vnlbss-0 gZsoYO SvgIcon" focusable="false" viewBox="0 0 18 18" color="#333" aria-hidden="true" role="presentation" data-testid="ChevronRightIcon" data-id="Icon" opacity="1" fill="#fff"><path d="M4.196 17l7.998-8-7.998-8h1.696l8 8-8 8z"></path><path fill="none" d="M0 18V0h18v18z"></path></svg></div>`
-
-        const div = document.querySelector("#main div:nth-child(2) > div > a > div:nth-child(3)");
-
-        const eg_theme = document.querySelector("#main div:nth-child(2) > div > a > div:nth-child(3) > div");
-
-        const eg_title = document.querySelector("#main div:nth-child(2) > div > a > div:nth-child(3) > h3")
-
-        const eg_para = `
-        <p class="egPar">
-        Keen on banking with us?</br>
-        Find out more about our account opening process and everything you need to get started
-        </p>`;
-        
-        eg_title.insertAdjacentHTML("afterend" , eg_para);
-
-
         /* Variation Init */
         function init() {
 
-            updateContent();
+            updateCnt();
 
-            live("#main div:nth-child(2) > div > a > div:nth-child(3) > div", 'click', () => {
-                updateContent();
+            live([".segment-filter > div  > button", ".collection-card__dismiss-control___xPQKd"], 'click', () => {
+                updateCnt();
             })
         };
 
-        function updateContent() {
-            if (div.innerHTML.indexOf("Managing Cash Flow") !== -1) {
-                eg_theme.style.display = "none";
-                eg_title.innerHTML = `<h3>Opening an HSBC Business account ${eg_icon}</h3>`;
-                div.parentElement.href = "https://www.business.hsbc.com.sg/en-sg/business-banking/business-account-opening-process";
+        function updateCnt() {
+            setTimeout(() => {
+                const eg_para = `
+                <p class="eg-para collection-card__description___3HHX9">
+                Keen on banking with us?</br>
+                Find out more about our account opening process and everything you need to get started
+                </p>`;
+                const egTexts = document.querySelectorAll(".collection-cards__card___3N5Oq > div > a  div.collection-card__content___3SEC9 h3");
+                egTexts.forEach(text => {
+                    if (text.innerText == "Managing Cash Flow") {
+                        // changing innerHTML
 
-                eg_para.insertAdjacentHTML("afterend" , eg_title)
-            } else {
-                console.log(false)
-            }
+                        // hiding previous element themes
+                        text.previousElementSibling.style.display = "none";
+
+                        text.style.display = "none";
+
+                        text.insertAdjacentHTML("beforebegin",`<h2 class="eg-title collection-card__title___1ghe1">${"Opening an HSBC Business account" + text.children[0].outerHTML.toString()}</h2>`);
+
+                        // updating link
+                        text.parentElement.parentElement.href = "https://www.business.hsbc.com.sg/en-sg/business-banking/business-account-opening-process";
+
+                        //adding hover text
+                        text.insertAdjacentHTML("afterend", eg_para);
+                    } else {
+                        if(text.parentElement.querySelector(".eg-title")){
+                            text.previousElementSibling.remove();
+                            text.nextElementSibling.remove();
+                            text.style.display = "block";
+                            text.previousElementSibling.style.display = "block";
+                        }
+                    }
+                });
+            }, 1000)
         }
 
         /* Initialize variation */
-        waitForElement('.collections-hero__cards--desktop___2-cDD  div:nth-child(2)  a > div.collection-card__content___3SEC9 > div.collection-card__type-label___2RC_h', init, 50, 15000);
+        waitForElement('.collection-cards__card___3N5Oq > div > a  div.collection-card__content___3SEC9 h3', init, 50, 15000);
     } catch (e) {
         if (debug) console.log(e, "error in Test" + variation_name);
     }
