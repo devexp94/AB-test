@@ -1,15 +1,11 @@
 
 html body .c-checkout-shipping.-only-address .c-checkout-shipping_container,
-html body .eg_shippingAddress > .col-md-6,
-html body .eg_shippingAddress > .col-lg-6,
-html body .eg_shippingAddress > .col-12{
+html body .eg_shippingAddress > *:not(.col-md-12){
     display: none;
 }
 
 html body .c-checkout-shipping.-only-address.eg_show .c-checkout-shipping_container,
-html body .eg_shippingAddress.eg_show > .col-md-6,
-html body .eg_shippingAddress.eg_show > .col-lg-6,
-html body .eg_shippingAddress.eg_show > .col-12{
+html body .eg_shippingAddress.eg_show > *{
     display: block;
 }
 
@@ -66,14 +62,14 @@ html body.modal-open{
 }
 
 html body .c-checkout-login-modal .grecaptcha-legal-text,
-html body .c-checkout-customer-address_login-info>div:first-of-type,
+html body.eg_newUser .c-checkout-customer-address_login-info>div:first-of-type,
 html body .c-checkout-login-modal .modal-dialog .modal-content .modal-header,
 html body.modal-open .modal-backdrop.show{
     display: none;
 }
 
 html body.eg_guestSelected #checkoutLoginModal,
-html body .c-checkout-customer-address_login-info{
+html body.eg_newUser .c-checkout-customer-address_login-info{
     display: none !important;
 }
 
@@ -161,6 +157,10 @@ html body .eg_loginTypeSelection input[type='radio']:checked:after {
     display: inline-block;
     visibility: visible;
     outline: 1px solid #00244a;
+}
+
+html body .form-checkbox.single{
+    margin-bottom: 16px;
 }
 
 @media screen and (max-width: 768px){

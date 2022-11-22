@@ -164,24 +164,42 @@
     /* Variation Init */
     function init() {
 
-      if(document.querySelector('.eg_loginTypeSelection')) return;
+      if(document.querySelector('.eg_shippingAddress')) return;
 
       if(document.querySelector('.c-checkout-customer-address_login-info button')){
+        _$('body').addClass('eg_newUser');
+
         _$('.c-checkout-customer-address_login-info button').value[0].click();
+
+        _$('body').addClass('eg_guestSelected');
+
+        _$('.c-checkout-customer-address .checkout-step-title').html('Login or checkout as guest');
+
+        _$('.c-checkout-customer-address .checkout-step-title').insertAfter(
+          '<div class="eg_loginTypeSelection">'+
+          '      <div><input type="radio" id="eg_guest" name="fav_language" checked="checked"><label for="eg_guest">Checkout as a guest</label></div>'+
+          '      <div><input type="radio" id="eg_login" name="fav_language"><label for="eg_login">Login to your account</label></div>'+
+          '</div>'
+        )
+
+        helper.live('.eg_loginTypeSelection input','change',function(){
+          if(document.querySelector('#eg_guest').checked){
+            _$('body').addClass('eg_guestSelected');
+          }else{
+            _$('body').removeClass('eg_guestSelected');
+          }
+        })
+  
+        setTimeout(function(){
+          var getLoginForm = _$('#checkoutLoginModal').value[0];
+          _$('.c-checkout-customer-address_login-info').insertAfterElement(getLoginForm);
+          _$('.c-checkout-login-modal #formCheckoutLogin button').html('LOGIN FOR FASTER CHECKOUT')
+        },1000)
+        
       }
 
       _$('#formCheckoutAddress h2').parent().parent().addClass('eg_shippingAddress');
 
-      _$('.c-checkout-customer-address .checkout-step-title').html('Login or checkout as guest');
-
-      _$('.c-checkout-customer-address .checkout-step-title').insertAfter(
-        '<div class="eg_loginTypeSelection">'+
-        '      <div><input type="radio" id="eg_guest" name="fav_language" checked="checked"><label for="eg_guest">Checkout as a guest</label></div>'+
-        '      <div><input type="radio" id="eg_login" name="fav_language"><label for="eg_login">Login to your account</label></div>'+
-        '</div>'
-      )
-
-      _$('body').addClass('eg_guestSelected');
 
       _$('.c-checkout-progress-indicator .progress-return,.returnLink a').html('Return to cart and continue shopping')
 
@@ -193,20 +211,6 @@
         _$(this).parent().toggleClass('eg_show');
       })
 
-
-      helper.live('.eg_loginTypeSelection input','change',function(){
-        if(document.querySelector('#eg_guest').checked){
-          _$('body').addClass('eg_guestSelected');
-        }else{
-          _$('body').removeClass('eg_guestSelected');
-        }
-      })
-
-      setTimeout(function(){
-        var getLoginForm = _$('#checkoutLoginModal').value[0];
-        _$('.c-checkout-customer-address_login-info').insertAfterElement(getLoginForm);
-        _$('.c-checkout-login-modal #formCheckoutLogin button').html('LOGIN FOR FASTER CHECKOUT')
-      },1000)
       
     }
 
