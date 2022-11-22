@@ -8,11 +8,12 @@
         z-index: 999;
         bottom: 0;
     }
+    
     iframe#podium-bubble {
-        margin-bottom: 18px !important;
+        margin-bottom: 19px !important;
     }
 
     iframe#podium-prompt {
-        margin-bottom: 14px !important;
+        margin-bottom: 15px !important;
     }
 }

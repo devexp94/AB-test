@@ -10,13 +10,13 @@
     }
 
     iframe#podium-bubble {
-        margin-bottom: 18px !important;
+        margin-bottom: 19px !important;
     }
 
     iframe#podium-prompt {
-        margin-bottom: 14px !important;
+        margin-bottom: 15px !important;
     }
-    
+
     #masthead > div.mobile-header > div.mobile_cta > div.mobile-nav-cta > a::before {
         content:url("https://i.ibb.co/vjT0tVM/schedule.png");
         position: absolute;
