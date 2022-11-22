@@ -166,7 +166,9 @@
 
       if(document.querySelector('.eg_loginTypeSelection')) return;
 
-      _$('.c-checkout-customer-address_login-info button').value[0].click();
+      if(document.querySelector('.c-checkout-customer-address_login-info button')){
+        _$('.c-checkout-customer-address_login-info button').value[0].click();
+      }
 
       _$('#formCheckoutAddress h2').parent().parent().addClass('eg_shippingAddress');
 

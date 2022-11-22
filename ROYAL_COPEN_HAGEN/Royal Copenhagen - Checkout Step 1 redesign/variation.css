@@ -1,13 +1,15 @@
 
 html body .c-checkout-shipping.-only-address .c-checkout-shipping_container,
 html body .eg_shippingAddress > .col-md-6,
-html body .eg_shippingAddress > .col-lg-6{
+html body .eg_shippingAddress > .col-lg-6,
+html body .eg_shippingAddress > .col-12{
     display: none;
 }
 
 html body .c-checkout-shipping.-only-address.eg_show .c-checkout-shipping_container,
 html body .eg_shippingAddress.eg_show > .col-md-6,
-html body .eg_shippingAddress.eg_show > .col-lg-6{
+html body .eg_shippingAddress.eg_show > .col-lg-6,
+html body .eg_shippingAddress.eg_show > .col-12{
     display: block;
 }
 
