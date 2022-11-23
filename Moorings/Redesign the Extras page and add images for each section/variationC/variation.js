@@ -80,9 +80,9 @@
             btn.addEventListener("click", function() {
                 egtoggle.classList.toggle("eg_active");
                 if (egtoggle.classList.contains("eg_active")) {
-                    btn.innerText = "read less"
+                    btn.innerHTML = "read less"
                 } else {
-                    btn.innerText = "...read more"
+                    btn.innerHTML = "<span style="color:black;">...</style>read more"
                 }
             });
         }
