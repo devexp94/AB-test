@@ -56,20 +56,28 @@ span.qualifier {
 }
 
 form > div:nth-child(1) div.extra-description.row > div.text{
-    white-space: nowrap;
-    /* width: 90%; */
-    overflow: hidden;
-    text-overflow: ellipsis;
+    /*white-space: nowrap;*/
+    width: 100%; 
+    /*overflow: hidden;*/
+    /*text-overflow: ellipsis;*/
  } 
 
- .eg_active{
-    white-space: normal !important;
+form > div:nth-child(1) div.extra-description.row > div.text.eg_active .eg-hidden-text{
+    display: inline !important;
+}
+
+
+ .eg-hidden-text{
+    display: none;
  }
 
- p#eg_show {
-    color: #1BA9B8;
-    font-size: 16px;
+
+#eg_show {
+    color: #1BA9E8;
+    font-size: 14px;
     cursor: pointer;
+    font-weight: 700;
+    text-transform: lowercase;
 }
 
 .extra-inner {
@@ -137,6 +145,12 @@ span.totalPrice {
     margin: 0;
 }
 
+.booking-flow .main .extra .extra-description {
+        width: 100%;
+        margin-inline: 0 !important;
+    }
+
+
 @media(min-width: 768px) {
     .extras form .Collapsible .Collapsible__contentInner>div {
         padding: 15px 15px 0 15px;
@@ -162,10 +176,7 @@ span.totalPrice {
         flex-direction: column;
     }
 
-    .booking-flow .main .extra .extra-description {
-        width: 100%;
-        margin-inline: 0 !important;
-    }
+
 
     .booking-flow .step {
         font-size: 1.5rem;

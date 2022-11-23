@@ -87,16 +87,16 @@
 
            let egtoggle = document.querySelector("form > div:nth-child(1) div.extra-description.row > div.text")
 
-            egtoggle.insertAdjacentHTML("beforeend",`<p id="eg_show">Read More</p>`);
+           egtoggle.innerHTML = egtoggle.textContent.substring(0,100) + `<span class="eg-hidden-text">${egtoggle.textContent.substring(100)}</span>` + `<span id="eg_show">...read more</span>`;
 
             let btn = document.querySelector("#eg_show")
 
             btn.addEventListener("click", function(){
                 egtoggle.classList.toggle("eg_active");    
                if (egtoggle.classList.contains("eg_active")) {
-                 btn.innerText = "Read Less"  
+                 btn.innerText = "read less"  
                }else{
-                btn.innerText = "Read More"
+                btn.innerText = "...read more"
                }
             });
 
