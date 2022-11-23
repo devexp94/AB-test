@@ -67,20 +67,20 @@
             });
 
             // adding read more read less
-            readMoreLess();
+            readMoreLess("form > div:nth-child(1) div.extra-description.row > div.text",200);
         }
 
-        function readMoreLess() {
-            let egtoggle = document.querySelector("form > div:nth-child(1) div.extra-description.row > div.text")
+        function readMoreLess(target,maxLength) {
+            const egtoggle = document.querySelector(target);
 
-            egtoggle.innerHTML = egtoggle.textContent.substring(0, 100) + `<span class="eg-hidden-text">${egtoggle.textContent.substring(100)}</span>` + `<span id="eg_show"><span style="color:black;">...</span>read more</span>`;
+            egtoggle.innerHTML = egtoggle.textContent.substring(0, maxLength) + `<span class="eg-hidden-text">${egtoggle.textContent.substring(maxLength)}</span>` + `<span id="eg_show"><span style="color:black;">...</span>read more</span>`;
 
-            let btn = document.querySelector("#eg_show")
+            const btn = document.querySelector("#eg_show");
 
             btn.addEventListener("click", function() {
                 egtoggle.classList.toggle("eg_active");
                 if (egtoggle.classList.contains("eg_active")) {
-                    btn.innerHTML = "read less"
+                    btn.innerHTML = "read less";
                 } else {
                     btn.innerHTML = '<span style="color:black;">...</span>read more';
                 }
