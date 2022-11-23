@@ -1,0 +1,17 @@
+ul.main-nav-list {
+    pointer-events: none;
+}
+
+/**************Please remove above selection**************/
+
+p.egShip {
+    text-align: center;
+    font-size: 18px;
+    background: #B3CAE84D;
+    overflow: hidden;
+    padding-block: 14px;
+}
+
+.notification.freeShipMsg {
+    display: none;
+}

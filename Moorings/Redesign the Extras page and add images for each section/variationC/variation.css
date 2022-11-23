@@ -55,6 +55,23 @@ span.qualifier {
     grid-row-end: 3;
 }
 
+form > div:nth-child(1) div.extra-description.row > div.text{
+    white-space: nowrap;
+    /* width: 90%; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+ } 
+
+ .eg_active{
+    white-space: normal !important;
+ }
+
+ p#eg_show {
+    color: #1BA9B8;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 .extra-inner {
     border: 1px solid #d0cdc5;
 }
