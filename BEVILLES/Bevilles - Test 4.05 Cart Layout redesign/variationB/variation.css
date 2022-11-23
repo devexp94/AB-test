@@ -8,10 +8,49 @@ p.egShip {
     text-align: center;
     font-size: 18px;
     background: #B3CAE84D;
+    color: #000;
     overflow: hidden;
     padding-block: 14px;
 }
 
 .notification.freeShipMsg {
     display: none;
+}
+
+
+.description-wrp.cf {
+    display: flex;
+}
+
+span.afterpay_installement.cart_installement {
+    display: none !important;
+}
+
+.title_n_varient h3 a {
+    color: #000 !important;
+    font-size: 25px !important;
+}
+
+div.title_n_varient > div > span {
+    background: transparent !important;
+    font-size: 18px !important;
+}
+
+div.title_n_varient > div > span {
+    background: transparent !important;
+    font-size: 18px !important;
+}
+
+.description.cf {
+    position: relative;
+}
+
+.eg_icon {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+}
+
+a.image {
+    margin-bottom: 60px;
 }

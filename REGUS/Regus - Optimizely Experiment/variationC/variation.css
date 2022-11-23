@@ -1,52 +1,78 @@
-
 .eg_btm {
-    display:flex;
-    gap: 15px;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 20px;
-    margin-top: -5%;
+  display: flex;
+  gap: 15px;
+  justify-content: left;
+  align-items: center;
+  margin-top: -5%;
+  padding: 24px;
 }
 
-.eg_btm a{
-    text-decoration: none;    
+.eg_btm a {
+  text-decoration: none;
 }
 
 a.eg_quote {
-    color: #fff;
-    font-weight: 500;
-    background: #e52500;
-    padding: 10px 20px;
-    border-radius: 30px;
+  color: #fff;
+  font-weight: 500;
+  background: #e52500;
+  padding: 10px 20px;
+  border-radius: 30px;
 }
 
 a.eg_learn {
-    color: #e73310;
-    font-weight: 500;
+  color: #e73310;
+  font-weight: 500;
 }
 
 #root > div:nth-child(1) > section:nth-child(6) > div > div div {
-    background: #fff !important;
+  background: #fff !important;
 }
 
 .css-16f4053 img {
-    display: block;
+  display: block;
 }
-
 
 .css-16f4053 {
-    aspect-ratio: 1/1;
-    height: unset !important;
+  aspect-ratio: 1/1;
+  height: unset !important;
 }
 
-
 @media screen and (max-width: 1450px) {
-    .eg_btm {
-        gap: 25px;
-        margin-bottom: 20px;
-    }
-    
-    a.eg_quote.updated {
-        padding: 5px 20px 8px;
-    }
+  .eg_btm {
+    gap: 25px;
+    margin-bottom: 20px;
+  }
+
+  a.eg_quote.updated {
+    padding: 5px 20px 8px;
+  }
+}
+
+@media (min-width: 1020px) and (max-width: 1250px) {
+  .eg_btm {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  a.eg_quote {
+    padding: 8px 30px !important;
+  }
+
+  a.eg_learn {
+    padding-left: 20px !important;
+  }
+
+  .css-1r4bbm9 {
+    position: relative !important;
+  }
+
+  .eg_btm {
+    position: absolute;
+    bottom: -30px;
+  }
+
+  .css-gw8ne9 {
+    padding-bottom: 102px !important;
+  }
 }
