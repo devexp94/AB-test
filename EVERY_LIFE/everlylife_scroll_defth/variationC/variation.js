@@ -96,7 +96,7 @@
         document.querySelector('#estimatorRef form > div > section:nth-child(3)').scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
       });
       document.querySelector('p.eg-section-name.eg-result').addEventListener('click', function () {
-        document.querySelector('#estimatorRef form > div > section:nth-child(4)').scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+        document.querySelector('#estimatorRef form > div > section:nth-child(4) > div').scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
       });
     }
 
