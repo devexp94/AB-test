@@ -40,7 +40,7 @@
             document.querySelector("section.black-friday .black-friday__text > h2").innerHTML = `Transform The Way You Design Electronics With The<br>World's Most Trusted PCB Design Software`;
 
             // trusted by xxxx companies
-            document.querySelector("section.black-friday .black-friday__text > p").innerHTML = `Trusted By More Than X,XXX Companies For 35 Years`;
+            document.querySelector("section.black-friday .black-friday__text > p").innerHTML = `Trusted By Companies Worldwide For Over 35 Years`;
 
             // updating button text 
             document.querySelector("section.black-friday .black-friday__text .hero__btns a:nth-child(2)").textContent = "Get a Free Trial";

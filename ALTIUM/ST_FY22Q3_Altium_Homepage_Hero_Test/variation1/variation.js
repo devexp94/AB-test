@@ -57,7 +57,7 @@
             document.querySelector("section.black-friday .black-friday__text > h2").innerHTML = `Transform The Way You Design Electronics With The<br>World's Most Trusted PCB Design Software`;
 
             // trusted by xxxx companies
-            document.querySelector("section.black-friday .black-friday__text > p").textContent = `Trusted By More Than X,XXX Companies For 35 Years`;
+            document.querySelector("section.black-friday .black-friday__text > p").textContent = `Trusted By Companies Worldwide For Over 35 Years`;
 
             // adding logos
             // all logos src links serial wise
