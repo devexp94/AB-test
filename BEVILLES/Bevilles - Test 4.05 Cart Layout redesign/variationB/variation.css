@@ -1,17 +1,87 @@
-ul.main-nav-list {
-    pointer-events: none;
+.eg-login-signup-msg {
+    border: 1px solid #bec7cb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: black;
+    font-size: 17px;
 }
 
-/**************Please remove above selection**************/
+.eg-login-signup-msg p {
+    margin: 0;
+}
 
-p.egShip {
-    text-align: center;
+.eg-login-signup-msg a {
+    color: black;
+    text-decoration: revert;
+}
+
+#content #shopify-section-cart-template .freeShipMsg {
+    margin-block: 12px;
+    padding-block: 10px;
+}
+
+#content #shopify-section-cart-template .freeShipMsg p {
+    font-weight: 400;
+    color: black;
     font-size: 18px;
-    background: #B3CAE84D;
-    overflow: hidden;
-    padding-block: 14px;
+    line-height: 1.4;
 }
 
-.notification.freeShipMsg {
+#content #cartform .cart-items .item .description {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+}
+
+#content #cartform .cart-items .item .description > .image {
+    float: none;
+    margin-left: 0;
+    width: 130px;
+    margin-right: 20px;
+    align-self: center;
+}
+
+#content #shopify-section-cart-template .cart-items .item h3 {
+    color: black !important;
+}
+
+#content #shopify-section-cart-template .cart-items .item .price .cart_installement {display: none;}
+
+#content #cartform .move_to_wishlist_wrap {
+    display: none;
+}
+
+#content #shopify-section-cart-template .cart-items .item {
+    padding: 20px 10px;
+}
+
+#content #cartform .cart-items .item .description::before {
+    content: '';
+    background-image: url("https://img.icons8.com/fluency-systems-filled/48/8caadc/hearts.png");
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 22px;
+    display: block;
+    width: 22px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#content #cartform .cart-right-section {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(0 0 0 /30%);
+    padding: 0;
+}
+
+#content #cartform .cart-right-section .delivery-option {
+    order: -1;
+}
+
+#content #cartform .cart-right-section .delivery-option .clickandcollect>:is(h4,p) {
     display: none;
 }

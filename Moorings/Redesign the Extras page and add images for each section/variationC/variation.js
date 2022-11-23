@@ -1,4 +1,4 @@
-(function () {
+(function() {
     try {
         /* main variables */
         var debug = 0;
@@ -7,7 +7,7 @@
         /* all Pure helper functions */
 
         function waitForElement(selector, trigger, delayInterval, delayTimeout) {
-            var interval = setInterval(function () {
+            var interval = setInterval(function() {
                 if (
                     document &&
                     document.querySelector(selector) &&
@@ -17,7 +17,7 @@
                     trigger();
                 }
             }, delayInterval);
-            setTimeout(function () {
+            setTimeout(function() {
                 clearInterval(interval);
             }, delayTimeout);
         }
@@ -28,17 +28,17 @@
     <img class="full-2-1-breakpoints-theme-moorings-xsw-1x" src="https://editor-assets.abtasty.com/46121/637c78c60d1091669101766.png" width="768" height="384" alt="">
     </div>
   `;
-  var images = ['https://editor-assets.abtasty.com/46121/637c78a6e843c1669101734.png','https://editor-assets.abtasty.com/46121/637c785999bca1669101657.png','https://editor-assets.abtasty.com/46121/637c78c60d1091669101766.png','https://editor-assets.abtasty.com/46121/637c78ecd9bc91669101804.png']
+        var images = ['https://editor-assets.abtasty.com/46121/637c78a6e843c1669101734.png', 'https://editor-assets.abtasty.com/46121/637c785999bca1669101657.png', 'https://editor-assets.abtasty.com/46121/637c78c60d1091669101766.png', 'https://editor-assets.abtasty.com/46121/637c78ecd9bc91669101804.png']
 
         function init() {
             let container = document.querySelectorAll("#tm-booking .main .extra-inner .extra-line-item");
-            for (var i = 0; i< container.length; i++) {
+            for (var i = 0; i < container.length; i++) {
                 let eg_Img = `
                 <div class="egImg">
                 <img class="full-2-1-breakpoints-theme-moorings-xsw-1x" src="${images[i]}" width="768" height="384" alt="">
                 </div>
               `;
-              container[i].insertAdjacentHTML("afterbegin", eg_Img);
+                container[i].insertAdjacentHTML("afterbegin", eg_Img);
             }
             movingElements(document.querySelectorAll("#tm-booking .main .extra-inner"));
             // mutation observer
@@ -65,6 +65,26 @@
                     childList: true
                 });
             });
+
+            // adding read more read less
+            readMoreLess();
+        }
+
+        function readMoreLess() {
+            let egtoggle = document.querySelector("form > div:nth-child(1) div.extra-description.row > div.text")
+
+            egtoggle.innerHTML = egtoggle.textContent.substring(0, 100) + `<span class="eg-hidden-text">${egtoggle.textContent.substring(100)}</span>` + `<span id="eg_show"><span style="color:black;">...</style>read more</span>`;
+
+            let btn = document.querySelector("#eg_show")
+
+            btn.addEventListener("click", function() {
+                egtoggle.classList.toggle("eg_active");
+                if (egtoggle.classList.contains("eg_active")) {
+                    btn.innerText = "read less"
+                } else {
+                    btn.innerText = "...read more"
+                }
+            });
         }
 
         // moving crew message and text note
@@ -85,20 +105,6 @@
                 }
             })
 
-           let egtoggle = document.querySelector("form > div:nth-child(1) div.extra-description.row > div.text")
-
-           egtoggle.innerHTML = egtoggle.textContent.substring(0,100) + `<span class="eg-hidden-text">${egtoggle.textContent.substring(100)}</span>` + `<span id="eg_show">...read more</span>`;
-
-            let btn = document.querySelector("#eg_show")
-
-            btn.addEventListener("click", function(){
-                egtoggle.classList.toggle("eg_active");    
-               if (egtoggle.classList.contains("eg_active")) {
-                 btn.innerText = "read less"  
-               }else{
-                btn.innerText = "...read more"
-               }
-            });
 
         }
 
@@ -109,7 +115,3 @@
         if (debug) console.log(e, "error in Test" + variation_name);
     }
 })();
-
-
-
-
