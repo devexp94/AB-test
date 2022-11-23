@@ -73,7 +73,7 @@
         function readMoreLess() {
             let egtoggle = document.querySelector("form > div:nth-child(1) div.extra-description.row > div.text")
 
-            egtoggle.innerHTML = egtoggle.textContent.substring(0, 100) + `<span class="eg-hidden-text">${egtoggle.textContent.substring(100)}</span>` + `<span id="eg_show"><span style="color:black;">...</style>read more</span>`;
+            egtoggle.innerHTML = egtoggle.textContent.substring(0, 100) + `<span class="eg-hidden-text">${egtoggle.textContent.substring(100)}</span>` + `<span id="eg_show"><span style="color:black;">...</span>read more</span>`;
 
             let btn = document.querySelector("#eg_show")
 
@@ -82,7 +82,7 @@
                 if (egtoggle.classList.contains("eg_active")) {
                     btn.innerHTML = "read less"
                 } else {
-                    btn.innerHTML = "<span style="color:black;">...</style>read more"
+                    btn.innerHTML = '<span style="color:black;">...</span>read more';
                 }
             });
         }
