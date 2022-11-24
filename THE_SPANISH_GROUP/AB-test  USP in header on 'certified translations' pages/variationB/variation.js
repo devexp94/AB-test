@@ -26,7 +26,7 @@
   
     let htmlStr = `<h3 class="eg_tile"> Translating Over 90 Languages </br>Inc 5000 Award Winners 2021 & 2022 </h3>`
     let htmlStr2 = `<h3 class="eg_tile"> <span class="eg_one">Lightning Fast Delivery. Same Day Delivery If Needed</span> <br/> Contracted by Governments</h3>`
-    let htmlStr3 = `<h3 class="eg_tile"> <span class="eg_one">100% Guaranteed Acceptance for Translated Documents for USCIS.<br/> Corporations Recommended by Embassies and Consulates</span></h3>`
+    let htmlStr3 = `<h3 class="eg_tile"> <span class="eg_two">100% Guaranteed Acceptance for Translated Documents for USCIS.<br/> Corporations Recommended by Embassies and Consulates</span></h3>`
 
 function init(){
 
