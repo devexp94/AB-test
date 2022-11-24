@@ -11,6 +11,10 @@
     background-position: center;
 }
 
+#shopify-section-cart-template .cart-right-section .cart_installement {
+    display: none;
+}
+
 #content .upsell-section.upsell-cart .product-details {
     text-align: justify;
     display: flex;
@@ -116,9 +120,6 @@
     color: black !important;
 }
 
-#content #shopify-section-cart-template .cart-items .item .price .cart_installement {
-    display: none;
-}
 
 #content #cartform .move_to_wishlist_wrap {
     display: none;
@@ -317,9 +318,6 @@
     color: black !important;
 }
 
-#content #shopify-section-cart-template .cart-items .item .price .cart_installement {
-    display: none;
-}
 
 #content #cartform .move_to_wishlist_wrap {
     display: none;

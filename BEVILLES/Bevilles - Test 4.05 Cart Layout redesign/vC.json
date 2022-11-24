@@ -1,0 +1,8 @@
+{
+	"files": [
+		"./variationC/variation.css",
+		"./variationC/variation.js"
+	],
+	"urls": ["https://www.bevilles.com.au/cart"],
+	"inject": ""
+}
