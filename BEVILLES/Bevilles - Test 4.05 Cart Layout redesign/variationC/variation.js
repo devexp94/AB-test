@@ -102,7 +102,8 @@
             const egFreeShip = document.querySelector("#content #shopify-section-cart-template .freeShipMsg");
             const egCartSectionRght = document.querySelector("#content #cartform .cart-right-section");
             
-
+            // text bold in free ship msg
+            egFreeShip.querySelector("p").innerHTML = egFreeShip.querySelector("p").innerHTML.replace("FREE SHIPPING!","<strong class='eg-freeship-bold'>FREE SHIPPING!</strong>");
 
             // inserting login signup msg
             egFreeShip.insertAdjacentHTML("beforebegin", `
@@ -129,6 +130,9 @@
             // changing tabs innerHtml
             const egDelivery = document.querySelector("#content #cartform .cart-right-section .delivery-option #location-container label[for='bevilles-home-radio']");
             const egCollect = document.querySelector("#content #cartform .cart-right-section .delivery-option #location-container label[for='bevilles-store-radio']");
+
+            // changing delevery text
+            document.querySelector("#content .cart-amount-summary label[for='checkout']:nth-of-type(1)").textContent = "Order summary";
 
             egDelivery.innerHTML = `<span class="eg-delivery-tab">${egTruckSvg} Delivery</span>`;
             egCollect.innerHTML = `<span class="eg-delivery-tab">${egCollectSvg} Click &amp; Collect</span>`;

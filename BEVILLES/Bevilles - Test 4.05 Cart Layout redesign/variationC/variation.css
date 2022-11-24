@@ -9,9 +9,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    cursor: pointer;
 }
 
-#shopify-section-cart-template .cart-right-section .cart_installement {
+#content #shopify-section-cart-template .cart-right-section .cart_installement {
     display: none;
 }
 
@@ -21,13 +22,20 @@
     flex-direction: column;
 }
 
-#content .upsell-section.upsell-cart .product-details .product-title,#content .upsell-section.upsell-cart .product-details div#price {
+#content .upsell-section.upsell-cart .product-details .product-title,
+#content .upsell-section.upsell-cart .product-details div#price {
     margin-left: 0;
 }
 
+#cartform .discount {
+    display: none;
+}
+
 @media(min-width: 768px) {
-    #cartform .discount {
-        display: none;
+    #content .cart-items .price h5 {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
     }
 
     #content .cart-items .quantity {
@@ -116,10 +124,13 @@
     align-self: center;
 }
 
-#content #shopify-section-cart-template .cart-items .item h3 {
+#content #shopify-section-cart-template .cart-items .item h3 a {
     color: black !important;
 }
 
+#content #shopify-section-cart-template .cart-items .item .price .cart_installement {
+    display: none;
+}
 
 #content #cartform .move_to_wishlist_wrap {
     display: none;
@@ -314,9 +325,6 @@
     align-self: center;
 }
 
-#content #shopify-section-cart-template .cart-items .item h3 {
-    color: black !important;
-}
 
 
 #content #cartform .move_to_wishlist_wrap {
@@ -504,7 +512,16 @@
 }
 
 
+
 @media(max-width: 767px) {
+    #content #shopify-section-cart-template button {
+    width: 100%;
+}
+    #content .cart-items .price h5 span {
+        font-size: 23px;
+        color: black !important;
+    }
+
     #content .cart-left-section {
         padding-inline: 0;
         display: flex;
@@ -517,4 +534,34 @@
         left: 10px !important;
         bottom: unset !important;
     }
+
+    div.upsell-slider-wrap button.slick-prev.slick-arrow,
+    div.upsell-slider-wrap button.slick-next.slick-arrow {
+        position: absolute;
+        top: 110%;
+    }
+
+    .upsell-section-slider .slick-dots {
+        display: block !important;
+        position: absolute;
+    }
+
+    ul.slick-dots {
+        position: absolute;
+        top: 100%;
+    }
+
+    .slick-dots li {
+        position: relative;
+        height: 21px;
+        width: 21px;
+        border: 1px solid #cccccc;
+        ;
+        border-radius: 50%;
+    }
+
+    .upsell-section-slider .slick-dots li button:before {
+        color: #9fc4e5 !important;
+    }
+
 }
