@@ -27,10 +27,7 @@
         function init() {
             /* start your code here */
 
-            /*logic for discount
-            discount percentage will be calculate with the 2 precision point(2 decimal points) 
-            if not needed just replace parseFloat to parseInt in the return statement of 
-            calculate function*/
+            /*logic for discount*/
 
             const egOldPrice = document.querySelector("div#content .page-section .order-summary__panel-body .order-summary__itemised:nth-child(3) .cv-price-old").textContent.split("£").pop();
 
@@ -43,7 +40,7 @@
 
             function calculateDiscount(oldValue, newValue) {
                 let dis = (Math.abs(oldValue - newValue) / oldValue) * 100;
-                return parseFloat(dis.toFixed(2)); // replace parseFloat to parseInt only if needed
+                return parseInt(dis);
 
             }
         }
