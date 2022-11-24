@@ -177,4 +177,17 @@ div.eg-usp svg {
         background-position: left !important;
         background-size: cover !important;
     }
+
+    .heading-content {
+        background: none;
+    }
+    
+    h1.title ,
+    .heading-content p {
+        color: #fff !important;
+    }
+    
+    div.header-wrapper > div.heading-container.universal-wrapper > div.wave-layer-M > img {
+        display: none;
+    }
 }

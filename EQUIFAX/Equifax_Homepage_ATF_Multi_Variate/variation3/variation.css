@@ -29,6 +29,10 @@
     margin-inline: auto;
 }
 
+.eg-video-carousel-container {
+    padding-top: 20px;
+}
+
 .eg-video-carousel-wrapper .video-block-container .hp-grid-parent {
     flex-direction: column;
 }
@@ -99,6 +103,11 @@ div.eg-usp svg {
 @media screen and (max-width:1200px) {
     div.eg-usp {
         width: 100%;
+    }
+
+    .eg-video-carousel-container {
+        opacity: 1;
+        padding-top: 60px;
     }
 }
 
@@ -230,6 +239,24 @@ div.eg-usp svg {
     .eg-video-carousel-wrapper .video-block-container p.info-block-p {
         font-size: 13.8px;
     }
+
+    .heading-content {
+        background: none;
+    }
+    
+    h1.title ,
+    .heading-content p {
+        color: #fff !important;
+    }
+    
+    div.header-wrapper > div.heading-container.universal-wrapper > div.wave-layer-M > img {
+        display: none;
+    }
+
+.eg-video-carousel-container {
+    opacity: 1;
+    padding-top: 60px;
+}
 
     .carousel {
         height: 640px !important;

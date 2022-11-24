@@ -71,6 +71,19 @@ div.eg-usp svg {
     .heading-container .heading-content>h1 {
         margin-top:0;
     }
+
+    .heading-content {
+        background: none;
+    }
+    
+    h1.title ,
+    .heading-content p {
+        color: #fff !important;
+    }
+    
+    div.header-wrapper > div.heading-container.universal-wrapper > div.wave-layer-M > img {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 480px) {
