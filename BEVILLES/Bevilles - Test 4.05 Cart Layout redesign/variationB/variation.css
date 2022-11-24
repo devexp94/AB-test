@@ -14,7 +14,7 @@
 
 .eg-login-signup-msg a {
     color: black;
-    text-decoration: revert;
+    text-decoration: underline;
 }
 
 #content #shopify-section-cart-template .freeShipMsg {
@@ -35,7 +35,7 @@
     justify-content: space-between;
 }
 
-#content #cartform .cart-items .item .description > .image {
+#content #cartform .cart-items .item .description>.image {
     float: none;
     margin-left: 0;
     width: 130px;
@@ -47,7 +47,9 @@
     color: black !important;
 }
 
-#content #shopify-section-cart-template .cart-items .item .price .cart_installement {display: none;}
+#content #shopify-section-cart-template .cart-items .item .price .cart_installement {
+    display: none;
+}
 
 #content #cartform .move_to_wishlist_wrap {
     display: none;
@@ -80,9 +82,10 @@
 
 #content #cartform .cart-right-section .delivery-option {
     order: -1;
+    margin-bottom: 10px;
 }
 
-#content #cartform .cart-right-section .delivery-option .clickandcollect>:is(h4,p) {
+#content #cartform .cart-right-section .delivery-option .clickandcollect>:is(h4, p) {
     display: none;
 }
 
@@ -93,15 +96,121 @@
     text-transform: capitalize;
 }
 
-#content #cartform .cart-right-section .delivery-option #location-container input[type=radio]:checked+label {
+#content #cartform .cart-right-section .delivery-option #location-container label.btn:hover {
+    background: white;
+}
+
+#content #cartform .cart-right-section .delivery-option #location-container input[type='radio']:checked+label {
     background: #5e737e;
     color: white;
 }
 
-#content #cartform .cart-right-section .delivery-option #location-container input[type=radio]:checked+label svg {
+#content #cartform .cart-right-section .delivery-option #location-container input[type='radio']:checked+label svg {
     fill: white;
+}
+
+#content #cartform .cart-right-section .delivery-option #location-container label.btn svg {
+    width: 25px;
+    height: 22px;
+    fill: #5e737e;
 }
 
 #content #cartform .cart-right-section .payment-logos {
     order: 3;
+    justify-content: center;
+    gap: 10px;
+    padding-inline: 18px;
+    align-items: baseline;
+    margin-top: 10px;
+}
+
+#content #cartform .cart-right-section .delivery-option #location-container label.btn:hover {
+    background: white;
+}
+
+#content #cartform .cart-right-section .cart-amount-summary {
+    padding-inline: 17px;
+    display: flex;
+    flex-direction: column;
+}
+
+#content #cartform .cart-right-section .cart-amount-summary #checkout {
+    color: black;
+}
+
+#content #cartform .cart-right-section .cart-amount-summary .extra-checkout-buttons ul[role='list'] {
+    flex-direction: row !important;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+
+#content #cartform .cart-right-section .cart-amount-summary .extra-checkout-buttons ul[role='list'] li {
+    flex: 1;
+    margin: 0 !important;
+}
+
+#content #cartform .cart-right-section .cart-amount-summary .extra-checkout-buttons ul[role='list'] li>div {
+    margin: 0;
+    max-height: 49px !important;
+    height: 100% !important;
+}
+
+#content #cartform .cart-right-section .cart-amount-summary .badge-cart {
+    order: 2;
+    margin-top: .7em;
+}
+
+.eg-verified-trust .eg-benifits {
+    text-align: left !important;
+    padding: 0 !important;
+    margin-inline: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: fit-content;
+}
+
+.eg-verified-trust .eg-benifits li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+}
+
+.eg-verified-trust .eg-benifits li::before {
+    content:'';
+    position: static !important;
+    display: inline-block;
+    background-image: url('https://cdn.shopify.com/s/files/1/0057/6657/8279/files/imgpsh_fullsize_anim_58c525ba-3930-4a99-b585-048becfadf0b.jpg?v=1615977723');
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+}
+
+.eg-verified-trust {
+    display: flex;
+    gap: 20px;
+    padding-inline: 18px;
+    margin-block: 16px;
+    order: 4;
+    justify-content: center;
+}
+
+.eg-verified-trust .icon-delivery-return img {
+    max-width: 122px !important;
+}
+
+.eg-verified-trust .badge-cart {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+}
+
+.eg-tabel-list {
+    width: max-content;
+}
+
+#content .cart-left-section {
+    padding-inline: 0;
 }
