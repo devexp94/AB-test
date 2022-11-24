@@ -519,4 +519,33 @@
         left: 10px !important;
         bottom: unset !important;
     }
+
+    div.upsell-slider-wrap  button.slick-prev.slick-arrow ,
+    div.upsell-slider-wrap  button.slick-next.slick-arrow {
+    position: absolute;
+    top: 110%;
+}
+
+.upsell-section-slider .slick-dots {
+    display: block !important;
+    position: absolute;
+}
+
+ul.slick-dots {
+    position: absolute;
+    top: 100%;
+}
+
+.slick-dots li {
+    position: relative;
+    height: 21px;
+    width: 21px;
+    border: 1px solid #cccccc;;
+    border-radius: 50%;
+}
+
+.upsell-section-slider .slick-dots li button:before {
+    color: #9fc4e5 !important;
+}
+
 }
