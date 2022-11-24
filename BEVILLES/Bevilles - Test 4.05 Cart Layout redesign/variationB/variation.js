@@ -96,23 +96,16 @@
                      </ul>
                 </div>
                 </div>`);
-
+            
             // moving verified box inside this div
             const egVerifiedBox = document.querySelector("#content #cartform .cart-right-section .cart-amount-summary .badge-cart");
             document.querySelector(".eg-verified-trust").insertAdjacentElement("afterbegin", egVerifiedBox);
 
-            // moving caraosel
-            // cart carousel
-            // if (window.innerWidth < 768) {
-            //     egCartSectionRght.insertAdjacentHTML("afterend", `<div class="column eg-cart-carousel">
-            // </div>`);
-
-            //     const egCarouselHeader = document.querySelector("#content .upsell-slider-header");
-            //     const egCarousel = document.querySelector("#content .upsell-section-slider");
-
-            //     [egCarouselHeader, egCarousel].forEach(ele => { document.querySelector(".eg-cart-carousel").insertAdjacentElement("beforeend", ele) });
-            // }
-
+            // moving delivery and click & collect box inside right section
+            if (window.innerWidth < 768) {
+                document.querySelector("#content .cart-left-section").insertAdjacentElement("beforeend", egCartSectionRght);
+            }
+        
         }
 
         waitForElement("#content #shopify-section-cart-template", init, 100, 35000);

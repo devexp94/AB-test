@@ -428,4 +428,16 @@
 
 #content .cart-left-section {
     padding-inline: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#content .upsell-slider-wrap {
+    order: 3;
+    margin-top: 10px;
+    border: none;
+}
+
+#content .upsell-slider-wrap .upsell-slider-header {
+    margin-bottom: 11px;
 }
