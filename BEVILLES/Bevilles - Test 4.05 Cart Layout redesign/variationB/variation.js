@@ -101,9 +101,9 @@
         function init() {
             const egFreeShip = document.querySelector("#content #shopify-section-cart-template .freeShipMsg");
             const egCartSectionRght = document.querySelector("#content #cartform .cart-right-section");
-            
+
             // text bold in free ship msg
-            egFreeShip.querySelector("p").innerHTML = egFreeShip.querySelector("p").innerHTML.replace("FREE SHIPPING!","<strong class='eg-freeship-bold'>FREE SHIPPING!</strong>");
+            egFreeShip.querySelector("p").innerHTML = egFreeShip.querySelector("p").innerHTML.replace("FREE SHIPPING!", "<strong class='eg-freeship-bold'>FREE SHIPPING!</strong>");
 
             // inserting login signup msg
             egFreeShip.insertAdjacentHTML("beforebegin", `
@@ -112,11 +112,11 @@
               </div>
             `);
 
-            
+
 
             //adding heart icon
-            document.querySelectorAll("#content #cartform .cart-items .item .description").forEach(ele=>{
-              ele.insertAdjacentHTML("afterbegin", `<div class="eg-move-to-wishlist"></div>`);  
+            document.querySelectorAll("#content #cartform .cart-items .item .description").forEach(ele => {
+                ele.insertAdjacentHTML("afterbegin", `<div class="eg-move-to-wishlist"></div>`);
             })
 
             live('.eg-move-to-wishlist', 'click', function() {
@@ -158,6 +158,41 @@
                 document.querySelector("#content .cart-left-section").insertAdjacentElement("beforeend", egCartSectionRght);
             }
 
+        }
+
+
+        // for slider
+        function waitForSlick(trigger) {
+            var interval = setInterval(function() {
+                if (window.jQuery.fn.slick != undefined) {
+                    clearInterval(interval);
+                    trigger();
+                }
+            }, 50);
+            setTimeout(function() {
+                clearInterval(interval);
+            }, 15000)
+        }
+
+        function waitForjQuery(trigger) {
+            var interval = setInterval(function() {
+                if (window.jQuery != undefined) {
+                    clearInterval(interval);
+                    trigger();
+                }
+            }, 50);
+            setTimeout(function() {
+                clearInterval(interval);
+            }, 15000)
+        }
+
+        function addScript() {
+            var cssScript = '' +
+                "<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css'/>";
+            document.querySelector('head').insertAdjacentHTML('beforeend', cssScript);
+            var swiperScript = document.createElement('script');
+            swiperScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js';
+            document.getElementsByTagName('head')[0].appendChild(swiperScript);
         }
 
         waitForElement("#content #shopify-section-cart-template", init, 100, 35000);
