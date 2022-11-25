@@ -1,3 +1,9 @@
 .eg-msg {
-    font-size: 14px;
+    font-size: 13px;
+}
+
+@media(min-width: 992px) {
+    .signup__right-col {
+        width: 36.333333%;
+    }
 }
