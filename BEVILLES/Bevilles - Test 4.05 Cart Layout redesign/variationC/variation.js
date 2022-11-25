@@ -84,7 +84,7 @@
             document.querySelector("#content .amount-summary .total-saving-amount").textContent = document.querySelector("#content .amount-summary .total-saving-amount").textContent.split(".").shift();
             setTimeout(()=>{
                 document.querySelector("#content .amount-summary .cart_total").textContent = document.querySelector("#content .amount-summary .cart_total").textContent.split(".").shift();                
-            });
+            },2000);
             
 
             // changing delevery text
