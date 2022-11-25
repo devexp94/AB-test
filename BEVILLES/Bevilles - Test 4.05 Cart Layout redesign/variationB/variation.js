@@ -146,39 +146,6 @@
         }
 
 
-        // for slider
-        function waitForSlick(trigger) {
-            var interval = setInterval(function() {
-                if (window.jQuery.fn.slick != undefined) {
-                    clearInterval(interval);
-                    trigger();
-                }
-            }, 50);
-            setTimeout(function() {
-                clearInterval(interval);
-            }, 15000)
-        }
-
-        function waitForjQuery(trigger) {
-            var interval = setInterval(function() {
-                if (window.jQuery != undefined) {
-                    clearInterval(interval);
-                    trigger();
-                }
-            }, 50);
-            setTimeout(function() {
-                clearInterval(interval);
-            }, 15000)
-        }
-
-        function addScript() {
-            var cssScript = '' +
-                "<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css'/>";
-            document.querySelector('head').insertAdjacentHTML('beforeend', cssScript);
-            var swiperScript = document.createElement('script');
-            swiperScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js';
-            document.getElementsByTagName('head')[0].appendChild(swiperScript);
-        }
 
         waitForElement("#content #shopify-section-cart-template", init, 100, 35000);
     } catch (e) {
