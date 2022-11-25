@@ -1,0 +1,12 @@
+{
+	"files": [
+		"./variationC/variation.css",
+		"./variationC/variation.js"
+	],
+	"urls": [
+		"https://www.easyoffices.com/in/office-space/bangalore",
+		"https://www.easyoffices.com/in/office-space/pune",
+		"https://www.easyoffices.com/au/office-space/melbourne",
+		"https://www.easyoffices.com/uk/office-space/london"
+	]
+}
