@@ -4,7 +4,11 @@
     flex-wrap: nowrap;
 }
 
-
+.eg_tile img {
+    padding-right: 3px;
+    width: fit-content;
+    padding-bottom: 2px;
+}
 
 h3.eg_tile {
     background: rgba(255,255,255,.9)!important;
@@ -20,6 +24,7 @@ h3.eg_tile {
 
 span.eg_one {
     font-size: 25px;
+    padding-bottom: 10px;
 }
 span.eg_two {
     font-size: 22px;
@@ -59,8 +64,8 @@ span.eg_two {
 @media (min-width: 992px) and (max-width: 1199px) {
     h3.eg_tile {
         margin-bottom: 4%;
-        padding: 14px 26px;
-        width: 60%;
+        padding: 14px 10px;
+        width: 70%;
         font-size: 23px;
     }
 }
