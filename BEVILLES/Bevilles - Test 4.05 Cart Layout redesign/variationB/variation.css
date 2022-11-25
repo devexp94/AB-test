@@ -1,5 +1,10 @@
 #content .upsellproductform .upsellproductformbutton {
     color: black;
+    text-transform: capitalize;
+}
+
+#content .upsell-slider-wrap .upsell-slider-header .description {
+    color: black;
 }
 
 #content .amount-summary .total-saving-amount {
@@ -16,6 +21,7 @@
 
 #content #shopify-section-cart-template .cart-right-section .cart_installement {
     margin-top: 16px;
+    font-size: 14px;
 }
 
 #content #cartform .cart-items .description .cart__meta-text span {
@@ -57,8 +63,9 @@
 }
 
 #content .cart-items .price h5 s {
-        font-size: 16px;
-    }
+    font-size: 17px;
+    padding-top: 8px;
+}
 
 @media(min-width: 768px) {
     .cart-items .description .title_n_varient {
@@ -244,7 +251,7 @@
 #content #cartform .cart-right-section {
     display: flex;
     flex-direction: column;
-    border: 2px solid #5e737e;
+    border: 2px solid rgb(0 0 0 /10%);
     padding: 0;
 }
 

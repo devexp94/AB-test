@@ -1,5 +1,10 @@
-#content .upsellproductform .upsellproductformbutton {
-    color: black;
+#content .upsellproductform .upsellproductformbutton,
+#content .upsell-slider-wrap .upsell-slider-header .description{
+    color: black !important;
+}
+
+#content .upsellproductform .upsellproductformbutton{
+    text-transform: capitalize;
 }
 
 #content .amount-summary .total-saving-amount {
@@ -57,7 +62,8 @@
 }
 
 #content .cart-items .price h5 s {
-    font-size: 16px;
+    font-size: 17px;
+    padding-top: 8px;
 }
 
 @media(min-width: 768px) {
@@ -247,7 +253,7 @@
 #content #cartform .cart-right-section {
     display: flex;
     flex-direction: column;
-    border: 2px solid #5e737e;
+    border: 2px solid rgb(0 0 0 /10%);
     padding: 0;
 }
 
