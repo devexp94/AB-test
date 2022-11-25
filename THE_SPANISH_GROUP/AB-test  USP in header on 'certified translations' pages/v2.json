@@ -1,0 +1,12 @@
+{
+	"files": [
+		"./variationC/variation.css",
+		"./variationC/variation.js"
+	],
+	"urls": [
+		"https://thespanishgroup.org/translations/certified-translations-for-official-civil-documents/",
+		"https://thespanishgroup.org/translations/diploma-and-transcript-spanish-translation",
+		"https://thespanishgroup.org/translations/immigration-certificate-translation"
+	],
+	"inject": ""
+}
