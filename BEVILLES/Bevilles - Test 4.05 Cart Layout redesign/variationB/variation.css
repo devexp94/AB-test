@@ -14,6 +14,10 @@
     margin-top: 16px;
 }
 
+#content #cartform .cart-items .description .cart__meta-text span {
+    background: none;
+}
+
 #content #cartform .cart-items .item .description .eg-move-to-wishlist {
     background-image: url(https://img.icons8.com/fluency-systems-filled/48/8caadc/hearts.png);
     position: absolute;

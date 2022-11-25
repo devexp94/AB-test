@@ -1,6 +1,9 @@
 #content .upsellproductform .upsellproductformbutton {
     color: black;
 }
+#content #cartform .cart-items .description .cart__meta-text span {
+    background: none;
+}
 
 #content #cartform .cart-right-section .cart-amount-summary .extra-checkout-buttons > div {
     margin-bottom: 0 !important;
