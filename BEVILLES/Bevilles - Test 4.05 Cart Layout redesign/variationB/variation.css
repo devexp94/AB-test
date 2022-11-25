@@ -28,6 +28,19 @@
 }
 
 @media(min-width: 768px) {
+    #content .upsell-section-slider {
+        display: flex;
+    }
+
+    #content .upsell-section-slider section {
+        height: auto !important;
+        flex: 1;
+    }
+
+    #content .upsell-section-slider>:nth-child(3 + n-resize) {
+        display: none;
+    }
+
     #content .cart-items .price h5 {
         display: flex;
         flex-direction: column;
@@ -170,15 +183,18 @@
     color: white;
 }
 
-#content #cartform .cart-right-section .delivery-option #location-container input[type='radio']:checked+label svg {
+#content #cartform .cart-right-section .delivery-option #location-container input[type='radio']:checked+label svg path {
     fill: white;
 }
 
-#content #cartform .cart-right-section .delivery-option #location-container label.btn svg {
-    width: 25px;
-    height: 22px;
+#content #cartform .cart-right-section .delivery-option #location-container label.btn svg path {
     fill: #5e737e;
 }
+#content #cartform .cart-right-section .delivery-option #location-container label.btn svg{
+    width: 25px;
+    height: 22px;    
+}
+
 
 #content #cartform .cart-right-section .payment-logos {
     order: 3;
@@ -368,15 +384,6 @@
     color: white;
 }
 
-#content #cartform .cart-right-section .delivery-option #location-container input[type='radio']:checked+label svg {
-    fill: white;
-}
-
-#content #cartform .cart-right-section .delivery-option #location-container label.btn svg {
-    width: 25px;
-    height: 22px;
-    fill: #5e737e;
-}
 
 #content #cartform .cart-right-section .payment-logos {
     order: 3;
@@ -514,8 +521,9 @@
 
 @media(max-width: 767px) {
     #content #shopify-section-cart-template .upsellproductform button {
-    width: 100%;
-}
+        width: 100%;
+    }
+
     #content .cart-items .price h5 span {
         font-size: 23px;
         color: black !important;
