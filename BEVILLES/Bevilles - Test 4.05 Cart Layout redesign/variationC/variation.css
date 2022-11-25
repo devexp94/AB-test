@@ -170,6 +170,9 @@
 }
 
 @media(min-width: 768px) and (max-width: 1292px) {
+    #content #shopify-section-cart-template .cart_installement{
+        padding-left:0;
+    }
     .eg-delivery-tab{
         font-size: 13px !important;
     }
