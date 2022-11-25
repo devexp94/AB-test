@@ -81,14 +81,15 @@
             const egCartSectionRght = document.querySelector("#content #cartform .cart-right-section");
             
             // text bold in free ship msg
-            egFreeShip.querySelector("p").innerHTML = egFreeShip.querySelector("p").innerHTML.replace("FREE SHIPPING!","<strong class='eg-freeship-bold'>FREE SHIPPING!</strong>");
+            egFreeShip.querySelector("p").innerHTML = egFreeShip.querySelector("p").innerHTML.replace("FREE SHIPPING","<strong class='eg-freeship-bold'>FREE SHIPPING</strong>");
 
             // inserting login signup msg
             egFreeShip.insertAdjacentHTML("beforebegin", `
               <div class="eg-login-signup-msg">
-                  <p>Have an Account? <a href="#" data-login><strong>Login</strong></a> or <a href="#" data-login><strong>sign up</strong></a></p>
+                  <p>Have an Account? <a href="https://www.bevilles.com.au/account/login" data-login><strong>Login</strong></a> or <a href="https://www.bevilles.com.au/account/register" data-login><strong>sign up</strong></a></p>
               </div>
             `);
+
 
             
 
@@ -138,9 +139,14 @@
 
             // unslick slick for desktop
             if (window.innerWidth > 767) {
-                setTimeout(()=>{
-                     jQuery('.upsell-section-slider').slick('unslick');
-                },3000);
+                setTimeout(() => {
+                    jQuery('.upsell-section-slider').slick('unslick');
+                    const egSliderDiv = document.querySelector("#content .cart-left-section .upsell-section-slider");
+
+                    egSliderDiv.insertAdjacentHTML("beforeend", `<div class="eg-view-more">
+                        <a href="#"><strong>View more products</strong></a>
+                    </div>`);
+                }, 3000);
             }
 
 
