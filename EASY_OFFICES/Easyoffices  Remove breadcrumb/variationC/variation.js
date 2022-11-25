@@ -33,6 +33,8 @@
           document.querySelector("section.breadcrumbs").style.display = "block";
         }
 
+        document.querySelector("section.filter-nav > div > .filter-facilities > a").innerText = "Filters";
+
         if (window.innerWidth < 500) {
           if (window.pageYOffset > 0) {
             document.querySelector("#listing > div > div.search-content-main > h1").style.display = "none";
