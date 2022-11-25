@@ -17,9 +17,8 @@
 }
 
 h3.eg_tile {
-    background: rgba(255,255,255,.9)!important;
-    font-size: 26px;
-    color: #5d5d5d;
+    background: rgba(0,0,0,0.9)!important;
+    color: #eee; font-size: 26px;
     margin-left: 2%;
     text-align: left;
     font-family: inherit;
