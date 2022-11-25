@@ -82,7 +82,10 @@
 
             // removing .00
             document.querySelector("#content .amount-summary .total-saving-amount").textContent = document.querySelector("#content .amount-summary .total-saving-amount").textContent.split(".").shift();
-            document.querySelector("#content .amount-summary .cart_total").textContent = document.querySelector("#content .amount-summary .cart_total").textContent.split(".").shift();
+            setTimeout(()=>{
+                document.querySelector("#content .amount-summary .cart_total").textContent = document.querySelector("#content .amount-summary .cart_total").textContent.split(".").shift();                
+            });
+            
 
             // changing delevery text
             document.querySelectorAll("#content .cart-amount-summary label[for='checkout']").forEach(ele => {

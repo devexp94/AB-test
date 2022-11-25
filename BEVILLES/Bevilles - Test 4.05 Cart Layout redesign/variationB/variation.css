@@ -159,6 +159,9 @@
 }
 
 @media(min-width: 768px) and (max-width: 1292px) {
+    .eg-delivery-tab{
+        font-size: 13px !important;
+    }
     #content #cartform .cart-left-section {
         margin-top: -86px;
     }
@@ -444,14 +447,6 @@
     padding: 20px 10px;
 }
 
-
-
-#content #cartform .cart-right-section {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid #5e737e;
-    padding: 0;
-}
 
 #content #cartform .cart-right-section .delivery-option {
     order: -1;
