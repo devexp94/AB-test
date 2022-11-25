@@ -79,11 +79,11 @@
         function init() {
             const egFreeShip = document.querySelector("#content #shopify-section-cart-template .freeShipMsg");
             const egCartSectionRght = document.querySelector("#content #cartform .cart-right-section");
-            
+
             // removing .00
             document.querySelector("#content .amount-summary .total-saving-amount").textContent = document.querySelector("#content .amount-summary .total-saving-amount").textContent.split(".").shift();
             // changing delevery text
-            document.querySelectorAll("#content .cart-amount-summary label[for='checkout']").forEach(ele=>{
+            document.querySelectorAll("#content .cart-amount-summary label[for='checkout']").forEach(ele => {
                 ele.textContent = "Order summary";
             });
 
@@ -147,11 +147,13 @@
             if (window.innerWidth > 767) {
                 setTimeout(() => {
                     jQuery('.upsell-section-slider').slick('unslick');
-                    const egSliderDiv = document.querySelector("#content .cart-left-section .upsell-section-slider");
+                    setTimeout(() => {
+                        const egSliderDiv = document.querySelector("#content .cart-left-section .upsell-section-slider");
 
-                    egSliderDiv.insertAdjacentHTML("beforeend", `<div class="eg-view-more">
-                        <a href="#"><strong>View more products</strong></a>
-                    </div>`);
+                        egSliderDiv.insertAdjacentHTML("beforeend", `<div class="eg-view-more">
+                            <a href="#"><strong>View more products</strong></a>
+                        </div>`);
+                    }, 2000)
                 }, 4000);
             }
 

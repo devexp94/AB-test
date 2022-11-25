@@ -2,6 +2,10 @@
     color: black;
 }
 
+#content .amount-summary .total-saving-amount {
+    font-size: 17px;
+}
+
 #content #cartform .cart-right-section .cart-amount-summary .extra-checkout-buttons>div {
     margin-bottom: 0 !important;
 }
@@ -48,13 +52,17 @@
 }
 
 #content .cart-items .price h5 span {
-    font-size: 23px;
+    font-size: 24px;
     color: black !important;
 }
 
+#content .cart-items .price h5 s {
+        font-size: 16px;
+    }
+
 @media(min-width: 768px) {
     .cart-items .description .title_n_varient {
-        padding-right: 40px;
+        padding-right: 40px !important;
     }
 
     #content #shopify-section-cart-template .cart-items .item {
@@ -62,7 +70,7 @@
     }
 
     #content #shopify-section-cart-template .cart-items .item h3 a {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .eg-view-more {
@@ -140,6 +148,35 @@
 
     #content #shopify-section-cart-template .light-space-above {
         padding-bottom: 0;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1292px) {
+    #content #cartform .cart-left-section {
+        margin-top: -86px;
+    }
+
+    #content #cartform .cart-items .item .description .description-wrp {
+        flex-wrap: wrap;
+    }
+
+    #content .cart-items .price h5 {
+        padding-left: 0;
+    }
+
+    #content #cartform .cart-right-section .payment-logos {
+        flex-wrap: wrap;
+    }
+
+    .eg-verified-trust {
+        flex-wrap: wrap;
+    }
+
+    #content .upsell-section-slider {
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 20px;
     }
 }
 
@@ -260,9 +297,6 @@
     margin-bottom: 26px;
 }
 
-#content #cartform .cart-right-section .delivery-option #location-container label.btn:hover {
-    background: white;
-}
 
 #content #cartform .cart-right-section .cart-amount-summary {
     padding-inline: 17px;
@@ -428,9 +462,6 @@
     text-transform: capitalize;
 }
 
-#content #cartform .cart-right-section .delivery-option #location-container label.btn:hover {
-    background: white;
-}
 
 #content #cartform .cart-right-section .delivery-option #location-container input[type='radio']:checked+label {
     background: #5e737e;
@@ -439,9 +470,7 @@
 
 
 
-#content #cartform .cart-right-section .delivery-option #location-container label.btn:hover {
-    background: white;
-}
+
 
 #content #cartform .cart-right-section .cart-amount-summary {
     padding-inline: 17px;
@@ -559,8 +588,11 @@
 
 
 @media(max-width: 767px) {
-    #content .cart-items .price h5 s {
-        font-size: 15px;
+
+    #content .cart-items .price h5 {
+        display: flex;
+        align-items: center;
+        gap: 8px;
     }
 
     #content #shopify-section-cart-template .upsellproductform button {
