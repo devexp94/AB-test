@@ -80,8 +80,18 @@
             const egFreeShip = document.querySelector("#content #shopify-section-cart-template .freeShipMsg");
             const egCartSectionRght = document.querySelector("#content #cartform .cart-right-section");
 
-            // text bold in free ship msg
-            egFreeShip.querySelector("p").innerHTML = egFreeShip.querySelector("p").innerHTML.replace("FREE SHIPPING", "<strong class='eg-freeship-bold'>FREE SHIPPING</strong>");
+            // removing .00
+            document.querySelector("#content .amount-summary .total-saving-amount").textContent = document.querySelector("#content .amount-summary .total-saving-amount").textContent.split(".").shift();
+
+            // changing delevery text
+            document.querySelectorAll("#content .cart-amount-summary label[for='checkout']").forEach(ele=>{
+                ele.textContent = "Order summary";
+            });
+
+            if (window.innerWidth > 767) {
+                // text bold in free ship msg
+                egFreeShip.querySelector("p").innerHTML = egFreeShip.querySelector("p").innerHTML.replace("FREE SHIPPING", "<strong class='eg-freeship-bold'>FREE SHIPPING</strong>");
+            }
 
             // inserting login signup msg
             egFreeShip.insertAdjacentHTML("beforebegin", `
@@ -109,8 +119,6 @@
             const egDelivery = document.querySelector("#content #cartform .cart-right-section .delivery-option #location-container label[for='bevilles-home-radio']");
             const egCollect = document.querySelector("#content #cartform .cart-right-section .delivery-option #location-container label[for='bevilles-store-radio']");
 
-            // changing delevery text
-            document.querySelector("#content .cart-amount-summary label[for='checkout']:nth-of-type(1)").textContent = "Order summary";
 
             egDelivery.innerHTML = `<span class="eg-delivery-tab">${egTruckSvg} Delivery</span>`;
             egCollect.innerHTML = `<span class="eg-delivery-tab">${egCollectSvg} Click &amp; Collect</span>`;
@@ -145,14 +153,14 @@
                     egSliderDiv.insertAdjacentHTML("beforeend", `<div class="eg-view-more">
                         <a href="#"><strong>View more products</strong></a>
                     </div>`);
-                }, 3000);
+                }, 4000);
             }
 
         }
 
 
 
-        waitForElement("#content #shopify-section-cart-template", init, 100, 35000);
+        waitForElement("#content #cartform .cart-right-section .delivery-option #location-container input#bevilles-home-radio", init, 100, 35000);
     } catch (e) {
         if (debug) console.log(e, "error in Test" + variation_name);
     }

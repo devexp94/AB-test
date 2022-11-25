@@ -1,8 +1,24 @@
+#content .upsellproductform .upsellproductformbutton {
+    color: black;
+}
+
+#content #cartform .cart-right-section .cart-amount-summary .extra-checkout-buttons>div {
+    margin-bottom: 0 !important;
+}
+
+#content #cartform .cart-right-section .cart-amount-summary .extra-checkout-buttons>div>div {
+    margin-bottom: 0;
+}
+
+#content #shopify-section-cart-template .cart-right-section .cart_installement {
+    margin-top: 16px;
+}
+
 #content #cartform .cart-items .item .description .eg-move-to-wishlist {
     background-image: url(https://img.icons8.com/fluency-systems-filled/48/8caadc/hearts.png);
     position: absolute;
     left: 55px;
-    bottom: 2px;
+    bottom: 5px;
     height: 22px;
     display: block;
     width: 22px;
@@ -27,7 +43,24 @@
     display: none;
 }
 
+#content .cart-items .price h5 span {
+    font-size: 23px;
+    color: black !important;
+}
+
 @media(min-width: 768px) {
+    .cart-items .description .title_n_varient {
+        padding-right: 40px;
+    }
+
+    #content #shopify-section-cart-template .cart-items .item {
+        padding: 31px 10px;
+    }
+
+    #content #shopify-section-cart-template .cart-items .item h3 a {
+        font-size: 24px;
+    }
+
     .eg-view-more {
         flex: 1;
         display: flex;
@@ -163,9 +196,7 @@
     display: none;
 }
 
-#content #shopify-section-cart-template .cart-items .item {
-    padding: 20px 10px;
-}
+
 
 
 
@@ -222,6 +253,7 @@
     padding-inline: 18px;
     align-items: baseline;
     margin-top: 10px;
+    margin-bottom: 26px;
 }
 
 #content #cartform .cart-right-section .delivery-option #location-container label.btn:hover {
@@ -234,9 +266,6 @@
     flex-direction: column;
 }
 
-#content #cartform .cart-right-section .cart-amount-summary #checkout {
-    color: black;
-}
 
 #content #cartform .cart-right-section .cart-amount-summary .extra-checkout-buttons ul[role='list'] {
     flex-direction: row !important;
@@ -292,7 +321,8 @@
     display: flex;
     gap: 20px;
     padding-inline: 18px;
-    margin-block: 16px;
+    margin-top: 16px;
+    margin-bottom: 26px;
     order: 4;
     justify-content: center;
 }
@@ -404,14 +434,6 @@
 }
 
 
-#content #cartform .cart-right-section .payment-logos {
-    order: 3;
-    justify-content: center;
-    gap: 10px;
-    padding-inline: 18px;
-    align-items: baseline;
-    margin-top: 10px;
-}
 
 #content #cartform .cart-right-section .delivery-option #location-container label.btn:hover {
     background: white;
@@ -425,6 +447,8 @@
 
 #content #cartform .cart-right-section .cart-amount-summary #checkout {
     color: black;
+    text-transform: capitalize;
+    margin-top: 15px;
 }
 
 #content #cartform .cart-right-section .cart-amount-summary .extra-checkout-buttons ul[role='list'] {
@@ -477,14 +501,6 @@
     background-size: 100%;
 }
 
-.eg-verified-trust {
-    display: flex;
-    gap: 20px;
-    padding-inline: 18px;
-    margin-block: 16px;
-    order: 4;
-    justify-content: center;
-}
 
 .eg-verified-trust .icon-delivery-return img {
     max-width: 122px !important;
@@ -539,14 +555,14 @@
 
 
 @media(max-width: 767px) {
+    #content .cart-items .price h5 s {
+        font-size: 15px;
+    }
+
     #content #shopify-section-cart-template .upsellproductform button {
         width: 100%;
     }
 
-    #content .cart-items .price h5 span {
-        font-size: 23px;
-        color: black !important;
-    }
 
     #content .cart-left-section {
         padding-inline: 0;
