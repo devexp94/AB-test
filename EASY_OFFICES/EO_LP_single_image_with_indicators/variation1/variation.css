@@ -1,0 +1,35 @@
+html body #toSort .offices-list-item {
+    -ms-grid-columns: 1.8fr 1fr;
+    grid-template-columns: 0.8fr 1fr;
+    position: relative;
+}
+html body #toSort .offices-list-item-images {
+    grid-template-columns: 3fr 0fr;
+	height: 100%;
+}
+html body #toSort .offices-list-item-data .offices-list-item-data-cta a:last-of-type {
+    display: none;
+ }
+ html body #toSort .offices-list-item-data .offices-list-item-data-cta a:first-of-type {
+    color: #1D1D1B;
+    border: 1px solid #F95658;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 600;
+	margin-left: 8px;
+	padding-left: 14px;
+   padding-right:14px;
+   line-height:40px;
+}
+html #toSort .offices-list-item-data-location {
+    position: relative;
+    top: 10px;
+}	
+html #toSort .offices-list-item-data-cta {
+    flex-direction: row;
+    align-items: center;
+     bottom: 15px;
+}
+html #toSort .offices-list-item-data-text {
+    padding-bottom: 50px;
+}

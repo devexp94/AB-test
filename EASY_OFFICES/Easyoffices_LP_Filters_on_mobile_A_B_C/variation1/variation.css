@@ -1,0 +1,29 @@
+#listing .filter-nav .filters {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+#listing .filter-nav .filters .js-filter:nth-of-type(1) {
+    flex-grow: unset;
+}
+
+#listing .filter-nav .filters .js-filter:nth-of-type(1) a.js-filter-trigger {
+    width: 101.82px;
+    justify-content: center;
+}
+
+#listing .filter-nav .filters .js-filter:nth-of-type(2) {
+    display: none !important;
+}
+
+@media(max-width: 500px) {
+    #listing .filter-nav .filters .js-filter:nth-of-type(1) a.js-filter-trigger {
+        justify-content:flex-start;
+    }
+
+    #listing .filter-nav .filters .js-filter:nth-of-type(1) a.js-filter-trigger::after {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+}
