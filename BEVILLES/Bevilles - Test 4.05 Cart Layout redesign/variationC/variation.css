@@ -3,6 +3,10 @@
     color: black !important;
 }
 
+#content .upsell-slider-wrap .upsell-slider-header .description {
+    font-weight: 400;
+}
+
 #content #shopify-section-cart-template .cart_installement {
     padding-left: 20px;
     font-size: 14px;
