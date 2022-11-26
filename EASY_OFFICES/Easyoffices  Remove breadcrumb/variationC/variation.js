@@ -38,10 +38,9 @@
         if (window.innerWidth < 500) {
           if (window.pageYOffset > 0) {
             document.querySelector("#listing > div > div.search-content-main > h1").style.display = "none";
-            document.querySelector("section.filter-nav > div.filters > div:nth-child(1)").style.visibility = "hidden";
           } else {
             document.querySelector("#listing > div > div.search-content-main > h1").style.display = "block";
-            document.querySelector("section.filter-nav > div.filters > div:nth-child(1)").style.visibility = "visible";
+            // document.querySelector("section.filter-nav > div.filters > div:nth-child(1)").style.visibility = "visible";
           }
         }
       };
@@ -49,6 +48,7 @@
 
     /* Initialize variation */
     waitForElement("section.breadcrumbs", init, 50, 15000);
+    waitForElement("div.search-content-main > h1", init, 50, 15000);
   } catch (e) {
     if (debug) console.log(e, "error in Test" + variation_name);
   }

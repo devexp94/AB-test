@@ -1,4 +1,4 @@
-.filter-nav.filter-nav_fixed{
+.filter-nav.filter-nav_fixed {
     top: 55px !important;
 }
 
@@ -6,12 +6,40 @@
     section.filter-nav {
         position: sticky;
         top: 120px;
-        z-index: 9999;
+        z-index: 9;
+        background: #fff;
+        padding-block: 8px;
     }
-    
-    
-     section.filter-nav  div.filter-facilities > a{
-         background: #fff;
-     }    
+
+    #listing .filter-nav .filters {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    #listing .filter-nav .filters .js-filter:nth-of-type(1) {
+        flex-grow: unset;
+    }
+
+    #listing .filter-nav .filters .js-filter:nth-of-type(1) a.js-filter-trigger {
+        width: 98px;
+        justify-content: center;
+    }
+
+    #listing .filter-nav .filters .js-filter:nth-of-type(1) a.js-filter-trigger {
+        justify-content: flex-start;
+    }
+
+    #listing .filter-nav .filters .js-filter:nth-of-type(1) a.js-filter-trigger::after {
+        position: absolute;
+        top: 9px;
+        right: 20px;
+    }
+
 }
 
+
+
+/* section.filter-nav {
+    position: fixed;
+    top: 280px !important;
+} */
