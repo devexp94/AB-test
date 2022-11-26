@@ -1,0 +1,17 @@
+.filter-nav.filter-nav_fixed{
+    top: 55px !important;
+}
+
+@media screen and (max-width: 499px) {
+    section.filter-nav {
+        position: sticky;
+        top: 120px;
+        z-index: 9999;
+    }
+    
+    
+     section.filter-nav  div.filter-facilities > a{
+         background: #fff;
+     }    
+}
+
