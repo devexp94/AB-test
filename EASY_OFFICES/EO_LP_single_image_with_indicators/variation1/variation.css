@@ -100,10 +100,13 @@
         background: white;
         border-radius: 50%;
         pointer-events: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .eg-arrow-box span svg {
-        width: 100%;
+        width: 70%;
     }
 
     .eg-left-arrow-box {

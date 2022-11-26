@@ -67,14 +67,15 @@
         function init() {
             /* start your code here */
 
-            if (window.innerWidth < 501) {
-                // logic for swiper
-                document.querySelectorAll("html body #toSort .offices-list-item-images").forEach(imageBox => {
-                    imageBox.querySelector(".offices-list-item-image:nth-of-type(1)").classList.add("eg-current-img");
-                    imageBox.parentElement.insertAdjacentHTML("afterend", egDotsHTML);
+            window.addEventListener('DOMContentLoaded', (event) => {
+                if (window.innerWidth < 501) {
+                    // logic for swiper
+                    document.querySelectorAll("html body #toSort .offices-list-item-images").forEach(imageBox => {
+                        imageBox.querySelector(".offices-list-item-image:nth-of-type(1)").classList.add("eg-current-img");
+                        imageBox.parentElement.insertAdjacentHTML("afterend", egDotsHTML);
 
-                    // inserting left and right arrows to the parent element
-                    const egArrowHTML = `
+                        // inserting left and right arrows to the parent element
+                        const egArrowHTML = `
                       <div class="eg-arrow-box eg-left-arrow-box">
                         <span>
                           <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -93,44 +94,45 @@
                         </span>
                       </div>
                     `;
-                    imageBox.parentElement.insertAdjacentHTML("afterbegin", egArrowHTML);
-                });
+                        imageBox.parentElement.insertAdjacentHTML("afterbegin", egArrowHTML);
+                    });
 
-                // live function for dots click
-                live(['.eg-dot', '.eg-left-arrow-box', '.eg-right-arrow-box'], 'click', (e) => {
-                    e.preventDefault();
-                    if (e.target.classList.contains("eg-dot-1")) {
-                        e.target.classList.add("active");
-                        removeActive([e.target.nextElementSibling, e.target.nextElementSibling.nextElementSibling]);
-                        showImage(1, e.target);
+                    // live function for dots click
+                    live(['.eg-dot', '.eg-left-arrow-box', '.eg-right-arrow-box'], 'click', (e) => {
+                        e.preventDefault();
+                        if (e.target.classList.contains("eg-dot-1")) {
+                            e.target.classList.add("active");
+                            removeActive([e.target.nextElementSibling, e.target.nextElementSibling.nextElementSibling]);
+                            showImage(1, e.target);
 
-                    } else if (e.target.classList.contains("eg-dot-2")) {
-                        e.target.classList.add("active");
-                        removeActive([e.target.previousElementSibling, e.target.nextElementSibling]);
-                        showImage(2, e.target);
+                        } else if (e.target.classList.contains("eg-dot-2")) {
+                            e.target.classList.add("active");
+                            removeActive([e.target.previousElementSibling, e.target.nextElementSibling]);
+                            showImage(2, e.target);
 
-                    } else if (e.target.classList.contains("eg-dot-3")) {
-                        e.target.classList.add("active");
-                        removeActive([e.target.previousElementSibling, e.target.previousElementSibling.previousElementSibling]);
-                        showImage(3, e.target);
+                        } else if (e.target.classList.contains("eg-dot-3")) {
+                            e.target.classList.add("active");
+                            removeActive([e.target.previousElementSibling, e.target.previousElementSibling.previousElementSibling]);
+                            showImage(3, e.target);
 
-                    } else if (e.target.classList.contains("eg-right-arrow-box")) {
-                        clickNext(e.target.parentElement.nextElementSibling.querySelectorAll(".eg-dot"));
-                    } else if (e.target.classList.contains("eg-left-arrow-box")) {
-                        clickPre(e.target.parentElement.nextElementSibling.querySelectorAll(".eg-dot"));
-                    }
-                });
+                        } else if (e.target.classList.contains("eg-right-arrow-box")) {
+                            clickNext(e.target.parentElement.nextElementSibling.querySelectorAll(".eg-dot"));
+                        } else if (e.target.classList.contains("eg-left-arrow-box")) {
+                            clickPre(e.target.parentElement.nextElementSibling.querySelectorAll(".eg-dot"));
+                        }
+                    });
 
-            }
+                }
+            });
         }
 
         function clickNext(dots) {
             for (let i = 0; i < dots.length; i++) {
                 if (dots[i].classList.contains("active")) {
-                    if(dots[i].nextElementSibling){
-                      dots[i].nextElementSibling.click();
+                    if (dots[i].nextElementSibling) {
+                        dots[i].nextElementSibling.click();
                     } else {
-                      dots[i].parentElement.querySelector(".eg-dot:nth-of-type(1)").click();
+                        dots[i].parentElement.querySelector(".eg-dot:nth-of-type(1)").click();
                     }
                     break;
                 }
@@ -140,10 +142,10 @@
         function clickPre(dots) {
             for (let i = 0; i < dots.length; i++) {
                 if (dots[i].classList.contains("active")) {
-                    if(dots[i].previousElementSibling){
-                      dots[i].previousElementSibling.click();
+                    if (dots[i].previousElementSibling) {
+                        dots[i].previousElementSibling.click();
                     } else {
-                      dots[i].parentElement.querySelector(".eg-dot:last-child").click();
+                        dots[i].parentElement.querySelector(".eg-dot:last-child").click();
                     }
                     break;
                 }
@@ -152,7 +154,7 @@
 
         // shows image
         function showImage(num, ele) {
-            target = ele.parentElement.previousElementSibling.querySelector(`.offices-list-item-images img.offices-list-item-image:nth-of-type(${num})`);
+            let target = ele.parentElement.previousElementSibling.querySelector(`.offices-list-item-images img.offices-list-item-image:nth-of-type(${num})`);
 
             ele.parentElement.previousElementSibling.querySelectorAll(`.offices-list-item-images img.offices-list-item-image`).forEach(img => {
                 if (img == target) {
