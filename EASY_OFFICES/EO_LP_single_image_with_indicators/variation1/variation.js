@@ -22,11 +22,6 @@
             }, delayTimeout);
         }
 
-        const egDotsHTML = `<div class="eg-swipe-dots">
-                                <span class="eg-dot eg-dot-1 active"></span>
-                                <span class="eg-dot eg-dot-2"></span>
-                                <span class="eg-dot eg-dot-3"></span>
-                            </div>`;
 
         function live(selector, event, callback, context) {
             /****Helper Functions****/
@@ -71,8 +66,26 @@
                 if (window.innerWidth < 501) {
                     // logic for swiper
                     document.querySelectorAll("html body #toSort .offices-list-item-images").forEach(imageBox => {
-                        imageBox.querySelector(".offices-list-item-image:nth-of-type(1)").classList.add("eg-current-img");
-                        imageBox.parentElement.insertAdjacentHTML("afterend", egDotsHTML);
+                        const images = imageBox.querySelectorAll(".offices-list-item-image");
+
+                        // current image
+                        images[0].classList.add("eg-current-img");
+
+                        let egDotHtml = ``;
+
+                        // creating dynamic dots
+                        images.forEach((img, i) => {
+                            if (i + 1 === 1) {
+                                egDotHtml += `<span class="eg-dot eg-dot-${i+1} active" id="${i+1}"></span>`;
+                            } else {
+                                egDotHtml += `<span class="eg-dot eg-dot-${i+1}" id="${i+1}"></span>`;
+                            }
+
+                        });
+
+                        let egDotsHtml = `<div class="eg-swipe-dots">${egDotHtml}</div>`;
+
+                        imageBox.parentElement.insertAdjacentHTML("afterend", egDotsHtml);
 
                         // inserting left and right arrows to the parent element
                         const egArrowHTML = `
@@ -100,25 +113,14 @@
                     // live function for dots click
                     live(['.eg-dot', '.eg-left-arrow-box', '.eg-right-arrow-box'], 'click', (e) => {
                         e.preventDefault();
-                        if (e.target.classList.contains("eg-dot-1")) {
+                        if (e.target.classList.contains("eg-dot")) {
+                            removeActive(e.target.parentElement.querySelector(".eg-dot.active"));
                             e.target.classList.add("active");
-                            removeActive([e.target.nextElementSibling, e.target.nextElementSibling.nextElementSibling]);
-                            showImage(1, e.target);
-
-                        } else if (e.target.classList.contains("eg-dot-2")) {
-                            e.target.classList.add("active");
-                            removeActive([e.target.previousElementSibling, e.target.nextElementSibling]);
-                            showImage(2, e.target);
-
-                        } else if (e.target.classList.contains("eg-dot-3")) {
-                            e.target.classList.add("active");
-                            removeActive([e.target.previousElementSibling, e.target.previousElementSibling.previousElementSibling]);
-                            showImage(3, e.target);
-
+                            showImage(parseInt(e.target.id), e.target);
                         } else if (e.target.classList.contains("eg-right-arrow-box")) {
-                            clickNext(e.target.parentElement.nextElementSibling.querySelectorAll(".eg-dot"));
+                            clickNext(e.target.parentElement.nextElementSibling.querySelector(".eg-dot.active"));
                         } else if (e.target.classList.contains("eg-left-arrow-box")) {
-                            clickPre(e.target.parentElement.nextElementSibling.querySelectorAll(".eg-dot"));
+                            clickPre(e.target.parentElement.nextElementSibling.querySelector(".eg-dot.active"));
                         }
                     });
 
@@ -126,52 +128,34 @@
             });
         }
 
-        function clickNext(dots) {
-            for (let i = 0; i < dots.length; i++) {
-                if (dots[i].classList.contains("active")) {
-                    if (dots[i].nextElementSibling) {
-                        dots[i].nextElementSibling.click();
-                    } else {
-                        dots[i].parentElement.querySelector(".eg-dot:nth-of-type(1)").click();
-                    }
-                    break;
-                }
+        function clickNext(dot) {
+            if (dot.nextElementSibling) {
+                dot.nextElementSibling.click();
+            } else {
+                dot.parentElement.querySelector(".eg-dot:nth-of-type(1)").click();
             }
         }
 
-        function clickPre(dots) {
-            for (let i = 0; i < dots.length; i++) {
-                if (dots[i].classList.contains("active")) {
-                    if (dots[i].previousElementSibling) {
-                        dots[i].previousElementSibling.click();
-                    } else {
-                        dots[i].parentElement.querySelector(".eg-dot:last-child").click();
-                    }
-                    break;
-                }
+        function clickPre(dot) {
+            if (dot.previousElementSibling) {
+                dot.previousElementSibling.click();
+            } else {
+                dot.parentElement.querySelector(".eg-dot:last-child").click();
             }
         }
 
         // shows image
         function showImage(num, ele) {
-            let target = ele.parentElement.previousElementSibling.querySelector(`.offices-list-item-images img.offices-list-item-image:nth-of-type(${num})`);
+            // removing current class 
+            ele.parentElement.previousElementSibling.querySelector(`.offices-list-item-images img.offices-list-item-image.eg-current-img`).classList.remove("eg-current-img");
 
-            ele.parentElement.previousElementSibling.querySelectorAll(`.offices-list-item-images img.offices-list-item-image`).forEach(img => {
-                if (img == target) {
-                    img.classList.add("eg-current-img");
-                } else {
-                    img.classList.remove("eg-current-img");
-                }
-            });
+            // adding current class to target image
+            ele.parentElement.previousElementSibling.querySelector(`.offices-list-item-images img.offices-list-item-image:nth-of-type(${num})`).classList.add('eg-current-img');
         }
 
         // removes active class
-        function removeActive(siblings) {
-            siblings.forEach(s => {
-                if (s.classList.contains("active")) {
-                    s.classList.remove("active");
-                }
-            });
+        function removeActive(ele) {
+            ele.classList.remove("active");
         }
 
         /* Initialize variation */
