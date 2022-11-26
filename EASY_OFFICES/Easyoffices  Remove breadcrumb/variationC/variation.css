@@ -2,7 +2,7 @@
     top: 55px !important;
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 500px) {
     section.filter-nav {
         position: sticky;
         top: 120px;
