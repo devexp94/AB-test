@@ -5,7 +5,7 @@
 @media screen and (max-width: 500px) {
     section.filter-nav {
         position: sticky;
-        top: 120px;
+        top: 119px;
         z-index: 9;
         background: #fff;
         padding-block: 8px;

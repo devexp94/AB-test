@@ -47,8 +47,7 @@
     }
 
     /* Initialize variation */
-    waitForElement("section.breadcrumbs", init, 50, 15000);
-    waitForElement("div.search-content-main > h1", init, 50, 15000);
+    waitForElement("#listing > div > div.search-content-main > h1", init, 50, 15000);
   } catch (e) {
     if (debug) console.log(e, "error in Test" + variation_name);
   }
