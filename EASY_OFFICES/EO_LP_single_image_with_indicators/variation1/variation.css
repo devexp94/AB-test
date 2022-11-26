@@ -1,35 +1,121 @@
-html body #toSort .offices-list-item {
-    -ms-grid-columns: 1.8fr 1fr;
-    grid-template-columns: 0.8fr 1fr;
-    position: relative;
-}
-html body #toSort .offices-list-item-images {
-    grid-template-columns: 3fr 0fr;
-	height: 100%;
-}
-html body #toSort .offices-list-item-data .offices-list-item-data-cta a:last-of-type {
-    display: none;
- }
- html body #toSort .offices-list-item-data .offices-list-item-data-cta a:first-of-type {
-    color: #1D1D1B;
-    border: 1px solid #F95658;
-    border-radius: 3px;
-    font-size: 15px;
-    font-weight: 600;
-	margin-left: 8px;
-	padding-left: 14px;
-   padding-right:14px;
-   line-height:40px;
-}
-html #toSort .offices-list-item-data-location {
-    position: relative;
-    top: 10px;
-}	
-html #toSort .offices-list-item-data-cta {
-    flex-direction: row;
-    align-items: center;
-     bottom: 15px;
-}
-html #toSort .offices-list-item-data-text {
-    padding-bottom: 50px;
+@media(max-width: 500px) {
+    html body #toSort .offices-list-item {
+        -ms-grid-columns: 1.8fr 1fr;
+        grid-template-columns: 0.8fr 1fr;
+        position: relative;
+    }
+
+    html body #toSort .offices-list-item-images {
+        grid-template-columns: 3fr 0fr;
+        height: 100%;
+        grid-gap: 0;
+        isolation: isolate;
+    }
+
+    /*for 100% width and height of image*/
+    html body #toSort .offices-list-item-images .offices-list-item-image {
+        grid-column: 1/span 1;
+        grid-row: 1/span 2;
+    }
+
+    html body #toSort .offices-list-item-data .offices-list-item-data-cta a:last-of-type {
+        display: none;
+    }
+
+    html body #toSort .offices-list-item-data .offices-list-item-data-cta a:first-of-type {
+        color: #1D1D1B;
+        border: 1px solid #F95658;
+        border-radius: 3px;
+        font-size: 15px;
+        font-weight: 600;
+        margin-left: 8px;
+        padding-left: 14px;
+        padding-right: 14px;
+        line-height: 40px;
+    }
+
+    html #toSort .offices-list-item-data-location {
+        position: relative;
+        top: 10px;
+    }
+
+    html #toSort .offices-list-item-data-cta {
+        flex-direction: row;
+        align-items: center;
+        bottom: 15px;
+    }
+
+    html #toSort .offices-list-item-data-text {
+        padding-bottom: 50px;
+    }
+
+
+    /*swipper logic css*/
+    .eg-dot {
+        width: 18px;
+        height: 18px;
+        border: 1px solid #f95658;
+        display: inline-block;
+        border-radius: 50%;
+    }
+
+    .eg-swipe-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding-block: 13px;
+    }
+
+    .eg-dot.active {
+        background: #f95658;
+    }
+
+    .eg-current-img{
+        z-index: 999;
+    }
+
+
+    /*logic arrow*/
+
+    html body #toSort .offices-list-item > a{
+        position: relative;
+        isolation: isolate;
+        opacity: 1 !important;
+    }
+
+    .eg-arrow-box{
+        height: 100%;
+        width: 40px;
+        position: absolute;
+        z-index: 99999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .eg-arrow-box span{
+        width: 25px;
+        height: 25px;
+        background: white;
+        border-radius: 50%;
+        pointer-events: none;
+    }
+
+    .eg-arrow-box span svg{
+        width: 100%;
+    }
+
+    .eg-left-arrow-box{
+        top: 0;
+        left: 0;
+    }
+
+    .eg-right-arrow-box{
+        top: 0;
+        right: 0;
+    }
+
+    /*swipper logic css*/
+
 }

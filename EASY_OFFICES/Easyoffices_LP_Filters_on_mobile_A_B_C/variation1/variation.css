@@ -1,5 +1,4 @@
 #listing .filter-nav .filters {
-    width: 100%;
     justify-content: flex-end;
 }
 
@@ -7,23 +6,32 @@
     flex-grow: unset;
 }
 
-#listing .filter-nav .filters .js-filter:nth-of-type(1) a.js-filter-trigger {
+#listing .filter-nav .filters .js-filter:nth-of-type(1) a.js-filter-trigger,
+#listing .filter-nav .filters .js-filter:nth-of-type(3) a {
     width: 101.82px;
+}
+
+#listing .filter-nav .filters .js-filter:nth-of-type(3) a{
     justify-content: center;
 }
+
 
 #listing .filter-nav .filters .js-filter:nth-of-type(2) {
     display: none !important;
 }
 
-@media(max-width: 500px) {
-    #listing .filter-nav .filters .js-filter:nth-of-type(1) a.js-filter-trigger {
-        justify-content:flex-start;
-    }
+#listing .filter-nav .filters .js-filter:nth-of-type(1) a.js-filter-trigger {
+    justify-content: flex-start;
+}
 
-    #listing .filter-nav .filters .js-filter:nth-of-type(1) a.js-filter-trigger::after {
-        position: absolute;
-        top: 10px;
-        right: 20px;
-    }
+#listing .filter-nav .filters .js-filter:nth-of-type(1) a.js-filter-trigger::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border: solid #4c4c4c;
+    border-width: 0 1px 1px 0;
+    height: 9px;
+    transform: rotate(45deg);
+    width: 9px;
 }

@@ -26,11 +26,12 @@
     /* Variation Init */
     function init() {
       /* start your code here */
+      document.querySelector("#listing .filter-nav .filters .js-filter:nth-of-type(3) a").textContent = "Filters";
       
     }
 
     /* Initialize variation */
-    waitForElement('body', init, 50, 15000);
+    waitForElement('#listing .filter-nav .filters .js-filter:nth-of-type(3) a', init, 50, 15000);
   } catch (e) {
     if (debug) console.log(e, "error in Test" + variation_name);
   }
