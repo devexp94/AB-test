@@ -98,3 +98,14 @@ div#navigation {
 li.eg_list{
     line-height: 4;
 }
+
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+    .eg_main_nav {
+        gap: 20px;
+    }
+
+    .eg_main_nav li a {
+        font-size: 19px;
+    }
+}

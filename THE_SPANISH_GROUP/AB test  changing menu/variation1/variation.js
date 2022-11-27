@@ -72,7 +72,10 @@
       /* start your code here */
 
       document.querySelector("#navigation").insertAdjacentHTML("beforebegin" , eg_menu)
-
+      let lists = document.querySelectorAll(".eg_list");
+      lists.forEach((e)=>{
+        e.preventDefault()
+      })
       
     }
 
