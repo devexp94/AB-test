@@ -62,7 +62,7 @@
         function init() {
             /* start your code here */
 
-            window.addEventListener('DOMContentLoaded', (event) => {
+            document.addEventListener('DOMContentLoaded', (event) => {
                 if (window.innerWidth < 501) {
                     // logic for swiper
                     document.querySelectorAll("html body #toSort .offices-list-item-images").forEach(imageBox => {
