@@ -1,6 +1,14 @@
 div.heading-container .heading-content a.cta-x {
     width:fit-content !important;
-    max-width: 390px;
+}
+
+.video-block-wrapper .cta-x {
+    width: fit-content !important;
+    margin-top: 0;
+}
+
+.video-block-wrapper .info-block-p + p {
+    display: none;
 }
 
 @media(max-width: 424px) {

@@ -26,12 +26,22 @@
         /* Variation Init */
         function init() {
             /* start your code here */
+            const egNavCta = document.querySelector(".nav-sub .buttons a.btn:nth-of-type(1)");
+
+            egNavCta.textContent = "Free Trial";
+
             const egHeroCta = document.querySelector("div.heading-container .heading-content a.cta-x")
-            egHeroCta.textContent =  'Try your Equifax Credit Report & Score for FREE*';
+            const egVideoCta = document.querySelector(".video-block-wrapper .cta-x");
+
+            [egHeroCta,egVideoCta].forEach(cta=>{
+                cta.textContent = "Try your Equifax Credit Report & Score for FREE*";
+            });
+
+
         }
 
         /* Initialize variation */
-        waitForElement('div.heading-container .heading-content a.cta-x', init, 50, 15000);
+        waitForElement('.nav-sub .buttons a.btn:nth-of-type(1)', init, 50, 15000);
     } catch (e) {
         if (debug) console.log(e, "error in Test" + variation_name);
     }
