@@ -18,6 +18,10 @@
         grid-row: 1/span 2;
     }
 
+    html body #toSort .offices-list-item-images .office-list-item-price{
+        z-index: 99999;
+    }
+
     html body #toSort .offices-list-item-data .offices-list-item-data-cta a:last-of-type {
         display: none;
     }
