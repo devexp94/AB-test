@@ -35,24 +35,20 @@
                 "Wonderlust",
                 "Teapot"
             ]
-
-            let egDynamicTxt = "";
-
+            
             const egSearchBox = document.querySelector("#header  #header-search");
 
             // logic for dynamic text
             const egInterval = setInterval(() => {
 
-                egDynamicTxt = egTexts[egIndex];
-
-                if(egIndex < egTexts.length - 1){
-                  egIndex+=1;
+                if (egIndex < egTexts.length - 1) {
+                    egIndex += 1;
                 } else {
-                  egIndex = 0;
+                    egIndex = 0;
                 }
 
                 // changing search box text to Search (Dynamic Text)
-                egSearchBox.placeholder = `Search ( ${egDynamicTxt} )`;
+                egSearchBox.placeholder = `Search ( ${egTexts[egIndex]} )`;
             }, 5000);
 
         }
