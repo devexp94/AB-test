@@ -1,0 +1,17 @@
+span.eg_top {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+p.eg_btm > i {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+p.eg_btm {
+    margin-bottom: 0;
+}
+
+p.eg_para {
+    margin-bottom: 7px;
+}
