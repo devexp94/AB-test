@@ -1,14 +1,35 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
-#container-to-scroll > div:nth-child(2) > div > div  .l-wizard-section__container {
+#container-to-scroll>div:nth-child(2)>div>div .l-wizard-section__container {
     max-height: 0;
     overflow: hidden;
 }
 
-.eg-active-section .l-wizard-section__container{
+.eg-active-section .l-wizard-section__container {
     max-height: initial !important;
     overflow: visible !important;
-    display:initial !important;
+    display: initial !important;
+}
+
+/*arrow*/
+#container-to-scroll > div:nth-child(2) > div > div:has(.l-wizard-section__container)::before {
+    content: 'V';
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+#container-to-scroll > div:nth-child(2) > div > div:has(.l-wizard-section__container):nth-child(4)::before {
+    content:"";
+}
+
+#container-to-scroll > div:nth-child(2) > div > div:has(.l-wizard-section__container) {
+    position: relative;
+}
+
+.eg-active-section::before{
+    content:"Ʌ";
+    rotate: 180deg;
 }

@@ -1,8 +1,10 @@
-
-  /*already exists caraousel*/
-.KC-block-wrapper, .services-block-wrapper, .KC-block-wrapper{
+/*already exists caraousel*/
+.KC-block-wrapper,
+.services-block-wrapper,
+.KC-block-wrapper {
     background: #fff !important;
 }
+
 /*already exists caraousel*/
 
 .carousel-wrapper {
@@ -79,6 +81,20 @@ li#carousel__slide3 {
 
 @media screen and (max-width: 767px) {
 
+    /*carousel*/
+    .carousel-wrapper .carousel__viewport {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .carousel-wrapper .carousel__viewport>li {
+        grid-column: 1/1;
+        grid-row: 1/1;
+    }
+    .carousel-wrapper .carousel__viewport>li:not(.eg-active-carousel){
+        z-index: -9999;
+    }
+
     /*showing navigation dots*/
     .carousel__navigation {
         display: block;
@@ -100,19 +116,19 @@ li#carousel__slide3 {
     .header-wrapper {
         background: url(https://www.equifax.co.uk/bubble/images/equifax-member-centre-blend.jpg) !important;
         background-position: left !important;
-       
+
     }
 
     .heading-content {
         background: none;
     }
-    
-    h1.title ,
+
+    h1.title,
     .heading-content p {
         color: #fff !important;
     }
-    
-    div.header-wrapper > div.heading-container.universal-wrapper > div.wave-layer-M > img {
+
+    div.header-wrapper>div.heading-container.universal-wrapper>div.wave-layer-M>img {
         display: none;
     }
 }

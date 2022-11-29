@@ -98,6 +98,18 @@
             if (window.innerWidth < 768) {
                 egTitle = `Why choose us`;
                 egInfoBlock = `A Credit Reference Agency like Equifax can help<br>people understand and improve their credit score.<br>Find out how our enhanced credit report works and<br>how you can use it to manage your financial records.`;
+
+                // auto scrolling caraosel
+                let egIndex = 0;
+                const egBtns = [...document.querySelectorAll(".carousel__navigation .carousel__navigation-item a")];
+                setInterval(() => {
+                    if (egIndex < egBtns.length) {
+                        egBtns[egIndex].click();
+                        egIndex += 1;
+                    } else {
+                        egIndex = 0;
+                    }
+                }, 5000);
             } else {
                 egTitle = `Why use Equifax`;
                 egInfoBlock = egUsps;
