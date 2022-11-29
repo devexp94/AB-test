@@ -1,6 +1,4 @@
-
-
-  #navigation ul {
+ #navigation ul {
     max-width: 100% !important;
 }
 
@@ -42,18 +40,19 @@
     font-size: 21px;
 }
 
-.eg_main_nav li ul li{
+.eg_main_nav li ul li {
     border-bottom: 1px solid white;
     text-decoration: none;
-    width: 300px;
+    width: 310px;
+    line-height: 1.2;
 }
 
 .eg_main_nav li ul li a{
     display: block;
-    padding: 3px 15px;
+    padding: 7px 15px;
     color: #000;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .eg_main_nav li ul li a:hover{
@@ -67,7 +66,7 @@
     color: #000;
     display: none;
     position: absolute;
-    box-shadow: 2px 2px 13px -3px rgba(0,0,0,0.86);
+    box-shadow: 2px 2px 11px -3px rgba(0,0,0,0.86);
 
 }
 
@@ -100,7 +99,7 @@ li.eg_list{
 }
 
 
-@media (min-width: 1200px) and (max-width: 1300px) {
+@media (min-width: 1200px) and (max-width: 1370px) {
     .eg_main_nav {
         gap: 20px;
     }
@@ -108,4 +107,60 @@ li.eg_list{
     .eg_main_nav li a {
         font-size: 19px;
     }
+}
+
+@media (min-width: 1200px) and (max-width: 1274px){
+    ul.eg_main_nav {
+        gap: 15px;
+    }
+    
+    .eg_main_nav li a {
+        font-size: 17px;
+    }
+    
+    #navigation ul li{
+        padding: 0 5px;
+    }
+    
+    #navigation ul li#quote-button a,
+    #navigation ul li#billing-button a{
+        height: 35px;
+        font-size: 15px !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    /* div.more-menu ul:not(.eg_main){
+        display:none !important;
+    } */
+
+    .more-menu ul:first-child {
+        list-style-type: none;
+    }
+
+    .nav.clearfix {
+        display: initial;
+    }
+
+    li.eg_list {
+    line-height: 1.2;
+}
+
+.eg_list.eg_active ul.name {
+    padding-left: 15px;
+    display: block;
+}
+
+
+#close-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+ul.eg_main {
+    padding-top: 80px;
+}
+
 }
