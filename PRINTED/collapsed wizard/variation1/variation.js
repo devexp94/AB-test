@@ -39,7 +39,7 @@
         function addCollapseExpand() {
             const egSections = document.querySelectorAll("#container-to-scroll > div:nth-child(2) > div > div:has(.l-wizard-section__container)");
 
-            egSections.forEach((section,i)=> {
+            egSections.forEach((section, i) => {
                 section.addEventListener("click", function() {
                     if (this.parentElement.querySelector(".eg-active-section")) {
                         this.parentElement.querySelector(".eg-active-section").classList.remove("eg-active-section");
@@ -48,27 +48,25 @@
                     this.scrollIntoView({ behaviour: "smooth" });
 
                     // checking for is-complete in the summary part
-                    checkSelection(this,i+1);
-                    return;
+                    // checkSelection(this, i + 1);
                 });
             });
         }
 
 
-        function checkSelection(sectionEle,index) {
+        function checkSelection(sectionEle, index) {
             // mutation observer
             let observer = new MutationObserver(mutations => {
-                console.log(mutations); // console.log(the changes)
+                // console.log(mutations); // console.log(the changes)
                 for (let mutation of mutations) {
                     if (mutation.target.classList.contains("is-complete")) {
-                    if(sectionEle.nextElementSibling){
-                        if(index == 3){
-                            sectionEle.nextElementSibling.nextElementSibling.click();
-                        } else {
-                            sectionEle.nextElementSibling.click();
+                        if (sectionEle.nextElementSibling) {
+                            if (index == 3 || index == 8) {
+                                sectionEle.nextElementSibling.nextElementSibling.click();
+                            } else {
+                                sectionEle.nextElementSibling.click();
+                            }
                         }
-                    }
-                        return true;
                         break;
                     }
                 }
