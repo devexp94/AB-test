@@ -25,7 +25,7 @@
       function init() {
           // insertin a new div in the hero section
           document.querySelector('#page_block_header > div.section-block').insertAdjacentHTML('afterbegin', `
-          <div class="eg-video-container"><iframe src="https://player.vimeo.com/video/756540934?title=0&autoplay=1&muted=1&controls=0&sidedock=0&loop=1"></iframe></div`);
+          <div class="eg-video-container"><iframe src="https://player.vimeo.com/video/770916709?title=0&autoplay=1&muted=1&controls=0&sidedock=0&loop=1"></iframe></div`);
 
       }
       /* Initialize variation */
