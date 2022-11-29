@@ -22,6 +22,42 @@
             }, delayTimeout);
         }
 
+        function live(selector, event, callback, context) {
+            /****Helper Functions****/
+            // helper for enabling IE 8 event bindings
+            function addEvent(el, type, handler) {
+                if (el.attachEvent) el.attachEvent("on" + type, handler);
+                else el.addEventListener(type, handler);
+            }
+            // matches polyfill
+            this.Element &&
+                (function(ElementPrototype) {
+                    ElementPrototype.matches =
+                        ElementPrototype.matches ||
+                        ElementPrototype.matchesSelector ||
+                        ElementPrototype.webkitMatchesSelector ||
+                        ElementPrototype.msMatchesSelector ||
+                        function(selector) {
+                            var node = this,
+                                nodes = (node.parentNode || node.document).querySelectorAll(selector),
+                                i = -1;
+                            while (nodes[++i] && nodes[i] != node);
+                            return !!nodes[i];
+                        };
+                })(Element.prototype);
+            // live binding helper using matchesSelector
+            function live(selector, event, callback, context) {
+                addEvent(context || document, event, function(e) {
+                    var found,
+                        el = e.target || e.srcElement;
+                    while (el && el.matches && el !== context && !(found = el.matches(selector))) el = el.parentElement;
+                    if (found) callback.call(el, e);
+                });
+            }
+            live(selector, event, callback, context);
+        }
+
+
 
         /* Variation Init */
         function init() {
@@ -37,19 +73,15 @@
         }
 
         function addCollapseExpand() {
-            const egSections = document.querySelectorAll("#container-to-scroll > div:nth-child(2) > div > div:has(.l-wizard-section__container)");
 
-            egSections.forEach((section, i) => {
-                section.addEventListener("click", function() {
+            live('#container-to-scroll > div:nth-child(2) > div > div:has(.l-wizard-section__container)', 'click', function() {
+                if (this.parentElement.parentElement.classList.contains("l-wizard__body")) {
                     if (this.parentElement.querySelector(".eg-active-section")) {
                         this.parentElement.querySelector(".eg-active-section").classList.remove("eg-active-section");
                     }
                     this.classList.add("eg-active-section");
                     this.scrollIntoView({ behaviour: "smooth" });
-
-                    // checking for is-complete in the summary part
-                    // checkSelection(this, i + 1);
-                });
+                }
             });
         }
 

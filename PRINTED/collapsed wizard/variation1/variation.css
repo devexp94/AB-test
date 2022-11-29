@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+#container-to-scroll > div:nth-child(2) > div > div:has(.l-wizard-section__container){
+    cursor: pointer;
+}
+
 #container-to-scroll>div:nth-child(2)>div>div .l-wizard-section__container {
     max-height: 0;
     overflow: hidden;
