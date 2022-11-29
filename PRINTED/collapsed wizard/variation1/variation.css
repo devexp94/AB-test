@@ -1,0 +1,14 @@
+html{
+    scroll-behavior: smooth;
+}
+
+#container-to-scroll > div:nth-child(2) > div > div  .l-wizard-section__container {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.eg-active-section .l-wizard-section__container{
+    max-height: initial !important;
+    overflow: visible !important;
+    display:initial !important;
+}
