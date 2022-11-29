@@ -86,34 +86,31 @@
         }
 
 
-        function checkSelection(sectionEle, index) {
-            // mutation observer
-            let observer = new MutationObserver(mutations => {
-                // console.log(mutations); // console.log(the changes)
-                for (let mutation of mutations) {
-                    if (mutation.target.classList.contains("is-complete")) {
-                        if (sectionEle.nextElementSibling) {
-                            if (index == 3 || index == 8) {
-                                sectionEle.nextElementSibling.nextElementSibling.click();
-                            } else {
-                                sectionEle.nextElementSibling.click();
-                            }
-                        }
-                        break;
-                    }
-                }
-            });
+        // function checkSelection(sectionEle) {
+        //     console.log(sectionEle);
+        //     // mutation observer
+        //     let observer = new MutationObserver(mutations => {
+        //         // console.log(mutations); // console.log(the changes)
+        //         for (let mutation of mutations) {
+        //             if (mutation.target.classList.contains("is-complete")) {
+        //                 if (sectionEle.nextElementSibling) {
+        //                     sectionEle.nextElementSibling.click();
+        //                 }
+        //                 break;
+        //             }
+        //         }
+        //     });
 
-            const ele = document.querySelectorAll(".c-wizard-summary  .c-wizard-summary__body >div");
+        //     const ele = document.querySelectorAll(".c-wizard-summary  .c-wizard-summary__body >div");
 
-            ele.forEach(ele => {
-                // observe everything except attributes
-                observer.observe(ele, {
-                    attributes: true,
-                    attributeFilter: ['style', 'class']
-                });
-            });
-        }
+        //     ele.forEach(ele => {
+        //         // observe everything except attributes
+        //         observer.observe(ele, {
+        //             attributes: true,
+        //             attributeFilter: ['style', 'class']
+        //         });
+        //     });
+        // }
 
         /* Initialize variation */
         waitForElement('#sticky-nav .c-sticky-nav__button', init, 50, 15000);
