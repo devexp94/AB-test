@@ -1,0 +1,264 @@
+.eg-body {
+    position: relative;
+}
+
+.eg-popup-overlay {
+    position: fixed;
+    width: 100vw;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(1, 1, 1, 0.60);
+    z-index: 9999999999;
+    display: none;
+}
+
+.eg-popup-wrapper-outer {
+    position: fixed;
+
+    top: 173px;
+    
+    right: 20px;
+    z-index: 9999999;
+}
+
+.eg-popup-wrapper {
+    background: white;
+    width: 487px;
+    height: fit-content;
+    max-width: 100vw;
+    padding: 27px;
+    position: relative;
+    outline: 1px solid rgb(211 211 211 / 30%);
+}
+
+/*multiple items in popup*/
+ul.eg-items-lists {
+    margin-block: 0 !important;
+    text-align: center;
+    padding-left: 0 !important;
+    max-height: 200px;
+    overflow-y: scroll;
+    margin-top: 20px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/*close icon*/
+.eg-close-icon {
+    position: absolute;
+    z-index: auto;
+    top: 16px;
+    right: 16px;
+}
+
+.eg-close-icon svg {
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.eg-added-notice {
+    width: 100%;
+}
+
+
+.eg-benifits {
+    text-align: left !important;
+    padding: 0 !important;
+    margin-inline: auto;
+    width: 68%;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.eg-benifits li {
+    padding-left: 0 !important;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.eg-benifits li::before {
+    position: static !important;
+    left: 0;
+    display: inline-block;
+}
+
+.eg-cart-icon svg {
+    width: 50px;
+    height: 50px;
+}
+
+.eg-cart-icon {
+    margin-bottom: 36px;
+}
+
+.eg-notice-title {
+    font-weight: 400 !important;
+    line-height: 1.4;
+    margin-bottom: 10px !important;
+    font-size: 19px !important;
+}
+
+.eg-confirmation-text {
+    font-size: 16px;
+}
+
+.eg-tabel-list {
+    margin: 0 !important;
+    padding-top: 18px;
+}
+
+.eg-continue a {
+    margin-bottom: 0 !important;
+    margin-top: 27px !important;
+    color: #7c8d96;
+}
+
+.eg-checkout {
+    max-width: 100% !important;
+}
+
+.eg-checkout a {
+    color: black;
+    font-size: 15px !important;
+}
+
+.eg-fast-dispatch {
+    background: #f9f9f9;
+}
+
+.eg-fast-dispatch>.eg-dispatch-link {
+    display: none;
+}
+
+.eg-dispatch-link {
+    display: flex;
+    background: #83afe0;
+    color: white;
+    padding: 10px !important;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.eg-dispatch-link:hover,
+.eg-dispatch-link:focus {
+    background: #b3cae8;
+    /*border: 1px solid #83afe0;*/
+    color: white;
+}
+
+.eg-dispatch-link::after {
+    display: none;
+}
+
+.eg-show-item {
+    display: flex;
+    padding: 20px 20px 20px 0px;
+    line-height: 1.5;
+    gap: 20px;
+}
+
+.eg-show-item-img img {
+    width: 100%;
+    display: block;
+    object-fit: contain;
+    height: 100%;
+}
+
+.eg-show-item-img {
+    width: 189px;
+    height: 100px;
+}
+
+.eg-show-item-details {
+    text-align: left;
+    font-size: 17px;
+}
+
+.eg-price {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.eg-price .eg-dispatch-link {
+    margin: 0;
+    font-size: 15px;
+    padding: 7px !important;
+    width: 139px;
+}
+
+/*timer css*/
+.s001-banner-wrapper {
+    display: block;
+    padding-block: 16px;
+}
+
+span.whole-time-block {
+    color: black;
+    font-weight: 700;
+    display: inline-block;
+}
+
+span.whole-time-block span {
+    font-weight: 700;
+    color: #fafafa !important;
+    font-size: 16px;
+    background: #f17077;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s001-banner-data p {
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 0;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 1.5;
+}
+
+/*timer css end*/
+
+@media(max-width: 768px) {
+
+    /*setting z index of sticky add to cart*/
+    .product__sticky {
+        z-index: 2147483645;
+    }
+
+    .eg-popup-overlay {
+        display: block;
+    }
+
+    .eg-popup-wrapper-outer {
+
+        top: 50%;
+        right: unset;
+
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999999999999999999;
+    }
+
+    .eg-fast-dispatch>.eg-dispatch-link {
+        display: flex;
+    }
+
+    .eg-show-item {
+        display: flex;
+        padding: 0 10px 5px 10px;
+    }
+
+    .eg-show-item .eg-dispatch-link {
+        display: none;
+    }
+}
