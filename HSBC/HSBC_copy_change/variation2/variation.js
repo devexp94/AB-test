@@ -57,11 +57,43 @@
             live(selector, event, callback, context);
         }
 
+        const eg_para = `
+                <p class="eg-para collection-card__description___3HHX9">
+                Keen on banking with us?</br>
+                Find out more about our account opening process and everything you need to get started
+                </p>`;
+
 
         /* Variation Init */
         function init() {
 
-            updateCnt();
+            // changing first title text on load
+            setTimeout(() => {
+                const egText = document.querySelector(".collection-cards__card___3N5Oq > div > a  div.collection-card__content___3SEC9 h3");
+                // changing text and html
+
+                // hiding previous element themes
+                if(egText.previousElementSibling){
+                    egText.previousElementSibling.style.display = "none";
+                }
+
+                egText.style.display = "none";
+
+                egText.insertAdjacentHTML("beforebegin", `<h2 class="eg-title collection-card__title___1ghe1">${"Opening an HSBC Business account" + egText.children[0].outerHTML.toString()}</h2>`);
+
+                // updating link
+                egText.parentElement.parentElement.href = "https://www.business.hsbc.com.sg/en-sg/business-banking/business-account-opening-process";
+
+                if(egText.nextElementSibling){
+                    egText.nextElementSibling.style.display = "none";
+                }
+
+                //adding hover text
+                egText.insertAdjacentHTML("afterend", eg_para);
+
+            }, 1000);
+
+            // updateCnt();
 
             live([".segment-filter > div  > button", ".collection-card__dismiss-control___xPQKd"], 'click', () => {
                 updateCnt();
@@ -70,11 +102,6 @@
 
         function updateCnt() {
             setTimeout(() => {
-                const eg_para = `
-                <p class="eg-para collection-card__description___3HHX9">
-                Keen on banking with us?</br>
-                Find out more about our account opening process and everything you need to get started
-                </p>`;
                 const egTexts = document.querySelectorAll(".collection-cards__card___3N5Oq > div > a  div.collection-card__content___3SEC9 h3");
                 egTexts.forEach(text => {
                     if (text.innerText == "Managing Cash Flow") {
@@ -85,7 +112,7 @@
 
                         text.style.display = "none";
 
-                        text.insertAdjacentHTML("beforebegin",`<h2 class="eg-title collection-card__title___1ghe1">${"Opening an HSBC Business account" + text.children[0].outerHTML.toString()}</h2>`);
+                        text.insertAdjacentHTML("beforebegin", `<h2 class="eg-title collection-card__title___1ghe1">${"Opening an HSBC Business account" + text.children[0].outerHTML.toString()}</h2>`);
 
                         // updating link
                         text.parentElement.parentElement.href = "https://www.business.hsbc.com.sg/en-sg/business-banking/business-account-opening-process";
@@ -93,9 +120,12 @@
                         //adding hover text
                         text.insertAdjacentHTML("afterend", eg_para);
                     } else {
-                        if(text.parentElement.querySelector(".eg-title")){
+                        if (text.parentElement.querySelector(".eg-title")) {
                             text.previousElementSibling.remove();
                             text.nextElementSibling.remove();
+                            if(text.nextElementSibling){
+                                text.nextElementSibling.style.display = "block";
+                            }
                             text.style.display = "block";
                             text.previousElementSibling.style.display = "block";
                         }
