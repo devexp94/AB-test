@@ -1,4 +1,8 @@
-div.eg-usp {
+
+   .video-block-wrapper, .carousel-wrapper, .KC-block-wrapper, .services-block-wrapper, .KC-block-wrapper{
+    background: #fff !important;
+}
+ div.eg-usp {
     margin-top: 30px;
     width: max-content;
 }
@@ -72,7 +76,7 @@ div.eg-usp svg {
         margin-top:0;
     }
 
-    /* .heading-content {
+    .heading-content {
         background: none;
     }
     
@@ -83,7 +87,7 @@ div.eg-usp svg {
     
     div.header-wrapper > div.heading-container.universal-wrapper > div.wave-layer-M > img {
         display: none;
-    } */
+    }
 }
 
 @media only screen and (max-width: 480px) {
