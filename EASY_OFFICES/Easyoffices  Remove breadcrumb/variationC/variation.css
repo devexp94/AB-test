@@ -2,6 +2,11 @@
     top: 55px !important;
 }
 
+.filter-nav div.js-filter > a[data-filter="filter-distance"]{
+    display: none;
+}
+
+
 @media screen and (max-width: 500px) {
     section.filter-nav {
         position: sticky;
