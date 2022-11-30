@@ -42,11 +42,27 @@
 `;
 
     var eg_images = {
-        insurance:"https://editor-assets.abtasty.com/46121/637c78a6e843c1669101734.png",
-        wifi:'https://editor-assets.abtasty.com/46121/637c78ecd9bc91669101804.png',
+        insurance: `
+              <div class="egImg">
+              <img class="full-2-1-breakpoints-theme-moorings-xsw-1x" src="https://editor-assets.abtasty.com/46121/637c78a6e843c1669101734.png" width="768" height="384" alt="">
+              </div>
+            `,
+        wifi: `
+              <div class="egImg">
+              <img class="full-2-1-breakpoints-theme-moorings-xsw-1x" src='https://editor-assets.abtasty.com/46121/637c78ecd9bc91669101804.png' width="768" height="384" alt="">
+              </div>
+            `,
         crew:{
-            cook:'https://editor-assets.abtasty.com/46121/637c785999bca1669101657.png',
-            skipper:'https://editor-assets.abtasty.com/46121/637c78c60d1091669101766.png'
+            cook: `
+              <div class="egImg">
+              <img class="full-2-1-breakpoints-theme-moorings-xsw-1x" src='https://editor-assets.abtasty.com/46121/637c785999bca1669101657.png' width="768" height="384" alt="">
+              </div>
+            `,
+            skipper:`
+              <div class="egImg">
+              <img class="full-2-1-breakpoints-theme-moorings-xsw-1x" src='https://editor-assets.abtasty.com/46121/637c78c60d1091669101766.png' width="768" height="384" alt="">
+              </div>
+            `
         }
     }
         var images = ['https://editor-assets.abtasty.com/46121/637c78a6e843c1669101734.png','https://editor-assets.abtasty.com/46121/637c78ecd9bc91669101804.png','https://editor-assets.abtasty.com/46121/637c785999bca1669101657.png', 'https://editor-assets.abtasty.com/46121/637c78c60d1091669101766.png'];
@@ -63,14 +79,14 @@
                 let egLabelCheck = container[i].parentElement.parentElement.parentElement.parentElement.previousElementSibling.textContent;
 
                 if(egLabelCheck == 'Insurance'){
-                    console.log(eg_images.insurance);
+                    container[i].insertAdjacentHTML("afterbegin", eg_Img);
                 } else if(egLabelCheck == "Wi-Fi Service"){
-                    console.log(eg_images.wifi);
+                    container[i].insertAdjacentHTML("afterbegin", eg_Img);
                 } else if(egLabelCheck == "Crew"){
                     if(container[i].children[0].textContent == 'Hire a Skipper'){
-                        console.log(eg_images.crew.skipper);
+                        container[i].insertAdjacentHTML("afterbegin", eg_Img);
                     } else if (container[i].children[0].textContent == 'Hire a Cook'){
-                        console.log(eg_images.crew.cook);
+                        container[i].insertAdjacentHTML("afterbegin", eg_Img);
                     }
                 }
 
