@@ -16,6 +16,14 @@ span.qualifier {
     color: #bdbdbd;
 }
 
+.booking-flow .main .extra label {
+    gap: 10px;
+}
+
+.booking-flow .main .extra .extra-description .text {
+    padding-inline: 15px;
+}
+
 .booking-flow input[type=checkbox]{
     cursor: pointer;
 }
