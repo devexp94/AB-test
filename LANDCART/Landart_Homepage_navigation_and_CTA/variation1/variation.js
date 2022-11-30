@@ -31,7 +31,15 @@
         const egMainNav = document.querySelector(".main-header #menu-main-nav");
         
         // moving egMainNav outside its parents
-        egHeaderContainer.insertAdjacentElement("beforeend",egMainNav); 
+        egHeaderContainer.insertAdjacentElement("beforeend",egMainNav);
+
+        // changing some of the nav texts
+        // about us to about
+        document.querySelector(".main-header #menu-main-nav li:nth-child(2) a").textContent = "ABOUT";
+
+        // projects to products
+        document.querySelector(".main-header #menu-main-nav li:nth-child(4) a").textContent = "PRODUCTS";
+
       }
       
     }
