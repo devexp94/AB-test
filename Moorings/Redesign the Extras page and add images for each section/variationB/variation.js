@@ -50,25 +50,33 @@
 
         function init() {
             let container = document.querySelectorAll("#tm-booking .main .extra-inner .extra-line-item");
-            for (var i = 0; i < container.length; i++) {
+            let nonCollapsible = document.querySelectorAll("#tm-booking .main .nonCollapsible .extra-inner .extra-line-item");
 
-                let egLabelCheck = container[i].parentElement.parentElement.parentElement.parentElement.previousElementSibling.textContent;
-                let egHtml = '';
-                if (egLabelCheck == 'Insurance') {
-                    egHtml = eg_images.insurance;
-                } else if (egLabelCheck == "Wi-Fi Service") {
-                    egHtml = eg_images.wifi;
-                } else if (egLabelCheck == "Crew") {
-                    if (container[i].children[0].textContent == 'Hire a Skipper') {
-                        egHtml = eg_images.crew.skipper;
-                    } else if (container[i].children[0].textContent == 'Hire a Cook') {
-                        egHtml = eg_images.crew.cook;
-                    }
+            if (nonCollapsible.length > 0) {
+                // non collapsible 
+                for (var i = 0; i < nonCollapsible.length; i++) {
+
+                    let egLabelCheck = nonCollapsible[i].parentElement.parentElement.previousElementSibling.textContent;
+
+                    let egHtml = addingImage(egLabelCheck, nonCollapsible[i]);
+
+                    nonCollapsible[i].insertAdjacentHTML("afterbegin", egHtml);
+
+                }
+            } else if (container.length > 0) {
+
+                for (var i = 0; i < container.length; i++) {
+
+                    let egLabelCheck = container[i].parentElement.parentElement.parentElement.parentElement.previousElementSibling.textContent;
+
+                    let egHtml = addingImage(egLabelCheck, container[i]);
+
+                    container[i].insertAdjacentHTML("afterbegin", egHtml);
+
                 }
 
-                container[i].insertAdjacentHTML("afterbegin", egHtml);
-
             }
+
             movingElements(document.querySelectorAll("#tm-booking .main .extra-inner"));
             // mutation observer
             let observer = new MutationObserver(mutations => {
@@ -93,6 +101,24 @@
                     childList: true
                 });
             });
+        }
+
+        function addingImage(egLabelCheck, container) {
+            let egHtml = '';
+            if (egLabelCheck == 'Insurance') {
+                egHtml = eg_images.insurance;
+            } else if (egLabelCheck == "Wi-Fi Service") {
+                egHtml = eg_images.wifi;
+            } else if (egLabelCheck == "Crew") {
+                if (container.children[0].textContent == 'Hire a Skipper') {
+                    egHtml = eg_images.crew.skipper;
+                } else if (container.children[0].textContent == 'Hire a Cook') {
+                    egHtml = eg_images.crew.cook;
+                }
+            }
+
+            return egHtml;
+
         }
 
 
