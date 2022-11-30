@@ -90,9 +90,21 @@ li#carousel__slide3 {
     .carousel-wrapper .carousel__viewport>li {
         grid-column: 1/1;
         grid-row: 1/1;
+        scale: 1;
+        transform-origin: right;
+        transition: all 0.5s;
+
     }
-    .carousel-wrapper .carousel__viewport>li:not(.eg-active-carousel){
+
+    .carousel-wrapper .carousel__viewport>li:not(.eg-active-carousel) {
         z-index: -9999;
+        scale: 0;
+    }
+
+    .eg-active-button {
+        scale: 1.25;
+        margin-inline: 4px;
+        transition: scale 0.5s;
     }
 
     /*showing navigation dots*/
@@ -106,7 +118,7 @@ li#carousel__slide3 {
     }
 
     .carousel {
-        height: 310px !important;
+        height: 295px !important;
     }
 
     .carousel li.carousel__navigation-item+li {

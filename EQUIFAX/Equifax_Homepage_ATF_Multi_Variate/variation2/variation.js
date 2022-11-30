@@ -60,6 +60,10 @@
                     setInterval(() => {
                         if (egIndex < egBtns.length) {
                             egBtns[egIndex].click();
+                            if(document.querySelector(".eg-active-button")){
+                                document.querySelector(".eg-active-button").classList.remove("eg-active-button");
+                            }
+                            egBtns[egIndex].classList.add("eg-active-button");
                             if (egIndex == 0) {
                                 showCarousel(0,listItems[0]);
                             } else if (egIndex == 1) {
