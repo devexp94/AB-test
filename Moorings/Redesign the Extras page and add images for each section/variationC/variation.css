@@ -194,6 +194,7 @@ span.totalPrice,
 html body .booking-flow .eg_withProvision .eg_totalPrice {
     color: #1ba9e8;
     font-weight: 400 !important;
+    padding-top: 3px;
 }
 
 .booking-flow .main .extra .extra-description .text {
