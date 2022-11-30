@@ -196,9 +196,6 @@ min-width: 24px;
         padding-left: 4%;
     }
 
-    .booking-flow .main .extra .price-quantity {
-        margin-top: -4%;
-    }
 }
 
 @media(max-width: 767px) {
@@ -206,11 +203,15 @@ min-width: 24px;
         padding-top: 10px;
     }
 
-    .steps {
+    /* .steps {
         width: 100%;
-    }
+    } */
 
     .egImg {
+        width: 100% !important;
+    }
+
+    #booking-flow > div > div.steps{
         width: 100%;
     }
 
