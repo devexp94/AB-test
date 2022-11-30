@@ -58,7 +58,6 @@
         }
 
 
-
         /* Variation Init */
         function init() {
             /* start your code here */
@@ -74,12 +73,16 @@
 
         function addCollapseExpand() {
 
-            live('#container-to-scroll > div:nth-child(2) > div > div:has(.l-wizard-section__container)', 'click', function() {
+            live('#container-to-scroll > div:nth-child(2) > div > div:has(.l-wizard-section__container)', 'click', function(){
                 if (this.parentElement.parentElement.classList.contains("l-wizard__body")) {
                     if (this.parentElement.querySelector(".eg-active-section")) {
-                        this.parentElement.querySelector(".eg-active-section").classList.remove("eg-active-section");
+                        if(this.parentElement.querySelector(".eg-active-section") != this){
+                            this.parentElement.querySelector(".eg-active-section").classList.remove("eg-active-section");
+                        }
                     }
-                    this.classList.add("eg-active-section");
+                    this.classList.toggle("eg-active-section");
+                    console.log(this)
+
                     this.scrollIntoView({ behaviour: "smooth" });
                 }
             });
