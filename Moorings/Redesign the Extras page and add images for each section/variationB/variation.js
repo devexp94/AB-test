@@ -23,22 +23,51 @@
         }
         /* Variation functions */
 
-        let eg_Img = `
-    <div class="egImg">
-    <img class="full-2-1-breakpoints-theme-moorings-xsw-1x" src="https://editor-assets.abtasty.com/46121/637c78c60d1091669101766.png" width="768" height="384" alt="">
-    </div>
-  `;
-        var images = ['https://editor-assets.abtasty.com/46121/637c78a6e843c1669101734.png', 'https://editor-assets.abtasty.com/46121/637c785999bca1669101657.png', 'https://editor-assets.abtasty.com/46121/637c78c60d1091669101766.png', 'https://editor-assets.abtasty.com/46121/637c78ecd9bc91669101804.png']
+        var eg_images = {
+            insurance: `
+              <div class="egImg">
+              <img class="full-2-1-breakpoints-theme-moorings-xsw-1x" src="https://editor-assets.abtasty.com/46121/637c78a6e843c1669101734.png" width="768" height="384" alt="">
+              </div>
+            `,
+            wifi: `
+              <div class="egImg">
+              <img class="full-2-1-breakpoints-theme-moorings-xsw-1x" src='https://editor-assets.abtasty.com/46121/637c78ecd9bc91669101804.png' width="768" height="384" alt="">
+              </div>
+            `,
+            crew: {
+                cook: `
+              <div class="egImg">
+              <img class="full-2-1-breakpoints-theme-moorings-xsw-1x" src='https://editor-assets.abtasty.com/46121/637c785999bca1669101657.png' width="768" height="384" alt="">
+              </div>
+            `,
+                skipper: `
+              <div class="egImg">
+              <img class="full-2-1-breakpoints-theme-moorings-xsw-1x" src='https://editor-assets.abtasty.com/46121/637c78c60d1091669101766.png' width="768" height="384" alt="">
+              </div>
+            `
+            }
+        }
 
         function init() {
             let container = document.querySelectorAll("#tm-booking .main .extra-inner .extra-line-item");
             for (var i = 0; i < container.length; i++) {
-                let eg_Img = `
-                <div class="egImg">
-                <img class="full-2-1-breakpoints-theme-moorings-xsw-1x" src="${images[i]}" width="768" height="384" alt="">
-                </div>
-              `;
-                container[i].insertAdjacentHTML("afterbegin", eg_Img);
+
+                let egLabelCheck = container[i].parentElement.parentElement.parentElement.parentElement.previousElementSibling.textContent;
+                let egHtml = '';
+                if (egLabelCheck == 'Insurance') {
+                    egHtml = eg_images.insurance;
+                } else if (egLabelCheck == "Wi-Fi Service") {
+                    egHtml = eg_images.wifi;
+                } else if (egLabelCheck == "Crew") {
+                    if (container[i].children[0].textContent == 'Hire a Skipper') {
+                        egHtml = eg_images.crew.skipper;
+                    } else if (container[i].children[0].textContent == 'Hire a Cook') {
+                        egHtml = eg_images.crew.cook;
+                    }
+                }
+
+                container[i].insertAdjacentHTML("afterbegin", egHtml);
+
             }
             movingElements(document.querySelectorAll("#tm-booking .main .extra-inner"));
             // mutation observer

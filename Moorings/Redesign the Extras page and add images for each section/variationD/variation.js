@@ -65,32 +65,26 @@
             `
         }
     }
-        var images = ['https://editor-assets.abtasty.com/46121/637c78a6e843c1669101734.png','https://editor-assets.abtasty.com/46121/637c78ecd9bc91669101804.png','https://editor-assets.abtasty.com/46121/637c785999bca1669101657.png', 'https://editor-assets.abtasty.com/46121/637c78c60d1091669101766.png'];
 
         function init() {
             let container = document.querySelectorAll("#tm-booking .main .extra-inner .extra-line-item");
             for (var i = 0; i < container.length; i++) {
-                let eg_Img = `
-              <div class="egImg">
-              <img class="full-2-1-breakpoints-theme-moorings-xsw-1x" src="${images[i]}" width="768" height="384" alt="">
-              </div>
-            `;
                 
                 let egLabelCheck = container[i].parentElement.parentElement.parentElement.parentElement.previousElementSibling.textContent;
-
+                let egHtml = '';
                 if(egLabelCheck == 'Insurance'){
-                    container[i].insertAdjacentHTML("afterbegin", eg_Img);
+                    egHtml = eg_images.insurance;
                 } else if(egLabelCheck == "Wi-Fi Service"){
-                    container[i].insertAdjacentHTML("afterbegin", eg_Img);
+                    egHtml = eg_images.wifi;
                 } else if(egLabelCheck == "Crew"){
                     if(container[i].children[0].textContent == 'Hire a Skipper'){
-                        container[i].insertAdjacentHTML("afterbegin", eg_Img);
+                        egHtml = eg_images.crew.skipper;
                     } else if (container[i].children[0].textContent == 'Hire a Cook'){
-                        container[i].insertAdjacentHTML("afterbegin", eg_Img);
+                        egHtml = eg_images.crew.cook;
                     }
                 }
 
-                container[i].insertAdjacentHTML("afterbegin", eg_Img);
+                container[i].insertAdjacentHTML("afterbegin", egHtml);
 
             }
             movingElements(document.querySelectorAll("#tm-booking .main .extra-inner"));
