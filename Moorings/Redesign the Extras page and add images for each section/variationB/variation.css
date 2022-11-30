@@ -14,6 +14,7 @@
 
 span.qualifier {
     color: #bdbdbd;
+    font-size: 16px;
 }
 
 .booking-flow .main .extra label {
@@ -29,7 +30,7 @@ span.qualifier {
     margin-inline: 0 !important;
 }
 
-.booking-flow .main .extra .extra-description .text{
+.booking-flow .main .extra .extra-description .text {
     width: 100%;
 }
 
@@ -58,15 +59,15 @@ span.qualifier {
     height: 28px;
 }
 
-div.price-quantity > span.totalPrice{
+div.price-quantity>span.totalPrice {
     font-weight: 400;
 }
 
-    .booking-flow .main .extra label,
-.booking-flow .main .extra .price-quantity{
-     font-size: 20px;
+.booking-flow .main .extra label,
+.booking-flow .main .extra .price-quantity {
+    font-size: 20px;
     font-weight: 400;
-    font-family : "NewBaskervilleW01-Roman", serif;
+    font-family: "NewBaskervilleW01-Roman", serif;
 
 }
 
@@ -75,8 +76,8 @@ div.price-quantity > span.totalPrice{
     grid-template-columns: 215px 1fr;
 }
 
-.booking-flow .main .extra .extra-description .text, 
-.booking-flow .main .extra .extra-description .notes  {
+.booking-flow .main .extra .extra-description .text,
+.booking-flow .main .extra .extra-description .notes {
     font-size: 16px;
 }
 
@@ -128,6 +129,7 @@ span.totalPrice {
 }
 
 .booking-flow input[type=checkbox] {
+    cursor: pointer;
     order: 1;
     width: 18px;
     height: 18px;
@@ -140,6 +142,7 @@ span.totalPrice {
 .price-quantity {
     display: flex;
     gap: 15px;
+    align-items: center;
 }
 
 .booking-flow .main .extra .notes .crew-message {
@@ -148,18 +151,18 @@ span.totalPrice {
     margin: 0;
 }
 
-@media(min-width: 800px){
+@media(min-width: 800px) {
     .booking-flow input[type=checkbox] {
         order: 1;
-        width: 24px;
-        height: 24px;
+        min-width: 24px;
+        min-height: 24px;
     }
 
     .booking-flow .main .extra label,
-.booking-flow .main .extra .price-quantity{
-    padding-left: 4.5%;
-    font-family : "NewBaskervilleW01-Roman", serif;
-}
+    .booking-flow .main .extra .price-quantity {
+        padding-left: 4.5%;
+        font-family: "NewBaskervilleW01-Roman", serif;
+    }
 
 }
 
@@ -174,7 +177,7 @@ span.totalPrice {
         height: 100px;
         grid-row-start: 1;
         grid-row-end: 3;
-    }  
+    }
 
     .booking-flow .main .extra .extra-line-item {
         display: grid;
@@ -182,7 +185,7 @@ span.totalPrice {
     }
 
     .booking-flow .main .extra label,
-    .booking-flow .main .extra .price-quantity{
+    .booking-flow .main .extra .price-quantity {
         padding-left: 4%;
     }
 

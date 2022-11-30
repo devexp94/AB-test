@@ -14,6 +14,7 @@
 
 span.qualifier {
     color: #bdbdbd;
+    font-size: 16px;
 }
 
 .booking-flow .main .extra label {
@@ -24,8 +25,12 @@ span.qualifier {
     padding-inline: 15px;
 }
 
-.booking-flow input[type=checkbox]{
+
+.booking-flow input[type=checkbox] {
     cursor: pointer;
+    order: 1;
+    width: 18px;
+    height: 18px;
 }
 
 .booking-flow .main .extra .extra-description {
@@ -33,7 +38,7 @@ span.qualifier {
     margin-inline: 0 !important;
 }
 
-.booking-flow .main .extra .extra-description .text{
+.booking-flow .main .extra .extra-description .text {
     width: 100%;
 }
 
@@ -57,7 +62,7 @@ span.qualifier {
     height: 45px;
 }
 
-div.price-quantity > span.totalPrice{
+div.price-quantity>span.totalPrice {
     font-weight: 400;
 }
 
@@ -77,21 +82,21 @@ div.price-quantity > span.totalPrice{
     grid-row-end: 3;
 }
 
-form > div:nth-child(1) div.extra-description.row > div.text{
+form>div:nth-child(1) div.extra-description.row>div.text {
     /*white-space: nowrap;*/
-    width: 100%; 
+    width: 100%;
     /*overflow: hidden;*/
     /*text-overflow: ellipsis;*/
- } 
+}
 
-form > div:nth-child(1) div.extra-description.row > div.text.eg_active .eg-hidden-text{
+form>div:nth-child(1) div.extra-description.row>div.text.eg_active .eg-hidden-text {
     display: inline !important;
 }
 
 
- .eg-hidden-text{
+.eg-hidden-text {
     display: none;
- }
+}
 
 
 #eg_show {
@@ -136,17 +141,17 @@ span.totalPrice {
 }
 
 
-.booking-flow .main .extra .extra-description .text, 
-.booking-flow .main .extra .extra-description .notes  {
+.booking-flow .main .extra .extra-description .text,
+.booking-flow .main .extra .extra-description .notes {
     font-size: 16px;
 }
 
 .booking-flow .main .extra label,
-.booking-flow .main .extra .price-quantity{
+.booking-flow .main .extra .price-quantity {
     padding-left: 7.5%;
-     font-size: 20px;
+    font-size: 20px;
     font-weight: 400;
-    font-family : "NewBaskervilleW01-Roman", serif;
+    font-family: "NewBaskervilleW01-Roman", serif;
 
 }
 
@@ -164,8 +169,8 @@ span.totalPrice {
 
 .booking-flow input[type=checkbox] {
     order: 1;
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
 }
 
 .notes {
@@ -175,6 +180,7 @@ span.totalPrice {
 .price-quantity {
     display: flex;
     gap: 15px;
+    align-items: center;
 }
 
 .booking-flow .main .extra .notes .crew-message {
@@ -184,37 +190,38 @@ span.totalPrice {
 }
 
 .booking-flow .main .extra .extra-description {
-        width: 100%;
-        margin-inline: 0 !important;
-        font-size: 16px;
+    width: 100%;
+    margin-inline: 0 !important;
+    font-size: 16px;
+}
+
+@media(min-width: 800px) {
+    .booking-flow input[type=checkbox] {
+        order: 1;
+        min-width: 24px;
+        min-height: 24px;
     }
 
-    @media(min-width: 800px){
-        .booking-flow input[type=checkbox] {
-            order: 1;
-            width: 24px;
-            height: 24px;
-        }
-    
-        .booking-flow .main .extra label,
-    .booking-flow .main .extra .price-quantity{
+    .booking-flow .main .extra label,
+    .booking-flow .main .extra .price-quantity {
         padding-left: 4.5%;
-        font-family : "NewBaskervilleW01-Roman", serif;
+        font-family: "NewBaskervilleW01-Roman", serif;
     }
-    
-    }
+
+}
 
 
 @media(min-width: 768px) {
     .extras form .Collapsible .Collapsible__contentInner>div {
         padding: 15px 15px 0 15px;
     }
+
     .egImg {
         width: 200px;
         height: 100px;
         grid-row-start: 1;
         grid-row-end: 3;
-    }  
+    }
 
     .booking-flow .main .extra .extra-line-item {
         display: grid;
@@ -222,7 +229,7 @@ span.totalPrice {
     }
 
     .booking-flow .main .extra label,
-    .booking-flow .main .extra .price-quantity{
+    .booking-flow .main .extra .price-quantity {
         padding-left: 4%;
     }
 }
