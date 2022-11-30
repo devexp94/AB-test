@@ -30,9 +30,6 @@ span.qualifier {
     border-bottom: none;
 }
 
-.booking-flow .Collapsible__trigger {
-    background-color: rgb(204 204 204 /35%);
-}
 
 .booking-flow .step {
     font-size: 1.8rem;
@@ -42,6 +39,10 @@ span.qualifier {
 
 .booking-flow .steps .number {
     height: 28px;
+}
+
+div.price-quantity > span.totalPrice{
+    font-weight: 400;
 }
 
     .booking-flow .main .extra label,
@@ -73,6 +74,9 @@ span.qualifier {
 
 .booking-flow .Collapsible__trigger {
     width: 96%;
+    background-color: rgb(204 204 204 /35%);
+    font-size: 20px;
+    font-weight: 400;
     margin: auto;
 }
 
