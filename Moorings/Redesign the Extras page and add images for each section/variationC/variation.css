@@ -30,14 +30,14 @@ span.qualifier {
     border-bottom: none;
 }
 
-.booking-flow .Collapsible__trigger {
-    background-color: rgb(204 204 204 /35%);
-}
-
 .booking-flow .step {
     font-size: 1.8rem;
     margin-top: 0;
     height: 45px;
+}
+
+div.price-quantity > span.totalPrice{
+    font-weight: 400;
 }
 
 .booking-flow .steps .number {
@@ -91,6 +91,9 @@ form > div:nth-child(1) div.extra-description.row > div.text.eg_active .eg-hidde
 
 .booking-flow .Collapsible__trigger {
     width: 96%;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: rgb(204 204 204 /35%);
     margin: auto;
 }
 
