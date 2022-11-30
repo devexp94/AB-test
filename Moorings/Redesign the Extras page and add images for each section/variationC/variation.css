@@ -16,6 +16,19 @@ span.qualifier {
     color: #bdbdbd;
 }
 
+.booking-flow input[type=checkbox]{
+    cursor: pointer;
+}
+
+.booking-flow .main .extra .extra-description {
+    width: 100%;
+    margin-inline: 0 !important;
+}
+
+.booking-flow .main .extra .extra-description .text{
+    width: 100%;
+}
+
 .booking-flow .main .extra.child {
     background-color: white;
 }

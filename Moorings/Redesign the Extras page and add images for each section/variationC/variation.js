@@ -67,7 +67,7 @@
             });
 
             // adding read more read less
-            readMoreLess("form > div:nth-child(1) div.extra-description.row > div.text",200);
+            readMoreLess("form > div:nth-child(1) div.extra-description.row > div.text",175);
         }
 
         function readMoreLess(target,maxLength) {
