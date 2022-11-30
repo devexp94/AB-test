@@ -48,7 +48,6 @@
                     for (let node of mutation.addedNodes) {
                         // we track only elements, skip other nodes (e.g. text nodes)
                         if ((node instanceof HTMLElement)) {
-                            node.querySelector(".extra-line-item") && node.querySelector(".extra-line-item").insertAdjacentHTML("afterbegin", eg_Img);
                             movingElements([node]);
                         }
                         // console.log('hello',node);

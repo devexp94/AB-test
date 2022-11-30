@@ -1,0 +1,12 @@
+{
+	"files": [
+		"./variationD/variation.css",
+		"./variationD/variation.js"
+	],
+	"urls": [
+		"https://www.moorings.com/booking/extras#!departureId=19262966&pax=2&nid=571",
+		"https://www.moorings.com/booking/extras#!departureId=23884836&pax=2&nid=563",
+		"https://www.moorings.com/booking/extras#!departureId=24647451&pax=2&nid=561",
+		"https://www.moorings.com/booking/extras#!departureId=24074401&pax=2&nid=560"
+	]
+}

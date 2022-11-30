@@ -17,6 +17,16 @@ span.qualifier {
     font-size: 16px;
 }
 
+.booking-flow .main .extra.child .extra-inner {
+    padding-top: 16px;
+    border-top: none;
+}
+
+.booking-flow .main .extra:not(.child) {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
 .booking-flow .main .extra label {
     gap: 10px;
 }
@@ -36,6 +46,7 @@ span.qualifier {
 
 .booking-flow .main .extra.child {
     background-color: white;
+    padding-top: 0;
 }
 
 .booking-flow .Collapsible__trigger:after {
@@ -71,10 +82,6 @@ div.price-quantity>span.totalPrice {
 
 }
 
-.booking-flow .main .extra .extra-line-item {
-    display: grid;
-    grid-template-columns: 215px 1fr;
-}
 
 .booking-flow .main .extra .extra-description .text,
 .booking-flow .main .extra .extra-description .notes {
@@ -179,7 +186,7 @@ span.totalPrice {
         grid-row-end: 3;
     }
 
-    .booking-flow .main .extra .extra-line-item {
+    .booking-flow .main .extra:not(.child) .extra-line-item {
         display: grid;
         grid-template-columns: 202px 1fr;
     }
