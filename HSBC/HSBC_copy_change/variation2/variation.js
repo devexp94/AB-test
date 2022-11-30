@@ -68,12 +68,35 @@
         function init() {
 
             // changing first title text on load
-            setTimeout(() => {
-                const egText = document.querySelector(".collection-cards__card___3N5Oq > div > a  div.collection-card__content___3SEC9 h3");
-                // changing text and html
+            updateTile();
 
+            live([".segment-filter > div  > button:nth-child(1)", ".collection-card__dismiss-control___xPQKd:nth-of-type(1)"], 'click', () => {
+                updateTile();
+            });
+        };
+
+        function updateTile() {
+            const egText = document.querySelector(".collection-cards__card___3N5Oq > div > a  div.collection-card__content___3SEC9 h3");
+            // changing text and html
+
+            console.log(egText.textContent);
+
+            if (egText.textContent == "Opening an HSBC Business account") {
+                let originalEle = egText.nextElementSibling;
+                egText.nextElementSibling.nextElementSibling.remove();
+                egText.remove();
+
+                if (originalEle.nextElementSibling) {
+                    originalEle.nextElementSibling.style.display = "block";
+                }
+
+                if (egText.previousElementSibling) {
+                    originalEle.previousElementSibling.style.display = "block";
+                }
+
+            } else {
                 // hiding previous element themes
-                if(egText.previousElementSibling){
+                if (egText.previousElementSibling) {
                     egText.previousElementSibling.style.display = "none";
                 }
 
@@ -84,54 +107,13 @@
                 // updating link
                 egText.parentElement.parentElement.href = "https://www.business.hsbc.com.sg/en-sg/business-banking/business-account-opening-process";
 
-                if(egText.nextElementSibling){
+                if (egText.nextElementSibling) {
                     egText.nextElementSibling.style.display = "none";
                 }
 
                 //adding hover text
                 egText.insertAdjacentHTML("afterend", eg_para);
-
-            }, 1000);
-
-            // updateCnt();
-
-            live([".segment-filter > div  > button", ".collection-card__dismiss-control___xPQKd"], 'click', () => {
-                updateCnt();
-            })
-        };
-
-        function updateCnt() {
-            setTimeout(() => {
-                const egTexts = document.querySelectorAll(".collection-cards__card___3N5Oq > div > a  div.collection-card__content___3SEC9 h3");
-                egTexts.forEach(text => {
-                    if (text.innerText == "Managing Cash Flow") {
-                        // changing innerHTML
-
-                        // hiding previous element themes
-                        text.previousElementSibling.style.display = "none";
-
-                        text.style.display = "none";
-
-                        text.insertAdjacentHTML("beforebegin", `<h2 class="eg-title collection-card__title___1ghe1">${"Opening an HSBC Business account" + text.children[0].outerHTML.toString()}</h2>`);
-
-                        // updating link
-                        text.parentElement.parentElement.href = "https://www.business.hsbc.com.sg/en-sg/business-banking/business-account-opening-process";
-
-                        //adding hover text
-                        text.insertAdjacentHTML("afterend", eg_para);
-                    } else {
-                        if (text.parentElement.querySelector(".eg-title")) {
-                            text.previousElementSibling.remove();
-                            text.nextElementSibling.remove();
-                            if(text.nextElementSibling){
-                                text.nextElementSibling.style.display = "block";
-                            }
-                            text.style.display = "block";
-                            text.previousElementSibling.style.display = "block";
-                        }
-                    }
-                });
-            }, 1000)
+            }
         }
 
         /* Initialize variation */
