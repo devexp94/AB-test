@@ -11,7 +11,7 @@
           copy2: 'Merci pour votre participation',
           copy3: 'Soumettre',
         },
-        UK: {
+        EN: {
           copyPlace: 'Your answer...',
           copy1: 'What stopped you from buying with us today?',
           copy2: 'Thank you for your participation',
@@ -41,36 +41,13 @@
           copy2: 'Grazie per la tua partecipazione',
           copy3: 'Invia',
         },
-        EU: {
-          copyPlace: 'Your answer...',
-          copy1: 'What almost stopped you from buying from our site?',
-          copy2: 'We thank you for your participation',
-          copy3: 'Submit',
-        },
-        IE: {
-          copyPlace: 'Your answer...',
-          copy1: 'What almost prevented you from buying from our site?',
-          copy2: 'We thank you for your participation',
-          copy3: 'Submit',
-        },
         PL: {
           copyPlace: 'Twoja odpowiedź...',
           copy1: 'Co powstrzymało Cię przed dokonaniem zakupu w naszej firmie dzisiaj?',
           copy2: 'Dziękuję za udział',
           copy3: 'Składać',
         },
-        NO: {
-          copyPlace: 'Your answer...',
-          copy1: 'What almost prevented you from buying from our site?',
-          copy2: 'We thank you for your participation',
-          copy3: 'Submit',
-        },
-        DK: {
-          copyPlace: 'Your answer...',
-          copy1: 'What almost prevented you from buying from our site?',
-          copy2: 'We thank you for your participation',
-          copy3: 'Submit',
-        },
+       
         SE: {
           copyPlace: 'Ditt svar...',
           copy1: 'Vad hindrade dig från att handla från oss idag?',
@@ -226,8 +203,8 @@
       var  changeContent = function() {
         console.log(window.location.href.indexOf('/fr/'));
         if (window.location.href.indexOf('/uk/') != -1) {
-          changeCopyHandler('UK');
-          language = 'UK';
+          changeCopyHandler('EN');
+          language = 'EN';
         } else if (window.location.href.indexOf('/fr/') != -1) {
           changeCopyHandler('FR');
           language = 'FR';
