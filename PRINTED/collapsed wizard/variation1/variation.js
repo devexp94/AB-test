@@ -81,7 +81,8 @@
                         }
                     }
                     this.classList.toggle("eg-active-section");
-                    console.log(this)
+
+                    
 
                     this.scrollIntoView({ behaviour: "smooth" });
                 }
