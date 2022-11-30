@@ -1,4 +1,4 @@
-.col-md-12,
+#booking-flow > div > div.steps,
 .calendar-calendar,
 .view .row>.list-group {
     width: 85%;
@@ -59,17 +59,6 @@ span.qualifier {
     border-bottom: none;
 }
 
-
-.booking-flow .step {
-    font-size: 1.8rem;
-    margin-top: 0;
-    height: 45px;
-}
-
-.booking-flow .steps .number {
-    height: 28px;
-}
-
 div.price-quantity>span.totalPrice {
     font-weight: 400;
 }
@@ -93,7 +82,7 @@ div.price-quantity>span.totalPrice {
     border: 1px solid #d0cdc5;
 }
 
-.text {
+.extra-description .text {
     padding: 5px 25px 10px;
 }
 
@@ -138,8 +127,8 @@ span.totalPrice {
 .booking-flow input[type=checkbox] {
     cursor: pointer;
     order: 1;
-    width: 18px;
-    height: 18px;
+min-width: 24px;
+    min-height: 24px;
 }
 
 .notes {
@@ -171,6 +160,17 @@ span.totalPrice {
         font-family: "NewBaskervilleW01-Roman", serif;
     }
 
+    
+.booking-flow .step {
+    font-size: 1.8rem;
+    margin-top: 0;
+    height: 45px;
+}
+
+.booking-flow .steps .number {
+    height: 28px;
+}
+
 }
 
 
@@ -196,6 +196,9 @@ span.totalPrice {
         padding-left: 4%;
     }
 
+    .booking-flow .main .extra .price-quantity {
+        margin-top: -4%;
+    }
 }
 
 @media(max-width: 767px) {
@@ -217,15 +220,20 @@ span.totalPrice {
         flex-direction: column;
     }
 
+    .booking-flow input[type=checkbox] {
+        cursor: pointer;
+        order: 1;
+        min-width: 20px;
+        min-height: 20px;
+    }
 
-
-    .booking-flow .step {
+    /* .booking-flow .step {
         font-size: 1.5rem;
     }
 
     .booking-flow .step {
         padding-top: 9px;
-    }
+    } */
 
     .booking-flow .booking-details {
         margin-bottom: 11px;
@@ -239,7 +247,7 @@ span.totalPrice {
         padding: 10px;
     }
 
-    .text {
+    .extra-description .text {
         padding: 0 10px 10px;
         width: 100%;
     }
@@ -251,4 +259,23 @@ span.totalPrice {
     .booking-flow .Collapsible__trigger {
         width: 100%;
     }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 901px){
+
+    .booking-flow .step {
+        font-size: 1.6rem;
+        margin-top: 0;
+        height: 41px;
+        padding-left: 55px;
+        min-width: calc(23% + 58px);
+    }
+    
+    .booking-flow .steps .number {
+        height: 22px;
+        width: 21px;
+    }
+
 }
