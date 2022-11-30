@@ -1,7 +1,7 @@
-html body .col-md-12,
+#booking-flow > div > div.steps,
 html body .calendar-calendar,
 html body .view .row>.list-group {
-    width: 85%;
+    width: 90%;
 }
 
 html body .booking-flow .main .extra .notes {
@@ -38,7 +38,7 @@ html body .booking-flow .steps .number {
 }
 
 html body .booking-flow .step {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-top: 0;
     height: 45px;
 }
@@ -186,7 +186,7 @@ html body .booking-flow .main .extra .extra-description {
 }
 
 span.totalPrice {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -208,7 +208,7 @@ html body .booking-flow .eg_withProvision .eg_totalPrice {
 .booking-flow .main .extra label,
 .booking-flow .main .extra .price-quantity {
     padding-left: 0.5%;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     font-family: "NewBaskervilleW01-Roman", serif;
 
@@ -251,6 +251,10 @@ html body .booking-flow .eg_withProvision .eg_totalPrice {
     .egImg {
         width: 100%;
         height: auto !important;
+    }
+
+    html body .booking-flow .steps .number {
+        height: 23px;
     }
 
     html body .booking-flow .step {
