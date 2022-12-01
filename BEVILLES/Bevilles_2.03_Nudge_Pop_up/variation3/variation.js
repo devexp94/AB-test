@@ -66,9 +66,6 @@
                     ele.innerHTML = response;
                     const cartItems = ele.querySelectorAll("#cartform  .cart-items li:nth-child(n + 2)");
 
-                    // check is fast dispatch available
-                    
-
                     let egItems = itemsList(cartItems);
                     createPopUp(egItems);
                 } else {
@@ -149,7 +146,7 @@
 
             let egHtml = '<ul class="eg-items-lists">';
 
-            cartItems.forEach(cItm=>{
+            cartItems.forEach(cItm => {
                 egHtml += `<div class="eg-fast-dispatch">
                                                             
                                                             <div class="eg-show-item">
@@ -168,7 +165,7 @@
             });
 
             egHtml += "</ul>";
-            return egHtml;                                            
+            return egHtml;
         }
 
         // timer function
