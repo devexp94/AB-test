@@ -9,7 +9,9 @@ html body.form-popup-hide .eg-form-popup {
     width: auto;
     z-index: 999;
     max-width: 600px;
+    display: none;
 }
+
 
 .eg-form-popup .eg-form-popup-inr {
     background: #000000;

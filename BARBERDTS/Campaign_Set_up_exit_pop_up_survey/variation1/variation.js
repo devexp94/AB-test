@@ -178,16 +178,11 @@
         var language = 'EN';
         var init = function() {
             // show form when user mouse out from current window
-            if (getCookie('formShown') == null) {
-                document.addEventListener("mouseout", function(e) {
-                    if (e.toElement == null && e.relatedTarget == null) {
-                        document.querySelector('body footer').insertAdjacentHTML('afterend', formPopup);
-                    }
-                });
-            }
+            document.querySelector('body footer').insertAdjacentHTML('afterend', formPopup);
+            detectPopUpIntent();
 
             // setting cokkie for form
-            setCookie('formShown', '2', 1);
+            setCookie('formShown', '2', 30);
 
             live('.eg-form-popup .eg-form-close', 'click', function() {
                 createSession();
@@ -202,6 +197,33 @@
 
             changeContent();
         };
+
+        // this peice of code detects popup intent on mobil
+        var detectPopUpIntent = function() {
+            if (getCookie('formShown') == null) {
+                if (window.innerWidth > 767) {
+                    // this event listener detects popup intent on browser
+                    document.addEventListener("mouseout", function(e) {
+                        if (e.toElement == null && e.relatedTarget == null) {
+                            document.querySelector('.eg-form-popup').style.display = 'block';
+                        }
+                    });
+
+
+                } else if (window.innerWidth < 768) {
+                    // detect page bottom 
+                    detectPageBottm();
+                }
+            }
+        }
+
+        var detectPageBottm = function () {
+            window.addEventListener("scroll",(e)=>{
+                if(window.scrollY + window.innerHeight + 50 >= document.body.offsetHeight){
+                    document.querySelector('.eg-form-popup').style.display = 'block';
+                }
+            });
+        }
 
         var changeCopyHandler = function(lang) {
             //console.log(lang, '>>>>');

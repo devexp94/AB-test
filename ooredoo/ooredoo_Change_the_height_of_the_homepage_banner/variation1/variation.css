@@ -1,0 +1,6 @@
+@media (max-width: 820px) {
+    .ooredoo-carousel__item .ooredoo-carousel__img img {
+        height: 366px !important;
+        object-position: 50% 5%;
+    }
+}
