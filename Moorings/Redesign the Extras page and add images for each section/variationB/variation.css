@@ -12,6 +12,20 @@
     margin-left: 15px;
 }
 
+/*css for error message*/
+.booking-flow .main .extra.capacity-error {
+    background: transparent !important;
+}
+
+.booking-flow .main .extra.capacity-error .extra-inner {
+    background: rgba(215,36,65,.24);
+}
+
+.extra-inner-capacity-message {
+    padding: 16px;
+}
+/*css for error message*/
+
 span.qualifier {
     color: #bdbdbd;
     font-size: 16px;
@@ -24,7 +38,6 @@ span.qualifier {
 
 .booking-flow .main .extra:not(.child) {
     margin-bottom: 0;
-    padding-bottom: 0;
 }
 
 .booking-flow .main .extra label {
@@ -176,7 +189,7 @@ min-width: 24px;
 
 @media(min-width: 768px) {
     .extras form .Collapsible .Collapsible__contentInner>div {
-        padding: 15px 15px 0 15px;
+        padding: 15px;
     }
 
     .egImg {
