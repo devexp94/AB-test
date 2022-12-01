@@ -17,7 +17,7 @@
 .eg_bold p{
     font-weight: 600;
     display: inline-block;
-    font-size: 19px;
+    font-size: 24px;
 }
 
 .eg_bold {
@@ -28,13 +28,14 @@
 p.eg_light {
     font-size: 17px;
     font-weight: 400;
-    padding-left: 8px;
+    padding-left: 11px;
 }
 
 .eg_banner h3{
-    font-weight: 500;
+    font-weight: 600;
     color: #fff;
-    font-size: 17px;
+    color: #ddd;
+    font-size: 16px;
 }
 
   @media (min-width: 856px) and (max-width: 992px) {
