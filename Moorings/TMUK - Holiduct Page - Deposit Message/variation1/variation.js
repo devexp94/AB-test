@@ -60,6 +60,8 @@
 
     /* Variation Init */
     function init() {
+
+      insertPrice(checkGap());
       /* start your code here */
       live('.DayPicker-Week .DayPicker-Day:not(.DayPicker-Day--disabled)', 'click', function () {
         insertPrice(checkGap());
