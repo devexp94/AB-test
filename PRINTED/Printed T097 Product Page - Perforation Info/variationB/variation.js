@@ -33,7 +33,7 @@
     function init() {
       document.querySelector("cms-widget-templates-component div.c-templates__info > div.c-templates__info-item--safe-area").insertAdjacentHTML("afterend" , egStr);
 
-      document.querySelector("cms-widget-templates-component .c-templates__size-guide h6").innerHTML = "<h6 class='eg_heading'>105x105<br/>Perforated-Landscape</h6>";
+      // document.querySelector("cms-widget-templates-component .c-templates__size-guide h6").innerHTML = "<h6 class='eg_heading'>105x105<br/>Perforated-Landscape</h6>";
      }
     /* Initialize variation */
     waitForElement("cms-widget-templates-component", init, 50, 15000);
