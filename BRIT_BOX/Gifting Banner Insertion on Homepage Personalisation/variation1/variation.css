@@ -1,0 +1,92 @@
+
+ .eg_banner {
+     display: flex;
+     justify-content: space-around;
+    align-items: center;
+    background-position: center;
+    margin-top: -3.8%;
+    background-size: cover !important;
+    background: url(https://i.ibb.co/Mknqjd6/Desktop-banner-3-1.png);
+}
+
+.eg_para,
+.eg_banner h3 {
+    padding-top: 3%;
+}
+
+.eg_bold p{
+    font-weight: 900;
+    display: inline-block;
+    font-size: 22px;
+}
+
+.eg_bold {
+    color: #fff;
+}
+
+
+p.eg_light {
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 13px;
+}
+
+.eg_banner h3{
+    font-weight: 800;
+    color: #fff;
+    font-size: 22px;
+}
+
+  @media (min-width: 856px) and (max-width: 992px) {
+    .eg_banner {
+       margin-top: -4.4%;
+    }
+    p.eg_str {
+        font-size: 19px;
+    }
+    
+    p.eg_light {
+        font-size: 17px;
+        padding-left: 6px;
+    }
+    
+    .eg_banner h3 {
+        font-size: 18px;
+    }
+    
+    .eg_para, .eg_banner h3 {
+        padding-top: 4.5%;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 855px) {
+    p.eg_str {
+        font-size: 18px;
+    }
+    
+    p.eg_light {
+        font-size: 16px;
+        padding-left: 6px;
+    }
+    
+    .eg_banner h3 {
+        font-size: 17px;
+    }
+    .eg_para, .eg_banner h3 {
+        padding-top: 5%;
+    }
+
+    .eg_banner {
+        margin-top: -5.4%;
+     }
+    
+  }
+
+    @media screen and (max-width: 768px) {
+        .eg_gift_wrap img {
+            width: 100%;
+            padding: 0;
+            display: block;
+            margin-top: -11%;
+        }
+    }
