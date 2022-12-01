@@ -66,6 +66,9 @@
                     ele.innerHTML = response;
                     const cartItems = ele.querySelectorAll("#cartform  .cart-items li:nth-child(n + 2)");
 
+                    // check is fast dispatch available
+                    
+
                     let egItems = itemsList(cartItems);
                     createPopUp(egItems);
                 } else {
