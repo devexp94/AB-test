@@ -1,5 +1,5 @@
 html body.form-popup-hide .eg-form-popup {
-    display: none;
+    display: none !important;
 }
 
 .eg-form-popup {

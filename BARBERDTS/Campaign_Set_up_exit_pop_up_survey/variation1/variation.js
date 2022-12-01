@@ -212,17 +212,14 @@
 
                 } else if (window.innerWidth < 768) {
                     // detect page bottom 
-                    detectPageBottm();
+                    document.addEventListener("scroll", (e) => {
+                        if (window.scrollY + window.innerHeight + 50 >= document.body.offsetHeight) {
+                            document.querySelector('.eg-form-popup').style.display = 'block';
+                            window.removeEventListener("scroll");
+                        }
+                    });
                 }
             }
-        }
-
-        var detectPageBottm = function () {
-            window.addEventListener("scroll",(e)=>{
-                if(window.scrollY + window.innerHeight + 50 >= document.body.offsetHeight){
-                    document.querySelector('.eg-form-popup').style.display = 'block';
-                }
-            });
         }
 
         var changeCopyHandler = function(lang) {
