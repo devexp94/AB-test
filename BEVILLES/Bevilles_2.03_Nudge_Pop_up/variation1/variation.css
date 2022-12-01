@@ -2,6 +2,16 @@
     position: relative;
 }
 
+.eg-popup-container .added-notice .tabel-list .added-notice__checkout a {
+    background: transparent;
+    color: black;
+}
+
+.eg-popup-container .added-notice .tabel-list .added-notice__checkout a:hover {
+    border-color: #b3cae8;
+    background: #b3cae8;
+}
+
 .eg-popup-overlay {
     position: fixed;
     width: 100vw;

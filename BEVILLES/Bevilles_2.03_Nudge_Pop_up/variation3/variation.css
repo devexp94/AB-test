@@ -2,6 +2,16 @@
     position: relative;
 }
 
+.eg-checkout a {
+    background: transparent;
+    color: black;
+}
+
+.eg-checkout a:hover {
+    border-color: #b3cae8;
+    background: #b3cae8;
+}
+
 .eg-popup-overlay {
     position: fixed;
     width: 100vw;
@@ -130,18 +140,16 @@ ul.eg-items-lists {
     background: #f9f9f9;
 }
 
-.eg-fast-dispatch>.eg-dispatch-link {
-    display: none;
-}
 
 .eg-dispatch-link {
     display: flex;
     background: #83afe0;
     color: white;
-    padding: 10px !important;
+    padding: 5px 7px !important;
     justify-content: center;
-    font-size: 20px;
-    margin-top: 0;
+    font-size: 16px;
+    margin: 8px 0 0 8px;
+    width: fit-content;
 }
 
 .eg-dispatch-link:hover,
@@ -157,7 +165,7 @@ ul.eg-items-lists {
 
 .eg-show-item {
     display: flex;
-    padding: 20px 20px 20px 0px;
+    padding: 20px 10px 10px 0px;
     line-height: 1.5;
     gap: 20px;
 }
@@ -166,12 +174,14 @@ ul.eg-items-lists {
     width: 100%;
     display: block;
     object-fit: contain;
-    height: 100%;
+    height: 100px;
+    mix-blend-mode: darken;
 }
 
 .eg-show-item-img {
-    width: 189px;
-    height: 100px;
+    min-width: 130px;
+    max-width: 130px;
+    min-height: 100px;
 }
 
 .eg-show-item-details {
@@ -186,12 +196,6 @@ ul.eg-items-lists {
     justify-content: space-between;
 }
 
-.eg-price .eg-dispatch-link {
-    margin: 0;
-    font-size: 15px;
-    padding: 7px !important;
-    width: 139px;
-}
 
 /*timer css*/
 .s001-banner-wrapper {
@@ -249,16 +253,8 @@ span.whole-time-block span {
         z-index: 999999999999999999;
     }
 
-    .eg-fast-dispatch>.eg-dispatch-link {
-        display: flex;
-    }
-
     .eg-show-item {
         display: flex;
         padding: 0 10px 5px 10px;
-    }
-
-    .eg-show-item .eg-dispatch-link {
-        display: none;
     }
 }

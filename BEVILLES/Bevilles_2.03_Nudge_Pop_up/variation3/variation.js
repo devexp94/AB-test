@@ -148,16 +148,17 @@
 
             cartItems.forEach(cItm=>{
                 egHtml += `<div class="eg-fast-dispatch">
-                                                            <a class="close-box more-link eg-dispatch-link" href="${cItm.querySelector("a[title]").href}">Fast Dispatch</a>
+                                                            
                                                             <div class="eg-show-item">
                                                                 <!-- item image -->
                                                                 <div class="eg-show-item-img">
                                                                     <img src="${cItm.querySelector('.image img').src}" alt="item-in-popup" border="0">
+                                                                    <a class="close-box more-link eg-dispatch-link">Fast Dispatch</a>
                                                                 </div>
                                                             <!-- item name and price -->
                                                                 <div class="eg-show-item-details">
                                                                     <p class="eg-name">${cItm.querySelector("a[title]").textContent}</p>
-                                                                    <p class="eg-price"><strong>${cItm.querySelector('.item-price').textContent}</strong><a class="close-box more-link eg-dispatch-link" href="${cItm.querySelector("a[title]").href}">Fast Dispatch</a></p>
+                                                                    <p class="eg-price"><strong>${cItm.querySelector('.item-price').textContent}</strong></p>
                                                                 </div>
                                                             </div>
                                                         </div>`;
