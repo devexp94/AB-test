@@ -15,9 +15,9 @@
 }
 
 .eg_bold p{
-    font-weight: 900;
+    font-weight: 600;
     display: inline-block;
-    font-size: 22px;
+    font-size: 19px;
 }
 
 .eg_bold {
@@ -26,15 +26,15 @@
 
 
 p.eg_light {
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 400;
-    padding-left: 13px;
+    padding-left: 8px;
 }
 
 .eg_banner h3{
-    font-weight: 800;
+    font-weight: 500;
     color: #fff;
-    font-size: 22px;
+    font-size: 17px;
 }
 
   @media (min-width: 856px) and (max-width: 992px) {
@@ -42,16 +42,16 @@ p.eg_light {
        margin-top: -4.4%;
     }
     p.eg_str {
-        font-size: 19px;
+        font-size: 18px;
     }
     
     p.eg_light {
-        font-size: 17px;
-        padding-left: 6px;
+        font-size: 16px;
+        padding-left: 5px;
     }
     
     .eg_banner h3 {
-        font-size: 18px;
+        font-size: 16px;
     }
     
     .eg_para, .eg_banner h3 {
@@ -61,16 +61,16 @@ p.eg_light {
 
   @media (min-width: 769px) and (max-width: 855px) {
     p.eg_str {
-        font-size: 18px;
+        font-size: 16px;
     }
     
     p.eg_light {
-        font-size: 16px;
+        font-size: 15px;
         padding-left: 6px;
     }
     
     .eg_banner h3 {
-        font-size: 17px;
+        font-size: 15px;
     }
     .eg_para, .eg_banner h3 {
         padding-top: 5%;
