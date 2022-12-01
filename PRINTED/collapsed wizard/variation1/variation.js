@@ -65,56 +65,65 @@
             // order now button click
             document.querySelector("#sticky-nav .c-sticky-nav__button").addEventListener("click", () => {
                 if (egCount == 0) {
-                    waitForElement('#container-to-scroll > div:nth-child(2) > div > div:has(.l-wizard-section__container)', addCollapseExpand, 50, 15000);
+                    waitForElement('#container-to-scroll > div:nth-child(2) > div > div:has(.l-wizard-section__container)', closeActiveSection, 50, 15000);
                     egCount += 1;
+
                 }
             });
-        }
 
-        function addCollapseExpand() {
-
-            live('#container-to-scroll > div:nth-child(2) > div > div:has(.l-wizard-section__container)', 'click', function(){
-                if (this.parentElement.parentElement.classList.contains("l-wizard__body")) {
-                    if (this.parentElement.querySelector(".eg-active-section")) {
-                        if(this.parentElement.querySelector(".eg-active-section") != this){
-                            this.parentElement.querySelector(".eg-active-section").classList.remove("eg-active-section");
-                        }
+            setTimeout(() => {
+                live('.c-wizard-summary__btn-edit', 'click', function() {
+                    let egTargetTxt = this.parentElement.firstElementChild.innerText;
+                    if (egTargetTxt == 'Product') {
+                        document.querySelector("#wizard-product .l-wizard-section__container").classList.remove("eg-inactive-section");
+                    } else if (egTargetTxt == 'Type') {
+                        document.querySelector("#wizard-type .l-wizard-section__container").classList.remove("eg-inactive-section");
+                    } else if (egTargetTxt == 'Size') {
+                        document.querySelector("#wizard-size .l-wizard-section__container").classList.remove("eg-inactive-section");
+                    } else if (egTargetTxt == 'Orientation') {
+                        document.querySelector("#wizard-orientation .l-wizard-section__container").classList.remove("eg-inactive-section");
+                    } else if (egTargetTxt == 'Printed sides') {
+                        document.querySelector("#wizard-printed-sides .l-wizard-section__container").classList.remove("eg-inactive-section");
+                    } else if (egTargetTxt == 'Paper') {
+                        document.querySelector("#wizard-paper .l-wizard-section__container").classList.remove("eg-inactive-section");
+                    } else if (egTargetTxt == 'Paper weight') {
+                        document.querySelector("#wizard-quantity .l-wizard-section__container").classList.remove("eg-inactive-section");
+                    } else if (egTargetTxt == 'Quantity') {
+                        document.querySelector("#section-extras .l-wizard-section__container").classList.remove("eg-inactive-section");
+                    } else if (egTargetTxt == 'Lamination') {
+                        document.querySelector("#section-extras .l-wizard-section__container").classList.remove("eg-inactive-section");
+                    } else if (egTargetTxt == 'Corners') {
+                        document.querySelector("#section-extras .l-wizard-section__container").classList.remove("eg-inactive-section");
+                    } else if (egTargetTxt == 'Perforation') {
+                        document.querySelector("#section-extras .l-wizard-section__container").classList.remove("eg-inactive-section");
                     }
-                    this.classList.toggle("eg-active-section");
+                });
+            }, 5000);
 
-                    
 
-                    this.scrollIntoView({ behaviour: "smooth" });
-                }
-            });
         }
 
 
-        // function checkSelection(sectionEle) {
-        //     console.log(sectionEle);
-        //     // mutation observer
-        //     let observer = new MutationObserver(mutations => {
-        //         // console.log(mutations); // console.log(the changes)
-        //         for (let mutation of mutations) {
-        //             if (mutation.target.classList.contains("is-complete")) {
-        //                 if (sectionEle.nextElementSibling) {
-        //                     sectionEle.nextElementSibling.click();
-        //                 }
-        //                 break;
-        //             }
-        //         }
-        //     });
+        // check api call and close tab accordinglly
+        function closeActiveSection() {
+            const send = XMLHttpRequest.prototype.send
+            XMLHttpRequest.prototype.send = function() {
+                this.addEventListener('load', function() {
+                    // checking api is called for product
+                    if (this.responseURL.indexOf("wizard") != -1) {
+                        const egActiveSec = document.querySelectorAll(".l-wizard-section__icon");
+                        egActiveSec.forEach((check, i) => {
+                            if (check.classList.contains("is-active")) {
+                                check.parentElement.parentElement.querySelector(".l-wizard-section__container").classList.add("eg-inactive-section");
+                            }
+                        });
 
-        //     const ele = document.querySelectorAll(".c-wizard-summary  .c-wizard-summary__body >div");
-
-        //     ele.forEach(ele => {
-        //         // observe everything except attributes
-        //         observer.observe(ele, {
-        //             attributes: true,
-        //             attributeFilter: ['style', 'class']
-        //         });
-        //     });
-        // }
+                        document.querySelector(".l-wizard-section:not(#wizard-white-ink):has(.l-wizard-section__icon:not(.is-active))").scrollIntoView({ behaviour: "smooth" })
+                    }
+                })
+                return send.apply(this, arguments)
+            }
+        }
 
         /* Initialize variation */
         waitForElement('#sticky-nav .c-sticky-nav__button', init, 50, 15000);

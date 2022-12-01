@@ -6,19 +6,14 @@ html {
     cursor: pointer;
 }
 
-#container-to-scroll>div:nth-child(2)>div>div .l-wizard-section__container {
+
+.eg-inactive-section{
     max-height: 0;
     overflow: hidden;
 }
 
-.eg-active-section .l-wizard-section__container {
-    max-height: initial !important;
-    overflow: visible !important;
-    display: initial !important;
-}
-
 /*arrow*/
-#container-to-scroll > div:nth-child(2) > div > div:has(.l-wizard-section__container)::before {
+/*#container-to-scroll > div:nth-child(2) > div > div:has(.l-wizard-section__container)::before {
     content: 'V';
     position: absolute;
     top: 30px;
@@ -36,4 +31,4 @@ html {
 .eg-active-section::before{
     content:"Ʌ";
     rotate: 180deg;
-}
+}*/
