@@ -12,16 +12,17 @@
 }
 
 /*chevrons*/
-.booking-flow .Collapsible__trigger.is-closed:after {
-    content: '\25e3';
-    rotate: -44deg;
-    margin: 0;
+html body .booking-flow .Collapsible__trigger:after{
+    content: '' !important;
+    background: url('https://editor-assets.abtasty.com/46121/6389f9042cf5f1669986564.svg');
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.booking-flow .Collapsible__trigger.is-open:after {
-    content: '\25e4';
-    rotate: 45deg;
-    margin: 4px 3px 8px;
+html body .booking-flow .Collapsible__trigger.is-closed:after{
+    transform: rotate(180deg);
 }
 
 

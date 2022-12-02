@@ -140,22 +140,23 @@
               radioState = this;
           }
 
-          if(el.closest('.extra').querySelector('.eg_withoutProvision input').checked == true){
+          if(el.closest('.extra').querySelector('.eg_withoutProvision input') && el.closest('.extra').querySelector('.eg_withoutProvision input').checked == true){
             el.closest('.extra').querySelector('.eg_withoutProvision input').click();
           }
           el.closest('.extra').querySelector('.extra-line-item > label').click();
 
           setTimeout(function(){
-            if(el.closest('.extra').nextElementSibling.classList.contains('child') && el.closest('.extra').nextElementSibling.querySelector('.extra-line-item > label input').checked == false){
+            if(el.closest('.extra').nextElementSibling && el.closest('.extra').nextElementSibling.classList.contains('child') && el.closest('.extra').nextElementSibling.querySelector('.extra-line-item > label input').checked == false){
               el.closest('.extra').nextElementSibling.querySelector('.extra-line-item > label input').click();
             }
-          },20)
+          },250)
 
         })
 
       })
 
       document.querySelectorAll('.eg_withoutProvision input').forEach(function(el){
+        el.closest('.extra').classList.add('eg_boxes');
         var radioState;
 
         el.addEventListener('click',function(element){
@@ -166,16 +167,16 @@
               radioState = this;
           }
 
-          if(el.closest('.extra').querySelector('.eg_withProvision input').checked == true){
+          if(el.closest('.extra').querySelector('.eg_withProvision input') && el.closest('.extra').querySelector('.eg_withProvision input').checked == true){
             el.closest('.extra').querySelector('.eg_withProvision input').click();
           }
           el.closest('.extra').querySelector('.extra-line-item > label').click();
 
           setTimeout(function(){
-            if(el.closest('.extra').nextElementSibling.classList.contains('child') && el.closest('.extra').nextElementSibling.querySelector('.extra-line-item > label input').checked == true){
+            if(el.closest('.extra').nextElementSibling && el.closest('.extra').nextElementSibling.classList.contains('child') && el.closest('.extra').nextElementSibling.querySelector('.extra-line-item > label input').checked == true){
               el.closest('.extra').nextElementSibling.querySelector('.extra-line-item > label input').click();
             }
-          },20)
+          },250)
           
         })
 
