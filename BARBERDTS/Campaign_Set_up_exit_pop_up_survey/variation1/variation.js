@@ -145,7 +145,7 @@
 
         var createSession = function() {
             if (getCookie('firstVisit') == null) {
-                setCookie('firstVisit', '1', 365);
+                setCookie('firstVisit', '1', 30);
             }
         };
 
@@ -181,9 +181,6 @@
             document.querySelector('body footer').insertAdjacentHTML('afterend', formPopup);
             detectPopUpIntent();
 
-            // setting cokkie for form
-            setCookie('formShown', '2', 30);
-
             live('.eg-form-popup .eg-form-close', 'click', function() {
                 createSession();
                 document.querySelector('body').classList.add('form-popup-hide');
@@ -200,7 +197,7 @@
 
         // this peice of code detects popup intent on mobil
         var detectPopUpIntent = function() {
-            if (getCookie('formShown') == null) {
+            if (getCookie('firstVisit') == null) {
                 if (window.innerWidth > 767) {
                     // this event listener detects popup intent on browser
                     document.addEventListener("mouseout", function(e) {
