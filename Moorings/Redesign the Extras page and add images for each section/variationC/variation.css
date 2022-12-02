@@ -1,9 +1,3 @@
-#booking-flow > div > div.steps,
-html body .calendar-calendar,
-html body .view .row>.list-group {
-    width: 90%;
-}
-
 .booking-flow .Collapsible__trigger {
     border-radius: 4px;
 }
@@ -13,13 +7,22 @@ html body .extra-inner {
 }
 
 
+.booking-flow .Collapsible__trigger.is-closed:after {
+    content: '\25e3';
+    rotate: -44deg;
+    margin: 0;
+}
+
+.booking-flow .Collapsible__trigger.is-open:after {
+    content: '\25e4';
+    rotate: 45deg;
+    margin: 4px 3px 8px;
+}
+
 html body .booking-flow .main .extra .notes {
     margin-top: 0;
 }
 
-html body .extras h2 {
-    margin-left: 15px;
-}
 
 /*css for error message*/
 .booking-flow .main .extra.capacity-error {
@@ -47,24 +50,13 @@ html body .booking-flow .main .extra.child {
 
 html body .booking-flow .Collapsible__trigger:after {
     float: right;
-    font-size: 11px;
-    margin: 4px 0 8px;
+    font-size: 18px;
 }
 
 html body .booking-flow .Collapsible {
     border-bottom: none;
 }
 
-
-html body .booking-flow .steps .number {
-    height: 28px;
-}
-
-html body .booking-flow .step {
-    font-size: 1.6rem;
-    margin-top: 0;
-    height: 45px;
-}
 
 html body .booking-flow .main .extra .extra-line-item {
     display: grid;
@@ -174,7 +166,6 @@ html body .booking-flow .main .extra-line-item>label {
 }
 
 .booking-flow .Collapsible__trigger {
-    width: 96%;
     font-size: 20px;
     font-weight: 400;
     background-color: rgb(204 204 204 /35%);
@@ -185,6 +176,8 @@ html body .booking-flow input[type=checkbox] {
     order: 1;
     min-width: 24px;
     min-height: 24px;
+    accent-color: white;
+    outline: 1px solid;
 }
 
 html body .notes {
@@ -244,7 +237,7 @@ html body .booking-flow .eg_withProvision .eg_totalPrice {
 
 @media(min-width: 768px) {
     html body .extras form .Collapsible .Collapsible__contentInner>div {
-        padding: 15px 15px 0 15px;
+        padding: 15px 0 0 0;
     }
 }
 
@@ -277,14 +270,6 @@ html body .booking-flow .eg_withProvision .eg_totalPrice {
         height: auto !important;
     }
 
-    html body .booking-flow .steps .number {
-        height: 23px;
-    }
-
-    html body .booking-flow .step {
-        padding-top: 9px;
-        font-size: 1.5rem;
-    }
 
     html body .booking-flow .booking-details {
         margin-bottom: 11px;
