@@ -29,7 +29,8 @@
             function init() {
 
                 // js for already exists caraousel
-                egIndex = 0;
+                let egIndex = 0;
+                let egCarouselInterval = null;
                 egParas = [
                     `<p class="eg-image-desc">Your Equifax Report and Score<br>will be updated daily upon login<br>to myEquifax</p>`,
                     `<p class="eg-image-desc">Traffic light system identifying<br>the parts of your report that<br>need attention</p>`,
@@ -54,35 +55,68 @@
 
                     let egIndex = 0;
                     const egBtns = [...document.querySelectorAll(".carousel__navigation .carousel__navigation-item a")];
-                    egBtns.forEach(btn => {
+                    egBtns.forEach((btn, i) => {
+                        btn.classList.add(`eg-btn-${i+1}`);
                         btn.removeAttribute("href");
+                        btn.addEventListener("click", function() {
+                            if (this.classList.contains("eg-btn-1")) {
+                                egResetActiveBtn();
+                                this.classList.add("eg-active-button");
+                                clearInterval(egCarouselInterval);
+                                showCarousel(0, listItems[0]);
+                                egInterval();
+                            } else if (this.classList.contains("eg-btn-2")) {
+                                egResetActiveBtn();
+                                this.classList.add("eg-active-button");
+                                clearInterval(egCarouselInterval);
+                                showCarousel(1, listItems[1]);
+                                egInterval();
+                            } else if (this.classList.contains("eg-btn-3")) {
+                                egResetActiveBtn();
+                                this.classList.add("eg-active-button");
+                                clearInterval(egCarouselInterval);
+                                showCarousel(2, listItems[2]);
+                                egInterval();
+                            } else if (this.classList.contains("eg-btn-4")) {
+                                egResetActiveBtn();
+                                this.classList.add("eg-active-button");
+                                clearInterval(egCarouselInterval);
+                                showCarousel(3, listItems[3]);
+                                egInterval();
+                            }
+                        })
                     });
-                    setInterval(() => {
-                        if (egIndex < egBtns.length) {
-                            egBtns[egIndex].click();
-                            if(document.querySelector(".eg-active-button")){
-                                document.querySelector(".eg-active-button").classList.remove("eg-active-button");
-                            }
-                            egBtns[egIndex].classList.add("eg-active-button");
-                            if (egIndex == 0) {
-                                showCarousel(0,listItems[0]);
-                            } else if (egIndex == 1) {
-                                showCarousel(1,listItems[1]);
-                            } else if (egIndex == 2) {
-                                showCarousel(2,listItems[2]);
-                            } else if (egIndex == 3) {
-                                showCarousel(3,listItems[3]);
-                            }
-                            egIndex += 1;
-                        } else {
-                            egIndex = 0;
+
+
+                    function egResetActiveBtn() {
+                        if (document.querySelector(".eg-active-button")) {
+                            document.querySelector(".eg-active-button").classList.remove("eg-active-button");
                         }
-                    }, 5000);
+                    }
+
+
+
+                    function egInterval() {
+                        egCarouselInterval = setInterval(() => {
+                            if (egIndex < egBtns.length) {
+                                if (document.querySelector(".eg-active-button")) {
+                                    document.querySelector(".eg-active-button").classList.remove("eg-active-button");
+                                }
+                                egBtns[egIndex].classList.add("eg-active-button");
+                                egBtns[egIndex].click();
+                                egIndex += 1;
+                            } else {
+                                egIndex = 0;
+                            }
+                        }, 5000);
+                    }
+
+                    egInterval();
                 }
             }
 
 
-            function showCarousel(indx,listItem) {
+            function showCarousel(indx, listItem) {
                 document.querySelector(".carousel-wrapper .carousel__viewport>li.eg-active-carousel").classList.remove("eg-active-carousel");
                 listItem.classList.add("eg-active-carousel");
             }
