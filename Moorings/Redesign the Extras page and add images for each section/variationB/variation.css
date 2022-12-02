@@ -7,6 +7,10 @@
     margin-top: 0;
 }
 
+.booking-flow .main .extra .price-quantity{
+    align-items: flex-start;
+}
+
 /*chevrons*/
 .booking-flow .Collapsible__trigger.is-closed:after {
     content: '\25e3';
@@ -102,6 +106,7 @@ div.price-quantity>span.totalPrice {
 
 .extra-inner {
     border: 1px solid #d0cdc5;
+    border-radius: 5px;
 }
 
 .extra-description .text {
@@ -113,7 +118,10 @@ div.price-quantity>span.totalPrice {
     font-size: 20px;
     font-weight: 400;
     margin: auto;
+    border-radius: 4px;
 }
+
+
 
 .extra-line-item {
     background: #fff !important;
@@ -152,9 +160,6 @@ span.totalPrice {
     min-height: 24px;
 }
 
-.notes {
-    padding-left: 3%;
-}
 
 .price-quantity {
     display: flex;
@@ -213,6 +218,15 @@ span.totalPrice {
 
 }
 
+html body .booking-flow input[type=checkbox]:checked {
+    outline: 1px solid;
+    border: none;
+}
+
+html body .booking-flow input[type=checkbox] {
+    accent-color: white;
+}
+
 @media(max-width: 767px) {
     .extras form .Collapsible .Collapsible__contentInner>div {
         padding-top: 10px;
@@ -243,9 +257,7 @@ span.totalPrice {
         accent-color: white;
     }
 
-    html body .booking-flow input[type=checkbox]:checked {
-        outline: 1px solid;
-    }
+
 
     /* .booking-flow .step {
         font-size: 1.5rem;
