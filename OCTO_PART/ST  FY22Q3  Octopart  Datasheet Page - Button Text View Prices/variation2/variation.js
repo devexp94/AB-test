@@ -28,9 +28,7 @@
       /* start your code here */
 
       if (window.location.href.indexOf("/datasheet") != -1) {
-        document.querySelectorAll(".pdp-icon +  span.label").forEach((e)=>{
-          e.innerText = "Go to Pricing";   
-        })
+        document.querySelector(".pdp-icon +  span.label").innerText = "Go to Pricing";   
       }
     };
 
