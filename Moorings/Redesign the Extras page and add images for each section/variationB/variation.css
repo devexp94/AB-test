@@ -43,6 +43,7 @@
 span.qualifier {
     color: #bdbdbd;
     font-size: 16px;
+    margin-top: 3px;
 }
 
 .booking-flow .main .extra.child .extra-inner {
