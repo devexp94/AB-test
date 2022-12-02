@@ -63,8 +63,8 @@
             /* start your code here */
             let egCount = 0;
             // order now button click
-            live('.c-button',"click",function(){
-                if(this.innerText.indexOf("Order Now") != -1){
+            live('.c-button', "click", function() {
+                if (this.innerText.indexOf("Order Now") != -1) {
                     waitForElement('#container-to-scroll > div:nth-child(2) > div > div:has(.l-wizard-section__container)', closeActiveSection, 50, 15000);
                 }
             });
@@ -95,6 +95,10 @@
                         document.querySelector("#section-extras .l-wizard-section__container").classList.remove("eg-inactive-section");
                     } else if (egTargetTxt == 'Perforation') {
                         document.querySelector("#section-extras .l-wizard-section__container").classList.remove("eg-inactive-section");
+                    } else if (egTargetTxt == 'Fold type'){
+                        document.querySelector("#wizard-fold-type .l-wizard-section__container").classList.remove("eg-inactive-section");
+                    } else if (egTargetTxt == 'Spot UV'){
+                        document.querySelector("#wizard-spot-uv .l-wizard-section__container").classList.remove("eg-inactive-section");
                     }
                 });
             }, 5000);
@@ -114,7 +118,13 @@
                         const egActiveSec = document.querySelectorAll(".l-wizard-section__icon");
                         egActiveSec.forEach((check, i) => {
                             if (check.classList.contains("is-active")) {
-                                check.parentElement.parentElement.querySelector(".l-wizard-section__container").classList.add("eg-inactive-section");
+                                let egChilds = check.parentElement.parentElement.children;
+                                for(let i=0;i<egChilds.length;i++){
+                                   if (egChilds[i].classList.contains("l-wizard-section__container")) {
+                                        egChilds[i].classList.add("eg-inactive-section");
+                                        break;
+                                    } 
+                                }
                             }
                         });
 
