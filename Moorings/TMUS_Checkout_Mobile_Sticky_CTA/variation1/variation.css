@@ -1,17 +1,87 @@
-body{
-    padding-bottom:157px;
-}
+@media(max-width: 767px) {
 
-.eg-body {
-    position: relative;
-}
+    /*hiding default ctas*/
+    .extras form>button[type=submit],
+    #tm-booking .passenger>form>.clearfix button[type=submit],
+    #tm-booking #checkoutForm input[type=submit] {
+        display: none;
+    }
 
-.eg-sticky-wrapper {
-    position: fixed;
-    bottom: 0;
-    z-index: 9999999;
-    left: 0;
-    right: 0;
-    background:#f5f4f2;
-    padding: 18px;
+    /*hiding defalt ctas*/
+
+
+    body {
+        padding-bottom: 180px;
+    }
+
+    .eg-body {
+        position: relative;
+    }
+
+    .eg-sticky-wrapper {
+        position: fixed;
+        bottom: 0;
+        z-index: 999;
+        left: 0;
+        right: 0;
+        background: #f5f4f2;
+        padding: 18px;
+    }
+
+    .eg-cta-container>.btn {
+        font-weight: normal;
+        font-size: 17px;
+        color: #fff;
+        background-color: #b92d32;
+        border: none;
+    }
+
+    .eg-info {
+        font-size: 19px;
+        line-height: normal;
+        margin-bottom: 16px;
+        font-weight: 600;
+        padding-inline: 15px;
+    }
+
+    .eg-info label {
+        font-weight: 600;
+        padding: 0;
+        margin: 0;
+        padding-right: 10px;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    .eg-info .price {
+        margin: 0;
+        padding: 0;
+        text-align: right;
+        color: #b92d32;
+    }
+
+    .eg-info .clearfix {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .eg-info .clearfix>* {
+        width: 100%;
+    }
+
+    .eg-cta-container {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .eg-cta-container .share-quote a.btn {
+        width: 100%;
+        background: white;
+    }
+
+    .eg-cta-container .share-quote a.btn:hover {
+        color: black;
+        border-color: black;
+    }
 }
