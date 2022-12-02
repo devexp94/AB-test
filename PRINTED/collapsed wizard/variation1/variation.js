@@ -63,16 +63,15 @@
             /* start your code here */
             let egCount = 0;
             // order now button click
-            document.querySelector("#sticky-nav .c-sticky-nav__button").addEventListener("click", () => {
-                if (egCount == 0) {
+            live('.c-button',"click",function(){
+                if(this.innerText.indexOf("Order Now") != -1){
                     waitForElement('#container-to-scroll > div:nth-child(2) > div > div:has(.l-wizard-section__container)', closeActiveSection, 50, 15000);
-                    egCount += 1;
-
                 }
             });
 
             setTimeout(() => {
                 live('.c-wizard-summary__btn-edit', 'click', function() {
+                    console.log(this.innerText.indexOf("Edit"));
                     let egTargetTxt = this.parentElement.firstElementChild.innerText;
                     if (egTargetTxt == 'Product') {
                         document.querySelector("#wizard-product .l-wizard-section__container").classList.remove("eg-inactive-section");
@@ -110,6 +109,7 @@
             XMLHttpRequest.prototype.send = function() {
                 this.addEventListener('load', function() {
                     // checking api is called for product
+                    console.log(this.responseURL.indexOf("wizard"))
                     if (this.responseURL.indexOf("wizard") != -1) {
                         const egActiveSec = document.querySelectorAll(".l-wizard-section__icon");
                         egActiveSec.forEach((check, i) => {
@@ -126,7 +126,7 @@
         }
 
         /* Initialize variation */
-        waitForElement('#sticky-nav .c-sticky-nav__button', init, 50, 15000);
+        waitForElement('.c-button', init, 50, 15000);
         waitForElement('#container-to-scroll > div:nth-child(2) > div > div:has(.l-wizard-section__container)', addCollapseExpand, 50, 15000);
 
     } catch (e) {
