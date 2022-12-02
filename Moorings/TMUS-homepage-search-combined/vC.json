@@ -1,0 +1,11 @@
+{
+	"files": [
+		"VariantC/variation.css",
+		"VariantC/comp.js",
+		"VariantC/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.moorings.com/"
+	]
+}
