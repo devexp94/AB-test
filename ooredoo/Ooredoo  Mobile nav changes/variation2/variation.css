@@ -1,0 +1,91 @@
+@media screen and (max-width: 576px) {
+
+    .ooredoo-carousel__img img {
+        margin-top: 5%;
+    }
+
+    .navbar-header-mobile {
+        flex-direction: column !important;
+        gap: 20px;
+    }
+
+    #Clicks_Main_Menu_Logo>img {
+        width: 130px;
+    }
+
+    .header-main-navbar .nav-link {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .header-menu-icons {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 7px;
+    }
+
+    a#Clicks_Main_Menu_logo,
+    a#Clicks_Main_Menu_Recharge,
+    a#Clicks_Main_Menu_Pay_Bill {
+        background: #fef3f4;
+        padding-inline: 10px;
+
+    }
+
+    .header-menu-icons .nav-link img {
+        width: 16px;
+    }
+
+
+    a#Clicks_Main_Menu_Pay_Bill {
+        order: 3;
+    }
+
+    a#Clicks_Menu_Search {
+        display: flex;
+        flex-direction: row;
+        background: #f7f7f7;
+        justify-content: flex-start;
+        margin: 15px;
+        padding: 12px;
+        border-radius: 30px;
+    }
+
+    span.eg_span {
+        padding-left: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #000;
+    }
+
+    .header a:not(.btn) {
+        color: #000;
+    }
+
+    a#Clicks_Main_Menu_Search {
+        display: none;
+    }
+
+    .header-menu-icons a.nav-link span {
+        min-width: 80px;
+        padding: 0;
+        font-size: 13px;
+        color: #ec1c23;
+        text-align: center;
+    }
+
+    img.eg_img {
+        width: 35px !important;
+        padding-left: 0;
+        margin-left: -10px;
+    }
+
+    a._ooredoo_website_mobile_cart_icon_.hidden,
+    div.header-menu-icons>a:nth-child(3) {
+        order: 5;
+    }
+
+    li.header-main-navbar-extra-link:nth-child(2) {
+        display: none;
+    }
+}
