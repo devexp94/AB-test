@@ -106,7 +106,7 @@
                                 egBtns[egIndex].click();
                                 egIndex += 1;
                             } else {
-                                egIndex = 0;
+                                egIndex = 0; 
                             }
                         }, 5000);
                     }
