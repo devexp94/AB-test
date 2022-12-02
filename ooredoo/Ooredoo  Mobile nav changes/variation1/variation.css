@@ -1,0 +1,65 @@
+@media screen and (max-width: 576px) {
+    a#Clicks_Main_Menu_Pay_Bill {
+        order: 3;
+    }
+
+    a#Clicks_Menu_Search {
+        display: flex;
+        flex-direction: row;
+        background: #f7f7f7;
+        justify-content: flex-start;
+        margin: 15px;
+        padding: 12px;
+        border-radius: 30px;
+    }
+
+    span.eg_span {
+        padding-left: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #000;
+    }
+
+    .header a:not(.btn) {
+        color: #000;
+    }
+
+    a#Clicks_Main_Menu_Search {
+        display: none;
+    }
+
+    .header-menu-icons a.nav-link span {
+        color: #000;
+        font-size: 10px;
+        min-width: 65px;
+
+    }
+
+    img.eg_img {
+        width: 48px !important;
+        margin-top: -12px;
+    }
+
+    img.eg_img+span {
+        margin-top: -8px;
+    }
+
+    .header-menu-icons {
+        width: 45% !important;
+        flex-basis: 70%;
+        justify-content: space-between;
+    }
+
+    a._ooredoo_website_mobile_cart_icon_.hidden,
+    div.header-menu-icons>a:nth-child(3) {
+        order: 5;
+    }
+
+    li.header-main-navbar-extra-link:nth-child(2) {
+        display: none;
+    }
+
+    .header-main-navbar .navbar-header .header-menu-logo {
+        margin-right: -10px;
+    }
+}
