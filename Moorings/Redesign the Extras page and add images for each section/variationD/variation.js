@@ -128,20 +128,24 @@
         el.previousElementSibling.querySelector('.price-quantity').insertAdjacentHTML('beforeend','<div class="eg_withProvision"><label><input type="radio"> With Provision</label><span class="eg_totalPrice"> $'+totalPriceWithProvision+'</span></div>')
       })
 
+      var withRadioState;
+      var withOutRadioState;
+
       document.querySelectorAll('.eg_withProvision label input').forEach(function(el){
         el.closest('.extra').classList.add('eg_boxes');
-        var radioState;
 
         el.addEventListener('click',function(element){
-          if (radioState === this) {
+          if (withRadioState === this) {
             this.checked = false;
-            radioState = null;
+            withRadioState = null;
           } else {
-              radioState = this;
+            withRadioState = this;
           }
 
           if(el.closest('.extra').querySelector('.eg_withoutProvision input') && el.closest('.extra').querySelector('.eg_withoutProvision input').checked == true){
-            el.closest('.extra').querySelector('.eg_withoutProvision input').click();
+            el.closest('.extra').querySelector('.eg_withoutProvision input').checked = false;
+            withOutRadioState = null;
+            el.closest('.extra').querySelector('.extra-line-item > label').click();
           }
           el.closest('.extra').querySelector('.extra-line-item > label').click();
 
@@ -157,18 +161,19 @@
 
       document.querySelectorAll('.eg_withoutProvision input').forEach(function(el){
         el.closest('.extra').classList.add('eg_boxes');
-        var radioState;
 
         el.addEventListener('click',function(element){
-          if (radioState === this) {
+          if (withOutRadioState === this) {
             this.checked = false;
-            radioState = null;
+            withOutRadioState = null;
           } else {
-              radioState = this;
+            withOutRadioState = this;
           }
 
           if(el.closest('.extra').querySelector('.eg_withProvision input') && el.closest('.extra').querySelector('.eg_withProvision input').checked == true){
-            el.closest('.extra').querySelector('.eg_withProvision input').click();
+            el.closest('.extra').querySelector('.eg_withProvision input').checked = false;
+            withRadioState = null;
+            el.closest('.extra').querySelector('.extra-line-item > label').click();
           }
           el.closest('.extra').querySelector('.extra-line-item > label').click();
 

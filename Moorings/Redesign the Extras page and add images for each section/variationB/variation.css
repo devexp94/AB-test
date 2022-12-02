@@ -220,13 +220,22 @@ span.totalPrice {
 
 }
 
-html body .booking-flow input[type=checkbox]:checked {
-    outline: 1px solid;
-    border: none;
+html body .booking-flow input[type=checkbox] {
+    position: relative;
 }
 
-html body .booking-flow input[type=checkbox] {
-    accent-color: white;
+html body .booking-flow input[type=checkbox]:checked::after{
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: url('https://editor-assets.abtasty.com/46121/6389f8d421c6b1669986516.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    left: 0;
+    border: 1px solid;
+    border-radius: 2px;
 }
 
 @media(max-width: 767px) {
