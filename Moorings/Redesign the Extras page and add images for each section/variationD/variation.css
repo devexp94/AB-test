@@ -1,3 +1,7 @@
+html body .calendar-calendar,
+html body .view .row>.list-group {
+    width: 90%;
+}
 .booking-flow .Collapsible__trigger {
     border-radius: 4px;
 }
@@ -7,16 +11,17 @@ html body .extra-inner {
 }
 
 
-.booking-flow .Collapsible__trigger.is-closed:after {
-    content: '\25e3';
-    rotate: -44deg;
-    margin: 0;
+html body .booking-flow .Collapsible__trigger:after{
+    content: '' !important;
+    background: url('https://editor-assets.abtasty.com/46121/6389f9042cf5f1669986564.svg');
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.booking-flow .Collapsible__trigger.is-open:after {
-    content: '\25e4';
-    rotate: 45deg;
-    margin: 4px 3px 8px;
+html body .booking-flow .Collapsible__trigger.is-closed:after{
+    transform: rotate(180deg);
 }
 
 html body .booking-flow .main .extra .notes {
@@ -176,11 +181,21 @@ html body .booking-flow input[type=checkbox] {
     order: 1;
     min-width: 24px;
     min-height: 24px;
-    accent-color: white;
+    position: relative;
 }
 
-html body .booking-flow input[type=checkbox]:checked{
-    outline: 1px solid;
+html body .booking-flow input[type=checkbox]:checked::after{
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: url('https://editor-assets.abtasty.com/46121/6389f8d421c6b1669986516.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    left: 0;
+    border: 1px solid;
+    border-radius: 2px;
 }
 
 html body .notes {
