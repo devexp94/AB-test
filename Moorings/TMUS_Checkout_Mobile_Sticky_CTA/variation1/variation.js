@@ -37,40 +37,42 @@
         /* Variation Init */
         function init() {
             /* start your code here */
-            const egBody = document.querySelector("html body");
+            if (window.innerWidth < 768) {
+                const egBody = document.querySelector("html body");
 
-            egBody.insertAdjacentHTML("beforeend", egStickyHtml);
+                egBody.insertAdjacentHTML("beforeend", egStickyHtml);
 
-            // clearfix 
-            const egClearFix = document.querySelector(".booking-flow .sidebar .totalPrice .clearfix");
+                // clearfix 
+                const egClearFix = document.querySelector(".booking-flow .sidebar .totalPrice .clearfix");
 
-            let egContinueCta = `<button class="btn btn-primary">Continue</button>`;
+                let egContinueCta = `<button class="btn btn-primary">Continue</button>`;
 
-            const egSaveQuoteCta = document.querySelector(".booking-flow .sidebar .share-quote");
+                const egSaveQuoteCta = document.querySelector(".booking-flow .sidebar .share-quote");
 
-            // insertng these elements inside our sticky wrapper
+                // insertng these elements inside our sticky wrapper
 
-            document.querySelector(".eg-sticky-wrapper .eg-info").insertAdjacentElement("afterbegin", egClearFix);
+                document.querySelector(".eg-sticky-wrapper .eg-info").insertAdjacentElement("afterbegin", egClearFix);
 
-            // inserting save quote cta
-            document.querySelector(".eg-sticky-wrapper .eg-cta-container").insertAdjacentElement("afterbegin",egSaveQuoteCta);
+                // inserting save quote cta
+                document.querySelector(".eg-sticky-wrapper .eg-cta-container").insertAdjacentElement("afterbegin", egSaveQuoteCta);
 
-            // inserting continue button html
-            document.querySelector(".eg-sticky-wrapper .eg-cta-container").insertAdjacentHTML("afterbegin",egContinueCta);
+                // inserting continue button html
+                document.querySelector(".eg-sticky-wrapper .eg-cta-container").insertAdjacentHTML("afterbegin", egContinueCta);
 
-            // continue btn click detect and submit form
-            document.querySelector(".eg-cta-container>.btn").addEventListener("click",()=>{
-                // if extras form
-                if(document.querySelector(".extras form")){
-                    document.querySelector(".extras form > button[type=submit]").click();
-                } // if passenger details form 
-                else if(document.querySelector("#tm-booking .passenger> form")){  
-                    document.querySelector("#tm-booking .passenger> form > .clearfix button[type=submit]").click();
-                } // if paynow form
-                else if(document.querySelector("#tm-booking #checkoutForm")){
-                    document.querySelector("#tm-booking #checkoutForm input[type=submit]").click();
-                }
-            });
+                // continue btn click detect and submit form
+                document.querySelector(".eg-cta-container>.btn").addEventListener("click", () => {
+                    // if extras form
+                    if (document.querySelector(".extras form")) {
+                        document.querySelector(".extras form > button[type=submit]").click();
+                    } // if passenger details form 
+                    else if (document.querySelector("#tm-booking .passenger> form")) {
+                        document.querySelector("#tm-booking .passenger> form > .clearfix button[type=submit]").click();
+                    } // if paynow form
+                    else if (document.querySelector("#tm-booking #checkoutForm")) {
+                        document.querySelector("#tm-booking #checkoutForm input[type=submit]").click();
+                    }
+                });
+            }
 
         }
 

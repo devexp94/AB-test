@@ -11,3 +11,7 @@ html {
     max-height: 0;
     overflow: hidden;
 }
+
+.l-wizard-section:has(.eg-inactive-section){
+    padding-left: 1.8rem !important;
+}
