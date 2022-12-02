@@ -120,16 +120,17 @@
                                                     <div class="tabel-list eg-tabel-list">
                                                         <!-- fast dispatch block -->
                                                         <div class="eg-fast-dispatch">
-                                                            <a class="close-box more-link eg-dispatch-link" href="${egItemLink}">Fast Dispatch</a>
+                                                            
                                                             <div class="eg-show-item">
                                                                 <!-- item image -->
                                                                 <div class='eg-show-item-img'>
                                                                     <img src="${egItemImgSrc}" alt="item-in-popup" border="0">
+                                                                    <a class="close-box more-link eg-dispatch-link">Fast Dispatch</a>
                                                                 </div>
                                                             <!-- item name and price -->
                                                                 <div class='eg-show-item-details'>
                                                                     <p class="eg-name">${egItemName}</p>
-                                                                    <p class='eg-price'><strong>${egItemPrice}</strong><a class="close-box more-link eg-dispatch-link" href="${egItemLink}">Fast Dispatch</a></p>
+                                                                    <p class='eg-price'><strong>${egItemPrice}</strong></p>
                                                                 </div>
                                                             </div>
                                                         </div>
