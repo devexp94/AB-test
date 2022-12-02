@@ -22,61 +22,14 @@
       }, delayTimeout);
     }
 
-    
-    function live(selector, event, callback, context) {
-      /****Helper Functions****/
-      // helper for enabling IE 8 event bindings
-      function addEvent(el, type, handler) {
-        if (el.attachEvent) el.attachEvent("on" + type, handler);
-        else el.addEventListener(type, handler);
-      }
-      // matches polyfill
-      this.Element &&
-        (function (ElementPrototype) {
-          ElementPrototype.matches =
-            ElementPrototype.matches ||
-            ElementPrototype.matchesSelector ||
-            ElementPrototype.webkitMatchesSelector ||
-            ElementPrototype.msMatchesSelector ||
-            function (selector) {
-              var node = this,
-                nodes = (node.parentNode || node.document).querySelectorAll(selector),
-                i = -1;
-              while (nodes[++i] && nodes[i] != node);
-              return !!nodes[i];
-            };
-        })(Element.prototype);
-      // live binding helper using matchesSelector
-      function live(selector, event, callback, context) {
-        addEvent(context || document, event, function (e) {
-          var found,
-            el = e.target || e.srcElement;
-          while (el && el.matches && el !== context && !(found = el.matches(selector))) el = el.parentElement;
-          if (found) callback.call(el, e);
-        });
-      }
-      live(selector, event, callback, context);
-    };
-
-    let eg_search = `<a id="Clicks_Menu_Search" class="nav-link primary-color Clicks_Main_Search eg_menu">
-                            <img width="15px" src="https://www.ooredoo.qa/web/wp-content/themes/ooredoo-cms/assets/images/Search-mobile.svg" class="lazyloaded" data-ll-status="loaded"><noscript><img width="15px" src="https://www.ooredoo.qa/web/wp-content/themes/ooredoo-cms/assets/images/Search-mobile.svg" /></noscript> 
-                            <span class="eg_span">Search</span>
-                        </a>`
-
-
-
     /* Variation Init */
     function init() {
       /* start your code here */
 
       if (window.innerWidth < 577) {
-        // document.querySelector("#header-menu-items").insertAdjacentHTML("beforebegin", eg_search);
-
-        live('#Clicks_Menu_Search', 'click', function () {
-          document.querySelector("#Clicks_Main_Menu_Search").click();
-        });
-  
-  
+        let ele = document.querySelector(".navbar-header-mobile #Clicks_Main_Menu_Search");
+        document.querySelector("#header-menu-items").insertAdjacentElement("beforebegin", ele);
+ 
         let eg_oredo = `<a id="Clicks_Main_Menu_logo" class="nav-link primary-color">
         <img class="eg_img" src="https://www.ooredoo.qa/web/wp-content/uploads/2022/10/Ooredoo-new-icon.svg">
           <span>My Ooredoo</span>
