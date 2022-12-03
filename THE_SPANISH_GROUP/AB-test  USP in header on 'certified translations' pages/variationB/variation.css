@@ -4,6 +4,40 @@
 }
 }
 
+
+
+h3.eg_tile{
+    position: relative;
+  }
+  h3.eg_tile::before, h3.eg_tile::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+  }
+  
+  h3.eg_tile::before{
+    background: #fff;
+    animation: typing 5000ms steps(25) 2s forwards;
+  }
+  
+   h3.eg_tile::after{
+    width: .1rem;
+    background: black;
+    animation: typing 5000ms steps(25) 2s forwards, blink 800ms infinite;
+  }
+  
+  @keyframes typing{
+    to{
+      left: 100%;
+    }
+  }
+  
+  @keyframes blink{
+    to{
+      background: transparent;
+    }
+  }
+
 #header-img > section.template_banner .row {
     display: flex;
     align-items: center;
@@ -75,3 +109,5 @@ span.eg_two {
         font-size: 23px;
     }
 }
+
+/*  */
