@@ -35,13 +35,13 @@
           <span>My Ooredoo</span>
         </a>`
   
-        document.querySelector("div.container.navbar.navbar-expand-lg.header-main-navbar > div.navbar-header > div > div.header-menu-icons").insertAdjacentHTML("afterbegin", eg_oredo);
+        document.querySelector("div.navbar-header div.header-menu-icons").insertAdjacentHTML("afterbegin", eg_oredo);
       }
 
     }
 
     /* Initialize variation */
-    waitForElement('div.container.navbar.navbar-expand-lg.header-main-navbar', init, 50, 15000);
+    waitForElement('div.container.navbar.header-main-navbar', init, 50, 15000);
   } catch (e) {
     if (debug) console.log(e, "error in Test" + variation_name);
   }
