@@ -55,7 +55,8 @@ html body .booking-flow .main .extra.child {
 
 html body .booking-flow .Collapsible__trigger:after {
     float: right;
-    font-size: 18px;
+    font-size: 11px;
+    margin: 4px 0 8px;
 }
 
 html body .booking-flow .Collapsible {
@@ -263,6 +264,11 @@ html body .booking-flow .eg_withProvision .eg_totalPrice {
     html body .booking-flow input[type=checkbox] {
         min-width: 20px;
         min-height: 20px;
+    }
+
+    html body .booking-flow input[type=checkbox]:checked::after{
+        width: 20px;
+        height: 20px;
     }
 
     html body .extras form .Collapsible .Collapsible__contentInner>div {
