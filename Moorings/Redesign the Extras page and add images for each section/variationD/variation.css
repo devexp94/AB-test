@@ -2,6 +2,7 @@ html body .calendar-calendar,
 html body .view .row>.list-group {
     width: 90%;
 }
+
 .booking-flow .Collapsible__trigger {
     border-radius: 4px;
 }
@@ -11,7 +12,7 @@ html body .extra-inner {
 }
 
 
-html body .booking-flow .Collapsible__trigger:after{
+html body .booking-flow .Collapsible__trigger:after {
     content: '' !important;
     background: url('https://editor-assets.abtasty.com/46121/6389f9042cf5f1669986564.svg');
     width: 15px;
@@ -20,12 +21,13 @@ html body .booking-flow .Collapsible__trigger:after{
     background-position: center;
 }
 
-html body .booking-flow .Collapsible__trigger.is-closed:after{
+html body .booking-flow .Collapsible__trigger.is-closed:after {
     transform: rotate(180deg);
 }
 
 html body .booking-flow .main .extra .notes {
     margin-top: 0;
+    padding-left: 16px;
 }
 
 
@@ -35,12 +37,13 @@ html body .booking-flow .main .extra .notes {
 }
 
 .booking-flow .main .extra.capacity-error .extra-inner {
-    background: rgba(215,36,65,.24);
+    background: rgba(215, 36, 65, .24);
 }
 
 .extra-inner-capacity-message {
     padding: 16px;
 }
+
 /*css for error message*/
 
 html body span.qualifier {
@@ -61,6 +64,10 @@ html body .booking-flow .Collapsible__trigger:after {
 
 html body .booking-flow .Collapsible {
     border-bottom: none;
+}
+
+.booking-flow .Collapsible + .Collapsible {
+    margin-top: 17px;
 }
 
 
@@ -158,6 +165,7 @@ html body .eg_withProvision input[type='radio']:checked:after {
 
 html body .booking-flow .main .extra .extra-line-item {
     padding: 0;
+    border-radius: 5px;
 }
 
 html body .booking-flow .main .extra-line-item>label {
@@ -185,7 +193,7 @@ html body .booking-flow input[type=checkbox] {
     position: relative;
 }
 
-html body .booking-flow input[type=checkbox]:checked::after{
+html body .booking-flow input[type=checkbox]:checked::after {
     content: '';
     position: absolute;
     width: 24px;
@@ -266,7 +274,7 @@ html body .booking-flow .eg_withProvision .eg_totalPrice {
         min-height: 20px;
     }
 
-    html body .booking-flow input[type=checkbox]:checked::after{
+    html body .booking-flow input[type=checkbox]:checked::after {
         width: 20px;
         height: 20px;
     }

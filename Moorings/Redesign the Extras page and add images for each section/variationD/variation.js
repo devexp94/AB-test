@@ -227,7 +227,7 @@
 
         if (notes) {
           text.insertAdjacentElement("afterend", notes);
-          // notes.querySelector(".crew-message").textContent = notes.querySelector(".crew-message").textContent.replace("*","Note")
+          // notes.querySelector(".crew-message").textContent = notes.querySelector(".crew-message").textContent.replace("*","Note-")
         }
       })
 
