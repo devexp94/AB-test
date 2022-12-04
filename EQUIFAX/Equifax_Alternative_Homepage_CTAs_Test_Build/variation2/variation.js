@@ -28,7 +28,7 @@
             /* start your code here */
             const egNavCta = document.querySelector(".nav-sub .buttons a.btn:nth-of-type(1)");
 
-            egNavCta.textContent = "Free Trial";
+            egNavCta.textContent = "FREE TRIAL";
 
             const egHeroCta = document.querySelector("div.heading-container .heading-content a.cta-x")
             const egVideoCta = document.querySelector(".video-block-wrapper .cta-x");

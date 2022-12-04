@@ -31,10 +31,10 @@
             const egVideoCta = document.querySelector(".video-block-wrapper .cta-x");
             const egHeroCta = document.querySelector("div.heading-container .heading-content a.cta-x");
             
-            egNavCta.textContent = "Free Trial";
+            egNavCta.textContent = "FREE TRIAL";
 
             [egVideoCta,egHeroCta].forEach(cta=>{
-                cta.textContent = "Start Free Trial";
+                cta.textContent = "START FREE TRIAL";
             });
         }
 
