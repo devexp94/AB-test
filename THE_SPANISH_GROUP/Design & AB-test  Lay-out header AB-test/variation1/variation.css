@@ -1,0 +1,40 @@
+.eg_form input[type=text],
+.eg_form input[type=email] {
+    width: 100% !important;
+    padding: 12px 20px;
+    margin: 8px 0 !important;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  box-sizing: border-box;
+}
+
+.nfn__trust {
+    display: none !important;
+}
+
+
+.nfn__languages {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+input#quantity {
+    border-radius: 20px;
+    height: 40px;
+    width: fit-content;
+    outline: 0;
+    text-align:center;
+}
+
+button#nfnQuoteBtn,
+button#nfnOrderBtn{
+    border-radius: 30px;
+}
+
+/* 
+.nfn__actions {
+    position: relative;
+    top: 35px;
+} */
