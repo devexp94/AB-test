@@ -24,6 +24,19 @@
         gap: 7px;
     }
 
+    .header-menu-icons .nav-link img {
+        width: 13px;
+        margin-left: 6px;
+    }
+
+    .header-menu-icons  a > span {
+        font-weight: 500;
+    }
+
+    .header-menu-icons > a {
+        padding: 2px 4px !important;
+    }
+
     a#Clicks_Main_Menu_logo,
     a#Clicks_Main_Menu_Recharge,
     a#Clicks_Main_Menu_Pay_Bill {
@@ -32,13 +45,12 @@
 
     }
 
-    .header-menu-icons .nav-link img {
-        width: 16px;
+    a#Clicks_Main_Menu_Pay_Bill {
+        order: 1;
     }
 
-
-    a#Clicks_Main_Menu_Pay_Bill {
-        order: 3;
+    a#Clicks_Main_Menu_Recharge {
+        order: 0;
     }
 
     a#Clicks_Main_Menu_Search {
@@ -47,7 +59,7 @@
         background: #f7f7f7;
         justify-content: flex-start;
         margin: 15px;
-        padding: 12px;
+        padding: 8px 12px;
         border-radius: 30px;
     }
 
@@ -64,15 +76,15 @@
     }
 
     .header-menu-icons a.nav-link span {
-        min-width: 80px;
-        padding: 0;
+        min-width: 78px;
         font-size: 13px;
         color: #ec1c23;
-        text-align: center;
+        padding-left: 6px;
+        text-align: left;
     }
 
     img.eg_img {
-        width: 25px !important;
+        width: 16px !important;
         padding-bottom: 3px;
         margin-left: -10px;
     }    
