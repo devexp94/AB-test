@@ -10,12 +10,6 @@
     flex-wrap: nowrap;
 }
 
-.eg_tile img {
-    padding-right: 3px;
-    width: fit-content;
-    padding-bottom: 2px;
-}
-
 h3.eg_tile {
     background: rgba(0,0,0,0.9)!important;
     color: #eee; font-size: 26px;
