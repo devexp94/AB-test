@@ -31,7 +31,7 @@
         let ele = document.querySelector(".navbar-header-mobile #Clicks_Main_Menu_Search");
         document.querySelector("#header-menu-items").insertAdjacentElement("beforebegin", ele);
  
-        let eg_oredo = `<a id="Clicks_Main_Menu_logo" class="nav-link primary-color">
+        let eg_oredo = `<a id="Clicks_Main_Menu_logo" class="nav-link primary-color" href="https://www.ooredoo.qa/web/en/">
         <img class="eg_img" src="https://www.ooredoo.qa/web/wp-content/uploads/2022/10/Ooredoo-new-icon.svg">
           <span>My Ooredoo</span>
         </a>`

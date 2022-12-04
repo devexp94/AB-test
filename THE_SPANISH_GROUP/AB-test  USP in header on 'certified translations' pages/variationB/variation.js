@@ -28,13 +28,13 @@
     <p class="eg_oneMain">
     Translating Over 90 Languages</p>
     <p class="eg_pOne">Inc 5000 Award Winners 2021 & 2022</p> </h3>`;
-    
+
     let htmlStr2 = `<h3 class="eg_tile"> <p class="eg_one">
     Lightning Fast Delivery. Same Day Delivery If Needed</p>
     <p class="eg_pTwo">Contracted by Governments</p>
     </h3>`;
 
-let htmlStr3 = `<h3 class="eg_tile"> <p class="eg_two">
+    let htmlStr3 = `<h3 class="eg_tile"> <p class="eg_two">
 100% Guaranteed Acceptance for Translated Documents for USCIS.</p>
 <p class="eg_pThree">
 Corporations Recommended by Embassies and Consulates</p></h3>`;
