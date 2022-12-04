@@ -142,7 +142,7 @@ ul.eg-items-lists {
 
 
 .eg-dispatch-link {
-    display: flex;
+    display: none;
     background: #83afe0;
     color: white;
     padding: 5px 7px !important;
