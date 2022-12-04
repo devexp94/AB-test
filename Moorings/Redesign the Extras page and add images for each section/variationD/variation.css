@@ -228,8 +228,10 @@ html body .booking-flow .main .extra .extra-description {
     margin-inline: 0 !important;
 }
 
-span.totalPrice {
-    font-size: 16px;
+span.totalPrice,
+.eg_totalPrice {
+    font-size: 20px;
+    /*font-size: 16px;*/
     font-weight: 400;
 }
 
