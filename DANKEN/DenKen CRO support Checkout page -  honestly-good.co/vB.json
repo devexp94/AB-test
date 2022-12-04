@@ -1,0 +1,11 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		"https://www.honestly-good.co/sign-up/",
+		"https://www.honestly-good.co/checkout/"
+	]
+}

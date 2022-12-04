@@ -1,0 +1,145 @@
+html body.eg-model-show .eg-popup-model {
+    display: block;
+}
+html body .eg-popup-model {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    display: none;
+}
+
+html body .eg-popup-model .eg-pop-overlay {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #00000030;
+}
+
+html body .eg-popup-model .eg-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 358px;
+    background: #ffffff;
+    padding: 20px 30px;
+    box-shadow: 0 -20px 50px 0 rgb(0 0 0 / 10%);
+}
+
+html body .eg-popup-model .eg-pop-heading {
+    margin-top: 25px;
+    font-family: 'Radomir tinkov gilroy',sans-serif;
+    color: #dc3662;
+    font-size: 26px;
+    line-height: 31px;
+    font-weight: 600;
+}
+
+html body .eg-popup-model .eg-pop-para {
+    font-family: 'Radomir tinkov gilroy',sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #3e3e3e;
+    text-align: left;
+}
+html body .eg-popup-model .hbspt-form .hs_submit input {
+    width: 100%;
+    background: #dc3662;
+    margin-top: 20px;
+}
+html body .eg-popup-model .hbspt-form .hs_error_rollup label,
+html body .eg-popup-model .hbspt-form .hs-error-msg {
+    color: #7e7e7e;
+}
+html body .eg-popup-model .hbspt-form .hs_firstname input, 
+html body .eg-popup-model .hbspt-form .hs_email input {
+    border: 2px solid #d4dae0;
+}
+html body .eg-popup-model .hbspt-form .hs_firstname input::placeholder, 
+html body .eg-popup-model .hbspt-form .hs_email input::placeholder{
+    color: #7d7d7d;
+}
+
+html body .eg-popup-model .eg-cross {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    cursor: pointer;
+    width: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html body .eg-popup-model .eg-cross svg {
+    width: 55px;
+ 
+}
+
+html body .nav-menu-wrapper .nav-functions .eg-watch-demo {
+    background: #dc3662;
+    color: #ffffff;
+    border-color: #dc3662;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+html body .tabs .tabs-content .w-tab-pane .eg-button-container .packagebutton {
+    background-color: #3898ec;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+html body .tabs .tabs-content .w-tab-pane .eg-watch-demo:hover {
+    box-shadow: none !important;
+    text-decoration: none;
+}
+html body .tabs .eg-button-container {
+    display: inline-block;
+    position: relative;
+}
+
+html body .tabs .eg-watch-demo1 {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    bottom: -27px;
+    color: #dc3662;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+@media screen and (max-width:991px) {
+    html body .tabs .tabs-content .w-tab-pane .eg-button-container{
+        margin-left: 4px;
+    }
+}
+
+@media screen and (max-width: 479px){
+    html body .nav-menu-wrapper .nav-functions .eg-watch-demo {
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+}
+@media screen and (max-width: 360px){
+    html body .eg-popup-model .eg-content{
+        max-width: 96%;
+    }
+}
+
+@media screen and (max-height:450px) {
+    html body .eg-popup-model .eg-content {
+        height: 96vh;
+        overflow: scroll;
+    }
+}

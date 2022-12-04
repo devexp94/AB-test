@@ -1,0 +1,199 @@
+/* Signup Pages */
+html body .eg-delivery-heading,
+html body .eg-contact-heading{
+    margin-top: 0px;
+}
+html body .signup .eg-edit,
+html body .signup .whitebox #checkoutSignupForm > .text-center p{
+    display: none;
+}
+html body .signup .whitebox #checkoutSignupForm > .text-center h4{
+    font-size: 18px;
+}
+html body .signup #checkoutSignupForm, 
+html body .signup .whitebox #checkoutSignupForm > .text-center {
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+}
+
+html body .signup .whitebox #checkoutSignupForm > .text-center {
+    margin-bottom: 1.5rem !important;
+}
+
+html body .signup .whitebox #checkoutSignupForm > .text-center h4 a {
+    margin-left: 8px;
+    text-decoration: none;
+    border-bottom: none;
+}
+html body .signup .whitebox #checkoutSignupForm > .text-center h4 a:hover {
+    border-bottom: 1px solid #139D7F;
+}
+html body .signup > .row .offset-lg-1 .whitebox {
+    background: transparent;
+}
+html body .signup > .row .whitebox .box-body {
+    background: #ffffff;
+}
+html body .eg-tab-heading {
+    padding: 21px 20px 21px 40px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    background: #433F39;
+}
+html body .eg-order-heading{
+    padding: 21px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #433F39;
+    background: #D1D1D0;
+    margin-top: 0px;
+    text-align: center;
+    justify-content: center;
+}
+#checkout_signup_continue_to_payment_button__phone button:after,
+html body .signup #checkoutSignupForm button.submit-signup:after{
+    content: 'Continue to delivery';
+    font-size: 14px;
+}
+#checkout_signup_continue_to_payment_button__phone button,
+html body .signup #checkoutSignupForm button.submit-signup{
+    font-size: 0px;
+}
+html body .signup #checkoutSignupForm button.submit-signup {
+    margin-bottom: 35px;
+}
+@media screen and (min-width:768px) and (max-width: 1199px) {
+    html body .eg-order-heading {
+        padding: 22px 11px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+}
+@media screen and (min-width: 768px) {
+    html body .eg-order-heading i{
+        display: none;    
+    }
+    html body .checkout .card-details .whitebox .box-body .deliver-day #deliveryDateSelection {
+        width: 357px !important;
+        text-align: center;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    html body div#checkout_signup_continue_to_payment_button__phone{
+        display: none !important;
+    }
+    html body #checkout_signup_continue_to_payment_button{
+        display: block;
+    }
+    html body .eg-order-heading i{
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    html body .signup > .row,
+    html body .card-details > .row {
+        flex-direction: column-reverse;
+    }    
+    html body .eg-order-heading,
+    html body .eg-tab-heading{
+        font-size: 18px;
+        padding: 21px;
+        text-align: left;
+        justify-content: space-between;
+    }
+    html body .eg-order-heading.eg-active i {
+        transform: rotate(180deg);
+        transition: transform 350ms ease-in-out;
+    }
+    html body .eg-order-heading i {
+        transform: rotate(0deg);
+        transition: transform 350ms ease-in-out;
+    }
+    html body .card-details .eg-delivery-container,
+    html body .card-details .eg-billing-container{
+        padding: 0px 20px 20px !important;
+    }
+    html body .card-details .whitebox .box-body > form:not(.checkout),
+    html body .card-details .whitebox .box-body > .row.my-1.text-center{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    html body .checkout .card-details .whitebox .box-body .deliver-day {
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    html body .checkout .card-details .whitebox .box-body .deliver-day #deliveryDateSelection {
+        width: 100% !important;
+        margin-left: 0px;
+        margin-top: 15px !important;
+        text-align: center;
+    }
+    html body .card-details .whitebox .box-body > #submitPayment{
+        width: calc(100% - 40px) !important;
+    }
+}
+
+/* Checkout pages */
+html body .card-details .whitebox .checkout .eg-delivery-container > div:first-child > h4,
+html body .card-details .payment-sidebar .deliver-day{
+    display: none;
+}
+html body .card-details .whitebox .checkout > div:first-child {
+    margin-top: 0px !important;
+}
+html body .card-details .whitebox .eg-billing-heading,
+html body .card-details .whitebox .eg-delivery-heading {
+    margin-top: 21px;
+    cursor: pointer;
+}
+html body .checkout .card-details .whitebox .box-body .deliver-day{
+    border: 2px solid #cfcfcf;
+    border-radius: 3px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+html body .card-details .whitebox .box-body > #submitPayment,
+html body .card-details .checkout button {
+    max-width: 372px !important;
+}
+html body .card-details .eg-delivery-heading.eg-tab-heading {
+    justify-content: space-between;
+    padding-right: 40px;
+}
+
+html body .card-details .eg-delivery-heading.eg-tab-heading .eg-edit {
+    text-decoration: underline;
+    cursor: pointer;
+}
+html body .card-details .eg-delivery-heading.eg-tab-heading .eg-edit:hover {
+    text-decoration: none;
+}
+html body .card-details .whitebox .box-body {
+    padding: 0px;
+    background: #f7f6f5;
+}
+html body .card-details .eg-delivery-container {
+    padding: 0px 40px 20px;
+    background: #ffffff;
+}
