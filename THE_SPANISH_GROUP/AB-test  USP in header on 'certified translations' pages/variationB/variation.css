@@ -31,6 +31,19 @@ h3.eg_tile {
     font-size: 22px;
 }
 
+.eg_tile p.eg_pTwo{
+  width: 56%;
+}
+
+.eg_pOne{
+width: 80%;
+}
+
+.eg_tile .eg_pThree{
+  width: 100%;
+  font-size: 22px;
+}
+
 @media screen and (max-width: 768px){
     .eg_tile{
         display: none;
@@ -66,8 +79,6 @@ h3.eg_tile {
     }
 }
 
-
-
 /************** animation **********************/
 
 .eg_tile p {
@@ -75,7 +86,13 @@ h3.eg_tile {
   white-space: nowrap;
   overflow: hidden;
 }
-.eg_tile p:nth-child(1) {
+.eg_oneMain{
+  width: 56%;
+  animation: type 5s steps(25, end);
+  animation-fill-mode: forwards;
+}
+.eg_tile .eg_one,
+.eg_two {
   width: 100%;
   animation: type 5s steps(25, end);
   animation-fill-mode: forwards;
@@ -121,18 +138,4 @@ h3.eg_tile {
   50% {
     border-color: transparent;
   }
-}
-
-.eg_tile p.eg_pTwo ,
-.eg_oneMain{
-    width: 56%;
-}
-
-.eg_pOne{
-  width: 80%;
-}
-
-.eg_tile .eg_pThree{
-    width: 100%;
-    font-size: 22px;
 }
