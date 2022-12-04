@@ -21,14 +21,55 @@
     align-items: center;
     color: white;
     font-size: 17px;
-    gap: 10px;
+    gap: 4px;
     position: absolute;
     top: 10px;
     left: 40%;
 }
 
+.eg-pricing::before {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(41 44 131/15%);
+    box-shadow: 0 0 30px rgb(41 44 131/30%);
+}
+
+.eg-pricing>div {
+    z-index: 999;
+}
+
+.eg-per-page {
+    background: #47acad;
+    padding-inline: 20px;
+    padding-block: 5px;
+    rotate: 8deg;
+}
+
+.eg-per-word {
+    rotate: 8deg;
+    padding: 0 20px 0 0px;
+    font-weight: bold;
+}
+
 .eg-per-page>strong {
     font-size: 26px;
+}
+
+@media(max-width: 1199px) {
+    .eg-per-page {
+        padding-inline: 10px;
+        padding-block: 2px;
+    }
+
+    .eg-per-word {
+        padding: 0 8px 0 0px;
+    }
 }
 
 @media(min-width: 768px) and (max-width: 1199px) {
