@@ -1,0 +1,11 @@
+{
+    "files": [
+        "./variation2/variation.css",
+        "./variation2/variation.js"
+    ],
+    "urls": [
+        "https://www.moorings.com/booking/passenger-details#!departureId=19262936&pax=2&nid=571",
+        "https://www.moorings.com/booking/payment",
+        "https://www.moorings.com/booking/extras#!departureId=19262936&pax=2&nid=571"
+    ]
+}

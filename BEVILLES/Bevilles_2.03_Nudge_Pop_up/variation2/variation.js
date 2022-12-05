@@ -116,7 +116,7 @@
                     const url = 'https://www.bevilles.com.au/cart';
                     getData(url);
                 }
-            }, 150000);
+            }, 5000);
         }
 
 
@@ -151,7 +151,7 @@
 
         function createPopUp(egItemPrice, egItemLink, egItemName, egItemImgSrc) {
             // popup html 
-
+            console.log(egItemLink);
             const egPopupHTML = `
                             <!-- overlay div -->
                             <div class="eg-popup-main">
@@ -225,8 +225,8 @@
         }
 
         function checkFastDelevery() {
-            let egLink = document.querySelectorAll(".eg-item-link");
-
+            let egLink = document.querySelector(".eg-item-link");
+            console.log(egLink.href)
             getFastDeleveryInfo(egLink)
         }
 
