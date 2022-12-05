@@ -147,13 +147,30 @@ html body .booking-flow .main .extra .eg_withProvision label {
     width: max-content;
 }
 
-html body .eg_withoutProvision input[type='radio']:after,
-html body .eg_withProvision input[type='radio']:after {
-    border: 2px solid white;
+html body .eg_withoutProvision input[type='checkbox'],
+html body .eg_withProvision input[type='checkbox']{
+    width: 0;
+    height: 0;
+    margin-right: 20px;
 }
 
-html body .eg_withoutProvision input[type='radio']:checked:after,
-html body .eg_withProvision input[type='radio']:checked:after {
+html body .eg_withoutProvision input[type='checkbox']:after,
+html body .eg_withProvision input[type='checkbox']:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 15px;
+    top: -2px;
+    left: 1px;
+    position: relative;
+    display: inline-block;
+    visibility: visible;
+    outline: 1px solid #00244a;
+   border: 2px solid white;
+}
+
+html body .eg_withoutProvision input[type='checkbox']:checked:after,
+html body .eg_withProvision input[type='checkbox']:checked:after {
     width: 12px;
     height: 12px;
     border-radius: 15px;
@@ -183,6 +200,11 @@ html body .booking-flow .main .extra-line-item>label {
     font-size: 20px;
 }
 
+html body .booking-flow .eg_boxes .extra-line-item > label input,
+html body .booking-flow .eg_boxes .extra-line-item > label{
+    pointer-events: none !important;
+}
+
 .booking-flow .Collapsible__trigger {
     font-size: 20px;
     font-weight: 400;
@@ -190,14 +212,14 @@ html body .booking-flow .main .extra-line-item>label {
     margin: auto;
 }
 
-html body .booking-flow input[type=checkbox] {
+html body .booking-flow  .extra-line-item>label input[type=checkbox] {
     order: 1;
     min-width: 24px;
     min-height: 24px;
     position: relative;
 }
 
-html body .booking-flow input[type=checkbox]:checked::after {
+html body .booking-flow  .extra-line-item>label input[type=checkbox]:checked::after{
     content: '';
     position: absolute;
     width: 24px;
@@ -280,7 +302,7 @@ html body .booking-flow .eg_withProvision .eg_totalPrice {
         min-height: 20px;
     }
 
-    html body .booking-flow input[type=checkbox]:checked::after {
+    html body .booking-flow  .extra-line-item>label input[type=checkbox]:checked::after{
         width: 20px;
         height: 20px;
     }
