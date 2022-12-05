@@ -2,9 +2,6 @@
     position: relative;
 }
 
-.eg-checkout a {
-    color:white;
-}
 
 
 .eg-popup-overlay {
@@ -127,7 +124,7 @@ ul.eg-items-lists {
 }
 
 .eg-checkout a {
-    color: black;
+    color:white;
     font-size: 15px !important;
 }
 

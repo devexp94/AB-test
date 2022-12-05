@@ -225,9 +225,9 @@
         }
 
         function checkFastDelevery() {
-            let egLinks = document.querySelectorAll(".eg-item-link");
+            let egLink = document.querySelectorAll(".eg-item-link");
 
-            getFastDeleveryInfo(link)
+            getFastDeleveryInfo(egLink)
         }
 
         function getFastDeleveryInfo(link) {
