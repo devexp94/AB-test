@@ -1,0 +1,134 @@
+.eg-wrapper {
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #28a745;
+    position: relative;
+    background: #21316a;
+    color: white;
+}
+
+/*trigger button*/
+button.eg-collapsible-btn {
+    background: #28a745;
+    border: none;
+    outline: none;
+    border-radius: 0 0 5px 5px;
+    color: white;
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+button.eg-collapsible-btn span.eg-down-arrow {
+    display: inline-flex;
+}
+
+
+
+button.eg-collapsible-btn span.eg-down-arrow::after {
+    content: '\f107';
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "FontAwesome";
+}
+
+
+/*trigger button*/
+
+.eg-container {
+    width: calc(100% - 5%);
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+
+/*logic for showing content*/
+.eg-container.eg-show {
+    padding-top: 60px;
+    padding-bottom: 38px;
+    height: auto;
+    overflow: visible;
+}
+
+.eg-container>div {
+    flex: 1;
+}
+
+/*big font*/
+.eg-left-content p {
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: start;
+    position: relative;
+}
+
+.eg-left-content p::after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 51%;
+    position: absolute;
+    bottom: -16px;
+    background: #28a745;
+}
+
+/*big font*/
+
+
+/*small points*/
+
+ul.eg-bullet-points {
+    margin-bottom: 0;
+    list-style: none;
+    padding: 0;
+    line-height: 1.3;
+    text-align: justify;
+    font-size: 14px;
+}
+
+li.eg-point::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: #ffd140;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+/*small points*/
+
+
+/*========= Media Query =========*/
+@media(max-width: 991px) and (min-width: 768px) {
+    .eg-left-content p {
+        font-size: 28px;
+    }
+}
+
+@media(max-width: 767px) {
+    .eg-container {
+        flex-direction: column;
+        gap: 38px;
+    }
+
+    .eg-left-content p {
+        font-size: 22px;
+    }
+
+    .eg-left-content p::after {
+        width: 100%;
+    }
+}
