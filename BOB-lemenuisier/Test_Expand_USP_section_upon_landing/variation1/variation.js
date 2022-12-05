@@ -75,10 +75,6 @@
             </ul>
         </div>
     </div>
-    <!--collapsible button-->
-        <button class="eg-collapsible-btn">
-            <span>About Bob Le Menuisier</span> <span class="eg-down-arrow"></span>
-        </button>
 </section>`;
 
 
@@ -87,7 +83,14 @@
             /* start your code here */
             const egTarget = document.querySelector("#maincontent .column.main");
 
+            const egHeaderWrapper = document.querySelector("header.page-header");
+
             egTarget.insertAdjacentHTML("afterbegin", egColapsibleHTML);
+
+            egHeaderWrapper.insertAdjacentHTML("beforeend",`<!--collapsible button-->
+        <button class="eg-collapsible-btn">
+            <span>About Bob Le Menuisier</span> <span class="eg-down-arrow"></span>
+        </button>`)
 
             const egTriggerBtn = document.querySelector(".eg-collapsible-btn");
             const egTargetBox = document.querySelector(".eg-container");
@@ -99,11 +102,18 @@
                 setCookie("visited",true,14);
 
                 egTargetBox.classList.add("eg-show");
+                document.querySelector(".eg-collapsible-btn").classList.add("eg-active-btn");
             }
 
             
             egTriggerBtn.addEventListener("click", function() {
                 egTargetBox.classList.toggle("eg-show");
+                top = document.querySelector(".eg-wrapper").offsetTop + document.querySelector("header.page-header").offsetHeight
+                window.scrollTo({
+                    top:top,
+                    behavior:"smooth"
+                });
+                this.classList.toggle("eg-active-btn");
             });
 
         }

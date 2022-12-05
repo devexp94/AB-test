@@ -1,7 +1,6 @@
 .eg-wrapper {
     display: flex;
     justify-content: center;
-    position: relative;
     background: #21316a;
     color: white;
 }
@@ -15,11 +14,13 @@ button.eg-collapsible-btn {
     color: white;
     font-weight: 500;
     position: absolute;
-    top: 0;
     line-height: normal;
     display: flex;
     align-items: center;
     gap: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
 }
 
 
@@ -37,6 +38,9 @@ button.eg-collapsible-btn span.eg-down-arrow::after {
     font-family: "FontAwesome";
 }
 
+button.eg-collapsible-btn.eg-active-btn span.eg-down-arrow{
+    rotate: 180deg;
+}
 
 /*trigger button*/
 
