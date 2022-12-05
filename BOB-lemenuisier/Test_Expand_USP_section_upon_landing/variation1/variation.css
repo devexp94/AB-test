@@ -1,7 +1,6 @@
 .eg-wrapper {
     display: flex;
     justify-content: center;
-    border-top: 2px solid #28a745;
     position: relative;
     background: #21316a;
     color: white;
