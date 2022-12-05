@@ -13,17 +13,22 @@
     display: none !important;
 }
 
+.nfn__label {
+    font-size: 15px !important;
+}
+
 
 .nfn__languages {
     display: flex !important;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px !important;
 }
 
 input#quantity {
     border-radius: 20px;
     height: 40px;
-    width: fit-content;
+    width: 98%;
     outline: 0;
     text-align:center;
 }
@@ -33,8 +38,60 @@ button#nfnOrderBtn{
     border-radius: 30px;
 }
 
-/* 
+.nfn__content {
+    position: relative;
+}
+
 .nfn__actions {
     position: relative;
     top: 35px;
-} */
+}
+.second-container.container {
+    display: none;
+}
+
+
+.eg_desc {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: -5%;
+}
+
+.eg_icon {
+    display: flex;
+    align-items: center;
+}
+
+.form_container_desktop {
+    margin-block: 13%;
+}
+
+
+.eg_img img {
+    width: 25px;
+}
+
+.eg_detail {
+    font-size: 11px;
+    line-height: 1;
+    padding: 10px 4px;
+}
+
+.eg_logo img {
+    background: #1f3d5c;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.eg_logo {
+    position: absolute;
+    top: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nfn__label {
+    font-size: 15px;
+}
