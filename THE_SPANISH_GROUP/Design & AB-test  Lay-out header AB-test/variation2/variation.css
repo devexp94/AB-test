@@ -1,4 +1,5 @@
-.nfn__content,
+@media screen and (min-width: 1025px) {
+    .nfn__content,
 #header-img > section.template_banner > div.new-container > div.second-container.container{
     display: none !important;
 }
@@ -6,13 +7,129 @@
 .fa-chevron-right:before {
     content: "\f054";
 }
+.fa-solid, .fas {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
 
 .eg_container {
     padding-block: 5%;
 }
 
 .egformBox {
-    border: 2px solid red;
     display: flex;
     justify-content: center;
+}
+
+.eg_titles {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    flex-basis: 18%;
+    padding-top: 20px;
+}
+
+.eg_titles h3 {
+    font-size: 25px;
+    line-height: 1;
+}
+
+.eg_name,
+.eg_mail{
+    width: 100%;
+}
+
+
+span.eg_heading {
+    font-weight: 900;
+    font-size: 38px;
+    font-family: 'CIRCULAR-LOOM';
+    padding-block: 8px;
+    line-height: 0.9;
+}
+
+a.eg_quote {
+    background: #47acad;
+    color: #fff;
+    border-radius: 25px;
+    margin-top: 12px;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 42px;
+}
+
+.eg_aside {
+    background: rgb(18 40 85 / 90%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 17%;
+}
+
+form.efForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-inline: 20px;
+}
+h4.eg_title {
+    padding-left: 30px;
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: 900 !important;
+    font-family: 'LATO';
+    color: #47acad;
+    line-height: 0.9;
+}
+
+.eg_mail input ,
+.eg_name input{
+    width: 97%;
+    border-radius: 30px;
+    margin: 2% 3% 3% !important;
+}
+
+button.eg_submit {
+    background: #47acad;
+    border: 0;
+    outline: 0;
+    font-size: 17px;
+    padding: 15px 60px;
+    border-radius: 30px;
+    margin: 37px 0 25px 0;
+    color: #fff;
+}
+
+.eg_container {
+    padding-block: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.eg_desc {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 5%;
+    margin-bottom: -3%;
+}
+
+.eg_icon {
+    display: flex;
+    align-items: center;
+}
+
+
+.eg_img img {
+    width: 25px;
+}
+
+.eg_detail {
+    font-size: 11px;
+    line-height: 1;
+    padding: 10px 4px;
+}
 }

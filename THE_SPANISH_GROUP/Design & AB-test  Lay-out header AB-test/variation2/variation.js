@@ -22,51 +22,99 @@
       }, delayTimeout);
     }
 
+    
+let eg_icon = ` <div class="eg_desc">
+<div class="eg_icon">
+   <div class="eg_img">
+    <img src="https://www.ooredoo.qa/web/wp-content/uploads/2022/10/Ooredoo-new-icon.svg">
+   </div>
+
+   <div class="eg_detail">
+       Secure SSL <br/> Encryption
+   </div>
+</div>
+
+<div class="eg_icon">
+   <div class="eg_img">
+    <img src="https://www.ooredoo.qa/web/wp-content/uploads/2022/10/Ooredoo-new-icon.svg">
+   </div>
+
+   <div class="eg_detail">
+       Secure SSL <br/> Encryption
+   </div>
+</div>
+
+<div class="eg_icon">
+   <div class="eg_img">
+    <img src="https://www.ooredoo.qa/web/wp-content/uploads/2022/10/Ooredoo-new-icon.svg">
+   </div>
+
+   <div class="eg_detail">
+       Secure SSL <br/> Encryption
+   </div>
+</div>
+
+<div class="eg_icon">
+   <div class="eg_img">
+    <img src="https://www.ooredoo.qa/web/wp-content/uploads/2022/10/Ooredoo-new-icon.svg">
+   </div>
+
+   <div class="eg_detail">
+       Secure SSL <br/> Encryption
+   </div>
+</div>
+`
+
     let egHtml = `
     <div class="eg_container">
     <div class="egformBox">
     <div class="eg_titles">
-        <h3 class="text-white mt-5">
-            Introducing One of the Nation's Leading
+        <h3 class="text-white">
+            Introducing one of <br/> the Nation's Leading
         </h3>
-        <h1 style="font-size:2.2em;" class="text-white my-1 py-2">
-            Certified Translation Services
-        </h1>
-        <h1 class="text-blue-green text-left my-1 py-2" id="feature-text"></h1>
-        <a href="https://www.thespanishgroup.org/pricing" class="btn bg-blue-green text-white">Get a Free Quote</a>
+        <span class="eg_heading">
+            Certified <br/> Translation <br/> Services
+        </span>
+        <a href="https://www.thespanishgroup.org/pricing" class="eg_quote">Get Free Quote</a>
     </div>
     
-    <div class="eg_aside bg-primary-color p-4" style="width:300px; max-width: 400px;">
-        <h4 class="text-center text-white">Translate Your Document Today</h4>
-        <form class="d-flex flex-col" action="https://thespanishgroup.org/billing" method="POST">
-            <div class="d-flex flex-col">
+    <div class="eg_aside">
+        <h4 class="eg_title">Translate Your <br/> Document Today</h4>
+        <form class="efForm" action="https://thespanishgroup.org/billing" method="POST">
+            <div class="eg_name">
                 <input type="text" placeholder="Name" name="name"
-                    class="form-control form-control-lg rounded-sm border-0" id="exampleInputEmail1"
+                    class="form-control form-control-lg rounded-sm border-0"
                     aria-describedby="emailHelp">
             </div>
-            <div class="mt-4">
+            <div class="eg_mail">
                 <input type="email" placeholder="Email" name="em"
-                    class="form-control form-control-lg rounded-sm border-0" id="exampleInputEmail1"
+                    class="form-control form-control-lg rounded-sm border-0"
                     aria-describedby="emailHelp">
             </div>
-            <div class="mt-3 text-center">
-                <button type="submit" class="btn btn-lg bg-blue-green text-white border-0">
+            <div class="eg_start">
+                <button type="submit" class="eg_submit">
                     Get Started <i class="fa-solid fa-chevron-right"></i>
                 </button>
             </div>
         </form>
     </div>
 </div>
+
+ ${eg_icon}
 </div>
 `;
-   
+
+
     /* Variation Init */
     function init() {
       /* start your code here */
-      document.querySelector("#header-img > section.template_banner > div.new-container").insertAdjacentHTML("afterbegin",egHtml);
+   if(window.innerWidth > 1024){
+    document.querySelector("#header-img > section.template_banner > div.new-container").insertAdjacentHTML("afterbegin", egHtml);
+
+   }
     }
 
-   
+
 
     /* Initialize variation */
     waitForElement('#header-img > section.template_banner > div.container ', init, 50, 15000);
