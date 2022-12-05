@@ -5,6 +5,40 @@
         var variation_name = "";
         var $;
         /* all Pure helper functions */
+        function live(selector, event, callback, context) {
+            /****Helper Functions****/
+            // helper for enabling IE 8 event bindings
+            function addEvent(el, type, handler) {
+                if (el.attachEvent) el.attachEvent("on" + type, handler);
+                else el.addEventListener(type, handler);
+            }
+            // matches polyfill
+            this.Element &&
+                (function(ElementPrototype) {
+                    ElementPrototype.matches =
+                        ElementPrototype.matches ||
+                        ElementPrototype.matchesSelector ||
+                        ElementPrototype.webkitMatchesSelector ||
+                        ElementPrototype.msMatchesSelector ||
+                        function(selector) {
+                            var node = this,
+                                nodes = (node.parentNode || node.document).querySelectorAll(selector),
+                                i = -1;
+                            while (nodes[++i] && nodes[i] != node);
+                            return !!nodes[i];
+                        };
+                })(Element.prototype);
+            // live binding helper using matchesSelector
+            function live(selector, event, callback, context) {
+                addEvent(context || document, event, function(e) {
+                    var found,
+                        el = e.target || e.srcElement;
+                    while (el && el.matches && el !== context && !(found = el.matches(selector))) el = el.parentElement;
+                    if (found) callback.call(el, e);
+                });
+            }
+            live(selector, event, callback, context);
+        }
 
         function waitForElement(selector, trigger, delayInterval, delayTimeout) {
             var interval = setInterval(function() {
@@ -66,10 +100,42 @@
 </div>
     `;
 
+        let egPopupTrigger;
+
+        live(['.eg-close-icon', '.eg-continue'], 'click', function() {
+            document.querySelector(".eg-popup-overlay").style.display = "none";
+            clearTimeout(egPopupTrigger);
+            popupShowInterval();
+        });
+
         /* Variation Init */
         function init() {
             /* start your code here */
-            setTimeout(() => {
+            // adding class to body
+            if (!document.body.classList.contains("eg-body")) {
+                document.body.classList.add("eg-body");
+            }
+
+            const send = XMLHttpRequest.prototype.send
+            XMLHttpRequest.prototype.send = function() {
+                this.addEventListener('load', function() {
+                    // console.log(this.responseURL, 'global handler', this.responseText)
+                    if (this.responseURL.indexOf('https://www.bevilles.com.au/cart.js') != -1 || this.responseURL.indexOf('https://www.bevilles.com.au/cart/add.js') != -1) {
+                        if (egPopupTrigger) {
+                            clearTimeout(egPopupTrigger);
+                        }
+                        popupShowInterval();
+                    }
+                    // add your global handler here
+                })
+                return send.apply(this, arguments)
+            }
+
+        }
+
+
+        function popupShowInterval() {
+            egPopupTrigger = setTimeout(() => {
                 // showing popup only when there is some items in cart
                 const egTotalCartItems = parseInt(document.querySelector("#shopify-section-header .menu-cart  span.beside-svg").textContent);
 
@@ -78,20 +144,8 @@
                     document.body.classList.add("eg-body");
 
                     document.body.insertAdjacentHTML("afterbegin", egPopupHTML);
-
-                    // logic to hide popup
-                    const egCloseBtn = document.querySelector(".eg-close-icon");
-                    const egContinue = document.querySelector(".eg-continue");
-
-                    [egCloseBtn, egContinue].forEach((btn) => {
-                        btn.addEventListener("click", (e) => {
-                            document.querySelector(".eg-popup-overlay").style.display = `none`;
-                        });
-                    })
-
-                }
-
-            }, 500);
+                }    
+            }, 5000);
         }
 
         /* Initialize variation */
