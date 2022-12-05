@@ -52,12 +52,14 @@
                 // insertng these elements inside our sticky wrapper
 
                 document.querySelector(".eg-sticky-wrapper .eg-info").insertAdjacentElement("afterbegin", egClearFix);
-
+                
+                // inserting continue button html
+                document.querySelector(".eg-sticky-wrapper .eg-cta-container").insertAdjacentHTML("afterbegin", egContinueCta);
+                
+                
                 // inserting save quote cta
                 document.querySelector(".eg-sticky-wrapper .eg-cta-container").insertAdjacentElement("afterbegin", egSaveQuoteCta);
 
-                // inserting continue button html
-                document.querySelector(".eg-sticky-wrapper .eg-cta-container").insertAdjacentHTML("afterbegin", egContinueCta);
 
                 // continue btn click detect and submit form
                 document.querySelector(".eg-cta-container>.btn").addEventListener("click", () => {
@@ -72,6 +74,9 @@
                         document.querySelector("#tm-booking #checkoutForm input[type=submit]").click();
                     }
                 });
+
+                // changing text
+                document.querySelector(".eg-info label").textContent = `Total Charter price`;
             }
 
         }
