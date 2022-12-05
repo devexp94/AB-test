@@ -11,6 +11,10 @@ html body .extra-inner {
     border-radius: 4px;
 }
 
+.booking-flow .main .nonCollapsible .extra {
+    padding-inline: 0;
+}
+
 
 html body .booking-flow .Collapsible__trigger:after {
     content: '' !important;
@@ -66,7 +70,7 @@ html body .booking-flow .Collapsible {
     border-bottom: none;
 }
 
-.booking-flow .Collapsible + .Collapsible {
+.booking-flow .Collapsible+.Collapsible {
     margin-top: 17px;
 }
 
