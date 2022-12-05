@@ -145,7 +145,7 @@
 
                     document.body.insertAdjacentHTML("afterbegin", egPopupHTML);
                 }    
-            }, 5000);
+            }, 150000);
         }
 
         /* Initialize variation */
