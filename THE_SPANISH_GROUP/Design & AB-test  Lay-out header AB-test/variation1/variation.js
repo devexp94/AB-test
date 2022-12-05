@@ -28,12 +28,55 @@
 
     <input type="Email" id="email" name="email" placeholder="Email">
 
-  </form>`
+  </form>
+  
+  <div class="eg_desc">
+    <div class="eg_icon">
+       <div class="eg_img">
+        <img src="https://www.ooredoo.qa/web/wp-content/uploads/2022/10/Ooredoo-new-icon.svg">
+       </div>
+
+       <div class="eg_detail">
+           Secure SSL <br/> Encryption
+       </div>
+    </div>
+
+    <div class="eg_icon">
+       <div class="eg_img">
+        <img src="https://www.ooredoo.qa/web/wp-content/uploads/2022/10/Ooredoo-new-icon.svg">
+       </div>
+
+       <div class="eg_detail">
+           Secure SSL <br/> Encryption
+       </div>
+    </div>
+
+    <div class="eg_icon">
+       <div class="eg_img">
+        <img src="https://www.ooredoo.qa/web/wp-content/uploads/2022/10/Ooredoo-new-icon.svg">
+       </div>
+
+       <div class="eg_detail">
+           Secure SSL <br/> Encryption
+       </div>
+    </div>
+
+    <div class="eg_icon">
+       <div class="eg_img">
+        <img src="https://www.ooredoo.qa/web/wp-content/uploads/2022/10/Ooredoo-new-icon.svg">
+       </div>
+
+       <div class="eg_detail">
+           Secure SSL <br/> Encryption
+       </div>
+    </div>
+
+</div>`
 
   
 let input = `<div id="nfnLanguageTo" class="nfn__language">
-<div class="nfn__label">Number Of Pages</div>
-<input type="number" id="quantity" min="0">
+<div class="nfn__label">Number of pages</div>
+<input type="number" id="quantity" min="1">
 </div>`
 
 
@@ -43,6 +86,9 @@ let input = `<div id="nfnLanguageTo" class="nfn__language">
       document.querySelector("section.template_banner > div.container div.form_container_desktop div.nfn__languages").insertAdjacentHTML("afterend", egForm)
       document.querySelector("#nfnLanguageTo").insertAdjacentHTML("afterend", input);
 
+      document.querySelector("#header-img > section.template_banner > div.container > div > div > div.form_container_desktop > div").insertAdjacentHTML("afterbegin",`<div class="eg_logo"><img src="https://thespanishgroup.org/translations/wp-content/themes/translations/uploads/1/4/8/2/14823004/1382166907.png"></div>
+`);
+
     }
 
     /* Initialize variation */
@@ -51,5 +97,3 @@ let input = `<div id="nfnLanguageTo" class="nfn__language">
     if (debug) console.log(e, "error in Test" + variation_name);
   }
 })();
-
-

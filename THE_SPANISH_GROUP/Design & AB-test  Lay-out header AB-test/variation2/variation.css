@@ -1,0 +1,18 @@
+.nfn__content,
+#header-img > section.template_banner > div.new-container > div.second-container.container{
+    display: none !important;
+}
+
+.fa-chevron-right:before {
+    content: "\f054";
+}
+
+.eg_container {
+    padding-block: 5%;
+}
+
+.egformBox {
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+}
