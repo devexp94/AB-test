@@ -3,13 +3,7 @@
 }
 
 .eg-checkout a {
-    background: transparent;
-    color: black;
-}
-
-.eg-checkout a:hover {
-    border-color: #b3cae8;
-    background: #b3cae8;
+    color:white;
 }
 
 .eg-popup-overlay {
@@ -142,7 +136,7 @@ ul.eg-items-lists {
 
 
 .eg-dispatch-link {
-    display: flex;
+    display: none;
     background: #83afe0;
     color: white;
     padding: 5px 7px !important;

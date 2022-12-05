@@ -3,14 +3,9 @@
 }
 
 .eg-checkout a {
-    background: transparent;
-    color: black;
+    color:white;
 }
 
-.eg-checkout a:hover {
-    border-color: #b3cae8;
-    background: #b3cae8;
-}
 
 .eg-popup-overlay {
     position: fixed;

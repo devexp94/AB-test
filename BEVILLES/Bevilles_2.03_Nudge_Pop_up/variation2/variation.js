@@ -198,6 +198,8 @@
                                                                     <p class='eg-price'><strong>${egItemPrice}</strong></p>
                                                                 </div>
                                                             </div>
+
+                                                            <a href="${egItemLink}" class="eg-item-link" hidden></a>
                                                         </div>
                                                         ${egTimerHtml}
                                                         <div class="added-notice__checkout eg-checkout"><a class="button" href="/cart">View Cart and Checkout</a></div>
@@ -214,10 +216,37 @@
 
             document.body.insertAdjacentHTML("afterbegin", egPopupHTML);
 
+            checkFastDelevery();
+
 
             // running timer function after showing popup
             timerfn();
 
+        }
+
+        function checkFastDelevery() {
+            let egLinks = document.querySelectorAll(".eg-item-link");
+
+            getFastDeleveryInfo(link)
+        }
+
+        function getFastDeleveryInfo(link) {
+            const xhr = new XMLHttpRequest();
+            xhr.onload = () => {
+                if (xhr.status == 200) {
+                    const response = xhr.responseText;
+                    const ele = document.createElement("div");
+                    ele.innerHTML = response;
+                    if (ele.querySelector(".fast-delivery")) {
+                        link.parentElement.querySelector(".eg-dispatch-link").style.display = "flex";
+                    }
+                } else {
+                    console.log("Something went wrong");
+                }
+            }
+
+            xhr.open("GET", link.href);
+            xhr.send();
         }
 
         // timer function
