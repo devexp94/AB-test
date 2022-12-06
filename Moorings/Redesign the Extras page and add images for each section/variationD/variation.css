@@ -7,10 +7,6 @@ html body .view .row>.list-group {
     border-radius: 4px;
 }
 
-html body .extra-inner {
-    border-radius: 4px;
-}
-
 .booking-flow .main .nonCollapsible .extra {
     padding-inline: 0;
 }
@@ -114,6 +110,7 @@ html body #eg_show {
 
 html body .extra-inner {
     border: 1px solid #d0cdc5;
+    border-radius: 6px;
 }
 
 html body .text {
@@ -165,7 +162,7 @@ html body .eg_withProvision input[type='checkbox']:after {
     position: relative;
     display: inline-block;
     visibility: visible;
-    outline: 1px solid #00244a;
+    outline: 1px solid #00244a !important;
    border: 2px solid white;
 }
 
@@ -177,11 +174,11 @@ html body .eg_withProvision input[type='checkbox']:checked:after {
     top: -2px;
     left: 1px;
     position: relative;
-    background-color: #00244a;
+    background-color: #00244a !important;
     content: '';
     display: inline-block;
     visibility: visible;
-    outline: 1px solid #00244a;
+    outline: 1px solid #00244a !important;
 }
 
 html body .booking-flow .main .extra .extra-line-item {
@@ -265,7 +262,8 @@ span.totalPrice,
 html body .booking-flow .eg_withProvision .eg_totalPrice {
     color: #1ba9e8;
     font-weight: 400 !important;
-    padding-top: 3px;
+    padding-top: 0;
+    margin-top: -3px;
 }
 
 .booking-flow .main .extra .extra-description .text {
@@ -297,15 +295,15 @@ html body .booking-flow .eg_withProvision .eg_totalPrice {
 }
 
 @media(max-width: 767px) {
-    html body .booking-flow input[type=checkbox] {
+    /* html body .booking-flow input[type=checkbox] {
         min-width: 20px;
         min-height: 20px;
-    }
+    } */
 
-    html body .booking-flow  .extra-line-item>label input[type=checkbox]:checked::after{
+    /* html body .booking-flow  .extra-line-item>label input[type=checkbox]:checked::after{
         width: 20px;
         height: 20px;
-    }
+    } */
 
     html body .extras form .Collapsible .Collapsible__contentInner>div {
         padding-top: 10px;
