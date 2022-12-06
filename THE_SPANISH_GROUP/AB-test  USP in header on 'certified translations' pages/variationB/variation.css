@@ -1,141 +1,112 @@
 @media (min-width: 1200px){
-.container {
-    width: 1200px;
-}
-}
-
-#header-img > section.template_banner .row {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-}
-
-h3.eg_tile {
-    background: rgba(255,255,255,.9)!important;
-    font-size: 26px;
-    color: #5d5d5d;
-    margin-left: 2%;
-    text-align: left;
-    font-family: inherit;
-    width: 70%;
-    padding: 13px 15px;
-    border-radius: 8px;
-}
-
-.eg_one ,
-.eg_oneMain{
-    font-size: 25px;
-    padding-bottom: 10px;
-}
-.eg_two {
+  .container {
+      width: 1200px;
+  }
+  }
+  
+  #header-img > section.template_banner .row {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+  }
+  
+  .eg_tile {
+      background: rgba(255,255,255,.9)!important;
+      font-size: 26px;
+      color: #5d5d5d;
+      margin-left: 2%;
+      text-align: left;
+      font-family: inherit;
+      width: 70%;
+      padding: 13px 15px;
+      border-radius: 8px;
+  }
+  
+  .eg_one ,
+  .eg_oneMain{
+      font-size: 25px;
+      padding-bottom: 10px;
+  }
+  .eg_two {
+      font-size: 22px;
+  }
+  
+  .eg_tile p.eg_pTwo{
+    width: 56%;
+  }
+  
+  .eg_pOne{
+  width: 80%;
+  }
+  
+  .eg_tile .eg_pThree{
+    width: 100%;
     font-size: 22px;
-}
-
-.eg_tile p.eg_pTwo{
-  width: 56%;
-}
-
-.eg_pOne{
-width: 80%;
-}
-
-.eg_tile .eg_pThree{
-  width: 100%;
-  font-size: 22px;
-}
-
-@media screen and (max-width: 768px){
-    .eg_tile{
-        display: none;
+  }
+  
+  @media screen and (max-width: 768px){
+      .eg_tile{
+          display: none;
+      }
+  }
+  
+  @media (min-width: 769px) and (max-width: 991px) {
+     
+    .eg_tile {
+          margin-top: 15%;
+          margin-bottom: 4%;
+          padding-inline: 4%;
+         margin-inline: auto;
+         width: 92%;
+      }
+      .second-container{
+          visibility: hidden;
+      }
+      
+  }
+  
+  @media screen and (max-width: 991px) {
+      #header-img > section.template_banner .row {
+          flex-wrap: wrap;
+      }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+      .eg_tile {
+          margin-bottom: 4%;
+          padding: 14px 10px;
+          width: 70%;
+          font-size: 23px;
+      }
+  }
+  
+  
+  
+  
+  #container {
+    text-align: center;
+  }
+  
+  #text {
+    display: inline-block;
+    vertical-align: middle;
+    color: #5d5d5d;
+  }
+  
+  #cursor {
+    display: inline-block;
+    vertical-align: middle;
+    width: 2px;
+    height: 25px;
+    background-color: #000;
+    animation: blink .75s step-end infinite;
+  }
+  
+  @keyframes blink {
+    from, to { 
+      background-color: transparent 
     }
-}
-
-@media (min-width: 769px) and (max-width: 991px) {
-    h3.eg_tile {
-        margin-top: 15%;
-        margin-bottom: 4%;
-        padding-inline: 4%;
-       margin-inline: auto;
-       width: 92%;
+    50% { 
+      background-color: #000; 
     }
-    .second-container{
-        visibility: hidden;
-    }
-    
-}
-
-@media screen and (max-width: 991px) {
-    #header-img > section.template_banner .row {
-        flex-wrap: wrap;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    h3.eg_tile {
-        margin-bottom: 4%;
-        padding: 14px 10px;
-        width: 70%;
-        font-size: 23px;
-    }
-}
-
-/************** animation **********************/
-
-.eg_tile p {
-  border-right: .1em solid #000;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.eg_oneMain{
-  width: 56%;
-  animation: type 5s steps(25, end);
-  animation-fill-mode: forwards;
-}
-.eg_tile .eg_one,
-.eg_two {
-  width: 100%;
-  animation: type 5s steps(25, end);
-  animation-fill-mode: forwards;
-}
-
-.eg_tile p:nth-child(2) {
-  opacity: 0;
-  animation: type2 3s steps(25, end);
-  animation-delay: 5s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes type {
-  0% {
-    width: 0;
   }
-  99.9% {
-    border-right: .1em solid #000;
-  }
-  100% {
-    border: none;
-  }
-}
-
-@keyframes type2 {
-  0% {
-    width: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  99.9% {
-    border-right: .1em solid #000;
-  }
-  100% {
-    opacity: 1;
-    border: none;
-  }
-}
-
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
