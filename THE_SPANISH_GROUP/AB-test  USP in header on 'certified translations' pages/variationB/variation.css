@@ -12,7 +12,6 @@
   
   .eg_tile {
       background: rgba(255,255,255,.9)!important;
-      font-size: 26px;
       color: #5d5d5d;
       margin-left: 2%;
       text-align: left;
@@ -21,29 +20,7 @@
       padding: 13px 15px;
       border-radius: 8px;
   }
-  
-  .eg_one ,
-  .eg_oneMain{
-      font-size: 25px;
-      padding-bottom: 10px;
-  }
-  .eg_two {
-      font-size: 22px;
-  }
-  
-  .eg_tile p.eg_pTwo{
-    width: 56%;
-  }
-  
-  .eg_pOne{
-  width: 80%;
-  }
-  
-  .eg_tile .eg_pThree{
-    width: 100%;
-    font-size: 22px;
-  }
-  
+
   @media screen and (max-width: 768px){
       .eg_tile{
           display: none;
@@ -80,10 +57,7 @@
       }
   }
   
-  
-  
-  
-  #container {
+  #eg_container {
     text-align: center;
   }
   
@@ -91,6 +65,7 @@
     display: inline-block;
     vertical-align: middle;
     color: #5d5d5d;
+    font-size: 22px;
   }
   
   #cursor {
