@@ -4,6 +4,7 @@
     padding: 12px 20px;
     margin: 8px 0 !important;
   display: inline-block;
+  outline: 0;
   border: 1px solid #ccc;
   border-radius: 25px;
   box-sizing: border-box;
@@ -17,12 +18,19 @@
     font-size: 15px !important;
 }
 
+form.eg_form {
+    width: 92%;
+    margin: auto;
+}
+
 
 .nfn__languages {
     display: flex !important;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px !important;
+    width: 92%;
+    margin: auto;
 }
 
 input#quantity {
@@ -32,12 +40,18 @@ input#quantity {
     outline: 0;
     text-align: center;
     background: #1f3d5c;
-    border: 0;
+    border: 0;   
+     /* width: 82%; */
     color: #47acad;
 }
 
 #nfnLanguageFrom > div.nfn__options-title,
 #nfnLanguageTo > div.nfn__options-title {
+    color: #47acad !important;
+}
+
+html body .nfn__actions #quote button {
+    background: #eee !important;
     color: #47acad !important;
 }
 
@@ -123,5 +137,5 @@ section.template_banner > div.container > div > div > div.form_container_desktop
     font-size: 15px;
 }
 
-<img src="https://img.icons8.com/material-sharp/192/1FB141/icons8-new-logo.png"/>
+/* <img src="https://img.icons8.com/material-sharp/192/1FB141/icons8-new-logo.png"/> */
 
