@@ -305,6 +305,14 @@ html body .booking-flow .eg_withProvision .eg_totalPrice {
         height: 20px;
     } */
 
+    html body .extra-inner{
+        border-radius: 10px;
+    }
+
+    .booking-flow .main .extra img{
+        border-radius: 5px 5px 0 0;
+    }
+
     html body .extras form .Collapsible .Collapsible__contentInner>div {
         padding-top: 10px;
     }
