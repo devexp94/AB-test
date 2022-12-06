@@ -13,3 +13,9 @@
 #nbsStep2 .nbs__options-list {
     position: relative;
 }
+
+@media(max-width:446px) {
+    #nbsStep2 .nbs__options-list::after {
+        font-size: 14.8px;
+    }
+}

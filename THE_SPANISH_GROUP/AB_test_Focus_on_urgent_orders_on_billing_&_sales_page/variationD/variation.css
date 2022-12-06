@@ -1,0 +1,15 @@
+/*css for translation page*/
+
+#eg-urgent {
+    flex: 1;
+    margin-left: 12px;
+}
+
+#eg-urgent button {
+    width: 100%;
+    background: #32abcf !important;
+    font-size: 18px !important;
+    margin: 0 !important;
+}
+
+/*css for translation page*/
