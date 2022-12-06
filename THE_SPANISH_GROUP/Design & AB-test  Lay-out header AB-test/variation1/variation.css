@@ -30,7 +30,20 @@ input#quantity {
     height: 40px;
     width: 98%;
     outline: 0;
-    text-align:center;
+    text-align: center;
+    background: #1f3d5c;
+    border: 0;
+    color: #47acad;
+}
+
+#nfnLanguageFrom > div.nfn__options-title,
+#nfnLanguageTo > div.nfn__options-title {
+    color: #47acad !important;
+}
+
+html body #nfnLanguageTo .nfn__options-title, html body #nfnLanguageFrom .nfn__options-title {
+    background: #1f3d5c;
+    border: 0;
 }
 
 button#nfnQuoteBtn,
@@ -75,14 +88,28 @@ button#nfnOrderBtn{
 .eg_detail {
     font-size: 11px;
     line-height: 1;
+    color: #fff;
     padding: 10px 4px;
 }
+
+section.template_banner > div.container div.form_container_desktop > div {
+    background: rgb(17 31 77 / 80%) !important;
+}
+
+html body div.form_container_desktop > div > div.nfn__title {
+    color: #fff !important;
+}
+
+section.template_banner > div.container > div > div > div.form_container_desktop > div > div.nfn__languages > div  .nfn__label{
+    color: #fff !important;
+}
+
 
 .eg_logo img {
     background: #1f3d5c;
     border-radius: 50%;
     height: 100px;
-    width: 100px;
+    width: 110px;
 }
 
 .eg_logo {
@@ -95,3 +122,6 @@ button#nfnOrderBtn{
 .nfn__label {
     font-size: 15px;
 }
+
+<img src="https://img.icons8.com/material-sharp/192/1FB141/icons8-new-logo.png"/>
+
