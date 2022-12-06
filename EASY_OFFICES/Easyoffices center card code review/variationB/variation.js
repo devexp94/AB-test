@@ -27,14 +27,14 @@
                     try {
       
       
-                        var productTiles = document.querySelectorAll(".offices-list .property-list-item:not(.checked)");
+                        var productTiles = document.querySelectorAll(".tab-content .product:not(.checked)");
       
                         if (stop) return;
       
                         if (productTiles.length) {
                             productTiles.forEach(function(productTile) {
-                                var targetElem = productTile.querySelector(".offices-list-item-data-text"),
-                                    pdpLink = productTile.querySelector(".offices-list .property-list-item a");
+                                var targetElem = productTile;
+                                    pdpLink = productTile.querySelector(".tab-content .product a");
                                     movePrice(productTile);
                                 productTile.classList.add("checked");
                                 
@@ -50,11 +50,9 @@
                                     } else {
                                         getHTML(pdpUrl, function(response) {
                                             try {
-                                                var style = response.querySelector(".facilities .tabs-content-group");
-                                                var list1 = style.querySelector('.facilities .tabs-content-group > div:first-of-type ul');
-                                                var list2  = style.querySelector('.facilities .tabs-content-group > div:first-of-type + div ul');
-                                                if (list1 && list2) {
-                                                    style = list1.innerHTML + list2.innerHTML;
+                                                var style = response.querySelector(".product-object");
+                                                if (style) {
+                                                    style = style.getAttribute('data-product');;
                                                     insertCopy(targetElem, style);
                                                     cachedList[pdpUrl] = style;
                                                    // setPriority();
@@ -102,26 +100,7 @@
 
         }
 
-        function movePrice(target){
-            var egLocation = target.querySelector('.offices-list-item-data-cta');
-            var egPrice = target.querySelector('.office-list-item-price');
-            var priceCopy = egPrice.innerHTML;
-            //var newCopy = priceCopy.replace('From $ ','From ₹');
-            var finalCopy = priceCopy.replace('pppm','<span>pm</span>');
-            egPrice.innerHTML = finalCopy;
-            egLocation.insertAdjacentElement('beforebegin', egPrice);
-           if(target.getAttribute('data-iscw') == true ||target.getAttribute('data-iscw') == "true")
-           {
-           var tags = '<div class="eg-tag"><span>Coworking Space </span> <span> Serviced Office</span></div>';
-             target.querySelector('h2.offices-list-item-data-title').insertAdjacentHTML('afterend',tags);
-           }
-           else
-           {
-            var tags = '<div class="eg-tag"> <span> Service Office</span></div>';
-            target.querySelector('h2.offices-list-item-data-title').insertAdjacentHTML('afterend',tags);
-          }
-           
-        }
+       
           function getHTML(url, callback) {
             try {
                 if (!window.XMLHttpRequest) return;
@@ -187,7 +166,7 @@
             });
       }
 
-      waitForElement(".offices-list .property-list-item:not(.checked)", initVariation, 50, 8000);
+      waitForElement(".tab-content .product a:not(.checked)", initVariation, 50, 8000);
       
     } catch (e) {
       if (debug) console.log(e, "error in Test" + variation_name);
