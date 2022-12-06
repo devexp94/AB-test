@@ -75,7 +75,7 @@ let eg_icon = ` <div class="eg_desc">
         <span class="eg_heading">
             Certified <br/> Translation <br/> Services
         </span>
-        <a href="https://www.thespanishgroup.org/pricing" class="eg_quote">Get Free Quote</a>
+        <a href="https://www.thespanishgroup.org/pricing" class="eg_quote">Get Free Quote <i class="fa-solid fa-chevron-right"></i></a>
     </div>
     
     <div class="eg_aside">
@@ -91,11 +91,10 @@ let eg_icon = ` <div class="eg_desc">
                     class="form-control form-control-lg rounded-sm border-0"
                     aria-describedby="emailHelp">
             </div>
-            <div class="eg_start">
-                <button type="submit" class="eg_submit">
-                    Get Started <i class="fa-solid fa-chevron-right"></i>
-                </button>
-            </div>
+
+            <a id="eg-urgent" href="/billing?q=egBilling">
+                       <button type="button" class="nfn__btn"> Get Started <i class="fa-solid fa-chevron-right"></i></button>
+               </a>
         </form>
     </div>
 </div>

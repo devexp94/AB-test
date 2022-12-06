@@ -29,7 +29,7 @@ form.eg_form {
     justify-content: center;
     align-items: center;
     margin-bottom: 10px !important;
-    width: 92%;
+    width: 92% !important;
     margin: auto;
 }
 
@@ -107,7 +107,7 @@ button#nfnOrderBtn{
 }
 
 section.template_banner > div.container div.form_container_desktop > div {
-    background: rgb(17 31 77 / 80%) !important;
+    background: rgb(4 62 113 / 80%) !important;
 }
 
 html body div.form_container_desktop > div > div.nfn__title {
