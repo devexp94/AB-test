@@ -65,15 +65,15 @@
     display: inline-block;
     vertical-align: middle;
     color: #5d5d5d;
-    font-size: 22px;
+    font-size: 34px;
   }
   
   #cursor {
     display: inline-block;
     vertical-align: middle;
-    width: 2px;
-    height: 25px;
-    background-color: #000;
+    /* width: 2px;
+    height: 30px; */
+    /* background-color: #000; */
     animation: blink .75s step-end infinite;
   }
   
