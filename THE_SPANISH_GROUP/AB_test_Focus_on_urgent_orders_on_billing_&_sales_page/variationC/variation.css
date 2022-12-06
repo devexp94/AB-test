@@ -1,0 +1,15 @@
+#nbsStep2 .nbs__options-list::after {
+    content: 'Relieve your nerves. Receive your translation today!';
+    position: absolute;
+    bottom: -28px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #29507a;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#nbsStep2 .nbs__options-list {
+    position: relative;
+}
