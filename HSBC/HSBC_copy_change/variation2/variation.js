@@ -67,16 +67,22 @@
         /* Variation Init */
         function init() {
 
+            const egFirstTileBtn = document.querySelector(".segment-filter > div  > button:nth-child(1)");
+
             // changing first title text on load
 
-            waitForElement('.collection-cards__card___3N5Oq > div > a  div.collection-card__content___3SEC9 h3', updateTile, 50, 15000);
+            if(egFirstTileBtn.ariaChecked === 'true'){
+                waitForElement('.collection-cards__card___3N5Oq > div > a  div.collection-card__content___3SEC9 h3', updateTile, 50, 15000);
+            }
 
-            document.querySelector(".segment-filter > div  > button:nth-child(1)").addEventListener("click",()=>{
-                resetTile();
-                updateTile();
+            document.querySelector(".segment-filter > div  > button:nth-child(1)").addEventListener("click", function() {
+                if (this.innerText == "Select All") {
+                    resetTile();
+                    updateTile();
+                }
             })
 
-            live([".segment-filter > div  > button:nth-child(n + 2)",".collection-card__dismiss-control___xPQKd:nth-of-type(1)" ], 'click', () => {
+            live([".segment-filter > div  > button:nth-child(n + 2)", ".collection-card__dismiss-control___xPQKd:nth-of-type(1)"], 'click', () => {
                 resetTile();
             });
 
@@ -128,7 +134,7 @@
         }
 
         /* Initialize variation */
-        waitForElement('.collection-cards__card___3N5Oq > div > a  div.collection-card__content___3SEC9 h3', init, 50, 15000);
+        waitForElement('.segment-filter > div  > button:nth-child(1)', init, 50, 15000);
     } catch (e) {
         if (debug) console.log(e, "error in Test" + variation_name);
     }
