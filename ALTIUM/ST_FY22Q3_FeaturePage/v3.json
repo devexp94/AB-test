@@ -1,0 +1,9 @@
+{
+    "files": [
+        "./variation3/variation.css",
+        "./variation3/variation.js"
+    ],
+
+    "urls": ["https://www.altium.com/altium-designer/features/high-speed-design"],
+    "inject": ""
+}

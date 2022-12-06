@@ -1,0 +1,73 @@
+.eg-trust-logos {
+	display: flex;
+	margin-top: 20px;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+	gap: 16px;
+}
+
+
+.eg-trust-logos > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	/* box-shadow: 5px 5px 5px #ccc; */
+	padding: 5px;
+	/* background: rgb(255 255 255 / 25%); */
+	border-radius: 2px;
+}
+
+.eg-trust-logos > div >img.logo {
+	display: block;
+	object-fit: contain;
+	max-width: 100% !important;
+	width: 100% !important;
+	height: 66px;
+	filter: grayscale(1);
+}
+
+.eg-trust-logos > div >img.logo:hover {
+	filter: grayscale(0) !important;
+	opacity: 1 !important;
+}
+
+/* setting up some logos */
+.eg-trust-logos > div:nth-child(3) >img {
+	height: 56px;
+}
+
+.eg-trust-logos > div:nth-child(5) >img {
+	height: 46px;
+}
+
+.eg-trust-logos > div:nth-child(6) >img {
+	object-position: 50% 82%;
+}
+
+.eg-trust-title h2 {
+	font-size: 21.2px;
+	text-align: center;
+	font-weight: 800;
+}
+
+/* hiding scroll to discover */
+.s-hero__scroll-btn {
+    display: none;
+}
+
+@media(max-width:768px) {
+	.eg-trust-logos > div {
+		min-width: 50px;
+		max-width: 70px;
+	}
+
+}
+
+.eg-wrapper {
+    background: rgb(255 255 255 / 85%);
+    border-radius: 10px;
+    padding-top: 32px;
+    padding-bottom: 22px;
+}
