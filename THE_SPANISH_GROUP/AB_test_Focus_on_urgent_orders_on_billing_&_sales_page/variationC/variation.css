@@ -19,3 +19,9 @@
         font-size: 14.8px;
     }
 }
+
+@media(max-width: 372px) {
+    #nbsStep2 .nbs__options-list::after {
+        font-size: 14px;
+    }
+}
