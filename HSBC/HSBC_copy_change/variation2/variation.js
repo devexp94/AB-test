@@ -134,7 +134,7 @@
         }
 
         /* Initialize variation */
-        waitForElement('.segment-filter > div  > button:nth-child(1)', init, 50, 15000);
+        waitForElement('.collection-cards__card___3N5Oq > div > a  div.collection-card__content___3SEC9 h3', init, 50, 15000);
     } catch (e) {
         if (debug) console.log(e, "error in Test" + variation_name);
     }
