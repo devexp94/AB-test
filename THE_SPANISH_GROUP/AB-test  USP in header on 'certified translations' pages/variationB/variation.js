@@ -29,6 +29,7 @@
 <div id="text"></div><div id="cursor"></div>
 </div>`
 
+
     var eg_para_idx = 0;
 
     var eg_para = [
