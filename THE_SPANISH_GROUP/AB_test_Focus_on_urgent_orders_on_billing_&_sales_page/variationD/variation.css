@@ -13,3 +13,21 @@
 }
 
 /*css for translation page*/
+
+@media(max-width: 767px) {
+    .nfn__content .nfn__trust {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        padding-top: 0 !important;
+    }
+
+    #eg-urgent {
+        order: -1;
+        margin-left: 0;
+    }
+
+    .nfn__actions_mobile {
+        margin-bottom: 10px !important;
+    }
+}

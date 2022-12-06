@@ -4,6 +4,6 @@
         "./variation1/variation.js"
     ],
 
-    "urls": ["https://www.altium.com/asp/youtube"],
+    "urls": ["https://www.altium.com/altium-designer/features/high-speed-design"],
     "inject": ""
 }
