@@ -80,6 +80,7 @@ a.eg_quote {
     font-weight: bolder !important;
     text-align: center;
     padding: 10px 42px;
+    font-size: 17px !important;
 }
 
 .eg_aside {

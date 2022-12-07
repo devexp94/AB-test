@@ -30,7 +30,15 @@
       ["<p class='egDetail'>Get pre-approved for exclusive offers you won’t see anywhere else.</p>"]
     ]
 
-    let egIdx = 0
+    let eg_logos = [
+      ["https://expogrowth.in/wp-content/uploads/2022/12/convicon1.svg"],
+["https://expogrowth.in/wp-content/uploads/2022/12/convicon2.svg"],
+["https://expogrowth.in/wp-content/uploads/2022/12/convicon3.svg"],
+["https://expogrowth.in/wp-content/uploads/2022/12/convicon4.svg"]
+    ]
+
+    let egIdx = 0;
+    let egindex = 0;
 
     /* Variation Init */
     function init() {
@@ -46,11 +54,19 @@
       document.querySelector("div.sectionContent--Ec-Z7 > div.featureLists--Cs4RX > div > div:nth-child(4) > div.featureTitle--u3vBs > p").innerHTML = "Personalised and pre-approved credit offers";
 
       let egcredit = document.querySelectorAll("div.sectionContent--Ec-Z7 > div.featureLists--Cs4RX  div.featureTitle--u3vBs > p");
+      
+      let egLogo = document.querySelectorAll("div.sectionContent--Ec-Z7 > div.featureLists--Cs4RX > div > div > div.featureIcon--ppWBY > div > picture > source")
+
 
       for (let credit of egcredit) {
         credit.insertAdjacentHTML("afterend", egPara[egIdx++])
+        egLogo[egindex].srcset = eg_logos[egindex++]
       }
 
+      // for (let logo of egLogo) {
+      //   logo.srcset = eg_logos[egindex++]
+      // }
+    
     }
 
     function changeText() {
