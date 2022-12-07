@@ -22,51 +22,9 @@
             }, delayTimeout);
         }
 
-        function live(selector, event, callback, context) {
-            /****Helper Functions****/
-            // helper for enabling IE 8 event bindings
-            function addEvent(el, type, handler) {
-                if (el.attachEvent) el.attachEvent("on" + type, handler);
-                else el.addEventListener(type, handler);
-            }
-            // matches polyfill
-            this.Element &&
-                (function(ElementPrototype) {
-                    ElementPrototype.matches =
-                        ElementPrototype.matches ||
-                        ElementPrototype.matchesSelector ||
-                        ElementPrototype.webkitMatchesSelector ||
-                        ElementPrototype.msMatchesSelector ||
-                        function(selector) {
-                            var node = this,
-                                nodes = (node.parentNode || node.document).querySelectorAll(selector),
-                                i = -1;
-                            while (nodes[++i] && nodes[i] != node);
-                            return !!nodes[i];
-                        };
-                })(Element.prototype);
-            // live binding helper using matchesSelector
-            function live(selector, event, callback, context) {
-                addEvent(context || document, event, function(e) {
-                    var found,
-                        el = e.target || e.srcElement;
-                    while (el && el.matches && el !== context && !(found = el.matches(selector))) el = el.parentElement;
-                    if (found) callback.call(el, e);
-                });
-            }
-            live(selector, event, callback, context);
-        }
+        
 
-        // live(['.controls .widgets > form >*',
-        //     'nav > a.prev',
-        //     'nav > a.next',
-        //     'nav > ul.jumps',
-        //     'nav > ul.pages > li'
-        // ], 'click', function() {
-        //     waitForElement('.sorts-filters th:nth-child(6)', init, 50, 15000);
-        //     console.log("clicked")
-        // });
-
+        let egBtnInterval;
         /* Variation Init */
         function init() {
             /* start your code here */
@@ -92,13 +50,17 @@
         }
 
         function addBtn() {
-            // only when btn is not present then add it
-            if (!document.querySelector('.eg-view-part-cta')) {
-                document.querySelectorAll("table > tbody > tr  > .spec:nth-child(6)").forEach(ele => {
-                    ele.insertAdjacentHTML("afterend", `
+            egBtnInterval = setInterval(() => {
+                // only when btn is not present then add it
+                if (!document.querySelector('.eg-view-part-cta')) {
+                    document.querySelectorAll("table > tbody > tr  > .spec:nth-child(6)").forEach(ele => {
+                        ele.insertAdjacentHTML("afterend", `
                                       <td class="jsx-3284562066 spec eg-view-part-cta"><div class="jsx-312275976 jsx-3946697165 market-availability"><a class="jsx-312275976 jsx-3946697165 number" href="${ele.parentElement.children[1].firstElementChild.href}">View Part</a></div></td>`);
-                });
-            }
+                    });
+                } else {
+                    clearInterval(egBtnInterval);
+                }
+            },1000);
         }
 
         // adding btns on route change
@@ -108,7 +70,7 @@
                 setTimeout(function() {
                     // adding view part btn
                     waitForElement('.sorts-filters th:nth-child(6)', init, 50, 15000);
-                }, 5000);
+                }, 500);
             });
             history.pushState = ((f) =>
                 function pushState() {
