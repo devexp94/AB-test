@@ -4,12 +4,19 @@
     display: none !important;
 }
 
+.new-container {
+    background: rgba(0,0,0,0.3);
+    background-blend-mode: overlay !important;
+}
+
 .fa-chevron-right:before {
+    padding-left: 10px;
     content: "\f054";
+    font-weight: 200;
+    font-style: normal !important;
 }
 .fa-solid, .fas {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
+    font-family: "Fontawesome";
 }
 
 .eg_container {
@@ -30,8 +37,9 @@
 }
 
 .eg_titles h3 {
-    font-size: 25px;
+    font-size: 27px;
     line-height: 1;
+    color: #eee !important;
 }
 
 .eg_name,
@@ -46,24 +54,41 @@ span.eg_heading {
     font-family: 'CIRCULAR-LOOM';
     padding-block: 8px;
     line-height: 0.9;
+    color: #fff !important;
+}
+
+.eg_start a {
+    width: 100% !important;
+    margin: auto !important;
+    background: #4cacad;
+    padding: 10px 22px;
+    border-radius: 30px;
+    color: #fff;
+    /* margin-top: 30px !important; */
+}
+
+.eg_start {
+    margin-top: 25px;
 }
 
 a.eg_quote {
     background: #47acad;
-    color: #fff;
+    color: #fff !important;
     border-radius: 25px;
     margin-top: 12px;
-    font-size: 18px;
+    font-family: Lato , sans-serif !important;
+    font-weight: bolder !important;
     text-align: center;
     padding: 10px 42px;
+    font-size: 17px !important;
 }
 
 .eg_aside {
-    background: rgb(18 40 85 / 90%);
+    background: rgb(4 62 113 / 80%) !important;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    width: 17%;
+    width: 16%;
 }
 
 form.efForm {
@@ -99,7 +124,7 @@ button.eg_submit {
     padding: 15px 60px;
     border-radius: 30px;
     margin: 37px 0 25px 0;
-    color: #fff;
+    color: #fff !important;
 }
 
 .eg_container {
@@ -131,5 +156,21 @@ button.eg_submit {
     font-size: 11px;
     line-height: 1;
     padding: 10px 4px;
+    color: #fff !important;
 }
+}
+
+#eg-urgent {
+    width: 97%;
+    margin: 33px 5px 20px;
+}
+
+#eg-urgent button {
+    width: 100%;
+    background: #47acad !important;
+    font-size: 16px !important;
+    border-radius: 25px !important;
+    /* margin: 0 !important; */
+    font-weight: 400 !important;
+    padding: 13px;
 }
