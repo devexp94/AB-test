@@ -93,9 +93,10 @@
     .eg-inquiry-msg {
         background: #f5f4f2;
         margin-top: 16px;
-        font-size: 16.2px;
-        padding: 12px;
+        font-size: 16.8px;
+        padding: 10px;
         text-align: center;
         color: #000;
+        border-radius: 6px;
     }
 }
