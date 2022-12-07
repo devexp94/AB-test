@@ -8,7 +8,7 @@ div[class ^= 'featureLists'] div[class ^= 'ctaContainer'] {
 
 div[class ^= 'featureLists'] {
     background: #fff;
-    padding: 0 0 25px !important;
+    padding: 0 0 30px !important;
     margin: -25px !important;
 
 }
