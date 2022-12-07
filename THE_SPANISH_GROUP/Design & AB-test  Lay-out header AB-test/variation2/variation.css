@@ -32,7 +32,7 @@
     display: flex;
     align-items: baseline;
     flex-direction: column;
-    flex-basis: 18%;
+    flex-basis: 22%;
     padding-top: 20px;
 }
 
@@ -88,7 +88,7 @@ a.eg_quote {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    width: 16%;
+    width: 22%;
 }
 
 form.efForm {
@@ -174,3 +174,9 @@ button.eg_submit {
     font-weight: 400 !important;
     padding: 13px;
 }
+
+
+
+
+
+/* <a href="https://ibb.co/CWmk6ky"><img src="https://i.ibb.co/52GNkN3/image.png" alt="image" border="0"></a> */
