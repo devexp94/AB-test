@@ -8,8 +8,9 @@ div[class ^= 'featureLists'] div[class ^= 'ctaContainer'] {
 
 div[class ^= 'featureLists'] {
     background: #fff;
-    padding: 0 !important;
-    margin: -5px !important;
+    padding: 0 0 25px !important;
+    margin: -25px !important;
+
 }
 
  div[class ^= 'featureLists'] > div[class ^= 'ctaContainer']>a {
@@ -118,6 +119,7 @@ div[class ^= 'featureItem']{
     div[class ^= 'featureLists'] {
         /* margin-top: 0 !important; */
         padding-top: 47px !important;
+        padding-bottom: 24px !important;
     }
 
     div[class ^= 'featureIcon'] + div[class ^= 'featureTitle']  p[class ^= 'component']{
@@ -127,7 +129,7 @@ div[class ^= 'featureItem']{
     div[class ^= 'featureLists']>div>div:nth-child(1)>div[class ^= 'featureIcon']>div {
         max-height: 38px !important;
         width: 28px !important;
-     margin-right: 10px;
+     margin-inline: 9px !important;
     }
 
     .gatsby-image-wrapper.featureImage--3xh-g {
@@ -143,6 +145,9 @@ div[class ^= 'featureItem']{
     div[class ^= 'featureItem'] {
         max-width: 85%!important;
         padding-bottom: 0 !important;
+    }
 
+    div[class ^= 'featureLists'] div[class ^= 'ctaContainer'] {
+        width: 90%!important;
     }
 }
