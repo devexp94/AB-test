@@ -13,10 +13,10 @@
 section.section--X5hzU div.featureLists--Cs4RX > div.ctaContainer--itgrz > a {
     min-width: 260px !important;
 }
-/* 
+
 section.featureSection--LIx35 {
     display: none;
-} */
+}
 
 .featureContainer--OCAKu p[data-qa="text"] {
     font-weight: 700;
@@ -40,5 +40,13 @@ p.egDetail {
     .featureContainer--OCAKu {
         flex-wrap: wrap;
         justify-content: center !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    p.egDetail {
+        font-size: 13px;
+        padding-top: 1px;
+        line-height: 1.4;
     }
 }

@@ -54,7 +54,7 @@
     }
 
     function changeText() {
-      document.querySelector("section.section--X5hzU div.featureLists--Cs4RX > div.ctaContainer--itgrz > a > div").innerText = "Sign up for free"
+      document.querySelector("section.section--X5hzU div.featureLists--Cs4RX > div.ctaContainer--itgrz > a > div").innerText = "Sign up for free";
     }
 
     /* Initialize variation */
