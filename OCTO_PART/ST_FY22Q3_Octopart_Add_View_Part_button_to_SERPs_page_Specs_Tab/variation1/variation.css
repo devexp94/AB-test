@@ -1,0 +1,9 @@
+.eg-view-part-cta div {
+    width: max-content;
+}
+
+.eg-view-part-cta div a {
+    background: #3472bc;
+    color: white !important;
+    border-width: 0 !important;
+}

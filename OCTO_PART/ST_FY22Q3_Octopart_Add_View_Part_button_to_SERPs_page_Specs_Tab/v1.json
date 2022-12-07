@@ -1,0 +1,11 @@
+{
+	"files": [
+		"./variation1/variation.css",
+		"./variation1/variation.js"
+	],
+	"urls": [
+		"https://octopart.com/search",
+		"https://octopart.com/search?currency=USD&q=MIC1557YM5-TR&specs=1",
+		"https://octopart.com/search?autosugg_idx=2&currency=USD&oq=s&q=supply+voltage&specs=1"
+	]
+}
