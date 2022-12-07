@@ -12,6 +12,10 @@ div[class ^= 'featureLists'] {
     margin: -28px !important;
 }
 
+    div[class ^= "featureContainer"] {
+        padding-top: 26px !important;
+    }
+
  div[class ^= 'featureLists'] > div[class ^= 'ctaContainer']>a {
     min-width: 260px !important;
 }
