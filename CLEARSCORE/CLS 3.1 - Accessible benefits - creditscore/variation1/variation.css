@@ -1,51 +1,54 @@
-.featureLists--auHlK {
+section[class ^= 'featureSection'] > div[class ^= 'featureLists'] {
     display: none;
 }
 
-.ctaContainer--itgrz {
+div[class ^= 'featureLists'] div[class ^= 'ctaContainer'] {
     width: inherit !important;
 }
 
-.featureLists--Cs4RX {
+div[class ^= 'featureLists'] {
     background: #fff;
+    padding: 0 !important;
+    margin: -5px !important;
 }
 
-section.section--X5hzU div.featureLists--Cs4RX>div.ctaContainer--itgrz>a {
+ div[class ^= 'featureLists'] > div[class ^= 'ctaContainer']>a {
     min-width: 260px !important;
 }
 
-section.featureSection--LIx35 {
+section[class ^= 'featureSection'] {
     display: none;
 }
 
-.featureTitle--u3vBs p.component--TVujP {
+div[class ^= 'featureIcon'] +  div[class ^= 'featureTitle']  p[class ^= 'component'] {
     font-size: 16px !important;
 }
 
-.featureContainer--OCAKu p[data-qa="text"] {
+div[class ^= 'featureContainer'] p[data-qa="text"] {
     font-weight: 700;
 }
 
 p.egDetail {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.3;
     font-family: inherit;
     padding-block: 15px;
 }
 
-.featureImage--3xh-g {
+/* div[class ^= 'ctaContainer'] */
+div[class ^= 'featureImage'] {
     max-height: 21px;
     width: 16px;
     object-fit: cover !important;
 }
 
-.featureIcon--ppWBY {
-    padding: 0;
+div[class ^= 'featureLists']>div>div:nth-child(1)>div[class ^= 'featureIcon']>div {
+    height: 40px !important;
+    width: 23px !important;
 }
 
-div.featureLists--Cs4RX>div>div:nth-child(1)>div.featureIcon--ppWBY>div {
-    height: 35px !important;
-    width: 24px !important;
+div[class ^= 'featureIcon'] {
+    padding-left: 25px !important;
 }
 
 .gatsby-image-wrapper.featureImage--3xh-g {
@@ -53,38 +56,40 @@ div.featureLists--Cs4RX>div>div:nth-child(1)>div.featureIcon--ppWBY>div {
     width: 34px;
 }
 
-.featureItem--RUh16 {
+/* div[class ^= 'featureList']  div[class ^= 'featureItem'] .gatsby-image-wrapper */
+
+div[class ^= 'featureItem']{
     max-width: 280px !important;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .featureItem--RUh16 {
+    div[class ^= 'featureItem'] {
         align-items: center;
         flex-basis: 42%;
         margin-inline: 14px;
         margin-bottom: -14px;
     }
 
-    .featureContainer--OCAKu {
+    div[class ^= 'featureContainer'] {
         flex-wrap: wrap;
         justify-content: center !important;
     }
 
-    .featureItem--RUh16 {
+    div[class ^= 'featureItem'] {
         max-width: 350px !important;
     }
 
-    .featureTitle--u3vBs p.component--TVujP {
+    div[class ^= 'featureIcon'] +  div[class ^= 'featureTitle']  p[class ^= 'component'] {
         font-size: 16px !important;
         line-height: 1.4;
         padding-top: 20px;
     }
 
-    section.section--X5hzU div.featureLists--Cs4RX>div.ctaContainer--itgrz>a {
+    section[class ^= 'section'] div[class ^= 'ctaContainer']>a {
         min-width: 310px !important;
     }
 
-    div.featureLists--Cs4RX>div>div:nth-child(1)>div.featureIcon--ppWBY>div {
+    div[class ^= 'featureLists']>div>div:nth-child(1)>div[class ^= 'featureIcon']>div {
         max-height: 36px !important;
         width: 28px !important;
     }
@@ -97,34 +102,47 @@ div.featureLists--Cs4RX>div>div:nth-child(1)>div.featureIcon--ppWBY>div {
 
 @media screen and (max-width: 767px) {
     p.egDetail {
-        font-size: 13px;
+        font-size: 14px;
         padding-top: 1px;
         line-height: 1.4;
     }
 
-    .featureItem--RUh16 {
-        padding-bottom: 0 !important;
+    div[class ^= 'featureIcon'] {
+        padding: 34px 0 0 15px !important
     }
 
-    .featureIcon--ppWBY {
-        padding: 34px 0 !important;
-    }
-
-    div.featureContainer--OCAKu>div:nth-child(2)>div.featureTitle--u3vBs>p:first-child br {
+    div[class ^= 'featureContainer'] > div:nth-child(2)>div[class ^= 'featureTitle']>p:first-child br {
         display: none;
     }
 
-    .featureTitle--u3vBs p.component--TVujP {
+    div[class ^= 'featureLists'] {
+        /* margin-top: 0 !important; */
+        padding-top: 47px !important;
+    }
+
+    div[class ^= 'featureIcon'] + div[class ^= 'featureTitle']  p[class ^= 'component']{
         color: #000 !important;
     }
 
-    div.featureLists--Cs4RX>div>div:nth-child(1)>div.featureIcon--ppWBY>div {
+    div[class ^= 'featureLists']>div>div:nth-child(1)>div[class ^= 'featureIcon']>div {
         max-height: 38px !important;
         width: 28px !important;
+     margin-right: 10px;
     }
 
     .gatsby-image-wrapper.featureImage--3xh-g {
         max-height: 35px;
         width: 40px;
+    }
+
+
+    div[class ^= 'featureContainer']  {
+        padding-left: 14px;
+    }
+
+    div[class ^= 'featureItem'] {
+        max-width: 85%!important;
+        padding-bottom: 0 !important;
+
     }
 }
