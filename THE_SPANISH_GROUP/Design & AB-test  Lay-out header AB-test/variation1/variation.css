@@ -10,6 +10,22 @@
   box-sizing: border-box;
 }
 
+
+section.template_banner {
+    background-image: url("https://i.ibb.co/52GNkN3/image.png") !important;
+    background-size: cover;
+    background-position: center;
+}
+
+.nfn__options-title:after {
+    content: "\f078" !important;
+    display: inline-block;
+    background-image: none !important;
+    font-family: "Fontawesome" !important;
+    padding-left: 16px;
+
+}
+
 #nfnQuoteBtn.get_started_btn{
     margin-right: 25px !important;
 }
@@ -28,7 +44,7 @@
 }
 
 form.eg_form {
-    width: 92%;
+    width: 90% !important;
     margin: auto;
 }
 
@@ -38,7 +54,7 @@ form.eg_form {
     justify-content: center;
     align-items: center;
     margin-bottom: 10px !important;
-    width: 92% !important;
+    width: 90% !important;
     margin: auto;
 
 }
@@ -79,7 +95,7 @@ button#nfnOrderBtn{
 .nfn__content {
     position: relative;
     border-radius: 35px !important;
-    box-shadow: inset 0px 0px 0px 5px #eee !important;
+    box-shadow: inset 0px 0px 0px 4px #547ba4 !important;
 }
 
 #header-img > section.template_banner > div.container > div > div > div.form_container_desktop > div{
@@ -142,13 +158,13 @@ section.template_banner > div.container > div > div > div.form_container_desktop
 .eg_logo img {
     background: #1f3d5c;
     border-radius: 50%;
-    height: 110px;
+    height: 112px;
     width: 125px;
 }
 
 .eg_logo {
     position: absolute;
-    top: -15%;
+    top: -14%;
     left: 50%;
     transform: translateX(-50%);
 }
