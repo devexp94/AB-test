@@ -80,7 +80,7 @@
 
                 // inserting a new line below buttons
                 document.querySelector(".eg-cta-container").insertAdjacentHTML("afterend",`
-                    <div class="eg-inquiry-msg">For any inquiry call us on (800) 416-8020</div>`);
+                    <div class="eg-inquiry-msg">Call on (800) 416-8020</div>`);
             }
 
         }
