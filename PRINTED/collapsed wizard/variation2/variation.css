@@ -1,0 +1,39 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#container-to-scroll > div:nth-child(2) > div > div:has(.l-wizard-section__container){
+    cursor: pointer;
+}
+
+
+.eg-inactive-section{
+    max-height: 0;
+    overflow: hidden;
+}
+
+.l-wizard-section:has(.eg-inactive-section){
+    padding-left: 1.8rem !important;
+}
+
+/*arrow up and down*/
+.l-wizard__body > div > div .l-wizard-section__header {
+    position: relative;
+}
+
+.l-wizard__body > div > div .l-wizard-section__header::after {
+    content: '';
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.8rem;
+    border: solid #ED40A9;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 12px;
+    top: 0px;
+}
+
+.l-wizard__body > div > div:has(.l-wizard-section__container:not(.eg-inactive-section)) .l-wizard-section__header::after{
+    transform: rotate(227deg);
+}
