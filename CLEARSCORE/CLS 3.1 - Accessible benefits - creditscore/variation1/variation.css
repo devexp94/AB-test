@@ -1,0 +1,44 @@
+.featureLists--auHlK {
+    display: none;
+}
+
+.ctaContainer--itgrz {
+    width: inherit !important;
+}
+
+.featureLists--Cs4RX {
+    background: #fff;
+}
+
+section.section--X5hzU div.featureLists--Cs4RX > div.ctaContainer--itgrz > a {
+    min-width: 260px !important;
+}
+/* 
+section.featureSection--LIx35 {
+    display: none;
+} */
+
+.featureContainer--OCAKu p[data-qa="text"] {
+    font-weight: 700;
+}
+
+p.egDetail {
+    font-size: 12px;
+    font-family: inherit;
+    padding-top: 15px;
+}
+
+
+
+@media (min-width: 768px) and (max-width : 1024px) {
+    .featureItem--RUh16 {
+        align-items: center;
+        flex-basis: 40%;
+        margin-inline: 14px;
+    }
+
+    .featureContainer--OCAKu {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
