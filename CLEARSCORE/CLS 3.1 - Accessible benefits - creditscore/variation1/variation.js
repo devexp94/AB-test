@@ -35,9 +35,9 @@
     /* Variation Init */
     function init() {
       /* start your code here */
-      let eg_ele = document.querySelector("#gatsby-focus-wrapper > div.grid--dzRBT > div > div > section.section--X5hzU > div.sectionContent--Ec-Z7 > div.featureLists--Cs4RX");
+      let eg_ele = document.querySelector("section.section--X5hzU > div.sectionContent--Ec-Z7 > div.featureLists--Cs4RX");
 
-      let eg_btn = document.querySelector("#gatsby-focus-wrapper > div.grid--dzRBT > div > div > section.featureSection--LIx35 > div.ctaContainer--itgrz");
+      let eg_btn = document.querySelector("section.featureSection--LIx35 > div.ctaContainer--itgrz");
 
       eg_ele.insertAdjacentElement("beforeend", eg_btn);
 
