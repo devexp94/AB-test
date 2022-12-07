@@ -13,6 +13,7 @@
     padding-left: 10px;
     content: "\f054";
     font-weight: 200;
+    font-style: normal !important;
 }
 .fa-solid, .fas {
     font-family: "Fontawesome";
@@ -36,9 +37,9 @@
 }
 
 .eg_titles h3 {
-    font-size: 25px;
+    font-size: 27px;
     line-height: 1;
-    color: #eee;
+    color: #eee !important;
 }
 
 .eg_name,
@@ -53,7 +54,7 @@ span.eg_heading {
     font-family: 'CIRCULAR-LOOM';
     padding-block: 8px;
     line-height: 0.9;
-    color: #fff;
+    color: #fff !important;
 }
 
 .eg_start a {
@@ -72,7 +73,7 @@ span.eg_heading {
 
 a.eg_quote {
     background: #47acad;
-    color: #fff;
+    color: #fff !important;
     border-radius: 25px;
     margin-top: 12px;
     font-size: 18px;
@@ -121,7 +122,7 @@ button.eg_submit {
     padding: 15px 60px;
     border-radius: 30px;
     margin: 37px 0 25px 0;
-    color: #fff;
+    color: #fff !important;
 }
 
 .eg_container {
@@ -153,7 +154,7 @@ button.eg_submit {
     font-size: 11px;
     line-height: 1;
     padding: 10px 4px;
-    color: #fff;
+    color: #fff !important;
 }
 }
 
