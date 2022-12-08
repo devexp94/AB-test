@@ -82,9 +82,10 @@
 
     function insertPrice(gap) {
 
-      let amount = document.querySelector("#moorings-holiduct-side span.amount")
-      amount.innerHTML = amount.innerHTML.replace(",","")
-      let eg_discount =  (parseFloat(amount.innerHTML) / 2).toLocaleString("en-US");
+      let eg_amount_ele = document.querySelector("#moorings-holiduct-side span.amount")
+      let eg_amount = eg_amount_ele.textContent.replace(",","")
+
+      let eg_discount =  (parseFloat(eg_amount) / 2).toLocaleString("en-US")
 
 
       let str = `<p class="eg_para">
