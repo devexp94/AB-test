@@ -1,0 +1,14 @@
+{
+	"files": [
+		"./variation1/variation.css",
+		"./variation1/variation.js"
+	],
+	"urls": [
+		"https://octopart.com/electronic-parts/integrated-circuits-ics/clock-and-timing/clock-buffers-drivers",
+		"https://octopart.com/electronic-parts/integrated-circuits-ics?start=20",
+		"https://octopart.com/electronic-parts/integrated-circuits-ics/interface-ics/codecs",
+		"https://octopart.com/electronic-parts/cables-and-wire/audio-video-cables",
+		"https://octopart.com/electronic-parts/tools-and-supplies/hardware-fasteners",
+		"https://octopart.com/electronic-parts/passive-components/transformers"
+	]
+}

@@ -1,0 +1,18 @@
+.eg-visit-site-cta div {
+    width: max-content;
+    margin: auto;
+}
+
+.eg-visit-site-cta div a {
+    background: #3472bc;
+    color: white !important;
+    border-width: 0 !important;
+    text-decoration:none;
+    padding:0px 5px 2px 4px;
+    font-size:13px;
+}
+
+
+.eg-visit-site {
+    width: 7%;
+}
