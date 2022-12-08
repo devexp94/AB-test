@@ -29,26 +29,29 @@
             /* start your code here */
             clearInterval(egBtnInterval);
             egBtnInterval = setInterval(() => {
-                if (document.querySelector(".controls .widgets > form >div.prices")) {
-                    // modifying table 
-                    document.querySelectorAll(".part").forEach(part => {
-                        // changes in thead
-                        if (part.querySelector("table > thead > tr > th:nth-child(5)")) {
-                            if (!part.querySelector(".eg-visit-site")) {
-                                part.querySelector("table > thead > tr > th:nth-child(5)").insertAdjacentHTML("afterend", `<th class="jsx-1976292197 eg-visit-site"></th>`);
-                            }
-
-                            // adding btn in tbody
-                            part.querySelectorAll("table > tbody > tr > td:nth-child(5)").forEach(data => {
-                                if (!data.parentElement.querySelector(".eg-visit-site-cta")) {
-                                    data.insertAdjacentHTML("afterend", `<td class="jsx-3284562066 eg-visit-site-cta"><div><a href="${data.parentElement.children[1].querySelector("a:nth-of-type(1)").href}">Visit Site</a></div></td>`);
+                if (window.location.href.indexOf("https://octopart.com/electronic-parts") != -1) {
+                    if (document.querySelector(".controls .widgets > form >div.prices")) {
+                        // modifying table 
+                        document.querySelectorAll(".part").forEach(part => {
+                            // changes in thead
+                            if (part.querySelector("table > thead > tr > th:nth-child(5)")) {
+                                if (!part.querySelector(".eg-visit-site")) {
+                                    part.querySelector("table > thead > tr > th:nth-child(5)").insertAdjacentHTML("afterend", `<th class="jsx-1976292197 eg-visit-site"></th>`);
                                 }
-                            });
-                        }
-                    });
+
+                                // adding btn in tbody
+                                part.querySelectorAll("table > tbody > tr > td:nth-child(5)").forEach(data => {
+                                    if (!data.parentElement.querySelector(".eg-visit-site-cta")) {
+                                        data.insertAdjacentHTML("afterend", `<td class="jsx-3284562066 eg-visit-site-cta"><div><a href="${data.parentElement.children[1].querySelector("a:nth-of-type(1)").href}">Visit Site</a></div></td>`);
+                                    }
+                                });
+                            }
+                        });
 
 
+                    }
                 }
+
             }, 1000);
 
 
@@ -61,10 +64,7 @@
         function listener() {
             /* These are the modifications: */
             window.addEventListener("locationchange", function() {
-                setTimeout(function() {
-                    // adding view part btn
-                    waitForElement('.part', init, 50, 15000);
-                }, 500);
+                waitForElement('.part', init, 50, 15000);
             });
             history.pushState = ((f) =>
                 function pushState() {
@@ -88,10 +88,8 @@
 
 
         /* Initialize variation */
-        if (window.location.href.indexOf("https://octopart.com/electronic-parts") != -1) {
-            waitForElement('.part', init, 50, 15000);
-            listener();
-        }
+        waitForElement('.part', init, 50, 15000);
+        listener();
     } catch (e) {
         if (debug) console.log(e, "error in Test" + variation_name);
     }

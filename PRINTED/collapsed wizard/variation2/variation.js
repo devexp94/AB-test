@@ -137,7 +137,7 @@
                 if (check.classList.contains("is-active") && !check.classList.contains("is-inactive")) {
                     let egChilds = check.parentElement.parentElement.children;
                     for (let i = 0; i < egChilds.length; i++) {
-                        if (egChilds[i].classList.contains("l-wizard-section__container")) {
+                        if (egChilds[i].classList.contains("l-wizard-section__container") && !egChilds[i].querySelector(".eg-confirm-btn")) {
                             egChilds[i].classList.add("eg-inactive-section");
                             break;
                         }
