@@ -149,6 +149,7 @@ div[class ^= "featureLists"] {
     background: #fff;
     border-bottom: 10px solid #fff!important;
 }
+
 }
 
 .eg-overview-container + section[class ^= "featureSection"]{
@@ -164,3 +165,6 @@ section[class ^= "featureSection"] > div[class ^= "ctaContainer"]{
 }
 
 
+div[class ^= "ctaContainer"] div[class ^= "component"]  {
+    font-size: 18px;
+}
