@@ -109,6 +109,11 @@
                 // btn open close logic
                 if (this.classList.contains("l-wizard-section__header")) {
                     this.parentElement.querySelector(".l-wizard-section__container").classList.toggle("eg-inactive-section");
+                    if(!this.parentElement.querySelector(".l-wizard-section__container eg-confirm-btn")){
+                        this.parentElement.querySelector(".l-wizard-section__container").insertAdjacentHTML("beforeend",`<button class="c-sticky-nav__button eg-confirm-btn">Confirm</button>`);
+                    } else {
+                        this.parentElement.querySelector(".l-wizard-section__container eg-confirm-btn").remove();
+                    }
                     this.parentElement.scrollIntoView({ behavior: "smooth" })
                 }
             });
