@@ -23,47 +23,78 @@
     }
 
 
-    let egPara = [
-      ["<p class='egDetail'>Enter your details once, and get free credit reports forever.</p>"],
-      ["<p class='egDetail'>Get clear, personalised insights about your credit, plus tips on how to improve it.</p>"],
-      ["<p class='egDetail'>Over 12 million people  trust ClearScore to help them with their financial future.</p>"],
-      ["<p class='egDetail'>Get pre-approved for exclusive offers you won’t see anywhere else.</p>"]
-    ]
+    let egOverviewHTML = `
+    <section class="eg-overview-container">
+        <div class="eg-overview-wrapper">
+            <div class="eg-callouts-container">
 
-    let eg_logos = [
-      ["https://expogrowth.in/wp-content/uploads/2022/12/convicon1.svg"],
-["https://expogrowth.in/wp-content/uploads/2022/12/convicon2.svg"],
-["https://expogrowth.in/wp-content/uploads/2022/12/convicon3.svg"],
-["https://expogrowth.in/wp-content/uploads/2022/12/convicon4.svg"]
-    ]
-  
-    // div[class^='featureTitle'] 
+                <!--Certified Translation-->
+                <div class="eg-callouts">
+
+                <div class="eg_img">
+                   <img src="https://expogrowth.in/wp-content/uploads/2022/12/convicon1.svg" alt="callout-icon"> 
+                </div>
+                     
+                <div class ="eg_rows">
+                   <h3 class="eg-title">Your free credit score & report, updated weekly</h3>
+                   <p class="eg-info">Enter your details once, and get free credit reports forever.</p>
+                   </div>   
+                </div>
+
+                <!--Professional Translation-->
+                <div class="eg-callouts">
+                <div class="eg_img">
+                    <img src="https://expogrowth.in/wp-content/uploads/2022/12/convicon2.svg" alt="callout-icon">
+               </div>
+
+               <div class="eg_rows">
+                    <h3 class="eg-title">Support to <br/> improve your score</h3>
+                    <p class="eg-info">Get clear, personalised insights about your credit, plus tips on how to improve it.</p>
+
+                    </div>
+                </div>
+
+                <!--Academic Translation-->
+                <div class="eg-callouts">
+                <div class="eg_img">
+                    <img src="https://expogrowth.in/wp-content/uploads/2022/12/convicon3.svg" alt="callout-icon">
+                 </div>
+                 
+                 <div class="eg_rows">
+                    <h3 class="eg-title">The UK’s number 1 free credit score and report app</h3>
+                    <p class="eg-info">Over 12 million people  trust ClearScore to help them with their financial future.</p>
+
+                    </div>
+                </div>
+
+                <!--90+ Languages Supported-->
+                <div class="eg-callouts">
+
+                <div class="eg_img">
+                    <img src="https://expogrowth.in/wp-content/uploads/2022/12/convicon4.svg" alt="callout-icon">
+                    </div>
+
+                    <div class="eg_rows">
+                    <h3 class="eg-title">Personalised and pre-approved credit offers</h3>
+                    <p class="eg-info">Get pre-approved for exclusive offers you won’t see anywhere else.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>`;
     
     /* Variation Init */
     function init() {
       /* start your code here */
-      let eg_ele = document.querySelector("section[data-qa ='hero'] > div[class^='sectionContent'] > div[class^='featureLists']");
-      let eg_btn = document.querySelector("section[class^='featureSection'] > div[class^='ctaContainer'] ");
-      eg_ele.insertAdjacentElement("beforeend", eg_btn);
-      
-      document.querySelector("section[data-qa ='hero'] div[class^='featureLists'] > div[class^='ctaContainer'] > a > div").innerText = "Sign up for free";
 
-      document.querySelector("div[class^='sectionContent'] > div[class^='featureLists'] > div > div:nth-child(2) > div[class^='featureTitle']  > p").innerHTML = "Support to <br/> improve your score";
+      document.querySelector("#gatsby-focus-wrapper section[class ^= 'featureSection'] > div[class ^= 'ctaContainer'] > a > div").innerText = "Sign up for free";
 
-      document.querySelector("div[class^='sectionContent'] > div[class^='featureLists'] > div > div:nth-child(4) > div[class^='featureTitle']  > p").innerHTML = "Personalised and pre-approved credit offers";
+      document.querySelector("#gatsby-focus-wrapper  section[data-qa='hero'] ").insertAdjacentHTML("afterend" , egOverviewHTML )
 
-      let egCredit = document.querySelectorAll("div[class^='sectionContent'] > div[class^='featureLists'] div[class^='featureTitle'] > p");
-      
-      let egLogo = document.querySelectorAll("div[class^='sectionContent']  > div[class^='featureLists'] div[class^='featureIcon']   picture > source");
-
-      egCredit.forEach((credit, i)=>{
-        credit.insertAdjacentHTML("afterend", egPara[i])
-        egLogo[i].srcset = eg_logos[i]
-      })
     }
 
     /* Initialize variation */
-    waitForElement("div[class^='sectionContent'] div[class ^= 'featureLists']", init, 50, 15000);
+    waitForElement("#gatsby-focus-wrapper  section[data-qa='hero'] ", init, 50, 15000);
   } catch (e) {
     if (debug) console.log(e, "error in Test" + variation_name);
   }
