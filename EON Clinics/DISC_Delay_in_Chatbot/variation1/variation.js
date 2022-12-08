@@ -33,8 +33,15 @@
             // }, 15000);
 
             // scroll depth
-            window.addEventListener("scroll",(e)=>{
-              if ((window.innerHeight + window.scrollY + 25) >= document.body.offsetHeight) {
+
+            // full page 50%
+            // if you want to change this 50% behaviour to 30% egDivisor = 3 and like that
+            let egDivisior = 2;
+            window.addEventListener("scroll", (e) => {
+
+                console.log(parseInt(document.body.offsetHeight / egDivisior) , parseInt((window.innerHeight + window.scrollY)));
+                let egIsTriggered = parseInt((window.innerHeight + window.scrollY)) >= parseInt(document.body.offsetHeight / egDivisior);
+                if (egIsTriggered) {
                     // you're at the bottom of the page
                     document.querySelector("#podium-website-widget").style.visibility = "visible";
                 }
