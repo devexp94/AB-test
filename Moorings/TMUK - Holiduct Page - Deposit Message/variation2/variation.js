@@ -70,7 +70,7 @@
 
       live('#search-widget > div > div.search-widget-right-column > span > a', 'click', function () {
         // document.querySelector("div.DayPicker-Day.DayPicker-Day--selected").click();
-        waitForElement('div.DayPicker-Day.DayPicker-Day--selected',insertPrice , 50, 15000);
+        waitForElement('div.DayPicker-Day.DayPicker-Day--selected',init , 50, 15000);
       });
 
 
