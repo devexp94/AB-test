@@ -16,3 +16,7 @@
 .eg-visit-site {
     width: 7%;
 }
+
+.eg-visit-site + th.pkg {
+    width: 4% !important;
+}
