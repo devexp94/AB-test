@@ -82,9 +82,11 @@
 
     function insertPrice(gap) {
 
-      let amount = document.querySelector("#moorings-holiduct-side  span.amount")
+      let amount = document.querySelector("#moorings-holiduct-side span.amount")
       amount.innerHTML = amount.innerHTML.replace(",","")
-      let eg_discount =  parseFloat(amount.innerHTML) / 2
+      let eg_discount =  (parseFloat(amount.innerHTML) / 2).toLocaleString("en-US");
+
+      parseFloat(amount.innerHTML).toLocaleString("en-US");
 
       let str = `<p class="eg_para">
       <span class="eg_top">This booking is within 90 days of departure, therefore payment in full is required.</span>
