@@ -111,7 +111,7 @@
                     });
 
                     // live function for dots click
-                    live(['.eg-dot', '.eg-left-arrow-box', '.eg-right-arrow-box'], 'click', (e) => {
+                    live(['.eg-dot','.eg-swipe-dots','.eg-left-arrow-box', '.eg-right-arrow-box'], 'click', (e) => {
                         e.preventDefault();
                         if (e.target.classList.contains("eg-dot")) {
                             removeActive(e.target.parentElement.querySelector(".eg-dot.active"));
