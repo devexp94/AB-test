@@ -57,19 +57,23 @@
             live(selector, event, callback, context);
         }
 
-
+        let allClosed = false;
+        let closeInterval;
         /* Variation Init */
         function init() {
             /* start your code here */
             let egCount = 0;
-            // order now button click
-            live('.c-button', "click", function () {
-                if (this.innerText.indexOf("Order Now") != -1) {
-                    waitForElement('#container-to-scroll > div:nth-child(2) > div > div:has(.l-wizard-section__container)', closeActiveSection, 50, 15000);
-                }
+           // order now button click
+            live('.c-button', "click", function() {
+                closeInterval = setInterval(() => {
+                    waitForElement('.l-wizard-section__icon', closeAll, 50, 15000);
+                    if (allClosed == true) {
+                        clearInterval(closeInterval);
+                    }
+                }, 1000);
             });
 
-            live('.c-wizard-summary__btn-edit', 'click', function () {
+            live(['.c-wizard-summary__btn-edit', '.l-wizard__body > div > div .l-wizard-section__header'], 'click', function() {
                 console.log(this.innerText.indexOf("Edit"));
                 let egTargetTxt = this.parentElement.firstElementChild.innerText;
                 if (egTargetTxt == 'Product') {
@@ -98,9 +102,10 @@
                     document.querySelector("#wizard-fold-type .l-wizard-section__container").classList.remove("eg-inactive-section");
                 } else if (egTargetTxt == 'Spot UV') {
                     document.querySelector("#wizard-spot-uv .l-wizard-section__container").classList.remove("eg-inactive-section");
+                } else if (egTargetTxt == 'White Ink') {
+                    document.querySelector("#wizard-white-ink .l-wizard-section__container").classList.remove("eg-inactive-section");
                 }
             });
-
 
 
         }
@@ -132,10 +137,13 @@
                             break;
                         }
                     }
+                } else {
+                    allClosed = true;
                 }
+                document.querySelector(".l-wizard-section:not(#wizard-white-ink):has(.l-wizard-section__icon:not(.is-active))").scrollIntoView({ behaviour: "smooth" });
+                waitForElement('#container-to-scroll > div:nth-child(2) > div > div:has(.l-wizard-section__container)', closeActiveSection, 50, 15000);
             });
-            document.querySelector(".l-wizard-section:not(#wizard-white-ink):has(.l-wizard-section__icon:not(.is-active))").scrollIntoView({ behaviour: "smooth" });
-            waitForElement('#container-to-scroll > div:nth-child(2) > div > div:has(.l-wizard-section__container)', closeActiveSection, 50, 15000);
+
         }
 
         /* Initialize variation */
