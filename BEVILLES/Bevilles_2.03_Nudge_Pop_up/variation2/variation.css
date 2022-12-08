@@ -190,7 +190,7 @@ ul.eg-items-lists {
 
 /*timer css*/
 .s001-banner-wrapper {
-    display: block;
+    display:none;
     padding-block: 16px;
 }
 

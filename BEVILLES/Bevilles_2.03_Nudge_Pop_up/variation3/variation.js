@@ -109,7 +109,7 @@
                     const url = 'https://www.bevilles.com.au/cart';
                     getData(url);
                 }
-            }, 150000);
+            }, 5000);
         }
 
 
@@ -189,10 +189,6 @@
                 checkFastDelevery();
             }, 2);
 
-            // running timer function after showing popup
-            timerfn();
-
-
         }
 
         live(['.eg-close-icon', '.eg-continue'], 'click', function() {
@@ -217,8 +213,12 @@
                     const response = xhr.responseText;
                     const ele = document.createElement("div");
                     ele.innerHTML = response;
-                    if(ele.querySelector(".fast-delivery")){
+                    if (ele.querySelector(".fast-delivery")) {
                         link.parentElement.querySelector(".eg-dispatch-link").style.display = "flex";
+
+                        // timer function will only show if there is at least one product which has fast dispatch
+                        document.querySelector(".s001-banner-wrapper").style.display = "block";
+                        timerfn();
                     }
                 } else {
                     console.log("Something went wrong");
@@ -241,12 +241,12 @@
                                                                 <!-- item image -->
                                                                 <div class="eg-show-item-img">
                                                                     <img src="${cItm.querySelector('.image img').src}" alt="item-in-popup" border="0">
-                                                                    <a class="close-box more-link eg-dispatch-link">Fast Dispatch</a>
                                                                 </div>
                                                             <!-- item name and price -->
                                                                 <div class="eg-show-item-details">
                                                                     <p class="eg-name">${cItm.querySelector("a[title]").textContent}</p>
                                                                     <p class="eg-price"><strong>${cItm.querySelector('.item-price').textContent}</strong></p>
+                                                                    <p class="eg-dispatch-link-wrapper"><a class="close-box more-link eg-dispatch-link">Fast Dispatch</a></p>
                                                                 </div>
                                                                 <a href="${cItm.querySelector('a[title]').href}" class="eg-item-link" hidden></a>
                                                             </div>

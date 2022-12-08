@@ -218,16 +218,13 @@
 
             checkFastDelevery();
 
-
-            // running timer function after showing popup
-            timerfn();
-
         }
 
         function checkFastDelevery() {
             let egLink = document.querySelector(".eg-item-link");
             console.log(egLink.href)
             getFastDeleveryInfo(egLink)
+
         }
 
         function getFastDeleveryInfo(link) {
@@ -239,6 +236,9 @@
                     ele.innerHTML = response;
                     if (ele.querySelector(".fast-delivery")) {
                         link.parentElement.querySelector(".eg-dispatch-link").style.display = "flex";
+                        // timer function will only show if there is at least one product which has fast dispatch
+                        document.querySelector(".s001-banner-wrapper").style.display = "block";
+                        timerfn();
                     }
                 } else {
                     console.log("Something went wrong");

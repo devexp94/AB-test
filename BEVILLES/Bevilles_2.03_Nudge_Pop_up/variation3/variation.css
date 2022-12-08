@@ -132,24 +132,23 @@ ul.eg-items-lists {
     background: #f9f9f9;
 }
 
+p.eg-dispatch-link-wrapper {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
 
-.eg-dispatch-link {
+p.eg-dispatch-link-wrapper a {
+    margin: 0;
     display: none;
-    background: #83afe0;
-    color: white;
+    background: #83afe0 !important;
+    color: white !important;
     padding: 5px 7px !important;
     justify-content: center;
     font-size: 16px;
-    margin: 8px 0 0 8px;
     width: fit-content;
 }
 
-.eg-dispatch-link:hover,
-.eg-dispatch-link:focus {
-    background: #b3cae8;
-    /*border: 1px solid #83afe0;*/
-    color: white;
-}
 
 .eg-dispatch-link::after {
     display: none;
@@ -191,7 +190,7 @@ ul.eg-items-lists {
 
 /*timer css*/
 .s001-banner-wrapper {
-    display: block;
+    display:none;
     padding-block: 16px;
 }
 
