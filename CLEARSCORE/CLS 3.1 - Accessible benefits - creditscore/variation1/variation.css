@@ -12,7 +12,7 @@ div[class ^= "featureLists"]{
 }
 
 .eg-overview-container {
-    padding: 0 30px 30px;
+    padding: 0 30px 14px;
     margin-top: 25px;
     margin-bottom: -8%;
 }
@@ -69,7 +69,8 @@ div[class ^= "featureLists"] {
 
 
 section[class ^= 'featureSection'] > div[class ^= 'ctaContainer'] > a {
-    width: 350px !important;
+    max-width: 350px !important;
+    width: 100% !important;
 }
 
 @media(max-width: 1099px) {
@@ -117,7 +118,7 @@ section[class ^= 'featureSection'] > div[class ^= 'ctaContainer'] > a {
     }
 
     .eg-overview-container {
-    padding: 0 30px 30px;
+    padding: 0 30px 10px;
     border-top: 2px solid #fff !important;
     }
     
@@ -144,21 +145,22 @@ section[class ^= 'featureSection'] > div[class ^= 'ctaContainer'] > a {
 }
 
     
-section[class ^= 'featureSection'] > div[class ^= 'ctaContainer'] > a {
-    width: 300px !important;
-    margin-left: 28px!important;
-}
-    
 div[class ^= "featureLists"] {
     background: #fff;
     border-bottom: 10px solid #fff!important;
 }
-   section[class ^= "featureSection"] {
-    margin-bottom: -10%;
 }
+
+.eg-overview-container + section[class ^= "featureSection"]{
+    padding-bottom: 35px;
+    align-items: center;
+    padding-right: 0 !important;
 }
 
 
-section[class ^= "featureSection"]{
-    margin-bottom: -28px;
+section[class ^= "featureSection"] > div[class ^= "ctaContainer"]{
+    width: 100%;
+    text-align: center;
 }
+
+
