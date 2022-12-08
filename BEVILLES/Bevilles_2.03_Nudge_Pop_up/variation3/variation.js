@@ -109,7 +109,7 @@
                     const url = 'https://www.bevilles.com.au/cart';
                     getData(url);
                 }
-            }, 5000);
+            }, 150000);
         }
 
 
