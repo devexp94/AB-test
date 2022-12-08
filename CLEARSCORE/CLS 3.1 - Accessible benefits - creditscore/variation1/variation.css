@@ -118,6 +118,7 @@ section[class ^= 'featureSection'] > div[class ^= 'ctaContainer'] > a {
 
     .eg-overview-container {
     padding: 0 30px 30px;
+    border-top: 2px solid #fff !important;
     }
     
     .eg-callouts {
@@ -152,4 +153,12 @@ div[class ^= "featureLists"] {
     background: #fff;
     border-bottom: 10px solid #fff!important;
 }
+   section[class ^= "featureSection"] {
+    margin-bottom: -10%;
+}
+}
+
+
+section[class ^= "featureSection"]{
+    margin-bottom: -28px;
 }
