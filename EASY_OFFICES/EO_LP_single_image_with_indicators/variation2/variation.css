@@ -86,7 +86,7 @@
     }
 
     .office-list-item-price {
-        bottom: 45px;
+        bottom: 45px !important;
     }
 
 
