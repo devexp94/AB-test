@@ -70,7 +70,9 @@
 
       live('#search-widget > div > div.search-widget-right-column > span > a', 'click', function () {
         // document.querySelector("div.DayPicker-Day.DayPicker-Day--selected").click();
-        waitForElement('div.DayPicker-Day.DayPicker-Day--selected',insertPrice , 50, 15000);
+        waitForElement('#moorings-holiduct-side > div > div:nth-child(4)',function(){
+          insertPrice(checkGap());
+        } , 50, 15000);
       });
 
 
@@ -87,7 +89,6 @@
     }
 
     function insertPrice(gap) {
-
       let eg_amount_ele = document.querySelector("#moorings-holiduct-side span.amount")
       let eg_amount = eg_amount_ele.textContent.replace(",","")
 

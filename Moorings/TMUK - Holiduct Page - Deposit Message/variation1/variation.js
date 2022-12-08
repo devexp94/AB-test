@@ -66,7 +66,12 @@
       live('.DayPicker-Week .DayPicker-Day:not(.DayPicker-Day--disabled)', 'click', function () {
         insertPrice(checkGap());
       });
-
+      live('#search-widget > div > div.search-widget-right-column > span > a', 'click', function () {
+        // document.querySelector("div.DayPicker-Day.DayPicker-Day--selected").click();
+        waitForElement('#moorings-holiduct-side > div > div:nth-child(4)',function(){
+          insertPrice(checkGap());
+        } , 50, 15000);
+      });
     }
 
     function checkGap() {
