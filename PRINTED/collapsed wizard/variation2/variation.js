@@ -59,18 +59,23 @@
 
         let allClosed = false;
         let closeInterval;
+        let egConfrmBtn = `<button class="c-sticky-nav__button c-button eg-confirm-btn">Confirm</button>`;
         /* Variation Init */
         function init() {
             /* start your code here */
             let egCount = 0;
             // order now button click
-            live('.c-button', "click", function() {
-                closeInterval = setInterval(() => {
-                    waitForElement('.l-wizard-section__icon', closeAll, 50, 15000);
-                    if (allClosed == true) {
-                        clearInterval(closeInterval);
-                    }
-                }, 1000);
+            live(['.c-button:not(.eg-confirm-btn)', '.eg-confirm-btn'], "click", function() {
+                if (!this.classList.contains("eg-confirm-btn")) {
+                    closeInterval = setInterval(() => {
+                        waitForElement('.l-wizard-section__icon', closeAll, 50, 15000);
+                        if (allClosed == true) {
+                            clearInterval(closeInterval);
+                        }
+                    }, 1000);
+                } else {
+                    this.parentElement.parentElement.querySelector(".l-wizard-section__header").click();
+                }
             });
 
             live(['.c-wizard-summary__btn-edit', '.l-wizard__body > div > div .l-wizard-section__header'], 'click', function() {
@@ -109,14 +114,16 @@
                 // btn open close logic
                 if (this.classList.contains("l-wizard-section__header")) {
                     this.parentElement.querySelector(".l-wizard-section__container").classList.toggle("eg-inactive-section");
-                    if(!this.parentElement.querySelector(".l-wizard-section__container eg-confirm-btn")){
-                        this.parentElement.querySelector(".l-wizard-section__container").insertAdjacentHTML("beforeend",`<button class="c-sticky-nav__button eg-confirm-btn">Confirm</button>`);
+                    if (!this.parentElement.querySelector(".l-wizard-section__container .eg-confirm-btn")) {
+                        this.parentElement.querySelector(".l-wizard-section__container").insertAdjacentHTML("beforeend", egConfrmBtn);
                     } else {
-                        this.parentElement.querySelector(".l-wizard-section__container eg-confirm-btn").remove();
+                        this.parentElement.querySelector(".l-wizard-section__container .eg-confirm-btn").remove();
                     }
                     this.parentElement.scrollIntoView({ behavior: "smooth" })
                 }
             });
+
+
 
         }
 
@@ -150,9 +157,13 @@
                 } else {
                     allClosed = true;
                 }
-                document.querySelector(".l-wizard-section:not(#wizard-white-ink):has(.l-wizard-section__icon:not(.is-active))").scrollIntoView({ behaviour: "smooth" });
-                waitForElement('#container-to-scroll > div:nth-child(2) > div > div:has(.l-wizard-section__container)', closeActiveSection, 50, 15000);
             });
+            document.querySelector(".l-wizard-section:has(.l-wizard-section__icon:not(.is-active))").scrollIntoView({ behaviour: "smooth" });
+            let egFirstInactive = document.querySelector(".l-wizard-section:has(.l-wizard-section__icon:not(.is-active)) .l-wizard-section__container")
+
+            if (!egFirstInactive.querySelector(".eg-confirm-btn")) {
+                egFirstInactive.insertAdjacentHTML("beforeend", egConfrmBtn)
+            };
 
         }
 
