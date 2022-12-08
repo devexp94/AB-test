@@ -19,7 +19,7 @@
     position: fixed;
 
     top: 141px;
-    
+
     right: 20px;
     z-index: 9999999;
 }
@@ -124,7 +124,7 @@ ul.eg-items-lists {
 }
 
 .eg-checkout a {
-    color:white;
+    color: white;
     font-size: 15px !important;
 }
 
@@ -190,7 +190,7 @@ p.eg-dispatch-link-wrapper a {
 
 /*timer css*/
 .s001-banner-wrapper {
-    display:none;
+    display: none;
     padding-block: 16px;
 }
 
@@ -246,6 +246,11 @@ span.whole-time-block span {
 
     .eg-show-item {
         display: flex;
-        padding: 0 10px 5px 10px;
+        padding: 20px 10px 20px 10px;
+    }
+
+    p.eg-dispatch-link-wrapper {
+        justify-content: flex-start;
+    }
     }
 }
