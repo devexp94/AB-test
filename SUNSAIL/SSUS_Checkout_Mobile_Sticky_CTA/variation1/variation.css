@@ -20,7 +20,7 @@
 
     .eg-sticky-wrapper {
         position: fixed;
-        bottom: 0;
+        bottom: -1px;
         z-index: 999;
         left: 0;
         right: 0;
