@@ -2,7 +2,7 @@
     position: relative;
 }
 
-.eg-name{
+.eg-name {
     max-width: 238px;
 }
 
@@ -238,6 +238,14 @@ span.whole-time-block span {
 
     .eg-popup-overlay {
         display: block;
+    }
+
+    .eg-dispatch-link-wrapper a {
+        font-size: 9px;
+    }
+
+    .eg-price {
+        gap: 8px;
     }
 
     .eg-popup-wrapper-outer {
