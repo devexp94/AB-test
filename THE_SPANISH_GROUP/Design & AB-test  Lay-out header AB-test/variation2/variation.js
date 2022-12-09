@@ -23,46 +23,48 @@
     }
 
     
-let eg_icon = ` <div class="eg_desc">
-<div class="eg_icon">
-   <div class="eg_img">
-    <img src="https://www.ooredoo.qa/web/wp-content/uploads/2022/10/Ooredoo-new-icon.svg">
-   </div>
+let eg_icon = `
+<div class="eg_desc">
+  <div class="eg_icon">
+     <div class="eg_img">
+     <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/47acad/external-send-basic-ui-elements-flatart-icons-outline-flatarticons.png"/>
+     </div>
 
-   <div class="eg_detail">
-       Secure SSL <br/> Encryption
-   </div>
-</div>
+     <div class="eg_detail">
+         Secure SSL <br/> Encryption
+     </div>
+  </div>
 
-<div class="eg_icon">
-   <div class="eg_img">
-    <img src="https://www.ooredoo.qa/web/wp-content/uploads/2022/10/Ooredoo-new-icon.svg">
-   </div>
+  <div class="eg_icon">
+     <div class="eg_img">
+     <img src="https://img.icons8.com/ios/50/47acad/lock--v1.png"/>
+     </div>
 
-   <div class="eg_detail">
-       Secure SSL <br/> Encryption
-   </div>
-</div>
+     <div class="eg_detail">
+         Secure SSL <br/> Encryption
+     </div>
+  </div>
 
-<div class="eg_icon">
-   <div class="eg_img">
-    <img src="https://www.ooredoo.qa/web/wp-content/uploads/2022/10/Ooredoo-new-icon.svg">
-   </div>
+  <div class="eg_icon">
+     <div class="eg_img">
+     <img src="https://img.icons8.com/ios/50/47acad/speech-bubble--v1.png"/>
+     </div>
 
-   <div class="eg_detail">
-       Secure SSL <br/> Encryption
-   </div>
-</div>
+     <div class="eg_detail">
+         Secure SSL <br/> Encryption
+     </div>
+  </div>
 
-<div class="eg_icon">
-   <div class="eg_img">
-    <img src="https://www.ooredoo.qa/web/wp-content/uploads/2022/10/Ooredoo-new-icon.svg">
-   </div>
+  <div class="eg_icon">
+     <div class="eg_img">
+     <img src="https://img.icons8.com/ios/50/47acad/security-ssl.png"/>
+     </div>
 
-   <div class="eg_detail">
-       Secure SSL <br/> Encryption
-   </div>
-</div>
+     <div class="eg_detail">
+         Secure SSL <br/> Encryption
+     </div>
+  </div>
+
 `
 
     let egHtml = `

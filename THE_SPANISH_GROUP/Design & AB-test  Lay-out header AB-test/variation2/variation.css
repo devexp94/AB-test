@@ -4,9 +4,20 @@
     display: none !important;
 }
 
+section.template_banner {
+    background-image: url("https://expogrowth.in/wp-content/uploads/2022/12/work_team_2-scaled.jpeg") !important;
+    background-size: cover;
+    background-position: center;
+    padding-block: 30px;
+}
+
+
 .new-container {
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.05);
     background-blend-mode: overlay !important;
+    height: 100%;
+    margin-bottom: -1.4%;
+    padding-bottom: 0 !important;
 }
 
 .fa-chevron-right:before {
@@ -79,7 +90,7 @@ a.eg_quote {
     font-family: Lato , sans-serif !important;
     font-weight: bolder !important;
     text-align: center;
-    padding: 10px 42px;
+    padding: 10px 35px;
     font-size: 17px !important;
 }
 
@@ -88,7 +99,7 @@ a.eg_quote {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    width: 22%;
+    /* width: 22%; */
 }
 
 form.efForm {
@@ -174,9 +185,3 @@ button.eg_submit {
     font-weight: 400 !important;
     padding: 13px;
 }
-
-
-
-
-
-/* <a href="https://ibb.co/CWmk6ky"><img src="https://i.ibb.co/52GNkN3/image.png" alt="image" border="0"></a> */
