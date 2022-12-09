@@ -4,20 +4,23 @@
      justify-content: space-around;
     align-items: center;
     background-position: center;
-    margin-top: -3.8%;
+    /* margin-top: -3.8%; */
     background-size: cover !important;
     background: url(https://static.bbus-static.com/shain/v1/dataservice/ResizeImage/$value?Format=%27png%27&Quality=90&Width=1500&Height=512&ImageUrl=355135.png&imageType=custom);
-}
-
-.eg_para,
-.eg_banner h3 {
-    padding-top: 3%;
 }
 
 .eg_bold p{
     font-weight: 600;
     display: inline-block;
     font-size: 24px;
+}
+
+.eg_img img {
+    width: 200px;
+}
+
+.eg_img {
+    margin-top: -67px;
 }
 
 .eg_bold {
@@ -33,16 +36,13 @@ p.eg_light {
 }
 
 .eg_banner h3{
-    font-weight: 600;
-    color: #fff;
+    font-weight: 900;
     color: #ddd;
     font-size: 16px;
 }
 
-  @media (min-width: 856px) and (max-width: 992px) {
-    .eg_banner {
-       margin-top: -4.4%;
-    }
+  @media (min-width: 856px) and (max-width: 1024px) {
+   
     p.eg_str {
         font-size: 18px;
     }
@@ -53,42 +53,49 @@ p.eg_light {
     }
     
     .eg_banner h3 {
-        font-size: 16px;
-    }
-    
-    .eg_para, .eg_banner h3 {
-        padding-top: 4.5%;
+        font-size: 15px;
     }
   }
 
-  @media (min-width: 769px) and (max-width: 855px) {
+  @media (min-width: 768px) and (max-width: 855px) {
     p.eg_str {
-        font-size: 16px;
+        font-size: 14px;
     }
     
     p.eg_light {
-        font-size: 15px;
+        font-size: 13px;
         padding-left: 6px;
     }
     
     .eg_banner h3 {
         font-size: 15px;
     }
-    .eg_para, .eg_banner h3 {
-        padding-top: 5%;
-    }
 
-    .eg_banner {
-        margin-top: -5.4%;
-     }
+    .eg_img img{
+        width: 180px;
+    }
+    .eg_para {
+        padding-left: 0;
+        margin-left: -14px;
+    }
     
   }
 
-    @media screen and (max-width: 768px) {
-        .eg_gift_wrap img {
-            width: 100%;
-            padding: 0;
-            display: block;
-            margin-top: -11%;
+    @media screen and (max-width: 767px) {
+        .eg_banner h3 {
+            display: none;
+        }
+
+        .eg_img{
+            margin-top: 0 !important;
+        }
+
+        .eg_bold p {
+            font-size: 19px;
+        }
+
+        p.eg_light {
+            font-size: 13px;
+            padding-left: 0;
         }
     }
