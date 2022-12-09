@@ -22,17 +22,17 @@
       }, delayTimeout);
     }
 
-        let eg_gift = `
-        <div class="eg_gift_wrap">
-        <a href="https://watch.britbox.com/us/gifting?utm_source=vanity&utm_medium=redirect&utm_campaign=gifting"><img src="https://i.ibb.co/6mDmrHY/imageMob.png" alt="imageMob" border="0"></a>    
-        </div>
-    `
+    //     let eg_gift = `
+    //     <div class="eg_gift_wrap">
+    //     <a href="https://watch.britbox.com/us/gifting?utm_source=vanity&utm_medium=redirect&utm_campaign=gifting"><img src="https://i.ibb.co/6mDmrHY/imageMob.png" alt="imageMob" border="0"></a>    
+    //     </div>
+    // `
 
     let eg_gift_des = `
     <a href="https://watch.britbox.com/us/gifting?utm_source=vanity&utm_medium=redirect&utm_campaign=gifting" class="eg_banner">
         
     <div class="eg_img">
-        <img src="https://i.ibb.co/wQHVxRq/gift-1.png" alt="gift-1" border="0">
+        <img src="https://static.bbus-static.com/shain/v1/dataservice/ResizeImage/$value?Format=%27png%27&Quality=90&Width=1000&Height=952&ImageUrl=355137.png&imageType=custom" alt="gift-1" border="0">
     </div>
 
     <div class="eg_para">
@@ -45,11 +45,9 @@
     /* Variation Init */
     function init() {
       /* start your code here */
-      if (window.innerWidth < 769) {
-        document.querySelector("body > main > div.Hero-notLogged").insertAdjacentHTML("afterend", eg_gift);
-      }else{
+        // document.querySelector("body > main > div.Hero-notLogged").insertAdjacentHTML("afterend", eg_gift);
+
         document.querySelector("body > main > div.Hero-notLogged").insertAdjacentHTML("afterend", eg_gift_des);
-      }
 
     }
 
