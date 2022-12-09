@@ -35,8 +35,9 @@
                 "Wonderlust",
                 "Teapot"
             ]
-            
+
             const egSearchBox = document.querySelector("#header  #header-search");
+            let egTime = 4000 // 4 seconds
 
             // logic for dynamic text
             const egInterval = setInterval(() => {
@@ -48,8 +49,17 @@
                 }
 
                 // changing search box text to Search (Dynamic Text)
-                egSearchBox.placeholder = `Search ( ${egTexts[egIndex]} )`;
-            }, 5000);
+                // stopping search box placeholder text scrolling when
+                // it is in focus
+                if (!egSearchBox.ariaExpanded) {
+                    egSearchBox.placeholder = `Search for ( ${egTexts[egIndex]} )`;
+                }
+                
+            },egTime);
+
+            egSearchBox.addEventListener("click",function(){
+                this.placeholder = "";
+            })
 
         }
 
