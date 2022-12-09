@@ -22,12 +22,6 @@
       }, delayTimeout);
     }
 
-    //     let eg_gift = `
-    //     <div class="eg_gift_wrap">
-    //     <a href="https://watch.britbox.com/us/gifting?utm_source=vanity&utm_medium=redirect&utm_campaign=gifting"><img src="https://i.ibb.co/6mDmrHY/imageMob.png" alt="imageMob" border="0"></a>    
-    //     </div>
-    // `
-
     let eg_gift_des = `
     <a href="https://watch.britbox.com/us/gifting?utm_source=vanity&utm_medium=redirect&utm_campaign=gifting" class="eg_banner">
         
@@ -40,13 +34,14 @@
     </div>
 
     <h3>BUY NOW!</h3>
+
+    <div class="eg-overlay"></div>
 </a>
 `
     /* Variation Init */
     function init() {
       /* start your code here */
-        // document.querySelector("body > main > div.Hero-notLogged").insertAdjacentHTML("afterend", eg_gift);
-
+  
         document.querySelector("body > main > div.Hero-notLogged").insertAdjacentHTML("afterend", eg_gift_des);
 
     }
