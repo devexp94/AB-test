@@ -1,3 +1,4 @@
+@media screen and (min-width: 1025px) {
 .eg_form input[type=text],
 .eg_form input[type=email] {
     width: 100% !important;
@@ -8,6 +9,10 @@
   border: 1px solid #ccc;
   border-radius: 25px;
   box-sizing: border-box;
+}
+
+html body .nfn__content  .nfn__language {
+    width: 36%!important;
 }
 
 
@@ -58,9 +63,9 @@ form.eg_form {
     margin: auto;
 }
 
-div.nfn__language:nth-child(3) {
+/* div.nfn__language:nth-child(3) {
     width: 175px !important;
-}
+} */
 
 
 .nfn__languages {
@@ -188,6 +193,8 @@ section.template_banner div.form_container_desktop > div > div.nfn__languages > 
 
 .nfn__label {
     font-size: 15px;
+}
+
 }
 
 /* <img src="https://img.icons8.com/material-sharp/192/1FB141/icons8-new-logo.png"/> */

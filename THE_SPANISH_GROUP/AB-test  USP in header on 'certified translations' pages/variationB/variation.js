@@ -63,6 +63,8 @@
 
       document.querySelector("#header-img > section.template_banner .row div").insertAdjacentHTML("afterend", html);
 
+      // document.querySelector("#header-img > section.template_banner > div.container > div > div.col-xs-12.col-sm-12.col-md-8.col-lg-7.p-xd-0 > div.mobile_banner_img").insertAdjacentHTML("afterbegin" , html)
+
       var eg_count = 0;
       var eg_count_INDEX = 0;
       var interval;
