@@ -96,7 +96,9 @@
         font-size: 16.8px;
         padding: 10px;
         text-align: center;
-        color: #000;
+        color: #000 !important;
         border-radius: 6px;
+        display: inline-block;
+        text-decoration: none !important;
     }
 }
