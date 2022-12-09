@@ -39,25 +39,19 @@
             const egSearchBox = document.querySelector("#header  #header-search");
             let egTime = 4000 // 4 seconds
 
-            // logic for dynamic text
-            const egInterval = setInterval(() => {
-
+            setInterval(function() {
                 if (egIndex < egTexts.length - 1) {
                     egIndex += 1;
                 } else {
                     egIndex = 0;
                 }
-
-                // changing search box text to Search (Dynamic Text)
-                // stopping search box placeholder text scrolling when
-                // it is in focus
-                if (!egSearchBox.ariaExpanded) {
+                // Check if the input field is in focus
+                if (document.activeElement !== egSearchBox) {
                     egSearchBox.placeholder = `Search for ( ${egTexts[egIndex]} )`;
                 }
-                
-            },egTime);
+            }, egTime); // 4 seconds
 
-            egSearchBox.addEventListener("click",function(){
+            egSearchBox.addEventListener("click", function() {
                 this.placeholder = "";
             })
 
