@@ -33,7 +33,7 @@
   <div class="eg_desc">
     <div class="eg_icon">
        <div class="eg_img">
-       <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/47acad/external-send-basic-ui-elements-flatart-icons-outline-flatarticons.png"/>
+       <img src="https://i.ibb.co/p366Mxv/send.png" alt="send" border="0">
        </div>
 
        <div class="eg_detail">
@@ -43,7 +43,7 @@
 
     <div class="eg_icon">
        <div class="eg_img">
-       <img src="https://img.icons8.com/ios/50/47acad/lock--v1.png"/>
+       <img src="https://i.ibb.co/yQ4kpnj/lock.png" alt="lock" border="0">
        </div>
 
        <div class="eg_detail">
@@ -53,7 +53,7 @@
 
     <div class="eg_icon">
        <div class="eg_img">
-       <img src="https://img.icons8.com/ios/50/47acad/speech-bubble--v1.png"/>
+       <img src="https://i.ibb.co/myxBpfk/message.png" alt="message" border="0">
        </div>
 
        <div class="eg_detail">
@@ -63,7 +63,7 @@
 
     <div class="eg_icon">
        <div class="eg_img">
-       <img src="https://img.icons8.com/ios/50/47acad/security-ssl.png"/>
+       <img src="https://i.ibb.co/J7qcqMm/ssl.png" alt="ssl" border="0">
        </div>
 
        <div class="eg_detail">
