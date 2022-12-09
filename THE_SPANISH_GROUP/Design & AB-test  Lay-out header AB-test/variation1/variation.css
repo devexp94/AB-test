@@ -24,7 +24,7 @@ section.template_banner {
     background-image: none !important;
     font-family: "Fontawesome" !important;
     padding-left: 16px;
-
+    width: 12px !important;
 }
 
 #nfnQuoteBtn.get_started_btn{
@@ -33,7 +33,16 @@ section.template_banner {
 
 .eg_form input[type=text]::placeholder, 
 .eg_form input[type=email]::placeholder {
-    font-size: 15px;
+    font-size: 17px;
+}
+
+#nfnQuoteBtn.get_started_btn {
+    margin-right: 25px !important;
+    font-size: 20px !important;
+}
+
+html body button#nfnOrderBtn {
+    font-size: 20px!important;
 }
 
 .nfn__trust {
