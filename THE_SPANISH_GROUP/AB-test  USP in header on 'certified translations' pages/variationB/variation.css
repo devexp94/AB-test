@@ -22,9 +22,26 @@
   }
 
   @media screen and (max-width: 768px){
-      .eg_tile{
-          display: none;
-      }
+    .eg_tile {
+      display: block;
+      /* min-height: 130px !important; */
+      background: rgba(255,255,255,.9)!important;
+      color: #5d5d5d;
+      margin-left: 2%;
+      text-align: left;
+      font-family: inherit;
+      width: 100%;
+      padding: 10px 5px;
+      margin-bottom: 10px;
+  }
+
+  #text{
+    font-size: 26px !important;
+  }
+
+  #eg_container{
+    border-bottom: 1px solid #ccc;
+  }
   }
   
   @media (min-width: 769px) and (max-width: 991px) {

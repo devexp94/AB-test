@@ -118,7 +118,7 @@ let eg_icon = `
 
 
     /* Initialize variation */
-    waitForElement('#header-img > section.template_banner > div.container ', init, 50, 15000);
+    waitForElement('#header-img > section.template_banner > div.new-container', init, 50, 15000);
   } catch (e) {
     if (debug) console.log(e, "error in Test" + variation_name);
   }

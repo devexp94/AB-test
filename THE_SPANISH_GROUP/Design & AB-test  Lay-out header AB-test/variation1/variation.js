@@ -83,13 +83,15 @@ let input = `<div id="nfnLanguageTo" class="nfn__language">
     /* Variation Init */
     function init() {
       /* start your code here */
+
+      if(window.innerWidth > 1024){
       document.querySelector("section.template_banner > div.container div.form_container_desktop div.nfn__languages").insertAdjacentHTML("afterend", egForm)
       document.querySelector("#nfnLanguageTo").insertAdjacentHTML("afterend", input);
 
       document.querySelector("#nfnQuoteBtn").innerText = "Get Free Quote"
       document.querySelector("#header-img > section.template_banner > div.container > div > div > div.form_container_desktop > div").insertAdjacentHTML("afterbegin",`<div class="eg_logo"><img src="https://thespanishgroup.org/translations/wp-content/themes/translations/uploads/1/4/8/2/14823004/1382166907.png"></div>
 `);
-
+      }
     }
 
     /* Initialize variation */
