@@ -1,9 +1,15 @@
 .eg-view-part-cta div {
     width: max-content;
+    display: inline-block;
+    position: relative;
 }
 
 .eg-view-part-cta div a {
     background: #3472bc;
     color: white !important;
     border-width: 0 !important;
+    text-decoration: none;
+    border-color: transparent;
+    padding: 3px 8px;
+    border-radius: 2px;
 }

@@ -34,11 +34,11 @@
 
                 if (!document.querySelector(".eg-view-part")) {
                     document.querySelector(".columns th:nth-child(6)").insertAdjacentHTML("afterend", `
-                                                                                    <th class="jsx-1766019851 jsx-3649838565 eg-view-part"></th>
+                                                                                    <th class="eg-view-part"></th>
                                                                                     `);
 
                     document.querySelector(".sorts-filters th:nth-child(6)").insertAdjacentHTML("afterend", `
-                                                                                        <th class="jsx-1766019851 jsx-3649838565 eg-view-part"></th>
+                                                                                        <th class="eg-view-part"></th>
                                                                                         `);
                 }
                 // adding view part btn
@@ -55,7 +55,7 @@
                 if (!document.querySelector('.eg-view-part-cta')) {
                     document.querySelectorAll("table > tbody > tr  > .spec:nth-child(6)").forEach(ele => {
                         ele.insertAdjacentHTML("afterend", `
-                                      <td class="jsx-3284562066 spec eg-view-part-cta"><div class="jsx-312275976 jsx-3946697165 market-availability"><a class="jsx-312275976 jsx-3946697165 number" href="${ele.parentElement.children[1].firstElementChild.href}">View Part</a></div></td>`);
+                                      <td class="eg-view-part-cta"><div><a href="${ele.parentElement.children[1].firstElementChild.href}">View Part</a></div></td>`);
                     });
                 } else {
                     clearInterval(egBtnInterval);
