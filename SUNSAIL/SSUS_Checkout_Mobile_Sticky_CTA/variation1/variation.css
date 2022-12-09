@@ -11,8 +11,8 @@
 
     html body #feedbackify #fbya #fbyb .fby-tab {
         bottom: 50% !important;
-        transform: rotate(90deg) !important;
-        transform-origin: bottom !important;
+        transform: rotate(-90deg) !important;
+        transform-origin: top !important;
         right: -16px !important;
     }
 
