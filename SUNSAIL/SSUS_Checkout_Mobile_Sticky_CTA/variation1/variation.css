@@ -1,0 +1,110 @@
+@media(max-width: 767px) {
+
+    /*hiding default ctas*/
+    .extras form>button[type=submit],
+    #tm-booking .passenger>form>.clearfix button[type=submit],
+    #tm-booking #checkoutForm input[type=submit] {
+        display: none;
+    }
+
+    /*hiding defalt ctas*/
+
+
+    body {
+        padding-bottom: 170px;
+    }
+
+    .eg-body {
+        position: relative;
+    }
+
+    .eg-sticky-wrapper {
+        position: fixed;
+        bottom: -1;
+        z-index: 999;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 26px 18px;
+        box-shadow: 0 0 8px rgb(0 0 0 / 25%);
+    }
+
+    .eg-cta-container>.btn {
+        font-weight: 600;
+        font-size: 17px;
+        color: #fff;
+        background-color: #d90021 !important;
+        border: none !important;
+        border-radius: 5px;
+        outline: none !important;
+    }
+
+    .eg-info {
+        font-size: 20px;
+        line-height: normal;
+        margin-bottom: 16px;
+        font-weight: 600;
+        background: #f5f4f2;
+        padding-block: 10px;
+        padding-inline: 16px;
+    }
+
+    .eg-info label {
+        font-weight: 700;
+        padding: 0;
+        margin: 0;
+        padding-right: 4px;
+        font-size: 18px;
+        color: black;
+    }
+
+    .eg-info .price {
+        margin: 0;
+        padding: 0;
+        text-align: right;
+        color: #d90021;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .eg-info .clearfix {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .eg-cta-container {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .eg-cta-container>* {
+        width: 100%;
+    }
+
+    .eg-cta-container .booking-share-quote div {
+        width: 100%;
+        background: white;
+        padding: 13px;
+        font-weight: 800;
+        font-size: 17px;
+        color: #d90021;
+        border-color: #d90021 !important;
+        border-radius: 5px;
+        line-height: normal;
+        border-width: 2px;
+    }
+
+    .eg-cta-container .booking-share-quote {
+        display: inline-flex;
+    }
+
+    .eg-cta-container .booking-share-quote div:hover {
+        background: #d90021;
+        color:
+            white;
+        font-weight: 700;
+    }
+
+}
