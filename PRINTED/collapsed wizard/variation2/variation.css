@@ -6,6 +6,9 @@ html {
     cursor: pointer;
 }
 
+#wizard-size > div.l-wizard-section__header > div.c-select.c-select--align-right > div {
+    margin-right: 70px;
+}
 
 .eg-inactive-section{
     max-height: 0;
@@ -21,7 +24,18 @@ html {
     position: relative;
 }
 
-.l-wizard__body > div > div .l-wizard-section__header::after {
+.eg-arrow {
+    position: absolute;
+    right: 12px;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eg-arrow::after {
     content: '';
     display: inline-block;
     width: 0.8rem;
@@ -29,11 +43,9 @@ html {
     border: solid #ED40A9;
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
-    position: absolute;
-    right: 12px;
-    top: 0px;
+    cursor: pointer;
 }
 
-.l-wizard__body > div > div:has(.l-wizard-section__container:not(.eg-inactive-section)) .l-wizard-section__header::after{
+.l-wizard__body > div > div:has(.l-wizard-section__container:not(.eg-inactive-section)) .eg-arrow::after{
     transform: rotate(227deg);
 }

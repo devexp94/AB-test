@@ -89,27 +89,33 @@
                         }
                     }, 1000);
                 } else {
-                    this.parentElement.parentElement.querySelector(".l-wizard-section__header").click();
+                    this.parentElement.parentElement.querySelector(".eg-arrow").click();
                 }
             });
 
-            live(['.c-wizard-summary__btn-edit', '.l-wizard__body > div > div .l-wizard-section__header'], 'click', function() {
+            live(['.c-wizard-summary__btn-edit', '.eg-arrow'], 'click', function() {
                 if (this.classList.contains("c-wizard-summary__btn-edit")) {
                     let egTargetTxt = this.parentElement.firstElementChild.innerText;
                     document.querySelector(`${egEditBtnTargets[egTargetTxt]} .l-wizard-section__header`).click();
                 }
 
                 // btn open close logic
-                if (this.classList.contains("l-wizard-section__header")) {
-                    this.parentElement.querySelector(".l-wizard-section__container").classList.toggle("eg-inactive-section");
-                    if (!this.parentElement.querySelector(".l-wizard-section__container .eg-confirm-btn")) {
-                        this.parentElement.querySelector(".l-wizard-section__container").insertAdjacentHTML("beforeend", egConfrmBtn);
+                if (this.classList.contains("eg-arrow")) {
+                    this.parentElement.parentElement.querySelector(".l-wizard-section__container").classList.toggle("eg-inactive-section");
+                    if (!this.parentElement.parentElement.querySelector(".l-wizard-section__container .eg-confirm-btn")) {
+                        this.parentElement.parentElement.querySelector(".l-wizard-section__container").insertAdjacentHTML("beforeend", egConfrmBtn);
                     } else {
-                        this.parentElement.querySelector(".l-wizard-section__container .eg-confirm-btn").remove();
+                        this.parentElement.parentElement.querySelector(".l-wizard-section__container .eg-confirm-btn").remove();
                     }
-                    this.parentElement.scrollIntoView({ behavior: "smooth" })
+                    this.parentElement.parentElement.scrollIntoView({ behavior: "smooth" })
                 }
             });
+
+            waitForElement('.l-wizard-section__header', function() {
+                document.querySelectorAll(".l-wizard-section__header").forEach(item => {
+                    item.insertAdjacentHTML("beforeend", `<span class="eg-arrow"></span>`);
+                })
+            }, 50, 15000);
 
 
 
