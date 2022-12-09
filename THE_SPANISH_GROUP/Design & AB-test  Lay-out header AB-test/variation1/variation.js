@@ -74,7 +74,7 @@
 </div>`
 
   
-let input = `<div id="nfnLanguageTo" class="nfn__language">
+let input = `<div id="nfnLanguageTo" class="nfn__language eg_count">
 <div class="nfn__label">Number of pages</div>
 <input type="number" id="quantity" min="1">
 </div>`
