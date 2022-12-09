@@ -9,6 +9,12 @@
 
     /*hiding defalt ctas*/
 
+    html body #feedbackify #fbya #fbyb .fby-tab {
+        bottom: 50% !important;
+        transform: rotate(90deg) !important;
+        transform-origin: bottom !important;
+        right: -16px !important;
+    }
 
     body {
         padding-bottom: 170px;
