@@ -12,9 +12,10 @@
 
 
 section.template_banner {
-    background-image: url("https://i.ibb.co/52GNkN3/image.png") !important;
+    background-image: url("https://expogrowth.in/wp-content/uploads/2022/12/image-49.png") !important;
     background-size: cover;
     background-position: center;
+    padding-block: 30px;
 }
 
 .nfn__options-title:after {
@@ -46,6 +47,10 @@ section.template_banner {
 form.eg_form {
     width: 90% !important;
     margin: auto;
+}
+
+div.nfn__language:nth-child(3) {
+    width: 175px !important;
 }
 
 
@@ -87,6 +92,7 @@ html body #nfnLanguageTo .nfn__options-title, html body #nfnLanguageFrom .nfn__o
     border: 0;
 }
 
+
 button#nfnQuoteBtn,
 button#nfnOrderBtn{
     border-radius: 30px;
@@ -95,11 +101,11 @@ button#nfnOrderBtn{
 .nfn__content {
     position: relative;
     border-radius: 35px !important;
-    box-shadow: inset 0px 0px 0px 4px #547ba4 !important;
+    box-shadow: inset 0px 0px 0px 3px #47acad !important;
 }
 
 #header-img > section.template_banner > div.container > div > div > div.form_container_desktop > div{
-    border: 0 !important;
+    border: 3px solid rgb(43 71 99 / 80%) !important;
 }
 
 .nfn__actions {
@@ -130,12 +136,14 @@ button#nfnOrderBtn{
 
 
 .eg_img img {
-    width: 25px;
+    width: 22px;
+    display: block;
 }
 
 .eg_detail {
     font-size: 11px;
     line-height: 1;
+    font-weight: 600;
     color: #fff;
     padding: 10px 4px;
 }
@@ -146,11 +154,11 @@ section.template_banner > div.container div.form_container_desktop > div {
 
 html body div.form_container_desktop > div > div.nfn__title {
     color: #fff !important;
-    margin-top: 25px;
-    font-size: 28px !important;
+    margin-top: 27px;
+    font-size: 30px !important;
 }
 
-section.template_banner > div.container > div > div > div.form_container_desktop > div > div.nfn__languages > div  .nfn__label{
+section.template_banner div.form_container_desktop > div > div.nfn__languages > div  .nfn__label{
     color: #fff !important;
 }
 
