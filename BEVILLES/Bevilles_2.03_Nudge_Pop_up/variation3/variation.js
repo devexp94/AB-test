@@ -109,7 +109,7 @@
                     const url = 'https://www.bevilles.com.au/cart';
                     getData(url);
                 }
-            }, 150000);
+            }, 5000);
         }
 
 
@@ -245,8 +245,10 @@
                                                             <!-- item name and price -->
                                                                 <div class="eg-show-item-details">
                                                                     <p class="eg-name">${cItm.querySelector("a[title]").textContent}</p>
-                                                                    <p class="eg-price"><strong>${cItm.querySelector('.item-price').textContent}</strong></p>
-                                                                    <p class="eg-dispatch-link-wrapper"><a class="close-box more-link eg-dispatch-link">Fast Dispatch</a></p>
+                                                                    <p class="eg-price"><strong>${cItm.querySelector('.item-price').textContent}</strong>
+                                                                        <span class="eg-dispatch-link-wrapper"><a class="close-box more-link eg-dispatch-link">Fast Dispatch</a></span>
+                                                                    </p>
+                                                                    
                                                                 </div>
                                                                 <a href="${cItm.querySelector('a[title]').href}" class="eg-item-link" hidden></a>
                                                             </div>
