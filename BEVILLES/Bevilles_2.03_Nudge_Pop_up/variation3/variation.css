@@ -128,6 +128,7 @@ ul.eg-items-lists {
 .eg-checkout a {
     color: white;
     font-size: 15px !important;
+    display: block;
 }
 
 .eg-fast-dispatch {
