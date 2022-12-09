@@ -1,4 +1,4 @@
-(function () {
+(function() {
     try {
         /* main variables */
         var debug = 0;
@@ -7,7 +7,7 @@
         /* all Pure helper functions */
 
         function waitForElement(selector, trigger, delayInterval, delayTimeout) {
-            var interval = setInterval(function () {
+            var interval = setInterval(function() {
                 if (
                     document &&
                     document.querySelector(selector) &&
@@ -17,7 +17,7 @@
                     trigger();
                 }
             }, delayInterval);
-            setTimeout(function () {
+            setTimeout(function() {
                 clearInterval(interval);
             }, delayTimeout);
         }
@@ -31,13 +31,13 @@
             }
             // matches polyfill
             this.Element &&
-                (function (ElementPrototype) {
+                (function(ElementPrototype) {
                     ElementPrototype.matches =
                         ElementPrototype.matches ||
                         ElementPrototype.matchesSelector ||
                         ElementPrototype.webkitMatchesSelector ||
                         ElementPrototype.msMatchesSelector ||
-                        function (selector) {
+                        function(selector) {
                             var node = this,
                                 nodes = (node.parentNode || node.document).querySelectorAll(selector),
                                 i = -1;
@@ -47,7 +47,7 @@
                 })(Element.prototype);
             // live binding helper using matchesSelector
             function live(selector, event, callback, context) {
-                addEvent(context || document, event, function (e) {
+                addEvent(context || document, event, function(e) {
                     var found,
                         el = e.target || e.srcElement;
                     while (el && el.matches && el !== context && !(found = el.matches(selector))) el = el.parentElement;
@@ -57,13 +57,30 @@
             live(selector, event, callback, context);
         }
 
+        let egEditBtnTargets = {
+            'Product': '#wizard-product',
+            'Type': '#wizard-type',
+            'Size': '#wizard-size',
+            'Orientation': '#wizard-orientation',
+            'Printed sides': '#wizard-printed-sides',
+            'Paper': '#wizard-paper',
+            'Paper weight': '#wizard-paper',
+            'Quantity': '#wizard-quantity',
+            'Lamination': '#section-extras',
+            'Corners': '#section-extras',
+            'Perforation': '#section-extras',
+            'Fold type': '#wizard-fold-type',
+            'Spot UV': '#wizard-spot-uv',
+            'White Ink': '#wizard-white-ink'
+        }
+
         let allClosed = false;
         let closeInterval;
         /* Variation Init */
         function init() {
             /* start your code here */
             let egCount = 0;
-           // order now button click
+            // order now button click
             live('.c-button', "click", function() {
                 closeInterval = setInterval(() => {
                     waitForElement('.l-wizard-section__icon', closeAll, 50, 15000);
@@ -73,37 +90,10 @@
                 }, 1000);
             });
 
-            live(['.c-wizard-summary__btn-edit', '.l-wizard__body > div > div .l-wizard-section__header'], 'click', function() {
-                console.log(this.innerText.indexOf("Edit"));
-                let egTargetTxt = this.parentElement.firstElementChild.innerText;
-                if (egTargetTxt == 'Product') {
-                    document.querySelector("#wizard-product .l-wizard-section__container").classList.remove("eg-inactive-section");
-                } else if (egTargetTxt == 'Type') {
-                    document.querySelector("#wizard-type .l-wizard-section__container").classList.remove("eg-inactive-section");
-                } else if (egTargetTxt == 'Size') {
-                    document.querySelector("#wizard-size .l-wizard-section__container").classList.remove("eg-inactive-section");
-                } else if (egTargetTxt == 'Orientation') {
-                    document.querySelector("#wizard-orientation .l-wizard-section__container").classList.remove("eg-inactive-section");
-                } else if (egTargetTxt == 'Printed sides') {
-                    document.querySelector("#wizard-printed-sides .l-wizard-section__container").classList.remove("eg-inactive-section");
-                } else if (egTargetTxt == 'Paper') {
-                    document.querySelector("#wizard-paper .l-wizard-section__container").classList.remove("eg-inactive-section");
-                } else if (egTargetTxt == 'Paper weight') {
-                    document.querySelector("#wizard-quantity .l-wizard-section__container").classList.remove("eg-inactive-section");
-                } else if (egTargetTxt == 'Quantity') {
-                    document.querySelector("#section-extras .l-wizard-section__container").classList.remove("eg-inactive-section");
-                } else if (egTargetTxt == 'Lamination') {
-                    document.querySelector("#section-extras .l-wizard-section__container").classList.remove("eg-inactive-section");
-                } else if (egTargetTxt == 'Corners') {
-                    document.querySelector("#section-extras .l-wizard-section__container").classList.remove("eg-inactive-section");
-                } else if (egTargetTxt == 'Perforation') {
-                    document.querySelector("#section-extras .l-wizard-section__container").classList.remove("eg-inactive-section");
-                } else if (egTargetTxt == 'Fold type') {
-                    document.querySelector("#wizard-fold-type .l-wizard-section__container").classList.remove("eg-inactive-section");
-                } else if (egTargetTxt == 'Spot UV') {
-                    document.querySelector("#wizard-spot-uv .l-wizard-section__container").classList.remove("eg-inactive-section");
-                } else if (egTargetTxt == 'White Ink') {
-                    document.querySelector("#wizard-white-ink .l-wizard-section__container").classList.remove("eg-inactive-section");
+            live(['.c-wizard-summary__btn-edit'], 'click', function() {
+                if (this.classList.contains("c-wizard-summary__btn-edit")) {
+                    let egTargetTxt = this.parentElement.firstElementChild.innerText;
+                    document.querySelector(`${egEditBtnTargets[egTargetTxt]} .l-wizard-section__container`).classList.remove("eg-inactive-section");
                 }
             });
 
@@ -114,8 +104,8 @@
         // check api call and close tab accordinglly
         function closeActiveSection() {
             const send = XMLHttpRequest.prototype.send
-            XMLHttpRequest.prototype.send = function () {
-                this.addEventListener('load', function () {
+            XMLHttpRequest.prototype.send = function() {
+                this.addEventListener('load', function() {
                     // checking api is called for product
                     console.log(this.responseURL.indexOf("wizard"))
                     if (this.responseURL.indexOf("/api/wizard/") != -1) {

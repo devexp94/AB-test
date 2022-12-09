@@ -56,7 +56,22 @@
             }
             live(selector, event, callback, context);
         }
-
+        let egEditBtnTargets = {
+            'Product': '#wizard-product',
+            'Type': '#wizard-type',
+            'Size': '#wizard-size',
+            'Orientation': '#wizard-orientation',
+            'Printed sides': '#wizard-printed-sides',
+            'Paper': '#wizard-paper',
+            'Paper weight': '#wizard-paper',
+            'Quantity': '#wizard-quantity',
+            'Lamination': '#section-extras',
+            'Corners': '#section-extras',
+            'Perforation': '#section-extras',
+            'Fold type': '#wizard-fold-type',
+            'Spot UV': '#wizard-spot-uv',
+            'White Ink': '#wizard-white-ink'
+        }
         let allClosed = false;
         let closeInterval;
         let egConfrmBtn = `<button class="c-sticky-nav__button c-button eg-confirm-btn">Confirm</button>`;
@@ -79,36 +94,9 @@
             });
 
             live(['.c-wizard-summary__btn-edit', '.l-wizard__body > div > div .l-wizard-section__header'], 'click', function() {
-                console.log(this.innerText.indexOf("Edit"));
-                let egTargetTxt = this.parentElement.firstElementChild.innerText;
-                if (egTargetTxt == 'Product') {
-                    document.querySelector("#wizard-product .l-wizard-section__container").classList.remove("eg-inactive-section");
-                } else if (egTargetTxt == 'Type') {
-                    document.querySelector("#wizard-type .l-wizard-section__container").classList.remove("eg-inactive-section");
-                } else if (egTargetTxt == 'Size') {
-                    document.querySelector("#wizard-size .l-wizard-section__container").classList.remove("eg-inactive-section");
-                } else if (egTargetTxt == 'Orientation') {
-                    document.querySelector("#wizard-orientation .l-wizard-section__container").classList.remove("eg-inactive-section");
-                } else if (egTargetTxt == 'Printed sides') {
-                    document.querySelector("#wizard-printed-sides .l-wizard-section__container").classList.remove("eg-inactive-section");
-                } else if (egTargetTxt == 'Paper') {
-                    document.querySelector("#wizard-paper .l-wizard-section__container").classList.remove("eg-inactive-section");
-                } else if (egTargetTxt == 'Paper weight') {
-                    document.querySelector("#wizard-quantity .l-wizard-section__container").classList.remove("eg-inactive-section");
-                } else if (egTargetTxt == 'Quantity') {
-                    document.querySelector("#section-extras .l-wizard-section__container").classList.remove("eg-inactive-section");
-                } else if (egTargetTxt == 'Lamination') {
-                    document.querySelector("#section-extras .l-wizard-section__container").classList.remove("eg-inactive-section");
-                } else if (egTargetTxt == 'Corners') {
-                    document.querySelector("#section-extras .l-wizard-section__container").classList.remove("eg-inactive-section");
-                } else if (egTargetTxt == 'Perforation') {
-                    document.querySelector("#section-extras .l-wizard-section__container").classList.remove("eg-inactive-section");
-                } else if (egTargetTxt == 'Fold type') {
-                    document.querySelector("#wizard-fold-type .l-wizard-section__container").classList.remove("eg-inactive-section");
-                } else if (egTargetTxt == 'Spot UV') {
-                    document.querySelector("#wizard-spot-uv .l-wizard-section__container").classList.remove("eg-inactive-section");
-                } else if (egTargetTxt == 'White Ink') {
-                    document.querySelector("#wizard-white-ink .l-wizard-section__container").classList.remove("eg-inactive-section");
+                if (this.classList.contains("c-wizard-summary__btn-edit")) {
+                    let egTargetTxt = this.parentElement.firstElementChild.innerText;
+                    document.querySelector(`${egEditBtnTargets[egTargetTxt]} .l-wizard-section__header`).click();
                 }
 
                 // btn open close logic
