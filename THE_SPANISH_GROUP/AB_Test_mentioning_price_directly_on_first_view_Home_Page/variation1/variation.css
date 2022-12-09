@@ -21,7 +21,7 @@
     align-items: center;
     color: white;
     font-size: 17px;
-    gap: 4px;
+    /*gap: 4px;*/
     position: absolute;
     top: 10px;
     left: 40%;
@@ -36,8 +36,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgb(41 44 131/15%);
-    box-shadow: 0 0 30px rgb(41 44 131/30%);
+    box-shadow: 0 0 50px rgb(41 44 131 / 56%);
+    background: rgb(41 44 131 / 24%);
 }
 
 .eg-pricing>div {
@@ -49,12 +49,14 @@
     padding-inline: 20px;
     padding-block: 5px;
     rotate: 8deg;
+    text-transform: lowercase;
 }
 
 .eg-per-word {
     rotate: 8deg;
-    padding: 0 20px 0 0px;
+    padding: 0 14px 0 0px;
     font-weight: bold;
+    text-transform: lowercase;
 }
 
 .eg-per-page>strong {
@@ -68,7 +70,7 @@
     }
 
     .eg-per-word {
-        padding: 0 8px 0 0px;
+        padding: 0 5px 0 0px;
     }
 }
 
@@ -97,11 +99,20 @@
         gap: 0;
     }
 
+    .eg-per-page {
+        padding-inline: 6px;
+        padding-block: 1px;
+    }
+
     .eg-per-page>strong {
         font-size: 10px;
     }
 
     header#header-img section.template_banner>.container {
         margin-top: 30px;
+    }
+
+    .eg-pricing::before {
+        box-shadow: 0 0 50px rgb(41 44 131 / 80%);
     }
 }
