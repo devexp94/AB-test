@@ -11,10 +11,13 @@
   box-sizing: border-box;
 }
 
-html body .nfn__content  .nfn__language {
+html body .nfn__content  .nfn__language:not(.eg_count) {
     width: 36%!important;
 }
 
+.form_container_desktop .nfn__languages .nfn__language.eg_count{
+    width: 25% !important;
+}
 
 section.template_banner {
     background-image: url("https://expogrowth.in/wp-content/uploads/2022/12/image-49.png") !important;
