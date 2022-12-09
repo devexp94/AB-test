@@ -1,0 +1,66 @@
+/*==== breadcrumbs ===*/
+.breadcrumbs {
+    display: none;
+}
+
+/*====== Header =====*/
+html body #header {
+    border-bottom: none;
+    margin-bottom: 36px;
+}
+
+/*=== hiding promisies ====*/
+section:has(.promises-content) {
+    display: none;
+}
+
+/*=== hiding coustormers reveiws ===*/
+html body .customer-reviews {
+    display: none;
+}
+
+/*==== hiding design your office section ====*/
+#design-your-office.office-info-item {
+    display: none;
+}
+
+/*=== what will it cost ====*/
+.office-info .office-info-right .office-info-item:nth-child(3) {
+    display: none;
+}
+
+@media(min-width:1025px) {
+
+    /*==== office info section ====*/
+
+    .office-info .office-info-left {
+        order: 1;
+    }
+
+    html body .office-info {
+        grid-template-columns: 1fr 344px;
+    }
+
+
+    /*=== big footer above banner cta === */
+    .cta.desktop {
+        display: none;
+    }
+
+}
+
+@media(max-width: 1024px) {
+    html body .get-quote-form-cta {
+        order: 1;
+    }
+}
+
+@media(max-width:500px) {
+    html body .get-quote-form-cta {
+        order: -1;
+    }
+
+    .customers.phone {
+        display: none;
+    }
+}
