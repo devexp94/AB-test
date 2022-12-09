@@ -34,13 +34,9 @@
 
         function egChangePreselected() {
             if (window.location.search.indexOf("egBilling") != -1) {
-                [...document.querySelector("#nbsStep2 .nbs__options-list").children].forEach(item => {
-                    if (item.classList.contains('active')) {
-                        item.classList.remove('active');
-                    } else {
-                        item.classList.add('active');
-                    }
-                });
+                setTimeout(()=>{
+                    document.querySelector('#nbsStep2 .nbs__options-list li:last-of-type').click();
+                },1000);
             }
         }
 
@@ -48,7 +44,7 @@
         if (window.location.href.indexOf("https://thespanishgroup.org/translations") != -1) {
             waitForElement('.nfn__content .nfn__trust', egInsertBtn, 50, 15000);
         } else if (window.location.href.indexOf("https://thespanishgroup.org/billing") != -1) {
-            waitForElement('#nbsStep2 .nbs__options-list', egChangePreselected, 50, 15000);
+            waitForElement('#nbsStep2 .nbs__options-list li:last-of-type', egChangePreselected, 50, 15000);
         }
     } catch (e) {
         if (debug) console.log(e, "error in Test" + variation_name);

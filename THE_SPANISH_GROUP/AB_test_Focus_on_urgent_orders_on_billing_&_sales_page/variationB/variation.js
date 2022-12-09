@@ -28,20 +28,16 @@
             /* start your code here */
 
             // changing preselected button
-            [...document.querySelector("#nbsStep2 .nbs__options-list").children].forEach(item => {
-                if (item.classList.contains('active')) {
-                    item.classList.remove('active');
-                } else {
-                    item.classList.add('active');
-                }
-            });
+            setTimeout(()=>{
+                document.querySelector('#nbsStep2 .nbs__options-list li:last-of-type').click();
+            },1000)
 
         }
 
 
 
         /* Initialize variation */
-        waitForElement('#nbsStep2 .nbs__options-list', init, 50, 15000);
+        waitForElement('#nbsStep2 .nbs__options-list li:last-of-type', init, 50, 15000);
     } catch (e) {
         if (debug) console.log(e, "error in Test" + variation_name);
     }
