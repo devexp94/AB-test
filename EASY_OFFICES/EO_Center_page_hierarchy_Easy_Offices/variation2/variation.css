@@ -96,4 +96,8 @@ html body .facilities-intro-title {
     .customers.phone {
         display: none;
     }
+
+    html body .office-info-right {
+        padding-bottom: 0 !important;
+    }
 }

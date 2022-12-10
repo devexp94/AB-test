@@ -32,6 +32,9 @@
 
                 // moving facilities section
                 document.querySelector(".office-info .office-info-right .office-info-item:nth-child(5)").insertAdjacentElement("afterend", document.querySelector(".facilities"));
+            } else if (window.innerWidth < 1025){
+                // moving facilities section
+                document.querySelector(".office-info .office-info-right .office-info-item:nth-child(5)").insertAdjacentElement("beforebegin", document.querySelector(".facilities"));                
             }
         }
 

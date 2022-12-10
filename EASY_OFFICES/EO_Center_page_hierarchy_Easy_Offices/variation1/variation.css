@@ -35,6 +35,14 @@ html body .footer .footer-instant-part-title {
 }
 
 @media(min-width:1025px) {
+    html body .office-info {
+         grid-template-columns:344px 1fr !important; 
+    }
+
+    html body .office-info .office-info-right {
+        grid-row: unset !important;
+    }
+
     html body .related-offices {
         padding-bottom: 80px;
     }
