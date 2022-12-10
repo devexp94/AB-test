@@ -43,6 +43,16 @@ html body .footer .footer-instant-part-title {
         padding-bottom: 0px;
     }
 
+    /*==== office info section ====*/
+
+    .office-info .office-info-left {
+        order: 1;
+    }
+
+    html body .office-info {
+        grid-template-columns: 1fr 344px;
+    }
+
 
     /*=== big footer above banner cta === */
     .cta.desktop {
