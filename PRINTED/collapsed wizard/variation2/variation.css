@@ -26,8 +26,8 @@ html {
 
 .eg-arrow {
     position: absolute;
-    right: 12px;
-    top: 0px;
+    right: -26px;
+    top: -32px;
     width: 40px;
     height: 40px;
     display: flex;
@@ -46,6 +46,30 @@ html {
     cursor: pointer;
 }
 
-.l-wizard-section__header:has(~.l-wizard-section__container .eg-confirm-btn) .eg-arrow::after{
-    transform: rotate(227deg);
+.l-wizard-section__header:has(~.l-wizard-section__container:not(.eg-inactive-section)) .eg-arrow::after{
+ transform:rotate(227deg);
+}
+
+.eg-confirm-btn{
+    position: relative;
+    display: inline-block;
+    padding: 11px 20px;
+    border: 1px solid #ED40A9;
+    border-radius: 20px;
+    background: #ED40A9;
+    -webkit-appearance: none;
+    font-size: 13px!important;
+    line-height: 13px!important;
+    font-family: caustenRoundedMedium,Arial,sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+.eg-confirm-btn:hover:not([disabled]) {
+    background: #eb5cc1;
+    border-color: #eb5cc1;
 }
