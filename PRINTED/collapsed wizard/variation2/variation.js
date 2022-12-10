@@ -116,7 +116,9 @@
             if (!this.classList.contains("eg-confirm-btn")) {
                 waitForElement('html body .l-wizard__body', init, 50, 15000);
             } else {
-                this.ariaChecked = true;
+                if (this.parentElement.parentElement.querySelector(".is-active")) {
+                    this.ariaChecked = true;
+                }
                 waitForElement('.l-wizard-section__icon', closeAll, 50, 15000);
             }
         });
@@ -145,9 +147,9 @@
                     console.log(this.responseURL.indexOf("wizard"))
                     if (this.responseURL.indexOf("/api/wizard/") != -1) {
                         allClosed = false;
-                        setTimeout(()=>{
+                        setTimeout(() => {
                             waitForElement('html body .l-wizard__body', init, 50, 15000);
-                        },3000);
+                        }, 3000);
                     }
                 })
                 return send.apply(this, arguments)
