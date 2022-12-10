@@ -81,11 +81,21 @@
             let egCount = 0;
             // order now button click
             live(['.c-button:not(.eg-confirm-btn)', '.eg-confirm-btn'], "click", function() {
+                // console.log("clicked!!!")
                 if (!this.classList.contains("eg-confirm-btn")) {
                     closeInterval = setInterval(() => {
-                        waitForElement('.l-wizard-section__icon', closeAll, 50, 15000);
-                        if (allClosed == true) {
+                        if (!allClosed) {
+                            waitForElement('.l-wizard-section__header', function() {
+                                document.querySelectorAll(".l-wizard-section__header").forEach(item => {
+                                    if (!item.querySelector(".eg-arrow")) {
+                                        item.insertAdjacentHTML("beforeend", `<span class="eg-arrow"></span>`);
+                                    }
+                                })
+                            }, 50, 15000);
+                            waitForElement('.l-wizard-section__icon', closeAll, 50, 15000);
+                        } else {
                             clearInterval(closeInterval);
+                            closeInterval = null;
                         }
                     }, 1000);
                 } else {
@@ -96,7 +106,7 @@
             live(['.c-wizard-summary__btn-edit', '.eg-arrow'], 'click', function() {
                 if (this.classList.contains("c-wizard-summary__btn-edit")) {
                     let egTargetTxt = this.parentElement.firstElementChild.innerText;
-                    document.querySelector(`${egEditBtnTargets[egTargetTxt]} .l-wizard-section__header`).click();
+                    document.querySelector(`${egEditBtnTargets[egTargetTxt]} .eg-arrow`).click();
                 }
 
                 // btn open close logic
@@ -110,13 +120,6 @@
                     this.parentElement.parentElement.scrollIntoView({ behavior: "smooth" })
                 }
             });
-
-            waitForElement('.l-wizard-section__header', function() {
-                document.querySelectorAll(".l-wizard-section__header").forEach(item => {
-                    item.insertAdjacentHTML("beforeend", `<span class="eg-arrow"></span>`);
-                })
-            }, 50, 15000);
-
 
 
         }

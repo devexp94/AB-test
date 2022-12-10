@@ -83,9 +83,11 @@
             // order now button click
             live('.c-button', "click", function() {
                 closeInterval = setInterval(() => {
-                    waitForElement('.l-wizard-section__icon', closeAll, 50, 15000);
-                    if (allClosed == true) {
+                    if (!allClosed) {
+                        waitForElement('.l-wizard-section__icon', closeAll, 50, 15000);
+                    } else {
                         clearInterval(closeInterval);
+                        closeInterval = null;
                     }
                 }, 1000);
             });

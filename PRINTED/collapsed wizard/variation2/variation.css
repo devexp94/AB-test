@@ -46,6 +46,6 @@ html {
     cursor: pointer;
 }
 
-.l-wizard__body > div > div:has(.l-wizard-section__container:not(.eg-inactive-section)) .eg-arrow::after{
+.l-wizard-section__header:has(~.l-wizard-section__container .eg-confirm-btn) .eg-arrow::after{
     transform: rotate(227deg);
 }
