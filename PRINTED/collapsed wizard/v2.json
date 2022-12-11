@@ -4,6 +4,7 @@
 		"./variation2/variation.js"
 	],
 	"urls": [
-		"https://www.printed.com/products/"
+		"https://www.printed.com/products/",
+		"https://www.printed.com/collections/education"
 	]
 }
