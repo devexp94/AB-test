@@ -113,10 +113,10 @@
         // expand close logic
         live(['.c-wizard-summary__btn-edit', '.eg-arrow'], 'click', function() {
             if (this.classList.contains("c-wizard-summary__btn-edit")) {
-                let egTargetTxt = this.parentElement.firstElementChild.innerText.toUpperCase();
+                let egTargetTxt = this.parentElement.firstElementChild.innerText.toUpperCase().split(" ").shift();
                 // searching section for this text
                 document.querySelectorAll(".l-wizard-section__header .l-wizard-section__title").forEach(title => {
-                    if (title.innerText.toUpperCase() == egTargetTxt) {
+                    if (title.innerText.toUpperCase().indexOf(egTargetTxt) != -1) {
 
                         //========== EDIT BUTTON CLICK LOGIC ========//
 
