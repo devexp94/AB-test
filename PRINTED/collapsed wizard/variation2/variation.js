@@ -57,8 +57,8 @@
             live(selector, event, callback, context);
         }
 
-        
-        
+        let egStillOpen = [];
+
         let allClosed = false;
         let closeInterval;
         let egConfrmBtn = `<button class="eg-confirm-btn" aria-checked="false">Confirm</button>`;
@@ -67,7 +67,7 @@
             /* start your code here */
             closeInterval = setInterval(() => {
                 if (!allClosed) {
-                    console.log("hello")
+                    // console.log("hello")
                     // adding arrow icons
                     waitForElement('.l-wizard-section__header', function() {
                         document.querySelectorAll(".l-wizard-section__header").forEach(item => {
@@ -104,7 +104,7 @@
                 waitForElement('html body .l-wizard__body', init, 50, 15000);
             } else {
                 if (this.parentElement.parentElement.querySelector(".is-active")) {
-                    this.ariaChecked = true;
+                    removeInOpen(this.parentElement.parentElement);
                 }
                 waitForElement('.l-wizard-section__icon', closeAll, 50, 15000);
             }
@@ -115,8 +115,8 @@
             if (this.classList.contains("c-wizard-summary__btn-edit")) {
                 let egTargetTxt = this.parentElement.firstElementChild.innerText.toUpperCase();
                 // searching section for this text
-                document.querySelectorAll(".l-wizard-section__header .l-wizard-section__title").forEach(title=>{
-                    if(title.innerText.toUpperCase() == egTargetTxt){
+                document.querySelectorAll(".l-wizard-section__header .l-wizard-section__title").forEach(title => {
+                    if (title.innerText.toUpperCase() == egTargetTxt) {
 
                         //========== EDIT BUTTON CLICK LOGIC ========//
 
@@ -127,8 +127,9 @@
                         not just scrolled that section */
 
                         title.parentElement.parentElement.scrollIntoView({ behavior: "smooth" });
-                        if(title.parentElement.parentElement.querySelector(".eg-inactive-section")){
+                        if (title.parentElement.parentElement.querySelector(".eg-inactive-section")) {
                             title.parentElement.parentElement.querySelector(".eg-inactive-section").classList.remove("eg-inactive-section");
+                            addInOpen(title.parentElement.parentElement);
                         }
                     }
                 });
@@ -138,9 +139,25 @@
             if (this.classList.contains("eg-arrow")) {
                 this.parentElement.parentElement.querySelector(".l-wizard-section__container").classList.toggle("eg-inactive-section");
                 this.parentElement.parentElement.scrollIntoView({ behavior: "smooth" });
+                if (!this.parentElement.parentElement.querySelector(".eg-inactive-section")) {
+                    addInOpen(this.parentElement.parentElement);
+                } else {
+                    removeInOpen(this.parentElement.parentElement);
+                }
             }
         });
 
+        function removeInOpen(section) {
+            if (egStillOpen.indexOf(section) != -1) {
+                egStillOpen.splice(egStillOpen.indexOf(section), 1);
+            }
+        }
+
+        function addInOpen(section) {
+            if (egStillOpen.indexOf(section) == -1) {
+                egStillOpen.unshift(section);
+            }
+        }
 
         // check api call and close tab accordinglly
         function closeActiveSection() {
@@ -148,7 +165,7 @@
             XMLHttpRequest.prototype.send = function() {
                 this.addEventListener('load', function() {
                     // checking api is called for product
-                    console.log(this.responseURL.indexOf("wizard"))
+                    // console.log(this.responseURL.indexOf("wizard"))
                     if (this.responseURL.indexOf("/api/wizard/") != -1) {
                         allClosed = false;
                         setTimeout(() => {
@@ -163,7 +180,7 @@
         function closeAll() {
             const egActiveSec = document.querySelectorAll(".l-wizard-section__icon");
             egActiveSec.forEach((check, i) => {
-                if (check.classList.contains("is-active") && !check.classList.contains("is-inactive") && (check.parentElement.parentElement.querySelector(".eg-confirm-btn").ariaChecked === "true")) {
+                if (!egStillOpen.includes(check.parentElement.parentElement)) {
                     let egChilds = check.parentElement.parentElement.children;
                     for (let i = 0; i < egChilds.length; i++) {
                         if (egChilds[i].classList.contains("l-wizard-section__container")) {
@@ -176,10 +193,12 @@
                 }
             });
             let firstUnopend = document.querySelector(".l-wizard-section:has(.l-wizard-section__icon:not(.is-active))");
-            if (firstUnopend && !document.querySelector(".eg-confirm-btn[aria-checked=false]")) {
+            if (firstUnopend && !egStillOpen.length > 0) {
                 firstUnopend.scrollIntoView({ behaviour: "smooth" });
+                firstUnopend.querySelector(".l-wizard-section__container").classList.remove("eg-inactive-section");
+                addInOpen(firstUnopend);
             } else {
-                document.querySelector(".eg-confirm-btn[aria-checked=false]").parentElement.parentElement.scrollIntoView({ behaviour: "smooth" });
+                egStillOpen[0].scrollIntoView({ behaviour: "smooth" });
             }
         }
 
