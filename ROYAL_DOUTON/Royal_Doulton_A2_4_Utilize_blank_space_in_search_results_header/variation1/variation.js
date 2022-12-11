@@ -66,8 +66,8 @@
 
             let egSearchBox = document.querySelector("#header-search");
 
-            if(!egSearchBox.value){
-              egTarget.textContent  = `Results`;
+            if(egSearchBox.value.length <= 0){
+              egTarget.textContent  = `Search Results`;
             } else {
               egTarget.textContent  = `Results for "${egSearchBox.value}"`;
             }
