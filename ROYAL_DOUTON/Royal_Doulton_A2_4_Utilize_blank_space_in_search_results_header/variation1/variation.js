@@ -66,7 +66,7 @@
 
             let egSearchBox = document.querySelector("#header-search");
 
-            if(egSearchBox.value = ''){
+            if(!egSearchBox.value){
               egTarget.textContent  = `Results`;
             } else {
               egTarget.textContent  = `Results for "${egSearchBox.value}"`;
