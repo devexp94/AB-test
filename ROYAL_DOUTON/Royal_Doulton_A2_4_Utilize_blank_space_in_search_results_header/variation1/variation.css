@@ -1,0 +1,8 @@
+html body .c-title-component-text {
+    padding-block: 14px !important;
+}
+
+html body .c-title-component-text h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
