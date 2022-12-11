@@ -50,7 +50,7 @@ html {
  transform:rotate(227deg);
 }
 
-.eg-confirm-btn{
+.eg-confirm-btn {
     position: relative;
     display: inline-block;
     padding: 11px 20px;
@@ -66,6 +66,7 @@ html {
     text-align: center;
     cursor: pointer;
     color: #fff;
+    margin-block: 14px;
 }
 
 

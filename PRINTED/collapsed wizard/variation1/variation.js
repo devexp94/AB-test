@@ -57,22 +57,22 @@
             live(selector, event, callback, context);
         }
 
-        let egEditBtnTargets = {
-            'Product': '#wizard-product',
-            'Type': '#wizard-type',
-            'Size': '#wizard-size',
-            'Orientation': '#wizard-orientation',
-            'Printed sides': '#wizard-printed-sides',
-            'Paper': '#wizard-paper',
-            'Paper weight': '#wizard-paper',
-            'Quantity': '#wizard-quantity',
-            'Lamination': '#section-extras',
-            'Corners': '#section-extras',
-            'Perforation': '#section-extras',
-            'Fold type': '#wizard-fold-type',
-            'Spot UV': '#wizard-spot-uv',
-            'White Ink': '#wizard-white-ink'
-        }
+        // let egEditBtnTargets = {
+        //     'Product': '#wizard-product',
+        //     'Type': '#wizard-type',
+        //     'Size': '#wizard-size',
+        //     'Orientation': '#wizard-orientation',
+        //     'Printed sides': '#wizard-printed-sides',
+        //     'Paper': '#wizard-paper',
+        //     'Paper weight': '#wizard-paper',
+        //     'Quantity': '#wizard-quantity',
+        //     'Lamination': '#section-extras',
+        //     'Corners': '#section-extras',
+        //     'Perforation': '#section-extras',
+        //     'Fold type': '#wizard-fold-type',
+        //     'Spot UV': '#wizard-spot-uv',
+        //     'White Ink': '#wizard-white-ink'
+        // }
 
         let allClosed = false;
         let closeInterval;
@@ -94,8 +94,27 @@
 
             live(['.c-wizard-summary__btn-edit'], 'click', function() {
                 if (this.classList.contains("c-wizard-summary__btn-edit")) {
-                    let egTargetTxt = this.parentElement.firstElementChild.innerText;
-                    document.querySelector(`${egEditBtnTargets[egTargetTxt]} .l-wizard-section__container`).classList.remove("eg-inactive-section");
+                    // let egTargetTxt = this.parentElement.firstElementChild.innerText;
+                    // document.querySelector(`${egEditBtnTargets[egTargetTxt]} .l-wizard-section__container`).classList.remove("eg-inactive-section");
+
+                    // searching section for this text
+                    document.querySelectorAll(".l-wizard-section__header .l-wizard-section__title").forEach(title => {
+                        if (title.innerText.toUpperCase() == egTargetTxt) {
+
+                            //========== EDIT BUTTON CLICK LOGIC ========//
+
+                            /* so here i'm checking this edit button's grand parent's first element text 
+                            and looping it through the sections header title if its meet any of one 
+                            than our loop will stop and that section will get scrolled into view
+                            and if it's container part (which contains content) is close so we will open it and if 
+                            not just scrolled that section */
+
+                            title.parentElement.parentElement.scrollIntoView({ behavior: "smooth" });
+                            if (title.parentElement.parentElement.querySelector(".eg-inactive-section")) {
+                                title.parentElement.parentElement.querySelector(".eg-inactive-section").classList.remove("eg-inactive-section");
+                            }
+                        }
+                    });
                 }
             });
 
@@ -109,7 +128,7 @@
             XMLHttpRequest.prototype.send = function() {
                 this.addEventListener('load', function() {
                     // checking api is called for product
-                    console.log(this.responseURL.indexOf("wizard"))
+                    // console.log(this.responseURL.indexOf("wizard"))
                     if (this.responseURL.indexOf("/api/wizard/") != -1) {
                         closeAll();
                     }
@@ -132,7 +151,7 @@
 
                 }
             });
-            console.log("hello")
+            // console.log("hello")
             allClosed = true;
             document.querySelector(".l-wizard-section:not(#wizard-white-ink):has(.l-wizard-section__icon:not(.is-active))").scrollIntoView({ behaviour: "smooth" });
         }
