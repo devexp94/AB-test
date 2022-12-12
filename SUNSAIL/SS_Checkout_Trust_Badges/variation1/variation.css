@@ -1,0 +1,38 @@
+@media(max-width: 767px) {
+    #checkoutForm>input[type=submit] {
+        display: block;
+        width: 90%;
+        margin-inline: auto;
+    }
+
+    .eg-trust-wrapper {
+        width: 90%;
+        margin-inline: auto;
+    }
+
+    .eg-ssl {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .eg-ssl>div {
+        display: flex;
+        gap: 10px;
+        font-size: 10px;
+        align-items: center;
+        line-height: 1;
+        text-transform: uppercase;
+        letter-spacing: 2.2px;
+    }
+
+    .eg-ssl .eg-img {
+        display: inline-block;
+    }
+
+    .eg-ssl .eg-img svg {
+        width: 26px;
+        display: inline-block;
+    }
+
+}
