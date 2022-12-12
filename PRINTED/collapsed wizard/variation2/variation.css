@@ -15,39 +15,45 @@ html {
     overflow: hidden;
 }
 
-.l-wizard-section:has(.eg-inactive-section){
-    padding-left: 1.8rem !important;
+.l-wizard-section{
+    padding-block: .8rem !important;
 }
 
 /*arrow up and down*/
-.l-wizard__body > div > div .l-wizard-section__header {
-    position: relative;
+.l-wizard-section__header {
+    position: relative !important;
 }
 
 .eg-arrow {
     position: absolute;
-    right: -26px;
-    top: -32px;
-    width: 40px;
-    height: 40px;
+    right:0;
+    top: 50%;
+    height: fit-content;
+    width: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translateY(-50%);
 }
 
 .eg-arrow::after {
     content: '';
     display: inline-block;
-    width: 0.8rem;
-    height: 0.8rem;
+    width: 0.7rem;
+    height: 0.7rem;
     border: solid #ED40A9;
-    border-width: 0 3px 3px 0;
+    border-width: 0 2px 2px 0;
     transform: rotate(45deg);
     cursor: pointer;
 }
 
 .l-wizard-section__header:has(~.l-wizard-section__container:not(.eg-inactive-section)) .eg-arrow::after{
  transform:rotate(227deg);
+}
+
+/*hiding arrow if section has no content*/
+.l-wizard-section:has(.l-wizard-section__header .is-inactive) .eg-arrow{
+    display:none !important;
 }
 
 .eg-confirm-btn {
@@ -73,4 +79,11 @@ html {
 .eg-confirm-btn:hover:not([disabled]) {
     background: #eb5cc1;
     border-color: #eb5cc1;
+}
+
+
+@media(max-width: 767px){
+    html body .l-wizard__body{
+        padding-top: 20px !important;
+    }
 }
