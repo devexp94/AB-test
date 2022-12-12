@@ -1,0 +1,162 @@
+/* Need to be remove this CSS */
+#shopify-section-header>div>header>section {
+    display: none !important;
+}
+
+/*  */
+
+
+.mobile-navbar nav[role="navigation"] {
+    display: none;
+}
+
+.mobile-navbar.open {
+    padding-right: 0px;
+}
+
+html body .eg-main-option>.eg-title {
+    justify-content: space-between;
+}
+
+html body .eg-sub-menu-option>.eg-sub-menu-link,
+html body .eg-main-option>.eg-title,
+html body .eg-sub-menu-option>.eg-title {
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.eg-main-option .eg-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    color: #0A0A0A;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.eg-main-option .eg-sub-menu-option,
+.eg-main-option .eg-sub-menu-option .eg-sub-menu-link {
+    padding-left: 20px;
+}
+
+
+.eg-main-option .eg-sub-menu-option .eg-sub-menu-link .eg-arrow {
+    display: none;
+}
+
+.eg-main-option .eg-sub-menu-option>.eg-title .eg-arrow {
+    padding-left: 20px;
+    position: static;
+}
+
+.eg-with-image {
+    display: flex;
+    flex-direction: column;
+}
+
+.eg-menu-option .eg-arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 8px 10px 8px 80px;
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    z-index: 1;
+    width: 100%;
+}
+
+.eg-menu-option .eg-title {
+    position: relative;
+}
+
+html body .eg-sub-menu-option .eg-title+.eg-sub-menu-link,
+html body .eg-main-option>.eg-title+.eg-sub-menu {
+    max-height: 0px;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.35s;
+}
+
+html body .eg-sub-menu-option .eg-title.eg-active+.eg-sub-menu-link,
+html body .eg-main-option>.eg-title.eg-active+.eg-sub-menu {
+    max-height: 100vh;
+    overflow: visible;
+    opacity: 1;
+    transition: all 0.35s;
+}
+
+.eg-title .eg-arrow:before {
+    transform: rotate(0deg);
+    transition: all 0.35s;
+}
+
+.eg-title.eg-active .eg-arrow:before {
+    transform: rotate(-90deg);
+    transition: all 0.35s;
+}
+
+.eg-title.eg-active,
+html body .eg-sub-menu-option>.eg-title.eg-active+.eg-sub-menu-link .eg-title {
+    color: #0D5AA3;
+}
+
+.eg-image-heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #0D5AA3;
+    padding: 10px 0px;
+}
+
+.eg-image-bottom-text {
+    padding: 10px 0px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    color: #0D5AA3;
+}
+
+.eg-image-text.eg-jewellery {
+    background: radial-gradient(96.87% 492.91% at 96.87% 0%, rgba(13, 90, 163, 0) 0%, rgba(13, 90, 163, 0.9) 100%), url('https://cld.accentuate.io/79778021430/1636626297130/202108_VETERAN-JEWELLERY_RBL8038.jpg?v=0&options=w_1500');
+    border-radius: 4px;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+}
+
+.eg-image-text.eg-Accessory {
+    background: radial-gradient(96.87% 492.91% at 96.87% 0%, rgba(13, 90, 163, 0) 0%, rgba(13, 90, 163, 0.9) 100%), url('https://images.accentuate.io/?image=https%3A%2F%2Fcdn.accentuate.io%2F176724148278%2F1605802306427%2F611855-PoppyShopWebsiteAssets-Shot33-RAFPins-Desktop1980x810.jpg%3Fv%3D1623849686447&c_options=w_1500');
+    border-radius: 4px;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+
+.eg-image-text img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.eg-image-text span {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    color: #FFFFFF;
+    display: block;
+}
+
+.mobile-navbar form[role="search"] input::placeholder {
+    color: #4A4A4A;
+}
