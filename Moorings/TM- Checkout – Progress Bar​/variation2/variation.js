@@ -30,7 +30,32 @@
       if(window.innerWidth < 768){
         document.querySelector("#booking-flow  nav > .step:nth-child(2)").childNodes[2].textContent = "Personal Detail";
       }
+      listener()
     }
+
+    function listener() {
+      /* These are the modifications: */
+      window.addEventListener("locationchange", function() {
+          waitForElement('#booking-flow  nav > .step:nth-child(2)', init, 50, 15000);
+      });
+      history.pushState = ((f) =>
+          function pushState() {
+              var ret = f.apply(this, arguments);
+              window.dispatchEvent(new Event("pushstate"));
+              window.dispatchEvent(new Event("locationchange"));
+              return ret;
+          })(history.pushState);
+      history.replaceState = ((f) =>
+          function replaceState() {
+              var ret = f.apply(this, arguments);
+              window.dispatchEvent(new Event("replacestate"));
+              window.dispatchEvent(new Event("locationchange"));
+              return ret;
+          })(history.replaceState);
+      window.addEventListener("popstate", () => {
+          window.dispatchEvent(new Event("locationchange"));
+      });
+  }
 
     /* Initialize variation */
     waitForElement('#booking-flow  nav > .step:nth-child(2)', init, 50, 15000);
