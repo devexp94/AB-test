@@ -63,32 +63,38 @@
                 Find out more about our account opening process and everything you need to get started
                 </p>`;
 
-        /*====================================EASILY UPDATE TEXT====================================*/       
-        /* if you want to change the first tile txt to something just update it in this variable here*/ 
-        const egUpdatedText = "Opening an HSBC Business account";       
+        /*====================================EASILY UPDATE TEXT====================================*/
+        /* if you want to change the first tile txt to something just update it in this variable here*/
+        const egUpdatedText = "Opening an HSBC Business account";
 
+        live([".segment-filter > div  > button:nth-child(n + 2)", "button[class^='collection-card__dismiss-control']:nth-of-type(1)"], 'click', () => {
+            resetTile();
+        });
+
+        live('.segment-filter > div  > button:nth-child(1)', 'click', function() {
+            if (this.innerText == "Select All") {
+                resetTile();
+                updateTile();
+            }
+        });
 
         /* Variation Init */
         function init() {
 
-            const egFirstTileBtn = document.querySelector(".segment-filter > div  > button:nth-child(1)");
+            let egInterval = setInterval(() => {
+                if (!document.querySelector(".eg-title")) {
+                    const egFirstTileBtn = document.querySelector(".segment-filter > div  > button:nth-child(1)");
 
-            // changing first title text on load
+                    // changing first title text on load
 
-            if(egFirstTileBtn.ariaChecked === 'true'){
-                waitForElement('div[class^="collection-cards__card"] > div > a  div[class^="collection-card__content"] h3', updateTile, 50, 15000);
-            }
+                    if (egFirstTileBtn.ariaChecked === 'true') {
+                        waitForElement('div[class^="collection-cards__card"] > div > a  div[class^="collection-card__content"] h3', updateTile, 50, 15000);
+                    }
 
-            document.querySelector(".segment-filter > div  > button:nth-child(1)").addEventListener("click", function() {
-                if (this.innerText == "Select All") {
-                    resetTile();
-                    updateTile();
+                } else {
+                    clearInterval(egBtnInterval);
                 }
-            })
-
-            live([".segment-filter > div  > button:nth-child(n + 2)", "button[class^='collection-card__dismiss-control']:nth-of-type(1)"], 'click', () => {
-                resetTile();
-            });
+            }, 1000);
 
         };
 
