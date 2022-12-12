@@ -1,0 +1,17 @@
+ .c-summary-details .c-summary-details_item:nth-child(2) {
+     order: -1;
+ }
+
+ .c-summary-details .c-summary-details_item:nth-child(3) {
+     padding-top: 0;
+ }
+
+ .c-summary-details .c-summary-details_item:nth-child(1) {
+     padding-bottom: 8px;
+ }
+
+ /*removing border bottom of coupon box*/
+
+ .c-summary-details .c-summary-details_item:nth-child(2) #pc-form-input {
+     border-bottom: none;
+ }
