@@ -78,10 +78,12 @@
             }
         });
 
+        let egInterval;
+
         /* Variation Init */
         function init() {
 
-            let egInterval = setInterval(() => {
+            egInterval = setInterval(() => {
                 if (!document.querySelector(".eg-title")) {
                     const egFirstTileBtn = document.querySelector(".segment-filter > div  > button:nth-child(1)");
 
@@ -97,6 +99,10 @@
             }, 1000);
 
         };
+
+        setTimeout(()=>{
+            clearInterval(egInterval);
+        },8000);
 
         function updateTile() {
             const egText = document.querySelector(`div[class^="collection-cards__card"] > div > a  div[class^="collection-card__content"] h3`);
