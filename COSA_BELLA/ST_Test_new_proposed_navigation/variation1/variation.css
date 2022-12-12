@@ -1,0 +1,28 @@
+@media(min-width:996px) {
+    .header__navigation>.menu__items>.menu__item:hover {
+        background: #e0e0e0;
+        border-radius: 7px 7px 0 0;
+    }
+
+    .header__navigation>.menu__items>.menu__item a::after {
+        display: none;
+    }
+
+    .header__navigation>.menu__items>.menu__item {
+        padding: 5px 22px !important;
+    }
+
+    .header__navigation>.menu__items {
+        margin-top: 20px;
+    }
+
+    .header__navigation>.menu__items>.menu__item>a {
+        font-weight: 600;
+        font-family: 'Open Sans';
+        font-size: 14px;
+    }
+
+    .header__navigation>.menu__items>.menu__item>.mega-menu {
+        padding-top: 0;
+    }
+}
