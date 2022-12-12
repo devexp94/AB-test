@@ -92,7 +92,7 @@
                     }
 
                 } else {
-                    clearInterval(egBtnInterval);
+                    clearInterval(egInterval);
                 }
             }, 1000);
 
