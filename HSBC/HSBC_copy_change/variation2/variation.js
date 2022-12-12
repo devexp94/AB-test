@@ -63,6 +63,10 @@
                 Find out more about our account opening process and everything you need to get started
                 </p>`;
 
+        /*====================================EASILY UPDATE TEXT====================================*/       
+        /* if you want to change the first tile txt to something just update it in this variable here*/ 
+        const egUpdatedText = "Opening an HSBC Business account";       
+
 
         /* Variation Init */
         function init() {
@@ -91,14 +95,7 @@
         function updateTile() {
             const egText = document.querySelector(`div[class^="collection-cards__card"] > div > a  div[class^="collection-card__content"] h3`);
 
-            // hiding previous element themes
-            if (egText.previousElementSibling) {
-                egText.previousElementSibling.style.display = "none";
-            }
-
-            egText.style.display = "none";
-
-            egText.insertAdjacentHTML("beforebegin", `<h2 class="eg-title">${"Opening an HSBC Business account" + egText.children[0].outerHTML.toString()}</h2>`);
+            egText.insertAdjacentHTML("beforebegin", `<h2 class="eg-title">${egUpdatedText + egText.children[0].outerHTML.toString()}</h2>`);
 
             // updating link
             egText.parentElement.parentElement.href = "https://www.business.hsbc.com.sg/en-sg/business-banking/business-account-opening-process";
@@ -111,12 +108,6 @@
             const egTitle = document.querySelector(".eg-title");
             if (egTitle) {
                 const egPara = document.querySelector(".eg-para");
-
-                if (egTitle.previousElementSibling) {
-                    egTitle.previousElementSibling.style.display = "block";
-                }
-
-                egTitle.nextElementSibling.style.display = "block";
 
                 [egTitle, egPara].forEach(ele => {
                     ele.remove();

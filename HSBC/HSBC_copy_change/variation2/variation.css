@@ -18,9 +18,12 @@
     pointer-events: none;
 }
 
-.eg-para + p{
+div[class^='collection-card__content']:has(.eg-title) div[class^='collection-card__type-label'],
+div[class^='collection-card__content']:has(.eg-title) h3[class^='collection-card__title'],
+div[class^='collection-card__content']:has(.eg-title) p[class^='collection-card__description']{
 	display: none !important;
 }
+
 
 @media (min-width: 760px) {
     .eg-title {

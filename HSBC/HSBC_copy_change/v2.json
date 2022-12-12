@@ -4,6 +4,7 @@
 		"./variation2/variation.js"
 	],
 	"urls": [
-		"https://www.business.hsbc.com.sg/en-sg/"
+		"https://www.business.hsbc.com.sg/en-sg/",
+		"https://www.business.hsbc.co.id/id-id"
 	]
 }
