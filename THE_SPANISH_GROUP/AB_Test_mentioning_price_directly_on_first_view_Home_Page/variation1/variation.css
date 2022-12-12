@@ -11,7 +11,8 @@
     width: 100%;
     max-width: 182px;
     height: 180px;
-    background-image: url(https://expogrowth.in/wp-content/uploads/2022/11/bluestar.png);
+    background-image: url(https://expogrowth.in/wp-content/uploads/2022/12/bluestar-1.png);
+    /*background-image: url(https://expogrowth.in/wp-content/uploads/2022/12/bluestar-2.png);*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -36,8 +37,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0 0 50px rgb(41 44 131 / 56%);
-    background: rgb(41 44 131 / 24%);
+    box-shadow: 0 0 50px rgb(65 103 140 / 56%);
+    background: rgb(65 103 140 / 24%);
 }
 
 .eg-pricing>div {
