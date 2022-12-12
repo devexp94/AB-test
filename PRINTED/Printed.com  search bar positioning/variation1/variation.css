@@ -9,9 +9,9 @@
        border: none !important;
    }
    
-   div.l-header__search-holder > span.fa.fa-search{
+   /* div.l-header__search-holder > span.fa.fa-search{
        display: none;
-   }
+   } */
    
    .l-header__search {
        border: 0;
@@ -44,5 +44,7 @@
 
    .l-header__search.is-active {
     border-radius: 2.5625rem;
+    box-shadow: none !important;
 }
+
 }

@@ -35,7 +35,7 @@
         
               target.insertAdjacentElement("afterend", search);
         
-              document.querySelector("main > cms-page-widgets-component div.l-header__search-holder > input").placeholder = "What are you looking for? Leaflets, Business cards , Invitations....";     
+              document.querySelector("main > cms-page-widgets-component div.l-header__search-holder > input").placeholder = "What are you looking for? Leaflets, Business cards , Invitations, ....";     
     }
 
     }
