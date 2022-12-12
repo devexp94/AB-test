@@ -6,10 +6,6 @@ html {
     cursor: pointer;
 }
 
-#wizard-size > div.l-wizard-section__header > div.c-select.c-select--align-right > div {
-    margin-right: 70px;
-}
-
 .eg-inactive-section{
     max-height: 0;
     overflow: hidden;
@@ -20,8 +16,9 @@ html {
 }
 
 /*arrow up and down*/
-.l-wizard-section__header {
+html body .l-wizard-section__header {
     position: relative !important;
+    padding-right: 3rem !important;
 }
 
 .eg-arrow {
