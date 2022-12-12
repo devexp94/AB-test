@@ -60,13 +60,22 @@
         /* Variation Init */
         function init() {
             /* start your code here */
+            let egTarget = document.querySelector("html body .c-title-component-text h1");
+            let egSearchBox = document.querySelector("#header-search");
 
+            egSearchBox.addEventListener("input", function() {
+                egTarget.textContent = `Results for "${this.value}"`;
+            });
+
+            live('.c-h-search_suggestions_item', 'click', function() {
+                egTarget.textContent = `Results for "${egSearchBox.value}"`;
+            });
 
             let egChangeTxt = setInterval(() => {
-                let egTarget = document.querySelector("html body .c-title-component-text h1");
+                
 
                 if (egTarget.textContent.indexOf("Results for") == -1) {
-                    let egSearchBox = document.querySelector("#header-search");
+                    
 
                     egTarget.textContent = `Results for "${egSearchBox.value}"`;
 
@@ -81,17 +90,6 @@
 
             }, 1000);
 
-            let egSearchBox = document.querySelector("#header-search");
-
-            egTarget.textContent = `Results for "${egSearchBox.value}"`;
-
-            egSearchBox.addEventListener("input", function() {
-                egTarget.textContent = `Results for "${this.value}"`;
-            });
-
-            live('.c-h-search_suggestions_item', 'click', function() {
-                egTarget.textContent = `Results for "${egSearchBox.value}"`;
-            });
 
         }
 
