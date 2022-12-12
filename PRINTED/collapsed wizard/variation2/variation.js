@@ -97,6 +97,14 @@
 
         }
 
+        // header click detect
+
+        live('.l-wizard-section__header','click',(e)=>{
+            if(e.target.classList.contains("l-wizard-section__header")){
+                e.target.querySelector(".eg-arrow").click();
+            }
+        });
+
         // order now button click
         live(['.c-button:not(.eg-confirm-btn)', '.eg-confirm-btn'], "click", function() {
             // console.log("clicked!!!")
@@ -109,6 +117,8 @@
                 waitForElement('.l-wizard-section__icon', closeAll, 50, 15000);
             }
         });
+
+        live
 
         // expand close logic
         live(['.c-wizard-summary__btn-edit', '.eg-arrow'], 'click', function() {
