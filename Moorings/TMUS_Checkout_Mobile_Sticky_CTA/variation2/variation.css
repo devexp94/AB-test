@@ -98,7 +98,7 @@
         text-align: center;
         color: #000 !important;
         border-radius: 6px;
-        display: inline-block;
+        display:block !important;
         text-decoration: none !important;
     }
 }
