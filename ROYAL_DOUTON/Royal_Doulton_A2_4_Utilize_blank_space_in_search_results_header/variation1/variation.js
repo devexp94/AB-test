@@ -67,7 +67,7 @@
                 egTarget.textContent = `Results for "${this.value}"`;
             });
 
-            live('.c-h-search_suggestions_item', 'click', function() {
+            live(['.c-h-search_suggestions_item','.a11-recent-search-list > li'], 'click', function() {
                 egTarget.textContent = `Results for "${egSearchBox.value}"`;
             });
 
