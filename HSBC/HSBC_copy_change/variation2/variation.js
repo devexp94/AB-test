@@ -58,7 +58,7 @@
         }
 
         const eg_para = `
-                <p class="eg-para collection-card__description___3HHX9">
+                <p class="eg-para">
                 Keen on banking with us?</br>
                 Find out more about our account opening process and everything you need to get started
                 </p>`;
@@ -72,7 +72,7 @@
             // changing first title text on load
 
             if(egFirstTileBtn.ariaChecked === 'true'){
-                waitForElement('.collection-cards__card___3N5Oq > div > a  div.collection-card__content___3SEC9 h3', updateTile, 50, 15000);
+                waitForElement('div[class^="collection-cards__card"] > div > a  div[class^="collection-card__content"] h3', updateTile, 50, 15000);
             }
 
             document.querySelector(".segment-filter > div  > button:nth-child(1)").addEventListener("click", function() {
@@ -82,14 +82,14 @@
                 }
             })
 
-            live([".segment-filter > div  > button:nth-child(n + 2)", ".collection-card__dismiss-control___xPQKd:nth-of-type(1)"], 'click', () => {
+            live([".segment-filter > div  > button:nth-child(n + 2)", "button[class^='collection-card__dismiss-control']:nth-of-type(1)"], 'click', () => {
                 resetTile();
             });
 
         };
 
         function updateTile() {
-            const egText = document.querySelector(".collection-cards__card___3N5Oq > div > a  div.collection-card__content___3SEC9 h3");
+            const egText = document.querySelector(`div[class^="collection-cards__card"] > div > a  div[class^="collection-card__content"] h3`);
 
             // hiding previous element themes
             if (egText.previousElementSibling) {
@@ -98,14 +98,10 @@
 
             egText.style.display = "none";
 
-            egText.insertAdjacentHTML("beforebegin", `<h2 class="eg-title collection-card__title___1ghe1">${"Opening an HSBC Business account" + egText.children[0].outerHTML.toString()}</h2>`);
+            egText.insertAdjacentHTML("beforebegin", `<h2 class="eg-title">${"Opening an HSBC Business account" + egText.children[0].outerHTML.toString()}</h2>`);
 
             // updating link
             egText.parentElement.parentElement.href = "https://www.business.hsbc.com.sg/en-sg/business-banking/business-account-opening-process";
-
-            if (egText.nextElementSibling) {
-                egText.nextElementSibling.style.display = "none";
-            }
 
             //adding hover text
             egText.insertAdjacentHTML("afterend", eg_para);
@@ -122,10 +118,6 @@
 
                 egTitle.nextElementSibling.style.display = "block";
 
-                if (egPara.nextElementSibling) {
-                    egPara.nextElementSibling.style.display = "block";
-                }
-
                 [egTitle, egPara].forEach(ele => {
                     ele.remove();
                 });
@@ -134,7 +126,7 @@
         }
 
         /* Initialize variation */
-        waitForElement('.collection-cards__card___3N5Oq > div > a  div.collection-card__content___3SEC9 h3', init, 50, 15000);
+        waitForElement('div[class^="collection-cards__card"] > div > a  div[class^="collection-card__content"] h3', init, 50, 15000);
     } catch (e) {
         if (debug) console.log(e, "error in Test" + variation_name);
     }
