@@ -81,6 +81,14 @@
 
             }, 1000);
 
+            let egSearchBox = document.querySelector("#header-search");
+
+            egTarget.textContent = `Results for "${egSearchBox.value}"`;
+
+            egSearchBox.addEventListener("input", function() {
+                egTarget.textContent = `Results for "${this.value}"`;
+            });
+
             live('.c-h-search_suggestions_item', 'click', function() {
                 egTarget.textContent = `Results for "${egSearchBox.value}"`;
             });
