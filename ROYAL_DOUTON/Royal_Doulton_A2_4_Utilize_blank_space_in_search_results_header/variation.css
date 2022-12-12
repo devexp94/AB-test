@@ -1,0 +1,15 @@
+html body .c-title-component-text {
+  padding-block-start : 14px !important;
+  padding-block-end : 14px !important;
+}
+
+html body .c-title-component-text h1 {
+  font-size : 20px;
+  font-weight : bold;
+  font-family : Mallory;
+  margin-bottom : 0px !important;
+}
+
+html body .c-c-pl_wrapper .c-c-pl_container {
+  padding-top : 0px !important;
+}
