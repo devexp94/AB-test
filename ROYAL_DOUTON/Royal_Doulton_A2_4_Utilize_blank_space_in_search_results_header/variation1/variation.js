@@ -62,19 +62,24 @@
             /* start your code here */
 
 
-            let egTarget = document.querySelector("html body .c-title-component-text h1");
+            let egChangeTxt = setInterval(() => {
+                let egTarget = document.querySelector("html body .c-title-component-text h1");
 
-            let egSearchBox = document.querySelector("#header-search");
+                if (egTarget.textContent.indexOf("Results for") == -1) {
+                    let egSearchBox = document.querySelector("#header-search");
 
-            if(egSearchBox.value.length <= 0){
-              egTarget.textContent  = `Search Results`;
-            } else {
-              egTarget.textContent  = `Results for "${egSearchBox.value}"`;
-            }
+                    egTarget.textContent = `Results for "${egSearchBox.value}"`;
 
-            egSearchBox.addEventListener("input", function() {
-                egTarget.textContent = `Results for "${this.value}"`;
-            });
+                    egSearchBox.addEventListener("input", function() {
+                        egTarget.textContent = `Results for "${this.value}"`;
+                    });
+                } else {
+                    clearInterval(egChangeTxt);
+
+                }
+                console.log("cleared")
+
+            }, 1000);
 
             live('.c-h-search_suggestions_item', 'click', function() {
                 egTarget.textContent = `Results for "${egSearchBox.value}"`;
