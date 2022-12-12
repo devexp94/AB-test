@@ -4,9 +4,9 @@
     background-color: hsl(66deg 23% 91%);
 }
 
-/* a.eg_card:hover {
+a.eg_card:hover {
     text-decoration: none;
-} */
+}
 
 .eg_wrapper{
     display: flex;
@@ -34,8 +34,9 @@
     width: 100%;
     object-fit: cover;
     display: block;
-    height: 200px;
+    height: 150px;
     border-radius: 10px 10px 0 0;
+    object-position: 74%;
 }
 
 .eg_card {
@@ -44,6 +45,7 @@
     text-align: center;
     text-decoration: none;
     flex: 1;
+    border-radius: 12px;
     flex-basis: 20%;
     box-shadow: 0 0 1rem 0 rgb(0 0 0 / 20%);
 }
@@ -51,8 +53,8 @@
 .egHeading{
     background-color: #fff;
     color: #000;
-    font-size: 1.3rem;
-    padding-block: 15px;
+    font-size: 1rem;
+    padding-block: 10px;
     font-family: 'caustenRoundedMedium';
     font-weight: 800;
     text-decoration: none;
@@ -61,11 +63,12 @@
 
 
 h3.egTitle {
-    font-size: 4rem;
+    font-size: 3.3rem;
 }
 
 p.egPara {
     font-family: 'caustenRoundedMedium';
+    padding-bottom: 7px;
 }
 
 
@@ -80,7 +83,7 @@ p.egPara {
     }
 
     .egHeading{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 }
 
@@ -112,6 +115,6 @@ p.egPara {
 
 @media screen and (min-width: 1600px) {
     .eg_wrapper{
-        width: 87%;
+        width: 86%;
     }
 }

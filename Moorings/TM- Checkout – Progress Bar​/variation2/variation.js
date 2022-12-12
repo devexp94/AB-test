@@ -65,3 +65,9 @@
 })();
 
 
+let steps = document.querySelectorAll(".step")
+steps.forEach((step)=>{
+  if(step.classList.contains("active")){
+       this.previo
+  }
+});
