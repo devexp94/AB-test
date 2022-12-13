@@ -1,5 +1,4 @@
-@media screen and (max-width: 767px) {
-    nav .step {
+   /* nav .step {
         display: flex !important;
         flex-direction: column;
        align-items: center;
@@ -11,20 +10,21 @@
         padding-bottom: 34px;
         position: relative;
         overflow: hidden;
-    }
+    } */
     
+     /* 
     .steps nav::before {
         content: "";
         position: absolute;
-        top: 40%;
+        top: 38%;
         transform: translateY(-50%);
         height: 1px;
         right: 11%;
         width: 79%;
-        background-color: #122447;
-    }
+        background-color: #dddbd8;
+    }*/
     
-    .site-header {
+    /* .site-header {
         margin-bottom: 0 !important;
     }
     
@@ -34,14 +34,19 @@
         height: 25px;
     }
     
-    .booking-flow .step:not(.active) .number{
-        background: #fff !important;
+    .booking-flow .step:not(.active) .number {
+        background: #fff;
     }
     
     .step.active ,.step:not(:first-child) {
        color: #122447 !important;
     }
     
+    .eg-active{
+        background-color: #122447 !important;
+        color: #fff !important;
+    }
+
     #booking-flow nav > .step:not(.number) {
         font-size: 12px;
         color: #122447;
@@ -63,7 +68,87 @@
     
     .row .steps {
         padding-inline: 0;
-    }
-    
-  
-}
+    } */
+
+
+
+
+
+    nav .step {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        background: none !important;
+        flex: 1;
+        max-width: 100%;
+        position: relative;
+     }
+     
+     #booking-flow nav {
+         display: flex;
+         padding-bottom: 34px;
+         position: relative;
+         overflow: hidden;
+         z-index: 10;
+     }
+     
+     
+     .site-header {
+         margin-bottom: 0 !important;
+     }
+     
+     .step.active span.number {
+         background: #122447;
+         color: #fff !important;
+         height: 25px;
+     }
+     
+     .booking-flow .step:not(.active) .number {
+         background: #fff;
+     }
+     
+     .step.active ,.step:not(:first-child) {
+        color: #122447 !important;
+     }
+ 
+     
+     .eg-active{
+         background-color: #122447 !important;
+         color: #fff !important;
+     }
+ 
+     #booking-flow nav > .step:not(.number) {
+         font-size: 12px;
+         color: #122447;
+     }
+     
+     .booking-flow .steps .number {
+         height: 30px !important;
+         width: 30px;
+         text-align: center;
+         line-height: 2.5;
+         font-size: 15px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         color: #122447;
+         margin-bottom: 8px;
+         border: 3px solid #122447;
+     }
+   
+     .row .steps {
+         padding-inline: 0;
+     }
+ 
+ 
+ /* .step + .step::after{
+     content: "";
+     position: absolute;
+     left: 0;
+     top: 20px;
+     background: #000;
+     width: 100%;
+     height: 2px;
+     z-index: -10;
+     transform: translateX(-50%);
+ } */

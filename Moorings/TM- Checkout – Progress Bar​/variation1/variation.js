@@ -1,3 +1,4 @@
+
 (function () {
   try {
     /* main variables */
@@ -26,17 +27,20 @@
     /* Variation Init */
     function init() {
       /* start your code here */
-
-      if(window.innerWidth < 768){
         document.querySelector("#booking-flow  nav > .step:nth-child(2)").childNodes[2].textContent = "Personal Detail";
-      }
-      listener()
+    
     }
 
+    listener()
+
     function listener() {
+    console.log("root changed");
       /* These are the modifications: */
       window.addEventListener("locationchange", function() {
+        console.log("root changed 1");
           waitForElement('#booking-flow  nav > .step:nth-child(2)', init, 50, 15000);
+          waitForElement('#booking-flow nav > .step > span', progress, 50, 15000);
+       
       });
       history.pushState = ((f) =>
           function pushState() {
@@ -57,11 +61,37 @@
       });
   }
 
+  function progress(){
+
+    setTimeout(()=>{
+
+      if (window.location.href.indexOf("https://www.moorings.com/booking/passengers") != -1){
+        document.querySelector("#booking-flow nav > .step:nth-child(1) > span").classList.add("eg-active");
+        console.log("arrived1")
+        } 
+        else if(window.location.href.indexOf("https://www.moorings.com/booking/payment") != -1){
+          document.querySelector("#booking-flow nav > .step:nth-child(1) > span").classList.add("eg-active");
+           document.querySelector("#booking-flow nav > .step:nth-child(2) > span").classList.add("eg-active");
+           console.log("arrived2")
+          }
+          else{
+            console.log("there is some error")
+          }
+    }, 100)
+  }
+
     /* Initialize variation */
-    waitForElement('#booking-flow  nav > .step:nth-child(2)', init, 50, 15000);
+    waitForElement('#booking-flow  nav > .step > span', init, 50, 15000);
+    waitForElement('#booking-flow  nav > .step', progress, 50, 15000);
   } catch (e) {
     if (debug) console.log(e, "error in Test" + variation_name);
   }
 })();
 
 
+
+// if (window.location.href.indexOf("https://www.moorings.com/booking/passengers") != -1){
+//   document.querySelector("nav > .step:nth-child(1) > span").classList.add("eg-active")
+//   } else{
+//     console.log(false)
+//   }
