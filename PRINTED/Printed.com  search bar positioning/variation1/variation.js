@@ -48,11 +48,8 @@
     }
 
     /* Initialize variation */
-    waitForElement('#js-content-wrapper > main > cms-page-widgets-component > div > cms-widget-component.widget-block.widget-product-header', init, 50, 15000);
+    waitForElement('#js-content-wrapper > main > cms-page-widgets-component > div', init, 50, 15000);
   } catch (e) {
     if (debug) console.log(e, "error in Test" + variation_name);
   }
 })();
-
-
-// #product-header > cms-widget-product-header-component
