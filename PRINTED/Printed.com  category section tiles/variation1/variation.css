@@ -34,7 +34,7 @@ a.eg_card:hover {
     width: 100%;
     object-fit: cover;
     display: block;
-    height: 125px;
+    height: 120px;
     border-radius: 10px 10px 0 0;
     object-position: 85%;
 }
@@ -85,12 +85,17 @@ p.egPara {
     .egHeading{
         font-size: 1rem;
     }
+
+    .egImg img{
+        object-position: 80%;
+    }
 }
 
 @media (min-width: 463px) and (max-width: 767px){
     .eg_card{
         flex-basis: 33%;
     }
+  
 }
 
 @media (min-width: 768px) and (max-width: 991px){
@@ -106,9 +111,12 @@ p.egPara {
         flex-basis: 33%;
     }
     
+    .egImg img{
+        object-position: 80%;
+    }
 }
 
-@media screen and (max-width: 1025px) {
+@media (min-width: 992px) and (max-width: 1025px) {
     .egImg img{
         object-position: 70%;
     }

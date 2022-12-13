@@ -65,17 +65,5 @@
         padding-inline: 0;
     }
     
-    .site-header {
-        margin-bottom: -12px !important;
-    }
-    
-    .booking-flow .step:first-child {
-        min-width: initial;
-        padding-left: 0;
-        width: calc(28% + 15px);
-    }
-    
-    .booking-flow .step{
-        padding-left: 4.4rem;
-    }
+  
 }
