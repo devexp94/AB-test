@@ -53,7 +53,7 @@ a.eg_card:hover {
 .egHeading{
     background-color: #fff;
     color: #000;
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding-block: 10px;
     font-family: 'caustenRoundedMedium';
     font-weight: 800;
@@ -63,7 +63,7 @@ a.eg_card:hover {
 
 
 h3.egTitle {
-    font-size: 3.3rem;
+    font-size: 3.9rem;
 }
 
 p.egPara {
@@ -75,7 +75,7 @@ p.egPara {
 
 @media screen and (max-width: 767px) {
     h3.egTitle {
-        font-size: 2.2rem;
+        font-size: 2.3rem;
         text-align: center;
     }
     p.egPara {
@@ -108,6 +108,10 @@ p.egPara {
 }
 
 @media screen and (max-width: 462px) {
+    .eg_cards{
+        padding-inline: 10px;
+    }
+
     .eg_card{
         flex-basis: 50%;
     }
@@ -115,6 +119,7 @@ p.egPara {
 
 @media screen and (min-width: 1600px) {
     .eg_wrapper{
-        width: 86%;
+        max-width: 1480px;
+        width: 100%;
     }
 }

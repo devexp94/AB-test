@@ -63,11 +63,3 @@
     if (debug) console.log(e, "error in Test" + variation_name);
   }
 })();
-
-
-let steps = document.querySelectorAll(".step")
-steps.forEach((step)=>{
-  if(step.classList.contains("active")){
-       this.previo
-  }
-});

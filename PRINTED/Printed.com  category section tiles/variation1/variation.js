@@ -58,7 +58,7 @@
                 </div>
             </a>
 
-            <a class="eg_card" href="https://www.printed.com/category/seasonal">
+            <a class="eg_card" href="https://www.printed.com/category/business-stationery">
             <div class="egImg">
                 <img src="https://www.cdn.printed.com/uploads/assets/2021/01/14/business-stationary-2x.jpg?1610624098" alt="" srcset="">
                 <div class="egHeading">Business Stationary</div>
