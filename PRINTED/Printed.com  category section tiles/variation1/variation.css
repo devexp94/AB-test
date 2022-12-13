@@ -95,7 +95,10 @@ p.egPara {
     .eg_card{
         flex-basis: 33%;
     }
-  
+    .eg_cards{
+        padding-inline: 10px;
+        gap: 10px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px){
