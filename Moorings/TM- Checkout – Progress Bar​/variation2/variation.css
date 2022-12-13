@@ -54,7 +54,7 @@
     }
     
     .booking-flow .step:not(.active) .number{
-        background: #fff !important;
+        background: #fff;
     }
     
     .step.active ,.step:not(:first-child) {
@@ -84,6 +84,11 @@
         padding-inline: 0;
     }
     
+    .eg-active{
+        background-color: #122447 !important;
+        color: #fff !important;
+    }
+
     .site-header {
         margin-bottom: -12px !important;
     }
@@ -98,3 +103,5 @@
         padding-left: 4.4rem;
     }
 }
+
+
