@@ -125,7 +125,7 @@ p.egPara {
 @media screen and (max-width: 462px) {
     .eg_cards{
         padding-inline: 10px;
-        gap: 7px;
+        gap: 10px;
     }
 
     .egHeading {
