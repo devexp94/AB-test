@@ -1,62 +1,71 @@
-section[data-qa="hero"] {
+
+.cv-3-1 section[data-qa="hero"] {
     height: auto;
 }
 
-div[class ^= "heroIntro"] {
+.cv-3-1 div[class ^="heroIntro"] {
     height: auto;
 }
 
 
-div[class ^= "featureLists"]{
+.cv-3-1 div[class ^="featureLists"] {
     display: none !important;
 }
 
-.eg-overview-container {
+.cv-3-1 .cv-overview-container {
     padding: 0 30px 14px;
-    margin-top: 25px;
+    margin-top: 50px;
     margin-bottom: -9%;
     padding-bottom: 0;
 }
 
-.eg-overview-wrapper {
+.cv-3-1 .cv-overview-wrapper {
     width: 100%;
     margin-inline: auto;
 }
 
-.eg-callouts-container {
+.cv-3-1 .cv-callouts-container {
     display: flex;
     justify-content: center !important;
 }
 
-.eg-callouts img {
+.cv-callouts:first-child .cv-img img {
+    width: 27px;
+  }
+  
+  .cv-callouts:last-child .cv-img img {
+      width: 41px;
+  }
+
+.cv-3-1 .cv-callouts img {
     width: 32px;
     height: 40px;
     margin: auto;
     display: block;
 }
 
-.eg-callouts {
+.cv-3-1 .cv-callouts {
     position: relative;
     text-align: center;
-    flex-basis: 19%;
+    flex-basis: 20%;
     margin: auto;
 }
 
-.eg-callouts .eg-title {
-    font-weight: 600;
+.cv-3-1 .cv-callouts .cv-title {
+    font-weight: 700;
     font-size: 16px;
-    margin: 25px 0 8px 0;
+    margin: 20px 0 8px 0;
     color: #000;
 }
 
-.eg-callouts .eg-info {
-    font-size: 15px;
-    line-height: 1.5;
+.cv-3-1 .cv-callouts .cv-info {
+    font-size: 14px;
+    line-height: 21px;
     padding-top: 12px;
 }
 
 
-.eg-overview-wrapper>.eg-heading {
+.cv-3-1 .cv-overview-wrapper>.cv-heading {
     font-size: 30px;
     font-weight: 600;
     text-align: center;
@@ -64,22 +73,22 @@ div[class ^= "featureLists"]{
 }
 
 
-div[class ^= "featureLists"] {
+.cv-3-1 div[class ^="featureLists"] {
     margin: auto;
 }
 
 
-section[class ^= 'featureSection'] > div[class ^= 'ctaContainer'] > a {
+.cv-3-1 section[class ^='featureSection']>div[class ^='ctaContainer']>a {
     max-width: 350px !important;
     width: 100% !important;
 }
 
 @media(max-width: 1099px) {
-    .eg-callouts {
+    .cv-3-1  .cv-callouts {
         flex-basis: 38%;
     }
 
-    .eg-callouts-container {
+    .cv-3-1 .cv-callouts-container {
         flex-wrap: wrap;
         justify-content: center;
         gap: 34px 0;
@@ -87,85 +96,114 @@ section[class ^= 'featureSection'] > div[class ^= 'ctaContainer'] > a {
 }
 
 @media(max-width: 767px) {
-    .eg-callouts {
+    .cv-3-1 .cv-callouts {
         flex-basis: 100%;
         max-width: 500px;
     }
 
-    .eg-callouts-container {
+    .cv-3-1 .cv-callouts .cv-title br{
+        display: none !important;
+    }
+    .cv-3-1 .cv-callouts-container {
         gap: 0;
     }
 
-    .eg-overview-wrapper>.eg-heading {
+    .cv-3-1 .cv-overview-wrapper>.cv-heading {
         margin-bottom: 50px;
     }
 
-    .eg-overview-container {
-    padding: 0 30px 30px;
-    margin-top: 0;
-    margin-bottom: -8%;
-}
+    .cv-3-1 .cv-overview-container {
+        padding: 0 30px 30px;
+        margin-top: 0;
+        margin-bottom: -8%;
+    }
 
-    .eg-callouts .eg-info {
-        font-size: 15px;
-        line-height: 1.5;
+    .cv-3-1 .cv-callouts .cv-info {
+        font-size: 14px;
+        line-height: 21px;
         padding-top: 3px;
     }
 
-    .eg_rows {
+    .cv-3-1 .cv-rows {
         padding-top: 0;
         margin-top: -2px;
         padding-left: 30px;
     }
 
-    .eg-overview-container {
-    padding: 0 30px 10px;
-    border-top: 2px solid #fff !important;
+    .cv-3-1 .cv-overview-container {
+        padding: 0 30px 10px;
+        border-top: 2px solid #fff !important;
     }
-    
-    .eg-callouts {
+
+    .cv-3-1 .cv-callouts {
         display: flex;
         align-items: center;
         text-align: left;
     }
 
-     section.eg-overview-container > div > div > div:nth-child(2) > div.eg_rows > h3 br {
+    .cv-3-1 section.cv-overview-container>div>div>div:nth-child(2)>div.cv-rows>h3 br {
         display: none;
     }
-    
-    .eg_img {
+
+    .cv-3-1 .cv-img {
         margin-top: 20px;
     }
-    
-    div[class ^= "sectionContent"] div[class ^= "featureLists"] {
-    display: block !important;
-}
-    
-    div[class ^= "featureLists"]  div[class ^= "featureContainer"] div[class ^= "featureItem"] {
-    display: none;
+
+    .cv-3-1 div[class ^="sectionContent"] div[class ^="featureLists"] {
+        display: block !important;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .cv-3-1 div[class ^="featureLists"] div[class ^="featureContainer"] div[class ^="featureItem"] {
+        display: none;
+    }
+
+
+    .cv-3-1 div[class ^="featureLists"] {
+        background: #fff;
+        border-bottom: 10px solid #fff !important;
+    }
+    .cv-3-1 section[class ^="featureSection"]>div[class ^="ctaContainer"] {
+    text-align: center;
+    margin-top: 0px;
 }
 
-    
-div[class ^= "featureLists"] {
-    background: #fff;
-    border-bottom: 10px solid #fff!important;
+.cv-3-1 section[data-qa="hero"] {
+    height: auto;
+    margin-bottom: -10px;
+}
+
+.cv-3-1 section[class ^="featureSection"]>div[class ^="ctaContainer"] {
+    text-align: center;
+    margin-top: 40px !important;
+    width: 100%;
+    margin: auto;
+}
+
+div[class ^="sectionContent"] {
+    margin-bottom: -3px;
 }
 
 }
 
-.eg-overview-container + section[class ^= "featureSection"]{
+.cv-3-1 .cv-overview-container+section[class ^="featureSection"] {
     padding-bottom: 35px;
     align-items: center;
     padding-right: 0 !important;
 }
 
 
-section[class ^= "featureSection"] > div[class ^= "ctaContainer"]{
-    width: 100%;
+.cv-3-1 section[class ^="featureSection"]>div[class ^="ctaContainer"] {
     text-align: center;
+    margin-top: 40px !important;
 }
 
 
-div[class ^= "ctaContainer"] div[class ^= "component"]  {
-    font-size: 18px;
+.cv-3-1 div[class ^="ctaContainer"] div[class ^="component"] {
+    font-size: 14px;
 }
+
+
+
+
