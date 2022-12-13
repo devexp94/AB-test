@@ -26,7 +26,7 @@
     let egStr = `
     <div class="eg_container">
     <div class="eg_wrapper">
-        <h3 class="egTitle">Find your perfact print</h3>
+        <h3 class="egTitle">Find your perfect print</h3>
         <p class="egPara">Your Print, Your way. Working together to bring brilliant ideas to life.</p>
         <div class="eg_cards">
 
