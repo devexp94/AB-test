@@ -59,7 +59,7 @@
         function init() {
             /* start your code here */
             let egCheckOutForm = document.querySelector("#checkoutForm");
-            if (window.innerWidth < 768) {
+            if (!document.querySelector(".eg-trust-wrapper") && egCheckOutForm && window.innerWidth < 768) {
                 let egTrustHTML = `
                           <div class="eg-trust-wrapper">
                               <div class = 'eg-ssl'>
@@ -84,42 +84,39 @@
                                   <div><img src="https://www.sunsail.com/sites/default/files/visa_3.png" alt="Visa"></div>
                               </div>
                           </div>`;
+                egCheckOutForm.insertAdjacentHTML("afterend", egTrustHTML);
 
-                 if(egCheckOutForm && !document.querySelector(".eg-trust-wrapper")){
-                  egCheckOutForm.insertAdjacentHTML("afterend", egTrustHTML);
-                 }         
-                
             }
 
 
         }
 
         function listener() {
-                    /* These are the modifications: */
-                    window.addEventListener("locationchange", function() {
-                        setTimeout(function() {
-                            waitForElement('#checkoutForm', init, 50, 15000);
-                        }, 500);
-                    });
-                    history.pushState = ((f) =>
-                        function pushState() {
-                            var ret = f.apply(this, arguments);
-                            window.dispatchEvent(new Event("pushstate"));
-                            window.dispatchEvent(new Event("locationchange"));
-                            return ret;
-                        })(history.pushState);
-                    history.replaceState = ((f) =>
-                        function replaceState() {
-                            var ret = f.apply(this, arguments);
-                            window.dispatchEvent(new Event("replacestate"));
-                            window.dispatchEvent(new Event("locationchange"));
-                            return ret;
-                        })(history.replaceState);
-                    window.addEventListener("popstate", () => {
-                        window.dispatchEvent(new Event("locationchange"));
-                    });
-                }
-         listener();       
+            /* These are the modifications: */
+            window.addEventListener("locationchange", function() {
+                setTimeout(function() {
+                    waitForElement('#checkoutForm', init, 50, 15000);
+                }, 500);
+            });
+            history.pushState = ((f) =>
+                function pushState() {
+                    var ret = f.apply(this, arguments);
+                    window.dispatchEvent(new Event("pushstate"));
+                    window.dispatchEvent(new Event("locationchange"));
+                    return ret;
+                })(history.pushState);
+            history.replaceState = ((f) =>
+                function replaceState() {
+                    var ret = f.apply(this, arguments);
+                    window.dispatchEvent(new Event("replacestate"));
+                    window.dispatchEvent(new Event("locationchange"));
+                    return ret;
+                })(history.replaceState);
+            window.addEventListener("popstate", () => {
+                window.dispatchEvent(new Event("locationchange"));
+            });
+        }
+        listener();
 
         /* Initialize variation */
         waitForElement('#checkoutForm', init, 50, 15000);
