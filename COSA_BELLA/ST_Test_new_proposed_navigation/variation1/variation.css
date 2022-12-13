@@ -10,12 +10,13 @@
 
     .header__navigation>.menu__items>.menu__item>div.menu__items--wrapper {
         width: 100vw !important;
-        padding:0 !important;
+        padding: 0 !important;
         left: 0;
         right: 0;
         margin: 0;
         align-items: center;
         justify-content: center;
+        padding-bottom: 10px !important;
     }
 
     .header__navigation>.menu__items>.menu__item:nth-child(1)>div.menu__items--wrapper>*:not(.eg-content),
@@ -58,8 +59,10 @@
         border-bottom: 0;
     }
 
-    .eg-first-nav-content>ul>li a {
+    .eg-nav-content>ul>li a {
         text-decoration: underline;
+        margin-top: 10px;
+        display: block;
     }
 
     /*for fifth,sixth,seventh and eight nav content*/
@@ -89,7 +92,7 @@
     .eg-nav-content>ul>li img {
         display: block;
         object-fit: cover;
-        max-height: 197px;
+        max-height: 159px !important;
     }
 
     .eg-nav-content>ul>li a {

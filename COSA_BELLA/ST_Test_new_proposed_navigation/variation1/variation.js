@@ -174,6 +174,13 @@
           </li>
 
           <li>
+            <a href="/collections/his-hers-pj-sets">
+              <img src="https://cdn.shopify.com/s/files/1/0248/1455/1074/products/AMORE1897_SR-SR_LB_CA_L_540x.jpg?v=1662657242" alt="">
+            </a>
+            <a href="/collections/his-hers-pj-sets">His &amp; Her PJ Sets</a>
+          </li>
+
+          <li>
             <a href="/collections/gifts-under-75">
               <img src="https://cdn.shopify.com/s/files/1/0248/1455/1074/products/NEVER0261_BLACK_LB_CA_L_540x.jpg?v=1662666142" alt="">
             </a>
