@@ -92,12 +92,7 @@
     .eg-nav-content>ul>li img {
         display: block;
         object-fit: cover;
-        max-height: 159px !important;
+        aspect-ratio: 1/1;
+        object-position: center 30%;
     }
-
-    .eg-nav-content>ul>li a {
-        text-decoration: underline;
-        margin-top: 10px;
-    }
-
 }
