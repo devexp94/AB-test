@@ -30,10 +30,17 @@
       if(window.innerWidth > 978){
                 
       
-              const search = document.querySelector("#v-header > div > div.l-header--desktop > div:nth-child(2) > div > div:nth-child(2)");
-              const target = document.querySelector("#js-content-wrapper > main > cms-page-widgets-component > div > .widget-block.widget-page-header-main + .widget-block.widget-trustpilot");
-        
-              target.insertAdjacentElement("afterend", search);
+              let search = document.querySelector("#v-header > div > div.l-header--desktop > div:nth-child(2) > div > div:nth-child(2)");
+             
+              let target = document.querySelector("#js-content-wrapper > main > cms-page-widgets-component > div > .widget-block.widget-page-header-main + .widget-block.widget-trustpilot");
+              
+              let target2 = document.querySelector("#js-content-wrapper > main > cms-page-widgets-component > div > cms-widget-component.widget-block.widget-product-header");
+
+              if(window.location.pathname == "/"){
+                target.insertAdjacentElement("afterend", search);
+              }else{
+                target2.insertAdjacentElement("afterend", search);
+              }
         
               document.querySelector("main > cms-page-widgets-component div.l-header__search-holder > input").placeholder = "What are you looking for? Leaflets, Business cards , Invitations, ....";     
     }
@@ -41,10 +48,11 @@
     }
 
     /* Initialize variation */
-    waitForElement('#js-content-wrapper > main > cms-page-widgets-component > div > .widget-block.widget-page-header-main + .widget-block.widget-trustpilot', init, 50, 15000);
+    waitForElement('#js-content-wrapper > main > cms-page-widgets-component > div > cms-widget-component.widget-block.widget-product-header', init, 50, 15000);
   } catch (e) {
     if (debug) console.log(e, "error in Test" + variation_name);
   }
 })();
 
 
+// #product-header > cms-widget-product-header-component

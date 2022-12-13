@@ -125,10 +125,19 @@ p.egPara {
 @media screen and (max-width: 462px) {
     .eg_cards{
         padding-inline: 10px;
+        gap: 7px;
     }
 
-    .eg_card{
-        flex-basis: 50%;
+    .egHeading {
+        font-size: 0.8rem;
+    }
+    
+    .egImg img {
+        object-position: 69%;
+    }
+    
+    .eg_card {
+        flex-basis: 40%;
     }
 }
 
