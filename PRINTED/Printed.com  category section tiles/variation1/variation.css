@@ -34,9 +34,9 @@ a.eg_card:hover {
     width: 100%;
     object-fit: cover;
     display: block;
-    height: 150px;
+    height: 125px;
     border-radius: 10px 10px 0 0;
-    object-position: 74%;
+    object-position: 85%;
 }
 
 .eg_card {
@@ -104,6 +104,13 @@ p.egPara {
 
     .eg_card {
         flex-basis: 33%;
+    }
+    
+}
+
+@media screen and (max-width: 1025px) {
+    .egImg img{
+        object-position: 70%;
     }
 }
 
