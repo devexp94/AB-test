@@ -59,10 +59,29 @@
         border-bottom: 0;
     }
 
-    .eg-nav-content>ul>li a {
-        text-decoration: underline;
+    .eg-nav-content>ul>li a:nth-of-type(2) {
         margin-top: 10px;
         display: block;
+        transition: all 0.5s;
+        width: fit-content;
+        margin-inline: auto;
+        position: relative;
+    }
+
+    .eg-nav-content>ul>li a:nth-of-type(2)::after {
+        content: '';
+        display: block;
+        background: #d7857a;
+        height: 2px;
+        position: absolute;
+        bottom: -6px;
+        width: 0%;
+        transition: width 0.2s;
+    }
+
+    .eg-nav-content ul>li a:has(+a):hover + a::after,
+    .eg-nav-content ul>li a:nth-of-type(2):hover::after {
+        width: 100%;
     }
 
     /*for fifth,sixth,seventh and eight nav content*/
