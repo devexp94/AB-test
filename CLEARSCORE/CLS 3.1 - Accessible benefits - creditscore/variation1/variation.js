@@ -39,7 +39,7 @@
 					<div class="cv-overview-wrapper">
 						<div class="cv-callouts-container">
 			
-							<!--Certified Translation-->
+						
 							<div class="cv-callouts">
 			
 							<div class="cv-img">
@@ -52,7 +52,6 @@
 							   </div>   
 							</div>
 			
-							<!--Professional Translation-->
 							<div class="cv-callouts">
 							<div class="cv-img">
 								<img src="https://cfactory-img.s3.amazonaws.com/CLS/3.1/convicon2.svg" alt="callout-icon">
@@ -65,7 +64,6 @@
 								</div>
 							</div>
 			
-							<!--Academic Translation-->
 							<div class="cv-callouts">
 							<div class="cv-img">
 								<img src="https://cfactory-img.s3.amazonaws.com/CLS/3.1/convicon3.svg" alt="callout-icon">
@@ -78,7 +76,6 @@
 								</div>
 							</div>
 			
-							<!--90+ Languages Supported-->
 							<div class="cv-callouts">
 			
 							<div class="cv-img">
