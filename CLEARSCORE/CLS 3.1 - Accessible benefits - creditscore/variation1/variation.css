@@ -25,6 +25,7 @@
 
 .cv-3-1 .cv-overview-wrapper {
     width: 100%;
+    max-width: 1440px;
     margin-inline: auto;
 }
 
