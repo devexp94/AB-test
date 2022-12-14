@@ -79,17 +79,17 @@ dots.appendChild(ingrd);
 // add carousel images
 var cars = document.querySelector('.embla__container')
 var feati = document.createElement('div');
-feati.classList.add('keen-slider__slide');
+feati.classList.add('embla__slide');
 feati.id = 'feati';
 feati.setAttribute('style','min-width: calc(100% - 0px); max-width: calc(100% - 0px); transform: translate3d(0px, 0px, 0px);');
 feati.innerHTML = '<div class="image pa x y top left"><picture><source srcset="https://drive.google.com/uc?id=1tVnAQw3SugYt8vXhAysTXBmRJc47A8MA" media="(min-width: 1000px)"><source srcset="https://drive.google.com/uc?id=1tVnAQw3SugYt8vXhAysTXBmRJc47A8MA" media="(min-width: 600px)"><img src="https://drive.google.com/uc?id=1tVnAQw3SugYt8vXhAysTXBmRJc47A8MA"></picture></div>';
 var bnfti = document.createElement('div');
-bnfti.classList.add('keen-slider__slide');
+bnfti.classList.add('embla__slide');
 bnfti.id = 'bnfti';
 bnfti.setAttribute('style','min-width: calc(100% - 0px); max-width: calc(100% - 0px); transform: translate3d(0px, 0px, 0px);');
 bnfti.innerHTML = '<div class="image pa x y top left"><picture><source srcset="https://drive.google.com/uc?id=1Y7_5SS2Xlkmf2k3LVst7Qj88EHX9YYGj" media="(min-width: 1000px)"><source srcset="https://drive.google.com/uc?id=1Y7_5SS2Xlkmf2k3LVst7Qj88EHX9YYGj" media="(min-width: 600px)"><img src="https://drive.google.com/uc?id=1Y7_5SS2Xlkmf2k3LVst7Qj88EHX9YYGj"></picture></div>';
 var ingri = document.createElement('div');
-ingri.classList.add('keen-slider__slide');
+ingri.classList.add('embla__slide');
 ingri.id = 'ingri';
 ingri.setAttribute('style','min-width: calc(100% - 0px); max-width: calc(100% - 0px); transform: translate3d(0px, 0px, 0px);');
 ingri.innerHTML = '<div class="image pa x y top left"><picture><source srcset="https://drive.google.com/uc?id=1BIKck9NhHWc8FWu09HUdx6JPwO5uxQ5i" media="(min-width: 1000px)"><source srcset="https://drive.google.com/uc?id=1BIKck9NhHWc8FWu09HUdx6JPwO5uxQ5i" media="(min-width: 600px)"><img src="https://drive.google.com/uc?id=1BIKck9NhHWc8FWu09HUdx6JPwO5uxQ5i"></picture></div>';
@@ -102,7 +102,7 @@ document.addEventListener('click', function (event) {
   //console.log('clicked');
   if(!event.target.matches('.product__hero-thumb img, .product__hero-dots button')) return;
   //console.log('matched');
-  var slides = cars.querySelectorAll('.keen-slider__slide');
+  var slides = cars.querySelectorAll('.embla__slide');
   for(q=0;q<slides.length;q++) {
     if(slides[q].classList.contains('active')) {
       slides[q].classList.remove('active');
@@ -112,31 +112,31 @@ document.addEventListener('click', function (event) {
   var wdt = document.querySelector('.site__wrapper > .row > .col:first-child').offsetWidth;
   if(event.target.matches('.product__hero-carousel-thumbs > .product__hero-thumb:first-child img, .product__hero-dots button:first-child')) {
     var pos = '0';
-    document.querySelector('.embla__container .keen-slider__slide:nth-child(1)').classList.add('active');
+    document.querySelector('.embla__container .embla__slide:nth-child(1)').classList.add('active');
   } else if(event.target.matches('.product__hero-carousel-thumbs > .product__hero-thumb:nth-child(2) img, .product__hero-dots button:nth-child(2)')) {
     var pos = '-' + wdt + 'px';
-    document.querySelector('.embla__container .keen-slider__slide:nth-child(2)').classList.add('active');
+    document.querySelector('.embla__container .embla__slide:nth-child(2)').classList.add('active');
   } else if(event.target.matches('.product__hero-carousel-thumbs > .product__hero-thumb:nth-child(3) img, .product__hero-dots button:nth-child(3)')) {
     var pos = '-' + wdt * 2 + 'px';
-    document.querySelector('.embla__container .keen-slider__slide:nth-child(3)').classList.add('active');
+    document.querySelector('.embla__container .embla__slide:nth-child(3)').classList.add('active');
   } else if(event.target.matches('.product__hero-carousel-thumbs > .product__hero-thumb:nth-child(4) img, .product__hero-dots button:nth-child(4)')) {
     var pos = '-' + wdt * 3 + 'px';
-    document.querySelector('.embla__container .keen-slider__slide:nth-child(4)').classList.add('active');
+    document.querySelector('.embla__container .embla__slide:nth-child(4)').classList.add('active');
   } else if(event.target.matches('.product__hero-carousel-thumbs > .product__hero-thumb:nth-child(5) img, .product__hero-dots button:nth-child(5)')) {
     var pos = '-' + wdt * 4 + 'px';
-    document.querySelector('.embla__container .keen-slider__slide:nth-child(5)').classList.add('active');
+    document.querySelector('.embla__container .embla__slide:nth-child(5)').classList.add('active');
   } else if(event.target.matches('.product__hero-carousel-thumbs > .product__hero-thumb:nth-child(6) img, .product__hero-dots button:nth-child(6)')) {
     var pos = '-' + wdt * 5 + 'px';
-    document.querySelector('.embla__container .keen-slider__slide:nth-child(6)').classList.add('active');
+    document.querySelector('.embla__container .embla__slide:nth-child(6)').classList.add('active');
   } else if(event.target.matches('.product__hero-carousel-thumbs > .product__hero-thumb:nth-child(7) img, .product__hero-dots button:nth-child(7)')) {
     var pos = '-' + wdt * 6 + 'px';
-    document.querySelector('.embla__container .keen-slider__slide:nth-child(7)').classList.add('active');
+    document.querySelector('.embla__container .embla__slide:nth-child(7)').classList.add('active');
   } else if(event.target.matches('.product__hero-carousel-thumbs > .product__hero-thumb:nth-child(8) img, .product__hero-dots button:nth-child(8)')) {
     var pos = '-' + wdt * 7 + 'px';
-    document.querySelector('.embla__container .keen-slider__slide:nth-child(8)').classList.add('active');
+    document.querySelector('.embla__container .embla__slide:nth-child(8)').classList.add('active');
   }  else if(event.target.matches('.product__hero-carousel-thumbs > .product__hero-thumb:nth-child(9) img, .product__hero-dots button:nth-child(9)')) {
     var pos = '-' + wdt * 8 + 'px';
-    document.querySelector('.embla__container .keen-slider__slide:nth-child(9)').classList.add('active');
+    document.querySelector('.embla__container .embla__slide:nth-child(9)').classList.add('active');
   } 
   //console.log(pos);
   for(s=0;s<slides.length;s++) {
