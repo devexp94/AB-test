@@ -98,6 +98,13 @@
         max-width: 500px;
     }
 
+    .cv-3-1 .cv-callouts img {
+        width: 32px !important;
+        height: 40px;
+        margin: auto;
+        display: block;
+    }
+
     .cv-3-1 .cv-callouts .cv-title br {
         display: none !important;
     }
