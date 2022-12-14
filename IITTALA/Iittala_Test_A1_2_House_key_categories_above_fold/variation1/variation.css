@@ -9,10 +9,12 @@
 
 .eg-box-container>div {
     padding-inline: 20px;
+    flex: 1;
 }
 
 .eg-card img {
-    width: 280px;
+    width: 100%;
+    max-width:100%;
     object-fit: cover;
     aspect-ratio: 3/2;
 }
@@ -34,6 +36,7 @@
 ************************************/
 
 @media(max-width:991px) {
+
     .eg-box-container>div {
         padding-inline: 0;
     }
