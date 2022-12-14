@@ -29,7 +29,7 @@
             document.querySelector("#quizResults").insertAdjacentHTML("beforeend", `
                 <div class="eg-not-sure">
                     <h3>Still Not Sure?</h3>
-                    <p>Learn more about differences between trusts and wills <a href="https://trustandwill.com/learn/difference-between-trust-and-will">here</a></p>
+                    <p>Learn more about differences between trusts and wills <a href="https://trustandwill.com/learn/difference-between-trust-and-will">here.</a></p>
                 </div>`);
 
         }
