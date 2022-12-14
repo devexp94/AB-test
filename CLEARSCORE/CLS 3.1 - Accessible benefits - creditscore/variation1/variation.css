@@ -120,7 +120,7 @@
     .cv-3-1 .cv-overview-container {
         padding: 0 30px 30px;
         margin-top: 0;
-        margin-bottom: -8%;
+        /* margin-bottom: -8%; */
     }
 
     .cv-3-1 .cv-callouts .cv-info {
@@ -172,14 +172,14 @@
 
     .cv-3-1 section[class ^="featureSection"]>div[class ^="ctaContainer"] {
         text-align: center;
-        margin: 88px 0 20px !important;
+        margin: 60px 0 20px !important;
         width: 100%;
         margin: auto;
     }
 
     .cv-3-1 section[data-qa="hero"] {
         height: auto;
-        margin-bottom: -10px;
+        /* margin-bottom: -10px; */
     }
 
     div[class ^="sectionContent"] {
@@ -190,7 +190,7 @@
 
 
 .cv-3-1 .cv-overview-container+section[class ^="featureSection"] {
-    padding-bottom: 35px;
+    padding-bottom: 40px;
     /* align-items: center; */
     padding-right: 0 !important;
     margin-top: 0;
