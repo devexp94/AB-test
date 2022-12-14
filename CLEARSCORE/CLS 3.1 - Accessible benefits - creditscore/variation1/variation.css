@@ -42,6 +42,10 @@
     aspect-ratio: 1/1;
 }
 
+.cv-3-1 .cv-callouts:nth-of-type(4) img {
+    width: 36px;
+}
+
 .cv-3-1 .cv-callouts {
     position: relative;
     text-align: center;
@@ -54,6 +58,7 @@
     font-size: 16px;
     margin: 16px 0 8px 0;
     color: #000;
+    line-height: 1.4;
 }
 
 .cv-3-1 .cv-callouts .cv-info {
@@ -75,11 +80,19 @@
     margin: auto;
 }
 
-
 .cv-3-1 section[class ^='featureSection']>div[class ^='ctaContainer']>a {
-    max-width: 350px !important;
+    max-width: fit-content !important;
     width: 100% !important;
 }
+
+
+
+@media(max-width: 767px) {
+    .cv-3-1 section[class ^='featureSection']>div[class ^='ctaContainer']>a {
+        max-width: 350px !important;
+    }
+}
+
 
 @media(max-width: 1099px) {
     .cv-3-1 .cv-callouts {

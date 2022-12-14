@@ -37,6 +37,7 @@
 })();
 
 
+
 console.log('hW A003 started');
 
 // add thumbnails
@@ -109,16 +110,34 @@ document.addEventListener('click', function (event) {
   }
   var pos = '0px';
   var wdt = document.querySelector('.site__wrapper > .row > .col:first-child').offsetWidth;
-  if(event.target.matches('.product__hero-carousel-thumbs > .product__hero-thumb:nth-child(8) img, .product__hero-dots button:nth-child(8)')) {
+  if(event.target.matches('.product__hero-carousel-thumbs > .product__hero-thumb:first-child img, .product__hero-dots button:first-child')) {
+    var pos = '0';
+    document.querySelector('.embla__container .keen-slider__slide:nth-child(1)').classList.add('active');
+  } else if(event.target.matches('.product__hero-carousel-thumbs > .product__hero-thumb:nth-child(2) img, .product__hero-dots button:nth-child(2)')) {
+    var pos = '-' + wdt + 'px';
+    document.querySelector('.embla__container .keen-slider__slide:nth-child(2)').classList.add('active');
+  } else if(event.target.matches('.product__hero-carousel-thumbs > .product__hero-thumb:nth-child(3) img, .product__hero-dots button:nth-child(3)')) {
+    var pos = '-' + wdt * 2 + 'px';
+    document.querySelector('.embla__container .keen-slider__slide:nth-child(3)').classList.add('active');
+  } else if(event.target.matches('.product__hero-carousel-thumbs > .product__hero-thumb:nth-child(4) img, .product__hero-dots button:nth-child(4)')) {
+    var pos = '-' + wdt * 3 + 'px';
+    document.querySelector('.embla__container .keen-slider__slide:nth-child(4)').classList.add('active');
+  } else if(event.target.matches('.product__hero-carousel-thumbs > .product__hero-thumb:nth-child(5) img, .product__hero-dots button:nth-child(5)')) {
+    var pos = '-' + wdt * 4 + 'px';
+    document.querySelector('.embla__container .keen-slider__slide:nth-child(5)').classList.add('active');
+  } else if(event.target.matches('.product__hero-carousel-thumbs > .product__hero-thumb:nth-child(6) img, .product__hero-dots button:nth-child(6)')) {
+    var pos = '-' + wdt * 5 + 'px';
+    document.querySelector('.embla__container .keen-slider__slide:nth-child(6)').classList.add('active');
+  } else if(event.target.matches('.product__hero-carousel-thumbs > .product__hero-thumb:nth-child(7) img, .product__hero-dots button:nth-child(7)')) {
+    var pos = '-' + wdt * 6 + 'px';
+    document.querySelector('.embla__container .keen-slider__slide:nth-child(7)').classList.add('active');
+  } else if(event.target.matches('.product__hero-carousel-thumbs > .product__hero-thumb:nth-child(8) img, .product__hero-dots button:nth-child(8)')) {
+    var pos = '-' + wdt * 7 + 'px';
+    document.querySelector('.embla__container .keen-slider__slide:nth-child(8)').classList.add('active');
+  }  else if(event.target.matches('.product__hero-carousel-thumbs > .product__hero-thumb:nth-child(9) img, .product__hero-dots button:nth-child(9)')) {
     var pos = '-' + wdt * 8 + 'px';
     document.querySelector('.embla__container .keen-slider__slide:nth-child(9)').classList.add('active');
-  } else if(event.target.matches('.product__hero-carousel-thumbs > .product__hero-thumb:nth-child(9) img, .product__hero-dots button:nth-child(9)')) {
-    var pos = '-' + wdt * 9 + 'px';
-    document.querySelector('.embla__container .keen-slider__slide:nth-child(9)').classList.add('active');
-  } else if(event.target.matches('.product__hero-carousel-thumbs > .product__hero-thumb:nth-child(10) img, .product__hero-dots button:nth-child(10)')) {
-    var pos = '-' + wdt * 10 + 'px';
-    document.querySelector('.embla__container .keen-slider__slide:nth-child(10)').classList.add('active');
-  }
+  } 
   //console.log(pos);
   for(s=0;s<slides.length;s++) {
     slides[s].setAttribute('style','min-width: calc(100% - 0px);max-width: calc(100% - 0px);transform: translate3d(' + pos + ', 0px, 0px);');
