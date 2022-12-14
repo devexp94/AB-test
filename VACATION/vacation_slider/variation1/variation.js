@@ -130,6 +130,7 @@
                     document.querySelector('.embla__container .embla__slide:nth-child(10)').classList.add('active');
                 }
                 // console.log(pos);
+                // animation needed
                 document.querySelector(".embla__container").style.cssText = `transform: translate3d(${pos}, 0px, 0px);`;
                 var thumbs = thbs.querySelectorAll('.product__hero-thumb');
                 for (t = 0; t < thumbs.length; t++) {
