@@ -1,0 +1,22 @@
+.eg-not-sure {
+    text-align: center;
+    padding-top: 110px;
+}
+
+html body div#quizResults {
+    padding-bottom: 0;
+}
+
+.eg-not-sure>p {
+    font-size: 17px;
+}
+
+.eg-not-sure>h3 {
+    font-size: 31px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.eg-not-sure>p>a {
+    color: #4c70b8;
+}
