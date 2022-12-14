@@ -1,107 +1,154 @@
-@media screen and (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1199px) {
+    html body #header-info {
+        top: 9px !important;
+    }
+}
 
+@media(min-width:1200px){
+    html body #header-info {
+        top: 40px !important;
+    }
+}
+
+@media (min-width: 768px) {
+
+    html body .navbar-header>.inner {
+        height: auto;
+    }
+
+    #header {
+        margin-top: 0 !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
     div#header-info {
         display: none;
     }
-    
-    .navbar-header {
-        border-bottom: 0;
-    }
-    
-    .navbar-brand {
-        top: -2rem !important;
-    }
-    
-    .navbar {
-        box-shadow: none;
-        height: auto;
-        min-height: auto;
-    }
 
-    nav .step {
-        display: flex !important;
-        flex-direction: column;
-       align-items: center;
-        background: none !important;
-    }
-    
     #booking-flow nav {
-        display: flex;
-        padding-bottom: 34px;
-        position: relative;
-        overflow: hidden;
-    }
-    
-    .steps nav::before {
-        content: "";
-        position: absolute;
-        top: 40%;
-        transform: translateY(-50%);
-        height: 1px;
-        right: 11%;
-        width: 79%;
-        background-color: #122447;
-    }
-    
-    .site-header {
-        margin-bottom: 0 !important;
-    }
-    
-    .step.active span.number {
-        background: #122447;
-        color: #fff !important;
-        height: 25px;
-    }
-    
-    .booking-flow .step:not(.active) .number{
-        background: #fff;
-    }
-    
-    .step.active ,.step:not(:first-child) {
-       color: #122447 !important;
-    }
-    
-    #booking-flow nav > .step:not(.number) {
-        font-size: 12px;
-        color: #122447;
-    }
-    
-    .booking-flow .steps .number {
-        height: 30px !important;
-        width: 30px;
-        text-align: center;
-        line-height: 2.5;
-        font-size: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #122447;
-        margin-bottom: 8px;
-        border: 3px solid #122447;
-    }
-    
-    .row .steps {
-        padding-inline: 0;
-    }
-    
-    .eg-active{
-        background-color: #122447 !important;
-        color: #fff !important;
+        width: 90% !important;
     }
 
-    .site-header {
-        margin-bottom: -12px !important;
-    }
-    
-    .booking-flow .step:first-child {
-        min-width: initial;
-        padding-left: 0;
-        width: calc(28% + 15px);
-    }
-    
-    .booking-flow .step{
-        padding-left: 4.4rem;
+    .steps nav::before {
+        top: 22px;
     }
 }
 
 
+.booking-flow .step {
+    flex: 1;
+}
+
+html body .booking-flow .steps .number {
+    margin-right: 0;
+}
+
+
+.navbar-header {
+    border-bottom: 0;
+}
+
+.navbar-brand {
+    top: 0rem !important;
+    padding-top: 1.6rem !important;
+}
+
+.navbar {
+    box-shadow: none;
+    height: auto;
+    min-height: auto;
+}
+
+nav .step {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    background: none !important;
+}
+
+.booking-flow .step {
+    padding-left: 0 !important;
+}
+
+#booking-flow nav {
+    display: flex;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+    margin-inline: auto;
+    max-width: 1040px;
+}
+
+.steps nav::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 77%;
+    background-color: #122447;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 27%;
+}
+
+.site-header {
+    margin-bottom: 0 !important;
+}
+
+.step.active span.number {
+    background: #122447;
+    color: #fff !important;
+    height: 25px;
+}
+
+.booking-flow .step:not(.active) .number {
+    background: #fff;
+}
+
+.step.active,
+.step:not(:first-child) {
+    color: #122447 !important;
+}
+
+#booking-flow nav>.step:not(.number) {
+    font-size: 12px;
+    color: #122447;
+}
+
+#booking-flow nav>.step {
+    padding: 0 !important;
+    height: auto !important;
+    min-width: unset !important;
+}
+
+.booking-flow .steps .number {
+    height: 30px !important;
+    width: 30px;
+    text-align: center;
+    line-height: 2.5;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #122447;
+    margin-bottom: 8px;
+    border: 3px solid #122447;
+}
+
+.row .steps {
+    padding-inline: 0;
+    padding-block: 40px;
+}
+
+.eg-active {
+    background-color: #122447 !important;
+    color: #fff !important;
+}
+
+
+.booking-flow .step {
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+}
