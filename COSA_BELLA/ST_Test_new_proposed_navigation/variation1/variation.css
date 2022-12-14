@@ -66,6 +66,8 @@
         width: fit-content;
         margin-inline: auto;
         position: relative;
+        font-family: 'Cambon';
+        font-size: 13px;
     }
 
     .eg-nav-content>ul>li a:nth-of-type(2)::after {
@@ -79,7 +81,7 @@
         transition: width 0.2s;
     }
 
-    .eg-nav-content ul>li a:has(+a):hover + a::after,
+    .eg-nav-content ul>li a:has(+a):hover+a::after,
     .eg-nav-content ul>li a:nth-of-type(2):hover::after {
         width: 100%;
     }
