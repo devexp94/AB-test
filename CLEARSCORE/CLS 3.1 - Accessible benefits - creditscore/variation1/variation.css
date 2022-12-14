@@ -33,19 +33,12 @@
     justify-content: center !important;
 }
 
-.cv-callouts:first-child .cv-img img {
-    width: 26px;
-}
-
-.cv-callouts:last-child .cv-img img {
-    width: 41px;
-}
 
 .cv-3-1 .cv-callouts img {
-    width: 32px;
-    height: 40px;
     margin: auto;
     display: block;
+    width: 34px;
+    aspect-ratio: 1/1;
 }
 
 .cv-3-1 .cv-callouts {
