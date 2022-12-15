@@ -39,9 +39,11 @@
 '  </div>';
 
     function init() {
-      setTimeout(()=>{
-        document.querySelector("#__next main > div.filters-container > div.filters-list").insertAdjacentHTML('beforebegin', egReview);
-      }, 1000)
+      if (window.location.href.indexOf("https://www.vacation.inc/collections/all") != -1){
+        setTimeout(()=>{
+          document.querySelector("#__next main > div.filters-container > div.filters-list").insertAdjacentHTML('beforebegin', egReview);
+        }, 1000)
+      }
     }
 
     listener()
