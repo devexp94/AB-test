@@ -30,7 +30,7 @@
     }
 
     /* Initialize variation */
-    waitForElement('#primaryNavigation > ul > li:nth-child(9) > ul > li:nth-child(2) > ul > li:nth-child(3) > a', init, 50, 15000);
+    waitForElement('body', init, 50, 15000);
   } catch (e) {
     if (debug) console.log(e, "error in Test" + variation_name);
   }
