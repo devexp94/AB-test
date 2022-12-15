@@ -23,10 +23,10 @@
     }
 
     var egReview =''+ 
-'  <div class="eg-review-container">'+ 
-'      <p class="eg-text">“The World\'s Most Best-Smelling Sunscreen”</p>'+ 
-'      <div class="eg-review">'+ 
-'      <p class="eg-text">4.93 / 5</p>'+ 
+'  <div class="eg-reviews-containers">'+ 
+'      <p class="eg-texts">“The World\'s Most Best-Smelling Sunscreen”</p>'+ 
+'      <div class="eg-reviews">'+ 
+'      <p class="eg-texts">4.93 / 5</p>'+ 
 '          <div class="eg-star">'+ 
 '              <svg viewBox="0 0 51 48" class="widget-svg" style="width: 14px; height: 14px; transition: transform 0.2s ease-in-out 0s;"><path class="star" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" style="fill: rgb(241, 210, 122); transition: fill 0.2s ease-in-out 0s;"></path></svg>'+ 
 '              <svg viewBox="0 0 51 48" class="widget-svg" style="width: 14px; height: 14px; transition: transform 0.2s ease-in-out 0s;"><path class="star" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" style="fill: rgb(241, 210, 122); transition: fill 0.2s ease-in-out 0s;"></path></svg>'+ 
@@ -34,7 +34,7 @@
 '              <svg viewBox="0 0 51 48" class="widget-svg" style="width: 14px; height: 14px; transition: transform 0.2s ease-in-out 0s;"><path class="star" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" style="fill: rgb(241, 210, 122); transition: fill 0.2s ease-in-out 0s;"></path></svg>'+ 
 '              <svg viewBox="0 0 51 48" class="widget-svg" style="width: 14px; height: 14px; transition: transform 0.2s ease-in-out 0s;"><path class="star" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" style="fill: rgb(241, 210, 122); transition: fill 0.2s ease-in-out 0s;"></path></svg>'+ 
 '          </div>'+ 
-'          <p class="eg-review-text">1297 Reviews</p>'+ 
+'          <p class="eg-reviews-text">1297 Reviews</p>'+ 
 '      </div>'+ 
 '  </div>';
 

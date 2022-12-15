@@ -1,10 +1,10 @@
-html body .eg-review-container {
+html body .eg-reviews-containers {
   display: flex;
   gap: 20px;
   text-align: center;
 }
 
-html body .eg-text {
+html body .eg-texts {
   line-height : 1.1;
   font-family: ITCGaramondStd-LtCond;
   font-weight : 400;
@@ -25,12 +25,12 @@ html body .eg-text {
   flex-direction: column;
   margin-top: 172px !important;
 }
-html body .eg-review-container > .eg-text{
+html body .eg-reviews-containers > .eg-texts{
   margin-right: 0px;
   margin-bottom: 10px;
   color: #f1d27a;;
 }
-html body .eg-review-text {
+html body .eg-reviews-text {
   margin-left : 10px;
   font-family: ITCGaramondStd-LtCond;
   font-size : 20px;
@@ -51,7 +51,7 @@ html body img.hero__logo {
   stroke: #f1d27a;
 }
 
-html body .eg-review {
+html body .eg-reviews {
   text-align : center;
   display : flex;
   align-items : center;
@@ -61,17 +61,17 @@ html body .eg-review {
 }
   
 @media screen and (max-width:1050px) {
-  html body .eg-review-container{
+  html body .eg-reviews-containers{
       margin-top: 0;
   }
 }
 
 @media (min-width: 768px) and (max-width:911px) {
-  html body .eg-review-container > .eg-text{
+  html body .eg-reviews-containers > .eg-texts{
       font-size: 27px!important;
   }
 
-  div.eg-review-container > .eg-review > p.eg-text{
+  div.eg-reviews-containers > .eg-reviews > p.eg-texts{
     font-size: 28px;
   }
 
@@ -84,10 +84,10 @@ html body .eg-review {
 
     
 @media screen and (max-width:767px) {
-      html body .eg-text {
+      html body .eg-texts {
         font-size:25px !important;
     }
-    html body .eg-review-container > .eg-text{
+    html body .eg-reviews-containers > .eg-texts{
       margin-right: 0px;
       margin-bottom: 10px;
     }
@@ -98,7 +98,7 @@ html body .eg-review {
       height : 20px !important;
   }
 
-    html body .eg-review-container{
+    html body .eg-reviews-containers{
   text-align: center;
   display: flex;
     flex-direction : column;
