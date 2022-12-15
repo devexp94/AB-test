@@ -39,7 +39,9 @@
 '  </div>';
 
     function init() {
-      // listener()
+      setTimeout(()=>{
+        document.querySelector("#__next main > div.filters-container > div.filters-list").insertAdjacentHTML('beforebegin', egReview);
+      }, 1000)
     }
 
     listener()
@@ -48,7 +50,7 @@
     
       /* These are the modifications: */
       window.addEventListener("locationchange", function() {        
-          waitForElement('#__next main > div.filters-container > div.filters-list', insert, 50, 15000);
+          waitForElement('#__next main > div.filters-container > div.filters-list', init, 50, 15000);
       });
       history.pushState = ((f) =>
           function pushState() {
@@ -69,11 +71,7 @@
       });
   }
 
-  function insert(){
-    setTimeout(()=>{
-      document.querySelector("#__next main > div.filters-container > div.filters-list").insertAdjacentHTML('beforebegin', egReview);
-    }, 1000)
-  }
+ 
 
     /* Initialise variation */
     waitForElement("#__next main > div.filters-container > div.filters-list", init, 100, 10000);
