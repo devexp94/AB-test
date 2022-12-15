@@ -24,8 +24,7 @@
 
     var egReview =''+ 
 '  <div class="eg-review-container">'+ 
-'      <p class="eg-text eg-text-desktop">“The World\'s Most Best-Smelling Sunscreen”</p>'+ 
-'      <p class="eg-text eg-text-mobile">“The World\'s Best-Smelling Sunscreen”</p>'+ 
+'      <p class="eg-text">“The World\'s Most Best-Smelling Sunscreen”</p>'+ 
 '      <div class="eg-review">'+ 
 '      <p class="eg-text">4.93 / 5</p>'+ 
 '          <div class="eg-star">'+ 
@@ -40,8 +39,41 @@
 '  </div>';
 
     function init() {
-      document.querySelector("#__next main > div.filters-container > div.filters-list").insertAdjacentHTML('beforebegin', egReview);
+      // listener()
     }
+
+    listener()
+
+    function listener() {
+    
+      /* These are the modifications: */
+      window.addEventListener("locationchange", function() {        
+          waitForElement('#__next main > div.filters-container > div.filters-list', insert, 50, 15000);
+      });
+      history.pushState = ((f) =>
+          function pushState() {
+              var ret = f.apply(this, arguments);
+              window.dispatchEvent(new Event("pushstate"));
+              window.dispatchEvent(new Event("locationchange"));
+              return ret;
+          })(history.pushState);
+      history.replaceState = ((f) =>
+          function replaceState() {
+              var ret = f.apply(this, arguments);
+              window.dispatchEvent(new Event("replacestate"));
+              window.dispatchEvent(new Event("locationchange"));
+              return ret;
+          })(history.replaceState);
+      window.addEventListener("popstate", () => {
+          window.dispatchEvent(new Event("locationchange"));
+      });
+  }
+
+  function insert(){
+    setTimeout(()=>{
+      document.querySelector("#__next main > div.filters-container > div.filters-list").insertAdjacentHTML('beforebegin', egReview);
+    }, 1000)
+  }
 
     /* Initialise variation */
     waitForElement("#__next main > div.filters-container > div.filters-list", init, 100, 10000);

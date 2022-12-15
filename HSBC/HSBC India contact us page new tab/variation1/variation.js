@@ -1,10 +1,10 @@
-(function() {
-    try {
-        /* main variables */
-        var debug = 0;
-        var variation_name = "";
-        var $;
-        /* all Pure helper functions */
+(function () {
+  try {
+    /* main variables */
+    var debug = 0;
+    var variation_name = "";
+    var $;
+    /* all Pure helper functions */
 
         function waitForElement(selector, trigger, delayInterval, delayTimeout) {
             var interval = setInterval(function() {

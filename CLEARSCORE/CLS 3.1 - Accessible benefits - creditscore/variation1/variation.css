@@ -3,18 +3,18 @@
     margin-top: 44px !important;
 }
 
-.cv-3-1 section[data-qa="hero"] {
+/*.cv-3-1 section[data-qa="hero"] {
     height: auto;
 }
 
 .cv-3-1 div[class ^="heroIntro"] {
     height: auto;
-}
+}*/
 
 
-.cv-3-1 div[class ^="featureLists"] {
+/*.cv-3-1 div[class ^="featureLists"] {
     display: none !important;
-}
+}*/
 
 .cv-3-1 .cv-overview-container {
     padding: 0 30px 14px;
