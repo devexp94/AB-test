@@ -27,7 +27,7 @@
     /* Variation Init */
     function init() {
       /* start your code here */
-        document.querySelector("#booking-flow  nav > .step:nth-child(2)").childNodes[2].textContent = "Personal Detail";
+        document.querySelector("#booking-flow  nav > .step:nth-child(2)").childNodes[2].textContent = "Contact Details";
     
     }
 
@@ -64,11 +64,11 @@
 
     setTimeout(()=>{
 
-      if (window.location.href.indexOf("https://www.moorings.com/booking/passengers") != -1){
+      if (window.location.href.indexOf("https://www.sunsail.com/booking/passengers") != -1){
         document.querySelector("#booking-flow nav > .step:nth-child(1) > span").classList.add("eg-active");
        
         } 
-        else if(window.location.href.indexOf("https://www.moorings.com/booking/payment") != -1){
+        else if(window.location.href.indexOf("https://www.sunsail.com/booking/payment") != -1){
           document.querySelector("#booking-flow nav > .step:nth-child(1) > span").classList.add("eg-active");
            document.querySelector("#booking-flow nav > .step:nth-child(2) > span").classList.add("eg-active");
           

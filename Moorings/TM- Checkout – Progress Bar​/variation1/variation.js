@@ -27,7 +27,7 @@
     /* Variation Init */
     function init() {
       /* start your code here */
-        document.querySelector("#booking-flow  nav > .step:nth-child(2)").childNodes[2].textContent = "Personal Detail";
+        document.querySelector("#booking-flow  nav > .step:nth-child(2)").childNodes[2].textContent = "Contact Details";
     
     }
 

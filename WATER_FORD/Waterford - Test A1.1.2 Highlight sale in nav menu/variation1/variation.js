@@ -26,13 +26,7 @@
     /* Variation Init */
     function init() {
       /* start your code here */
-      document.querySelector("#primaryNavigation > ul > li:nth-child(3) > ul > li > ul > li:nth-child(14) > a").innerText = `%  Brandy Glasses`
 
-document.querySelector("#primaryNavigation > ul > li:nth-child(3) > ul > li> ul > li:nth-child(12) > a").innerText = `%  Gin Balloons & Glasses`
-
-
-document.querySelector("#primaryNavigation > ul > li:nth-child(9) > ul > li:nth-child(2) > ul > li:nth-child(3) > a").innerText = `% SUSTAINABILITY`
-      
     }
 
     /* Initialize variation */
