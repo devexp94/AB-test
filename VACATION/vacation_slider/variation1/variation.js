@@ -38,13 +38,9 @@
             bnft.classList.add('product__hero-thumb', 'mb1', 'pr');
             bnft.id = 'thbbnft';
             bnft.innerHTML = '<button aria-label="Select image slide" class="image pa x y top left"><picture><img src="https://drive.google.com/uc?id=1Y7_5SS2Xlkmf2k3LVst7Qj88EHX9YYGj"></picture></button>';
-            var ingr = document.createElement('div');
-            ingr.classList.add('product__hero-thumb', 'mb1', 'pr');
-            ingr.id = 'thbingr';
-            ingr.innerHTML = '<button aria-label="Select image slide" class="image pa x y top left"><picture><img src="https://drive.google.com/uc?id=1BIKck9NhHWc8FWu09HUdx6JPwO5uxQ5i"></picture></button>';
+            
             thbs.appendChild(feat);
             thbs.appendChild(bnft);
-            thbs.appendChild(ingr);
 
             // add dots
             var dots = document.querySelector('.product__hero-dots')
@@ -56,13 +52,9 @@
             bnftd.classList.add('product__hero-dot');
             bnftd.setAttribute('aria-label', 'Select image slide');
             bnftd.id = 'dotbnft';
-            var ingrd = document.createElement('button');
-            ingrd.classList.add('product__hero-dot');
-            ingrd.setAttribute('aria-label', 'Select image slide');
-            ingrd.id = 'dotingr';
+        
             dots.appendChild(featd);
             dots.appendChild(bnftd);
-            dots.appendChild(ingrd);
 
             // add carousel images
             var cars = document.querySelector('.embla__container')
@@ -76,14 +68,8 @@
             bnfti.id = 'bnfti';
             bnfti.setAttribute('style', 'flex:0 0 100%;height:100%;width:100%;position:relative;');
             bnfti.innerHTML = '<div class="image pa x y top left"><picture><source srcset="https://drive.google.com/uc?id=1Y7_5SS2Xlkmf2k3LVst7Qj88EHX9YYGj" media="(min-width: 1000px)"><source srcset="https://drive.google.com/uc?id=1Y7_5SS2Xlkmf2k3LVst7Qj88EHX9YYGj" media="(min-width: 600px)"><img src="https://drive.google.com/uc?id=1Y7_5SS2Xlkmf2k3LVst7Qj88EHX9YYGj"></picture></div>';
-            var ingri = document.createElement('div');
-            ingri.classList.add('embla__slide');
-            ingri.id = 'ingri';
-            ingri.setAttribute('style', 'flex:0 0 100%;height:100%;width:100%;position:relative;');
-            ingri.innerHTML = '<div class="image pa x y top left"><picture><source srcset="https://drive.google.com/uc?id=1BIKck9NhHWc8FWu09HUdx6JPwO5uxQ5i" media="(min-width: 1000px)"><source srcset="https://drive.google.com/uc?id=1BIKck9NhHWc8FWu09HUdx6JPwO5uxQ5i" media="(min-width: 600px)"><img src="https://drive.google.com/uc?id=1BIKck9NhHWc8FWu09HUdx6JPwO5uxQ5i"></picture></div>';
             cars.appendChild(feati);
             cars.appendChild(bnfti);
-            cars.appendChild(ingri);
 
             // select slide
             document.addEventListener('click', function(event) {
@@ -125,9 +111,6 @@
                 } else if (event.target.matches('.product__hero-carousel-thumbs > .product__hero-thumb:nth-child(9) img, .product__hero-dots button:nth-child(9)')) {
                     var pos = '-' + wdt * 8 + 'px';
                     document.querySelector('.embla__container .embla__slide:nth-child(9)').classList.add('active');
-                } else if (event.target.matches('.product__hero-carousel-thumbs > .product__hero-thumb:nth-child(10) img, .product__hero-dots button:nth-child(10)')) {
-                    var pos = '-' + wdt * 9 + 'px';
-                    document.querySelector('.embla__container .embla__slide:nth-child(10)').classList.add('active');
                 }
                 // console.log(pos);
                 // animation needed
