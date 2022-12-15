@@ -26,13 +26,15 @@
         /* Variation Init */
         function init() {
             /* start your code here */
-            setTimeout(() => {
-                document.querySelectorAll(".button").forEach(btn => {
-                    if (btn.innerText.toUpperCase().indexOf("START") != -1) {
-                        btn.innerText = btn.innerText.replace("Start", 'Create')
-                    }
-                });
-            }, 500);
+            if (((window.location.href.indexOf("https://trustandwill.com/trust/") != -1)) || ((window.location.href.indexOf("https://trustandwill.com/will/") != -1))) {
+                setTimeout(() => {
+                    document.querySelectorAll(".button").forEach(btn => {
+                        if (btn.innerText.toUpperCase().indexOf("START") != -1) {
+                            btn.innerText = btn.innerText.replace("Start", 'Create')
+                        }
+                    });
+                }, 300);
+            }
 
         }
 
