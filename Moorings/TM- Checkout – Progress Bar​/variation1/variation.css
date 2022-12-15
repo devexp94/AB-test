@@ -126,7 +126,7 @@ nav .step {
 }
 
 .steps > nav:has(.step:nth-child(4).active)::after {
-    width: 71%;
+    width: 73%;
 }
 
 .site-header {
