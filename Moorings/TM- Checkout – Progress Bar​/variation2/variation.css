@@ -115,15 +115,15 @@ nav .step {
 }
 
 .steps > nav:has(.step:nth-child(2).active)::after {
-    width: 26%;
+    width: 23%;
 }
 
 .steps > nav:has(.step:nth-child(3).active)::after {
-    width: 51%;
+    width: 48%;
 }
 
 .steps > nav:has(.step:nth-child(4).active)::after {
-    width: 71%;
+    width: 73%;
 }
 
 .site-header {
