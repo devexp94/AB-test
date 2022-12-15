@@ -1,3 +1,9 @@
+html body .eg-review-container {
+  display: flex;
+  gap: 20px;
+  text-align: center;
+}
+
 html body .eg-text {
   line-height : 1.1;
   font-family: ITCGaramondStd-LtCond;
@@ -6,22 +12,29 @@ html body .eg-text {
   text-align : center;
   font-size : 36px;
   margin-right : 10px;
-  color: #000;
+  color: #f1d27a;;
 }
+
+
+.filter-list-wrapper-mobile {
+  margin-top: 40px;
+}
+
 .filters-container {
   display: flex;
   flex-direction: column;
+  margin-top: 172px !important;
 }
 html body .eg-review-container > .eg-text{
   margin-right: 0px;
   margin-bottom: 10px;
-  color: #000;
+  color: #f1d27a;;
 }
 html body .eg-review-text {
   margin-left : 10px;
   font-family: ITCGaramondStd-LtCond;
   font-size : 20px;
-  color: #000;
+  color: #f1d27a;;
 }
 
 html body img.hero__logo {
@@ -34,8 +47,8 @@ html body img.hero__logo {
 }
 
 .eg-star svg path.star {
-  fill: #bd2fc7 !important;
-  stroke: #dce0d7;
+  fill: #f1d27a !important;
+  stroke: #f1d27a;
 }
 
 html body .eg-review {
@@ -47,29 +60,30 @@ html body .eg-review {
   color : rgb(255, 255, 255);
 }
   
-@media screen and (min-width:768px) {
-  html body .eg-text-mobile{
-      display: none;
-  }
-}
-
 @media screen and (max-width:1050px) {
   html body .eg-review-container{
-      margin-top: 40px;
+      margin-top: 0;
   }
 }
 
 @media (min-width: 768px) and (max-width:911px) {
   html body .eg-review-container > .eg-text{
-      font-size: 10px!important;
+      font-size: 27px!important;
   }
+
+  div.eg-review-container > .eg-review > p.eg-text{
+    font-size: 30px;
+  }
+
+  .eg-star svg {
+    width : 27px !important;
+    height : 27px !important;
+  }
+  
 }
 
     
 @media screen and (max-width:767px) {
-  html body .eg-text-desktop{
-          display: none;
-      }
       html body .eg-text {
         font-size:25px !important;
     }
@@ -77,6 +91,7 @@ html body .eg-review {
       margin-right: 0px;
       margin-bottom: 10px;
     }
+
     
     html body .eg-star svg {
       width : 20px !important;
@@ -87,12 +102,7 @@ html body .eg-review {
   text-align: center;
   display: flex;
     flex-direction : column;
+    gap: 0;
 }
 
 }
-
-/* html body .eg-review-container{
-  text-align: center;
-  display: flex;
-  gap: 20px;
-} */

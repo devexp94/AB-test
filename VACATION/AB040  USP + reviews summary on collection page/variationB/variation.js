@@ -24,8 +24,7 @@
 
     var egReview =''+ 
 '  <div class="eg-review-container">'+ 
-'      <p class="eg-text eg-text-desktop">“The World\'s Most Best-Smelling Sunscreen”</p>'+ 
-'      <p class="eg-text eg-text-mobile">“The World\'s Best-Smelling Sunscreen”</p>'+ 
+'      <p class="eg-text">“The World\'s Most Best-Smelling Sunscreen”</p>'+ 
 '      <div class="eg-review">'+ 
 '      <p class="eg-text">4.93 / 5</p>'+ 
 '          <div class="eg-star">'+ 

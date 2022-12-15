@@ -1,4 +1,4 @@
-d(function () {
+(function () {
   try {
     /* main variables */
     var debug = 0;
