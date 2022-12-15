@@ -1,0 +1,13 @@
+.egOpenAccount::before {
+    background-color: rgb(219, 0, 17);
+    height: 3px;
+}
+
+.flexible-form__content___3YSom {
+    width: 75%;
+}
+
+/* 
+.flexible-form div[class ^= 'flexible-form']{
+    width: 75%;
+} */
