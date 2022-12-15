@@ -35,9 +35,9 @@
         padding-block: 10px !important;
     }
 
-    #booking-flow nav {
+    /* #booking-flow nav {
         width: 90% !important;
-    }
+    } */
 
     .steps nav::before {
         top: 22px;
