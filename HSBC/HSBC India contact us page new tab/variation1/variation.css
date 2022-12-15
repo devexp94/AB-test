@@ -1,3 +1,10 @@
+@media(max-width: 918px) and (min-width: 760px) {
+    div[class^='contact-header__content']>div[class^='Box-sc'] {
+        width: 91%;
+    }
+}
+
+
 @media(min-width:760px) {
     .eg-tab-btn {
         color: white;
@@ -8,11 +15,11 @@
         align-items: center;
         cursor: pointer;
         background: #404040;
-        outline: none;
+        line-height: 1.3;
     }
 
     .eg-tab-btn.active {
-        border-top: 2px solid rgb(219, 0, 17);
+        border-top: 3px solid rgb(219, 0, 17);
     }
 
     .eg-tab-btn:hover,
