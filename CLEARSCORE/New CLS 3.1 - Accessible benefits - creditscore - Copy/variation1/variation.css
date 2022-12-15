@@ -1,5 +1,6 @@
 .cv-3-1 section[class ^="featureSection"]>div[class ^="ctaContainer"] {
     text-align: center;
+    margin-bottom: 40px;
   }
   
   .cv-3-1 div[class ^="featureLists"] > div[class^="featureContainer"] [class^="featureItem"]{
@@ -11,6 +12,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding-top: var(--rnb-spacing-medium);
+    align-items: normal;
   }
   
   .cv-3-1 .cv-overview-wrapper {
@@ -39,8 +41,8 @@
   .cv-3-1 .cv-callouts {
     position: relative;
     text-align: center;
-    flex-basis: 20%;
-    margin: auto;
+    width: 20%;
+    margin: 0px auto;
   }
   
   .cv-3-1 .cv-callouts .cv-title {
@@ -74,7 +76,7 @@
   }
   
   .cv-3-1 section[class ^='featureSection']>div[class ^='ctaContainer']>a {
-    max-width: fit-content !important;
+    max-width: 310px;
     width: 100% !important;
   }
   
@@ -90,11 +92,20 @@
         justify-content: center;
         gap: 34px 0;
     }
-
+  
     .cv-3-1 div[class ^="featureLists"]{
       padding-left: 0px;
       padding-right: 0px;
     }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width:1800px){
+  
+  
+  .cv-3-1 [data-qa="hero"] {
+      height: calc(100vh + 60px) !important;
+  }
+  
   }
   
   @media (max-width: 767px) {
@@ -169,13 +180,14 @@
   }
   
   @media(max-width: 575px) {
-.cv-3-1 .cv-overview-container {
+  .cv-3-1 .cv-overview-container {
     gap: 0 !important;
-}
-.cv-3-1 [class^="featureSection"] {
+  }
+  .cv-3-1 [class^="featureSection"] {
     padding-top: 0px;
     padding: 0px;
-}
+    margin-bottom: 40px;
+  }
      .cv-3-1 section[class ^="featureSection"]>div[class ^="ctaContainer"] {
         text-align: center;
         margin: 40px 0 20px !important;
@@ -220,15 +232,27 @@
   
   [class^="featureSection"] > [class^="featureLists"] {
     display: none;
-}
-
-[class^="featureSection"] {
+  }
+  
+  [class^="featureSection"] {
     
     padding: 0px;
-}
+  }
   
-
-.cv-3-1 .cv-overview-container {
+  
+  .cv-3-1 .cv-overview-container {
     flex-wrap: wrap;
     gap: 34px 0;
+  }
+  
+  
+  [class^="featureSection"] > [class^="ctaContainer"] > a {
+    max-width: 250px;
+    width: 100%;
+  }
+
+  /************  to remove line**************/
+
+  div[class ^="sectionContent"] {
+    margin: -1px !important;
 }
