@@ -1,0 +1,95 @@
+@media(min-width:760px) {
+    .eg-tab-btn {
+        color: white;
+        display: flex;
+        padding: 10px 20px;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background: #404040;
+        outline: none;
+    }
+
+    .eg-tab-btn.active {
+        border-top: 2px solid rgb(219, 0, 17);
+    }
+
+    .eg-tab-btn:hover,
+    .eg-tab-btn.active {
+        background: white;
+        color: currentColor;
+    }
+
+    .eg-tab-btn:hover .eg-icon,
+    .eg-tab-btn.active .eg-icon {
+        fill: currentColor;
+    }
+
+    .eg-icon {
+        display: block;
+        width: 18px;
+        aspect-ratio: 1/1;
+        fill: white;
+    }
+
+
+    .eg-remove-active-state {
+        background-color: rgb(64, 64, 64) !important;
+        color: rgb(255, 255, 255) !important;
+    }
+
+    .eg-remove-active-state::before {
+        display: none !important;
+    }
+
+    .eg-remove-active-state svg {
+        fill: #fff !important;
+    }
+
+    .eg-remove-active-state:hover {
+        background-color: rgb(255, 255, 255) !important;
+        color: rgb(51, 51, 51) !important;
+    }
+
+    .eg-remove-active-state:hover svg {
+        fill: rgb(51, 51, 51) !important;
+    }
+
+
+    .eg-tab-content {
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s;
+    }
+
+    div[class^="contact-header"]:has(.eg-tab-btn.active)+div[class^='contact-body'] .eg-tab-content {
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .eg-tab-heading {
+        border-left: 3px solid rgb(219, 0, 17);
+        font-size: 29px;
+        padding-left: 10px;
+        margin-bottom: 26px;
+        line-height: 1.2;
+    }
+
+    .eg-steps {
+        background: #ededed;
+        padding: 30px;
+    }
+
+    .eg-step+.eg-step {
+        margin-top: 22px;
+    }
+
+    .eg-step>p:last-child {
+        margin-top: 16px;
+    }
+
+    .eg-step {
+        font-weight: 500;
+    }
+}
