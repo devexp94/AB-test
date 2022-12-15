@@ -1,8 +1,8 @@
-#primaryNavigation > ul > li:nth-child(3) > ul > li > ul > li > a{
+#primaryNavigation > ul > li:nth-child(3) > ul > li > ul[data-level] > li > a{
     position: relative;
 }
 
-#primaryNavigation > ul > li:nth-child(3) > ul > li > ul > li > a::before{
+#primaryNavigation > ul > li:nth-child(3) > ul > li > ul[data-level] > li > a{
     content: "%";
     display: inline-block;
 }
