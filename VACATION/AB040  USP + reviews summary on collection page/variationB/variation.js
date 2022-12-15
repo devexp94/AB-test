@@ -40,9 +40,6 @@
 
     function init() {
       // listener()
-      // setTimeout(()=>{
-      //   document.querySelector("#__next main > div.filters-container > div.filters-list").insertAdjacentHTML('beforebegin', egReview);
-      // }, 1000)
     }
 
     listener()
