@@ -132,29 +132,7 @@
         listener();
 
         // mutation
-        const observer = new MutationObserver(mutations => {
-            console.log("mutated");
-            [...document.querySelectorAll(".eg-has-label")].forEach(item => {
-                let egTarget = item.querySelector(".cart__item .cart__item__content > .gara");
-                if (!egTxt.includes(egTarget.innerText.toUpperCase())) {
-                    item.classList.remove("eg-has-label");
-                } else {
-                    if (egTarget.innerText.toUpperCase() == "GET THE POOL BOY SCENTED CANDLE FOR $34") {
-                        egTarget.querySelector(".eg-label").innerText = egLabels[0]
-                    } else if (egTarget.innerText.toUpperCase() == "GET THE ICONIC CLASSIC WHIP SPF30 SUNSCREEN MOUSSE FOR $22") {
-                        egTarget.querySelector(".eg-label").innerText = egLabels[1]
-                    } else if (egTarget.innerText.toUpperCase() == "GET THE SCENT OF THE WORLD'S BEST-SMELLING SUNSCREEN, FOR YOUR CAR OR HOME OFFICE FOR $5") {
-                        egTarget.querySelector(".eg-label").innerText = egLabels[2]
-                    }
-                }
-            });
-        });
-
-        observer.observe(document.querySelector(".cart > div:nth-child(2)"), {
-            attributes: true,
-            childList: true,
-            subtree: true
-        });
+        
 
         /* Initialize variation */
         waitForElement('.keen-slider.cart__upsells > .keen-slider__slide', init, 50, 15000);
