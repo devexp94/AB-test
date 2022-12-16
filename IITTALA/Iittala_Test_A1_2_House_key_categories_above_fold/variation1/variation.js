@@ -22,6 +22,20 @@
             }, delayTimeout);
         }
 
+        const egTile = {
+          tile1:"https://www.iittala.com/fi-fi/lahjat/lahjojen-paketointipalvelu/paketoitavat-lahjat",
+          tile2:"https://www.iittala.com/fi-fi/kattaus/kaikki-kattauksen-tuotteet/kattamisen-tuotteet",
+          tile3:"https://www.iittala.com/fi-fi/kattaus/juomalasit-ja-mukit/kaikki-juomalasit-ja-mukit",
+          tile4:"https://www.iittala.com/fi-fi/sisustus/kaikki-sisustustuotteet/kaikki-sisustustuotteet"
+        }
+
+        const egTileImg ={
+          img1:"https://www.iittala.com/-/media/iittala/home/promo-tiles/800x480_title_iittala_2022_giftwrapping_red_green.jpg?q=100&iw=800&ih=480&crop=1",
+          img2:"https://www.iittala.com/-/media/product-images/iittalaemea/aino-aalto/1008545_iittalaemea_03_iittala-aino-aalto-tumbler-22-cl-clear.jpg?q=100&iw=644&ih=644&crop=1",
+          img3:"https://www.iittala.com/-/media/iittala/categories/title-component-new/1600x960_iittala_category_drinkware.jpg?q=100&iw=800&ih=480&crop=1",
+          img4:"https://www.iittala.com/-/media/product-images/iittalaemea/watering-bottle/1051840_iittalaemea_03_iittala-watering-bottle-2set.jpg?q=100&iw=644&ih=644&crop=1"
+        }
+
         const egBoxHtml = `
               <section class="layout-section eg-wrapper">
                   <div class="container">
@@ -29,8 +43,8 @@
                           <div class="eg-box-container">
                               <!-- ==== Aino Aalto ==== -->
                               <div class="eg-card">
-                                  <a href="https://www.iittala.com/en-at/tableware/all-tableware/all-tableware-items" class="eg-card-main-link">
-                                    <img src="https://www.iittala.com/-/media/products/2021/04/07/11/25/resource_iittalaemea_1051124.jpg?q=100&iw=644&ih=644&crop=1">
+                                  <a href="${egTile.tile1}" class="eg-card-main-link">
+                                    <img src="${egTileImg.img1}" alt="Aino Aalto">
                                     <h4>Aino Aalto</h4>
                                     <span class="eg-card-link">Discover</span>
                                   </a>
@@ -39,8 +53,8 @@
                               <!-- ==== Alvar Aalto Collection ==== -->
 
                               <div class="eg-card">
-                                  <a href="https://www.iittala.com/en-at/gifts/gift-wrapping-service/design-in-gift-wrap" class="eg-card-main-link">
-                                    <img src="https://www.iittala.com/-/media/product-images/iittalaemea/alvar-aalto/1050152_iittalaemea_02_iittala-alvar-aalto-collection-vase-160mm-copper.jpg?q=100&iw=644&ih=644&crop=1">
+                                  <a href="${egTile.tile2}" class="eg-card-main-link">
+                                    <img src="${egTileImg.img2}" alt="Alvar Aalto Collection">
                                     <h4>Alvar Aalto Collection</h4>
                                     <span class="eg-card-link">Discover</span>
                                   </a>
@@ -48,8 +62,8 @@
                               
                               <!-- ==== Birds By Toikka ==== -->
                               <div class="eg-card">
-                                  <a href="https://www.iittala.com/en-at/tableware/drinkware/all-drinkware" class="eg-card-main-link">
-                                    <img src="https://www.iittala.com/-/media/product-images/iittalaemea/taika/1063336_iittalaemea_05_iittala_taika-mug-04l-15-year-anniversary.jpg?q=100&iw=644&ih=644&crop=1">
+                                  <a href="${egTile.tile3}" class="eg-card-main-link">
+                                    <img src="${egTileImg.img3}" alt="Birds By Toikka">
                                     <h4>Birds By Toikka</h4>
                                     <span class="eg-card-link">Discover</span>
                                   </a>
@@ -57,8 +71,8 @@
                               
                               <!-- ==== Blues ==== -->
                               <div class="eg-card">
-                                  <a href="https://www.iittala.com/en-at/home-decor/all-home-decor/all-home-decor-items" class="eg-card-main-link">
-                                    <img src="https://www.iittala.com/-/media/iittala/home/promo-tiles/800x480_title_iittala_2022_giftwrapping_red_green.jpg?q=100&iw=800&ih=480&crop=1">
+                                  <a href="${egTile.tile4}" class="eg-card-main-link">
+                                    <img src="${egTileImg.img4}" alt="Blues">
                                     <h4>Blues</h4>
                                     <span class="eg-card-link">Discover</span>
                                   </a>
