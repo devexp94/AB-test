@@ -183,15 +183,14 @@ section.template_banner div.form_container_desktop > div > div.nfn__languages > 
 .eg_logo img {
     background: #1f3d5c;
     border-radius: 50%;
-    /* height: 112px;
-    width: 125px; */
-    height: 115px;
-    width: 155px;
+    width: 130px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
 }
 
 .eg_logo {
     position: absolute;
-    top: -14%;
+    top: -16%;
     left: 50%;
     transform: translateX(-50%);
 }
