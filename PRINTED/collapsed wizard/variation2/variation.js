@@ -57,7 +57,7 @@
             live(selector, event, callback, context);
         }
 
-
+        let egOpend = [];
         let allClosed = false;
         let closeInterval;
         /* Variation Init */
@@ -118,6 +118,8 @@
 
                         title.parentElement.parentElement.scrollIntoView({ behavior: "smooth" });
                         if (title.parentElement.parentElement.querySelector(".eg-inactive-section")) {
+                            closeOpenArrows();
+                            egOpend.unshift(title.parentElement.parentElement.querySelector(".eg-inactive-section"));
                             title.parentElement.parentElement.querySelector(".eg-inactive-section").classList.remove("eg-inactive-section");
                         }
 
@@ -127,10 +129,23 @@
 
             // btn open close logic
             if (this.classList.contains("eg-arrow")) {
+                closeOpenArrows(this.parentElement.parentElement.querySelector(".l-wizard-section__container"));
                 this.parentElement.parentElement.querySelector(".l-wizard-section__container").classList.toggle("eg-inactive-section");
                 this.parentElement.parentElement.scrollIntoView({ behavior: "smooth" });
+
+                if(!this.parentElement.parentElement.querySelector(".l-wizard-section__container").classList.contains("eg-inactive-section")){
+                    egOpend.unshift(this.parentElement.parentElement.querySelector(".l-wizard-section__container"));
+                }
             }
         });
+
+        function closeOpenArrows(crrSec=null){
+            [...new Set(egOpend)].forEach(sec=>{
+                if(sec != crrSec){
+                    sec.classList.add("eg-inactive-section");    
+                }
+            });
+        }
 
         // check api call and close tab accordinglly
         function closeActiveSection() {
@@ -167,8 +182,9 @@
             });
             let firstUnopend = document.querySelector(".l-wizard-section:has(.l-wizard-section__icon:not(.is-active))");
             firstUnopend.scrollIntoView({ behaviour: "smooth" });
+            closeOpenArrows()
             firstUnopend.querySelector(".l-wizard-section__container").classList.remove("eg-inactive-section");
-            
+            egOpend.unshift(firstUnopend.querySelector(".l-wizard-section__container"));
         }
 
         /* Initialize variation */
