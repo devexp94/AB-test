@@ -69,35 +69,76 @@
             live(selector, event, callback, context);
         }
 
-        live('button', 'click', function() {
+        live(['button', 'span'], 'click', function() {
             if (this.innerText.toUpperCase().indexOf("BAG") != -1) {
                 waitForElement('.keen-slider.cart__upsells > .keen-slider__slide', init, 50, 15000);
+            } else if ((this.innerText.toUpperCase() == "ADD") || (this.innerText.toUpperCase() == "REMOVE") || this.parentElement.classList.contains("cart__item__quantity")) {
+                setTimeout(() => {
+                    waitForElement(".keen-slider.cart__upsells > .keen-slider__slide", changeContent, 50, 15000);
+                }, 2000);
+
             }
         });
 
+        function changeContent() {
+            let egItems = [...document.querySelectorAll(".keen-slider.cart__upsells > .keen-slider__slide")];
 
+            // removing active class
+            egItems.forEach(item => {
+                if (item.classList.contains("eg-active")) {
+                    item.classList.remove("eg-active");
+                }
+                if (item.querySelector(".eg-label")) {
+                    item.querySelector(".eg-label").remove();
+                }
+
+            })
+
+            // inserting data
+            egItems.forEach(item => {
+                let egTarget = item.querySelector(".cart__item .cart__item__content > .gara");
+
+
+                if (egTarget.querySelector("p").innerText.toUpperCase() == "GET THE POOL BOY SCENTED CANDLE FOR $34") {
+                    item.classList.add("eg-active");
+                    if (!egTarget.querySelector(".eg-label")) {
+                        egTarget.insertAdjacentHTML("afterbegin", `<span class="eg-label">${egLabels[0]}</span>`)
+                    }
+                } else if (egTarget.querySelector("p").innerText.toUpperCase() == "GET THE ICONIC CLASSIC WHIP SPF30 SUNSCREEN MOUSSE FOR $22") {
+                    item.classList.add("eg-active");
+                    if (!egTarget.querySelector(".eg-label")) {
+                        egTarget.insertAdjacentHTML("afterbegin", `<span class="eg-label">${egLabels[1]}</span>`)
+                    }
+                } else if (egTarget.querySelector("p").innerText.toUpperCase() == "GET THE SCENT OF THE WORLD'S BEST-SMELLING SUNSCREEN, FOR YOUR CAR OR HOME OFFICE FOR $5") {
+                    item.classList.add("eg-active");
+                    if (!egTarget.querySelector(".eg-label")) {
+                        egTarget.insertAdjacentHTML("afterbegin", `<span class="eg-label">${egLabels[2]}</span>`)
+                    }
+                }
+
+            });
+        }
 
 
         /* Variation Init */
         function init() {
             /* start your code here */
-            console.log("called");
             // inserting labels
 
             [...document.querySelectorAll(".keen-slider.cart__upsells > .keen-slider__slide")].forEach(item => {
                 let egTarget = item.querySelector(".cart__item .cart__item__content > .gara");
                 if (egTarget.innerText.toUpperCase() == "GET THE POOL BOY SCENTED CANDLE FOR $34") {
-                    item.classList.add("eg-has-label");
+                    item.classList.add("eg-active");
                     if (!egTarget.querySelector(".eg-label")) {
                         egTarget.insertAdjacentHTML("afterbegin", `<span class="eg-label">${egLabels[0]}</span>`)
                     }
                 } else if (egTarget.innerText.toUpperCase() == "GET THE ICONIC CLASSIC WHIP SPF30 SUNSCREEN MOUSSE FOR $22") {
-                    item.classList.add("eg-has-label");
+                    item.classList.add("eg-active");
                     if (!egTarget.querySelector(".eg-label")) {
                         egTarget.insertAdjacentHTML("afterbegin", `<span class="eg-label">${egLabels[1]}</span>`)
                     }
                 } else if (egTarget.innerText.toUpperCase() == "GET THE SCENT OF THE WORLD'S BEST-SMELLING SUNSCREEN, FOR YOUR CAR OR HOME OFFICE FOR $5") {
-                    item.classList.add("eg-has-label");
+                    item.classList.add("eg-active");
                     if (!egTarget.querySelector(".eg-label")) {
                         egTarget.insertAdjacentHTML("afterbegin", `<span class="eg-label">${egLabels[2]}</span>`)
                     }
@@ -132,7 +173,7 @@
         listener();
 
         // mutation
-        
+
 
         /* Initialize variation */
         waitForElement('.keen-slider.cart__upsells > .keen-slider__slide', init, 50, 15000);

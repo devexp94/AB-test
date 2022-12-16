@@ -60,7 +60,7 @@
 }
 
 
-.keen-slider.cart__upsells > .keen-slider__slide.eg-has-label{
+.keen-slider.cart__upsells > .keen-slider__slide.eg-active{
     display: block !important;
 }
 
