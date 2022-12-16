@@ -183,8 +183,10 @@ section.template_banner div.form_container_desktop > div > div.nfn__languages > 
 .eg_logo img {
     background: #1f3d5c;
     border-radius: 50%;
-    height: 112px;
-    width: 125px;
+    /* height: 112px;
+    width: 125px; */
+    height: 115px;
+    width: 155px;
 }
 
 .eg_logo {

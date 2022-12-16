@@ -43,7 +43,7 @@ section.template_banner {
     display: flex;
     align-items: baseline;
     flex-direction: column;
-    flex-basis: 22%;
+    flex-basis: 25%;
     padding-top: 20px;
 }
 
