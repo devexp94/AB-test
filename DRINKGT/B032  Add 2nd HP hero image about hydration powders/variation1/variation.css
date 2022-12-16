@@ -1,0 +1,85 @@
+#shopify-section-1609190473ae6338a6 > div > div > div:nth-child(2) {position: absolute;top: 0;left: 0;right: 0;z-index: 2;}
+
+.container {
+    position: relative;
+}
+
+.home-top-section .usp-block .gradient-bg {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.egSliderBtn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    left: 50%;
+    top: 2px;
+    transform: translateX(-50%);
+    z-index: 7;
+}
+
+.egBtnMain > button {
+    outline: none;
+    border: 0;
+    font-size: 20px;
+    background: #EB2848;
+    color: #FFF;
+    padding: 5px 20px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+svg.egRightAro {
+    position: absolute;
+    z-index: 99;
+    top: 5.7%;
+    width: 52px;
+    height: 62px;
+    stroke: #404350;
+    right: 10%;
+    cursor: pointer;
+}
+
+/* .egBtnMain > button:hover {
+    background: #ffffff;
+    color: #EB2848;
+} */
+.egActive{
+    background: #ffffff !important;
+    color: #EB2848 !important;
+}
+
+.row.usp-block.bws-home-banner.egHydrationPower {
+    position: relative !important;
+}
+
+@media (min-width: 768px) and (max-width: 991px)  {
+    .egBtnMain > button {
+        width: max-content;
+        font-size: 18px;
+    }   
+
+    svg.egRightAro {
+        right: 5%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .egBtnMain > button {
+        font-size: 16px;
+        background: #EB2848;
+        width: max-content;
+        right: 0 !important;
+    }
+    svg.egRightAro {
+        right: 0;
+    }
+}
+
+@media (min-width: 1600px) {
+    svg.egRightAro {
+        right: 18%;
+    }
+}
