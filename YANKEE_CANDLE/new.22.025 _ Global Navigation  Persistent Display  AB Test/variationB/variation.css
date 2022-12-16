@@ -1,0 +1,23 @@
+@media screen and (min-width: 992px) {
+    .eg-sticky-menu .header .navbar-header .middle .search {
+        display: flex !important;
+    }
+
+    .eg-sticky-menu .header .navbar-header .desktop-sticky-nav-toggle,
+    .eg-sticky-menu .header .navbar-header .sticky-min-search {
+        display: none !important;
+    }
+
+    .eg-sticky-menu header.sticky-nav-desktop .main-menu.menu-toggleable-left.navbar-toggleable-lg {
+        height: 2.5rem !important;
+    }
+
+    .eg-sticky-menu header.sticky-nav-desktop .navbar.bg-inverse .navbar-nav {
+        height: 2.5rem !important;
+    }
+
+    header.sticky-nav-desktop.sticky-nav-min .navbar-header .user.reward {
+        max-width: 100% !important;
+        min-width: initial !important;
+    }
+}
