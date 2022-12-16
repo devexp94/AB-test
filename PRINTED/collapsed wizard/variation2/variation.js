@@ -99,7 +99,6 @@
             waitForElement('.l-wizard-section__icon', closeAll, 50, 15000);
         });
 
-        live
 
         // expand close logic
         live(['.c-wizard-summary__btn-edit', '.eg-arrow'], 'click', function() {
