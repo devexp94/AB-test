@@ -38,7 +38,7 @@ svg.egRightAro {
     width: 52px;
     height: 62px;
     stroke: #404350;
-    right: 5%;
+    right: 10%;
     cursor: pointer;
 }
 
@@ -60,6 +60,10 @@ svg.egRightAro {
         width: max-content;
         font-size: 18px;
     }   
+
+    svg.egRightAro {
+        right: 5%;
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -68,5 +72,14 @@ svg.egRightAro {
         background: #EB2848;
         width: max-content;
         right: 0 !important;
+    }
+    svg.egRightAro {
+        right: 0;
+    }
+}
+
+@media (min-width: 1600px) {
+    svg.egRightAro {
+        right: 18%;
     }
 }
