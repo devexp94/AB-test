@@ -57,11 +57,9 @@
             live(selector, event, callback, context);
         }
 
-        let egStillOpen = [];
 
         let allClosed = false;
         let closeInterval;
-        let egConfrmBtn = `<button class="eg-confirm-btn" aria-checked="false">Confirm</button>`;
         /* Variation Init */
         function init() {
             /* start your code here */
@@ -73,15 +71,6 @@
                         document.querySelectorAll(".l-wizard-section__header").forEach(item => {
                             if (!item.querySelector(".eg-arrow")) {
                                 item.insertAdjacentHTML("beforeend", `<span class="eg-arrow"></span>`);
-                            }
-                        })
-                    }, 50, 15000);
-
-                    // adding confirm buttons
-                    waitForElement('.l-wizard-section__container', function() {
-                        document.querySelectorAll(".l-wizard-section__container").forEach(item => {
-                            if (!item.querySelector(".eg-confirm-btn")) {
-                                item.insertAdjacentHTML("beforeend", egConfrmBtn);
                             }
                         })
                     }, 50, 15000);
@@ -99,23 +88,15 @@
 
         // header click detect
 
-        live('.l-wizard-section__header','click',(e)=>{
-            if(e.target.classList.contains("l-wizard-section__header")){
+        live('.l-wizard-section__header', 'click', (e) => {
+            if (e.target.classList.contains("l-wizard-section__header")) {
                 e.target.querySelector(".eg-arrow").click();
             }
         });
 
         // order now button click
-        live(['.c-button:not(.eg-confirm-btn)', '.eg-confirm-btn'], "click", function() {
-            // console.log("clicked!!!")
-            if (!this.classList.contains("eg-confirm-btn")) {
-                waitForElement('html body .l-wizard__body', init, 50, 15000);
-            } else {
-                if (this.parentElement.parentElement.querySelector(".is-active")) {
-                    removeInOpen(this.parentElement.parentElement);
-                }
-                waitForElement('.l-wizard-section__icon', closeAll, 50, 15000);
-            }
+        live('.c-button', "click", function() {
+            waitForElement('.l-wizard-section__icon', closeAll, 50, 15000);
         });
 
         live
@@ -139,8 +120,8 @@
                         title.parentElement.parentElement.scrollIntoView({ behavior: "smooth" });
                         if (title.parentElement.parentElement.querySelector(".eg-inactive-section")) {
                             title.parentElement.parentElement.querySelector(".eg-inactive-section").classList.remove("eg-inactive-section");
-                            addInOpen(title.parentElement.parentElement);
                         }
+
                     }
                 });
             }
@@ -149,25 +130,8 @@
             if (this.classList.contains("eg-arrow")) {
                 this.parentElement.parentElement.querySelector(".l-wizard-section__container").classList.toggle("eg-inactive-section");
                 this.parentElement.parentElement.scrollIntoView({ behavior: "smooth" });
-                if (!this.parentElement.parentElement.querySelector(".eg-inactive-section")) {
-                    addInOpen(this.parentElement.parentElement);
-                } else {
-                    removeInOpen(this.parentElement.parentElement);
-                }
             }
         });
-
-        function removeInOpen(section) {
-            if (egStillOpen.indexOf(section) != -1) {
-                egStillOpen.splice(egStillOpen.indexOf(section), 1);
-            }
-        }
-
-        function addInOpen(section) {
-            if (egStillOpen.indexOf(section) == -1) {
-                egStillOpen.unshift(section);
-            }
-        }
 
         // check api call and close tab accordinglly
         function closeActiveSection() {
@@ -190,7 +154,7 @@
         function closeAll() {
             const egActiveSec = document.querySelectorAll(".l-wizard-section__icon");
             egActiveSec.forEach((check, i) => {
-                if (!egStillOpen.includes(check.parentElement.parentElement)) {
+                if (check.classList.contains("is-active") && !check.classList.contains("is-inactive")) {
                     let egChilds = check.parentElement.parentElement.children;
                     for (let i = 0; i < egChilds.length; i++) {
                         if (egChilds[i].classList.contains("l-wizard-section__container")) {
@@ -203,13 +167,9 @@
                 }
             });
             let firstUnopend = document.querySelector(".l-wizard-section:has(.l-wizard-section__icon:not(.is-active))");
-            if (firstUnopend && !egStillOpen.length > 0) {
-                firstUnopend.scrollIntoView({ behaviour: "smooth" });
-                firstUnopend.querySelector(".l-wizard-section__container").classList.remove("eg-inactive-section");
-                addInOpen(firstUnopend);
-            } else {
-                egStillOpen[0].scrollIntoView({ behaviour: "smooth" });
-            }
+            firstUnopend.scrollIntoView({ behaviour: "smooth" });
+            firstUnopend.querySelector(".l-wizard-section__container").classList.remove("eg-inactive-section");
+            
         }
 
         /* Initialize variation */
