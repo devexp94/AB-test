@@ -12,6 +12,38 @@
     margin: 0 !important;
 }
 
+/*reviews*/
+.eg-reviews {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    padding-top: 13px;
+}
+
+.eg-reviews >* {
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.eg-review-btn>img {
+    width: 190px;
+    height: 34px;
+    display: block;
+    object-fit: cover;
+}
+
+.eg-reviews > .sa_info {
+    padding: 0;
+}
+
+.eg-reviews > .sa_info > span {
+    display: block;
+}
+
+
 /*css for translation page*/
 
 @media(max-width: 767px) {
