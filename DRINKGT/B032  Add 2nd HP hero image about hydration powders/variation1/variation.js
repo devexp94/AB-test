@@ -98,10 +98,8 @@ let egBanner = `
         document.querySelector("div.bws-home-banner.egHydrationPower").style.zIndex = "0"
         });
 
-
-        if(window.innerWidth < 768){
           document.querySelector("div[id ^= 'shopify-section']> div.home-top-section > div.container").insertAdjacentHTML("beforebegin" , egIcon);
-        }
+    
     }
 
     /* Initialize variation */
