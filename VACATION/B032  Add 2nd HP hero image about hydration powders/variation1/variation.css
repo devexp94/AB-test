@@ -47,8 +47,8 @@ svg.egRightAro {
     color: #EB2848;
 } */
 .egActive{
-    background: #ffffff;
-    color: #EB2848;
+    background: #ffffff !important;
+    color: #EB2848 !important;
 }
 /* 
 .egActive{
