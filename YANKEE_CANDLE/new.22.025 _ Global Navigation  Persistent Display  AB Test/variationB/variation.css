@@ -16,8 +16,4 @@
         height: 2.5rem !important;
     }
 
-    header.sticky-nav-desktop.sticky-nav-min .navbar-header .user.reward {
-        max-width: 100% !important;
-        min-width: initial !important;
-    }
 }
