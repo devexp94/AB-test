@@ -84,11 +84,16 @@ let egBanner = `
       document.querySelector("div[id ^= 'shopify-section'] > div.home-top-section > div.container > div:nth-child(2)").insertAdjacentHTML("afterend" , egBanner);
       
       live(['.egPower', '.egRightAro'],"click" , function(){
+        
+        document.querySelector(".egPower").classList.add("egActive");
+        document.querySelector(".egDrink").classList.remove("egActive");
         document.querySelector("main > div[id ^= 'shopify-section']:first-child > div > div > div:nth-child(2)").style.zIndex = "0";
         document.querySelector("div.bws-home-banner.egHydrationPower").style.zIndex = "5";
       });
         
        live(".egDrink","click" , function(){
+        document.querySelector(".egPower").classList.remove("egActive");
+        document.querySelector(".egDrink").classList.add("egActive");
         document.querySelector("main > div[id ^= 'shopify-section']:first-child > div > div > div:nth-child(2)").style.zIndex = "5";
         document.querySelector("div.bws-home-banner.egHydrationPower").style.zIndex = "0"
         });

@@ -42,7 +42,11 @@ svg.egRightAro {
     cursor: pointer;
 }
 
-.egBtnMain > button:hover {
+/* .egBtnMain > button:hover {
+    background: #ffffff;
+    color: #EB2848;
+} */
+.egActive{
     background: #ffffff;
     color: #EB2848;
 }
