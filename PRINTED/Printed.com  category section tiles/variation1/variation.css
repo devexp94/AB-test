@@ -1,6 +1,7 @@
 .eg_container{
     max-width: 100%;
     margin: auto;
+    width: -webkit-fill-available;
     background-color: hsl(66deg 23% 91%);
 }
 
@@ -71,6 +72,9 @@ p.egPara {
     padding-bottom: 7px;
 }
 
+.widget-product-pods #product-pods > .widget-controls + cms-widget-product-tabs-component {
+    display: none;
+}
 
 
 @media screen and (max-width: 767px) {
@@ -88,6 +92,9 @@ p.egPara {
 
     .egImg img{
         object-position: 80%;
+    }
+    .c-tabs__content--product-carousel .c-product-pods {
+        padding: 1.25rem 0 0 !important;
     }
 }
 
@@ -148,5 +155,18 @@ p.egPara {
     .eg_wrapper{
         max-width: 1480px;
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+    div.c-product-card__content {
+       height: 6.5rem !important;
+       padding: 1rem 1rem !important;
+    }
+    
+    .c-product-card__img-holder {
+       height: 10rem !important;
+       overflow: hidden !important;
     }
 }

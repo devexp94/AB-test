@@ -92,12 +92,12 @@
     /* Variation Init */
     function init() {
       /* start your code here */
-      document.querySelector("#js-content-wrapper > main > cms-page-widgets-component").insertAdjacentHTML("beforebegin" , egStr);
+      document.querySelector("#js-content-wrapper > main > cms-page-widgets-component > div > cms-widget-component:nth-child(3)").insertAdjacentHTML("afterend" , egStr);
 
     }
 
     /* Initialize variation */
-    waitForElement('#js-content-wrapper > main > cms-page-widgets-component', init, 50, 15000);
+    waitForElement('#js-content-wrapper > main > cms-page-widgets-component > div > cms-widget-component:nth-child(3)', init, 50, 15000);
   } catch (e) {
     if (debug) console.log(e, "error in Test" + variation_name);
   }
