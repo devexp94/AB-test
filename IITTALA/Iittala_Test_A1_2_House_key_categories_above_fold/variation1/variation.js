@@ -46,7 +46,7 @@
                                   <a href="${egTile.tile1}" class="eg-card-main-link">
                                     <img src="${egTileImg.img1}" alt="Aino Aalto">
                                     <h4>Aino Aalto</h4>
-                                    <span class="eg-card-link">Discover</span>
+                                    <span class="eg-card-link">Shop collection</span>
                                   </a>
                               </div>
                               
@@ -56,7 +56,7 @@
                                   <a href="${egTile.tile2}" class="eg-card-main-link">
                                     <img src="${egTileImg.img2}" alt="Alvar Aalto Collection">
                                     <h4>Alvar Aalto Collection</h4>
-                                    <span class="eg-card-link">Discover</span>
+                                    <span class="eg-card-link">Shop collection</span>
                                   </a>
                               </div>
                               
@@ -65,7 +65,7 @@
                                   <a href="${egTile.tile3}" class="eg-card-main-link">
                                     <img src="${egTileImg.img3}" alt="Birds By Toikka">
                                     <h4>Birds By Toikka</h4>
-                                    <span class="eg-card-link">Discover</span>
+                                    <span class="eg-card-link">Shop collection</span>
                                   </a>
                               </div>
                               
@@ -74,7 +74,7 @@
                                   <a href="${egTile.tile4}" class="eg-card-main-link">
                                     <img src="${egTileImg.img4}" alt="Blues">
                                     <h4>Blues</h4>
-                                    <span class="eg-card-link">Discover</span>
+                                    <span class="eg-card-link">Shop collection</span>
                                   </a>
                               </div>
                               

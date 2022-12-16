@@ -14,7 +14,7 @@
 
 .eg-card img {
     width: 100%;
-    max-width:100%;
+    max-width: 100%;
     object-fit: cover;
     aspect-ratio: 3/2;
 }
@@ -23,7 +23,7 @@
     margin-block: 16px !important;
 }
 
-.eg-card-main-link{
+.eg-card-main-link {
     text-decoration: none;
 }
 
@@ -33,6 +33,13 @@
     text-align: center;
     text-decoration: none;
     border: 1px solid;
+}
+
+.eg-card-link:hover,
+.eg-card-link:focus {
+    border-color: transparent;
+    background: var(--btn-secondary-bg-hover);
+    color: var(--btn-secondary-hover-text);
 }
 
 /***********************************
