@@ -44,7 +44,7 @@
 
       [
         "100% Guaranteed Acceptance for Translated Documents for USCIS",
-        "Corporations Recommended by Embassies and Consulates"
+        "Recommended by Embassies and Consulates"
       ]
     ];
 

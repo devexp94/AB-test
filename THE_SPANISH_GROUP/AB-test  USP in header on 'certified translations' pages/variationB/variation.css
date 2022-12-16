@@ -39,9 +39,19 @@
     font-size: 26px !important;
   }
 
-  #eg_container{
-    border-bottom: 1px solid #ccc;
-  }
+  .container {
+    position: relative !important;
+}
+
+#eg_container {
+    position: absolute;
+    text-align: center;
+    top: 7%;
+    left: 0;
+    right: 0;
+    transform: translateX(-8px);
+}
+
   }
   
   @media (min-width: 769px) and (max-width: 991px) {
