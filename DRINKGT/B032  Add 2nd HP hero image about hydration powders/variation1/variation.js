@@ -98,7 +98,7 @@ let egBanner = `
         document.querySelector("div.bws-home-banner.egHydrationPower").style.zIndex = "0"
         });
 
-          document.querySelector("div[id ^= 'shopify-section']> div.home-top-section > div.container").insertAdjacentHTML("beforebegin" , egIcon);
+          document.querySelector("div[id ^= 'shopify-section']> div.home-top-section > div.container").insertAdjacentHTML("beforeend" , egIcon);
     
     }
 

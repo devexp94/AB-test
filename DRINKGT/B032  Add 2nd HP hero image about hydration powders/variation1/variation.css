@@ -1,4 +1,20 @@
-#shopify-section-1609190473ae6338a6 > div > div > div:nth-child(2) {position: absolute;top: 0;left: 0;right: 0;z-index: 2;}
+.row.usp-block.bws-home-banner.egHydrationPower {
+    position: relative !important;
+    background: url(https://cdn.shopify.com/s/files/1/1428/0736/files/Aloe_Berry_Banner.png?v=1664953192) !important;
+    background-position: center !important;
+    background-size: cover !important;
+    /*     width: 104%; */
+    /*     left: 1%; */
+}
+
+div[id ^= 'shopify-section'] > div.home-top-section > div.container > div:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+
+}
 
 .container {
     position: relative;
@@ -13,9 +29,8 @@
     position: absolute;
     display: flex;
     justify-content: center;
-    gap: 20px;
     left: 50%;
-    top: 2px;
+    top: 0;
     transform: translateX(-50%);
     z-index: 7;
 }
@@ -32,27 +47,19 @@
 }
 
 svg.egRightAro {
+    top: 12%;
     position: absolute;
     z-index: 99;
-    top: 5.7%;
     width: 52px;
     height: 62px;
     stroke: #404350;
-    right: 10%;
+    right: 1%;
     cursor: pointer;
 }
 
-/* .egBtnMain > button:hover {
-    background: #ffffff;
-    color: #EB2848;
-} */
 .egActive{
     background: #ffffff !important;
     color: #EB2848 !important;
-}
-
-.row.usp-block.bws-home-banner.egHydrationPower {
-    position: relative !important;
 }
 
 @media (min-width: 768px) and (max-width: 991px)  {
@@ -60,10 +67,6 @@ svg.egRightAro {
         width: max-content;
         font-size: 18px;
     }   
-
-    svg.egRightAro {
-        right: 5%;
-    }
 }
 
 @media screen and (max-width:767px) {
@@ -72,14 +75,5 @@ svg.egRightAro {
         background: #EB2848;
         width: max-content;
         right: 0 !important;
-    }
-    svg.egRightAro {
-        right: 0;
-    }
-}
-
-@media (min-width: 1600px) {
-    svg.egRightAro {
-        right: 18%;
     }
 }
