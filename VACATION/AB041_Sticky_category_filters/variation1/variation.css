@@ -1,0 +1,38 @@
+/*============ MEDIA QUERIES =============*/
+
+/*=========== DESKTOP & TABLETS ==========*/
+@media(min-width: 600px) {
+    .header__background.green {
+        background: linear-gradient(180deg, #39aaa7, rgba(57, 170, 167, .5) 50.5%, rgba(57, 170, 167, 0));
+    }
+
+    html body .filters-container,
+    .eg-subheading {
+        margin: 0;
+        position: fixed;
+        top: 130px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .eg-subheading {
+        top: 200px;
+    }
+
+    html body .filters-container,
+    .eg-subheading {
+        z-index: 9999;
+    }
+}
+
+/*========== MOBILE AND LOWER RES DEVICES =========*/
+@media(max-width: 599px) {
+    html body .filter-list-wrapper-mobile {
+        margin: 0;
+        position: fixed;
+        top: 110px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 9999;
+    }
+}
