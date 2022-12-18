@@ -2,8 +2,8 @@
 
 /*=========== DESKTOP & TABLETS ==========*/
 @media(min-width: 600px) {
-    .header__background.green {
-        background: linear-gradient(180deg, #39aaa7, rgba(57, 170, 167, .5) 50.5%, rgba(57, 170, 167, 0));
+    html body .header__background{
+        height:280px;
     }
 
     html body .filters-container,
