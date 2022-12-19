@@ -37,7 +37,7 @@
 
     .eg-cta-container>.btn {
         font-weight: 600;
-        font-size: 17px;
+        font-size: 16px;
         color: #fff;
         background-color: #d90021 !important;
         border: none !important;
@@ -60,7 +60,7 @@
         padding: 0;
         margin: 0;
         padding-right: 4px;
-        font-size: 18px;
+        font-size: 16px;
         color: black;
     }
 
@@ -70,7 +70,7 @@
         text-align: right;
         color: #d90021;
         font-weight: 700;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .eg-info .clearfix {
@@ -94,7 +94,7 @@
         background: white;
         padding: 13px;
         font-weight: 800;
-        font-size: 17px;
+        font-size: 16px;
         color: #d90021;
         border-color: #d90021 !important;
         border-radius: 5px;
