@@ -1,0 +1,25 @@
+.c-checkout-payment > div[class^="c-checkout-review"] {
+    display: flex;
+    flex-direction: column;
+}
+
+.c-checkout-payment > div[class^="c-checkout-review"] > div:nth-child(3) {
+    order: -1;
+}
+
+.c-checkout-payment > div[class^="c-checkout-review"] > div:nth-child(3) label[for=radio-button-mobilepay] {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.c-checkout-payment > div[class^="c-checkout-review"] > div:nth-child(3) label[for=radio-button-mobilepay]::after {
+    content: '';
+    display: inline-block;
+    background: url(https://expogrowth.in/wp-content/uploads/2022/12/mobilepay.svg);
+    width:38px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 25px;
+}
