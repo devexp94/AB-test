@@ -1,9 +1,11 @@
 /*============ MEDIA QUERIES =============*/
 
 /*=========== DESKTOP & TABLETS ==========*/
+
+
 @media(min-width: 600px) {
-    html body .header__background{
-        height:280px;
+    html body .header__background {
+        height: 280px;
     }
 
     html body .filters-container,
@@ -22,6 +24,16 @@
     html body .filters-container,
     .eg-subheading {
         z-index: 9999;
+    }
+}
+
+@media(min-width:600px) and (max-width:999px) {
+    html body .filters-container {
+        top: 100px;
+    }
+
+    html body .eg-subheading {
+        top: 160px;
     }
 }
 
