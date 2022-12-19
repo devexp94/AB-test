@@ -1,8 +1,8 @@
 .row.usp-block.bws-home-banner.egHydrationPower {
     position: relative !important;
-    background: url(https://cdn.shopify.com/s/files/1/1428/0736/files/Aloe_Berry_Banner.png?v=1664953192) !important;
+    background: url(https://i.ibb.co/gTMpDxq/GT-Aloe-Berry-Homepage-Banner-Mobile-673-x-921.png) !important;
     background-position: center !important;
-    background-size: cover !important;
+    background-size: contain !important;
     /*     width: 104%; */
     /*     left: 1%; */
 }
@@ -110,7 +110,8 @@ svg#Layer_1 {
     svg#Layer_1 {
         left: 0;
     }
-}
+
+    }
 
 @media (min-width: 1600px) {
     svg.egRightAro {
@@ -121,4 +122,11 @@ svg#Layer_1 {
         left: 18%;
     }
     
+}
+
+@media screen and (max-width: 1226px) {
+    .row.usp-block.bws-home-banner.egHydrationPower{
+        background-position: center !important;
+        background-size: contain !important;
+    }
 }
