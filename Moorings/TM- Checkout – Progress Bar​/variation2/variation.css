@@ -102,11 +102,11 @@ nav .step {
     content: '';
     position: absolute;
     height: 2px;
-    width: 26%;
+    width: 0%;
     background: #122447;
     left: 14%;
     top: 27%;
-    transition: width 4s ease;
+    /* transition: width 4s ease; */
 }
 
 
