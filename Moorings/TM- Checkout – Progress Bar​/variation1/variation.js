@@ -75,7 +75,7 @@
            
           }
           else{
-            console.log("there is some error")
+            console.log("there is some error");
           }
     }, 100)
   }
