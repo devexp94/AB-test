@@ -23,17 +23,17 @@
         }
 
         const egTile = {
-          tile1:"https://www.iittala.com/fi-fi/lahjat/lahjojen-paketointipalvelu/paketoitavat-lahjat",
+          tile1:"https://www.iittala.com/fi-fi/sisustus/taidelasi-ja-koristeet/birds-by-toikka",
           tile2:"https://www.iittala.com/fi-fi/kattaus/kaikki-kattauksen-tuotteet/kattamisen-tuotteet",
           tile3:"https://www.iittala.com/fi-fi/kattaus/juomalasit-ja-mukit/kaikki-juomalasit-ja-mukit",
           tile4:"https://www.iittala.com/fi-fi/sisustus/kaikki-sisustustuotteet/kaikki-sisustustuotteet"
         }
 
         const egTileImg ={
-          img1:"https://www.iittala.com/-/media/iittala/home/promo-tiles/800x480_title_iittala_2022_giftwrapping_red_green.jpg?q=100&iw=800&ih=480&crop=1",
-          img2:"https://www.iittala.com/-/media/product-images/iittalaemea/aino-aalto/1008545_iittalaemea_03_iittala-aino-aalto-tumbler-22-cl-clear.jpg?q=100&iw=644&ih=644&crop=1",
-          img3:"https://www.iittala.com/-/media/iittala/categories/title-component-new/1600x960_iittala_category_drinkware.jpg?q=100&iw=800&ih=480&crop=1",
-          img4:"https://www.iittala.com/-/media/product-images/iittalaemea/watering-bottle/1051840_iittalaemea_03_iittala-watering-bottle-2set.jpg?q=100&iw=644&ih=644&crop=1"
+          img1:"https://www.iittala.com/-/media/ad76144b5c0b4937ac4ea9ef2c08e01f.ashx",
+          img2:"https://www.iittala.com/-/media/7447ca3495a04c3283cf5969a3df309a.ashx",
+          img3:"https://www.iittala.com/-/media/e77b7d60e5984428853caab3f16cd9da.ashx",
+          img4:"https://www.iittala.com/-/media/45f2ff00e031499ebef204f15b05d1e8.ashx"
         }
 
         const egBoxHtml = `
@@ -44,8 +44,8 @@
                               <!-- ==== Aino Aalto ==== -->
                               <div class="eg-card">
                                   <a href="${egTile.tile1}" class="eg-card-main-link">
-                                    <img src="${egTileImg.img1}" alt="Aino Aalto">
-                                    <h4>Aino Aalto</h4>
+                                    <img src="${egTileImg.img1}" alt="Birds by Toikka">
+                                    <h4>Birds by Toikka</h4>
                                     <span class="eg-card-link">Shop collection</span>
                                   </a>
                               </div>
@@ -54,8 +54,8 @@
 
                               <div class="eg-card">
                                   <a href="${egTile.tile2}" class="eg-card-main-link">
-                                    <img src="${egTileImg.img2}" alt="Alvar Aalto Collection">
-                                    <h4>Alvar Aalto Collection</h4>
+                                    <img src="${egTileImg.img2}" alt="Kattaus">
+                                    <h4>Kattaus</h4>
                                     <span class="eg-card-link">Shop collection</span>
                                   </a>
                               </div>
@@ -63,8 +63,8 @@
                               <!-- ==== Birds By Toikka ==== -->
                               <div class="eg-card">
                                   <a href="${egTile.tile3}" class="eg-card-main-link">
-                                    <img src="${egTileImg.img3}" alt="Birds By Toikka">
-                                    <h4>Birds By Toikka</h4>
+                                    <img src="${egTileImg.img3}" alt="Juomalasit ja mukit">
+                                    <h4>Juomalasit ja mukit</h4>
                                     <span class="eg-card-link">Shop collection</span>
                                   </a>
                               </div>
@@ -72,8 +72,8 @@
                               <!-- ==== Blues ==== -->
                               <div class="eg-card">
                                   <a href="${egTile.tile4}" class="eg-card-main-link">
-                                    <img src="${egTileImg.img4}" alt="Blues">
-                                    <h4>Blues</h4>
+                                    <img src="${egTileImg.img4}" alt="Sisustus">
+                                    <h4>Sisustus</h4>
                                     <span class="eg-card-link">Shop collection</span>
                                   </a>
                               </div>
