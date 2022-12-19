@@ -1,5 +1,23 @@
 @media(max-width: 767px) {
 
+    /*removing phone number from top*/
+    html body .navbar-header {
+        padding-bottom: 0 !important;
+    }
+
+    html body #header-info {
+        display: none;
+    }
+
+    html body .navbar-brand {
+        top: 0;
+        padding-top: 1rem;
+    }
+
+    html body .navbar {
+        height: 1.3rem;
+    }
+
     /*hiding default ctas*/
     .extras form>button[type=submit],
     #tm-booking .passenger>form>.clearfix button[type=submit],
