@@ -77,7 +77,7 @@
                 document.querySelector(".eg-info label").textContent = `Total Charter price`;
                 // inserting a new line below buttons
                 document.querySelector(".eg-cta-container").insertAdjacentHTML("afterend",`
-                    <a href="tel:(800) 416-0247" class="eg-inquiry-msg">For any inquiry call us on (800) 416-8020</a>`);
+                    <a href="tel:877 772 3502" class="eg-inquiry-msg">For any inquiry call us on (800) 416-8020</a>`);
             }
 
         }
