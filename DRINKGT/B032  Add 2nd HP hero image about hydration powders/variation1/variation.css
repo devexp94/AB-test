@@ -29,8 +29,9 @@ div[id ^= 'shopify-section'] > div.home-top-section > div.container > div:nth-ch
     position: absolute;
     display: flex;
     justify-content: center;
-    left: 50%;
-    top: 0;
+    gap: 20px;
+    left:50%;
+    top: 10px;
     transform: translateX(-50%);
     z-index: 7;
 }
@@ -39,22 +40,34 @@ div[id ^= 'shopify-section'] > div.home-top-section > div.container > div:nth-ch
     outline: none;
     border: 0;
     font-size: 20px;
-    background: #EB2848;
+    background: #0f0f0f;
     color: #FFF;
-    padding: 5px 20px;
+    padding: 2px 12px 0;
     font-weight: 800;
     cursor: pointer;
 }
 
 svg.egRightAro {
-    top: 12%;
     position: absolute;
     z-index: 99;
+    top: 5.7%;
     width: 52px;
     height: 62px;
     stroke: #404350;
-    right: 1%;
+    right: 10%;
     cursor: pointer;
+}
+
+svg#Layer_1 {
+    position: absolute;
+ z-index: 99;
+ top: 5.9%;
+ stroke: #404350;
+ left: 10%;
+ fill: #404350;
+ cursor: pointer;
+ height: 30px;
+ width: 30px;
 }
 
 .egActive{
@@ -62,18 +75,50 @@ svg.egRightAro {
     color: #EB2848 !important;
 }
 
+.egRemove{
+    opacity: 0 !important;
+}
+
+.row.usp-block.bws-home-banner.egHydrationPower {
+    position: relative !important;
+}
+
 @media (min-width: 768px) and (max-width: 991px)  {
     .egBtnMain > button {
         width: max-content;
         font-size: 18px;
     }   
+
+    svg.egRightAro {
+        right: 5%;
+    }
+    svg#Layer_1 {
+        left: 5%;
+    }
 }
 
 @media screen and (max-width:767px) {
     .egBtnMain > button {
-        font-size: 16px;
-        background: #EB2848;
+        font-size: 12px;
+        background: #0f0f0f;
         width: max-content;
         right: 0 !important;
     }
+    svg.egRightAro {
+        right: 0;
+    }
+    svg#Layer_1 {
+        left: 0;
+    }
+}
+
+@media (min-width: 1600px) {
+    svg.egRightAro {
+        right: 18%;
+    }
+    
+    svg#Layer_1{
+        left: 18%;
+    }
+    
 }

@@ -55,10 +55,10 @@
 
     let egBtns = `<div class="egSliderBtn">
     <div class="egBtnOne egBtnMain">
-        <button class="egDrink">Location Drink</button>
+        <button class="egDrink">Lactation Drinks</button>
     </div>
     <div class="egBtnTwo egBtnMain">
-        <button class="egPower">Hydration Power</button>
+        <button class="egPower">Hydration Powders</button>
     </div>
 </div>`
 
@@ -66,9 +66,9 @@ let egBanner = `
 <div class="row usp-block bws-home-banner egHydrationPower">
             <div class="col-12">
                 <div class="gradient-bg">
-                    <h1>Hidration Power<br>Hi Electrolytes.<br>Great Taste!</h1>
-                    <h2>Non GMO | No Additives | Family Owned</h2>
-                    <a href="/collections/all">Shop Now</a>
+                    <h1>New!<br>Healthy Hydration<br>Stick Packs</h1>
+                    <h2>Real Fruit Powders | No Added Sugar </h2>
+                    <a href="/products/aloe-berry-hydration-powder">Learn More</a>
                 </div>
             </div>
         </div>`
@@ -76,6 +76,49 @@ let egBanner = `
         let egIcon = `
         <svg class="egRightAro" width="24px" height="24px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg" aria-labelledby="chevronRightIconTitle" stroke="#000000" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#000000"> <title id="chevronRightIconTitle">Chevron Right</title> <polyline points="10 6 16 12 10 18 10 18"/> </svg>`
 
+        let egLeftIcon = `
+        
+<svg version="1.1" class="egLeftArrow" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 511.641 511.641" style="enable-background:new 0 0 511.641 511.641;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M148.32,255.76L386.08,18c4.053-4.267,3.947-10.987-0.213-15.04c-4.16-3.947-10.667-3.947-14.827,0L125.707,248.293
+			c-4.16,4.16-4.16,10.88,0,15.04L371.04,508.667c4.267,4.053,10.987,3.947,15.04-0.213c3.947-4.16,3.947-10.667,0-14.827
+			L148.32,255.76z"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+`
         
     /* Variation Init */
     function init() {
@@ -87,18 +130,24 @@ let egBanner = `
         
         document.querySelector(".egPower").classList.add("egActive");
         document.querySelector(".egDrink").classList.remove("egActive");
+        document.querySelector(".egRightAro").classList.add("egRemove");
+        document.querySelector(".egLeftArrow").classList.remove("egRemove");
         document.querySelector("main > div[id ^= 'shopify-section']:first-child > div > div > div:nth-child(2)").style.zIndex = "0";
         document.querySelector("div.bws-home-banner.egHydrationPower").style.zIndex = "5";
       });
         
-       live(".egDrink","click" , function(){
+       live(['.egDrink' , '.egLeftArrow'],"click" , function(){
         document.querySelector(".egPower").classList.remove("egActive");
         document.querySelector(".egDrink").classList.add("egActive");
+        document.querySelector(".egRightAro").classList.remove("egRemove");
+        document.querySelector(".egLeftArrow").classList.add("egRemove");
         document.querySelector("main > div[id ^= 'shopify-section']:first-child > div > div > div:nth-child(2)").style.zIndex = "5";
         document.querySelector("div.bws-home-banner.egHydrationPower").style.zIndex = "0"
         });
 
-          document.querySelector("div[id ^= 'shopify-section']> div.home-top-section > div.container").insertAdjacentHTML("beforeend" , egIcon);
+          document.querySelector("div[id ^= 'shopify-section']> div.home-top-section > div.container").insertAdjacentHTML("beforebegin" , egIcon);
+    
+          document.querySelector("div[id ^= 'shopify-section']> div.home-top-section > div.container").insertAdjacentHTML("beforebegin" , egLeftIcon);
     
     }
 
