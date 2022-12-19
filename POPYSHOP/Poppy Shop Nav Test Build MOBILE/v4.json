@@ -1,0 +1,8 @@
+{
+	"files": [
+		"./variationD/variation.css",
+		"./variationD/variation.js"
+	],
+	"urls": ["https://www.poppyshop.org.uk/"],
+	"inject": ""
+}
