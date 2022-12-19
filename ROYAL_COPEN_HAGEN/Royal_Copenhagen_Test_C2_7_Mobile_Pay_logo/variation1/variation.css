@@ -17,9 +17,13 @@
     content: '';
     display: inline-block;
     background: url(https://expogrowth.in/wp-content/uploads/2022/12/mobilepay.svg);
-    width:38px;
+    width:50px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 25px;
+    height:38px;
+}
+
+.c-checkout-payment > div[class^="c-checkout-review"] > div:nth-child(3) label[for=radio-button-mobilepay] .radio-button-icon {
+    top: calc(((1.7 * 1.44em) - 1em - 2px) / 2) !important;
 }
