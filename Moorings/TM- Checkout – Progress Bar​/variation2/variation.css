@@ -106,6 +106,7 @@ nav .step {
     background: #122447;
     left: 14%;
     top: 27%;
+    transition: width 4s ease;
 }
 
 
