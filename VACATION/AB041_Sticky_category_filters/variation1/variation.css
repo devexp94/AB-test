@@ -15,15 +15,14 @@
         top: 130px;
         left: 50%;
         transform: translateX(-50%);
-    }
-
-    .eg-subheading {
-        top: 200px;
-    }
-
-    html body .filters-container,
-    .eg-subheading {
         z-index: 9999;
+        background: rgb(255 255 255 / 90%);
+    }
+
+    .eg-subheading {
+        top: 188px;
+        padding: 10px 20px;
+        border-radius: 1vmax;
     }
 }
 
@@ -46,5 +45,6 @@
         left: 50%;
         transform: translateX(-50%);
         z-index: 9999;
+        background: rgb(255 255 255 / 90%);
     }
 }
