@@ -92,6 +92,7 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        border-radius: 3px;
     }
 
     .eg-cta-container .share-quote a.btn:hover {
