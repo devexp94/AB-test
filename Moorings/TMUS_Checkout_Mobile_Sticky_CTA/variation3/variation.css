@@ -30,7 +30,7 @@
     }
 
     .eg-cta-container>.btn {
-        font-size: 17px;
+        font-size: 15px;
         color: #fff;
         background-color: #b92d32;
         border: none;
@@ -48,7 +48,7 @@
         padding: 0;
         margin: 0;
         padding-right: 10px;
-        font-size: 17px;
+        font-size: 15px;
         color: black;
     }
 
@@ -57,6 +57,7 @@
         padding: 0;
         text-align: right;
         color: #b92d32;
+        font-size: 15px;
     }
 
     .eg-info .clearfix {
@@ -86,6 +87,11 @@
     .eg-cta-container .share-quote a.btn {
         width: 100%;
         background: white;
+        white-space: unset !important;
+        font-size: 15px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .eg-cta-container .share-quote a.btn:hover {
