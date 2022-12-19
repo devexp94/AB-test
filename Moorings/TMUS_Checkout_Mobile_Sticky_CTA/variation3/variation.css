@@ -71,8 +71,12 @@
 
     .eg-cta-container {
         display: flex;
-        gap: 4px;
+        gap: 36px;
         justify-content: space-between;
+    }
+
+    .eg-cta-container>* {
+        flex: 1;
     }
 
     .eg-cta-container .share-quote {
