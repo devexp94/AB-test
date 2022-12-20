@@ -69,30 +69,32 @@
             "GET THE POOL BOY SCENTED CANDLE FOR $34"
         ]
 
-        let egItems;
 
         let egInterval;
+        let egTimeout;
         live(['button', 'span'], 'click', function() {
             if (this.innerText.toUpperCase().indexOf("BAG") != -1) {
                 waitForElement('.keen-slider.cart__upsells > .keen-slider__slide', init, 50, 15000);
             } else if ((this.innerText.toUpperCase() == "ADD") || (this.innerText.toUpperCase() == "REMOVE") || this.parentElement.classList.contains("cart__item__quantity")) {
-                egInterval = setInterval(()=>{
-                    waitForElement(".keen-slider.cart__upsells > .keen-slider__slide", changeContent,50, 15000);
-                    console.log(egInterval);
-                },1000);
-
-                setTimeout(()=>{
+                clearInterval(egInterval);
+                clearTimeout(egTimeout);
+                egInterval = setInterval(() => {
+                    waitForElement(".keen-slider.cart__upsells > .keen-slider__slide", changeContent, 50, 15000);
+                }, 500);
+                egTimeout = setTimeout(()=>{
                     clearInterval(egInterval);
-                },10000);
+                },5000);
+
             }
         });
 
         function changeContent() {
+            let egItems = [...document.querySelectorAll(".keen-slider.cart__upsells > .keen-slider__slide")];
             // removing active class and section specific class
-            removeClasses();
+            removeClasses(egItems);
 
             // inserting data
-            updateContent();
+            updateContent(egItems);
         }
 
 
@@ -100,10 +102,10 @@
         function init() {
             /* start your code here */
             egItems = [...document.querySelectorAll(".keen-slider.cart__upsells > .keen-slider__slide")];
-            updateContent();
+            updateContent(egItems);
         }
 
-        function removeClasses() {
+        function removeClasses(egItems) {
             egItems.forEach(item => {
                 if (item.classList.contains("eg-active")) {
                     item.classList.remove("eg-active");
@@ -124,7 +126,7 @@
             });
         }
 
-        function updateContent() {
+        function updateContent(egItems) {
             egItems.forEach(item => {
                 let egTarget = item.querySelector(".cart__item .cart__item__content > .gara");
 
