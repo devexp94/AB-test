@@ -78,15 +78,10 @@
             } else if ((this.innerText.toUpperCase() == "ADD") || (this.innerText.toUpperCase() == "REMOVE") || this.parentElement.classList.contains("cart__item__quantity")) {
                 clearInterval(egInterval);
                 clearTimeout(egTimeout);
-                // egInterval = setInterval(() => {
-                //     waitForElement(".keen-slider.cart__upsells > .keen-slider__slide", changeContent, 50, 15000);
-                // }, 500);
-                // egTimeout = setTimeout(() => {
-                //     clearInterval(egInterval);
-                // }, 5000);
+    
                 let egItems = [...document.querySelectorAll(".keen-slider.cart__upsells > .keen-slider__slide")];
                 removeClasses(egItems);
-                waitForElement(".keen-slider.cart__upsells > .keen-slider__slide", changeContent, 3500, 15000);
+                waitForElement(".keen-slider.cart__upsells > .keen-slider__slide", changeContent, 1500, 15000);
 
             }
         });
