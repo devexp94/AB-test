@@ -51,30 +51,7 @@ html body .l-wizard-section__header {
 /*hiding arrow if section has no content*/
 .l-wizard-section:has(.l-wizard-section__header .is-inactive) .eg-arrow{
     display:none !important;
-}
-
-.eg-confirm-btn {
-    position: relative;
-    display: inline-block;
-    padding: 11px 20px;
-    border: 1px solid #ED40A9;
-    border-radius: 20px;
-    background: #ED40A9;
-    font-size: 13px!important;
-    line-height: 13px!important;
-    font-family: caustenRoundedMedium,Arial,sans-serif;
-    font-weight: 400;
-    text-transform: capitalize;
-    text-align: center;
-    cursor: pointer;
-    color: #fff;
-    margin-block: 14px;
-}
-
-
-.eg-confirm-btn:hover:not([disabled]) {
-    background: #eb5cc1;
-    border-color: #eb5cc1;
+    pointer-events: none !important;
 }
 
 

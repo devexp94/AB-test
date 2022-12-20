@@ -58,31 +58,19 @@
         }
 
         let egOpend = [];
-        let allClosed = false;
         let closeInterval;
         /* Variation Init */
         function init() {
             /* start your code here */
-            closeInterval = setInterval(() => {
-                if (!allClosed) {
-                    // console.log("hello")
-                    // adding arrow icons
-                    waitForElement('.l-wizard-section__header', function() {
-                        document.querySelectorAll(".l-wizard-section__header").forEach(item => {
-                            if (!item.querySelector(".eg-arrow")) {
-                                item.insertAdjacentHTML("beforeend", `<span class="eg-arrow"></span>`);
-                            }
-                        })
-                    }, 50, 15000);
-
-                    // closing all active(ticked) sections
-                    waitForElement('.l-wizard-section__icon', closeAll, 50, 15000);
-                } else {
-                    clearInterval(closeInterval);
-                    closeInterval = null;
-                    closeActiveSection();
-                }
-            }, 1000);
+            // adding arrow icons
+            waitForElement('.l-wizard-section__header', function() {
+                document.querySelectorAll(".l-wizard-section__header").forEach(item => {
+                    if (!item.querySelector(".eg-arrow")) {
+                        item.insertAdjacentHTML("beforeend", `<span class="eg-arrow"></span>`);
+                    }
+                });
+                closeAll();
+            }, 50, 15000);
 
         }
 
@@ -96,7 +84,7 @@
 
         // order now button click
         live('.c-button', "click", function() {
-            waitForElement('.l-wizard-section__icon', closeAll, 50, 15000);
+            waitForElement('html body .l-wizard__body', init, 50, 15000);
         });
 
 
@@ -107,6 +95,7 @@
                 // searching section for this text
                 document.querySelectorAll(".l-wizard-section__header .l-wizard-section__title").forEach(title => {
                     if (title.innerText.toUpperCase().indexOf(egTargetTxt) != -1) {
+                        title.parentElement.parentElement.scrollIntoView({ behavior: "smooth", block: 'start' });
 
                         //========== EDIT BUTTON CLICK LOGIC ========//
 
@@ -116,11 +105,12 @@
                         and if it's container part (which contains content) is close so we will open it and if 
                         not just scrolled that section */
 
-                        title.parentElement.parentElement.scrollIntoView({ behavior: "smooth" });
+                        
                         if (title.parentElement.parentElement.querySelector(".eg-inactive-section")) {
                             closeOpenArrows();
                             egOpend.unshift(title.parentElement.parentElement.querySelector(".eg-inactive-section"));
                             title.parentElement.parentElement.querySelector(".eg-inactive-section").classList.remove("eg-inactive-section");
+                            
                         }
 
                     }
@@ -131,18 +121,18 @@
             if (this.classList.contains("eg-arrow")) {
                 closeOpenArrows(this.parentElement.parentElement.querySelector(".l-wizard-section__container"));
                 this.parentElement.parentElement.querySelector(".l-wizard-section__container").classList.toggle("eg-inactive-section");
-                this.parentElement.parentElement.scrollIntoView({ behavior: "smooth" });
+                this.parentElement.parentElement.scrollIntoView({ behavior: "smooth",block: 'start' });
 
-                if(!this.parentElement.parentElement.querySelector(".l-wizard-section__container").classList.contains("eg-inactive-section")){
+                if (!this.parentElement.parentElement.querySelector(".l-wizard-section__container").classList.contains("eg-inactive-section")) {
                     egOpend.unshift(this.parentElement.parentElement.querySelector(".l-wizard-section__container"));
                 }
             }
         });
 
-        function closeOpenArrows(crrSec=null){
-            [...new Set(egOpend)].forEach(sec=>{
-                if(sec != crrSec){
-                    sec.classList.add("eg-inactive-section");    
+        function closeOpenArrows(crrSec = null) {
+            [...new Set(egOpend)].forEach(sec => {
+                if (sec != crrSec) {
+                    sec.classList.add("eg-inactive-section");
                 }
             });
         }
@@ -155,36 +145,28 @@
                     // checking api is called for product
                     // console.log(this.responseURL.indexOf("wizard"))
                     if (this.responseURL.indexOf("/api/wizard/") != -1) {
-                        allClosed = false;
-                        setTimeout(() => {
-                            waitForElement('html body .l-wizard__body', init, 50, 15000);
-                        }, 3000);
+                        waitForElement('html body .l-wizard__body', init, 50, 15000);
                     }
                 })
                 return send.apply(this, arguments)
             }
         }
 
+        closeActiveSection();
+
+
         function closeAll() {
-            const egActiveSec = document.querySelectorAll(".l-wizard-section__icon");
-            egActiveSec.forEach((check, i) => {
-                if (check.classList.contains("is-active") && !check.classList.contains("is-inactive")) {
-                    let egChilds = check.parentElement.parentElement.children;
-                    for (let i = 0; i < egChilds.length; i++) {
-                        if (egChilds[i].classList.contains("l-wizard-section__container")) {
-                            egChilds[i].classList.add("eg-inactive-section");
-                            break;
-                        }
-                    }
-                } else {
-                    allClosed = true;
+            const egArrows = document.querySelectorAll(".eg-arrow");
+            egArrows.forEach(arrow=>{
+                if(!arrow.parentElement.parentElement.querySelector(".eg-inactive-section")){
+                    arrow.click();
                 }
             });
             let firstUnopend = document.querySelector(".l-wizard-section:has(.l-wizard-section__icon:not(.is-active))");
-            firstUnopend.scrollIntoView({ behaviour: "smooth" });
-            closeOpenArrows()
+            closeOpenArrows();
             firstUnopend.querySelector(".l-wizard-section__container").classList.remove("eg-inactive-section");
             egOpend.unshift(firstUnopend.querySelector(".l-wizard-section__container"));
+            firstUnopend.scrollIntoView({ behaviour: "smooth", block: 'start' });
         }
 
         /* Initialize variation */
