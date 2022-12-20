@@ -97,7 +97,7 @@
                     if (title.innerText.toUpperCase().indexOf(egTargetTxt) != -1) {
                         title.parentElement.parentElement.scrollIntoView({ behavior: "smooth", block: 'start' });
 
-                        //========== EDIT BUTTON CLICK LOGIC ========//
+                         //========== EDIT BUTTON CLICK LOGIC ========//
 
                         /* so here i'm checking this edit button's grand parent's first element text 
                         and looping it through the sections header title if its meet any of one 
