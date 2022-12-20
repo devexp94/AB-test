@@ -77,8 +77,12 @@
         // header click detect
 
         live('.l-wizard-section__header', 'click', (e) => {
-            if (e.target.classList.contains("l-wizard-section__header")) {
+            if (e.target.classList.contains("l-wizard-section__header"))  {
                 e.target.querySelector(".eg-arrow").click();
+            } else if (e.target.classList.contains("l-wizard-section__title")){
+                e.target.parentElement.querySelector(".eg-arrow").click();
+            } else if (e.target.classList.contains("l-wizard-section__icon")){
+                e.target.parentElement.querySelector(".eg-arrow").click();
             }
         });
 
