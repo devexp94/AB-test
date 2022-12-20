@@ -64,3 +64,12 @@
     display: block !important;
 }
 
+/*changing order of the slides*/
+.eg-air-freshener {
+    order: -2;
+}
+
+.eg-whip {
+    order: -1;
+}
+

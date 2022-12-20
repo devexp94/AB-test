@@ -22,18 +22,6 @@
             }, delayTimeout);
         }
 
-        const egLabels = [
-            "small price",
-            "new product",
-            "best seller"
-        ]
-
-        const egTxt = [
-            "GET THE POOL BOY SCENTED CANDLE FOR $34",
-            "GET THE ICONIC CLASSIC WHIP SPF30 SUNSCREEN MOUSSE FOR $22",
-            "GET THE SCENT OF THE WORLD'S BEST-SMELLING SUNSCREEN, FOR YOUR CAR OR HOME OFFICE FOR $5"
-        ]
-
         function live(selector, event, callback, context) {
             /****Helper Functions****/
             // helper for enabling IE 8 event bindings
@@ -69,6 +57,18 @@
             live(selector, event, callback, context);
         }
 
+        const egLabels = [
+            "small price",
+            "new product",
+            "best seller"
+        ]
+
+        const egTxt = [
+            "GET THE SCENT OF THE WORLD'S BEST-SMELLING SUNSCREEN, FOR YOUR CAR OR HOME OFFICE FOR $5",
+            "GET THE ICONIC CLASSIC WHIP SPF30 SUNSCREEN MOUSSE FOR $22",
+            "GET THE POOL BOY SCENTED CANDLE FOR $34"
+        ]
+
         live(['button', 'span'], 'click', function() {
             if (this.innerText.toUpperCase().indexOf("BAG") != -1) {
                 waitForElement('.keen-slider.cart__upsells > .keen-slider__slide', init, 50, 15000);
@@ -83,10 +83,19 @@
         function changeContent() {
             let egItems = [...document.querySelectorAll(".keen-slider.cart__upsells > .keen-slider__slide")];
 
-            // removing active class
+            // removing active class and section specific class
             egItems.forEach(item => {
                 if (item.classList.contains("eg-active")) {
                     item.classList.remove("eg-active");
+                }
+                if(item.classList.contains("eg-air-freshener")){
+                    item.classList.remove("eg-air-freshener");
+                }
+                if(item.classList.contains("eg-whip")){
+                    item.classList.remove("eg-whip");
+                }
+                if(item.classList.contains("eg-pool-boy")){
+                    item.classList.remove("eg-pool-boy");
                 }
                 if (item.querySelector(".eg-label")) {
                     item.querySelector(".eg-label").remove();
@@ -99,18 +108,21 @@
                 let egTarget = item.querySelector(".cart__item .cart__item__content > .gara");
 
 
-                if (egTarget.querySelector("p").innerText.toUpperCase() == "GET THE POOL BOY SCENTED CANDLE FOR $34") {
+                if (egTarget.querySelector("p").innerText.toUpperCase() == "GET THE SCENT OF THE WORLD'S BEST-SMELLING SUNSCREEN, FOR YOUR CAR OR HOME OFFICE FOR $5") {
                     item.classList.add("eg-active");
+                    item.classList.add("eg-air-freshener");
                     if (!egTarget.querySelector(".eg-label")) {
                         egTarget.insertAdjacentHTML("afterbegin", `<span class="eg-label">${egLabels[0]}</span>`)
                     }
                 } else if (egTarget.querySelector("p").innerText.toUpperCase() == "GET THE ICONIC CLASSIC WHIP SPF30 SUNSCREEN MOUSSE FOR $22") {
                     item.classList.add("eg-active");
+                    item.classList.add("eg-whip");
                     if (!egTarget.querySelector(".eg-label")) {
                         egTarget.insertAdjacentHTML("afterbegin", `<span class="eg-label">${egLabels[1]}</span>`)
                     }
-                } else if (egTarget.querySelector("p").innerText.toUpperCase() == "GET THE SCENT OF THE WORLD'S BEST-SMELLING SUNSCREEN, FOR YOUR CAR OR HOME OFFICE FOR $5") {
+                } else if (egTarget.querySelector("p").innerText.toUpperCase() == "GET THE POOL BOY SCENTED CANDLE FOR $34") {
                     item.classList.add("eg-active");
+                    item.classList.add("eg-pool-boy");
                     if (!egTarget.querySelector(".eg-label")) {
                         egTarget.insertAdjacentHTML("afterbegin", `<span class="eg-label">${egLabels[2]}</span>`)
                     }
@@ -127,18 +139,21 @@
 
             [...document.querySelectorAll(".keen-slider.cart__upsells > .keen-slider__slide")].forEach(item => {
                 let egTarget = item.querySelector(".cart__item .cart__item__content > .gara");
-                if (egTarget.innerText.toUpperCase() == "GET THE POOL BOY SCENTED CANDLE FOR $34") {
+                if (egTarget.innerText.toUpperCase() == "GET THE SCENT OF THE WORLD'S BEST-SMELLING SUNSCREEN, FOR YOUR CAR OR HOME OFFICE FOR $5") {
                     item.classList.add("eg-active");
+                    item.classList.add("eg-air-freshener");
                     if (!egTarget.querySelector(".eg-label")) {
                         egTarget.insertAdjacentHTML("afterbegin", `<span class="eg-label">${egLabels[0]}</span>`)
                     }
                 } else if (egTarget.innerText.toUpperCase() == "GET THE ICONIC CLASSIC WHIP SPF30 SUNSCREEN MOUSSE FOR $22") {
                     item.classList.add("eg-active");
+                    item.classList.add("eg-whip");
                     if (!egTarget.querySelector(".eg-label")) {
                         egTarget.insertAdjacentHTML("afterbegin", `<span class="eg-label">${egLabels[1]}</span>`)
                     }
-                } else if (egTarget.innerText.toUpperCase() == "GET THE SCENT OF THE WORLD'S BEST-SMELLING SUNSCREEN, FOR YOUR CAR OR HOME OFFICE FOR $5") {
+                } else if (egTarget.innerText.toUpperCase() == "GET THE POOL BOY SCENTED CANDLE FOR $34") {
                     item.classList.add("eg-active");
+                    item.classList.add("eg-pool-boy");
                     if (!egTarget.querySelector(".eg-label")) {
                         egTarget.insertAdjacentHTML("afterbegin", `<span class="eg-label">${egLabels[2]}</span>`)
                     }
