@@ -133,20 +133,24 @@ window.egMobileMenu1 = ''+
     '                          class="eg-arrow icon-chevron-right is-size-6"></span>'+ 
     '                  </a>'+ 
     '                  <ul class="eg-sub-menu eg-has-dropdown">'+ 
-    '                      <li class="eg-sub-menu-option eg-no-dropdown">'+ 
-    '                          <a class="eg-title" href="/collections/clothing">Clothing</a>'+ 
-    '                      </li>'+ 
-    '                      <li class="eg-sub-menu-option eg-no-dropdown">'+ 
-    '                          <a class="eg-title" href="/collections/tops-t-shirts">Tops & T-Shirts</a>'+ 
-    '                      </li>'+ 
-    '                      <li class="eg-sub-menu-option eg-no-dropdown">'+ 
-    '                          <a class="eg-title" href="/collections/coats-jackets">Coats & Jackets</a>'+ 
-    '                      </li>'+ 
-    '                      <li class="eg-sub-menu-option eg-no-dropdown">'+ 
-    '                          <a class="eg-title" href="/collections/socks">Socks</a>'+ 
-    '                      </li>'+ 
-    '                      <li class="eg-sub-menu-option eg-no-dropdown">'+ 
-    '                          <a class="eg-title" href="/collections/mens-sportswear">Sportswear</a>'+ 
+    '                      <li class="eg-sub-menu-option eg-has-dropdown">'+ 
+    '                          <a class="eg-title" href="/collections/clothing">Clothing<span'+ 
+    '                                  class="eg-arrow icon-chevron-right is-size-6"></span></a>'+ 
+    '                          </a>'+ 
+    '                          <ul class="eg-sub-menu-link">'+ 
+    '                              <li class="eg-sub-menu-link-option">'+ 
+    '                                  <a class="eg-title" href="/collections/tops-t-shirts">Tops & T-Shirts</a>'+ 
+    '                              </li>'+ 
+    '                              <li class="eg-sub-menu-link-option">'+ 
+    '                                  <a class="eg-title" href="/collections/coats-jackets">Coats & Jackets</a>'+ 
+    '                              </li>'+ 
+    '                              <li class="eg-sub-menu-link-option">'+ 
+    '                                  <a class="eg-title" href="/collections/socks">Socks</a>'+ 
+    '                              </li>'+ 
+    '                              <li class="eg-sub-menu-link-option">'+ 
+    '                                  <a class="eg-title" href="/collections/mens-sportswear">Sportswear</a>'+ 
+    '                              </li>'+ 
+    '                          </ul>'+ 
     '                      </li>'+ 
     '                      <li class="eg-sub-menu-option eg-has-dropdown">'+ 
     '                          <a class="eg-title" href="/collections/bags">Bags, Purses & Wallets <span'+ 
