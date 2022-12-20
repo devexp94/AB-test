@@ -81,9 +81,9 @@
                 egInterval = setInterval(() => {
                     waitForElement(".keen-slider.cart__upsells > .keen-slider__slide", changeContent, 50, 15000);
                 }, 500);
-                egTimeout = setTimeout(()=>{
+                egTimeout = setTimeout(() => {
                     clearInterval(egInterval);
-                },5000);
+                }, 5000);
 
             }
         });
@@ -103,6 +103,7 @@
             /* start your code here */
             egItems = [...document.querySelectorAll(".keen-slider.cart__upsells > .keen-slider__slide")];
             updateContent(egItems);
+
         }
 
         function removeClasses(egItems) {
@@ -132,21 +133,23 @@
 
 
                 if (egTarget.querySelector("p").innerText.toUpperCase() == "GET THE SCENT OF THE WORLD'S BEST-SMELLING SUNSCREEN, FOR YOUR CAR OR HOME OFFICE FOR $5") {
-                    item.classList.add("eg-active");
-                    item.classList.add("eg-air-freshener");
                     if (!egTarget.querySelector(".eg-label")) {
+                        item.classList.add("eg-active");
+                        item.classList.add("eg-air-freshener");
                         egTarget.insertAdjacentHTML("afterbegin", `<span class="eg-label">${egLabels[0]}</span>`)
                     }
                 } else if (egTarget.querySelector("p").innerText.toUpperCase() == "GET THE ICONIC CLASSIC WHIP SPF30 SUNSCREEN MOUSSE FOR $22") {
-                    item.classList.add("eg-active");
-                    item.classList.add("eg-whip");
+
                     if (!egTarget.querySelector(".eg-label")) {
+                        item.classList.add("eg-active");
+                        item.classList.add("eg-whip");
                         egTarget.insertAdjacentHTML("afterbegin", `<span class="eg-label">${egLabels[1]}</span>`)
                     }
                 } else if (egTarget.querySelector("p").innerText.toUpperCase() == "GET THE POOL BOY SCENTED CANDLE FOR $34") {
-                    item.classList.add("eg-active");
-                    item.classList.add("eg-pool-boy");
+
                     if (!egTarget.querySelector(".eg-label")) {
+                        item.classList.add("eg-active");
+                        item.classList.add("eg-pool-boy");
                         egTarget.insertAdjacentHTML("afterbegin", `<span class="eg-label">${egLabels[2]}</span>`)
                     }
                 }
