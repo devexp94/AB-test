@@ -71,14 +71,12 @@
 
         let egItems;
 
+
         live(['button', 'span'], 'click', function() {
             if (this.innerText.toUpperCase().indexOf("BAG") != -1) {
                 waitForElement('.keen-slider.cart__upsells > .keen-slider__slide', init, 50, 15000);
             } else if ((this.innerText.toUpperCase() == "ADD") || (this.innerText.toUpperCase() == "REMOVE") || this.parentElement.classList.contains("cart__item__quantity")) {
-                setTimeout(() => {
-                    waitForElement(".keen-slider.cart__upsells > .keen-slider__slide", changeContent, 50, 15000);
-                }, 2000);
-
+                waitForElement(".keen-slider.cart__upsells > .keen-slider__slide", changeContent, 3000, 15000);
             }
         });
 
