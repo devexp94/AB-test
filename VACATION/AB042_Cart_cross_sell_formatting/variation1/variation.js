@@ -78,6 +78,7 @@
             } else if ((this.innerText.toUpperCase() == "ADD") || (this.innerText.toUpperCase() == "REMOVE") || this.parentElement.classList.contains("cart__item__quantity")) {
                 egInterval = setInterval(()=>{
                     waitForElement(".keen-slider.cart__upsells > .keen-slider__slide", changeContent,50, 15000);
+                    console.log(egInterval);
                 },1000);
 
                 setTimeout(()=>{
