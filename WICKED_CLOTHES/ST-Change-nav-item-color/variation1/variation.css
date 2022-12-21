@@ -2,6 +2,8 @@
     color: #E8368C !important;
 }
 
-#shopify-section-navigation > div.mobile__nav > div.nav--content > a:nth-child(3){
-    color: #E8368C !important;
+@media screen and (max-width: 991px){
+    #shopify-section-navigation > div.mobile__nav > div.nav--content > a:nth-child(3){
+        color: #E8368C !important;
+    }
 }
