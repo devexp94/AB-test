@@ -46,12 +46,12 @@
             document.querySelector(" div.container div:nth-child(1) > div > div:nth-child(2) > p:nth-child(2)").innerText = "Email";
 
             // inserting boxes
-            document.querySelector("#pageContent>div:nth-of-type(7)").insertAdjacentHTML("afterend", egBoxesHTML);
+            document.querySelector("#pageContent>div:nth-of-type(9)").insertAdjacentHTML("beforebegin", egBoxesHTML);
 
         }
 
         /* Initialize variation */
-        waitForElement('body', init, 500, 15000);
+        waitForElement('#pageContent>div:nth-of-type(7)', init, 100, 15000);
     } catch (e) {
         if (debug) console.log(e, "error in Test" + variation_name);
     }
