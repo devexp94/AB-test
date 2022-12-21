@@ -1,0 +1,9 @@
+#shopify-section-navigation > div.header_meganav > div.header_desktop > div.links__container > div:nth-child(3) > a {
+    color: #E8368C !important;
+}
+
+@media only screen and (max-width: 991px){
+    #shopify-section-navigation > div.mobile__nav > div.nav--content > a:nth-child(3){
+        color: #E8368C !important;
+    }
+}
