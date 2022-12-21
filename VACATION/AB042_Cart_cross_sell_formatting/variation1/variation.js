@@ -81,7 +81,7 @@
     
                 let egItems = [...document.querySelectorAll(".keen-slider.cart__upsells > .keen-slider__slide")];
                 removeClasses(egItems);
-                waitForElement(".keen-slider.cart__upsells > .keen-slider__slide", changeContent, 2500, 15000);
+                waitForElement(".keen-slider.cart__upsells > .keen-slider__slide", changeContent, 3000, 15000);
 
             }
         });
