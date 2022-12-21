@@ -59,30 +59,29 @@
         '  <li>Unified environment for every aspect of the electronics design process</li>'+ 
         '  <li>Hierarchical schematic capture with integrated SPICE simulation</li>'+ 
         '  <li>PCB editor with interactive routing engine and built-in signal integrity tools</li>'+ 
-        '  <li>interactive 3D design viewer with support for a variety of mechanical models</li>'+ 
-        '  <li>Centralized and version-controlled libraries with real time supply chain data</li>'+ 
+        '  <li>Interactive 3D design viewer with support for a variety of mechanical models</li>'+ 
+        '  <li>Centralized and version-controlled libraries with real-time supply chain data</li>'+ 
         '  <li>Built-in fabrication and assembly drawing generation tools</li>'+ 
         '  <li>Software updates and support services</li>';
 
         let egListItem2 = 
         ''+ 
-        '  <li>Producr design capabilities for multi-board systems/assemblies and harmness</li>'+ 
+        '  <li>Producer design capabilities for multi-board systems/assemblies and harnesses</li>'+ 
         '  <li>Managed libraries with lifecycle states, templates, and where-used plus supply chain and risk data from IHS Markit</li>'+ 
-        '  <li>Advanced mechanical integration for rigid-flex support,copper geometry , MCAD component placement, enclosure exchange and more </li>'+ 
-        '  <li>Manager level contro for team configurations, roles and permissions</li>'+ 
+        '  <li>Advanced mechanical integration for rigid-flex support, copper geometry, MCAD component placement, enclosure exchange and more </li>'+ 
+        '  <li>Manager-level control for team configurations, roles, and permissions</li>'+ 
         '  <li>Connect to popular Single Sign-On identity services with the SAML protocol</li>'+ 
         '  <li>Flexible license use for single continent or global teams</li>'+ 
-        '  <li>Priority support ticket escalation and a dedicated Customer Success Manger</li>';
+        '  <li>Priority support ticket escalation and a dedicated Customer Success Manager</li>';
 
         let egListItem3 = 
         ''+ 
         '  <li>Managed processes and workflows for design reviews, part requests, lifecycle states, and project creation/release</li>'+ 
         '  <li>PLM and ERP integrations for Arena PLM, PTC Windchill, Aras PLM, Oracle Agile PLM, and Teamcenter</li>'+ 
-        '  <li>Advanced mechanical integration for rigid-flex support,copper geometry , MCAD component placement, enclosure exchange and more </li>'+ 
-        '  <li>Managed tool configuration , project settings, and document standardization for every team</li>'+ 
+        '  <li>Managed tool configuration, project settings, and document standardization for every team</li>'+ 
         '  <li>Enterprise-level support and a dedicated Custmor Success Manger</li>'+ 
         '  <li>Available as an on-premise solution</li>'+ 
-        '  <li>Unlimited access to Altium on demand training courses.</li>';
+        '  <li>Unlimited access to Altium on-demand training courses</li>';
 
 
      document.querySelector("div.s-levels__wrap > div:nth-child(1) > div.s-levels__desc > div > ul").innerHTML = egListItem1;
