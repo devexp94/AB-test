@@ -22,9 +22,6 @@
       }, delayTimeout);
     }
  
-    let egListItem = `
-       <li>interreactive 3D design</li>
-    `
     
     /* Variation Init */
     function init() {
