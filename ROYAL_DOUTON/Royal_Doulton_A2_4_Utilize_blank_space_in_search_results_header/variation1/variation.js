@@ -57,6 +57,11 @@
             live(selector, event, callback, context);
         }
 
+        live(['.c-h-search_suggestions_item', '.a11-recent-search-list > li'], 'click', function() {
+            waitForElement('html body .c-title-component-text h1', init, 50, 15000);
+        });
+
+        let egChangeTxt,egTimeout;
         /* Variation Init */
         function init() {
             /* start your code here */
@@ -67,28 +72,27 @@
                 egTarget.textContent = `Results for "${this.value}"`;
             });
 
-            live(['.c-h-search_suggestions_item','.a11-recent-search-list > li'], 'click', function() {
-                egTarget.textContent = `Results for "${egSearchBox.value}"`;
-            });
+            clearInterval(egChangeTxt);
+            clearTimeout(egTimeout);
 
-            let egChangeTxt = setInterval(() => {
-                
+            egChangeTxt = setInterval(() => {
 
-                if (egTarget.textContent.indexOf("Results for") == -1) {
-                    
+
+                if ((egTarget.textContent.indexOf("Results for") == -1) || egTarget.textContent.toUpperCase() != `RESULTS FOR ${egSearchBox.value.toUpperCase()}`) {
+
 
                     egTarget.textContent = `Results for "${egSearchBox.value}"`;
 
                     egSearchBox.addEventListener("input", function() {
                         egTarget.textContent = `Results for "${this.value}"`;
                     });
-                } else {
-                    clearInterval(egChangeTxt);
-
                 }
-                console.log("cleared")
 
-            }, 1000);
+            }, 500);
+
+            egTimeout = setTimeout(()=>{
+                clearInterval(egChangeTxt);
+            },5000);
 
 
         }
