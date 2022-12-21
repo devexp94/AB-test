@@ -56,6 +56,26 @@ div:nth-child(1)>div>div:nth-child(2)>p:nth-child(1) {
     order: 1;
 }
 
+
+.panel-white {
+    background: #f2f2f2 !important;
+}
+
+textarea#message {
+    background: #cbd0d2 !important;
+    border: none !important;
+}
+
+input#fullName::placeholder,
+input#email::placeholder{
+    color: #aeb9bc !important;
+    font-weight: 800;
+}
+
+textarea#message::placeholder {
+    color: transparent !important;
+}
+
 /*boxes*/
 .eg-boxes {
     background: white;
