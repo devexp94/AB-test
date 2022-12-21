@@ -79,7 +79,7 @@
         '  <li>Managed processes and workflows for design reviews, part requests, lifecycle states, and project creation/release</li>'+ 
         '  <li>PLM and ERP integrations for Arena PLM, PTC Windchill, Aras PLM, Oracle Agile PLM, and Teamcenter</li>'+ 
         '  <li>Managed tool configuration, project settings, and document standardization for every team</li>'+ 
-        '  <li>Enterprise-level support and a dedicated Custmor Success Manger</li>'+ 
+        '  <li>Enterprise-level support and a dedicated Custmor Success Manager</li>'+ 
         '  <li>Available as an on-premise solution</li>'+ 
         '  <li>Unlimited access to Altium on-demand training courses</li>';
 
