@@ -61,7 +61,7 @@
             waitForElement('html body .c-title-component-text h1', init, 50, 15000);
         });
 
-        let egChangeTxt,egTimeout;
+        let egChangeTxt, egTimeout;
         /* Variation Init */
         function init() {
             /* start your code here */
@@ -69,7 +69,18 @@
             let egSearchBox = document.querySelector("#header-search");
 
             egSearchBox.addEventListener("input", function() {
-                egTarget.textContent = `Results for "${this.value}"`;
+                setTimeout(() => {
+                    egTarget.textContent = `Results for "${this.value}"`;
+                }, 1000)
+            });
+
+            egSearchBox.addEventListener('keydown', event => {
+                console.log(event.key)
+                if (event.key === 'Enter') {
+                    setTimeout(() => {
+                        egTarget.textContent = `Results for "${egSearchBox.value}"`;
+                    }, 1000)
+                }
             });
 
             clearInterval(egChangeTxt);
@@ -90,9 +101,9 @@
 
             }, 500);
 
-            egTimeout = setTimeout(()=>{
+            egTimeout = setTimeout(() => {
                 clearInterval(egChangeTxt);
-            },5000);
+            }, 5000);
 
 
         }
