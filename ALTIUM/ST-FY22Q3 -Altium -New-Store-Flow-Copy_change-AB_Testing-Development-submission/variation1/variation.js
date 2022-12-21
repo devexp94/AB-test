@@ -35,22 +35,22 @@
 
 
       /**** Adding Best ****/
-        let egPara = document.querySelectorAll(".s-levels__wrap .s-levels__head > p");
-        for (let para of egPara ) {
-         para.textContent = "Best " +  para.textContent; 
-          para.innerText =  para.innerText.replace("For" , "for");
-        }
+        // let egPara = document.querySelectorAll(".s-levels__wrap .s-levels__head > p");
+        // for (let para of egPara ) {
+        //  para.textContent = "Best " +  para.textContent; 
+        //   para.innerText =  para.innerText.replace("For" , "for");
+        // }
 
           /**** Changing CTA Text ****/
 
-        document.querySelector("div.s-levels__wrap > div:nth-child(3) > div.s-levels__btns > div:nth-child(1) > a").innerText = "Contact Sales";
+        // document.querySelector("div.s-levels__wrap > div:nth-child(3) > div.s-levels__btns > div:nth-child(1) > a").innerText = "Contact Sales";
 
           /**** Adding Paragraph ****/
 
-        let text = document.querySelectorAll("div.s-levels__wrap > div:not(:nth-child(3)) > div.s-levels__price-wrap > p.month-value");
-        for (let egText of text) {
-          egText.insertAdjacentHTML("afterend" , "<p class='egDesc'>12-month commitment</p>")
-      }
+      //   let text = document.querySelectorAll("div.s-levels__wrap > div:not(:nth-child(3)) > div.s-levels__price-wrap > p.month-value");
+      //   for (let egText of text) {
+      //     egText.insertAdjacentHTML("afterend" , "<p class='egDesc'>12-month commitment</p>")
+      // }
 
       // /********** Changing list iems **********/
 
