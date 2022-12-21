@@ -34,6 +34,7 @@
             <div class="eg-we-support">
                 <ul class="eg-icons">
                     <!-- VISA -->
+                    
                     <li><img class="eg-icon" src="${egIcons.visa}"></img></li>
                     <!-- PAYPAL -->
                     <li><img class="eg-icon" src="${egIcons.paypal}"></img></li>
