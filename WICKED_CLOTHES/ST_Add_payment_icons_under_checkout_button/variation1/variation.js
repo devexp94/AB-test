@@ -34,14 +34,14 @@
             <div class="eg-we-support">
                 <ul class="eg-icons">
                     <!-- VISA -->
-                    
+
                     <li><img class="eg-icon" src="${egIcons.visa}"></img></li>
                     <!-- PAYPAL -->
                     <li><img class="eg-icon" src="${egIcons.paypal}"></img></li>
                     <!-- AFTERPAY -->
                     <li><img class="eg-icon" src="${egIcons.afterpay}"></img></li>
                     <!-- SHOPPAY -->
-                    <li><img src="${egIcons.shoppay}"></img></li>
+                    <li><svg class="eg-icon eg-shop-pay" preserveAspectRatio="xMidYMid" class="qZgSr5RiiBCTAMfQYsty"><use xlink:href="#shopify-svg__payments-shop-pay"></use></svg></li>
                     <!-- MASTERCARD -->
                     <li><img class="eg-icon" src="${egIcons.mastercard}"></img></li>
                 </ul>

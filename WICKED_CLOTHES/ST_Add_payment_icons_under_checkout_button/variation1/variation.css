@@ -23,3 +23,9 @@
     display: inline-block;
     object-fit: contain;
 }
+
+.eg-shop-pay {
+    width: 40px;
+    background: #5a31f4;
+    padding: 3px;
+}
