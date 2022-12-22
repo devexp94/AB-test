@@ -116,7 +116,26 @@ textarea#message::placeholder {
     border-radius: 4px;
 }
 
-#conForm h2{
+#conForm  div.panel-white  p:nth-child(2) {
+    position: relative;padding-left: 30px;
+}
+#conForm  div.panel-white  p:nth-child(2)::before {
+    display: inline-block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    content: "";
+    margin-top: -1px;
+    left: 0;
+/*     margin-left: -15px; */
+    background-color: #fff;
+    border: 2px solid #706290;
+    border-radius: 4px;
+}
+
+
+
+html body #conForm h2{
     color: #706290 !important;
 }
 
