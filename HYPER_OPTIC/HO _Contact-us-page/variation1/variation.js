@@ -49,12 +49,12 @@
 
           let egRadio = `<div class="egRadioBtn">
           <div class="egFirst">
-             <input type="radio" id="hyperTonic" name="" value="">
+             <input type="radio" id="hyperTonic" name="hyper" value="">
              <label for="hyperTonic">I am already a Hypertonic customer</label>
           </div>
          
            <div class="egSec">
-             <input type="radio" id="noHyperTonic" name="" value="">
+             <input type="radio" id="noHyperTonic" name="hyper" value="">
             <label for="noHyperTonic">I'm not a Hypertonic customer yet</label>
             </div>
          </div>`
@@ -74,6 +74,8 @@
 
             document.querySelector("#conForm .checkbox label").innerHTML = "<p>By providing my details, I consent to Hyperoptic processing and storing this information in accordance with its <a href='https://hyperoptic.com/legal/post/privacy-and-cookie-policy' target='_blank'>Privacy Policy</a>and using these details to send me information about Hyperoptic’s services. I understand that I may change my mind and unsubscribe at any time.<p>"
    
+            document.querySelector(".panel-white > div + div").insertAdjacentHTML("beforebegin" , egRadio)
+
 
             // inserting boxes
             document.querySelector("#pageContent>div:nth-of-type(9)").insertAdjacentHTML("beforebegin", egBoxesHTML);
