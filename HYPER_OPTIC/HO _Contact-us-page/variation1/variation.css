@@ -116,12 +116,13 @@ textarea#message::placeholder {
     border-radius: 4px;
 }
 
-.eg-small-box {
-    background: #6e8388;
-    width: 60px;
-    aspect-ratio: 1/1;
-    border-radius: 5px;
+#conForm h2{
+    color: #706290 !important;
 }
+
+/* .eg-small-box {
+    
+} */
 
 a.eg-box-link {
     font-size: 20px;
