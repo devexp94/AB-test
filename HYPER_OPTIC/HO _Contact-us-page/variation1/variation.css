@@ -130,18 +130,23 @@ textarea#message::placeholder {
     padding-left: 5%;
 }
 
-.egFirst, .egSec {display: flex;gap: 10px;}
-
-input#egHyperTonic,input#egNoHyperTonic {
-    width: 20px;
-    margin: 2px !important;
+input#eghyperTonic, #egnoHyperTonic {
+    width: 22px;
+    margin: 3px;
 }
 
 
-.egFirst label ,
-.egSec label{
+label.egFirst > p, label.egSec > p {
     font-size: 18px;
+    padding-top: 10px;
 }
+
+.egFirst, .egSec {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
 
 .contact-submit {
     min-width: 150px !important;
@@ -168,16 +173,17 @@ a.eg-box-link {
     .col-xs-12.egRadioBtn {
         padding-left: 0;
     }
-    .egFirst label ,
-    .egSec label{
-    font-size: 16px;
-}
+
+    label.egFirst > p, label.egSec > p {
+        font-size: 16px;
+        padding-top: 10px;
+    }
 
 .col-xs-12.egRadioBtn {
     padding-bottom: 20px;
 }
 
-input#egHyperTonic, input#egNoHyperTonic {
+input#eghyperTonic, #egnoHyperTonic {
     width: 16px !important;
     display: block;
     padding: 0;
