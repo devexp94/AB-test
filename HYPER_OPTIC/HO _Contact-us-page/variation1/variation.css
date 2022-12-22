@@ -56,6 +56,38 @@ div:nth-child(1)>div>div:nth-child(2)>p:nth-child(1) {
     order: 1;
 }
 
+p.egFormDesc {
+    text-align: center;
+    font-size: 16px;
+    padding-top: 0;
+    margin-bottom: 30px;
+}
+
+#conForm h2 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+.panel-white {
+    background: #f2f2f2 !important;
+}
+
+textarea#message {
+    background: #cbd0d2 !important;
+    border: none !important;
+}
+
+input#fullName::placeholder,
+input#email::placeholder{
+    color: #aeb9bc !important;
+    font-weight: 800;
+}
+
+textarea#message::placeholder {
+    color: transparent !important;
+}
+
 /*boxes*/
 .eg-boxes {
     background: white;
@@ -84,12 +116,28 @@ div:nth-child(1)>div>div:nth-child(2)>p:nth-child(1) {
     border-radius: 4px;
 }
 
-.eg-small-box {
-    background: #6e8388;
-    width: 60px;
-    aspect-ratio: 1/1;
-    border-radius: 5px;
+.panel-white >div + div > div > p:nth-child(2) {
+    display: none !important;
 }
+
+.panel-white #iAgree + label > p:nth-child(1) {
+    font-size: 14px;
+    display: block;
+    margin-top: -4px;
+}
+
+
+.contact-submit {
+    min-width: 150px !important;
+}
+
+html body #conForm h2{
+    color: #706290 !important;
+}
+
+/* .eg-small-box {
+    
+} */
 
 a.eg-box-link {
     font-size: 20px;
