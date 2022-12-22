@@ -120,7 +120,7 @@
         white-space: nowrap;
     }
 
-    .eg-drowdown-list.eg-active {
+    .eg-clicked+ul .eg-drowdown-list {
         background: #f3f3f3;
     }
 
@@ -129,7 +129,7 @@
         margin-bottom: 30px;
     }
 
-    .eg-drowdown-list.eg-active::before {
+    .eg-clicked+ul .eg-drowdown-list::before {
         content: " ";
         position: absolute;
         overflow: hidden;
@@ -179,5 +179,13 @@
         font-size: .875rem;
         line-height: 1.25rem;
         margin-left: 0.75rem;
+    }
+
+    .eg-remove-active-state {
+        background-color: #fff !important;
+    }
+
+    .eg-remove-active-state::before {
+        display: none !important;
     }
 }

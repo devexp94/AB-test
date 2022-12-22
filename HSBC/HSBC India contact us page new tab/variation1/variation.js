@@ -90,16 +90,47 @@
             </li>`;
 
         // mobile drop down btn click detect
-        live(['.eg-drowdown-list',`div[class^='contact-header__mobile-menu'] button[class^='dropdown-list__button']`], 'click', function() {
+        live(`div[class^='contact-header__mobile-menu'] button[class^='dropdown-list__button']`, 'click', function() {
+            // console.log(this)
             const egSibling = this.nextElementSibling;
             if (egSibling != null) {
                 egSibling.insertAdjacentHTML("beforeend", egMobBtn);
             }
-            if(this.classList.contains("eg-drowdown-list")){
-                this.classList.add("eg-active");
-                this.parentElement.previousElementSibling.classList.add("eg-clicked");
+
+            if (this.classList.contains('eg-clicked')) {
+                if (egSibling != null) {
+                    removeActive(egSibling,true);
+                }
             }
         });
+
+        // list items click detect
+        live(`div[class^='contact-header__mobile-menu'] button[class^='dropdown-list__button'] + ul > li`,'click',function(){
+            if (this.classList.contains("eg-drowdown-list")) {
+                this.parentElement.previousElementSibling.classList.add("eg-clicked");
+                removeActive(this.parentElement,true);
+            } else {
+                if(this.parentElement.previousElementSibling.classList.contains("eg-clicked")){
+                    this.parentElement.previousElementSibling.classList.remove("eg-clicked");
+                }
+                removeActive(this.parentElement,false);
+            }
+        });
+
+        function removeActive(egSibling,clicked) {
+            [...egSibling.children].forEach(item => {
+                if (!item.classList.contains("eg-drowdown-list")) {
+                    if(clicked == true){
+                        item.classList.add("eg-remove-active-state");    
+                    } else {
+                        if(item.classList.contains("eg-remove-active-state")){
+                            item.classList.remove("eg-remove-active-state");
+                        }
+                    }
+                    
+                }
+            });
+        }
 
 
         let egTabBtnHTML = `
