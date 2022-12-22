@@ -99,35 +99,60 @@
 
             if (this.classList.contains('eg-clicked')) {
                 if (egSibling != null) {
-                    removeActive(egSibling,true);
+                    removeActive(egSibling, true);
+                }
+            }
+        });
+
+        // drop down btn arrow click detect
+        live(`div[class*='dropdown-list__button-icon']`, 'click', function() {
+            // console.log(this)
+            const egSibling = document.querySelector(`ul[class^='dropdown-list__listbox']`);
+            if (egSibling != null) {
+                egSibling.insertAdjacentHTML("beforeend", egMobBtn);
+                if (document.querySelector(".eg-clicked")) {
+                    removeActive(egSibling, true);
                 }
             }
         });
 
         // list items click detect
-        live(`div[class^='contact-header__mobile-menu'] button[class^='dropdown-list__button'] + ul > li`,'click',function(){
+        live(`ul[class^='dropdown-list__listbox'] > li`, 'click', function() {
             if (this.classList.contains("eg-drowdown-list")) {
                 this.parentElement.previousElementSibling.classList.add("eg-clicked");
-                removeActive(this.parentElement,true);
+                document.querySelector(".eg-clicked").click();
+                updateBtnHtml();
+                removeActive(this.parentElement, true);
             } else {
-                if(this.parentElement.previousElementSibling.classList.contains("eg-clicked")){
-                    this.parentElement.previousElementSibling.classList.remove("eg-clicked");
+                if (document.querySelector(".eg-clicked")) {
+                    document.querySelector(".eg-clicked").classList.remove("eg-clicked");
                 }
-                removeActive(this.parentElement,false);
+                removeActive(this.parentElement, false);
             }
         });
 
-        function removeActive(egSibling,clicked) {
+        function updateBtnHtml() {
+            const egBtn = document.querySelector(`div[class^='contact-header__mobile-menu'] button[class^='dropdown-list__button']`);
+            let egSvg = egBtn.querySelector(".contact-header-dropdown__icon");
+            let egText = egBtn.querySelector('span[class^="contact-header-dropdown"]');
+            egText.textContent = 'Account opening enquiries';
+            egSvg.innerHTML = `<svg font-size="m" focusable="false" viewBox="0 0 18 18" color="#333" aria-hidden="true" role="presentation" data-id="Icon" opacity="1" fill="currentColor">
+                                <path fill="none" d="M0 0h18v18H0z" opacity=".25"></path>
+                                <path d="M0 2v14h18V2H0zm15.952 1.2L9 10.151 2.048 3.2h13.904zM1.2 14.8V4.048l7.8 7.8 7.8-7.8V14.8H1.2z"></path>
+                            </svg>`;
+        }
+
+        function removeActive(egSibling, clicked) {
             [...egSibling.children].forEach(item => {
                 if (!item.classList.contains("eg-drowdown-list")) {
-                    if(clicked == true){
-                        item.classList.add("eg-remove-active-state");    
+                    if (clicked == true) {
+                        item.classList.add("eg-remove-active-state");
                     } else {
-                        if(item.classList.contains("eg-remove-active-state")){
+                        if (item.classList.contains("eg-remove-active-state")) {
                             item.classList.remove("eg-remove-active-state");
                         }
                     }
-                    
+
                 }
             });
         }
@@ -182,7 +207,7 @@
         }
 
         /* Initialize variation */
-        waitForElement(`#contact-content`, init, 50, 15000);
+        waitForElement(`#contact-content`, init, 150, 15000);
     } catch (e) {
         if (debug) console.log(e, "error in Test" + variation_name);
     }
