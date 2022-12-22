@@ -22,7 +22,7 @@
             }, delayTimeout);
         }
 
-           const egBoxesHTML = `
+        const egBoxesHTML = `
           <div class="eg-boxes">
               <div class="container">
                   <div class="eg-support">
@@ -47,17 +47,60 @@
               </div>
           </div>`;
 
-          let egRadio = `<div class="col-xs-12 egRadioBtn">
-          <div class="egFirst">
-             <input type="radio" id="hyperTonic" name="hyper" value="">
-             <label for="hyperTonic">I am already a Hypertonic customer</label>
-          </div>
+        let egRadio = `<div class="col-xs-12 egRadioBtn">
+          <label class="egFirst" for="eghyperTonic">
+             <input type="radio" id="eghyperTonic" name="hyper" value="">
+             <p>I am already a Hypertonic customer</p>
+          </label>
          
-           <div class="egSec">
-             <input type="radio" id="noHyperTonic" name="hyper" value="">
-            <label for="noHyperTonic">I'm not a Hypertonic customer yet</label>
-            </div>
-         </div>`
+           <label class="egSec" for="egnoHyperTonic">
+             <input type="radio" id="egnoHyperTonic" name="hyper" value="">
+            <p>I'm not a Hypertonic customer yet</p>
+            </label>
+         </div>`;
+
+        function live(selector, event, callback, context) {
+            /****Helper Functions****/
+            // helper for enabling IE 8 event bindings
+            function addEvent(el, type, handler) {
+                if (el.attachEvent) el.attachEvent("on" + type, handler);
+                else el.addEventListener(type, handler);
+            }
+            // matches polyfill
+            this.Element &&
+                (function(ElementPrototype) {
+                    ElementPrototype.matches =
+                        ElementPrototype.matches ||
+                        ElementPrototype.matchesSelector ||
+                        ElementPrototype.webkitMatchesSelector ||
+                        ElementPrototype.msMatchesSelector ||
+                        function(selector) {
+                            var node = this,
+                                nodes = (node.parentNode || node.document).querySelectorAll(selector),
+                                i = -1;
+                            while (nodes[++i] && nodes[i] != node);
+                            return !!nodes[i];
+                        };
+                })(Element.prototype);
+            // live binding helper using matchesSelector
+            function live(selector, event, callback, context) {
+                addEvent(context || document, event, function(e) {
+                    var found,
+                        el = e.target || e.srcElement;
+                    while (el && el.matches && el !== context && !(found = el.matches(selector))) el = el.parentElement;
+                    if (found) callback.call(el, e);
+                });
+            }
+            live(selector, event, callback, context);
+        }
+
+        live(['label[for=eghyperTonic]','label[for=egnoHyperTonic]'], 'click', function() {
+            if(this.for == "eghyperTonic"){
+                console.log('clicked')
+            } else if(this.for == "egnoHyperTonic") {
+                console.log("clicked");
+            }
+        });
 
         /* Variation Init */
         function init() {
@@ -69,16 +112,18 @@
 
             document.querySelector(" div.container div:nth-child(1) > div > div:nth-child(2) > p:nth-child(2)").innerText = "Email";
 
-            document.querySelector("#conForm h2").innerText = "We're here if you need us" ;
-            document.querySelector("#conForm h2").insertAdjacentHTML("afterend" , "<p class='egFormDesc'>Fill out the form below to contact our 24/7 support team. </p>");
+            document.querySelector("#conForm h2").innerText = "We're here if you need us";
+            document.querySelector("#conForm h2").insertAdjacentHTML("afterend", "<p class='egFormDesc'>Fill out the form below to contact our 24/7 support team. </p>");
 
             document.querySelector("#conForm .checkbox label").innerHTML = "<p>By providing my details, I consent to Hyperoptic processing and storing this information in accordance with its <a href='https://hyperoptic.com/legal/post/privacy-and-cookie-policy' target='_blank'>Privacy Policy</a>and using these details to send me information about Hyperoptic’s services. I understand that I may change my mind and unsubscribe at any time.<p>"
-   
-            document.querySelector(".panel-white > div + div").insertAdjacentHTML("beforebegin" , egRadio)
+
+            document.querySelector(".panel-white > div + div").insertAdjacentHTML("beforebegin", egRadio)
 
 
             // inserting boxes
             document.querySelector("#pageContent>div:nth-of-type(9)").insertAdjacentHTML("beforebegin", egBoxesHTML);
+
+
 
         }
 
@@ -88,5 +133,3 @@
         if (debug) console.log(e, "error in Test" + variation_name);
     }
 })();
-
-
