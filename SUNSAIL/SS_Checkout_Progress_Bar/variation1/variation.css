@@ -90,7 +90,7 @@ nav .step {
     background-color: rgb(0 0 0 /15%);
     left: 50%;
     transform: translateX(-50%);
-    top: 27%;
+    top: 25%;
 }
 
 .steps nav::after {
@@ -100,7 +100,7 @@ nav .step {
     width:0;
     background: #122447;
     left: 14%;
-    top: 27%;
+    top: 25%;
 }
 
 
@@ -135,6 +135,10 @@ nav .step {
     background: #fff;
 }
 
+.step {
+    font-weight: 700 !important;
+}
+
 .step.active,
 .step:not(:first-child) {
     color: #122447 !important;
@@ -152,8 +156,8 @@ nav .step {
 }
 
 .booking-flow .steps .number {
-    height: 30px !important;
-    width: 30px;
+    height: 25px !important;
+    width: 25px;
     text-align: center;
     line-height: 2.5;
     font-size: 15px;
@@ -162,7 +166,7 @@ nav .step {
     align-items: center;
     color: #122447;
     margin-bottom: 8px;
-    border: 3px solid #122447;
+    border: 1px solid #122447;
 }
 
 .row .steps {

@@ -1,4 +1,9 @@
 #primaryNavigation > ul > li:nth-child(3) > a::before{
-    content: "%";    
+    content: "-20%";    
+    display: inline-block;
+}
+
+#primaryNavigation > ul > li:nth-child(3) > ul > li > a::before{
+    content: "20% off";    
     display: inline-block;
 }
