@@ -47,7 +47,7 @@
               </div>
           </div>`;
 
-          let egRadio = `<div class="egRadioBtn">
+          let egRadio = `<div class="col-xs-12 egRadioBtn">
           <div class="egFirst">
              <input type="radio" id="hyperTonic" name="hyper" value="">
              <label for="hyperTonic">I am already a Hypertonic customer</label>
