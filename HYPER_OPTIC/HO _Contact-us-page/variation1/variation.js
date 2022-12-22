@@ -49,12 +49,12 @@
 
         let egRadio = `<div class="col-xs-12 egRadioBtn">
           <label class="egFirst" for="eghyperTonic">
-             <input type="radio" id="eghyperTonic" name="hyper" value="">
+             <input type="radio" id="eghyperTonic" name="hyper" value="" required>
              <p>I am already a Hypertonic customer</p>
           </label>
          
            <label class="egSec" for="egnoHyperTonic">
-             <input type="radio" id="egnoHyperTonic" name="hyper" value="">
+             <input type="radio" id="egnoHyperTonic" name="hyper" value="" required>
             <p>I'm not a Hypertonic customer yet</p>
             </label>
          </div>`;
@@ -94,11 +94,11 @@
             live(selector, event, callback, context);
         }
 
-        live(['label[for=eghyperTonic]','label[for=egnoHyperTonic]'], 'click', function() {
-            if(this.for == "eghyperTonic"){
-                console.log('clicked')
-            } else if(this.for == "egnoHyperTonic") {
-                console.log("clicked");
+        live('.egRadioBtn > label', 'click', function() {
+            if(this.classList.contains('egFirst')){
+                document.querySelector(".hoSelect > select").value = 1;
+            } else if(this.classList.contains('egSec')){
+                document.querySelector(".hoSelect > select").value = 0;
             }
         });
 
