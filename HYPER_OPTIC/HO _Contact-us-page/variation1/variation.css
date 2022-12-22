@@ -46,6 +46,7 @@ div.panel-white>div>div>div {
     width: inherit !important;
 }
 
+
 @media(min-width: 992px) {
     .panel-white>div>div:nth-child(4) {
         padding-right: 5% !important;
@@ -72,6 +73,10 @@ div.container div.white-box>div:nth-child(2)>p:nth-child(3),
 div:nth-child(2)>div>div.white-box-node>p:nth-child(2) {
     display: none !important;
 }
+label.egFirst {
+    margin-bottom: 0;
+}
+
 
 p.egTxt {
     text-align: center;
@@ -191,8 +196,13 @@ label.egSec>p {
     min-width: 150px !important;
 }
 
+#conForm > div > h2, #conForm > div > p {
+    padding-inline: 15px;
+}
+
 html body #conForm h2 {
     color: #706290 !important;
+    font-weight: 700;
 }
 
 /* .eg-small-box {
