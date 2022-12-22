@@ -197,7 +197,8 @@ input#eghyperTonic, #egnoHyperTonic {
     margin: 0;
 }
 
-.marg-bottom-0-l-768 {
+#conForm > div {
+
     margin-bottom: 0!important;
     margin-top: 0;
 }
