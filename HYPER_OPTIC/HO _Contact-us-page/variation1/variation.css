@@ -24,7 +24,7 @@
 
 /* hiding default html radio btn */
 .egRadioBtn > label > input[type=radio]{
-    display:none;
+    display:none !important;
 }
 
 .panel-white>div>div:nth-child(3),

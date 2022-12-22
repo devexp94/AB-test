@@ -76,6 +76,31 @@
             }
         });
 
+        let egMobBtn =
+            `<li role="option" aria-selected="false" class="eg-drowdown-list">
+                <span class="eg-drowdown-list-label">
+                    <div>
+                        <div class="eg-icon-wrapper"><svg font-size="m" focusable="false" viewBox="0 0 18 18" color="#333" aria-hidden="true" role="presentation" data-id="Icon" opacity="1" fill="currentColor">
+                                <path fill="none" d="M0 0h18v18H0z" opacity=".25"></path>
+                                <path d="M0 2v14h18V2H0zm15.952 1.2L9 10.151 2.048 3.2h13.904zM1.2 14.8V4.048l7.8 7.8 7.8-7.8V14.8H1.2z"></path>
+                            </svg></div>
+                        <div class="eg-btn-text"><span>Account opening enquiries</span></div>
+                    </div>
+                </span>
+            </li>`;
+
+        // mobile drop down btn click detect
+        live(['.eg-drowdown-list',`div[class^='contact-header__mobile-menu'] button[class^='dropdown-list__button']`], 'click', function() {
+            const egSibling = this.nextElementSibling;
+            if (egSibling != null) {
+                egSibling.insertAdjacentHTML("beforeend", egMobBtn);
+            }
+            if(this.classList.contains("eg-drowdown-list")){
+                this.classList.add("eg-active");
+                this.parentElement.previousElementSibling.classList.add("eg-clicked");
+            }
+        });
+
 
         let egTabBtnHTML = `
       <div class="eg-tab-btn" tabindex="-1">

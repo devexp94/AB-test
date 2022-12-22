@@ -108,4 +108,76 @@
     .eg-steps {
         padding: 20px;
     }
+
+    .eg-drowdown-list {
+        color: #333;
+        background: #fff;
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding: 0.625rem;
+        white-space: nowrap;
+    }
+
+    .eg-drowdown-list.eg-active {
+        background: #f3f3f3;
+    }
+
+    div[class^="contact-header"]:has(.eg-clicked)+div[class^='contact-body'] .eg-tab-content {
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .eg-drowdown-list.eg-active::before {
+        content: " ";
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 0.1875rem;
+        background-color: #db0011;
+    }
+
+    .eg-drowdown-list-label {
+        flex-grow: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.25;
+    }
+
+    .eg-drowdown-list-label>div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .eg-icon-wrapper {
+        display: inline-flex;
+        position: relative;
+        flex-shrink: 0;
+        width: 1.125rem;
+        height: 1.125rem;
+    }
+
+    .eg-icon-wrapper>svg {
+        font-size: 18px;
+        width: 1.125rem;
+        height: 1.125rem;
+        color: rgb(51, 51, 51);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        opacity: 1;
+        user-select: none;
+        display: inline-block;
+        flex-shrink: 0;
+    }
+
+    .eg-btn-text>span {
+        font-size: .875rem;
+        line-height: 1.25rem;
+        margin-left: 0.75rem;
+    }
 }
