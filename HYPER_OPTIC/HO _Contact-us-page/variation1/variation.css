@@ -24,8 +24,17 @@ div.panel-white>div>div>div {
     width: inherit !important;
 }
 
+@media(min-width: 992px) {
+    .panel-white>div>div:nth-child(4) {
+        padding-right: 5% !important;
+    }
+
+    .egRadioBtn {
+        padding-left: 5%;
+    }
+}
+
 .panel-white>div>div:nth-child(4) {
-    padding-right: 5% !important;
     padding-bottom: 0;
     margin-bottom: 0 !important;
 }
@@ -81,7 +90,7 @@ textarea#message {
 }
 
 input#fullName::placeholder,
-input#email::placeholder{
+input#email::placeholder {
     color: #aeb9bc !important;
     font-weight: 800;
 }
@@ -118,21 +127,20 @@ textarea#message::placeholder {
     border-radius: 4px;
 }
 
-.panel-white >div + div > div > p:nth-child(2) {
+.panel-white>div+div>div>p:nth-child(2) {
     display: none !important;
 }
 
-.panel-white #iAgree + label > p:nth-child(1) {
+.panel-white #iAgree+label>p:nth-child(1) {
     font-size: 14px;
     display: block;
     margin-top: -4px;
 }
 
-.col-xs-12.egRadioBtn {
-    padding-left: 5%;
-}
 
-input#eghyperTonic, #egnoHyperTonic {
+
+input#eghyperTonic,
+#egnoHyperTonic {
     width: 18px;
     margin: 2px;
 }
@@ -142,13 +150,15 @@ label.egSec {
 }
 
 
-label.egFirst > p, label.egSec > p {
+label.egFirst>p,
+label.egSec>p {
     font-size: 15px;
     padding-top: 11px;
     font-weight: 400;
 }
 
-.egFirst, .egSec {
+.egFirst,
+.egSec {
     display: flex;
     gap: 10px;
     align-items: center;
@@ -159,7 +169,7 @@ label.egFirst > p, label.egSec > p {
     min-width: 150px !important;
 }
 
-html body #conForm h2{
+html body #conForm h2 {
     color: #706290 !important;
 }
 
@@ -181,27 +191,29 @@ a.eg-box-link {
         padding-left: 0;
     }
 
-    label.egFirst > p, label.egSec > p {
+    label.egFirst>p,
+    label.egSec>p {
         font-size: 16px;
         padding-top: 10px;
     }
 
-.col-xs-12.egRadioBtn {
-    padding-bottom: 20px;
-}
+    .col-xs-12.egRadioBtn {
+        padding-bottom: 20px;
+    }
 
-input#eghyperTonic, #egnoHyperTonic {
-    width: 16px !important;
-    display: block;
-    padding: 0;
-    margin: 0;
-}
+    input#eghyperTonic,
+    #egnoHyperTonic {
+        width: 16px !important;
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
 
-#conForm > div {
+    #conForm>div {
 
-    margin-bottom: 0!important;
-    margin-top: 0;
-}
+        margin-bottom: 0 !important;
+        margin-top: 0;
+    }
 }
 
 /*boxes*/
