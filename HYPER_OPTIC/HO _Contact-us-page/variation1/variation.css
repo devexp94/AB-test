@@ -131,14 +131,19 @@ textarea#message::placeholder {
 }
 
 input#eghyperTonic, #egnoHyperTonic {
-    width: 22px;
-    margin: 3px;
+    width: 18px;
+    margin: 2px;
+}
+
+label.egSec {
+    margin-top: 0 !important;
 }
 
 
 label.egFirst > p, label.egSec > p {
-    font-size: 18px;
-    padding-top: 10px;
+    font-size: 15px;
+    padding-top: 11px;
+    font-weight: 400;
 }
 
 .egFirst, .egSec {
