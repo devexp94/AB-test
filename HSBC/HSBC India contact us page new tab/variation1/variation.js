@@ -1,10 +1,10 @@
-(function () {
-  try {
-    /* main variables */
-    var debug = 0;
-    var variation_name = "";
-    var $;
-    /* all Pure helper functions */
+(function() {
+    try {
+        /* main variables */
+        var debug = 0;
+        var variation_name = "";
+        var $;
+        /* all Pure helper functions */
 
         function waitForElement(selector, trigger, delayInterval, delayTimeout) {
             var interval = setInterval(function() {
@@ -110,24 +110,23 @@
         /* Variation Init */
         function init() {
             /* start your code here */
-            // currently desktop only
+            //=====for all devices====+
+            // inserting tab content
+            const egContactContent = document.querySelector("#contact-content");
+            egContactContent.insertAdjacentHTML("afterbegin", egTabContent);
+
+            //====desktop + tab only===+
             if (window.innerWidth > 759) {
                 const egTabBtnTarget = document.querySelector("div[class^='contact-header__content'] > div[class^='Box-sc']");
 
-                const egContactContent = document.querySelector("#contact-content");
-
-
                 // inserting tab button 
                 egTabBtnTarget.insertAdjacentHTML("beforeend", egTabBtnHTML);
-
-                // inserting tab content
-                egContactContent.insertAdjacentHTML("afterbegin", egTabContent);
             }
 
         }
 
         /* Initialize variation */
-        waitForElement(`div[class^='contact-header__content'] > div[class^='Box-sc'] `, init, 50, 15000);
+        waitForElement(`#contact-content`, init, 50, 15000);
     } catch (e) {
         if (debug) console.log(e, "error in Test" + variation_name);
     }

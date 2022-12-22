@@ -4,6 +4,37 @@
     }
 }
 
+.eg-tab-content {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+
+.eg-tab-heading {
+    border-left: 3px solid rgb(219, 0, 17);
+    font-size: 29px;
+    padding-left: 10px;
+    margin-bottom: 26px;
+    line-height: 1.2;
+}
+
+.eg-steps {
+    background: #ededed;
+    padding: 30px;
+}
+
+.eg-step+.eg-step {
+    margin-top: 22px;
+}
+
+.eg-step>p:last-child {
+    margin-top: 16px;
+}
+
+.eg-step {
+    font-weight: 500;
+}
+
 
 @media(min-width:760px) {
     .eg-tab-btn {
@@ -63,40 +94,18 @@
         fill: rgb(51, 51, 51) !important;
     }
 
-
-    .eg-tab-content {
-        height: 0;
-        overflow: hidden;
-        transition: height 0.5s;
-    }
-
     div[class^="contact-header"]:has(.eg-tab-btn.active)+div[class^='contact-body'] .eg-tab-content {
         height: auto;
         margin-bottom: 30px;
     }
+}
 
+@media(max-width: 759px) {
     .eg-tab-heading {
-        border-left: 3px solid rgb(219, 0, 17);
-        font-size: 29px;
-        padding-left: 10px;
-        margin-bottom: 26px;
-        line-height: 1.2;
+        font-size: 24px;
     }
 
     .eg-steps {
-        background: #ededed;
-        padding: 30px;
-    }
-
-    .eg-step+.eg-step {
-        margin-top: 22px;
-    }
-
-    .eg-step>p:last-child {
-        margin-top: 16px;
-    }
-
-    .eg-step {
-        font-weight: 500;
+        padding: 20px;
     }
 }
