@@ -5,6 +5,28 @@
     display: none !important;
 }
 
+
+/* custom radio btn */
+.egRadioBtn > label::before{
+    content:'';
+    width:18px;
+    aspect-ratio:1/1;
+    border:2px solid #706290;
+    border-radius:100vmax;
+}
+
+.egRadioBtn > label:has(input[type=radio]:checked)::before{
+    background:#706290;
+    border-color:#f2f2f2;
+    outline:2px solid;
+    width:15px;
+}
+
+/* hiding default html radio btn */
+.egRadioBtn > label > input[type=radio]{
+    display:none;
+}
+
 .panel-white>div>div:nth-child(3),
 html body ul.top-menu>li:nth-child(4) {
     display: none;

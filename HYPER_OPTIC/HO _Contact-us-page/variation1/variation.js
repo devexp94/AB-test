@@ -115,7 +115,7 @@
             document.querySelector("#conForm h2").innerText = "We're here if you need us";
             document.querySelector("#conForm h2").insertAdjacentHTML("afterend", "<p class='egFormDesc'>Fill out the form below to contact our 24/7 support team. </p>");
 
-            document.querySelector("#conForm .checkbox label").innerHTML = "<p>By providing my details, I consent to Hyperoptic processing and storing this information in accordance with its <a href='https://hyperoptic.com/legal/post/privacy-and-cookie-policy' target='_blank'>Privacy Policy</a>and using these details to send me information about Hyperoptic’s services. I understand that I may change my mind and unsubscribe at any time.<p>"
+            document.querySelector("#conForm .checkbox label").innerHTML = "<p>By providing my details, I consent to Hyperoptic processing and storing this information in accordance with its <a href='https://hyperoptic.com/legal/post/privacy-and-cookie-policy' target='_blank'>Privacy Policy</a> and using these details to send me information about Hyperoptic’s services. I understand that I may change my mind and unsubscribe at any time.<p>"
 
             document.querySelector(".panel-white > div + div").insertAdjacentHTML("beforebegin", egRadio)
 
