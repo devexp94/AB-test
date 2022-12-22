@@ -13,7 +13,7 @@
     }
 }
 
-@media(min-width:1200px){
+@media(min-width:1200px) {
     html body #header-info {
         top: 40px !important;
     }
@@ -40,12 +40,21 @@
         padding-block: 10px !important;
     }
 
-    /* #booking-flow nav {
-        width: 90% !important;
-    } */
-
     .steps nav::before {
         top: 22px;
+    }
+
+
+}
+
+@media(max-width: 479px) {
+    html body .step {
+        font-size: 13px !important;
+    }
+
+    #booking-flow nav {
+        width: 95% !important;
+        margin-inline: unset !important;
     }
 }
 
@@ -102,7 +111,7 @@ nav .step {
     content: '';
     position: absolute;
     height: 2px;
-    width:0;
+    width: 0;
     background: #2c4383;
     left: 14%;
     top: 25%;
@@ -110,19 +119,19 @@ nav .step {
 
 
 
-.steps > nav:has(.step:nth-child(1).active)::after {
+.steps>nav:has(.step:nth-child(1).active)::after {
     width: 0;
 }
 
-.steps > nav:has(.step:nth-child(2).active)::after {
+.steps>nav:has(.step:nth-child(2).active)::after {
     width: 23%;
 }
 
-.steps > nav:has(.step:nth-child(3).active)::after {
+.steps>nav:has(.step:nth-child(3).active)::after {
     width: 48%;
 }
 
-.steps > nav:has(.step:nth-child(4).active)::after {
+.steps>nav:has(.step:nth-child(4).active)::after {
     width: 73%;
 }
 
