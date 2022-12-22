@@ -1,3 +1,8 @@
+.step {
+    font-weight: 700 !important;
+    font-size: 14px !important;
+}
+
 @media (min-width: 768px) and (max-width: 1199px) {
     html body #header-info {
         top: 9px !important;
@@ -94,7 +99,7 @@ nav .step {
     position: absolute;
     height: 2px;
     width:0;
-    background: #122447;
+    background: #2c4383;
     left: 14%;
     top: 27%;
 }
@@ -122,7 +127,7 @@ nav .step {
 }
 
 .step.active span.number {
-    background: #122447;
+    background: #2c4383;
     color: #fff !important;
     height: 25px;
 }
@@ -133,12 +138,12 @@ nav .step {
 
 .step.active,
 .step:not(:first-child) {
-    color: #122447 !important;
+    color: #2c4383 !important;
 }
 
 #booking-flow nav>.step:not(.number) {
     font-size: 12px;
-    color: #122447;
+    color: #2c4383;
 }
 
 #booking-flow nav>.step {
@@ -156,9 +161,9 @@ nav .step {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #122447;
+    color: #2c4383;
     margin-bottom: 8px;
-    border: 1px solid #122447;
+    border: 1px solid #2c4383;
 }
 
 .row .steps {
@@ -167,7 +172,7 @@ nav .step {
 }
 
 .eg-active {
-    background-color: #122447 !important;
+    background-color: #2c4383 !important;
     color: #fff !important;
 }
 
@@ -175,4 +180,8 @@ nav .step {
 .booking-flow .step {
     margin-left: 0 !important;
     margin-top: 0 !important;
+}
+
+.row .steps{
+    padding-block : 20px !important;
 }
