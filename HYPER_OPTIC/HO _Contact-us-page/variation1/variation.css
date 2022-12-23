@@ -5,6 +5,10 @@
     display: none !important;
 }
 
+/* hovering on numbers */
+.contactSupportTeam_Component > .container > div:nth-child(2) > div:nth-child(2) .white-box > div:nth-child(2) > p:nth-of-type(1) > span{
+    cursor: pointer;
+}
 
 /* custom radio btn */
 .egRadioBtn > label::before {

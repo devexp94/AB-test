@@ -94,13 +94,18 @@
             live(selector, event, callback, context);
         }
 
-        live('.egRadioBtn > label', 'click', function() {
+        live(['.egRadioBtn > label',".contactSupportTeam_Component > .container > div:nth-child(2) > div:nth-child(2) .white-box > div:nth-child(2) > p:nth-of-type(1) > span"], 'click', function() {
             if(this.classList.contains('egFirst')){
                 document.querySelector(".hoSelect > select").value = 1;
             } else if(this.classList.contains('egSec')){
                 document.querySelector(".hoSelect > select").value = 0;
+            } else if(this.innerText == '0333 332 1111'){
+                window.open('tel:0333 332 1111', '_self');
+            } else if (this.innerText == '0203 318 8216'){
+                window.open('tel:0203 318 8216', '_self');
             }
         });
+
 
         /* Variation Init */
         function init() {
