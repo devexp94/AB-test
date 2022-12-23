@@ -1,22 +1,23 @@
 @media screen and (min-width : 980px) {
 
-    header#js-header {
+    #v-header>div>div.l-header--desktop>div:nth-child(2) {
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
-        background: #fff;
+        background: white;
+        z-index: 9999;
     }
 
-    main.js-pdc-angularjs-root {
-        top: 140px;
+    #v-header>div>div.l-header--desktop>div:nth-child(3) {
+        padding-top: 83px;
     }
 
-    .eg-moved{
+    .eg-moved {
         width: 100%;
     }
 
-    .eg-moved > div {
+    .eg-moved>div {
         width: 100%;
         margin: auto !important;
         padding: 20px;
