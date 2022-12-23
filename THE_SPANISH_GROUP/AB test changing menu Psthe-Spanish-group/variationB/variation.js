@@ -292,7 +292,9 @@
         live(['.eg-main-menu-link','.eg-main-menu-link-inr > li > a'], 'click',
             function() {
                 if (window.innerWidth < 1201) {
+                  if(this.querySelector(".eg-main-menu-link-inr")){
                     this.querySelector(".eg-main-menu-link-inr").classList.toggle("eg-show");
+                  }
                 }
             }
         );
