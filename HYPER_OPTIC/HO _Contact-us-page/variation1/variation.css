@@ -137,6 +137,7 @@ textarea#message::placeholder {
     display: flex;
     justify-content: center;
     padding: 20px;
+    border-top: 1px solid white;
 }
 
 .eg-boxes>.container {
@@ -252,13 +253,21 @@ a.eg-box-link {
         margin-bottom: 0 !important;
         margin-top: 0;
     }
+
+    div#page-vue-header-mainmenu {
+        margin-bottom: -1px;
+    }
+
+    html body .main-block {
+    border-bottom: 1px solid white !important;
+}
 }
 
 /*boxes*/
 
 @media screen and (min-width: 768px) {
     div#page-vue-header-mainmenu {
-        border-bottom: 1px solid #9cadb2;
+        border-bottom:1px solid #CBCECF;
     }
 }
 
