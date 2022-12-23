@@ -264,6 +264,6 @@ a.eg-box-link {
 
 #conForm .panel-white {
     background-image: none !important;
-    width: 84% !important;
-    margin: auto !important;
+    width: 90% !important;
+    margin-inline: auto !important;
 }
