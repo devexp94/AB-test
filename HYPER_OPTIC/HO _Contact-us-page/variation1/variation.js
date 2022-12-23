@@ -33,7 +33,7 @@
                       </svg>
                       
                       </div>
-                      <a href="#" class="eg-box-link">Help &amp; Support</a>
+                      <a href="https://hyperoptic.com/help/" class="eg-box-link">Help &amp; Support</a>
                   </div>
                   <div class="eg-account">
                         <div class="eg-small-box">
@@ -42,7 +42,7 @@
 </svg>
 
                         </div>
-                      <a href="#" class="eg-box-link">My Account</a>
+                      <a href="https://hyperoptic.com/myaccount-login/" class="eg-box-link">My Account</a>
                   </div>
               </div>
           </div>`;

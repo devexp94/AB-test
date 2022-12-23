@@ -1,0 +1,14 @@
+{
+	"files": [
+		"VariantB/variation.css",
+		"VariantB/variation.js"
+	],
+	"inject": "",
+	"urls": [
+		
+		"https://octopart.com/",
+		"https://octopart.com/bom-tool",
+		"https://octopart.com/mic1557ym5-tr-microchip-66800156?r=sp",
+		"https://octopart.com/join?continue_to=%2Fmic1557ym5-tr-microchip-66800156%3Fpdp%3Dmic1557ym5-tr-microchip-66800156"
+	]
+}
