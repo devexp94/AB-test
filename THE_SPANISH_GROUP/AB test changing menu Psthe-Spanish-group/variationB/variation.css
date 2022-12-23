@@ -213,7 +213,7 @@ html body #navigation>ul {
 
 
 /*logic for show and hide*/
-@media(max-width:1200) {
+@media(max-width:1200px) {
     .eg-show {
         display: block !important;
     }
