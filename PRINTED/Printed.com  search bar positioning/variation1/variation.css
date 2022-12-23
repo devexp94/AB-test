@@ -1,50 +1,63 @@
-@media screen and (min-width : 978px) {
-    
-    main > cms-page-widgets-component > div.widget-block > div {
-       width: 100%;
-       margin: auto !important;
-       padding: 20px;
-       background: #36c2c4;
-       padding-block: 30px;
-       border: none !important;
-   }
-   
-   /* div.l-header__search-holder > span.fa.fa-search{
-       display: none;
-   } */
-   
-   .l-header__search {
-       border: 0;
-       justify-content: center;
-       align-items: center;
-   }
-   
-   .l-header__search.is-active {
-       border: 5px solid #fff;
-       width: fit-content;
-       margin: auto;
-   }
-   
-   .l-header__search-input[type=text] {
-       width: 30rem !important;
-       padding: 1rem 2.5rem 1rem 1.25rem !important;
-   }
-   
-   .l-header__search-input[type=text].is-active {
-       width: 48rem !important;
-       border-bottom: 1px solid #36c2c4;
-   }
-   
-   main > cms-page-widgets-component div.l-header__search-holder > input::placeholder {
-       font-style: italic;
-       font-size: 18px;
-       font-weight: 100;
-       letter-spacing : 0.3px;
-   }
+@media screen and (min-width : 980px) {
 
-   .l-header__search.is-active {
-    border-radius: 2.5625rem;
-    box-shadow: none !important;
-}
+    header#js-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+    }
+
+    main.js-pdc-angularjs-root {
+        top: 140px;
+    }
+
+    .eg-moved{
+        width: 100%;
+    }
+
+    .eg-moved > div {
+        width: 100%;
+        margin: auto !important;
+        padding: 20px;
+        background: #36c2c4;
+        padding-block: 30px;
+        border: none !important;
+    }
+
+
+    .eg-moved .l-header__search {
+        border: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .eg-moved .l-header__search.is-active {
+        border: 5px solid #fff;
+        width: fit-content;
+        margin: auto;
+    }
+
+    .eg-moved .l-header__search-input[type=text] {
+        width: 30rem !important;
+        padding: 1rem 2.5rem 1rem 1.25rem !important;
+    }
+
+    .eg-moved .l-header__search-input[type=text].is-active {
+        width: 48rem !important;
+        border-bottom: 1px solid #36c2c4;
+    }
+
+    .eg-moved div.l-header__search-holder>input::placeholder {
+        font-style: italic;
+        font-size: 18px;
+        font-weight: 100;
+        letter-spacing: 0.3px;
+    }
+
+    .eg-moved .l-header__search.is-active {
+        border-radius: 2.5625rem;
+        box-shadow: none !important;
+    }
 
 }
