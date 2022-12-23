@@ -291,13 +291,17 @@
         // logic for show and hide
         live(['.eg-main-menu-link', '.eg-main-menu-link-inr > li > a'], 'click',
             function() {
+                if (window.innerWidth < 1201) {
                     this.querySelector(".eg-main-menu-link-inr").classList.toggle("eg-show");
+                }
             }
         );
 
         live('.eg-main-menu-link-inr > li > a', 'click',
             function() {
-                this.nextElementSibling.classList.toggle("eg-show");
+                if (window.innerWidth < 1201) {
+                    this.nextElementSibling.classList.toggle("eg-show");
+                }
             }
         );
 
