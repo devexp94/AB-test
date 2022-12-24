@@ -1,0 +1,11 @@
+{
+	"files": [
+		"./variation1/variation.css",
+		"./variation1/variation.js"
+	],
+	"urls": [
+		"https://app.lingokids.com/",
+		"https://app.lingokids.com/es",
+		"https://app.lingokids.com/en"
+	]
+}
