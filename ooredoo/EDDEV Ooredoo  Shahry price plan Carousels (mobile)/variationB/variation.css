@@ -1,0 +1,101 @@
+@media screen and (max-width:767px) {
+    
+    .plan-container-card .slick-active,
+    .addOnsCard .slick-active,
+    .select-plan__categories-selection__container__categories .slick-active{
+        opacity: 1;
+    }
+    .addOnsCard .slick-slide .addOns.card{
+        width: 100% !important;
+    }
+    .select-plan__categories-selection__container__categories .slick-slide .category-card {
+        width: auto !important;
+    }
+    html body .plan-container-card .slick-arrow .fa,
+    html body .addOnsCard .slick-arrow .fa,
+    html body .select-plan__categories-selection__container__categories .slick-arrow .fa{
+        font-size: 34px;
+        color: #221e20;
+    }
+    html body .plan-container-card .slick-next:before, 
+    html body .plan-container-card .slick-prev:before,
+    html body .addOnsCard .slick-next:before, 
+    html body .addOnsCard .slick-prev:before,
+    html body .select-plan__categories-selection__container__categories .slick-next:before, 
+    html body .select-plan__categories-selection__container__categories .slick-prev:before{
+        display: none;
+    }
+    
+    html body .plan-container-card .slick-prev, 
+    html body .addOnsCard .slick-prev, 
+    html body .select-plan__categories-selection__container__categories .slick-prev {
+        color: #221e20;
+        width: auto !important;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        top: auto;
+        bottom: -20px;
+        left: 0px;
+        right: auto;
+        font-size: 14px;
+    }
+    html body .plan-container-card .slick-next, 
+    html body .addOnsCard .slick-next, 
+    html body .select-plan__categories-selection__container__categories .slick-next {
+        color: #221e20;
+        right: 10px;
+        width: auto !important;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        top: auto;
+        bottom: -20px;
+        font-size: 14px;
+    }
+    html body .plan-container-card .slick-prev, 
+    html body .plan-container-card .slick-next{
+        bottom: -5px !important;
+    }
+    html body .plan-container-card .slick-next span, html body .plan-container-card .slick-prev span, html body .addOnsCard .slick-next span, html body .addOnsCard .slick-prev span, html body .select-plan__categories-selection__container__categories .slick-next span, html body .select-plan__categories-selection__container__categories .slick-prev span {
+        color: #221e20;
+        display: inline-block !important;
+        width: auto;
+        line-height: 1;
+        margin: 0px 6px;
+        font-size: 14px;
+    }
+    html body .plan-container-card .slick-dots,
+    html body .addOnsCard .slick-dots,
+    html body .select-plan__categories-selection__container__categories .slick-dots{
+        top: calc(100% + 10px);
+    }
+    html body .select-plan__fold-section .upgrade-your-world {
+        margin-top: 80px;
+        padding-right: 15px;
+    }
+    html body .container.select-plan__fold-section {
+        padding-right: 0px;
+    }
+    
+    html body .select-plan__fold-section .title-wrap {
+        padding-right: 15px;
+    }
+    html body .select-plan__benfits-section {
+        padding-right: 0px;
+        padding-left: 15px;
+    }
+    
+    html body .select-plan__categories-selection__container__categories {
+        padding-right: 0px !important;
+    }
+    
+    html body .select-plan__categories-selection__container__title,
+    html body .container.shahry-addons-container {
+        padding-right: 30px;
+    }
+    html body .contactFaq.container {
+        width: calc(100% - 30px);
+        left: -6px;
+    }
+}
