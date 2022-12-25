@@ -77,6 +77,32 @@
       });
 
     }
+
+    /************** GA Events *****************/
+
+    /*function trackGAEvent(eventCategory, eventAction, eventLabel) {
+  if ('ga' in window) {
+    ga.getAll()[0].send('event', {
+      eventCategory: eventCategory,
+      eventAction: eventAction,
+      eventLabel: eventLabel,
+    });
+  }
+}
+//Metrica GA
+window.sendMetricGA = function (categoria, accion, etiqueta) {
+  trackerName = ga.getAll().map(tracker => tracker.get('name'))[0];
+  ga(trackerName + '.send', 'event', categoria, accion, etiqueta);
+}
+window.lanzarTest = function () {
+  if (window.location.pathname.indexOf('multifeed') != -1) {
+    window.applyChangesMultifeed();
+  }
+  else if (window.location.pathname.indexOf('parents_area') != -1) {
+    window.applyChangesParentsArea();
+  }
+  
+}*/
   
     /* Initialize variation */
       waitForElement('.pagination + div', init, 50, 15000);      
