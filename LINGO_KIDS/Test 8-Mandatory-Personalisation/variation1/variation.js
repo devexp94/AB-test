@@ -58,8 +58,12 @@
 
       document.querySelector(".navigator .navigator-content a[data-label='continue']").style.pointerEvents = "none"
       document.querySelector(".navigator .navigator-content a[data-label='continue']").style.cursor = "auto";
+     if(window.location.href.indexOf("https://app.lingokids.com/es/multifeed") != -1){
+      document.querySelector(".title.title-presentation").innerText = "¿Cuántos años tiene tu hijo/a?"
+     }else{
+       document.querySelector(".title.title-presentation").innerText = "How old is your kid?"
+     }
 
-      document.querySelector(".title.title-presentation").innerText = "How old is your kid?"
       live(".bg-red-vintage .content-center .pagination + div div.leading-tight > div", "click", function(){
         if(document.querySelector(".egActive")){
           document.querySelector(".egActive").classList.remove("egActive");
