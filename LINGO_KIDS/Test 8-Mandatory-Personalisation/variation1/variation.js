@@ -53,6 +53,42 @@
     live(selector, event, callback, context);
      };
   
+     
+  
+
+    function listener() {
+    
+      /* These are the modifications: */
+      window.addEventListener("locationchange", function() {   
+        
+        
+     if(window.location.href.indexOf("https://app.lingokids.com/es/multifeed") != -1){
+      document.querySelector(".title.title-presentation").innerText = "¿Cuántos años tiene tu hijo/a?"
+     }else{
+       document.querySelector(".title.title-presentation").innerText = "How old is your kid?"
+     }
+
+          waitForElement('.title.title-presentation', init, 5000, 15000);
+      });
+      history.pushState = ((f) =>
+          function pushState() {
+              var ret = f.apply(this, arguments);
+              window.dispatchEvent(new Event("pushstate"));
+              window.dispatchEvent(new Event("locationchange"));
+              return ret;
+          })(history.pushState);
+      history.replaceState = ((f) =>
+          function replaceState() {
+              var ret = f.apply(this, arguments);
+              window.dispatchEvent(new Event("replacestate"));
+              window.dispatchEvent(new Event("locationchange"));
+              return ret;
+          })(history.replaceState);
+      window.addEventListener("popstate", () => {
+          window.dispatchEvent(new Event("locationchange"));
+      });
+  }
+
     /* Variation Init */
     function init() {
 
@@ -76,6 +112,7 @@
         document.querySelector(".navigator .navigator-content a[data-label='continue']").style.opacity = "1";
       });
 
+      listener()
     }
 
     /************** GA Events *****************/
