@@ -57,7 +57,9 @@
     function init() {
 
       document.querySelector(".navigator .navigator-content a[data-label='continue']").style.pointerEvents = "none"
-      document.querySelector(".navigator .navigator-content a[data-label='continue']").style.cursor = "auto";
+      document.querySelector(".navigator .navigator-content a[data-label='continue']").style.cursor = "block";
+      document.querySelector(".navigator .navigator-content a[data-label='continue']").style.opacity = "0.7";
+
      if(window.location.href.indexOf("https://app.lingokids.com/es/multifeed") != -1){
       document.querySelector(".title.title-presentation").innerText = "¿Cuántos años tiene tu hijo/a?"
      }else{
@@ -71,6 +73,7 @@
         this.classList.add("egActive");
         document.querySelector(".navigator .navigator-content a[data-label='continue']").style.pointerEvents = "auto"
         document.querySelector(".navigator .navigator-content a[data-label='continue']").style.cursor = "pointer";
+        document.querySelector(".navigator .navigator-content a[data-label='continue']").style.opacity = "1";
       });
 
     }
