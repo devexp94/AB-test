@@ -108,12 +108,7 @@
         document.querySelector(".bg-red-vintage .navigator .navigator-content a[data-label='continue']").classList.remove("egCss")
       });
 
-      let allData = document.querySelectorAll(".bg-red-vintage .content-center .pagination + div div.leading-tight > div")
-      for (const data of allData) {
-        if(data.classList.contains("egActive")){
-          document.querySelector(".bg-red-vintage .navigator .navigator-content a[data-label='continue']").classList.remove("egCss")
-        }
-      }
+      document.querySelector('.items-center.egActive') && document.querySelector('.items-center.egActive').classList.remove('egActive');
 
       listener();
 
