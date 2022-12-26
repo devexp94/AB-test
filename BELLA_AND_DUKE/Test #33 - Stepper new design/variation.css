@@ -1,0 +1,210 @@
+html body .wizard-steps .wizard-step .wizard-label{
+    padding-left: 15px !important;
+}
+
+html body .eg_pendingBackground,
+html body .eg_background,
+html body .eg_completeIcon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    display: none;
+}
+
+
+html body .wizard-steps .wizard-step[data-wizard-state="pending"] .eg_pendingBackground,
+html body .wizard-steps .wizard-step[data-wizard-state="current"] .eg_background,
+html body .wizard-steps .wizard-step[data-wizard-state="done"] .eg_completeIcon{
+    display: block;
+}
+
+html body .wizard-steps .wizard-step[data-wizard-state="pending"],
+html body .wizard-steps .wizard-step[data-wizard-state="current"]{
+    padding: 0 !important;
+    background: #fff !important;
+}
+
+html body .wizard-steps .wizard-step[data-wizard-state="pending"] .wizard-icon .shadowed{
+    z-index: 1;
+    text-shadow: none;
+    left: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+html body .wizard-steps .wizard-step[data-wizard-state="current"] .wizard-icon .shadowed{
+    z-index: 1;
+    color: #fff;
+    text-shadow: none;
+    left: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+html body .wizard-steps .wizard-step[data-wizard-state="pending"]{
+    opacity: 1 !important;
+}
+
+html body .wizard-steps .wizard-step[data-wizard-state="pending"] .wizard-label{
+    flex: 1;
+    padding: 0.75rem 1.5rem;
+    padding-left: 20px !important;
+    margin-left: 32px;
+    opacity: 0.5;
+}
+html body .wizard-steps .wizard-step[data-wizard-state="current"] .wizard-label{
+    flex: 1;
+    background: #F7EEDE;
+    padding: 0.75rem 1.5rem;
+    padding-left: 20px !important;
+    margin-left: 32px;
+}
+
+@media screen and (max-width: 992px){
+
+    html body .wizard-steps{
+        border: none !important;
+    }
+
+    html body .wizard-steps .wizard-step[data-wizard-state=current],
+    html body .wizard-steps .wizard-step[data-wizard-state=pending], 
+    html body .wizard-steps .wizard-step[data-wizard-state=complete], 
+    html body .wizard-steps .wizard-step[data-wizard-state=done]{
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 991px){
+    html body .wizard-steps{
+        flex-direction: row !important;
+        gap: 26px;
+        border: none !important;
+    }
+
+    html body .wizard-steps .wizard-step[data-wizard-state=current],
+    html body .wizard-steps .wizard-step[data-wizard-state=pending], 
+    html body .wizard-steps .wizard-step[data-wizard-state=complete], 
+    html body .wizard-steps .wizard-step[data-wizard-state=done]{
+        max-width: 47px;
+    }
+
+    html body .wizard-steps .wizard-step:nth-of-type(6),
+    html body .wizard-steps .wizard-step .wizard-label{
+        display: none !important;
+    }
+
+    html body .wizard-steps .wizard-step .wizard-icon{
+        width: 48px;
+    }
+
+    html body .wizard-steps .wizard-step[data-wizard-state="pending"] .eg_pendingBackground,
+    html body .wizard-steps .wizard-step[data-wizard-state="current"] .eg_background,
+    html body .wizard-steps .wizard-step[data-wizard-state="done"] .eg_completeIcon{
+        max-width: 47px;
+    }
+
+    html body .wizard-steps .wizard-step[data-wizard-state="pending"] .wizard-icon .shadowed,
+    html body .wizard-steps .wizard-step[data-wizard-state="current"] .wizard-icon .shadowed{
+        left: 15px;
+    }
+
+    html body .wizard-steps .wizard-step::before{
+        content: '';
+        width: 26px;
+        height: 1px;
+        left: 100%;
+        top: 50%;
+        position: absolute;
+        background: #002e38;
+    }
+
+    html body .wizard-steps .wizard-step:nth-of-type(5)::before{
+        display: none;
+    }
+
+    html body .wizard-steps .wizard-step .wizard-wrapper::after{
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        width: max-content;
+    }
+
+    html body .wizard-steps .wizard-step:nth-of-type(1) .wizard-wrapper::after{
+        content: 'Pets';
+    }  
+
+    html body .wizard-steps .wizard-step:nth-of-type(2) .wizard-wrapper::after{
+        content: 'Food Plan';
+    }   
+
+    html body .wizard-steps .wizard-step:nth-of-type(3) .wizard-wrapper::after{
+        content: 'You';
+    }  
+
+    html body .wizard-steps .wizard-step:nth-of-type(4) .wizard-wrapper::after{
+        content: 'Delivery';
+    }  
+
+    html body .wizard-steps .wizard-step:nth-of-type(5) .wizard-wrapper::after{
+        content: 'Payment';
+    }  
+
+}
+
+@media screen and (max-width: 415px){
+    html body .wizard-steps{
+        gap: 20px;
+    }
+
+    html body .wizard-steps .wizard-step[data-wizard-state=current],
+    html body .wizard-steps .wizard-step[data-wizard-state=pending], 
+    html body .wizard-steps .wizard-step[data-wizard-state=complete], 
+    html body .wizard-steps .wizard-step[data-wizard-state=done],
+    html body .wizard-steps .wizard-step[data-wizard-state="pending"] .eg_pendingBackground,
+    html body .wizard-steps .wizard-step[data-wizard-state="current"] .eg_background,
+    html body .wizard-steps .wizard-step[data-wizard-state="done"] .eg_completeIcon{
+        max-width: 36px;
+    }
+
+    html body .wizard-steps .wizard-step[data-wizard-state="pending"] .wizard-icon .shadowed, 
+    html body .wizard-steps .wizard-step[data-wizard-state="current"] .wizard-icon .shadowed {
+        left: 12px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 319px){
+    html body .wizard-steps{
+        gap: 15px;
+    }
+
+    html body .wizard-steps .wizard-step[data-wizard-state=current],
+    html body .wizard-steps .wizard-step[data-wizard-state=pending], 
+    html body .wizard-steps .wizard-step[data-wizard-state=complete], 
+    html body .wizard-steps .wizard-step[data-wizard-state=done],
+    html body .wizard-steps .wizard-step[data-wizard-state="pending"] .eg_pendingBackground,
+    html body .wizard-steps .wizard-step[data-wizard-state="current"] .eg_background,
+    html body .wizard-steps .wizard-step[data-wizard-state="done"] .eg_completeIcon{
+        max-width: 32px;
+    }
+
+    html body .wizard-steps .wizard-step[data-wizard-state="done"] .wizard-icon .shadowed{
+        font-size: 0;
+    }
+
+    html body .wizard-steps .wizard-step[data-wizard-state="pending"] .wizard-icon .shadowed, 
+    html body .wizard-steps .wizard-step[data-wizard-state="current"] .wizard-icon .shadowed {
+        left: 10px;
+        font-size: 20px;
+    }
+
+    html body .wizard-steps .wizard-step::before{
+        left: 80%;
+    }
+}
