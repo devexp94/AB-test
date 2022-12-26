@@ -90,6 +90,8 @@
     /* Variation Init */
     function init() {
 
+      document.body.classList.add("eg-body");
+
       document.querySelector(".bg-red-vintage .navigator .navigator-content a[data-label='continue']").classList.add("egCss")
 
      if(window.location.href.indexOf("https://app.lingokids.com/es/multifeed") != -1){
@@ -103,7 +105,8 @@
           document.querySelector(".egActive").classList.remove("egActive");
         }
         this.classList.add("egActive");
-        document.querySelector(".bg-red-vintage .navigator .navigator-content a[data-label='continue']").classList.remove("egCss")
+
+        document.querySelector(".bg-red-vintage .navigator .navigator-content a[data-label='continue']").classList.remove("egCss");
       });
 
       listener();
@@ -160,3 +163,4 @@
     if (debug) console.log(e, "error in Test" + variation_name);
   }
 })();
+
