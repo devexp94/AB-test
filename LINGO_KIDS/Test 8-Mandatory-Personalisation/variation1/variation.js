@@ -52,9 +52,7 @@
     }
     live(selector, event, callback, context);
      };
-  
-     
-  
+ 
 
     function listener() {
     
@@ -108,7 +106,39 @@
         document.querySelector(".bg-red-vintage .navigator .navigator-content a[data-label='continue']").classList.remove("egCss")
       });
 
-      listener()
+      listener();
+
+      live(".leading-tight> div:nth-child(1)", "mousedown", function(){
+        trackGAEvent('body button', 'click button', 'personalization age 2-3');
+      });
+
+      live(".leading-tight> div:nth-child(2)", "mousedown", function(){
+        trackGAEvent('body button', 'click button', 'personalization age 4-5');
+      });
+
+      live(".leading-tight> div:nth-child(3)", "mousedown", function(){
+        trackGAEvent('body button', 'click button', 'personalization age 6-8');
+      });
+
+      live("#menu-button", "mousedown", function(){
+        trackGAEvent('body button', 'click button', 'language selector');
+      });
+      
+      live("nav div[role] a:nth-child(2)", "mousedown", function(){
+        trackGAEvent('body button', 'click button', 'language selector_en');
+      });
+      
+      live("nav div[role] a:nth-child(3)", "mousedown", function(){
+        trackGAEvent('body button', 'click button', 'language selector_es');
+      });
+      
+      live(".eg_header a:nth-child(2)", "mousedown", function(){
+        trackGAEvent('body button', 'click button', 'language selector_en');
+      });
+      
+      live(".eg_header a:nth-child(3)", "mousedown", function(){
+        trackGAEvent('body button', 'click button', 'language selector_es');
+      });
     }
 
     /************** GA Events *****************/
@@ -122,46 +152,6 @@
       }
     }
 
-    window.applyListenersMultifeed = function () {
-      console.log('applyListenerMultifeed()');
-       languageMetrics();
-    
-       document.querySelector(".leading-tight> div:nth-child(1)").addEventListener("mousedown", function(){
-        trackGAEvent('body button', 'click button', 'personalization age 2-3');
-       })
-       document.querySelector(".leading-tight> div:nth-child(2)").addEventListener("mousedown", function(){
-        trackGAEvent('body button', 'click button', 'personalization age 4-5');
-       })
-       document.querySelector(".leading-tight> div:nth-child(3)").addEventListener("mousedown", function(){
-        trackGAEvent('body button', 'click button', 'personalization age 6-8');
-       })
-
-    }
-
-    function languageMetrics() {
-
-      document.querySelector("#menu-button").addEventListener("mousedown", function(){
-        trackGAEvent('body button', 'click button', 'language selector');
-       })
-      
-      document.querySelector("nav div[role] a:nth-child(2)").addEventListener("mousedown", function(){
-        trackGAEvent('body button', 'click button', 'language selector_en');
-       })  
-
-      document.querySelector("nav div[role] a:nth-child(3)").addEventListener("mousedown", function(){
-        trackGAEvent('body button', 'click button', 'language selector_es');
-       })
-
-      document.querySelector(".eg_header a:nth-child(2)").addEventListener("mousedown", function(){
-        trackGAEvent('body button', 'click button', 'language selector_en');
-       })
-
-      document.querySelector(".eg_header a:nth-child(3)").addEventListener("mousedown", function(){
-        trackGAEvent('body button', 'click button', 'language selector_es');
-       })
-    
-    }
-    
   
     /* Initialize variation */
       waitForElement('.pagination + div', init, 50, 15000);      
