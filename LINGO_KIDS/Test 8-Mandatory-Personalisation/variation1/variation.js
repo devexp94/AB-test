@@ -92,7 +92,7 @@
 
       document.body.classList.add("eg-body");
 
-      document.querySelector(".bg-red-vintage .navigator .navigator-content a[data-label='continue']").classList.add("egCss")
+      document.querySelector(".bg-red-vintage .navigator .navigator-content a[data-label='continue']").classList.add("egCss");
 
      if(window.location.href.indexOf("https://app.lingokids.com/es/multifeed") != -1){
       document.querySelector(".bg-red-vintage .title.title-presentation").innerText = "¿Cuántos años tiene tu hijo/a?"
@@ -105,9 +105,15 @@
           document.querySelector(".egActive").classList.remove("egActive");
         }
         this.classList.add("egActive");
-
-        document.querySelector(".bg-red-vintage .navigator .navigator-content a[data-label='continue']").classList.remove("egCss");
+        document.querySelector(".bg-red-vintage .navigator .navigator-content a[data-label='continue']").classList.remove("egCss")
       });
+
+      let allData = document.querySelectorAll(".bg-red-vintage .content-center .pagination + div div.leading-tight > div")
+      for (const data of allData) {
+        if(data.classList.contains("egActive")){
+          document.querySelector(".bg-red-vintage .navigator .navigator-content a[data-label='continue']").classList.remove("egCss")
+        }
+      }
 
       listener();
 
@@ -163,4 +169,3 @@
     if (debug) console.log(e, "error in Test" + variation_name);
   }
 })();
-
