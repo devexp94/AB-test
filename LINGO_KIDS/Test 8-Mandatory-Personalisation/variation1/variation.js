@@ -63,12 +63,12 @@
         
         
      if(window.location.href.indexOf("https://app.lingokids.com/es/multifeed") != -1){
-      document.querySelector(".title.title-presentation").innerText = "¿Cuántos años tiene tu hijo/a?"
-     }else{
-       document.querySelector(".title.title-presentation").innerText = "How old is your kid?"
+      document.querySelector(".bg-red-vintage .title.title-presentation").innerText = "¿Cuántos años tiene tu hijo/a?"
+     }else {
+       document.querySelector(".bg-red-vintage .title.title-presentation").innerText = "How old is your kid?"
      }
 
-          waitForElement('.title.title-presentation', init, 5000, 15000);
+          waitForElement('.bg-red-vintage .title.title-presentation', init, 5000, 15000);
       });
       history.pushState = ((f) =>
           function pushState() {
@@ -92,14 +92,12 @@
     /* Variation Init */
     function init() {
 
-      document.querySelector(".navigator .navigator-content a[data-label='continue']").style.pointerEvents = "none"
-      document.querySelector(".navigator .navigator-content a[data-label='continue']").style.cursor = "block";
-      document.querySelector(".navigator .navigator-content a[data-label='continue']").style.opacity = "0.7";
+      document.querySelector(".bg-red-vintage .navigator .navigator-content a[data-label='continue']").classList.add("egCss")
 
      if(window.location.href.indexOf("https://app.lingokids.com/es/multifeed") != -1){
-      document.querySelector(".title.title-presentation").innerText = "¿Cuántos años tiene tu hijo/a?"
+      document.querySelector(".bg-red-vintage .title.title-presentation").innerText = "¿Cuántos años tiene tu hijo/a?"
      }else{
-       document.querySelector(".title.title-presentation").innerText = "How old is your kid?"
+       document.querySelector(".bg-red-vintage .title.title-presentation").innerText = "How old is your kid?"
      }
 
       live(".bg-red-vintage .content-center .pagination + div div.leading-tight > div", "click", function(){
@@ -107,39 +105,63 @@
           document.querySelector(".egActive").classList.remove("egActive");
         }
         this.classList.add("egActive");
-        document.querySelector(".navigator .navigator-content a[data-label='continue']").style.pointerEvents = "auto"
-        document.querySelector(".navigator .navigator-content a[data-label='continue']").style.cursor = "pointer";
-        document.querySelector(".navigator .navigator-content a[data-label='continue']").style.opacity = "1";
+        document.querySelector(".bg-red-vintage .navigator .navigator-content a[data-label='continue']").classList.remove("egCss")
       });
 
       listener()
     }
 
     /************** GA Events *****************/
+    function trackGAEvent(eventCategory, eventAction, eventLabel) {
+      if ('ga' in window) {
+        ga.getAll()[0].send('event', {
+          eventCategory: eventCategory,
+          eventAction: eventAction,
+          eventLabel: eventLabel,
+        });
+      }
+    }
 
-    /*function trackGAEvent(eventCategory, eventAction, eventLabel) {
-  if ('ga' in window) {
-    ga.getAll()[0].send('event', {
-      eventCategory: eventCategory,
-      eventAction: eventAction,
-      eventLabel: eventLabel,
-    });
-  }
-}
-//Metrica GA
-window.sendMetricGA = function (categoria, accion, etiqueta) {
-  trackerName = ga.getAll().map(tracker => tracker.get('name'))[0];
-  ga(trackerName + '.send', 'event', categoria, accion, etiqueta);
-}
-window.lanzarTest = function () {
-  if (window.location.pathname.indexOf('multifeed') != -1) {
-    window.applyChangesMultifeed();
-  }
-  else if (window.location.pathname.indexOf('parents_area') != -1) {
-    window.applyChangesParentsArea();
-  }
-  
-}*/
+    window.applyListenersMultifeed = function () {
+      console.log('applyListenerMultifeed()');
+       languageMetrics();
+    
+       document.querySelector(".leading-tight> div:nth-child(1)").addEventListener("mousedown", function(){
+        trackGAEvent('body button', 'click button', 'personalization age 2-3');
+       })
+       document.querySelector(".leading-tight> div:nth-child(2)").addEventListener("mousedown", function(){
+        trackGAEvent('body button', 'click button', 'personalization age 4-5');
+       })
+       document.querySelector(".leading-tight> div:nth-child(3)").addEventListener("mousedown", function(){
+        trackGAEvent('body button', 'click button', 'personalization age 6-8');
+       })
+
+    }
+
+    function languageMetrics() {
+
+      document.querySelector("#menu-button").addEventListener("mousedown", function(){
+        trackGAEvent('body button', 'click button', 'language selector');
+       })
+      
+      document.querySelector("nav div[role] a:nth-child(2)").addEventListener("mousedown", function(){
+        trackGAEvent('body button', 'click button', 'language selector_en');
+       })  
+
+      document.querySelector("nav div[role] a:nth-child(3)").addEventListener("mousedown", function(){
+        trackGAEvent('body button', 'click button', 'language selector_es');
+       })
+
+      document.querySelector(".eg_header a:nth-child(2)").addEventListener("mousedown", function(){
+        trackGAEvent('body button', 'click button', 'language selector_en');
+       })
+
+      document.querySelector(".eg_header a:nth-child(3)").addEventListener("mousedown", function(){
+        trackGAEvent('body button', 'click button', 'language selector_es');
+       })
+    
+    }
+    
   
     /* Initialize variation */
       waitForElement('.pagination + div', init, 50, 15000);      
