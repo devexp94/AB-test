@@ -1,0 +1,70 @@
+@media(min-width:800px) {
+
+    html body #auth-module-page .base-layout__main>.base-layout__providers>.providers>div:nth-child(1)>span,
+    html body #auth-module-page .base-layout__menu>div,
+    html body #auth-module-page .base-layout__main>.base-layout__content .field__label,
+    html body #auth-module-page .base-layout__main>.base-layout__content .field__help {
+        font-weight: bold;
+    }
+
+    html body #auth-module-page .base-layout__menu>div {
+        text-decoration: underline;
+    }
+
+    html body #auth-module-page .base-layout__menu>button {
+        display: none;
+    }
+
+    html body #auth-module-page .base-layout__main>.base-layout__title {
+        font-size: 28px;
+        white-space: unset;
+    }
+
+    html body #auth-module-page .base-layout__main,
+    html body #auth-module-page header {
+        max-width: 440px;
+    }
+
+    html body #auth-module-page header {
+        margin-inline: auto;
+        width: 100%;
+    }
+
+    html body #auth-module-page .base-layout__main>.base-layout__content {
+        order: 3;
+    }
+
+    html body .eg-form-field {
+        display: flex;
+        gap: 10px;
+    }
+
+    html body .eg-form-field>button {
+        height: unset !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 10px 20px !important;
+        font-size: 14px !important;
+        font-weight: bold !important;
+    }
+
+    html body .eg-form-field>button:nth-child(1) {
+        width: 80% !important;
+    }
+
+    html body .eg-providers__line {
+        width: 100%;
+        height: 10px;
+        border-bottom: 1px solid var(--auth-module-border-color);
+        text-align: center;
+        margin-top: 46px;
+    }
+
+    html body .eg-providers__line>span {
+        font-size: 12px;
+        line-height: 160%;
+        background-color: var(--auth-module-background-color);
+        padding: 0 10px;
+        font-weight: bold;
+    }
+}
