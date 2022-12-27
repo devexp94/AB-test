@@ -1,0 +1,141 @@
+@media(min-width:800px) {
+
+    html body #auth-module-page .base-layout__main>.base-layout__providers>.providers>div:nth-child(1)>span,
+    html body #auth-module-page .base-layout__menu>div,
+    html body #auth-module-page .base-layout__main>.base-layout__content .field__label,
+    html body #auth-module-page .base-layout__main>.base-layout__content .field__help {
+        font-weight: bold;
+    }
+
+    html body #auth-module-page .base-layout__menu>div {
+        color: #007dd4;
+    }
+
+    html body #auth-module-page .base-layout__menu>button {
+        display: none;
+    }
+
+    html body #auth-module-page .base-layout__main>.base-layout__title {
+        font-size: 28px;
+        white-space: unset;
+    }
+
+    html body #auth-module-page .base-layout__main,
+    html body #auth-module-page header {
+        max-width: 440px;
+    }
+
+    html body #auth-module-page header {
+        margin-inline: auto;
+        width: 100%;
+    }
+
+    html body #auth-module-page .base-layout__main>.base-layout__content {
+        order: 3;
+    }
+
+    html body .eg-form-field {
+        display: flex;
+        gap: 10px;
+    }
+
+    html body .eg-form-field>button {
+        height: unset !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 10px 20px !important;
+        font-size: 14px !important;
+        font-weight: bold !important;
+    }
+
+    html body .eg-form-field>button:nth-child(1) {
+        width: 80% !important;
+    }
+
+    html body .eg-providers__line {
+        width: 100%;
+        height: 10px;
+        border-bottom: 1px solid var(--auth-module-border-color);
+        text-align: center;
+        margin-top: 46px;
+    }
+
+    html body .eg-providers__line>span {
+        font-size: 12px;
+        line-height: 160%;
+        background-color: var(--auth-module-background-color);
+        padding: 0 10px;
+        font-weight: bold;
+    }
+
+    html body #content .intro__items,
+    html body #content .intro__title {
+        background: none;
+        height: auto;
+        color:
+            white;
+        font-family: 'Gotham';
+    }
+
+
+    html body .eg-intro-title {
+        margin: 0;
+        font-size: 2.45rem;
+        font-weight: 500;
+    }
+
+    html body .eg-usps {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    html body .eg-usps>li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    html body .eg-usps>li svg {
+        width: 35px !important;
+        height: 35px !important;
+        margin-right: 10px;
+    }
+    /* logos css start */
+html body .eg-trust-logos {
+    display: flex;
+    margin-block: 44px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1024px;
+    margin-inline: auto;
+    justify-content: center;
+    gap: 20px;
+}
+
+html body  .eg-trust-logos>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html body .eg-trust-logos>div>img.logo {
+    display: block;
+    object-fit: contain;
+    filter: invert(50%) grayscale(100%);
+    width: 80px !important;
+    height: 40px !important;
+}
+
+html body .eg-trust-logos>div>img.logo:hover {
+    filter: invert(0) grayscale(0) !important;
+    opacity: 1 !important;
+}
+
+/* setting up some logos */
+
+html body .eg-trust-logos>div:nth-child(6)>img {
+    object-position: 50% 82%;
+}
+
+}

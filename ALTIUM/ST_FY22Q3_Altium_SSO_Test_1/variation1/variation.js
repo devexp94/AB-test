@@ -31,7 +31,7 @@
         /* Variation Init */
         function init() {
             /* start your code here */
-            document.querySelector("html body #auth-module-page .base-layout__main>.base-layout__content form").insertAdjacentHTML("beforeend", `<div class="field"></div>`);
+            document.querySelector("html body #auth-module-page .base-layout__main>.base-layout__content form").insertAdjacentHTML("beforeend", `<div class="field eg-form-field"></div>`);
             const egSigninBtn = document.querySelector("html body #auth-module-page .base-layout__main>.base-layout__content form > button");
             const egSignupBtn = document.querySelector("html body #auth-module-page .base-layout__menu>button");
             [egSigninBtn, egSignupBtn].forEach(btn => {
@@ -40,10 +40,14 @@
 
             document.querySelector("html body #auth-module-page .base-layout__main>.base-layout__providers>.providers>div:nth-child(1)>span").innerText = document.querySelector("html body #auth-module-page .base-layout__main>.base-layout__providers>.providers>div:nth-child(1)>span").innerText.replace("Or", "");
 
+            document.querySelector("html body #auth-module-page .base-layout__main>.base-layout__providers>.providers").insertAdjacentHTML("beforeend",`
+            <div class="line providers__line eg-providers__line"><span class="line__text">Or Sign In to Your Email</span></div>
+            `);
+            
             // right side updation
             document.querySelector("#content .intro__title").innerHTML = `<h1 class="eg-intro-title">Your Altium Account Gets You Access To:</h1>`;
             '<h1 class="eg-intro-title">Your Altium Account Gets You Access To:</h1>'
-            
+
             document.querySelector("#content .intro__items").innerHTML = `
               <ul class="eg-usps">
                   <li class="eg-usp">
@@ -61,6 +65,31 @@
                       <p>Be part of a growing engineering community, influence your design software, and share your experiences in AltiumLive</p>
                   <li>
               </ul>`;
+
+            // adding logos
+            // adding logos
+            // all logos src links serial wise
+            const egLogosLink = ["https://www.altium.com/sites/default/files/media_icon/2022-01/ArduinoLogo_%C2%AE.svg",
+                "https://www.altium.com/sites/default/files/media_icon/2021-07/bae_color.svg",
+                "https://www.altium.com/sites/default/files/media_icon/2021-07/leicamicrosystems_color.svg",
+                "https://www.altium.com/sites/default/files/media_icon/2021-07/microsoft_color.svg",
+                "https://www.altium.com/sites/default/files/media_icon/2021-07/lyft_color.svg",
+                "https://www.altium.com/sites/default/files/media_icon/2021-07/amazon_color.svg",
+                "https://www.altium.com/sites/default/files/media_icon/2021-07/facebook_color.svg",
+                "https://www.altium.com/sites/default/files/media_icon/2021-07/dell_color.svg"
+            ]
+
+            let egTrustLogosDiv = '<div class="eg-trust-logos">';
+
+            // looping to add images to their parent div
+            for (link of egLogosLink) {
+                egTrustLogosDiv += '<div><img src="' + link + '" class="logo"></div>';
+            }
+
+            egTrustLogosDiv += '</div>';
+
+            // appending logo div above the ctas
+            document.querySelector("html body #content .intro").insertAdjacentHTML("beforeend", egTrustLogosDiv);
         }
 
         /* Initialize variation */
