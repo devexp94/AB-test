@@ -52,17 +52,17 @@
               <ul class="eg-usps">
                   <li class="eg-usp">
                       ${egTickSvg}
-                      <p>Use Altium designer, CircuitStudio, Or one of our other products for yourself or as part of your organization</p>
+                      <p>Take your designs to the next level with access to Altium Designer, CircuitStudio and other products for yourself or your entire team.</p>
                   <li>
 
                   <li class="eg-usp">
                       ${egTickSvg}
-                      <p>Collaborate with your team, share designs, perform reviews, and comment on designs with Altium 365</p>
+                      <p>Create seamless collaborations with your team across the entire PCB design process with Altium 365.</p>
                   <li>
 
                   <li class="eg-usp">
                       ${egTickSvg}
-                      <p>Be part of a growing engineering community, influence your design software, and share your experiences in AltiumLive</p>
+                      <p>Join thousands of designers to share your experiences, learn and grow with AltiumLive.</p>
                   <li>
               </ul>`;
 
