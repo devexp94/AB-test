@@ -67,4 +67,19 @@
         padding: 0 10px;
         font-weight: bold;
     }
+
+    html body #content .intro__items,
+    html body #content .intro__title {
+        background: none;
+        height: auto;
+        color: white;
+        font-family: 'Gotham';
+    }
+
+
+    html body .eg-intro-title {
+        margin: 0;
+    }
+
+
 }
