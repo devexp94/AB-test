@@ -72,13 +72,34 @@
     html body #content .intro__title {
         background: none;
         height: auto;
-        color: white;
+        color:
+            white;
         font-family: 'Gotham';
     }
 
 
     html body .eg-intro-title {
         margin: 0;
+        font-size: 2.45rem;
+        font-weight: 500;
+    }
+
+    html body .eg-usps {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    html body .eg-usps>li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    html body .eg-usps>li svg {
+        width: 35px !important;
+        height: 35px !important;
+        margin-right: 10px;
     }
 
 
