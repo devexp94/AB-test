@@ -83,8 +83,44 @@
     function init() {
       _$('.wizard-steps .wizard-step').append(tickIcon);
       _$('.wizard-steps .wizard-step .wizard-icon').append(background + background2);
-      _$('.wizard-steps .wizard-step:nth-of-type(2)').attr('onclick',"stepClick(this, 'https://hello.bellaandduke.com/recommendation-plan', '1')")
+      _$('.wizard-steps .wizard-step:nth-of-type(2)').attr('onclick',"stepClick(this, 'https://hello.bellaandduke.com/recommendation-plan', '1')");
+
+      // goal events
+      document.querySelector('.wizard-steps .wizard-step:nth-of-type(1)').addEventListener('click',function(){
+        trackGAEvent('Wizard','Click','Stepper_Step_1')
+      })
+
+      document.querySelector('.wizard-steps .wizard-step:nth-of-type(2)').addEventListener('click',function(){
+        trackGAEvent('Wizard','Click','Stepper_Step_2')
+      })
+
+      document.querySelector('.wizard-steps .wizard-step:nth-of-type(3)').addEventListener('click',function(){
+        trackGAEvent('Wizard','Click','Stepper_Step_3')
+      })
+
+      document.querySelector('.wizard-steps .wizard-step:nth-of-type(4)').addEventListener('click',function(){
+        trackGAEvent('Wizard','Click','Stepper_Step_4')
+      })
+
+      document.querySelector('.wizard-steps .wizard-step:nth-of-type(5)').addEventListener('click',function(){
+        trackGAEvent('Wizard','Click','Stepper_Step_5')
+      })
+
+      document.querySelector('.wizard-steps .wizard-step:nth-of-type(6)').addEventListener('click',function(){
+        trackGAEvent('Wizard','Click','Stepper_Step_6')
+      })
+
     }
+
+    function trackGAEvent(eventCategory, eventAction, eventLabel) {
+            if ('ga' in window) {
+              ga.getAll()[0].send('event', {
+                eventCategory: eventCategory,
+                eventAction: eventAction,
+                eventLabel: eventLabel,
+              });
+            }
+          }
 
     /* Initialize variation */
     helper.waitForElement(".wizard-steps .wizard-step .wizard-icon", init, 50, 5000);
