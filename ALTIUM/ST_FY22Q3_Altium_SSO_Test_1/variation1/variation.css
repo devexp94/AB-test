@@ -102,5 +102,41 @@
         margin-right: 10px;
     }
 
+    /* logos css start */
+    html body .eg-trust-logos {
+        display: flex;
+        margin-block: 44px;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 1024px;
+        margin-inline: auto;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    html body .eg-trust-logos>div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    html body .eg-trust-logos>div>img.logo {
+        display: block;
+        object-fit: contain;
+        filter: invert(50%) grayscale(100%);
+        width: 80px !important;
+        height: 40px !important;
+    }
+
+    html body .eg-trust-logos>div>img.logo:hover {
+        filter: invert(0) grayscale(0) !important;
+        opacity: 1 !important;
+    }
+
+    /* setting up some logos */
+
+    html body .eg-trust-logos>div:nth-child(6)>img {
+        object-position: 50% 82%;
+    }
 
 }
