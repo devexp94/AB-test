@@ -43,9 +43,14 @@
             document.querySelector("html body #auth-module-page .base-layout__main>.base-layout__providers>.providers").insertAdjacentHTML("beforeend",`
             <div class="line providers__line eg-providers__line"><span class="line__text">Or</span></div>
             `);
+
+             // change In to in
+             document.querySelector("#auth-module-page main form > div.field.eg-form-field > button:first-child").innerText = document.querySelector("#auth-module-page main form > div.field.eg-form-field > button:first-child").innerText.replace("In", "in");
+
+             document.querySelector("div.base-layout__providers > div > div:nth-child(1) > span").innerText = document.querySelector("div.base-layout__providers > div > div:nth-child(1) > span").innerText.replace("In", "in");
             
             // right side updation
-            document.querySelector("#content .intro__title").innerHTML = `<h1 class="eg-intro-title">Where The World Designs Electronics</h1>`;
+            document.querySelector("#content .intro__title").innerHTML = `<h1 class="eg-intro-title">Where The World <br/>Designs Electronics</h1>`;
             '<h1 class="eg-intro-title">Your Altium Account Gets You Access To:</h1>';
 
             document.querySelector("#content .intro__items").innerHTML = `
