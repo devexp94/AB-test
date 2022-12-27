@@ -37,6 +37,7 @@
     html body .eg-form-field {
         display: flex;
         gap: 10px;
+        margin-top: 30px;
     }
 
     html body .eg-form-field>button {
@@ -80,7 +81,8 @@
 
     html body .eg-intro-title {
         margin: 0;
-        font-size: 2.45rem;
+        font-size: 1.8rem;
+        text-align: center;
         font-weight: 500;
     }
 
@@ -138,4 +140,18 @@ html body .eg-trust-logos>div:nth-child(6)>img {
     object-position: 50% 82%;
 }
 
+  html body #auth-module-page div.base-layout__title > div {
+        font-size: 27px;
+         text-align:center;
+        text-transform: capitalize;
+    }
+
+    html body #content .intro__items {
+    margin-top: 24px;
 }
+
+ 
+}
+
+
+

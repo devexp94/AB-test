@@ -37,6 +37,7 @@
     html body .eg-form-field {
         display: flex;
         gap: 10px;
+        margin-top: 30px;
     }
 
     html body .eg-form-field>button {
@@ -80,7 +81,8 @@
 
     html body .eg-intro-title {
         margin: 0;
-        font-size: 2.45rem;
+        text-align: center;
+        font-size: 2rem;
         font-weight: 500;
     }
 
@@ -94,6 +96,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        /* padding: 0; */
+        /* margin: 0; */
     }
 
     html body .eg-usps>li svg {
@@ -138,5 +142,16 @@
     html body .eg-trust-logos>div:nth-child(6)>img {
         object-position: 50% 82%;
     }
+    
+    #auth-module-page div.base-layout__title > div {
+        font-size: 27px;
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+    html body #content .intro__items {
+    margin-top: 20px;
+}
+
 
 }
