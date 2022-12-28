@@ -47,9 +47,6 @@
                 </div>
             </div>
         </div></div>
-        <!-- right side div -->
-        
-    
 </section>
       `;
 
@@ -57,9 +54,7 @@
     /* Variation Init */
     function init() {
       /* start your code here */
-      // inserting a new section
       document.querySelector("#__layout main > section:nth-child(3)").insertAdjacentHTML("afterend",egNewSection);
-      
     }
 
     /* Initialize variation */
