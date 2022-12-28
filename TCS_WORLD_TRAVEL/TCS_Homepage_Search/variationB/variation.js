@@ -43,7 +43,7 @@
             document.getElementsByTagName('head')[0].appendChild(jQueryScript);
         }
 
-        function live(event, selector, callback, context) {
+        function live(selector, event, callback, context) {
             /****Helper Functions****/
             // helper for enabling IE 8 event bindings
             function addEvent(el, type, handler) {
@@ -60,9 +60,7 @@
                         ElementPrototype.msMatchesSelector ||
                         function(selector) {
                             var node = this,
-                                nodes = (
-                                    node.parentNode || node.document
-                                ).querySelectorAll(selector),
+                                nodes = (node.parentNode || node.document).querySelectorAll(selector),
                                 i = -1;
                             while (nodes[++i] && nodes[i] != node);
                             return !!nodes[i];
@@ -73,18 +71,14 @@
                 addEvent(context || document, event, function(e) {
                     var found,
                         el = e.target || e.srcElement;
-                    while (
-                        el &&
-                        el.matches &&
-                        el !== context &&
-                        !(found = el.matches(selector))
-                    )
-                        el = el.parentElement;
+                    while (el && el.matches && el !== context && !(found = el.matches(selector))) el = el.parentElement;
                     if (found) callback.call(el, e);
                 });
             }
             live(selector, event, callback, context);
         }
+
+
 
         let egArrow = `<svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
 
@@ -101,7 +95,7 @@
             '      <div class="eg-language-option23 eg-trip-type">' +
             '          <div class="eg-dropdown">' +
             '              <p class="eg-label">Travel Type</p>' +
-            '              <span class="eg-default-option facet__title">What kind of trip ? <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">'+egArrow+'</span></span>' +
+            '              <span class="eg-default-option facet__title">What kind of trip ? <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">' + egArrow + '</span></span>' +
             '              <div class="eg-dropdown-options">' +
             '                  <span class="eg-dropdown-item" data-trip-type="Group Jet Expedition">Group Jet Expedition</span>' +
             '                  <span class="eg-dropdown-item" data-trip-type="Private Custom Travel">Private Custom Travel</span>' +
@@ -111,7 +105,7 @@
             '      <div class="eg-language-option23 eg-destination">' +
             '          <div class="eg-dropdown">' +
             '              <p class="eg-label">Destination</p>' +
-            '              <span class="eg-default-option facet__title">Where to?<span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">'+egArrow+'</span></span>' +
+            '              <span class="eg-default-option facet__title">Where to?<span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">' + egArrow + '</span></span>' +
             '              <div class="eg-dropdown-options ">' +
             '                  <span class="eg-dropdown-item" data-destination="Africa">Africa</span>' +
             '                  <span class="eg-dropdown-item" data-destination="Around the World">Around the World</span>' +
@@ -129,7 +123,7 @@
             '      <div class="eg-language-option23 eg-dates">' +
             '          <div class="eg-dropdown">' +
             '              <p class="eg-label">Dates</p>' +
-            '              <span class="eg-default-option facet__title">When do you want to go ? <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">'+egArrow+'</span></span>' +
+            '              <span class="eg-default-option facet__title">When do you want to go ? <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">' + egArrow + '</span></span>' +
             '              <div class="eg-dropdown-options">' +
             '                  <span class="eg-dropdown-item" data-year="2022">2022</span>' +
             '                  <span class="eg-dropdown-item" data-year="2023">2023</span>' +
@@ -144,22 +138,7 @@
             '      </div>' +
             '  </div>';
 
-
-        // live("click", "body", function(e) {
-        //     var dropdownEls = document.querySelectorAll('.eg-dropdown');
-        //     var dropdownPopups = document.querySelectorAll('.eg-dropdown-options');
-        //     for (var i = 0; i < dropdownEls.length; i++) {
-        //         var dropdownEl = dropdownEls[i];
-        //         var dropdownPopup = dropdownPopups[i];
-        //         if (!dropdownPopup.contains(e.target) && !dropdownEl.contains(e.target)) {
-        //             var openItem = document.querySelector(
-        //                 ".eg-dropdown.eg-active"
-        //             );
-        //             openItem && openItem.classList.remove("eg-active");
-        //             break;
-        //         }
-        //     }
-        // });
+        
 
 
 
