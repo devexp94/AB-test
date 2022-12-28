@@ -24,16 +24,6 @@ html .eg-body .leading-tight{
     border: solid 3px #455DF5 !important;
 }
 
-/* .leading-tight:has(:not(.egActive)) + div.navigator {
-    pointer-events: none;
-    cursor: default;
-   }
-
-.leading-tight:has(.egActive) + div.navigator {
-    pointer-events: auto !important;
-    cursor: pointer !important;
-   } */
-
    .eg-body .bg-red-vintage .content-center .pagination + div div.leading-tight > div {
    background: #F2F4FC !important;
     border-radius: 8px;
@@ -68,6 +58,42 @@ html .eg-body .leading-tight{
 
 @media screen and (max-width:640px){
     .pagination + div div.leading-tight > div{
+      width:100% !important;
+    }
+  }
+
+/********* Parents *********/
+.mk-section-parentsArea{
+  display: flex;
+  align-items: center;
+}
+
+.mk-section-parentsArea {
+   background: #F2F4FC !important;
+    border-radius: 8px;
+    border: solid 3px transparent;
+    gap: 8px !important;
+    padding: 0.75rem 1rem !important;
+    width: 100% !important;
+    cursor: pointer !important;
+}
+
+.mk-section-dbbt{
+  width:100%;
+  margin-left:0px!important;
+  margin-top: 0.5em;
+}
+.text-presentation{
+  color: #0C123B;
+}
+
+  .mk-outer-div{
+    width: 31rem;
+}
+
+
+@media screen and (max-width:640px){
+    .mk-outer-div{
       width:100% !important;
     }
   }
