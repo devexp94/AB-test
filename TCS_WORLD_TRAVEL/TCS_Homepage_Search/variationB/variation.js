@@ -162,12 +162,14 @@
 
                     $('body').on('click', '.eg-trip-type span.eg-dropdown-item', function() {
                         tripType = $(this).text();
+                        $(this).addClass("eg-selected");
                         $(this).parents('.eg-trip-type').find('.eg-default-option.facet__title').html('' + tripType + ' <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">'+egArrow+'</span>');
                         $('.eg-dropdown').removeClass('eg-active');
                     });
 
                     $('body').on('click', '.eg-destination span.eg-dropdown-item', function() {
                         destination = $(this).text();
+                        $(this).addClass("eg-selected");
                         $(this).parents('.eg-destination').find('.eg-default-option.facet__title').html('' + destination + ' <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">'+egArrow+'</span>');
                         $('.eg-dropdown').removeClass('eg-active');
                     });
@@ -175,6 +177,7 @@
 
                     $('body').on('click', '.eg-dates span.eg-dropdown-item', function() {
                         date = $(this).text();
+                        $(this).addClass("eg-selected");
                         $(this).parents('.eg-dates').find('.eg-default-option.facet__title').html('' + date + ' <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">'+egArrow+'</span>');
                         $('.eg-dropdown').removeClass('eg-active');
                     });
