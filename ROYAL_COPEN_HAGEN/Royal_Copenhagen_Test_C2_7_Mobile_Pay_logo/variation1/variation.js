@@ -58,7 +58,7 @@
         }
 
         live('.btn-checkout-continue', 'click', function() {
-            waitForElement(`div[class^='c-checkout-review'] label[for=radio-button-mobilepay]`, init, 50, 15000);
+            waitForElement('div[class^="c-checkout-review"] label[for=radio-button-mobilepay]', init, 50, 15000);
         });
 
 
@@ -66,13 +66,13 @@
         function init() {
             /* start your code here */
             setTimeout(() => {
-                document.querySelector("div[class^='c-checkout-review'] label[for=radio-button-mobilepay]").click();
+                document.querySelector('div[class^="c-checkout-review"] label[for=radio-button-mobilepay]').click();
             }, 500);
 
         }
 
         /* Initialize variation */
-        waitForElement(`div[class^='c-checkout-review'] label[for=radio-button-mobilepay]`, init, 50, 15000);
+        waitForElement('div[class^="c-checkout-review"] label[for=radio-button-mobilepay]', init, 50, 15000);
     } catch (e) {
         if (debug) console.log(e, "error in Test" + variation_name);
     }
