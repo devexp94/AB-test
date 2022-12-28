@@ -117,13 +117,11 @@
                 parentArea();
 
                 live(".mk-outer-div .mk-section-parentsArea", "click", function() {
-                    if (this.classList.contains("mk-section-parentsArea")) {
                         if (document.querySelector(".egActive")) {
                             document.querySelector(".egActive").classList.remove("egActive");
                         }
                         this.classList.add("egActive");
                         document.querySelector(".navigator .navigator-content a[data-label='continue']").classList.remove("egCss")
-                    }
 
                 });
             } else {
