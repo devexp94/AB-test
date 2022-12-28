@@ -1,0 +1,11 @@
+{
+	"files": [
+		"./variationB/variation.css",
+		"./variationB/variation.js",
+		"./variationB/trip.js"
+	],
+	"inject": "",
+	"urls": [
+		"http://www.tcsworldtravel.com/"
+	]
+}

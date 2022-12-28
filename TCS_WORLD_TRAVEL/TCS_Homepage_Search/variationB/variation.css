@@ -1,0 +1,251 @@
+html body .page__hero {
+    margin-bottom: 0 !important;
+}
+
+html body main article.homepage {
+    position: relative;
+    isolation: isolate;
+}
+
+html body .hero__cta {
+    display: none !important;
+}
+
+
+.eg-search-trips {
+    z-index: 999;
+    padding: 20px 26px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 8%;
+    background: #0a1d27;
+}
+
+.eg-search-trips-inr .eg-language-option23-outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html body .eg-search-trips-inr {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+html body .eg-language-option23 .eg-dropdown {
+    box-sizing: border-box;
+    width: 220px;
+    position: relative;
+}
+
+.eg-dropdown .facet__toggle-icon {
+    margin-bottom: 0px !important;
+}
+
+.eg-language-option23-outer {
+    gap: 30px;
+}
+
+.eg-button {
+    margin-left: 1rem;
+}
+
+/* Dropdown Start */
+html body .eg-language-option23 .eg-dropdown>span {
+    padding: 8px;
+    background: #f0eeeb;
+    height: auto;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+html body .eg-language-option23 .eg-dropdown-options {
+    cursor: pointer;
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    display: flex !important;
+    flex-direction: column;
+    width: 100%;
+    z-index: 999;
+    left: 0px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    max-height: 0px;
+    overflow: hidden;
+    /* transition: max-height 250ms ease, overflow 250ms ease; */
+    -webkit-box-shadow: 0 0 2px 0 rgb(22 44 116 / 16%);
+    box-shadow: 0 0 2px 0 rgb(22 44 116 / 25%);
+    margin-top: 12px;
+    font-weight: 700;
+}
+
+html body .eg-language-option23 .eg-dropdown.eg-active .eg-dropdown-options {
+    max-height: calc(100vh - 23rem);
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 2px solid #f7f9fb;
+    /* transition: max-height 250ms ease, overflow 250ms ease; */
+}
+
+.eg-search-trips .eg-button .eg-button-link {
+    height: auto;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    background: #008cab;
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+html body .eg-language-option23.eg-expedition .eg-dropdown .eg-dropdown-options {
+    width: 230px;
+}
+
+html body .eg-language-option23 .eg-dropdown-item {
+    display: block;
+    padding: 5px 16px;
+    background: #ffffff none repeat scroll 0 0;
+    font-size: 13px;
+}
+
+.eg-label {
+    color: #f0eeeb;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+html body .eg-language-option23 .eg-dropdown-item:last-child {
+    border-bottom: none;
+}
+
+html body .eg-language-option23 .eg-dropdown-item img {
+    margin-right: 10px;
+}
+
+
+html body .eg-language-option23 .eg-dropdown>span img {
+    margin-right: 10px;
+}
+
+html body .eg-language-option23 .eg-dropdown-item:hover {
+    background: #f8f9fa;
+    color: #153bff;
+}
+
+/* Dropdown end */
+
+html body .eg-language-option23 .eg-language-heading {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+html body .eg-language-option23 .eg-button a {
+    padding: 15px 30px !important;
+    width: 100%;
+    background: #153BFF;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+@media(min-width: 951px) and (max-width: 991px) {
+    .eg-search-trips {
+        top: 6.3%;
+    }
+}
+
+@media(max-width: 950px) {
+
+    html body .eg-search-trips-inr {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:950px) and (min-width:768px) {
+    html body .eg-language-option23 .eg-dropdown {
+        width:200px !important;
+    }
+}
+
+
+@media screen and (max-width:767px) {
+    .eg-language-option23-outer {
+        gap: 0px;
+    }
+
+    .eg-search-trips {
+        width: 100%;
+    }
+
+    html body .eg-language-option23 .eg-dropdown {
+        width: 100%;
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    html body .eg-search-trips-inr .eg-button {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    html body .eg-search-trips-inr.container-fluid,
+    html body .eg-search-trips-inr.container-fluid .eg-language-option23-outer {
+        flex-direction: column;
+        width: 100%;
+        background: none !important;
+    }
+
+    html body .eg-language-option23.eg-expedition .eg-dropdown .eg-dropdown-options,
+    html body .eg-search-trips-inr .eg-button,
+    html body .eg-search-trips-inr .eg-language-option23 {
+        width: 100% !important;
+    }
+
+    html body .eg-search-trips .eg-button .eg-button-link {
+        justify-content: center;
+    }
+
+    html body .eg-search-trips .eg-language-option23.eg-destination {
+        border: none;
+    }
+
+    html body .eg-search-trips .eg-language-option23 .eg-dropdown>span {
+        padding: 10px 16px !important;
+    }
+}
+
+
+/*arrow*/
+.eg-dropdown .facet__toggle-icon > svg {
+    width: 16px;
+    height: 16px;
+}
+
+.eg-dropdown.eg-active .eg-arrow{
+    rotate:180deg;
+}
