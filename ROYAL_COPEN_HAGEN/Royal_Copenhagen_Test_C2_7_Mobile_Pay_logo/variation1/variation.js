@@ -58,14 +58,17 @@
         }
 
         live('.btn-checkout-continue', 'click', function() {
-            waitForElement(`div[class^='c-checkout-review'] label[for=radio-button-mobilepay]`,init,50,15000);
+            waitForElement(`div[class^='c-checkout-review'] label[for=radio-button-mobilepay]`, init, 50, 15000);
         });
 
 
         /* Variation Init */
         function init() {
             /* start your code here */
-            document.querySelector("div[class^='c-checkout-review'] label[for=radio-button-mobilepay]").click();
+            setTimeout(() => {
+                document.querySelector("div[class^='c-checkout-review'] label[for=radio-button-mobilepay]").click();
+            }, 500);
+
         }
 
         /* Initialize variation */
