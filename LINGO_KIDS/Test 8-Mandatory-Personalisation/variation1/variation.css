@@ -63,12 +63,12 @@ html .eg-body .leading-tight{
   }
 
 /********* Parents *********/
-.mk-section-parentsArea{
+html .eg-body .mk-section-parentsArea{
   display: flex;
   align-items: center;
 }
 
-.mk-section-parentsArea {
+html .eg-body .mk-section-parentsArea {
    background: #F2F4FC !important;
     border-radius: 8px;
     border: solid 3px transparent;
@@ -78,22 +78,22 @@ html .eg-body .leading-tight{
     cursor: pointer !important;
 }
 
-.mk-section-dbbt{
+html .eg-body .mk-section-dbbt{
   width:100%;
   margin-left:0px!important;
   margin-top: 0.5em;
 }
-.text-presentation{
+html .eg-body .text-presentation{
   color: #0C123B;
 }
 
-  .mk-outer-div{
+html .eg-body .mk-outer-div{
     width: 31rem;
 }
 
 
 @media screen and (max-width:640px){
-    .mk-outer-div{
+  html .eg-body .mk-outer-div{
       width:100% !important;
     }
   }
