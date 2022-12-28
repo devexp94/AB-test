@@ -71,7 +71,7 @@
                     } else if (window.location.href.indexOf("https://app.lingokids.com/es/parents_area") != -1) {
                         document.querySelector(".title.title-presentation").innerText = "¿Qué habilidades te gustaría que practicara tu hijo/a?"
                     }
-                   waitForElement('.pagination + div', init, 50, 15000);
+                    waitForElement('.pagination + div', init, 50, 15000);
                 }, 1500, 15000);
 
             });
@@ -116,12 +116,15 @@
             if ((window.location.href.indexOf("https://app.lingokids.com/es/parents_area") != -1) || (window.location.href.indexOf("https://app.lingokids.com/parents_area") != -1) || (window.location.href.indexOf("https://app.lingokids.com/en/parents_area") != -1)) {
                 parentArea();
 
-                live(".mk-section-parentsArea", "click", function() {
-                    if (document.querySelector(".egActive")) {
-                        document.querySelector(".egActive").classList.remove("egActive");
+                live(".mk-outer-div .mk-section-parentsArea", "click", function() {
+                    if (this.classList.contains("mk-section-parentsArea")) {
+                        if (document.querySelector(".egActive")) {
+                            document.querySelector(".egActive").classList.remove("egActive");
+                        }
+                        this.classList.add("egActive");
+                        document.querySelector(".navigator .navigator-content a[data-label='continue']").classList.remove("egCss")
                     }
-                    this.classList.add("egActive");
-                    document.querySelector(".navigator .navigator-content a[data-label='continue']").classList.remove("egCss")
+
                 });
             } else {
                 live(".content-center .pagination + div div.leading-tight > div", "click", function() {
@@ -179,38 +182,38 @@
 
             document.querySelector(".leading-tight>div").style.display = "none";
             var myHtml = `
-      <div class="mk-outer-div flex flex-col justify-between space-x-8 text-center">
-        <div class="space-y-2 mk-section-dbbt">
-          <div class='mk-section-parentsArea'>
-            <img class=" md:max-w-md landscape:max-w-xs" alt="A green check arrow." src="https://lingokids-api-assets-production.imgix.net/web/images/rocket.svg">
-            <p class="text-presentation">
-            ` + textosCards[0] + `
-            </p>
-          </div>
-          <div class='mk-section-parentsArea'>
-            <img class=" md:max-w-md landscape:max-w-xs" alt="A green check arrow." src="https://lingokids-api-assets-production.imgix.net/web/images/collaboration.svg">
-            <p class="text-presentation">
-            ` + textosCards[1] + `
-            </p>
-          </div>
+    <div class="mk-outer-div flex flex-col justify-between space-x-8 text-center">
+      <div class="space-y-2 mk-section-dbbt">
+        <div class='mk-section-parentsArea'>
+          <img class=" md:max-w-md landscape:max-w-xs" alt="A green check arrow." src="https://lingokids-api-assets-production.imgix.net/web/images/rocket.svg">
+          <p class="text-presentation">
+          ` + textosCards[0] + `
+          </p>
         </div>
- 
-        <div class="flex flex-col space-y-2 mk-section-dbbt">
-          <div class='mk-section-parentsArea'>
-            <img class=" md:max-w-md landscape:max-w-xs" alt="A green check arrow." src="https://lingokids-api-assets-production.imgix.net/web/images/messages.svg">
-            <p class="text-presentation">
-            ` + textosCards[2] + `
-            </p>
-          </div>
-          <div class='mk-section-parentsArea'>
-            <img class=" md:max-w-md landscape:max-w-xs" alt="A green check arrow." src="https://lingokids-api-assets-production.imgix.net/web/images/cube-scan.svg">
-            <p class="text-presentation">
-            ` + textosCards[3] + `
-            </p>
-          </div>
+        <div class='mk-section-parentsArea'>
+          <img class=" md:max-w-md landscape:max-w-xs" alt="A green check arrow." src="https://lingokids-api-assets-production.imgix.net/web/images/collaboration.svg">
+          <p class="text-presentation">
+          ` + textosCards[1] + `
+          </p>
         </div>
-      </div>`;
-            document.querySelector(".leading-tight").insertAdjacentHTML("afterbegin",myHtml);
+      </div>
+
+      <div class="flex flex-col space-y-2 mk-section-dbbt">
+        <div class='mk-section-parentsArea'>
+          <img class=" md:max-w-md landscape:max-w-xs" alt="A green check arrow." src="https://lingokids-api-assets-production.imgix.net/web/images/messages.svg">
+          <p class="text-presentation">
+          ` + textosCards[2] + `
+          </p>
+        </div>
+        <div class='mk-section-parentsArea'>
+          <img class=" md:max-w-md landscape:max-w-xs" alt="A green check arrow." src="https://lingokids-api-assets-production.imgix.net/web/images/cube-scan.svg">
+          <p class="text-presentation">
+          ` + textosCards[3] + `
+          </p>
+        </div>
+      </div>
+    </div>`;
+            document.querySelector(".leading-tight").insertAdjacentHTML("afterbegin", myHtml);
         }
 
 
@@ -226,8 +229,6 @@
         }
 
         listener();
-
-
 
         /* Initialize variation */
         waitForElement('.pagination + div', init, 50, 15000);
