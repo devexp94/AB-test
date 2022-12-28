@@ -37,6 +37,7 @@
 .eg-left>.eg-content>p+p {
     color: #736E7C;
     margin-top: 20px;
+    font-size: 17px;
 }
 
 .eg-tag-link {
