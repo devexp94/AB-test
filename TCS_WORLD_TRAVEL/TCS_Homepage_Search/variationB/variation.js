@@ -78,7 +78,9 @@
             live(selector, event, callback, context);
         }
 
-
+        live('body *', 'click', function() {
+            console.log(this.classList);
+        });
 
         let egArrow = `<svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
 
@@ -138,7 +140,7 @@
             '      </div>' +
             '  </div>';
 
-        
+
 
 
 
@@ -153,15 +155,16 @@
 
 
                     $('body').on('mousedown', '.eg-default-option', function() {
-                        $(document).find(".eg-active").removeClass("eg-active");
+                        $("body").find(".eg-active").not($(this).parent()).removeClass("eg-active");
                         $(this).parent().toggleClass('eg-active');
                     });
+
 
                     $('body').on('click', '.eg-trip-type span.eg-dropdown-item', function() {
                         tripType = $(this).text();
                         $(this).parents('.eg-trip-type').find('.eg-selected').removeClass("eg-selected");
                         $(this).addClass("eg-selected");
-                        $(this).parents('.eg-trip-type').find('.eg-default-option.facet__title').html('' + tripType + ' <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">'+egArrow+'</span>');
+                        $(this).parents('.eg-trip-type').find('.eg-default-option.facet__title').html('' + tripType + ' <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">' + egArrow + '</span>');
                         $('.eg-dropdown').removeClass('eg-active');
                     });
 
@@ -169,7 +172,7 @@
                         destination = $(this).text();
                         $(this).parents('.eg-trip-type').find('.eg-selected').removeClass("eg-selected");
                         $(this).addClass("eg-selected");
-                        $(this).parents('.eg-destination').find('.eg-default-option.facet__title').html('' + destination + ' <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">'+egArrow+'</span>');
+                        $(this).parents('.eg-destination').find('.eg-default-option.facet__title').html('' + destination + ' <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">' + egArrow + '</span>');
                         $('.eg-dropdown').removeClass('eg-active');
                     });
 
@@ -178,7 +181,7 @@
                         date = $(this).text();
                         $(this).parents('.eg-trip-type').find('.eg-selected').removeClass("eg-selected");
                         $(this).addClass("eg-selected");
-                        $(this).parents('.eg-dates').find('.eg-default-option.facet__title').html('' + date + ' <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">'+egArrow+'</span>');
+                        $(this).parents('.eg-dates').find('.eg-default-option.facet__title').html('' + date + ' <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">' + egArrow + '</span>');
                         $('.eg-dropdown').removeClass('eg-active');
                     });
 
