@@ -139,7 +139,7 @@ html body .eg-language-option23 .eg-dropdown>span img {
 
 html body .eg-language-option23 .eg-dropdown-item:hover {
     background: #f8f9fa;
-    color: #153bff;
+    color: #008cab;
 }
 
 /* Dropdown end */
@@ -251,3 +251,7 @@ html body .eg-language-option23 .eg-button a {
 }
 
 /*when selected*/
+.eg-selected {
+    background: #0a1d27 !important;
+    color: white !important;
+}
