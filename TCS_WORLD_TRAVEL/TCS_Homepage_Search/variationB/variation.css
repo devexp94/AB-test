@@ -103,13 +103,7 @@ html body .eg-language-option23 .eg-dropdown.eg-active .eg-dropdown-options {
     font-weight: bold;
     font-size: 11px;
     white-space: nowrap;
-    pointer-events: none;
-    background:#02324f;
-}
-
-#eg-all-selected:checked + .eg-button-link{
-    pointer-events: auto;
-    background: #008cab;
+   background: #008cab;
 }
 
 html body .eg-language-option23.eg-expedition .eg-dropdown .eg-dropdown-options {

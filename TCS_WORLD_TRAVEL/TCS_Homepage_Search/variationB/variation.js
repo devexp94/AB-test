@@ -146,7 +146,6 @@
             '      </div>' +
             '      </div>' +
             '      <div class="eg-button">' +
-            '          <input type="checkbox" id="eg-all-selected" style="display:none;">' +
             '          <a class="btn btn-primary eg-button-link">Find A Trip</a>' +
             '      </div>' +
             '      </div>' +
@@ -206,16 +205,15 @@
 
                             document.querySelector(".eg-months").style.cssText = "display:none !important";
                         }
-                        checkAllSelected();
 
 
                         if (document.querySelector(".eg-dates .eg-selected")) {
                             if (date !== null) {
                                 document.querySelector(".eg-dates .eg-default-option.facet__title").innerHTML = '' + date + ' <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">' + egArrow + '</span>';
                             } else {
-                                document.querySelector(".eg-dates .eg-default-option.facet__title").innerHTML = '' + "When do you want to go ?" + ' <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">' + egArrow + '</span>';                                
+                                document.querySelector(".eg-dates .eg-default-option.facet__title").innerHTML = '' + "When do you want to go ?" + ' <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">' + egArrow + '</span>';
                             }
-                            
+
                         }
 
 
@@ -228,7 +226,6 @@
                         }
                         $(this).addClass("eg-selected");
                         $(this).parents('.eg-destination').find('.eg-default-option.facet__title').html('' + destination + ' <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">' + egArrow + '</span>');
-                        checkAllSelected();
                     });
 
 
@@ -239,25 +236,15 @@
                         }
                         $(this).addClass("eg-selected");
                         $(this).parents('.eg-dates').find('.eg-default-option.facet__title').html('' + date + ' <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">' + egArrow + '</span>');
-                        checkAllSelected();
                     });
 
                     $('body').on('click', '.eg-button', function() {
-                        if (destination && date && tripType)
-                            window.location.href = 'https://www.tcsworldtravel.com/trip-finder?destination=' + destination + '&date=' + date + '&tripType=' + tripType;
+                        window.location.href = 'https://www.tcsworldtravel.com/trip-finder?destination=' + destination + '&date=' + date + '&tripType=' + tripType;
                     });
                 });
             }, 50, 15000);
 
 
-        }
-
-        function checkAllSelected() {
-            if (destination && date && tripType) {
-                document.querySelector("#eg-all-selected").checked = true;
-            } else {
-                document.querySelector("#eg-all-selected").checked = false;
-            }
         }
 
         /* Initialize variation */

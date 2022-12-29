@@ -73,15 +73,24 @@
 
                     waitForElement('#trip_filter_bar form fieldset:nth-of-type(1) > div > div >div:nth-of-type(2) label', function() {
                         let egTripTypeEl = $(document).find(`label:contains('${tripType}')`)[0];
-                        egTripTypeEl.click();
+                        if (egTripTypeEl) {
+                            egTripTypeEl.click();
+                        }
+
                     }, 50, 15000);
 
                     waitForElement("#trip_filter_bar form fieldset:nth-of-type(3) > div > div >div label", function() {
                         let egDesEl = $(document).find(`label:contains('${destination}')`)[0];
-                        egDesEl.click();
+                        if (egDesEl) {
+                            egDesEl.click();
+                        }
+
 
                         let egDateEl = $(document).find(`label:contains('${date}')`)[0];
-                        egDateEl.click();
+                        if (egDateEl) {
+                            egDateEl.click();
+                        }
+
 
                     }, 50, 15000);
 
