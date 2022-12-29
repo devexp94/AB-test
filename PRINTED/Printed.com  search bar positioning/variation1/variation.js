@@ -51,7 +51,7 @@
                 document.querySelector(".eg-moved input").placeholder = "What are you looking for? Leaflets, Business cards , Invitations, ....";
 
                 // onscroll changing position of search box
-                window.addEventListener("scroll", function() {
+                document.addEventListener("scroll", function() {
                     let egMovedBottom = egMoved.offsetTop + egMoved.offsetHeight;
                     let egMovedTop = egMoved.offsetTop;
                     if (window.scrollY >= egMovedBottom) {
@@ -63,6 +63,12 @@
                         egMoved.insertAdjacentElement("afterbegin", search);
 
                         document.querySelector(".eg-moved input").placeholder = "What are you looking for? Leaflets, Business cards , Invitations, ....";
+                    }
+                    let egNav = document.querySelector("#v-header>div>div.l-header--desktop>div:nth-child(2)");
+                    if (window.scrollY >= (egNav.offsetTop + egNav.offsetHeight)) {
+                        egNav.classList.add("eg-sticky-nav");
+                    } else if (window.scrollY <= egNav.offsetTop) {
+                        egNav.classList.remove("eg-sticky-nav");
                     }
                 });
 

@@ -1,6 +1,15 @@
 @media screen and (min-width : 980px) {
 
-    #v-header>div>div.l-header--desktop>div:nth-child(2) {
+    /*#v-header>div>div.l-header--desktop>div:nth-child(2) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: white;
+        z-index: 9999;
+    }*/
+
+    .eg-sticky-nav {
         position: fixed;
         top: 0;
         left: 0;
