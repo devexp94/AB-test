@@ -153,6 +153,7 @@
 
 
                     $('body').on('mousedown', '.eg-default-option', function() {
+                        $(document).find(".eg-active").removeClass("eg-active");
                         $(this).parent().toggleClass('eg-active');
                     });
 
