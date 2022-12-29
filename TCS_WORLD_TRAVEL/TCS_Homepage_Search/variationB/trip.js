@@ -52,18 +52,13 @@
                 waitForjQuery(function() {
                     var $ = window.jQuery;
                     let tripType, destination, date;
-                    let egQueryParams = window.location.href.split("?").pop().split("&");
+                    let egSearch = decodeURIComponent(window.location.href);
+                    let egQueryParams = egSearch.split("?").pop().split("&");
                     let egSearchQuery = {};
 
                     egQueryParams.forEach(param => {
                         let name = param.split("=").shift();
                         let value = param.split("=").pop();
-                        if (name.indexOf("%20") != -1) {
-                            name = name.split("%20").join(" ");
-                        } else if (value.indexOf("%20") != -1) {
-                            value = value.split("%20").join(" ");;
-                        }
-
                         egSearchQuery[name] = value;
                     });
 
