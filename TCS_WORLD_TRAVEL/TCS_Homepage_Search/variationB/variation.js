@@ -149,11 +149,7 @@
                 waitForjQuery(function() {
                     var $ = window.jQuery;
 
-                    if (window.innerWidth < 951) {
-                        document.querySelector(".page__hero").insertAdjacentHTML("afterend", searchTrips)
-                    } else {
-                        document.querySelector('html body main article.homepage').insertAdjacentHTML('afterbegin', searchTrips);
-                    }
+                    document.querySelector(".page__hero").insertAdjacentHTML("afterend", searchTrips)
 
 
                     $('body').on('mousedown', '.eg-default-option', function() {

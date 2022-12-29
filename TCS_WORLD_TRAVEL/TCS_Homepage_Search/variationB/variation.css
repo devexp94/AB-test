@@ -184,11 +184,18 @@ html body .eg-language-option23 .eg-button a {
         flex-wrap: wrap;
         gap: 20px;
     }
+
+    .eg-search-trips {
+        position:static !important;
+        left:unset !important;
+        transform:unset !important;
+        top:unset !important;
+    }
 }
 
 @media screen and (max-width:950px) and (min-width:768px) {
     html body .eg-language-option23 .eg-dropdown {
-        width:200px !important;
+        width: 200px !important;
     }
 }
 
@@ -241,13 +248,13 @@ html body .eg-language-option23 .eg-button a {
 
 
 /*arrow*/
-.eg-dropdown .facet__toggle-icon > svg {
+.eg-dropdown .facet__toggle-icon>svg {
     width: 16px;
     height: 16px;
 }
 
-.eg-dropdown.eg-active .eg-arrow{
-    rotate:180deg;
+.eg-dropdown.eg-active .eg-arrow {
+    rotate: 180deg;
 }
 
 /*when selected*/
