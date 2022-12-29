@@ -101,9 +101,15 @@ html body .eg-language-option23 .eg-dropdown.eg-active .eg-dropdown-options {
     display: flex;
     align-items: center;
     font-weight: bold;
-    background: #008cab;
     font-size: 11px;
     white-space: nowrap;
+    pointer-events: none;
+    background: black;
+}
+
+#eg-all-selected:checked + .eg-button-link{
+    pointer-events: auto;
+    background: #008cab;
 }
 
 html body .eg-language-option23.eg-expedition .eg-dropdown .eg-dropdown-options {

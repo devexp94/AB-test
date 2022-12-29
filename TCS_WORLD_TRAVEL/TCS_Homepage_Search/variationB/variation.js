@@ -146,6 +146,7 @@
             '      </div>' +
             '      </div>' +
             '      <div class="eg-button">' +
+            '          <input type="checkbox" id="eg-all-selected" style="display:none;">' +
             '          <a class="btn btn-primary eg-button-link">Find A Trip</a>' +
             '      </div>' +
             '      </div>' +
@@ -156,6 +157,8 @@
 
 
         var destination, date, tripType;
+
+
 
         function init() {
             waitForElement("html body main article.homepage", function() {
@@ -169,8 +172,9 @@
                         }
                     });
 
-                    document.querySelector(".page__hero").insertAdjacentHTML("afterend", searchTrips)
+                    checkAllSelected();
 
+                    document.querySelector(".page__hero").insertAdjacentHTML("afterend", searchTrips);
 
                     $('body').on('mousedown', '.eg-default-option', function() {
                         $("body").find(".eg-active").not($(this).parent()).removeClass("eg-active");
@@ -203,6 +207,7 @@
                         if (document.querySelector(".eg-dates .eg-selected")) {
                             document.querySelector(".eg-dates .eg-default-option.facet__title").innerHTML = '' + date + ' <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">' + egArrow + '</span>';
                         }
+                        checkAllSelected();
 
                     });
 
@@ -213,6 +218,7 @@
                         }
                         $(this).addClass("eg-selected");
                         $(this).parents('.eg-destination').find('.eg-default-option.facet__title').html('' + destination + ' <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">' + egArrow + '</span>');
+                        checkAllSelected();
                     });
 
 
@@ -223,6 +229,7 @@
                         }
                         $(this).addClass("eg-selected");
                         $(this).parents('.eg-dates').find('.eg-default-option.facet__title').html('' + date + ' <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">' + egArrow + '</span>');
+                        checkAllSelected();
                     });
 
                     $('body').on('click', '.eg-button', function() {
@@ -233,6 +240,12 @@
             }, 50, 15000);
 
 
+        }
+
+        function checkAllSelected(){
+            if(destination && date && tripType){
+                document.querySelector("#eg-all-selected").checked = true;
+            }
         }
 
         /* Initialize variation */
