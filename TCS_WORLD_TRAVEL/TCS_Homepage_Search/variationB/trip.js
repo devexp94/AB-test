@@ -48,7 +48,8 @@
         /* Variation Init */
         function init() {
             /* start your code here */
-            waitForjQuery(function() {
+            document.addEventListener("DOMContentLoaded", function() {
+                waitForjQuery(function() {
                     var $ = window.jQuery;
                     let tripType, destination, date;
                     let egQueryParams = window.location.href.split("?").pop().split("&");
@@ -70,7 +71,7 @@
                     date = egSearchQuery["date"];
                     destination = egSearchQuery["destination"];
                     let egTripTypeEl, egDesEl, egDateEl;
-                    waitForElement('#trip_filter_bar form fieldset:nth-of-type(1) > div > div >div:nth-of-type(3) label[class*="trip-type"]', function() {
+                    waitForElement('#trip_filter_bar form fieldset:nth-of-type(1) > div > div >div:nth-of-type(3) label', function() {
                         egTripTypeEl = $(document).find(`label:contains('${tripType}')`)[0];
                         waitForElement("#trip_filter_bar form fieldset:nth-of-type(3) > div > div >div label", function() {
                             egDesEl = $(document).find(`label:contains('${destination}')`)[0];
@@ -94,6 +95,7 @@
 
 
                 });
+            });
 
 
         }
