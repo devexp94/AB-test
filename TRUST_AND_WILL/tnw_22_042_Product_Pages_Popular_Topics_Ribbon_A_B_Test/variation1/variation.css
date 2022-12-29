@@ -21,10 +21,24 @@
     margin-right: 30px;
 }
 
+/************************** feedback *******/
+/* 
+.eg-left .eg-title{
+    color: #252429;
+    font-family: 'Frank Ruhl Libre';
+    font-size: 44px;
+  line-height: 1;
+}
+ */
 
 .eg-left .eg-title{
-    color: #343536;
+    color: #252429;
+    font-family: 'Frank Ruhl Libre';
+    font-size: 16px;
 }
+
+/************************** feedback end *******/
+
 
 .eg-title {
     font-weight: 800;
@@ -102,4 +116,3 @@ html body #__layout main>section:nth-child(3)>div {
         margin-right: 0;
     }
 }
-  
