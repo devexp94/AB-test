@@ -172,7 +172,6 @@
                         }
                     });
 
-                    checkAllSelected();
 
                     document.querySelector(".page__hero").insertAdjacentHTML("afterend", searchTrips);
 
@@ -193,21 +192,32 @@
                         if (tripType.toUpperCase() == "PRIVATE CUSTOM TRAVEL") {
                             if (document.querySelector(".eg-months .eg-selected")) {
                                 date = document.querySelector(".eg-months .eg-selected").innerText;
+                            } else {
+                                date = null;
                             }
 
                             document.querySelector(".eg-months").style.cssText = "display:flex !important";
                         } else {
                             if (document.querySelector(".eg-years .eg-selected")) {
                                 date = document.querySelector(".eg-years .eg-selected").innerText;
+                            } else {
+                                date = null;
                             }
 
                             document.querySelector(".eg-months").style.cssText = "display:none !important";
                         }
+                        checkAllSelected();
+
 
                         if (document.querySelector(".eg-dates .eg-selected")) {
-                            document.querySelector(".eg-dates .eg-default-option.facet__title").innerHTML = '' + date + ' <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">' + egArrow + '</span>';
+                            if (date !== null) {
+                                document.querySelector(".eg-dates .eg-default-option.facet__title").innerHTML = '' + date + ' <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">' + egArrow + '</span>';
+                            } else {
+                                document.querySelector(".eg-dates .eg-default-option.facet__title").innerHTML = '' + "When do you want to go ?" + ' <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">' + egArrow + '</span>';                                
+                            }
+                            
                         }
-                        checkAllSelected();
+
 
                     });
 
@@ -242,9 +252,11 @@
 
         }
 
-        function checkAllSelected(){
-            if(destination && date && tripType){
+        function checkAllSelected() {
+            if (destination && date && tripType) {
                 document.querySelector("#eg-all-selected").checked = true;
+            } else {
+                document.querySelector("#eg-all-selected").checked = false;
             }
         }
 
