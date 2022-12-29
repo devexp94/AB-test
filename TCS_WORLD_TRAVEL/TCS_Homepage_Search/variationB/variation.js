@@ -78,9 +78,6 @@
             live(selector, event, callback, context);
         }
 
-        live('body *', 'click', function() {
-            console.log(this.classList);
-        });
 
         let egArrow = `<svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
 
@@ -151,6 +148,13 @@
                 waitForjQuery(function() {
                     var $ = window.jQuery;
 
+
+                    live('body *', 'click', function() {
+                        if (!this.classList.contains("eg-default-option")) {
+                            $("body").find(".eg-active").removeClass("eg-active");
+                        }
+                    });
+
                     document.querySelector(".page__hero").insertAdjacentHTML("afterend", searchTrips)
 
 
@@ -165,24 +169,21 @@
                         $(this).parents('.eg-trip-type').find('.eg-selected').removeClass("eg-selected");
                         $(this).addClass("eg-selected");
                         $(this).parents('.eg-trip-type').find('.eg-default-option.facet__title').html('' + tripType + ' <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">' + egArrow + '</span>');
-                        $('.eg-dropdown').removeClass('eg-active');
                     });
 
                     $('body').on('click', '.eg-destination span.eg-dropdown-item', function() {
                         destination = $(this).text();
-                        $(this).parents('.eg-trip-type').find('.eg-selected').removeClass("eg-selected");
+                        $(this).parents('.eg-destination').find('.eg-selected').removeClass("eg-selected");
                         $(this).addClass("eg-selected");
                         $(this).parents('.eg-destination').find('.eg-default-option.facet__title').html('' + destination + ' <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">' + egArrow + '</span>');
-                        $('.eg-dropdown').removeClass('eg-active');
                     });
 
 
                     $('body').on('click', '.eg-dates span.eg-dropdown-item', function() {
                         date = $(this).text();
-                        $(this).parents('.eg-trip-type').find('.eg-selected').removeClass("eg-selected");
+                        $(this).parents('.eg-dates').find('.eg-selected').removeClass("eg-selected");
                         $(this).addClass("eg-selected");
                         $(this).parents('.eg-dates').find('.eg-default-option.facet__title').html('' + date + ' <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">' + egArrow + '</span>');
-                        $('.eg-dropdown').removeClass('eg-active');
                     });
 
                     $('body').on('click', '.eg-button', function() {
