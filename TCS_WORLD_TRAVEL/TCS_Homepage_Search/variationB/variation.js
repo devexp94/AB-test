@@ -123,10 +123,24 @@
             '          <div class="eg-dropdown">' +
             '              <p class="eg-label">Dates</p>' +
             '              <span class="eg-default-option facet__title">When do you want to go ? <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">' + egArrow + '</span></span>' +
-            '              <div class="eg-dropdown-options">' +
+            '              <div class="eg-dropdown-options eg-years">' +
             '                  <span class="eg-dropdown-item" data-year="2022">2022</span>' +
             '                  <span class="eg-dropdown-item" data-year="2023">2023</span>' +
             '                  <span class="eg-dropdown-item" data-year="2024">2024</span>' +
+            '              </div>' +
+            '              <div class="eg-dropdown-options eg-months">' +
+            '                  <span class="eg-dropdown-item" data-month="January">January</span>' +
+            '                  <span class="eg-dropdown-item" data-month="February">February</span>' +
+            '                  <span class="eg-dropdown-item" data-month="March">March</span>' +
+            '                  <span class="eg-dropdown-item" data-month="April">April</span>' +
+            '                  <span class="eg-dropdown-item" data-month="May">May</span>' +
+            '                  <span class="eg-dropdown-item" data-month="June">June</span>' +
+            '                  <span class="eg-dropdown-item" data-month="July">July</span>' +
+            '                  <span class="eg-dropdown-item" data-month="August">August</span>' +
+            '                  <span class="eg-dropdown-item" data-month="September">September</span>' +
+            '                  <span class="eg-dropdown-item" data-month="October">October</span>' +
+            '                  <span class="eg-dropdown-item" data-month="November">November</span>' +
+            '                  <span class="eg-dropdown-item" data-month="December">December</span>' +
             '              </div>' +
             '          </div>' +
             '      </div>' +
@@ -166,14 +180,37 @@
 
                     $('body').on('click', '.eg-trip-type span.eg-dropdown-item', function() {
                         tripType = $(this).text();
-                        $(this).parents('.eg-trip-type').find('.eg-selected').removeClass("eg-selected");
+                        if (this.parentElement.querySelector(".eg-selected")) {
+                            this.parentElement.querySelector(".eg-selected").classList.remove("eg-selected");
+                        }
+
                         $(this).addClass("eg-selected");
                         $(this).parents('.eg-trip-type').find('.eg-default-option.facet__title').html('' + tripType + ' <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">' + egArrow + '</span>');
+                        if (tripType.toUpperCase() == "PRIVATE CUSTOM TRAVEL") {
+                            if (document.querySelector(".eg-months .eg-selected")) {
+                                date = document.querySelector(".eg-months .eg-selected").innerText;
+                            }
+
+                            document.querySelector(".eg-months").style.cssText = "display:flex !important";
+                        } else {
+                            if (document.querySelector(".eg-years .eg-selected")) {
+                                date = document.querySelector(".eg-years .eg-selected").innerText;
+                            }
+
+                            document.querySelector(".eg-months").style.cssText = "display:none !important";
+                        }
+
+                        if (document.querySelector(".eg-dates .eg-selected")) {
+                            document.querySelector(".eg-dates .eg-default-option.facet__title").innerHTML = '' + date + ' <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">' + egArrow + '</span>';
+                        }
+
                     });
 
                     $('body').on('click', '.eg-destination span.eg-dropdown-item', function() {
                         destination = $(this).text();
-                        $(this).parents('.eg-destination').find('.eg-selected').removeClass("eg-selected");
+                        if (this.parentElement.querySelector(".eg-selected")) {
+                            this.parentElement.querySelector(".eg-selected").classList.remove("eg-selected");
+                        }
                         $(this).addClass("eg-selected");
                         $(this).parents('.eg-destination').find('.eg-default-option.facet__title').html('' + destination + ' <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">' + egArrow + '</span>');
                     });
@@ -181,7 +218,9 @@
 
                     $('body').on('click', '.eg-dates span.eg-dropdown-item', function() {
                         date = $(this).text();
-                        $(this).parents('.eg-dates').find('.eg-selected').removeClass("eg-selected");
+                        if (this.parentElement.querySelector(".eg-selected")) {
+                            this.parentElement.querySelector(".eg-selected").classList.remove("eg-selected");
+                        }
                         $(this).addClass("eg-selected");
                         $(this).parents('.eg-dates').find('.eg-default-option.facet__title').html('' + date + ' <span aria-hidden="true" class="facet__toggle-icon icon chevron-down eg-arrow">' + egArrow + '</span>');
                     });

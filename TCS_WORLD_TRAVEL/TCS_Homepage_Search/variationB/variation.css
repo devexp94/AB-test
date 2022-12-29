@@ -262,3 +262,7 @@ html body .eg-language-option23 .eg-button a {
     background: #0a1d27 !important;
     color: white !important;
 }
+
+.eg-dates .eg-dropdown-options:nth-of-type(2) {
+    display: none !important;
+}
