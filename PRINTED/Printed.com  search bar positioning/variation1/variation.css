@@ -9,10 +9,6 @@
         z-index: 9999;
     }
 
-    #v-header>div>div.l-header--desktop>div:nth-child(3) {
-        padding-top: 83px;
-    }
-
     .eg-moved {
         width: 100%;
     }
