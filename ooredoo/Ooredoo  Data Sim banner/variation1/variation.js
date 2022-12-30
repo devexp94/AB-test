@@ -44,7 +44,7 @@
         }
 
         /* Initialize variation */
-        waitForElement('#why-ooredoo .slick-track > .slick-slide:nth-child(2) img:nth-of-type(2)', init, 2000, 15000);
+        waitForElement('#why-ooredoo .slick-track > .slick-slide:nth-child(2) img:nth-of-type(2)', init, 5000, 15000);
     } catch (e) {
         if (debug) console.log(e, "error in Test" + variation_name);
     }
