@@ -32,7 +32,7 @@
           let egTrustLogosDiv = '<div class="eg-trust-title"><h2>Trusted By Companies Worldwide For Over 35 Years</h2></div><div class="eg-trust-logos">';
 
           // looping to add images to their parent div
-          ["https://www.altium.com/sites/default/files/media_icon/2022-01/ArduinoLogo_%C2%AE.svg",
+        let egTrustLogos =  ["https://www.altium.com/sites/default/files/media_icon/2022-01/ArduinoLogo_%C2%AE.svg",
               "https://www.altium.com/sites/default/files/media_icon/2021-07/bae_color.svg",
               "https://www.altium.com/sites/default/files/media_icon/2021-07/leicamicrosystems_color.svg",
               "https://www.altium.com/sites/default/files/media_icon/2021-07/microsoft_color.svg",
@@ -40,7 +40,8 @@
               "https://www.altium.com/sites/default/files/media_icon/2021-07/amazon_color.svg",
               "https://www.altium.com/sites/default/files/media_icon/2021-07/facebook_color.svg",
               "https://www.altium.com/sites/default/files/media_icon/2021-07/dell_color.svg"
-          ].forEach(link=>{
+          ]
+          egTrustLogos.forEach(link=>{
               egTrustLogosDiv += '<div><img src="' + link + '" class="logo"></div>';
           });
 
