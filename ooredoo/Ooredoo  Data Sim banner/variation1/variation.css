@@ -1,0 +1,7 @@
+html body .ooredoo-homepage-wrappeer .slick-dots li.slick-active button {
+    background-color: #751013 !important;
+}
+
+html body .slick-dots li button{
+    background-color: hsl(143deg 20% 30%)!important;
+}
