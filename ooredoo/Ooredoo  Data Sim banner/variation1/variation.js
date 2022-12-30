@@ -30,13 +30,16 @@
       if (window.location.href.indexOf("https://www.ooredoo.qa/web/en/") != -1) {
 
       document.querySelector("#slick-slide01 > div img").src = "https://www.ooredoo.qa/web/wp-content/uploads/2022/12/HomepageWE.png"
-
-      document.querySelector(".ooredoo-carousel__item:nth-child(2) .ooredoo-carousel__img img.d-lg-none").src = "https://www.ooredoo.qa/web/wp-content/uploads/2022/12/HomepageME.png"
+      if(window.innerWidth < 767){
+        document.querySelector(".ooredoo-carousel__item:nth-child(2) .ooredoo-carousel__img img.d-lg-none").src = "https://www.ooredoo.qa/web/wp-content/uploads/2022/12/HomepageME.png"
+      }
       }
       else if (window.location.href.indexOf("https://www.ooredoo.qa/web/ar/") != -1) {
         document.querySelector("#slick-slide01 > div img").src = "https://www.ooredoo.qa/web/wp-content/uploads/2022/12/HomepageWA.png";
 
-        document.querySelector(".ooredoo-carousel__item:nth-child(2) .ooredoo-carousel__img img.d-lg-none").src = "https://www.ooredoo.qa/web/wp-content/uploads/2022/12/HomepageMA.png"
+        if(window.innerWidth < 767){
+          document.querySelector(".ooredoo-carousel__item:nth-child(2) .ooredoo-carousel__img img.d-lg-none").src = "https://www.ooredoo.qa/web/wp-content/uploads/2022/12/HomepageMA.png"
+        }
       }
      
     }
