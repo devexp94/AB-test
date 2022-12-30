@@ -2,14 +2,15 @@
 .eg-trust-logos {
 	background: hsl(0deg 0% 100%);
 	display: flex;
-	margin-block: 30px;
+	margin-top: 30px;
+    margin-top: 48px;
 	flex-wrap: wrap;
 	width: 100%;
 	max-width: 1024px;
 	margin-inline: auto;
 	justify-content: center;
 	gap: 15px;
-	padding-block: 15px;
+	padding: 15px;
 }
 
 .eg-trust-title h2 {
