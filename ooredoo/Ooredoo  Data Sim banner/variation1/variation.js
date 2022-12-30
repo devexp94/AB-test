@@ -33,7 +33,7 @@
 
       document.querySelector(".ooredoo-carousel__item:nth-child(2) .ooredoo-carousel__img img.d-lg-none").src = "https://www.ooredoo.qa/web/wp-content/uploads/2022/12/HomepageME.png"
       }
-      else if (window.location.href.indexOf("https://www.ooredoo.qa/web/ar/postpaid-plans/5g-data-sim/") != -1) {
+      else if (window.location.href.indexOf("https://www.ooredoo.qa/web/ar/") != -1) {
         document.querySelector("#slick-slide01 > div img").src = "https://www.ooredoo.qa/web/wp-content/uploads/2022/12/HomepageWA.png";
 
         document.querySelector(".ooredoo-carousel__item:nth-child(2) .ooredoo-carousel__img img.d-lg-none").src = "https://www.ooredoo.qa/web/wp-content/uploads/2022/12/HomepageMA.png"
@@ -42,7 +42,7 @@
     }
 
     /* Initialize variation */
-    waitForElement('div.CMS-postpaid-selectplans > header div.slick-list.draggable > div > div.slick-slide.slick-current div.cms-home-hero-banner-desk > img', init, 50, 15000);
+    waitForElement('body', init, 50, 15000);
   } catch (e) {
     if (debug) console.log(e, "error in Test" + variation_name);
   }
