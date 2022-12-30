@@ -1,6 +1,6 @@
 /* logos css start */
 .eg-trust-logos {
-	background: hsl(0deg 0% 100%);
+	background: #000;
 	display: flex;
 	margin-top: 30px;
     margin-bottom: 48px;
@@ -37,6 +37,11 @@
 .eg-trust-logos>div>img.logo:hover {
     filter: invert(0) grayscale(0) !important;
     opacity: 1 !important;
+}
+
+div.eg-trust-logos > div:nth-child(6) > img.logo:hover {
+    filter: invert(1) !important;
+   opacity: 1 !important;
 }
 
 /* setting up some logos */
