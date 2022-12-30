@@ -1,0 +1,64 @@
+/* logos css start */
+.eg-trust-logos {
+	background: hsl(0deg 0% 100%);
+	display: flex;
+	margin-block: 30px;
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: 1024px;
+	margin-inline: auto;
+	justify-content: center;
+	gap: 15px;
+	padding-block: 15px;
+}
+
+.eg-trust-title h2 {
+    font-size: 25px !important;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.eg-trust-logos>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.eg-trust-logos>div>img.logo {
+    display: block;
+    object-fit: contain;
+    filter: invert(50%) grayscale(100%);
+    width: 90px;
+    height: 48px;
+}
+
+.eg-trust-logos>div>img.logo:hover {
+    filter: invert(0) grayscale(0) !important;
+    opacity: 1 !important;
+}
+
+/* setting up some logos */
+
+/* .eg-trust-logos>div:nth-child(6)>img {
+    object-position: 50% 82%;
+} */
+
+@media(max-width:767px) {
+    .eg-trust-logos>div {
+        min-width: 50px;
+        max-width: 70px;
+        padding: 0 4px;
+    }
+
+	.eg-trust-title h2 {
+    font-size: 20px !important;
+}
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+	.eg-trust-logos>div>img.logo{
+		height: 40px !important;
+	}
+}
