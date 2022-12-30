@@ -27,7 +27,8 @@
       /* Variation functions */
       function init() {
           // write your js here(function can be outside)
-          
+
+          // all logos src links serial wise
           let egTrustLogosDiv = '<div class="eg-trust-title"><h2>Trusted By Companies Worldwide For Over 35 Years</h2></div><div class="eg-trust-logos">';
 
           // looping to add images to their parent div
@@ -39,7 +40,7 @@
               "https://www.altium.com/sites/default/files/media_icon/2021-07/amazon_color.svg",
               "https://www.altium.com/sites/default/files/media_icon/2021-07/facebook_color.svg",
               "https://www.altium.com/sites/default/files/media_icon/2021-07/dell_color.svg"
-          ].forEach(link => {
+          ].forEach(link=>{
               egTrustLogosDiv += '<div><img src="' + link + '" class="logo"></div>';
           });
 
