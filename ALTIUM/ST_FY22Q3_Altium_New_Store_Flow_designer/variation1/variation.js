@@ -59,16 +59,22 @@
 
         let egHref = "https://store.altium.com/flowmanager/flow/start?ProductId=ADP&TrackingId=DSSFRONT.V3";
 
-        live('a', 'click', function() {
-            if (this.innerText.toUpperCase() == "BUY NOW") {
-                if (this.classList[0].indexOf("header") == -1) {
-                    this.href = egHref;
-                }
-            }
-        });
+        function init(){
+            document.querySelector(".s-ad-video__buy a:first-of-type").href = egHref;
+            waitForElement('.b-btns-control div:first-of-type a',function(){
+                document.querySelectorAll(".b-btns-control div:first-of-type a").forEach(anchor=>{
+                    anchor.href = egHref;
+                });
+                waitForElement(".s-upgrade .am-container > div:nth-of-type(1) a",function(){
+                    document.querySelectorAll(".s-upgrade .am-container > div:nth-of-type(1) a").forEach(anchor=>{
+                        anchor.href = egHref;
+                    });
+                },50,15000);
+            }, 50, 15000);
+        }
 
         /* Initialize variation */
-        waitForElement('body', init, 50, 15000);
+        waitForElement('.s-ad-video__buy a:first-of-type', init, 50, 15000);
     } catch (e) {
         if (debug) console.log(e, "error in Test" + variation_name);
     }
