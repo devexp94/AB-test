@@ -88,10 +88,15 @@
     .eg-per-page>strong {
         font-size: 12px;
     }
+
+    .eg-per-page {
+        margin-top: -10px;
+    }
 }
 
 
 @media(max-width: 767px) {
+
     .eg-pricing {
         max-width: 70px;
         height: 70px;
@@ -103,6 +108,7 @@
     .eg-per-page {
         padding-inline: 6px;
         padding-block: 1px;
+        margin-top: -5px;
     }
 
     .eg-per-page>strong {
@@ -115,5 +121,11 @@
 
     .eg-pricing::before {
         box-shadow: 0 0 50px rgb(41 44 131 / 80%);
+    }
+}
+
+@media(min-width:1200px) {
+    .eg-per-page {
+        margin-top: -17px;
     }
 }
