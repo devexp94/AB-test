@@ -29,29 +29,29 @@
             console.log('hW A003 started');
 
             // add thumbnails
-            var thbs = document.querySelector('.product__hero-carousel-thumbs')
+            var thbs = document.querySelector('.product__hero-carousel-thumbs > div:nth-of-type(3)')
             var feat = document.createElement('div');
             feat.classList.add('product__hero-thumb', 'mb1', 'pr');
             feat.id = 'thbfeat';
             feat.innerHTML = '<button aria-label="Select image slide" class="image pa x y top left"><picture><img src="https://expogrowth.in/wp-content/uploads/2023/01/PDP-Carousel-Frame-4.jpg"></picture></button>';
-            thbs.appendChild(feat);
+            thbs.insertAdjacentElement("afterend",feat);
 
             // add dots
-            var dots = document.querySelector('.product__hero-dots')
+            var dots = document.querySelector('.product__hero-dots > button:nth-of-type(3)')
             var featd = document.createElement('button');
             featd.classList.add('product__hero-dot');
             featd.setAttribute('aria-label', 'Select image slide');
             featd.id = 'dotfeat';
-            dots.appendChild(featd);
+            dots.insertAdjacentElement("afterend",featd)
 
             // add carousel images
-            var cars = document.querySelector('.embla__container')
+            var cars = document.querySelector('.embla__container > div:nth-of-type(3)')
             var feati = document.createElement('div');
             feati.classList.add('embla__slide');
             feati.id = 'feati';
             feati.setAttribute('style', 'flex:0 0 100%;height:100%;width:100%;position:relative;');
             feati.innerHTML = '<div class="image pa x y top left"><picture><source srcset="https://expogrowth.in/wp-content/uploads/2023/01/PDP-Carousel-Frame-4.jpg" media="(min-width: 1000px)"><source srcset="https://expogrowth.in/wp-content/uploads/2023/01/PDP-Carousel-Frame-4.jpg" media="(min-width: 600px)"><img src="https://expogrowth.in/wp-content/uploads/2023/01/PDP-Carousel-Frame-4.jpg"></picture></div>';
-            cars.appendChild(feati);
+            cars.insertAdjacentElement("afterend",feati);
 
             // select slide
             document.addEventListener('click', function(event) {
@@ -117,8 +117,8 @@
         }
 
         if (window.location.href.indexOf("https://www.vacation.inc/products/scent") != -1) {
-            waitForElement(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) button[title=toggle] >div", function() {
-                document.querySelector(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) button[title=toggle] >div").innerText += ' * FREE Air Freshener With Purchase!*';
+            waitForElement(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) ul", function() {
+                document.querySelector(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) ul").insertAdjacentHTML("beforeend",`<li><em>FREE Air Freshener With Purchase!<em></li>`)
             }, 50, 15000);
 
             /* Initialize variation */
