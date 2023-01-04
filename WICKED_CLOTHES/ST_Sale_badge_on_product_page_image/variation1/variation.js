@@ -40,6 +40,12 @@
                     </div>`;
 
                 document.querySelector("html body #pdp--main-image").insertAdjacentHTML("beforeend", egSaleBadge);
+
+                // if there is slick slider waiting for it and
+                // moving our element just after it
+                waitForElement("#pdp--main-image > button.slick-next",function(){
+                    document.querySelector("#pdp--main-image > button.slick-next").insertAdjacentElement("afterend", document.querySelector(".eg-sale-badge"));
+                },50,15000);
             }
 
 
