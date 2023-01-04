@@ -1,0 +1,36 @@
+span.egText {
+    font-size: 14px;
+    padding-left: 1px;
+    text-align: center;
+    color: #D0360D;
+    font-family: FuturaPT;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: normal;
+    margin-top: auto;
+    width: 100%;
+}
+
+#pdp #pdp--details #pdp--title p{
+    width: 40.1809% !important;
+}
+
+@media screen and (max-width: 767px) {
+    .pdp--header .title-price h1{
+        max-width: 195px !important;
+    }
+    span.egText{
+        padding-left: 5px !important;
+        line-height: 21px;
+    }
+
+    .pdp--header {
+        padding: 0 15px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .pdp--header .title-price p {
+        width: 25% !important;
+    }
+}

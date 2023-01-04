@@ -77,6 +77,10 @@ html body #__layout main>section:nth-child(3)>div {
     .eg-left{
         margin-left: 15px;
     }
+    .eg-section{
+        padding-left: 0 !important;
+    }
+
 }
 
 @media(max-width:767px) {
