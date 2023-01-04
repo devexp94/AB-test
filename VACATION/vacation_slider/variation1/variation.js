@@ -22,6 +22,36 @@
             }, delayTimeout);
         }
 
+        function listener() {
+            /* These are the modifications: */
+            window.addEventListener("locationchange", function() {
+                if ((window.location.href.indexOf("https://www.vacation.inc/products/scent") != -1) && !document.querySelector(".eg-sld")) {
+                    waitForElement(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) ul", function() {
+                        document.querySelector(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) ul").insertAdjacentHTML("beforeend", `<li><em>FREE Air Freshener With Purchase!<em></li>`)
+                    }, 50, 15000);
+
+                    /* Initialize variation */
+                    waitForElement('.embla__container', init, 50, 15000);
+                }
+            });
+            history.pushState = ((f) =>
+                function pushState() {
+                    var ret = f.apply(this, arguments);
+                    window.dispatchEvent(new Event("pushstate"));
+                    window.dispatchEvent(new Event("locationchange"));
+                    return ret;
+                })(history.pushState);
+            history.replaceState = ((f) =>
+                function replaceState() {
+                    var ret = f.apply(this, arguments);
+                    window.dispatchEvent(new Event("replacestate"));
+                    window.dispatchEvent(new Event("locationchange"));
+                    return ret;
+                })(history.replaceState);
+            window.addEventListener("popstate", () => {
+                window.dispatchEvent(new Event("locationchange"));
+            });
+        }
 
         /* Variation Init */
         function init() {
@@ -31,27 +61,50 @@
             // add thumbnails
             var thbs = document.querySelector('.product__hero-carousel-thumbs > div:nth-of-type(3)')
             var feat = document.createElement('div');
-            feat.classList.add('product__hero-thumb', 'mb1', 'pr');
+            feat.classList.add('product__hero-thumb', 'mb1', 'pr',"eg-sld");
             feat.id = 'thbfeat';
             feat.innerHTML = '<button aria-label="Select image slide" class="image pa x y top left"><picture><img src="https://expogrowth.in/wp-content/uploads/2023/01/PDP-Carousel-Frame-4.jpg"></picture></button>';
-            thbs.insertAdjacentElement("afterend",feat);
+
 
             // add dots
             var dots = document.querySelector('.product__hero-dots > button:nth-of-type(3)')
             var featd = document.createElement('button');
-            featd.classList.add('product__hero-dot');
+            featd.classList.add('product__hero-dot',"eg-sld");
             featd.setAttribute('aria-label', 'Select image slide');
             featd.id = 'dotfeat';
-            dots.insertAdjacentElement("afterend",featd)
 
-            // add carousel images
+
+            // add carousel image
             var cars = document.querySelector('.embla__container > div:nth-of-type(3)')
             var feati = document.createElement('div');
-            feati.classList.add('embla__slide');
+            feati.classList.add('embla__slide',"eg-sld");
             feati.id = 'feati';
             feati.setAttribute('style', 'flex:0 0 100%;height:100%;width:100%;position:relative;');
             feati.innerHTML = '<div class="image pa x y top left"><picture><source srcset="https://expogrowth.in/wp-content/uploads/2023/01/PDP-Carousel-Frame-4.jpg" media="(min-width: 1000px)"><source srcset="https://expogrowth.in/wp-content/uploads/2023/01/PDP-Carousel-Frame-4.jpg" media="(min-width: 600px)"><img src="https://expogrowth.in/wp-content/uploads/2023/01/PDP-Carousel-Frame-4.jpg"></picture></div>';
-            cars.insertAdjacentElement("afterend",feati);
+
+
+            if (window.innerWidth < 800) {
+                // add thumbnail
+                thbs = document.querySelector('.product__hero-carousel-thumbs');
+                thbs.insertAdjacentElement("beforeend", feat);
+
+                // add dots
+                dots = document.querySelector('.product__hero-dots');
+                dots.insertAdjacentElement("beforeend", featd);
+
+                // add carousel image
+                cars = document.querySelector('.embla__container');
+                cars.insertAdjacentElement("beforeend", feati);
+            } else {
+                // add thumbnail
+                thbs.insertAdjacentElement("afterend", feat);
+
+                // add dot
+                dots.insertAdjacentElement("afterend", featd)
+
+                // add carousel image
+                cars.insertAdjacentElement("afterend", feati);
+            }
 
             // select slide
             document.addEventListener('click', function(event) {
@@ -118,12 +171,13 @@
 
         if (window.location.href.indexOf("https://www.vacation.inc/products/scent") != -1) {
             waitForElement(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) ul", function() {
-                document.querySelector(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) ul").insertAdjacentHTML("beforeend",`<li><em>FREE Air Freshener With Purchase!<em></li>`)
+                document.querySelector(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) ul").insertAdjacentHTML("beforeend", `<li><em>FREE Air Freshener With Purchase!<em></li>`)
             }, 50, 15000);
 
             /* Initialize variation */
             waitForElement('.embla__container', init, 50, 15000);
         }
+        listener();
     } catch (e) {
         if (debug) console.log(e, "error in Test" + variation_name);
     }
