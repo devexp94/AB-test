@@ -122,14 +122,14 @@
                         //     document.querySelector(".egActive").classList.remove("egActive");
                         // }
                         e.stopImmediatePropagation();
-                        this.classList.add("egActive");
+                        this.classList.toggle("egActive");
                         // return false;
                         document.querySelector(".navigator .navigator-content a[data-label='continue']").classList.remove("egCss")
                     }
 
                 });
             } else {
-                live(".content-center .pagination + div div.leading-tight > div", "click", function() {
+                live(".content-center .pagination + div div.leading-tight > div:not(.mk-outer-div)", "click", function() {
                     if (document.querySelector(".egActive")) {
                         document.querySelector(".egActive").classList.remove("egActive");
                     }
