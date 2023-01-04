@@ -193,8 +193,8 @@
             /* start your code here */
             //=====for all devices====+
             // inserting tab content
-            const egContactContent = document.querySelector("#contact-content");
-            egContactContent.insertAdjacentHTML("afterbegin", egTabContent);
+            const egContactContent = document.querySelector("#GenericTab");
+            egContactContent.insertAdjacentHTML("beforebegin", egTabContent);
 
             //====desktop + tab only===+
             if (window.innerWidth > 759) {
