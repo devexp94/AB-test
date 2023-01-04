@@ -33,14 +33,8 @@
             var feat = document.createElement('div');
             feat.classList.add('product__hero-thumb', 'mb1', 'pr');
             feat.id = 'thbfeat';
-            feat.innerHTML = '<button aria-label="Select image slide" class="image pa x y top left"><picture><img src="https://drive.google.com/uc?id=1tVnAQw3SugYt8vXhAysTXBmRJc47A8MA"></picture></button>';
-            var bnft = document.createElement('div');
-            bnft.classList.add('product__hero-thumb', 'mb1', 'pr');
-            bnft.id = 'thbbnft';
-            bnft.innerHTML = '<button aria-label="Select image slide" class="image pa x y top left"><picture><img src="https://drive.google.com/uc?id=1Y7_5SS2Xlkmf2k3LVst7Qj88EHX9YYGj"></picture></button>';
-            
+            feat.innerHTML = '<button aria-label="Select image slide" class="image pa x y top left"><picture><img src="https://expogrowth.in/wp-content/uploads/2023/01/PDP-Carousel-Frame-4.jpg"></picture></button>';
             thbs.appendChild(feat);
-            thbs.appendChild(bnft);
 
             // add dots
             var dots = document.querySelector('.product__hero-dots')
@@ -48,13 +42,7 @@
             featd.classList.add('product__hero-dot');
             featd.setAttribute('aria-label', 'Select image slide');
             featd.id = 'dotfeat';
-            var bnftd = document.createElement('button');
-            bnftd.classList.add('product__hero-dot');
-            bnftd.setAttribute('aria-label', 'Select image slide');
-            bnftd.id = 'dotbnft';
-        
             dots.appendChild(featd);
-            dots.appendChild(bnftd);
 
             // add carousel images
             var cars = document.querySelector('.embla__container')
@@ -62,14 +50,8 @@
             feati.classList.add('embla__slide');
             feati.id = 'feati';
             feati.setAttribute('style', 'flex:0 0 100%;height:100%;width:100%;position:relative;');
-            feati.innerHTML = '<div class="image pa x y top left"><picture><source srcset="https://drive.google.com/uc?id=1tVnAQw3SugYt8vXhAysTXBmRJc47A8MA" media="(min-width: 1000px)"><source srcset="https://drive.google.com/uc?id=1tVnAQw3SugYt8vXhAysTXBmRJc47A8MA" media="(min-width: 600px)"><img src="https://drive.google.com/uc?id=1tVnAQw3SugYt8vXhAysTXBmRJc47A8MA"></picture></div>';
-            var bnfti = document.createElement('div');
-            bnfti.classList.add('embla__slide');
-            bnfti.id = 'bnfti';
-            bnfti.setAttribute('style', 'flex:0 0 100%;height:100%;width:100%;position:relative;');
-            bnfti.innerHTML = '<div class="image pa x y top left"><picture><source srcset="https://drive.google.com/uc?id=1Y7_5SS2Xlkmf2k3LVst7Qj88EHX9YYGj" media="(min-width: 1000px)"><source srcset="https://drive.google.com/uc?id=1Y7_5SS2Xlkmf2k3LVst7Qj88EHX9YYGj" media="(min-width: 600px)"><img src="https://drive.google.com/uc?id=1Y7_5SS2Xlkmf2k3LVst7Qj88EHX9YYGj"></picture></div>';
+            feati.innerHTML = '<div class="image pa x y top left"><picture><source srcset="https://expogrowth.in/wp-content/uploads/2023/01/PDP-Carousel-Frame-4.jpg" media="(min-width: 1000px)"><source srcset="https://expogrowth.in/wp-content/uploads/2023/01/PDP-Carousel-Frame-4.jpg" media="(min-width: 600px)"><img src="https://expogrowth.in/wp-content/uploads/2023/01/PDP-Carousel-Frame-4.jpg"></picture></div>';
             cars.appendChild(feati);
-            cars.appendChild(bnfti);
 
             // select slide
             document.addEventListener('click', function(event) {
@@ -108,9 +90,6 @@
                 } else if (event.target.matches('.product__hero-carousel-thumbs > .product__hero-thumb:nth-child(8) img, .product__hero-dots button:nth-child(8)')) {
                     var pos = '-' + wdt * 7 + 'px';
                     document.querySelector('.embla__container .embla__slide:nth-child(8)').classList.add('active');
-                } else if (event.target.matches('.product__hero-carousel-thumbs > .product__hero-thumb:nth-child(9) img, .product__hero-dots button:nth-child(9)')) {
-                    var pos = '-' + wdt * 8 + 'px';
-                    document.querySelector('.embla__container .embla__slide:nth-child(9)').classList.add('active');
                 }
                 // console.log(pos);
                 // animation needed
@@ -134,10 +113,17 @@
                 }
                 //console.log('done');
             }, false);
+
         }
 
-        /* Initialize variation */
-        waitForElement('.embla__container', init, 50, 15000);
+        if (window.location.href.indexOf("https://www.vacation.inc/products/scent") != -1) {
+            waitForElement(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) button[title=toggle] >div", function() {
+                document.querySelector(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) button[title=toggle] >div").innerText += ' * FREE Air Freshener With Purchase!*';
+            }, 50, 15000);
+
+            /* Initialize variation */
+            waitForElement('.embla__container', init, 50, 15000);
+        }
     } catch (e) {
         if (debug) console.log(e, "error in Test" + variation_name);
     }
