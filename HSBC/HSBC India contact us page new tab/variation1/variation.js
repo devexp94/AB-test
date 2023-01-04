@@ -207,7 +207,7 @@
         }
 
         /* Initialize variation */
-        waitForElement("#contact-content", init, 150, 15000);
+        waitForElement(`#contact-content`, init, 150, 15000);
     } catch (e) {
         if (debug) console.log(e, "error in Test" + variation_name);
     }
