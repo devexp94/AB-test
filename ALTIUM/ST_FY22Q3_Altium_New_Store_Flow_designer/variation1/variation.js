@@ -57,7 +57,7 @@
             live(selector, event, callback, context);
         }
 
-        let egHref = "https://store.altium.com/StepsNew/CheckRegion/index";
+        let egHref = "https://store.altium.com/flowmanager/flow/start?ProductId=ADP&TrackingId=DSSFRONT.V3";
 
         live('a', 'click', function() {
             if (this.innerText.toUpperCase() == "BUY NOW") {
