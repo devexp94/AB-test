@@ -44,7 +44,7 @@
     }
 
     /* Initialize variation */
-    waitForElement('#pdp--title > p > span.current_price', init, 50, 15000);
+    waitForElement('.price .was_price', init, 50, 15000);
   } catch (e) {
     if (debug) console.log(e, "error in Test" + variation_name);
   }
