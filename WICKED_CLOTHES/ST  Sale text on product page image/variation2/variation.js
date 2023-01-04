@@ -22,18 +22,29 @@
       }, delayTimeout);
     }
 
-    
+
     /* Variation Init */
     function init() {
       /* start your code here */
-      let egPrices = document.querySelectorAll("span.current_price")
-      for (const price of egPrices) {
-        price.insertAdjacentHTML("afterend", "<span class='egText'>(SAVE $64)</span>")        
+
+      let egCrrPrice = Math.floor(document.querySelector(".price .current_price").innerText.replace("$", ""));
+       let egWasPriceEle = document.querySelector(".price .was_price");
+
+       if (egWasPriceEle) {
+                let egWasPrice = Math.floor(document.querySelector(".price .was_price").innerText.replace("$", ""));
+                let egDiscount = Math.floor(Math.abs(egWasPrice - egCrrPrice));
+
+        const egDisc = `<span class="egText"> (SAVE &dollar;${egDiscount})</span>`;
+
+        let egPrices = document.querySelectorAll("span.current_price");
+        for (const price of egPrices) {
+          price.insertAdjacentHTML("afterend", egDisc)
+        }
       }
     }
 
     /* Initialize variation */
-    waitForElement('span.current_price', init, 50, 15000);
+    waitForElement('#pdp--title > p > span.current_price', init, 50, 15000);
   } catch (e) {
     if (debug) console.log(e, "error in Test" + variation_name);
   }
