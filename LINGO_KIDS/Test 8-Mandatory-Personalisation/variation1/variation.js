@@ -126,6 +126,9 @@
                         // return false;
                         document.querySelector(".navigator .navigator-content a[data-label='continue']").classList.remove("egCss")
                     }
+                        
+                        document.querySelector(".navigator .navigator-content a[data-label='continue']").classList.remove("egCss")
+                    
 
                 });
             } else {
