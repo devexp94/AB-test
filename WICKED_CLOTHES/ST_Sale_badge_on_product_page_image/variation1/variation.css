@@ -1,0 +1,32 @@
+.eg-sale-badge {
+    width: 0;
+    height: 0;
+    border-right: 100px solid #D0360D;
+    border-bottom: 100px solid transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    font-family: sans-serif;
+}
+
+.eg-sale-badge>p,
+.eg-sale-badge>strong {
+    white-space: nowrap;
+    width: 100px;
+    text-align: end;
+    display: block;
+    padding-right: 7px;
+    font-size: 14px;
+    margin-top:4px;
+}
+
+.eg-text {
+    margin-top: 7px !important;
+}
+
+@media(max-width:429px) {
+    .eg-sale-badge {
+        top: 10px;
+    }
+}
