@@ -1,6 +1,6 @@
 .eg-sale-badge {
-    width: 0;
-    height: 0;
+    width: 0 !important;
+    height: 0 !important;
     border-right: 100px solid #D0360D;
     border-bottom: 100px solid transparent;
     position: absolute;
