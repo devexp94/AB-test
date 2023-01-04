@@ -2,7 +2,9 @@
     background: #eef0f8;
     display: flex;
     justify-content: center;
-    padding: 40px 0 60px 0;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 5rem;
 }
 
 .eg-container {
@@ -12,41 +14,27 @@
 
 .eg-container>div {
     width: 100%;
-    /* margin: auto; */
+   
 }
 
 .eg-left {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin-right: 30px;
+    margin-left: 20px;
 }
 
-/************************** feedback *******/
-/* 
+
 .eg-left .eg-title{
     color: #252429;
     font-family: 'Frank Ruhl Libre';
     font-size: 44px;
   line-height: 1;
 }
- */
-
-.eg-left .eg-title{
-    color: #252429;
-    font-family: 'Frank Ruhl Libre';
-    font-size: 16px;
-}
-
-/************************** feedback end *******/
-
-
-.eg-title {
-    font-weight: 800;
-    font-size: 1.1rem;
-}
+ 
 
 .eg-left>.eg-content {
-    max-width: 302px;
+    max-width: 410px;
 }
 
 .eg-left>.eg-content>p+p {
@@ -84,7 +72,7 @@ html body #__layout main>section:nth-child(3)>div {
 .eg-section+section {
     margin-top: 0 !important;
 }
-
+  
 @media (min-width: 640px) and (max-width: 992px) {
     .eg-left{
         margin-left: 15px;
@@ -98,6 +86,20 @@ html body #__layout main>section:nth-child(3)>div {
 
     .eg-left>.eg-content {
         max-width: 100%;
+    }
+
+    .eg-left .eg-title{
+        font-size: 34px;
+    }
+
+    .eg-left{
+        margin-left: 0 !important;
+    }
+
+    .eg-section{
+        padding-left: 0 !important;
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
     }
   .eg-tag-link{
   font-size:14px; 
