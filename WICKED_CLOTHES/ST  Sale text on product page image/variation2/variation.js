@@ -34,7 +34,7 @@
                 let egWasPrice = Math.floor(document.querySelector(".price .was_price").innerText.replace("$", ""));
                 let egDiscount = Math.floor(Math.abs(egWasPrice - egCrrPrice));
 
-        const egDisc = `<span class="egText"> (SAVE $${egDiscount})</span>`;
+        const egDisc = `<span class="egText"> (SAVE &dollar;${egDiscount})</span>`;
 
         let egPrices = document.querySelectorAll("span.current_price");
         for (const price of egPrices) {
