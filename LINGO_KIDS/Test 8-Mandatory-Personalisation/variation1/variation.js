@@ -116,16 +116,15 @@
             if ((window.location.href.indexOf("https://app.lingokids.com/es/parents_area") != -1) || (window.location.href.indexOf("https://app.lingokids.com/parents_area") != -1) || (window.location.href.indexOf("https://app.lingokids.com/en/parents_area") != -1)) {
                 parentArea();
 
-                live(".mk-outer-div .mk-section-parentsArea", "click", function(e) {
-                    if (this.classList.contains("mk-section-parentsArea")) {
-                        // if (document.querySelector(".egActive")) {
-                        //     document.querySelector(".egActive").classList.remove("egActive");
-                        // }
-                        e.stopImmediatePropagation();
+                live(".mk-outer-div > div > div", "click", function() {
+                        // this.querySelector(".mk-section-parentsArea").classList.add("egActive");
                         this.classList.add("egActive");
-                        // return false;
-                        document.querySelector(".navigator .navigator-content a[data-label='continue']").classList.remove("egCss")
+                        if(document.querySelector(".mk-outer-div")){
+                            document.querySelector(".mk-outer-div").classList.remove("egActive")
                     }
+                        
+                        document.querySelector(".navigator .navigator-content a[data-label='continue']").classList.remove("egCss")
+                    
 
                 });
             } else {
