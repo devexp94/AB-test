@@ -1,0 +1,3 @@
+html body #__layout  .notice.alert.alert-warning {
+    display: none !important;
+}
