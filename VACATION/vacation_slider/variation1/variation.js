@@ -49,7 +49,15 @@
             window.addEventListener("locationchange", function() {
                 if ((window.location.href.indexOf("https://www.vacation.inc/products/scent") != -1) && !document.querySelector(".eg-sld")) {
                     waitForElement(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) ul", function() {
-                        document.querySelector(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) ul").insertAdjacentHTML("beforeend", `<li><em>FREE Air Freshener With Purchase!<em></li>`)
+                        if (!document.querySelector(".eg-right-txt")) {
+                            document.querySelector(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) ul").insertAdjacentHTML("beforeend", `<li class="eg-right-txt"><em>FREE Air Freshener With Purchase!<em></li>`);
+                            document.querySelector(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) > div > button[title='toggle']", "click", function() {
+                                if (!document.querySelector(".eg-right-txt")) {
+                                    document.querySelector(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) ul").insertAdjacentHTML("beforeend", `<li class="eg-right-txt"><em>FREE Air Freshener With Purchase!<em></li>`)
+                                }
+                            });
+                        }
+
                     }, 50, 15000);
 
                     /* Initialize variation */
@@ -141,7 +149,7 @@
             this.classList.add("active");
         });
 
-       
+
 
         /* Variation Init */
         function init() {
@@ -180,14 +188,13 @@
         if (window.location.href.indexOf("https://www.vacation.inc/products/scent") != -1) {
             waitForElement(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) ul", function() {
                 if (!document.querySelector(".eg-right-txt")) {
-                    document.querySelector(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) ul").insertAdjacentHTML("beforeend", `<li class="eg-right-txt"><em>FREE Air Freshener With Purchase!<em></li>`)
+                    document.querySelector(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) ul").insertAdjacentHTML("beforeend", `<li class="eg-right-txt"><em>FREE Air Freshener With Purchase!<em></li>`);
+                    document.querySelector(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) > div > button[title='toggle']", "click", function() {
+                        if (!document.querySelector(".eg-right-txt")) {
+                            document.querySelector(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) ul").insertAdjacentHTML("beforeend", `<li class="eg-right-txt"><em>FREE Air Freshener With Purchase!<em></li>`)
+                        }
+                    });
                 }
-
-                live(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) > div > button[title='toggle']", "click", function() {
-                    if (!document.querySelector(".eg-right-txt")) {
-                        document.querySelector(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) ul").insertAdjacentHTML("beforeend", `<li class="eg-right-txt"><em>FREE Air Freshener With Purchase!<em></li>`)
-                    }
-                });
 
             }, 50, 15000);
 
