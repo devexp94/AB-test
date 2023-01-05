@@ -37,7 +37,7 @@
        </div>
 
        <div class="eg_detail">
-           Secure SSL <br/> Encryption
+           Guaranteed Acceptance with <br/> 90+ Languages
        </div>
     </div>
 
@@ -47,7 +47,7 @@
        </div>
 
        <div class="eg_detail">
-           Secure SSL <br/> Encryption
+           Expert Translators Ready to <br/> Support You
        </div>
     </div>
 
@@ -57,7 +57,7 @@
        </div>
 
        <div class="eg_detail">
-           Secure SSL <br/> Encryption
+          Same Day Delivery Available
        </div>
     </div>
 
@@ -67,7 +67,7 @@
        </div>
 
        <div class="eg_detail">
-           Secure SSL <br/> Encryption
+           Secure & Safe Checkout
        </div>
     </div>
 

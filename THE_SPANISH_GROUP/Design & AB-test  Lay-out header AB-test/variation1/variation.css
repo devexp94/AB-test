@@ -138,13 +138,22 @@ button#nfnOrderBtn{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-block: 15px;
-    margin-bottom: -5%;
+    padding-top: 15px;
+    padding-bottom: 0;
+    margin-bottom: -3%;
 }
+
+/* .eg_icon {
+    display: flex;
+    align-items: center;
+} */
 
 .eg_icon {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
+    max-width: 115px !important;
 }
 
 .form_container_desktop {
@@ -200,6 +209,3 @@ section.template_banner div.form_container_desktop > div > div.nfn__languages > 
 }
 
 }
-
-/* <img src="https://img.icons8.com/material-sharp/192/1FB141/icons8-new-logo.png"/> */
-
