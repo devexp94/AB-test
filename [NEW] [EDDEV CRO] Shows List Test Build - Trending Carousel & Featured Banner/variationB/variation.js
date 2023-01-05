@@ -411,8 +411,11 @@ window.topSLide = `
   
           });
 
+          let egScroll = 30;
+
           document.querySelector('.eg-scroll-next').addEventListener('click', function(){
-            document.getElementById('html body .collections .alphabeth.primary-state').scrollLeft -= 20;
+            document.querySelector('html body .collections .alphabeth.primary-state').scrollLeft = egScroll;
+            egScroll += 30;
           })
       }
       //add trending data 
