@@ -51,7 +51,7 @@
                     waitForElement(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) ul", function() {
                         if (!document.querySelector(".eg-right-txt")) {
                             document.querySelector(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) ul").insertAdjacentHTML("beforeend", `<li class="eg-right-txt"><em>FREE Air Freshener With Purchase!<em></li>`);
-                            document.querySelector(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) > div > button[title='toggle']", "click", function() {
+                            live(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) > div > button[title='toggle']", "click", function() {
                                 if (!document.querySelector(".eg-right-txt")) {
                                     document.querySelector(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) ul").insertAdjacentHTML("beforeend", `<li class="eg-right-txt"><em>FREE Air Freshener With Purchase!<em></li>`)
                                 }
@@ -189,7 +189,7 @@
             waitForElement(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) ul", function() {
                 if (!document.querySelector(".eg-right-txt")) {
                     document.querySelector(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) ul").insertAdjacentHTML("beforeend", `<li class="eg-right-txt"><em>FREE Air Freshener With Purchase!<em></li>`);
-                    document.querySelector(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) > div > button[title='toggle']", "click", function() {
+                    live(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) > div > button[title='toggle']", "click", function() {
                         if (!document.querySelector(".eg-right-txt")) {
                             document.querySelector(".shopping-block-pusher >div:nth-child(2) > div:nth-child(1) ul").insertAdjacentHTML("beforeend", `<li class="eg-right-txt"><em>FREE Air Freshener With Purchase!<em></li>`)
                         }
