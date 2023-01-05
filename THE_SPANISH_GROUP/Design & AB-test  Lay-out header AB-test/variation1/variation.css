@@ -100,8 +100,8 @@ input#quantity {
 }
 
 html body .nfn__actions #quote button {
-    background: #eee !important;
-    color: #47acad !important;
+    color : #fff !important;
+    background: #47acad !important;
 }
 
 html body #nfnLanguageTo .nfn__options-title, html body #nfnLanguageFrom .nfn__options-title {
