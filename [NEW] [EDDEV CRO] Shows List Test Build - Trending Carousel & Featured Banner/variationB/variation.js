@@ -152,174 +152,174 @@ window.topSLide = `
 
 
 
-(function () {
+(function() {
     try {
-      /* main variables */
-      var debug = 0;
-      var variation_name = "";
-  
-      /* all Pure helper functions */
-      function waitForElement(selector, trigger, delayInterval, delayTimeout) {
-        var interval = setInterval(function () {
-          if (
-            document &&
-            document.querySelector(selector) &&
-            document.querySelectorAll(selector).length > 0 && window.topSLide
-          ) {
-            clearInterval(interval);
-            trigger();
-          }
-        }, delayInterval);
-        setTimeout(function () {
-          clearInterval(interval);
-        }, delayTimeout);
-      }
-  
-          //wait for swiper 
-    function waitForSwiper(trigger){
-      var interval = setInterval(function(){
-          if(typeof Swiper != "undefined"){
-            clearInterval(interval);
-            trigger();
-          }
-      }, 50);
-      setTimeout(function(){
-        clearInterval(interval);
-      }, 15000)
-  }
-  function getCookie(name) {
-      var nameEQ = name + "=";
-      var ca = document.cookie.split(';');
-      for(var i=0;i < ca.length;i++) {
-          var c = ca[i];
-          while (c.charAt(0)==' ') c = c.substring(1,c.length);
-          if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-      }
-      return null;
-  }
-  
-  function addScript() {
-    var cssScript=''+ 
-    '<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>'+
-    "<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'/>";
-    $('#head').append(cssScript);
-    var my_awesome_script = document.createElement('script');
-  
-  my_awesome_script.setAttribute('src','https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js');
-  
-  document.head.appendChild(my_awesome_script);
-    
-  }
-  var swipeDynamicData ;
-      var data = [
-        {
-            title:'Vera',
-            img:'https://us.britbox.com/shain/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=80&Width=405&Height=227&ImageUrl=201950.jpg&imageType=tile',
-            href:'/us/show/Vera_p053fylw',
-            moreinfo:'Show· 1 Season',
-            description: 'Based on the novels by Ann Cleeves, Brenda Blethyn stars as Vera, the brilliant but irascible investigator obsessed with her work and driven by her own demons. She faces each case with caustic wit and guile, investigating crimes only she can solve.',
-            datacolnumber: '1',
-            dataitemid:'13500',
-            fragment:'13098cb57d7',
-        },
-        {
-            title:'Death in Paradise',
-            img:'https://us.britbox.com/shain/v1/dataservice/ResizeImage/$value?Format=%27png%27&Quality=80&Width=405&Height=227&ImageUrl=211472.png&imageType=tile',
-            href:'/us/show/Death_in_Paradise_b01pvmf6',
-            moreinfo:'Show· 1 Season',
-            description: 'Welcome to the idyllic island of Saint Marie. With its beautiful tropical charm, you might mistake it for paradise...until you see its murder rate.',
-            datacolnumber: '2',
-            dataitemid:'24258',
-            fragment:'9308899c9a',
-        },  
-        {
-            title:'The Curse',
-            img:'https://static.bbus-static.com/shain/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=80&Width=405&Height=227&ImageUrl=338811.jpg&imageType=tile',
-            href:'/us/show/The_Curse_86657',
-            moreinfo:'Show· 1 Season',
-            description: 'In this retro crime caper inspired by true events, a gang of hopeless crooks gets accidentally embroiled in Britain\'s biggest gold heist.',
-            datacolnumber: '3',
-            dataitemid:'44212',
-            fragment:'e120428677',
-        },
-        {
-            title:'Shetland',
-            img:'https://us.britbox.com/shain/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=80&Width=405&Height=227&ImageUrl=283110.jpg&imageType=tile',
-            href:'https://www.britbox.com/us/show/Shetland_p05tb1sm',
-            moreinfo:'Show· 1 Season',
-            description: 'Based on the best-selling books\
+        /* main variables */
+        var debug = 0;
+        var variation_name = "";
+
+        /* all Pure helper functions */
+        function waitForElement(selector, trigger, delayInterval, delayTimeout) {
+            var interval = setInterval(function() {
+                if (
+                    document &&
+                    document.querySelector(selector) &&
+                    document.querySelectorAll(selector).length > 0 && window.topSLide
+                ) {
+                    clearInterval(interval);
+                    trigger();
+                }
+            }, delayInterval);
+            setTimeout(function() {
+                clearInterval(interval);
+            }, delayTimeout);
+        }
+
+        //wait for swiper 
+        function waitForSwiper(trigger) {
+            var interval = setInterval(function() {
+                if (typeof Swiper != "undefined") {
+                    clearInterval(interval);
+                    trigger();
+                }
+            }, 50);
+            setTimeout(function() {
+                clearInterval(interval);
+            }, 15000)
+        }
+
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        function addScript() {
+            var cssScript = '' +
+                '<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>' +
+                "<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'/>";
+            $('#head').append(cssScript);
+            var my_awesome_script = document.createElement('script');
+
+            my_awesome_script.setAttribute('src', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js');
+
+            document.head.appendChild(my_awesome_script);
+
+        }
+        var swipeDynamicData;
+        var data = [{
+                title: 'Vera',
+                img: 'https://us.britbox.com/shain/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=80&Width=405&Height=227&ImageUrl=201950.jpg&imageType=tile',
+                href: '/us/show/Vera_p053fylw',
+                moreinfo: 'Show· 1 Season',
+                description: 'Based on the novels by Ann Cleeves, Brenda Blethyn stars as Vera, the brilliant but irascible investigator obsessed with her work and driven by her own demons. She faces each case with caustic wit and guile, investigating crimes only she can solve.',
+                datacolnumber: '1',
+                dataitemid: '13500',
+                fragment: '13098cb57d7',
+            },
+            {
+                title: 'Death in Paradise',
+                img: 'https://us.britbox.com/shain/v1/dataservice/ResizeImage/$value?Format=%27png%27&Quality=80&Width=405&Height=227&ImageUrl=211472.png&imageType=tile',
+                href: '/us/show/Death_in_Paradise_b01pvmf6',
+                moreinfo: 'Show· 1 Season',
+                description: 'Welcome to the idyllic island of Saint Marie. With its beautiful tropical charm, you might mistake it for paradise...until you see its murder rate.',
+                datacolnumber: '2',
+                dataitemid: '24258',
+                fragment: '9308899c9a',
+            },
+            {
+                title: 'The Curse',
+                img: 'https://static.bbus-static.com/shain/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=80&Width=405&Height=227&ImageUrl=338811.jpg&imageType=tile',
+                href: '/us/show/The_Curse_86657',
+                moreinfo: 'Show· 1 Season',
+                description: 'In this retro crime caper inspired by true events, a gang of hopeless crooks gets accidentally embroiled in Britain\'s biggest gold heist.',
+                datacolnumber: '3',
+                dataitemid: '44212',
+                fragment: 'e120428677',
+            },
+            {
+                title: 'Shetland',
+                img: 'https://us.britbox.com/shain/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=80&Width=405&Height=227&ImageUrl=283110.jpg&imageType=tile',
+                href: 'https://www.britbox.com/us/show/Shetland_p05tb1sm',
+                moreinfo: 'Show· 1 Season',
+                description: 'Based on the best-selling books\
             by award-winning crime writer Ann Cleeves, Shetland\
             follows Detective Jimmy Perez and his team as they\
             investigate crime within the close-knit island\
             community.',
-            datacolnumber: '4',
-            dataitemid:'16947',
-            fragment:'1c6c29ae5',
-          },
-          {
-              title:'Hope Street',
-              img:'https://static.bbus-static.com/shain/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=80&Width=405&Height=227&ImageUrl=330629.jpg&imageType=tile',
-              href:'/us/show/Hope_Street_72532',
-              moreinfo:'Show· 1 Season',
-              description: 'Amara Karan (Bancroft) stars in this uplifting original crime drama. A small town in Northern Ireland sees the mysterious arrival of English DC Leila Hussain, the first Muslim officer in the town\’s history.',
-              datacolnumber: '5',
-              dataitemid:'41014',
-              fragment:'bab210efb0',
-          },
-        {
-            title:'The Cleaner',
-            img:'https://static.bbus-static.com/shain/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=80&Width=405&Height=227&ImageUrl=310236.jpg&imageType=tile',
-            href:'/us/show/The_Cleaner_p09pm359',
-            moreinfo:'Show· 1 Season',
-            description: 'It’s the cops’ job to clean up the city, but it’s Wicky’s job to clean up the crime scenes. BAFTA-winner Greg Davies writes and stars in a truly arresting comedy.',
-            datacolnumber: '6',
-            dataitemid:'39676',
-            fragment:'13091fd499',
-          },
-          {
-            title:'Sister Boniface Mysteries',
-            img:'https://static.bbus-static.com/shain/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=80&Width=405&Height=227&ImageUrl=319335.jpg&imageType=tile',
-            href:'/us/show/Sister_Boniface_Mysteries_73774',
-            moreinfo:'Show· 1 Season',
-            description: 'First there was Father Brown. Now, say hello to Sister Boniface.  This clever, moped-riding nun is the police\'s secret weapon for solving murders in this divine Father Brown spin-off.',
-            datacolnumber: '7',
-            dataitemid:'41171',
-            fragment:'1378753d31e',
-        },
-          {
-            title:'Crossfire',
-            img:'https://static.bbus-static.com/shain/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=80&Width=405&Height=227&ImageUrl=349215.jpg&imageType=tile',
-            href:'/us/show/Crossfire_90996',
-            moreinfo:'Show· 1 Season',
-            description: 'Keeley Hawes stars in this nail-biting story of survival and resilience. An ideal holiday quickly turns into a nightmare when a resort comes under attack.',
-            datacolnumber: '8',
-            dataitemid:'45722',
-            fragment:'1848e8492be',
-        },
-          {
-            title:'Gardeners\' World',
-            img:'https://static.bbus-static.com/shain/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=80&Width=405&Height=227&ImageUrl=199624.jpg&imageType=tile',
-            href:'/us/show/Gardeners_World_b006mw1h',
-            moreinfo:'Show· 1 Season',
-            description: 'The BBC’s flagship gardening show packed with down-to-earth advice and timely reminders from experts to get the most out of your garden, whatever its size or type.',
-            datacolnumber: '9',
-            dataitemid:'16488',
-            fragment:'12affc7434d',
-        },
-        {
-            title:'Agatha Christie\'s Poirot',
-            img:'https://static.bbus-static.com/shain/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=80&Width=405&Height=227&ImageUrl=224684.jpg&imageType=tile',
-            href:'/us/show/Agatha_Christies_Poirot_p04m8lr8',
-            moreinfo:'Show· 1 Season',
-            description: 'The complete collection. David Suchet stars as Agatha Christie\'s beloved detective Hercule Poirot, who pits his wits against crime and injustice in this collection of murder mysteries.',
-            datacolnumber: '10',
-            dataitemid:'11569',
-            fragment:'169c023e2ac',
-        }
-      ];
-      var slide ='';
-      data.forEach(function(val,i){
-      slide +=`<div class="swiper-slide">
+                datacolnumber: '4',
+                dataitemid: '16947',
+                fragment: '1c6c29ae5',
+            },
+            {
+                title: 'Hope Street',
+                img: 'https://static.bbus-static.com/shain/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=80&Width=405&Height=227&ImageUrl=330629.jpg&imageType=tile',
+                href: '/us/show/Hope_Street_72532',
+                moreinfo: 'Show· 1 Season',
+                description: 'Amara Karan (Bancroft) stars in this uplifting original crime drama. A small town in Northern Ireland sees the mysterious arrival of English DC Leila Hussain, the first Muslim officer in the town\’s history.',
+                datacolnumber: '5',
+                dataitemid: '41014',
+                fragment: 'bab210efb0',
+            },
+            {
+                title: 'The Cleaner',
+                img: 'https://static.bbus-static.com/shain/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=80&Width=405&Height=227&ImageUrl=310236.jpg&imageType=tile',
+                href: '/us/show/The_Cleaner_p09pm359',
+                moreinfo: 'Show· 1 Season',
+                description: 'It’s the cops’ job to clean up the city, but it’s Wicky’s job to clean up the crime scenes. BAFTA-winner Greg Davies writes and stars in a truly arresting comedy.',
+                datacolnumber: '6',
+                dataitemid: '39676',
+                fragment: '13091fd499',
+            },
+            {
+                title: 'Sister Boniface Mysteries',
+                img: 'https://static.bbus-static.com/shain/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=80&Width=405&Height=227&ImageUrl=319335.jpg&imageType=tile',
+                href: '/us/show/Sister_Boniface_Mysteries_73774',
+                moreinfo: 'Show· 1 Season',
+                description: 'First there was Father Brown. Now, say hello to Sister Boniface.  This clever, moped-riding nun is the police\'s secret weapon for solving murders in this divine Father Brown spin-off.',
+                datacolnumber: '7',
+                dataitemid: '41171',
+                fragment: '1378753d31e',
+            },
+            {
+                title: 'Crossfire',
+                img: 'https://static.bbus-static.com/shain/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=80&Width=405&Height=227&ImageUrl=349215.jpg&imageType=tile',
+                href: '/us/show/Crossfire_90996',
+                moreinfo: 'Show· 1 Season',
+                description: 'Keeley Hawes stars in this nail-biting story of survival and resilience. An ideal holiday quickly turns into a nightmare when a resort comes under attack.',
+                datacolnumber: '8',
+                dataitemid: '45722',
+                fragment: '1848e8492be',
+            },
+            {
+                title: 'Gardeners\' World',
+                img: 'https://static.bbus-static.com/shain/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=80&Width=405&Height=227&ImageUrl=199624.jpg&imageType=tile',
+                href: '/us/show/Gardeners_World_b006mw1h',
+                moreinfo: 'Show· 1 Season',
+                description: 'The BBC’s flagship gardening show packed with down-to-earth advice and timely reminders from experts to get the most out of your garden, whatever its size or type.',
+                datacolnumber: '9',
+                dataitemid: '16488',
+                fragment: '12affc7434d',
+            },
+            {
+                title: 'Agatha Christie\'s Poirot',
+                img: 'https://static.bbus-static.com/shain/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=80&Width=405&Height=227&ImageUrl=224684.jpg&imageType=tile',
+                href: '/us/show/Agatha_Christies_Poirot_p04m8lr8',
+                moreinfo: 'Show· 1 Season',
+                description: 'The complete collection. David Suchet stars as Agatha Christie\'s beloved detective Hercule Poirot, who pits his wits against crime and injustice in this collection of murder mysteries.',
+                datacolnumber: '10',
+                dataitemid: '11569',
+                fragment: '169c023e2ac',
+            }
+        ];
+        var slide = '';
+        data.forEach(function(val, i) {
+            slide += `<div class="swiper-slide">
       <div class="box">
           <div data-title="${val.title}" data-title-tracking="${val.title}" data-colnumber="${val.datacolnumber}"
               class="card "><a href="${val.href}"
@@ -358,8 +358,8 @@ window.topSLide = `
           </div>
       </div>
       </div>`;
-      });
-       var bottomSlider = `
+        });
+        var bottomSlider = `
       <div class="swiper episodes new-episodes eg-slider" data-name-component="ProgrammeCarousel">
       <!-- Swiper -->
       <div class="row">
@@ -386,64 +386,70 @@ window.topSLide = `
       </div>
   </div>
       `;
-      function init() {
 
-        document.querySelector('.main-content.programmes .top-area h1').innerHTML = 'All Shows';
+        function init() {
 
-        document.querySelector('html body .collections .alphabeth.primary-state').insertAdjacentHTML('afterend', '<span class="eg-scroll-next"></span>');
-        document.querySelector('.main-content.programmes > .row:first-child').insertAdjacentHTML('beforebegin', window.topSLide);
-        document.querySelector('.mySwiper').insertAdjacentHTML('afterend', bottomSlider);
-  //wait for swiper slider
-          waitForSwiper(function(){
-          var swiper = new Swiper(".mySwiper .swiper-container", {
-              loop: true,
-              slidesPerView: 1,
-              spaceBetween: 30,
-              autoplay: {
-                  delay: 2500,
-                  disableOnInteraction: false,
-              },
-              pagination: {
-                  el: ".swiper-pagination",
-                  clickable: true,
-              },
-              });
-  
-          });
+            document.querySelector('.main-content.programmes .top-area h1').innerHTML = 'All Shows';
 
-          let egScroll = 30;
+            document.querySelector('html body .collections .alphabeth.primary-state').insertAdjacentHTML('afterend', '<span class="eg-scroll-next"></span>');
+            document.querySelector('.main-content.programmes > .row:first-child').insertAdjacentHTML('beforebegin', window.topSLide);
+            document.querySelector('.mySwiper').insertAdjacentHTML('afterend', bottomSlider);
+            //wait for swiper slider
+            waitForSwiper(function() {
+                var swiper = new Swiper(".mySwiper .swiper-container", {
+                    loop: true,
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    autoplay: {
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                });
 
-          document.querySelector('.eg-scroll-next').addEventListener('click', function(){
-            document.querySelector('html body .collections .alphabeth.primary-state').scrollLeft = egScroll;
-            egScroll += 30;
-          })
-      }
-      //add trending data 
-      function addData(){
-          var xhttp = new XMLHttpRequest();
-          xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-             var dd= document.createElement('div');
-                dd.innerHTML = this.responseText;
-              var data=  dd.querySelector('.main-content div.new-episodes:nth-child(8) .swiper-wrapper');
-              swipeDynamicData= data.innerHTML;
-              if(getCookie('loggedIn'))
-              document.querySelector('.eg-slider .swiper-wrapper').innerHTML=swipeDynamicData;
-              
+            });
+
+            // Scroll functionality
+
+            if (window.innerWidth < 768) {
+                let egScroll = 30;
+
+                document.querySelector('.eg-scroll-next').addEventListener('click', function() {
+                    document.querySelector('html body .collections .alphabeth.primary-state').scrollLeft = egScroll;
+                    egScroll += 30;
+                    if (egScroll >= document.querySelector('html body .collections .alphabeth.primary-state').scrollWidth) {
+                        egScroll = 30;
+                    }
+                })
             }
-          };
-          xhttp.open("GET", "https://www.britbox.com/us", true);
-          xhttp.send();
+        }
+        //add trending data 
+        function addData() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    var dd = document.createElement('div');
+                    dd.innerHTML = this.responseText;
+                    var data = dd.querySelector('.main-content div.new-episodes:nth-child(8) .swiper-wrapper');
+                    swipeDynamicData = data.innerHTML;
+                    if (getCookie('loggedIn'))
+                        document.querySelector('.eg-slider .swiper-wrapper').innerHTML = swipeDynamicData;
+
+                }
+            };
+            xhttp.open("GET", "https://www.britbox.com/us", true);
+            xhttp.send();
         }
         //get slider data for loggedin user 
-       // addData();
+        // addData();
         //add swiper script
-      addScript();
-      /* Initialise variation */
-      waitForElement(".main-content.programmes > .row:first-child", init, 50, 15000);
+        addScript();
+        /* Initialise variation */
+        waitForElement(".main-content.programmes > .row:first-child", init, 50, 15000);
     } catch (e) {
-      if (debug) console.log(e, "error in Test" + variation_name);
+        if (debug) console.log(e, "error in Test" + variation_name);
     }
-  })();
-
-
+})();
