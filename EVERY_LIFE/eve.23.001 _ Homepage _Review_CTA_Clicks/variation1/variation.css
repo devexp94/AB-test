@@ -9,3 +9,16 @@
 .egBody main > section:nth-of-type(4) > div {
     padding-bottom: 15px !important;
 }
+
+.egBody #__next main {
+    display: flex;
+    flex-direction: column;
+}
+
+.egBody #__next main > div:nth-child(4) {
+    order: 5;
+}
+
+.egBody #__next main > section:last-child {
+    order: 6;
+}

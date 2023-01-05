@@ -64,9 +64,9 @@
 
         document.body.classList.add("egBody");
 
-        const egTestimonialContainer =  document.querySelector("main > div.testimonial-container");
-        const egCtaContainer = document.querySelector("main > section:nth-of-type(4)");
-        egTestimonialContainer.insertAdjacentElement("beforebegin" ,egCtaContainer );
+        // const egTestimonialContainer =  document.querySelector("main > div.testimonial-container");
+        // const egCtaContainer = document.querySelector("main > section:nth-of-type(4)");
+        // egTestimonialContainer.insertAdjacentElement("beforebegin" ,egCtaContainer );
       }else{
         document.body.classList.remove("egBody");
       }
