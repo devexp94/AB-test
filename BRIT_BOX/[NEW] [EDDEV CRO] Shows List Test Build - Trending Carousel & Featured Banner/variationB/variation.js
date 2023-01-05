@@ -420,7 +420,8 @@ window.topSLide = `
                 document.querySelector('.eg-scroll-next').addEventListener('click', function() {
                     document.querySelector('html body .collections .alphabeth.primary-state').scrollLeft = egScroll;
                     egScroll += 30;
-                    if (egScroll >= document.querySelector('html body .collections .alphabeth.primary-state').scrollWidth) {
+                    let egLimit = document.querySelector('html body .collections .alphabeth.primary-state').scrollWidth - document.querySelector('html body .collections .alphabeth.primary-state').offsetWidth + 42;
+                    if (egScroll > egLimit) {
                         egScroll = 30;
                     }
                 })
