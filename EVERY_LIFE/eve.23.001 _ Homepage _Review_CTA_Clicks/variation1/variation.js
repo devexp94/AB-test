@@ -28,7 +28,7 @@
         }
 
     /* Initialize variation */
-    waitForElement('main > section:nth-of-type(4)', init, 50, 15000);
+    waitForElement('body', init, 50, 15000);
   } catch (e) {
     if (debug) console.log(e, "error in Test" + variation_name);
   }
