@@ -26,7 +26,12 @@
     
       /* These are the modifications: */
       window.addEventListener("locationchange", function() {
-          waitForElement('main > section:nth-of-type(4)', init, 50, 15000);       
+        if(window.location.pathname == "/"){
+          document.body.classList.add("egBody");
+          waitForElement('main > section:nth-of-type(4)', init, 100, 15000);   
+        }else{
+          document.body.classList.remove("egBody");
+        }
       });
       history.pushState = ((f) =>
           function pushState() {
@@ -52,15 +57,23 @@
     
     /* Variation Init */
     function init() {
+      
       /* start your code here */
-     const egTestimonialContainer =  document.querySelector("main > div.testimonial-container");
-     const egCtaContainer = document.querySelector("main > section:nth-of-type(4)");
 
-     egTestimonialContainer.insertAdjacentElement("beforebegin" ,egCtaContainer )
+      if(window.location.pathname == "/"){
+
+        document.body.classList.add("egBody");
+
+        const egTestimonialContainer =  document.querySelector("main > div.testimonial-container");
+        const egCtaContainer = document.querySelector("main > section:nth-of-type(4)");
+        egTestimonialContainer.insertAdjacentElement("beforebegin" ,egCtaContainer );
+      }else{
+        document.body.classList.remove("egBody");
+      }
     }
 
     /* Initialize variation */
-    waitForElement('main > section:nth-of-type(4)', init, 50, 15000);
+    waitForElement('main > section:nth-of-type(4)', init, 100, 15000);
   } catch (e) {
     if (debug) console.log(e, "error in Test" + variation_name);
   }

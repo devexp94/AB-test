@@ -1,7 +1,11 @@
-main > section:nth-of-type(4){
+.egBody main > section:nth-of-type(4){
     background-color: #fff !important;
 }
 
-.testimonial-container {
+.egBody .testimonial-container {
     padding-top: 0 !important;
+}
+
+.egBody main > section:nth-of-type(4) > div {
+    padding-bottom: 15px !important;
 }
