@@ -59,6 +59,7 @@
 
         live(`div[class^='contact-header__content'] > div[class^='Box-sc'] > div`, 'click', function() {
             if (this.classList.contains("eg-tab-btn")) {
+                this.parentElement.children[0].click();
                 this.classList.add("active");
                 [...this.parentElement.children].forEach(btn => {
                     if (!btn.classList.contains("eg-tab-btn")) {
