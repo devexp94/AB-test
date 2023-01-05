@@ -96,7 +96,7 @@
         live(`div[class^='contact-header__mobile-menu'] button[class^='dropdown-list__button']`, 'click', function() {
             // console.log(this)
             const egSibling = this.nextElementSibling;
-            if (egSibling != null) {
+            if (egSibling != null && !document.querySelector('li.eg-drowdown-list')) {
                 egSibling.insertAdjacentHTML("beforeend", egMobBtn);
             }
 
@@ -111,7 +111,7 @@
         live(`div[class*='dropdown-list__button-icon']`, 'click', function() {
             // console.log(this)
             const egSibling = document.querySelector(`ul[class^='dropdown-list__listbox']`);
-            if (egSibling != null) {
+            if (egSibling != null && !document.querySelector('li.eg-drowdown-list')) {
                 egSibling.insertAdjacentHTML("beforeend", egMobBtn);
                 if (document.querySelector(".eg-clicked")) {
                     removeActive(egSibling, true);
