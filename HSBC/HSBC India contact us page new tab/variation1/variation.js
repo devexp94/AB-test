@@ -1,4 +1,6 @@
-(function() {
+
+  (function() {
+    if(!document.querySelector('.eg-tab-btn'))
     try {
         /* main variables */
         var debug = 0;
@@ -84,7 +86,7 @@
                                 <path fill="none" d="M0 0h18v18H0z" opacity=".25"></path>
                                 <path d="M0 2v14h18V2H0zm15.952 1.2L9 10.151 2.048 3.2h13.904zM1.2 14.8V4.048l7.8 7.8 7.8-7.8V14.8H1.2z"></path>
                             </svg></div>
-                        <div class="eg-btn-text"><span>Account opening enquiries</span></div>
+                        <div class="eg-btn-text" onclick="TMS.trackEvent({ 'event_category': 'content', 'event_action': 'onsite', 'event_content': 'account opening tab click', 'event_value': '1 ' });"><span>Account opening enquiries</span></div>
                     </div>
                 </span>
             </li>`;
@@ -93,7 +95,7 @@
         live(`div[class^='contact-header__mobile-menu'] button[class^='dropdown-list__button']`, 'click', function() {
             // console.log(this)
             const egSibling = this.nextElementSibling;
-            if (egSibling != null) {
+            if (egSibling != null && !document.querySelector('li.eg-drowdown-list')) {
                 egSibling.insertAdjacentHTML("beforeend", egMobBtn);
             }
 
@@ -108,7 +110,7 @@
         live(`div[class*='dropdown-list__button-icon']`, 'click', function() {
             // console.log(this)
             const egSibling = document.querySelector(`ul[class^='dropdown-list__listbox']`);
-            if (egSibling != null) {
+            if (egSibling != null && !document.querySelector('li.eg-drowdown-list')) {
                 egSibling.insertAdjacentHTML("beforeend", egMobBtn);
                 if (document.querySelector(".eg-clicked")) {
                     removeActive(egSibling, true);
@@ -159,7 +161,7 @@
 
 
         let egTabBtnHTML = `
-      <div class="eg-tab-btn" tabindex="-1">
+      <div class="eg-tab-btn" tabindex="-1" onclick="TMS.trackEvent({ 'event_category': 'content', 'event_action': 'onsite', 'event_content': 'account opening tab click', 'event_value': '1 ' });">
           <svg class="eg-icon" focusable="false" viewBox="0 0 18 18" color="#333" aria-hidden="true" role="presentation" data-testid="ContactMessageIcon" data-id="Icon" opacity="1" fill="currentColor">
               <path fill="none" d="M0 0h18v18H0z" opacity=".25"></path>
               <path d="M0 2v14h18V2H0zm15.952 1.2L9 10.151 2.048 3.2h13.904zM1.2 14.8V4.048l7.8 7.8 7.8-7.8V14.8H1.2z"></path>
@@ -194,6 +196,7 @@
             //=====for all devices====+
             // inserting tab content
             const egContactContent = document.querySelector("#contact-content");
+            if(!document.querySelector('.eg-tab-content'))
             egContactContent.insertAdjacentHTML("afterbegin", egTabContent);
 
             //====desktop + tab only===+
@@ -207,7 +210,7 @@
         }
 
         /* Initialize variation */
-        waitForElement(`#contact-content`, init, 150, 15000);
+        waitForElement('#contact-content', init, 150, 15000);
     } catch (e) {
         if (debug) console.log(e, "error in Test" + variation_name);
     }
