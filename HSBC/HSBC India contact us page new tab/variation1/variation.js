@@ -120,11 +120,6 @@
         // list items click detect
         live(`ul[class^='dropdown-list__listbox'] > li`, 'click', function() {
             if (this.classList.contains("eg-drowdown-list")) {
-                // this.parentElement.previousElementSibling.classList.add("eg-clicked");
-                // document.querySelector(".eg-clicked").click();
-                // updateBtnHtml();
-                // removeActive(this.parentElement, true);
-                // console.log(this.parentElement.children[0]);
                 if(!document.querySelector(".eg-clicked")) this.parentElement.children[0].click();
                 removeActive(this.parentElement, true);
                 document.querySelector("div[class^='contact-header__mobile-menu'] button[class^='dropdown-list__button']").click();
@@ -132,7 +127,6 @@
                 setTimeout(()=>{
                     updateBtnHtml(this.innerText);
                 },100)
-                // document.querySelector(".eg-clicked").click();
 
 
             } else {
