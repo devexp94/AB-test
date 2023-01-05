@@ -3,5 +3,5 @@ main > section:nth-of-type(4){
 }
 
 .testimonial-container {
-    padding-top: 0 !important;
+    display: none !important;
 }
