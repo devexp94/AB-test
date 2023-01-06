@@ -1,0 +1,63 @@
+html body #banner .nfn__container>.nfn__content .nfn__actions button,
+html body .form_container_mobile .nfn__container>.nfn__content .nfn__actions_mobile button {
+    width: 100% !important;
+    float: unset !important;
+    margin: unset !important;
+    margin-bottom: 16px !important;
+}
+
+html body #banner .nfn__container>.nfn__content,
+html body .form_container_mobile .nfn__container>.nfn__content {
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
+}
+
+
+html body #banner .nfn__container>.nfn__content .nfn__actions button#nfnOrderBtn,
+html body .form_container_mobile .nfn__container>.nfn__content .nfn__actions_mobile button#nfnOrderBtn_mobile {
+    display:
+        block;
+    width: 100% !important;
+    height: 56px;
+    position:
+        relative;
+}
+
+
+.eg-select {
+    flex: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: width 0.5s;
+    width: 30%;
+    padding: 10px;
+}
+
+.eg-standard {
+    left: 0;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+
+}
+
+.eg-same-day {
+    right: 0;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+.eg-select.eg-active {
+    width: 70%;
+    background: #1f3d5c;
+}
+
+@media(max-width:767px) {
+    .eg-select {
+        font-size: 13px;
+    }
+}

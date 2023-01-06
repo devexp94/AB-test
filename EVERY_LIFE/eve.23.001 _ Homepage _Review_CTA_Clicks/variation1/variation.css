@@ -1,7 +1,24 @@
-main > section:nth-of-type(4){
+.egBody main > section:nth-of-type(4){
     background-color: #fff !important;
 }
 
-.testimonial-container {
-    display: none !important;
+.egBody .testimonial-container {
+    padding-top: 0 !important;
+}
+
+.egBody main > section:nth-of-type(4) > div {
+    padding-bottom: 15px !important;
+}
+
+.egBody #__next main {
+    display: flex !important;
+    flex-direction: column;
+}
+
+.egBody #__next main > div:nth-child(4) {
+    order: 5;
+}
+
+.egBody #__next main > section:last-child {
+    order: 6;
 }
