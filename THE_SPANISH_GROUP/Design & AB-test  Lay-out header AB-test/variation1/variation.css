@@ -160,6 +160,11 @@ button#nfnOrderBtn{
     margin-block: 13%;
 }
 
+.egFirst ,
+ .egLast {
+    margin-bottom: 13px;
+}
+
 
 .eg_img img {
     width: 22px;
