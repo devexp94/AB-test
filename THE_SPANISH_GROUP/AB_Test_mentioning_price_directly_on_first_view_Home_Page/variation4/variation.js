@@ -31,9 +31,8 @@
 
         /* Variation functions */
         function init() {
-            if(window.innerWidth > 1024){
-                document.querySelector("html body #whattypeoftranslation .nfn__container > .nfn__content").insertAdjacentHTML("afterbegin",egBlueStrip);                
-            }
+            document.querySelector("html body #whattypeoftranslation .nfn__container > .nfn__content").insertAdjacentHTML("afterbegin", egBlueStrip);
+
 
         }
 
