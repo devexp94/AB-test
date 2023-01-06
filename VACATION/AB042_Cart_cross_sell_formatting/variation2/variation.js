@@ -186,7 +186,7 @@ $5</span>
                 "https://www.vacation.inc/products/classic-lotion-pack-of-3",
                 "https://www.vacation.inc/products/summer-leisure-pack"
             ],
-            'SUMMER BEACH PACK': [
+            'MINERAL LOTION SPF 30': [
                 "https://www.vacation.inc/products/air-freshener",
                 "https://www.vacation.inc/products/classic-whip-air-freshener",
                 "https://www.vacation.inc/products/chardonnay-air-freshener"
