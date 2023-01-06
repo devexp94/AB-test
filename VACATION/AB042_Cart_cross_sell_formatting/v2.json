@@ -2,7 +2,6 @@
 	"files": [
 		"./variation2/variation.css",
 		"./variation2/variation.js",
-		"./variation2/fecthProducts.js"
 	],
 	"urls": [
 		"https://www.vacation.inc/",
