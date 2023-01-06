@@ -146,10 +146,10 @@ $5</span>
             if (this.innerText.toUpperCase().indexOf("BAG") != -1) {
                 waitForElement('#__next .cart > div:nth-child(2) >div', init, 50, 15000);
             } else if ((this.innerText.toUpperCase() == "ADD") || (this.innerText.toUpperCase() == "REMOVE") || this.parentElement.classList.contains("cart__item__quantity")) {
-                waitForElement('#__next .cart > div:nth-child(2) >div', init, 3000, 15000);
+                waitForElement('#__next .cart > div:nth-child(2) >div', init, 50, 15000);
 
             } else if(this.classList.contains("header__nav__count")){
-                waitForElement('#__next .cart > div:nth-child(2) >div', init, 3000, 15000);
+                waitForElement('#__next .cart > div:nth-child(2) >div', init, 50, 15000);
             }
         });
 
