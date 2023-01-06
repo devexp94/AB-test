@@ -81,17 +81,25 @@
     function init() {
       /* start your code here */
 
-      if ((window.location.href.indexOf("https://www.everlylife.com/overview") !== -1) && (!document.querySelector('.egMain'))) {
         document.body.classList.add("egBody");
-        document.querySelector("main section:nth-child(4)").insertAdjacentHTML("afterend" , html);
-      } else {
-        document.body.classList.remove("egBody");
-        document.querySelector(".egMain").remove();
-      }
-    }
+        const egInterval = setInterval(() => {
+          if(!document.querySelector('.egMain')){
+            document.querySelector("main section:nth-child(4)").insertAdjacentHTML("afterend" , html);          
+          }else{
+            clearInterval(egInterval)
+          }
+        }, 100);
+
+      } 
 
     /* Initialize variation */
+    if ((window.location.href.indexOf("https://www.everlylife.com/overview") !== -1) && (!document.querySelector('.egMain'))) {
     waitForElement("main section:nth-child(4)", init, 50, 15000);
+    }else {
+      document.body.classList.remove("egBody");
+      document.querySelector(".egMain").remove();
+    }
+
   } catch (e) {
     if (debug) console.log(e, "error in Test" + variation_name);
   }
