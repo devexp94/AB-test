@@ -4,7 +4,8 @@
 		"./variationE/variation.js"
 	],
 	"urls": [
-		"https://thespanishgroup.org/translations/"
+		"https://thespanishgroup.org/translations/",
+		"https://thespanishgroup.org/billing"
 	],
 	"inject": ""
 }
