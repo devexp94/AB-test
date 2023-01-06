@@ -1,0 +1,22 @@
+/*hiding that white image in between hero section and section with people image*/
+#p-bg-n #bg1-n {
+    display: none;
+}
+
+html body #whattypeoftranslation .nfn__container>.nfn__content {
+    position: relative;
+}
+
+.eg-blue-strip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #2e5a87;
+    color: white;
+    padding: 14px;
+    text-align: center;
+    font-size: 22px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
