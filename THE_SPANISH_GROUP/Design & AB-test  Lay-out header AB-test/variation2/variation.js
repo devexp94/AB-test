@@ -24,14 +24,26 @@
 
     
 let eg_icon = `
+ 
 <div class="eg_desc">
+
 <div class="eg_icon">
    <div class="eg_img">
-   <img src="https://i.ibb.co/p366Mxv/send.png" alt="send" border="0">
+   <img src="https://i.ibb.co/myxBpfk/message.png" alt="message" border="0">
    </div>
 
    <div class="eg_detail">
-   Guaranteed Acceptance with <br/> 90+ Languages
+      Same Day Delivery Available
+   </div>
+</div>
+
+<div class="eg_icon">
+   <div class="eg_img">
+   <img src="https://i.ibb.co/yV6bpsP/thumb-up-v1.png" alt="thumb-up-v1" border="0">
+   </div>
+
+   <div class="eg_detail">
+       Guaranteed Acceptance with <br/> 90+ Languages
    </div>
 </div>
 
@@ -41,17 +53,7 @@ let eg_icon = `
    </div>
 
    <div class="eg_detail">
-   Expert Translators Ready to <br/> Support You
-   </div>
-</div>
-
-<div class="eg_icon">
-   <div class="eg_img">
-   <img src="https://i.ibb.co/myxBpfk/message.png" alt="message" border="0">
-   </div>
-
-   <div class="eg_detail">
-   Same Day Delivery Available
+       Expert Translators Ready to <br/> Support You
    </div>
 </div>
 
@@ -61,9 +63,10 @@ let eg_icon = `
    </div>
 
    <div class="eg_detail">
-   Secure & Safe Checkout
+       Secure & Safe Checkout
    </div>
 </div>
+
 </div>
 
 `
