@@ -169,7 +169,7 @@ $5</span>
         /*============== FETCHING PRODUCTS ==============*/
         /*===============================================*/
         // dummy products
-        
+
         const egProducts = {
             "CLASSIC LOTION SPF 30": [
                 "https://www.vacation.inc/products/classic-whip-spf-30",
@@ -222,7 +222,6 @@ $5</span>
                     }
                 }
 
-                console.log(egComp);
 
                 // products skelton
                 const egItems = document.querySelectorAll(".eg-comp-product");
@@ -247,6 +246,14 @@ $5</span>
                             egItems[i].querySelector(".eg-comp-product__img > img").src = egImg;
                             // updating product name in skeleton
                             egItems[i].querySelector(".eg-comp-product__name-price").childNodes[0].textContent = egName;
+
+                            // if comproduct is in cart list hiding it from suggestion
+                            let egIsPresent = contains("#__next .cart .cart__item .cart__item__content >div >div >div >div .cart__content:nth-of-type(1)",egName)
+                            if(egIsPresent.length > 0){
+                                egItems[i].style.display = "none";
+                            } else {
+                                egItems[i].style.display = null;
+                            }
                             // updating product price in skeleton
                             egItems[i].querySelector(".eg-price").innerText = egPrice;
                             ele.remove();
@@ -263,6 +270,14 @@ $5</span>
                 }
             }, 50, 15000);
 
+        }
+
+        // searching element by text inside of it
+        function contains(selector, text) {
+            var elements = document.querySelectorAll(selector);
+            return [].filter.call(elements, function(element) {
+                return RegExp(text).test(element.textContent);
+            });
         }
 
 
