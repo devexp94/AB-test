@@ -181,28 +181,6 @@ html body .mySwiper .top-banner .content nav ul {
 
 @media screen and (max-width:767px) {
 
-    /*===================================
-a-z scroll functionality css part
-=====================================*/
-
-    html body .collection>grid>div:nth-child(2) {
-        position: relative;
-        margin-bottom: 20px;
-    }
-
-    html body .collections .alphabeth.primary-state {
-        padding-right: 18px !important;
-    }
-
-    html body .collections .alphabeth.primary-state a {
-        width: max-content;
-    }
-
-
-
-    /*===================================
-a-z scroll functionality css part END
-=====================================*/
     /* .mySwiper .swiper-button-next,
     .mySwiper .swiper-button-prev, */
     .eg-slider .swiper-button-next[aria-disabled="false"],
@@ -257,7 +235,7 @@ a-z scroll functionality css part END
         margin-bottom: 28px;
     }
 
-    html body .collections .alphabeth.primary-state {
+    html body .collections .alphabeth {
         position: static;
         flex-direction: row;
         height: 52px;
@@ -265,7 +243,7 @@ a-z scroll functionality css part END
         margin-bottom: 0px;
     }
 
-    html body .collections .alphabeth.primary-state a {
+    html body .collections .alphabeth a {
         margin: 0px;
         height: fit-content;
         font-size: 22px;
