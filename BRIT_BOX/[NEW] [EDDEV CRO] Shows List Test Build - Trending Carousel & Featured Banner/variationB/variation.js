@@ -418,9 +418,9 @@ window.topSLide = `
                 let egScroll = 30;
 
                 document.querySelector('.eg-scroll-next').addEventListener('click', function() {
-                    document.querySelector('html body .collections .alphabeth.primary-state').scrollLeft = egScroll;
+                    document.querySelector('html body .collections .alphabeth').scrollLeft = egScroll;
                     egScroll += 30;
-                    let egLimit = document.querySelector('html body .collections .alphabeth.primary-state').scrollWidth - document.querySelector('html body .collections .alphabeth.primary-state').offsetWidth + 42;
+                    let egLimit = document.querySelector('html body .collections .alphabeth').scrollWidth - document.querySelector('html body .collections .alphabeth.primary-state').offsetWidth + 42;
                     if (egScroll > egLimit) {
                         egScroll = 30;
                     }
