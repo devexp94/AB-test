@@ -24,7 +24,7 @@ html body #whattypeoftranslation .nfn__container>.nfn__content {
 @media(max-width:767px) {
     html body #whattypeoftranslation .nfn__container>.nfn__content {
         padding-top: 64px !important;
-        margin-top: 16px !important;
+        margin-top: 36px !important;
     }
 
     .eg-blue-strip {

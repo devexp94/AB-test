@@ -1,0 +1,11 @@
+html body #banner .nfn__container > .nfn__content .nfn__actions button {
+    width: 100% !important;
+    float: unset !important;
+    margin: unset !important;
+    margin-bottom: 16px !important;
+}
+
+html body #banner .nfn__container > .nfn__content {
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
+}
