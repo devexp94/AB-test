@@ -169,6 +169,7 @@ $5</span>
         /*============== FETCHING PRODUCTS ==============*/
         /*===============================================*/
         // dummy products
+        
         const egProducts = {
             "CLASSIC LOTION SPF 30": [
                 "https://www.vacation.inc/products/classic-whip-spf-30",

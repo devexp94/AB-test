@@ -43,9 +43,6 @@
     padding: 3px 18px 0;
 }
 
-.eg-comp-product__cta > span {
-}
-
 .eg-comp-product__details {
     display: flex;
     flex-direction: column;
