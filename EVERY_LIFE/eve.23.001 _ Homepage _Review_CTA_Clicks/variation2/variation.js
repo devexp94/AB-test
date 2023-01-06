@@ -55,19 +55,19 @@
     listener();
 
 
-    let html = `<section class="egMain sc-a655ec7f-0 iJOHYh">
-    <div class="sc-a655ec7f-1 dhovQP">
-    <div class="sc-d195e145-0 ffExnR container">
-    <div class="sc-d195e145-1 kzKbKo title">
+    let html = `<section class="egMain">
+    <div class="egMainDiv">
+    <div class="container">
+    <div class="title">
     <h2 class="egTitle">Let’s get started on your new Universal Life insurance policy.</h2>
     </div>
-    <div class="sc-d195e145-2 ksQUxE description">
+    <div class="egDesc description">
     <p>No email or payment info required.</p>
     </div>
     <div class="ctasWrapper">
     <div class="egBtnContainer">
     <a href="/apply" target="" rel="noopener noreferrer" style="text-decoration: none;">
-    <span class="sc-535f61e1-1 cdYsnd linkBtn">
+    <span class="egLinkBtn">
     <span class="btnCopy egBtnEstimate">Get free estimate</span>
     </span></a><a href="/protection" target="" rel="noopener noreferrer" style="text-decoration: none;">
     </a>
