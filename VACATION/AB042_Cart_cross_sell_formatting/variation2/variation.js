@@ -145,6 +145,9 @@ $5</span>
         live(['button', 'span'], 'click', function() {
             if (this.innerText.toUpperCase().indexOf("BAG") != -1) {
                 waitForElement('#__next .cart > div:nth-child(2) >div', init, 50, 15000);
+            } else if ((this.innerText.toUpperCase() == "ADD") || (this.innerText.toUpperCase() == "REMOVE") || this.parentElement.classList.contains("cart__item__quantity")) {
+                waitForElement('#__next .cart > div:nth-child(2) >div', init, 3000, 15000);
+
             }
         });
 
@@ -155,6 +158,8 @@ $5</span>
 
             if (!document.querySelector(".eg-comp-products")) {
                 document.querySelector("#__next .cart > div:nth-child(2) >div").insertAdjacentHTML("beforeend", egCompleMentoryHtml);
+                fecthData();
+            } else {
                 fecthData();
             }
 
@@ -170,7 +175,7 @@ $5</span>
                 "https://www.vacation.inc/products/scent",
                 "https://www.vacation.inc/products/ball-boy-candle"
             ],
-            '"VACATION" BY VACATION': [
+            'PARTIAL OCEAN VIEW SUITE': [
                 "https://www.vacation.inc/products/chardonnay-oil-spf-30",
                 "https://www.vacation.inc/products/luxury-duo",
                 "https://www.vacation.inc/products/classic-spray-spf-30"
@@ -205,8 +210,19 @@ $5</span>
         // for checking product name
         function fecthData() {
             waitForElement('#__next .cart .cart__item .cart__item__content >div >div >div >div .cart__content:nth-of-type(1)', function() {
-                const egProductOnCart = document.querySelector("#__next .cart .cart__item .cart__item__content >div >div >div >div .cart__content:nth-of-type(1)").innerText.toUpperCase();
-                const egComp = egProducts[egProductOnCart];
+                let egComp;
+                let egTxts = document.querySelectorAll("#__next .cart .cart__item .cart__item__content >div >div >div >div .cart__content:nth-of-type(1)");
+                for (let i = 0; i < egTxts.length; i++) {
+                    if (egProducts[egTxts[i].innerText.toUpperCase()]) {
+                        egComp = egProducts[egTxts[i].innerText.toUpperCase()]
+                        break;
+                    } else {
+                        document.querySelector(".eg-comp-products").style.display = "none";
+                    }
+                }
+
+                console.log(egComp);
+
                 // products skelton
                 const egItems = document.querySelectorAll(".eg-comp-product");
                 if (egComp) {
