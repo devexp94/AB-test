@@ -32,7 +32,7 @@
   
   <div class="eg_desc">
 
-    <div class="eg_icon 3">
+    <div class="eg_icon">
        <div class="eg_img">
        <img src="https://i.ibb.co/myxBpfk/message.png" alt="message" border="0">
        </div>
@@ -42,7 +42,7 @@
        </div>
     </div>
 
-    <div class="eg_icon 1">
+    <div class="eg_icon">
        <div class="eg_img">
        <img src="https://i.ibb.co/yV6bpsP/thumb-up-v1.png" alt="thumb-up-v1" border="0">
        </div>
@@ -52,7 +52,7 @@
        </div>
     </div>
 
-    <div class="eg_icon 2">
+    <div class="eg_icon">
        <div class="eg_img">
        <img src="https://i.ibb.co/yQ4kpnj/lock.png" alt="lock" border="0">
        </div>
@@ -62,7 +62,7 @@
        </div>
     </div>
 
-    <div class="eg_icon 4">
+    <div class="eg_icon">
        <div class="eg_img">
        <img src="https://i.ibb.co/J7qcqMm/ssl.png" alt="ssl" border="0">
        </div>
