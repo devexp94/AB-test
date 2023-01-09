@@ -94,7 +94,8 @@
             } else if ((this.classList.contains("eg-comp-product__cta")) || (this.parentElement.classList.contains("eg-comp-product__cta"))) {
                 // add to cart functionality
                 let varientId = this.accessKey || this.parentElement.accessKey;
-                let varientName = this.closest(".eg-comp-product").querySelector(".eg-comp-product__name-price").childNodes[0];
+                let varientName = this.closest(".eg-comp-product").querySelector(".eg-comp-product__name-price > span[hidden]").innerText;
+                console.log(varientName);
                 fetch("https://checkout.vacation.inc/api/2020-07/graphql", {
                         "headers": {
                             "accept": "application/json",
@@ -234,6 +235,7 @@
                             const ele = document.createElement("div");
                             ele.innerHTML = responseText;
                             const egName = ele.querySelector("#__next .shopping-block-pusher >div:nth-child(1) >div>h1").innerText;
+                            const egContext = ele.querySelector("#__next .shopping-block-pusher >div:nth-child(1) >div>h3:has(>span)").childNodes[0].textContent;
                             const egPrice = ele.querySelector("#__next .shopping-block-pusher >div:nth-child(1) >div>h3:has(>span) > span").innerText;
                             const egImg = ele.querySelector("#__next .embla .embla__slide img").src;
 
@@ -251,9 +253,11 @@
                                     <div class="eg-comp-product__details">
                                         <p class="eg-comp-product__name-price">
                                             ${egName} <span class="eg-price">${egPrice}</span>
+                                            <span hidden>${egContext}</span>
                                         </p>
                                         <button class="eg-comp-product__cta" accesskey="${varientId}">
                                             <span>ADD</span>
+
                                         </button>
                                     </div>
                                 </li>`);
