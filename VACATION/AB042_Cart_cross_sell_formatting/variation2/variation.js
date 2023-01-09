@@ -95,7 +95,6 @@
                 // add to cart functionality
                 let varientId = this.accessKey || this.parentElement.accessKey;
                 let varientName = this.closest(".eg-comp-product").querySelector(".eg-comp-product__name-price > span[hidden]").innerText;
-                console.log(varientName);
                 fetch("https://checkout.vacation.inc/api/2020-07/graphql", {
                         "headers": {
                             "accept": "application/json",
@@ -171,37 +170,37 @@
                         "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC80NDA5MDQxNDUzMDc5Mw=="
                     },
                     {
-                        "url":"https://www.vacation.inc/products/classic-spray-spf-30",
+                        "url": "https://www.vacation.inc/products/classic-spray-spf-30",
                         "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC80MjgxNDk4MTMwODY0OQ=="
                     }
                 ]
             },
             'LIP DESSERTS 5X COLLECTOR’S SET': {
                 "comp-products": [{
-                        "url":"https://www.vacation.inc/products/strawberry-jello-salad",
+                        "url": "https://www.vacation.inc/products/strawberry-jello-salad",
                         "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC80MjQ0ODI4MjEyNDUyMQ=="
                     },
                     {
-                        "url":"https://www.vacation.inc/products/bananas-foster",
+                        "url": "https://www.vacation.inc/products/bananas-foster",
                         "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC80MjQ0ODIzNDM4MTU0NQ=="
                     },
                     {
-                        "url":"https://www.vacation.inc/products/bombe-alaska",
+                        "url": "https://www.vacation.inc/products/bombe-alaska",
                         "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC80MjQ0ODMxODU2MjUzNw=="
                     }
                 ]
             },
             'PINEAPPLE UPSIDE-DOWN CAKE': {
                 "comp-products": [{
-                        "url":"https://www.vacation.inc/products/air-freshener-4-pack",
+                        "url": "https://www.vacation.inc/products/air-freshener-4-pack",
                         "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC80MjgwNjYyMzQzNzAzMw=="
                     },
                     {
-                        "url":"https://www.vacation.inc/products/air-freshener-variety-pack-pack-of-4",
+                        "url": "https://www.vacation.inc/products/air-freshener-variety-pack-pack-of-4",
                         "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC80MzMyMDU2ODUxMjc0NQ=="
                     },
                     {
-                        "url":"https://www.vacation.inc/products/poolsuite-hat",
+                        "url": "https://www.vacation.inc/products/poolsuite-hat",
                         "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC80MDEzNzM1MjE1MTIxNA=="
                     }
                 ]
@@ -215,7 +214,9 @@
                 let egComp;
                 let egTxts = document.querySelectorAll("#__next .cart .cart__item .cart__item__content >div >div >div >div .cart__content:nth-of-type(1)");
                 for (let i = 0; i < egTxts.length; i++) {
-                    egComp = egProducts[egTxts[i].innerText.toUpperCase()] && egProducts[egTxts[i].innerText.toUpperCase()]["comp-products"];
+                    // removing special characters and consequitive spaces before check
+                    let egTxt = egTxts[i].innerText.replace(/[^\w\s]/gi, '').replace(/\s+/g, ' ').toUpperCase();
+                    egComp = egProducts[egTxt] && egProducts[egTxt]["comp-products"];
                     if (egComp) {
                         break;
                     }
@@ -241,6 +242,7 @@
 
                             // if comproduct is in cart list hiding it from suggestion
                             let egIsPresent = contains("#__next .cart .cart__item .cart__item__content >div >div >div >div .cart__content:nth-of-type(1)", egName)
+
                             if (egIsPresent.length <= 0 && !egItemBox.querySelector(`#eg-comp-${i}`)) {
                                 egItemBox.insertAdjacentHTML("beforeend", `
                                 <li class="eg-comp-product" id="eg-comp-${i}">
@@ -283,7 +285,8 @@
         function contains(selector, text) {
             var elements = document.querySelectorAll(selector);
             return [].filter.call(elements, function(element) {
-                return RegExp(text).test(element.textContent);
+                // removing special characters and consequitive spaces before check
+                return text.replace(/[^\w\s]/gi, '').replace(/\s+/g, ' ').toUpperCase() === element.innerText.replace(/[^\w\s]/gi, '').replace(/\s+/g, ' ').toUpperCase();
             });
         }
 
