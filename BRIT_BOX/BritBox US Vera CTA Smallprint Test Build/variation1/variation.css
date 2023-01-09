@@ -1,0 +1,23 @@
+#page_block_header .section-block .widget:nth-of-type(2){
+    position: relative;
+}
+
+#page_block_header .section-block .widget:nth-of-type(2)::after {
+    content : "Free 7-day trial, then just $7.99/month or $79.99/year";
+     color: #fff;
+    font-size: 0.854rem;
+    text-align: center;
+    padding-top: 8px;
+    font-weight: 500;
+    font-family : museo-sans,museo-sans-1,museo-sans-2,museo-sans-web,museo-sans-web-1,museo-sans-web-2,sans-serif!important;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform : translate(-50%);
+}
+
+@media screen and (max-width: 767px) {
+    #page_block_header .section-block .widget:nth-of-type(2)::after {
+        font-size: 12px;
+    }
+}
