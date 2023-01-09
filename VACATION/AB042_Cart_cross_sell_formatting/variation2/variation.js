@@ -152,6 +152,7 @@
 
         // for checking product name
         function fecthData() {
+            
             waitForElement('#__next .cart .cart__item .cart__item__content >div >div >div >div .cart__content:nth-of-type(1)', function() {
                 let egComp;
                 let egTxts = document.querySelectorAll("#__next .cart .cart__item .cart__item__content >div >div >div >div .cart__content:nth-of-type(1)");
