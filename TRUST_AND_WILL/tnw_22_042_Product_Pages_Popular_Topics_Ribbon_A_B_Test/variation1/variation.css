@@ -17,6 +17,13 @@
    
 }
 
+/****** hover state********/
+
+a.eg-tag-link:hover {
+    color: #000;
+    background: #efe;
+}
+
 .eg-left {
     display: flex;
     justify-content: flex-start;

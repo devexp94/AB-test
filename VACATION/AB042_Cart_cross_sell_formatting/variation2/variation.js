@@ -142,8 +142,13 @@ $5</span>
         </li>
     </ul>
 `;
-        live(['button', 'span'], 'click', function() {
+        live(['button', 'span',".header__nav__count"], 'click', function() {
             if (this.innerText.toUpperCase().indexOf("BAG") != -1) {
+                waitForElement('#__next .cart > div:nth-child(2) >div', init, 50, 15000);
+            } else if ((this.innerText.toUpperCase() == "ADD") || (this.innerText.toUpperCase() == "REMOVE") || this.parentElement.classList.contains("cart__item__quantity")) {
+                waitForElement('#__next .cart > div:nth-child(2) >div', init, 3000, 15000);
+
+            } else if(this.classList.contains("header__nav__count") || this.parentElement.classList.contains("header__nav__count") ) {
                 waitForElement('#__next .cart > div:nth-child(2) >div', init, 50, 15000);
             }
         });
@@ -154,7 +159,9 @@ $5</span>
             /* start your code here */
 
             if (!document.querySelector(".eg-comp-products")) {
+                fecthData();
                 document.querySelector("#__next .cart > div:nth-child(2) >div").insertAdjacentHTML("beforeend", egCompleMentoryHtml);
+            } else {
                 fecthData();
             }
 
@@ -164,13 +171,14 @@ $5</span>
         /*============== FETCHING PRODUCTS ==============*/
         /*===============================================*/
         // dummy products
+
         const egProducts = {
             "CLASSIC LOTION SPF 30": [
                 "https://www.vacation.inc/products/classic-whip-spf-30",
                 "https://www.vacation.inc/products/scent",
                 "https://www.vacation.inc/products/ball-boy-candle"
             ],
-            '"VACATION" BY VACATION': [
+            'PARTIAL OCEAN VIEW SUITE': [
                 "https://www.vacation.inc/products/chardonnay-oil-spf-30",
                 "https://www.vacation.inc/products/luxury-duo",
                 "https://www.vacation.inc/products/classic-spray-spf-30"
@@ -180,7 +188,7 @@ $5</span>
                 "https://www.vacation.inc/products/classic-lotion-pack-of-3",
                 "https://www.vacation.inc/products/summer-leisure-pack"
             ],
-            'SUMMER BEACH PACK': [
+            'MINERAL LOTION SPF 30': [
                 "https://www.vacation.inc/products/air-freshener",
                 "https://www.vacation.inc/products/classic-whip-air-freshener",
                 "https://www.vacation.inc/products/chardonnay-air-freshener"
@@ -205,8 +213,18 @@ $5</span>
         // for checking product name
         function fecthData() {
             waitForElement('#__next .cart .cart__item .cart__item__content >div >div >div >div .cart__content:nth-of-type(1)', function() {
-                const egProductOnCart = document.querySelector("#__next .cart .cart__item .cart__item__content >div >div >div >div .cart__content:nth-of-type(1)").innerText.toUpperCase();
-                const egComp = egProducts[egProductOnCart];
+                let egComp;
+                let egTxts = document.querySelectorAll("#__next .cart .cart__item .cart__item__content >div >div >div >div .cart__content:nth-of-type(1)");
+                for (let i = 0; i < egTxts.length; i++) {
+                    egComp = egProducts[egTxts[i].innerText.toUpperCase()];
+                    if (egComp) {
+                        break;
+                    } else {
+                        document.querySelector(".eg-comp-products").style.display = "none";
+                    }
+                }
+
+
                 // products skelton
                 const egItems = document.querySelectorAll(".eg-comp-product");
                 if (egComp) {
@@ -230,6 +248,14 @@ $5</span>
                             egItems[i].querySelector(".eg-comp-product__img > img").src = egImg;
                             // updating product name in skeleton
                             egItems[i].querySelector(".eg-comp-product__name-price").childNodes[0].textContent = egName;
+
+                            // if comproduct is in cart list hiding it from suggestion
+                            let egIsPresent = contains("#__next .cart .cart__item .cart__item__content >div >div >div >div .cart__content:nth-of-type(1)",egName)
+                            if(egIsPresent.length > 0){
+                                egItems[i].style.display = "none";
+                            } else {
+                                egItems[i].style.display = null;
+                            }
                             // updating product price in skeleton
                             egItems[i].querySelector(".eg-price").innerText = egPrice;
                             ele.remove();
@@ -248,6 +274,13 @@ $5</span>
 
         }
 
+        // searching element by text inside of it
+        function contains(selector, text) {
+            var elements = document.querySelectorAll(selector);
+            return [].filter.call(elements, function(element) {
+                return RegExp(text).test(element.textContent);
+            });
+        }
 
 
         /* Initialize variation */
