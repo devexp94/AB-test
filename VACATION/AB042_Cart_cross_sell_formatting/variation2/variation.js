@@ -161,8 +161,6 @@
                     egComp = egProducts[egTxts[i].innerText.toUpperCase()];
                     if (egComp) {
                         break;
-                    } else {
-                        document.querySelector(".eg-comp-products").style.display = "none";
                     }
                 }
 

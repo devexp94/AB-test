@@ -3,7 +3,7 @@
 }
 
 .eg-comp-products:empty{
-    display: none;
+    display: none !important;
 }
 
 .eg-comp-product {
