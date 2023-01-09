@@ -175,7 +175,7 @@
                     }
                 ]
             },
-            'LIP DESSERTS 5X COLLECTOR’S SET': {
+            'LIP DESSERTS 5X COLLECTORS SET': {
                 "comp-products": [{
                         "url": "https://www.vacation.inc/products/strawberry-jello-salad",
                         "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC80MjQ0ODI4MjEyNDUyMQ=="
