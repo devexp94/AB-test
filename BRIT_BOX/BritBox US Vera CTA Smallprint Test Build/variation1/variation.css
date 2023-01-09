@@ -1,8 +1,8 @@
-#page_block_header .section-block .widget:nth-of-type(2){
+html body #page_block_header .section-block .widget:nth-of-type(2){
     position: relative;
 }
 
-#page_block_header .section-block .widget:nth-of-type(2)::after {
+html body #page_block_header .section-block .widget:nth-of-type(2)::after {
     content : "Free 7-day trial, then just $7.99/month or $79.99/year";
      color: #fff;
     font-size: 0.854rem;
@@ -17,7 +17,7 @@
 }
 
 @media screen and (max-width: 767px) {
-    #page_block_header .section-block .widget:nth-of-type(2)::after {
+    html body #page_block_header .section-block .widget:nth-of-type(2)::after {
         font-size: 12px;
     }
 }
