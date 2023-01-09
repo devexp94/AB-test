@@ -84,71 +84,17 @@
         }
 
         const egCompleMentoryHtml = `
-    <ul class="eg-comp-products">
-        <!-- complementory product one -->
-        <li class="eg-comp-product">
-            <!-- complementory product image -->
-            <div class="eg-comp-product__img">
-                <img src="https://cdn.sanity.io/images/kie4hq77/development/e37ece62f678845561172009cd0379fa5b4c8075-2000x2000.png?auto=format&q=75&w=200&h=200"/>
-            </div>
+        <ul class="eg-comp-products">
+           
+        </ul>`;
 
-            <!-- details and button -->
-            <div class="eg-comp-product__details">
-                <p class="eg-comp-product__name-price">
-                    Get the scent of the world's best-smelling sunscreen, for your car or home office for <span class="eg-price">
-$5</span>
-                </p>
-                <button class="eg-comp-product__cta">
-                    <span>ADD</span>
-                </button>
-            </div>
-        </li>
-        <!-- complementory product two -->
-        <li class="eg-comp-product">
-            <!-- complementory product image -->
-            <div class="eg-comp-product__img">
-                <img src="https://cdn.sanity.io/images/kie4hq77/development/e37ece62f678845561172009cd0379fa5b4c8075-2000x2000.png?auto=format&q=75&w=200&h=200"/>
-            </div>
-
-            <!-- details and button -->
-            <div class="eg-comp-product__details">
-                <p class="eg-comp-product__name-price">
-                    Get the scent of the world's best-smelling sunscreen, for your car or home office for <span class="eg-price">
-$5</span>
-                </p>
-                <button class="eg-comp-product__cta">
-                    <span>ADD</span>
-                </button>
-            </div>
-        </li>
-
-        <!-- complementory product three -->
-        <li class="eg-comp-product">
-            <!-- complementory product image -->
-            <div class="eg-comp-product__img">
-                <img src="https://cdn.sanity.io/images/kie4hq77/development/e37ece62f678845561172009cd0379fa5b4c8075-2000x2000.png?auto=format&q=75&w=200&h=200"/>
-            </div>
-
-            <!-- details and button -->
-            <div class="eg-comp-product__details">
-                <p class="eg-comp-product__name-price">
-                    Get the scent of the world's best-smelling sunscreen, for your car or home office for <span class="eg-price">
-$5</span>
-                </p>
-                <button class="eg-comp-product__cta">
-                    <span>ADD</span>
-                </button>
-            </div>
-        </li>
-    </ul>
-`;
-        live(['button', 'span',".header__nav__count"], 'click', function() {
+        live(['button', 'span', ".header__nav__count"], 'click', function() {
             if (this.innerText.toUpperCase().indexOf("BAG") != -1) {
                 waitForElement('#__next .cart > div:nth-child(2) >div', init, 50, 15000);
             } else if ((this.innerText.toUpperCase() == "ADD") || (this.innerText.toUpperCase() == "REMOVE") || this.parentElement.classList.contains("cart__item__quantity")) {
                 waitForElement('#__next .cart > div:nth-child(2) >div', init, 3000, 15000);
 
-            } else if(this.classList.contains("header__nav__count") || this.parentElement.classList.contains("header__nav__count") ) {
+            } else if (this.classList.contains("header__nav__count") || this.parentElement.classList.contains("header__nav__count")) {
                 waitForElement('#__next .cart > div:nth-child(2) >div', init, 50, 15000);
             }
         });
@@ -157,13 +103,9 @@ $5</span>
         /* Variation Init */
         function init() {
             /* start your code here */
-
-            if (!document.querySelector(".eg-comp-products")) {
-                fecthData();
-                document.querySelector("#__next .cart > div:nth-child(2) >div").insertAdjacentHTML("beforeend", egCompleMentoryHtml);
-            } else {
-                fecthData();
-            }
+            document.querySelector(".eg-comp-products") && document.querySelector(".eg-comp-products").remove();
+            fecthData();
+            document.querySelector("#__next .cart > div:nth-child(2) >div").insertAdjacentHTML("beforeend", egCompleMentoryHtml);
 
         }
 
@@ -226,7 +168,7 @@ $5</span>
 
 
                 // products skelton
-                const egItems = document.querySelectorAll(".eg-comp-product");
+                const egItemBox = document.querySelector(".eg-comp-products");
                 if (egComp) {
                     // making request
                     async function getData() {
@@ -244,23 +186,31 @@ $5</span>
                             // console.log(egPrice);
                             // console.log(egImg);
 
-                            // updating img src in skeleton
-                            egItems[i].querySelector(".eg-comp-product__img > img").src = egImg;
-                            // updating product name in skeleton
-                            egItems[i].querySelector(".eg-comp-product__name-price").childNodes[0].textContent = egName;
-
                             // if comproduct is in cart list hiding it from suggestion
-                            let egIsPresent = contains("#__next .cart .cart__item .cart__item__content >div >div >div >div .cart__content:nth-of-type(1)",egName)
-                            if(egIsPresent.length > 0){
-                                egItems[i].style.display = "none";
-                            } else {
-                                egItems[i].style.display = null;
+                            let egIsPresent = contains("#__next .cart .cart__item .cart__item__content >div >div >div >div .cart__content:nth-of-type(1)", egName)
+                            if (!egIsPresent.length > 0) {
+                                egItemBox.insertAdjacentHTML("beforeend", `
+                                <li class="eg-comp-product">
+                                    <!-- complementory product image -->
+                                    <div class="eg-comp-product__img">
+                                        <img src="${egImg}"/>
+                                    </div>
+
+                                    <!-- details and button -->
+                                    <div class="eg-comp-product__details">
+                                        <p class="eg-comp-product__name-price">
+                                            ${egName} <span class="eg-price">${egPrice}</span>
+                                        </p>
+                                        <button class="eg-comp-product__cta">
+                                            <span>ADD</span>
+                                        </button>
+                                    </div>
+                                </li>`);
                             }
+
                             // updating product price in skeleton
-                            egItems[i].querySelector(".eg-price").innerText = egPrice;
                             ele.remove();
                         }
-                        document.querySelector(".eg-comp-products").style.display = "block";
 
                     }
 

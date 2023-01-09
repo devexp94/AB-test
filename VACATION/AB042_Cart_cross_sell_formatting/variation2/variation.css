@@ -2,7 +2,7 @@
      display:none; 
 }
 
-.eg-comp-products{
+.eg-comp-products:empty{
     display: none;
 }
 
