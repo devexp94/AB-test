@@ -99,14 +99,12 @@
             }
         });
 
-        listener();
         /* Variation Init */
         function init() {
             /* start your code here */
             document.querySelector(".eg-comp-products") && document.querySelector(".eg-comp-products").remove();
-            fecthData();
             document.querySelector("#__next .cart > div:nth-child(2) >div").insertAdjacentHTML("beforeend", egCompleMentoryHtml);
-
+            fecthData();
         }
 
         /*===============================================*/
@@ -186,7 +184,7 @@
 
                             // if comproduct is in cart list hiding it from suggestion
                             let egIsPresent = contains("#__next .cart .cart__item .cart__item__content >div >div >div >div .cart__content:nth-of-type(1)", egName)
-                            if (!egIsPresent.length > 0) {
+                            if (egIsPresent.length <= 0) {
                                 egItemBox.insertAdjacentHTML("beforeend", `
                                 <li class="eg-comp-product">
                                     <!-- complementory product image -->
@@ -229,10 +227,9 @@
                 return RegExp(text).test(element.textContent);
             });
         }
-
-
+        
         /* Initialize variation */
-        waitForElement('#__next .cart > div:nth-child(2) >div', init, 50, 15000);
+        listener();
     } catch (e) {
         if (debug) console.log(e, "error in Test" + variation_name);
     }
