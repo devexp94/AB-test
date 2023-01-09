@@ -216,8 +216,8 @@ $5</span>
                 let egComp;
                 let egTxts = document.querySelectorAll("#__next .cart .cart__item .cart__item__content >div >div >div >div .cart__content:nth-of-type(1)");
                 for (let i = 0; i < egTxts.length; i++) {
-                    if (egProducts[egTxts[i].innerText.toUpperCase()]) {
-                        egComp = egProducts[egTxts[i].innerText.toUpperCase()]
+                    egComp = egProducts[egTxts[i].innerText.toUpperCase()];
+                    if (egComp) {
                         break;
                     } else {
                         document.querySelector(".eg-comp-products").style.display = "none";
