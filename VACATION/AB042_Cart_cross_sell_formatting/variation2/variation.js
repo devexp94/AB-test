@@ -184,9 +184,9 @@
 
                             // if comproduct is in cart list hiding it from suggestion
                             let egIsPresent = contains("#__next .cart .cart__item .cart__item__content >div >div >div >div .cart__content:nth-of-type(1)", egName)
-                            if (egIsPresent.length <= 0) {
+                            if (egIsPresent.length <= 0 && !egItemBox.querySelector(`#eg-comp-${i}`)) {
                                 egItemBox.insertAdjacentHTML("beforeend", `
-                                <li class="eg-comp-product">
+                                <li class="eg-comp-product" id="eg-comp-${i}">
                                     <!-- complementory product image -->
                                     <div class="eg-comp-product__img">
                                         <img src="${egImg}"/>
@@ -227,7 +227,7 @@
                 return RegExp(text).test(element.textContent);
             });
         }
-        
+
         /* Initialize variation */
         listener();
     } catch (e) {
