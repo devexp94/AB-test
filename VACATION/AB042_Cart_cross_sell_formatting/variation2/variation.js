@@ -144,46 +144,109 @@
 
         const egProducts = {
             "CLASSIC LOTION SPF 30": {
-                "comp-products":["https://www.vacation.inc/products/classic-whip-spf-30",
-                "https://www.vacation.inc/products/scent",
-                "https://www.vacation.inc/products/ball-boy-candle"],
-                "varientId":2
+                "comp-products": [{
+                        "url": "https://www.vacation.inc/products/classic-whip-spf-30",
+                        "id": 30
+                    },
+                    {
+                        "url": "https://www.vacation.inc/products/scent",
+                        "id": 30
+                    },
+                    {
+                        "url": "https://www.vacation.inc/products/ball-boy-candle",
+                        "id": 30
+                    },
+                ]
             },
             'PARTIAL OCEAN VIEW SUITE': {
-                "comp-products":["https://www.vacation.inc/products/chardonnay-oil-spf-30",
-                "https://www.vacation.inc/products/luxury-duo",
-                "https://www.vacation.inc/products/classic-spray-spf-30"],
-                "varientId":3
+                "comp-products": [{
+                        "url": "https://www.vacation.inc/products/chardonnay-oil-spf-30",
+                        "id": 30
+                    },
+                    {
+                        "url": "https://www.vacation.inc/products/luxury-duo",
+                        "id": 30
+                    },
+                    {
+                        "url":"https://www.vacation.inc/products/classic-spray-spf-30",
+                        "id": 30
+                    },
+                ]
             },
             'SUPER SPRITZER': {
-                "comp-products":["https://www.vacation.inc/products/mineral-lotion-spf-30",
-                "https://www.vacation.inc/products/classic-lotion-pack-of-3",
-                "https://www.vacation.inc/products/summer-leisure-pack"],
-                "varientId":4
+                "comp-products": [{
+                        "url": "https://www.vacation.inc/products/mineral-lotion-spf-30",
+                        "id": 30
+                    },
+                    {
+                        "url":"https://www.vacation.inc/products/classic-lotion-pack-of-3",
+                        "id": 30
+                    },
+                    {
+                        "url":"https://www.vacation.inc/products/summer-leisure-pack",
+                        "id": 30
+                    },
+                ]
             },
             'MINERAL LOTION SPF 30': {
-                "comp-products":["https://www.vacation.inc/products/air-freshener",
-                "https://www.vacation.inc/products/classic-whip-air-freshener",
-                "https://www.vacation.inc/products/chardonnay-air-freshener"],
-                "varientId":5
+                "comp-products": [{
+                        "url":"https://www.vacation.inc/products/air-freshener",
+                        "id": 30
+                    },
+                    {
+                        "url":"https://www.vacation.inc/products/classic-whip-air-freshener",
+                        "id": 30
+                    },
+                    {
+                        "url":"https://www.vacation.inc/products/chardonnay-air-freshener",
+                        "id": 30
+                    },
+                ]
             },
             'HOME RESORT THREE CANDLE SET': {
-                "comp-products":["https://www.vacation.inc/products/suite-candle",
-                "https://www.vacation.inc/products/lobby-candle",
-                "https://www.vacation.inc/products/pool-boy-candle"],
-                "varientId":6
+                "comp-products": [{
+                        "url":"https://www.vacation.inc/products/suite-candle",
+                        "id": 30
+                    },
+                    {
+                        "url":"https://www.vacation.inc/products/lobby-candle",
+                        "id": 30
+                    },
+                    {
+                        "url":"https://www.vacation.inc/products/pool-boy-candle",
+                        "id": 30
+                    },
+                ]
             },
             'LIP DESSERTS 5X COLLECTOR’S SET': {
-                "comp-products":["https://www.vacation.inc/products/strawberry-jello-salad",
-                "https://www.vacation.inc/products/bananas-foster",
-                "https://www.vacation.inc/products/bombe-alaska"],
-                "varientId":7
+                "comp-products": [{
+                        "url":"https://www.vacation.inc/products/strawberry-jello-salad",
+                        "id": 30
+                    },
+                    {
+                        "url":"https://www.vacation.inc/products/bananas-foster",
+                        "id": 30
+                    },
+                    {
+                        "url":"https://www.vacation.inc/products/bombe-alaska",
+                        "id": 30
+                    },
+                ]
             },
             'PINEAPPLE UPSIDE-DOWN CAKE': {
-                "comp-products":["https://www.vacation.inc/products/air-freshener-4-pack",
-                "https://www.vacation.inc/products/air-freshener-variety-pack-pack-of-4",
-                "https://www.vacation.inc/products/scent-sample"],
-                "varientId":8
+                "comp-products": [{
+                        "url":"https://www.vacation.inc/products/air-freshener-4-pack",
+                        "id": 30
+                    },
+                    {
+                        "url":"https://www.vacation.inc/products/air-freshener-variety-pack-pack-of-4",
+                        "id": 30
+                    },
+                    {
+                        "url":"https://www.vacation.inc/products/scent-sample",
+                        "id": 30
+                    },
+                ]
             }
         }
 
@@ -207,7 +270,7 @@
                     // making request
                     async function getData() {
                         for (let i = 0; i < egComp.length; i++) {
-                            url = egComp[i];
+                            url = egComp[i].url;
                             const response = await fetch(url);
                             const responseText = await response.text();
                             const ele = document.createElement("div");
