@@ -142,13 +142,13 @@ $5</span>
         </li>
     </ul>
 `;
-        live(['button', 'span'], 'click', function() {
+        live(['button', 'span',".header__nav__count"], 'click', function() {
             if (this.innerText.toUpperCase().indexOf("BAG") != -1) {
                 waitForElement('#__next .cart > div:nth-child(2) >div', init, 50, 15000);
             } else if ((this.innerText.toUpperCase() == "ADD") || (this.innerText.toUpperCase() == "REMOVE") || this.parentElement.classList.contains("cart__item__quantity")) {
                 waitForElement('#__next .cart > div:nth-child(2) >div', init, 3000, 15000);
 
-            } else if(this.classList.contains("header__nav__count")){
+            } else if(this.classList.contains("header__nav__count") || this.parentElement.classList.contains("header__nav__count") ) {
                 waitForElement('#__next .cart > div:nth-child(2) >div', init, 50, 15000);
             }
         });
@@ -159,8 +159,8 @@ $5</span>
             /* start your code here */
 
             if (!document.querySelector(".eg-comp-products")) {
-                document.querySelector("#__next .cart > div:nth-child(2) >div").insertAdjacentHTML("beforeend", egCompleMentoryHtml);
                 fecthData();
+                document.querySelector("#__next .cart > div:nth-child(2) >div").insertAdjacentHTML("beforeend", egCompleMentoryHtml);
             } else {
                 fecthData();
             }
