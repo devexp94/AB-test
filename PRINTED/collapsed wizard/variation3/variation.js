@@ -93,8 +93,9 @@
 
         live("html body .l-wizard__body *", "click", function() {
             let egIsTarget = this.classList.contains("eg-arrow") || this.classList.contains("l-wizard-section__header")
-            console.log("eg-clicked sir")
             if (!egIsTarget) {
+                console.log("eg-clicked sir")
+
                 closeActiveSection();
             }
         })
