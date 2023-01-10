@@ -1,0 +1,5 @@
+{
+  "files": ["./variationC/variation.css", "./variationC/variation.js"],
+  "urls": ["https://thespanishgroup.org/"],
+  "inject": ""
+}
