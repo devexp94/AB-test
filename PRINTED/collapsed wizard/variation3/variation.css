@@ -1,0 +1,62 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#container-to-scroll > div:nth-child(2) > div > div:has(.l-wizard-section__container){
+    cursor: pointer;
+}
+
+.eg-inactive-section{
+    max-height: 0;
+    overflow: hidden;
+}
+
+.l-wizard-section{
+    padding-block: .8rem !important;
+}
+
+/*arrow up and down*/
+html body .l-wizard-section__header {
+    position: relative !important;
+    padding-right: 3rem !important;
+}
+
+.eg-arrow {
+    position: absolute;
+    right:0;
+    top: 50%;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+}
+
+.eg-arrow::after {
+    content: '';
+    display: inline-block;
+    width: 0.7rem;
+    height: 0.7rem;
+    border: solid #ED40A9;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.l-wizard-section__header:has(~.l-wizard-section__container:not(.eg-inactive-section)) .eg-arrow::after{
+ transform:rotate(227deg);
+}
+
+/*hiding arrow if section has no content*/
+.l-wizard-section:has(.l-wizard-section__header .is-inactive) .eg-arrow{
+    display:none !important;
+    pointer-events: none !important;
+}
+
+
+@media(max-width: 767px){
+    html body .l-wizard__body{
+        padding-top: 20px !important;
+    }
+}
