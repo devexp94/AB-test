@@ -92,7 +92,7 @@
             waitForElement('html body .l-wizard__body', init, 50, 15000);
         });
 
-        live("html body .l-wizard__body *", "click", function() {
+        live(["html body .l-wizard__body .l-wizard-section *","html body .l-wizard__body .c-wizard-button","html body .l-wizard__body .c-wizard-button__variants-item"], "click", function() {
             let egIsTarget = this.classList.contains("eg-arrow") || this.classList.contains("l-wizard-section__header")
             if (!egIsTarget) {
                 egToclose = true;
