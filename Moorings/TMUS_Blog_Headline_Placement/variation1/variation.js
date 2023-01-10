@@ -27,7 +27,7 @@
     function init() {
       let egRegex = /^\/blog\/page\/\d+$/;
       /* start your code here */
-      if((window.location.pathname === "/blog") || (egRegex.test(window.location.pathname)) ){
+      if((window.location.pathname === "/blog") || (window.location.pathname === "/blog/") || (egRegex.test(window.location.pathname)) ){
         document.body.classList.add("eg-blog-page");
       }
     }
