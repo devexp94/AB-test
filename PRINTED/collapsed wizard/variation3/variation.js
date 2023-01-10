@@ -57,7 +57,6 @@
             live(selector, event, callback, context);
         }
 
-        let egFirst = true;
         let egOpend = [];
         let closeInterval;
         /* Variation Init */
@@ -180,15 +179,9 @@
 
             let egBlock = document.querySelector(".l-wizard-section:has(.l-wizard-section__icon:not(.is-active)) .l-wizard-section__container")
 
-            if (egFirst) {
-                egBlock = document.querySelector("html body .l-wizard__body > div >div:nth-child(1):has(.l-wizard-section__header .l-wizard-section__icon.is-active) .l-wizard-section__container");
-            }
-
             egBlock.classList.remove("eg-inactive-section");
             egOpend.unshift(egBlock);
             egBlock.parentElement.scrollIntoView({ behaviour: "smooth", block: 'start' });
-
-            egFirst = false;
 
         }
 
