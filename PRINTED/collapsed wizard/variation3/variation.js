@@ -58,6 +58,7 @@
         }
 
         let egOpend = [];
+        let egToclose = false;
         let closeInterval;
         /* Variation Init */
         function init() {
@@ -94,6 +95,7 @@
         live("html body .l-wizard__body *", "click", function() {
             let egIsTarget = this.classList.contains("eg-arrow") || this.classList.contains("l-wizard-section__header")
             if (!egIsTarget) {
+                egToclose = true;
                 closeActiveSection();
             }
         })
@@ -153,19 +155,19 @@
 
         // check api call and close tab accordinglly
         function closeActiveSection() {
-            const send = XMLHttpRequest.prototype.send;
-            let listener;
+            const send = XMLHttpRequest.prototype.send
             XMLHttpRequest.prototype.send = function() {
-                this.addEventListener('load', listener = function() {
+                this.addEventListener('load', function() {
+                    // checking api is called for product
+                    // console.log(this.responseURL.indexOf("wizard"))
                     if (this.responseURL.indexOf("/api/wizard/") != -1) {
-                        closeAll();
-                        this.removeEventListener('load', listener);
+                        egToclose && closeAll();
+                        egToclose = false;
                     }
-                });
-                return send.apply(this, arguments);
+                })
+                return send.apply(this, arguments)
             }
         }
-
 
 
         function closeAll() {
