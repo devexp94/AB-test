@@ -83,7 +83,7 @@
       left: 1.375rem;
       height: 5.125rem;
       width: 22.0625rem;
-      z-index: 8;
+      z-index: 99;
   }
   
     html body #element-220 {
@@ -99,16 +99,26 @@
       height: 27rem;
     }
   
-    html body .eg-video-container+.section-inner .widget.hidden-mobile {
+    html body .eg-video-container + .section-inner .widget.hidden-mobile {
       display: block !important;
     }
   
-    /* html body .eg-video-container+.section-inner {
+    html body .eg-video-container + .section-inner {
       height: 50% !important;
       top: 86% !important;
-    } */
+    }
   
     /* html body .eg-video-container+.section-inner #element-240 {
       top: 110px !important;
     } */
+
+    html body  #element-240 {
+      bottom: 10px;
+      left: 1.4375rem;
+      height: 3.375rem;
+      width: 22.0625rem;
+      z-index: 13;
+      position: fixed !important;
+      background: red;
+  }
   }
