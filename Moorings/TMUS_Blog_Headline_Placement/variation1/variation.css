@@ -1,0 +1,14 @@
+html body.eg-blog-page .main .post-listing >article {
+    display: flex;
+    flex-direction: column;
+}
+
+html body.eg-blog-page .main .post-listing >article .post-listing-item__title{
+    order:-1;
+}
+
+html body.eg-blog-page .main .post-listing >article .post-listing-item__meta{
+    order:-1;
+    margin-top:0 !important;
+    margin-bottom:10px !important;
+}
