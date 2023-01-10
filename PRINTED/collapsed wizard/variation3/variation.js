@@ -57,6 +57,7 @@
             live(selector, event, callback, context);
         }
 
+        let egFirst = true;
         let egOpend = [];
         let closeInterval;
         /* Variation Init */
@@ -69,10 +70,10 @@
                         item.insertAdjacentHTML("beforeend", `<span class="eg-arrow"></span>`);
                     }
                 });
-                closeAll();
             }, 50, 15000);
 
         }
+
 
         // header click detect
 
@@ -91,6 +92,12 @@
             waitForElement('html body .l-wizard__body', init, 50, 15000);
         });
 
+        live("html body .l-wizard__body *", "click", function() {
+            let egIsTarget = this.classList.contains("eg-arrow") || this.classList.contains("l-wizard-section__header")
+            if (!egIsTarget) {
+                closeActiveSection();
+            }
+        })
 
         // expand close logic
         live(['.c-wizard-summary__btn-edit', '.eg-arrow'], 'click', function() {
@@ -153,14 +160,12 @@
                     // checking api is called for product
                     // console.log(this.responseURL.indexOf("wizard"))
                     if (this.responseURL.indexOf("/api/wizard/") != -1) {
-                        waitForElement('html body .l-wizard__body', init, 50, 15000);
+                        closeAll();
                     }
                 })
                 return send.apply(this, arguments)
             }
         }
-
-        closeActiveSection();
 
 
         function closeAll() {
@@ -170,15 +175,24 @@
                     arrow.click();
                 }
             });
-            let firstUnopend = document.querySelector(".l-wizard-section:has(.l-wizard-section__icon:not(.is-active))");
+
             closeOpenArrows();
-            firstUnopend.querySelector(".l-wizard-section__container").classList.remove("eg-inactive-section");
-            egOpend.unshift(firstUnopend.querySelector(".l-wizard-section__container"));
-            firstUnopend.scrollIntoView({ behaviour: "smooth", block: 'start' });
+
+            let egBlock = document.querySelector(".l-wizard-section:has(.l-wizard-section__icon:not(.is-active)) .l-wizard-section__container")
+
+            if (egFirst) {
+                egBlock = document.querySelector("html body .l-wizard__body > div >div:nth-child(1):has(.l-wizard-section__header .l-wizard-section__icon.is-active) .l-wizard-section__container");
+            }
+
+            egBlock.classList.remove("eg-inactive-section");
+            egOpend.unshift(egBlock);
+            egBlock.parentElement.scrollIntoView({ behaviour: "smooth", block: 'start' });
+
+            egFirst = false;
+
         }
 
         /* Initialize variation */
-        waitForElement('.c-button', init, 50, 15000);
         waitForElement('html body .l-wizard__body', init, 50, 15000);
 
     } catch (e) {
