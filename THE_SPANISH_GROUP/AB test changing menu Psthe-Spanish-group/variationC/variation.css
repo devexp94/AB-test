@@ -221,7 +221,7 @@ html body .more-menu .english-menu .eg-main-menu-link.eg-home {
         display: block !important;
     }
 
-    html body .eg-sub-menu-outer:not(.eg-show) {
+    html body .more-menu .eg-main-menu-link:not(.eg-home) a:has(+ul) + ul:not(.eg-show) {
         display: none !important;
     }
 }
