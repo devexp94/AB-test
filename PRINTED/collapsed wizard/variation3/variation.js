@@ -153,18 +153,19 @@
 
         // check api call and close tab accordinglly
         function closeActiveSection() {
-            const send = XMLHttpRequest.prototype.send
+            const send = XMLHttpRequest.prototype.send;
+            let listener;
             XMLHttpRequest.prototype.send = function() {
-                this.addEventListener('load', function() {
-                    // checking api is called for product
-                    // console.log(this.responseURL.indexOf("wizard"))
+                this.addEventListener('load', listener = function() {
                     if (this.responseURL.indexOf("/api/wizard/") != -1) {
                         closeAll();
+                        this.removeEventListener('load', listener);
                     }
-                })
-                return send.apply(this, arguments)
+                });
+                return send.apply(this, arguments);
             }
         }
+
 
 
         function closeAll() {
