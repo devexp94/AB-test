@@ -1,0 +1,21 @@
+html body #main.product-detail-container {
+    display: flex;
+    flex-direction: column;
+}
+
+html body #main.product-detail-container>section:nth-of-type(3)>.container .c-similar-products-component {
+    padding-top: 0 !important;
+    padding-bottom: 27px !important;
+}
+
+html body #main.product-detail-container>section:nth-of-type(2) {
+    order: 4;
+}
+
+@media(min-width: 1200px) {
+    html body #main.product-detail-container>section:nth-of-type(3)>.container .c-similar-products-component {
+        padding-top: 0 !important;
+        min-height: 600px !important;
+        padding-bottom: 10px !important;
+    }
+}
