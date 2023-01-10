@@ -27,9 +27,8 @@
             document.querySelector('#page_block_header > div.section-block').insertAdjacentHTML('afterbegin', `
             <div class="eg-video-container"><iframe src="https://player.vimeo.com/video/785088512?title=0&autoplay=1&muted=1&controls=0&sidedock=0&loop=1"></iframe></div`);
   
-            // setTimeout(() => {
-            //     document.querySelector("#element-240").classList.remove("item-absolute")
-            // }, 2000);
+                // document.querySelector("#element-240").classList.remove("item-absolute");
+                document.querySelector("#element-240").insertAdjacentElement("beforeend" , "body")
 
         }
         /* Initialize variation */

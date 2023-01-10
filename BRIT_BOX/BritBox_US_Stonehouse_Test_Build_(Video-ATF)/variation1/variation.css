@@ -112,13 +112,16 @@
       top: 110px !important;
     } */
 
-    html body  #element-240 {
-      bottom: 10px;
-      left: 1.4375rem;
-      height: 3.375rem;
-      width: 22.0625rem;
-      z-index: 13;
+    html body .eg-video-container + .section-inner #element-240 {
+      bottom: 13px !important;
+      left: 0 !important;
+      right: 0 !important;
+      height: 4.375rem;
+      width: 100% !important;
       position: fixed !important;
-      background: red;
+      display: flex;
+      justify-content: center;
+      background: #000 !important;
+      top: unset !important;
   }
   }
