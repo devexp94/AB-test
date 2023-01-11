@@ -62,36 +62,38 @@
         /* Variation Init */
         function init() {
             /* start your code here */
-            // adding arrow icons
             waitForElement('.l-wizard-section__header', function() {
-                document.querySelectorAll(".l-wizard-section__header").forEach(item => {
-                    if (!item.querySelector(".eg-arrow")) {
-                        item.insertAdjacentHTML("beforeend", `<span class="eg-arrow"></span>`);
-                    }
-                });
-                setTimeout(()=>{
+                setTimeout(() => {
                     closeActiveSection();
-                },2000);
-                
-            }, 500, 15000);
+                }, 5000);
+
+            }, 50, 15000);
 
         }
-
-
-
-
 
         // header click detect
 
         live('.l-wizard-section__header', 'click', (e) => {
             if (e.target.classList.contains("l-wizard-section__header")) {
-                e.target.querySelector(".eg-arrow").click();
-            } else if (e.target.classList.contains("l-wizard-section__title")) {
-                e.target.parentElement.querySelector(".eg-arrow").click();
-            } else if (e.target.classList.contains("l-wizard-section__icon")) {
-                e.target.parentElement.querySelector(".eg-arrow").click();
+                showContainer(e.target);
+            } else if ((e.target.classList.contains("l-wizard-section__title")) || (e.target.classList.contains("l-wizard-section__icon"))) {
+                showContainer(e.target.parentElement);
             }
         });
+
+        function showContainer(headerEle) {
+            let egContainer = headerEle.parentElement.querySelector(".l-wizard-section__container");
+            if (egContainer !== null) {
+                closeOpenArrows(egContainer);
+                egContainer.classList.toggle("eg-inactive-section");
+                headerEle.parentElement.scrollIntoView({ behavior: "smooth", block: 'start' });
+
+                if (!headerEle.parentElement.querySelector(".l-wizard-section__container").classList.contains("eg-inactive-section")) {
+                    egOpend.unshift(headerEle.parentElement.querySelector(".l-wizard-section__container"));
+                }
+            }
+        }
+
 
         // order now button click
         live(['html body .c-product-card__btn',
@@ -101,48 +103,36 @@
             waitForElement('html body .l-wizard__body', init, 50, 15000);
         });
 
-        // expand close logic
-        live(['.c-wizard-summary__btn-edit', '.eg-arrow'], 'click', function() {
+        live("html body .l-wizard-section__action-button", "click", function() {
+            this.parentElement.click();
+        });
+
+        
+        // edit btn click logic
+        live('.c-wizard-summary__btn-edit', 'click', function() {
             if (this.classList.contains("c-wizard-summary__btn-edit")) {
                 let egTargetTxt = this.parentElement.firstElementChild.innerText.toUpperCase().split(" ").shift();
                 // searching section for this text
-                document.querySelectorAll(".l-wizard-section__header .l-wizard-section__title").forEach(title => {
-                    if (title.innerText.toUpperCase().indexOf(egTargetTxt) != -1) {
-                        title.parentElement.parentElement.scrollIntoView({ behavior: "smooth", block: 'start' });
+                document.querySelectorAll(".l-wizard-section").forEach(secTion => {
+                    if (secTion.innerText.toUpperCase().indexOf(egTargetTxt) != -1) {
+                        secTion.scrollIntoView({ behavior: "smooth", block: 'start' });
 
                         //========== EDIT BUTTON CLICK LOGIC ========//
 
-                        /* so here i'm checking this edit button's grand parent's first element text 
-                        and looping it through the sections header title if its meet any of one 
-                        than our loop will stop and that section will get scrolled into view
-                        and if it's container part (which contains content) is close so we will open it and if 
-                        not just scrolled that section */
+                        /* so here i'm lopping through all the sections and getting their inner text
+                        if inner text has the egTargetTxt then only we are scrolling to that section
+                        and showing the container element inside of it */
 
 
-                        if (title.parentElement.parentElement.querySelector(".eg-inactive-section")) {
+                        if (secTion.querySelector(".eg-inactive-section")) {
                             closeOpenArrows();
-                            egOpend.unshift(title.parentElement.parentElement.querySelector(".eg-inactive-section"));
-                            title.parentElement.parentElement.querySelector(".eg-inactive-section").classList.remove("eg-inactive-section");
+                            egOpend.unshift(secTion.querySelector(".eg-inactive-section"));
+                            secTion.querySelector(".eg-inactive-section").classList.remove("eg-inactive-section");
 
                         }
 
                     }
                 });
-            }
-
-            // btn open close logic
-            if (this.classList.contains("eg-arrow")) {
-                let egContainer = this.parentElement.parentElement.querySelector(".l-wizard-section__container");
-                if (egContainer !== null) {
-                    closeOpenArrows(egContainer);
-                    egContainer.classList.toggle("eg-inactive-section");
-                    this.parentElement.parentElement.scrollIntoView({ behavior: "smooth", block: 'start' });
-
-                    if (!this.parentElement.parentElement.querySelector(".l-wizard-section__container").classList.contains("eg-inactive-section")) {
-                        egOpend.unshift(this.parentElement.parentElement.querySelector(".l-wizard-section__container"));
-                    }
-                }
-
             }
         });
 
@@ -154,7 +144,7 @@
             });
         }
 
-        // check api call and close tab accordinglly
+        // check loader for disabled attribute then close tab accordinglly
         function closeActiveSection() {
             const element = document.querySelector('#vue-wizard .l-wizard__trigger');
 
@@ -163,9 +153,9 @@
                     if (mutation.attributeName === 'disabled') {
                         if (element.disabled === false) {
                             clearTimeout(egCloseTimeout);
-                            egCloseTimeout = setTimeout(()=>{
-                                 closeAll();
-                            },500);
+                            egCloseTimeout = setTimeout(() => {
+                                closeAll();
+                            }, 500);
                         }
                     }
                 });
@@ -177,19 +167,17 @@
         }
 
 
-
-
         function closeAll() {
-            const egArrows = document.querySelectorAll(".eg-arrow");
-            egArrows.forEach(arrow => {
-                if (!arrow.parentElement.parentElement.querySelector(".eg-inactive-section")) {
-                    arrow.click();
+            const egHeaders = document.querySelectorAll(".l-wizard-section__header");
+            egHeaders.forEach(egHeader => {
+                if (!egHeader.parentElement.querySelector(".eg-inactive-section")) {
+                    egHeader.click();
                 }
             });
 
             closeOpenArrows();
 
-            let egBlock = document.querySelector(".l-wizard-section:has(.l-wizard-section__icon:not(.is-active)) .l-wizard-section__container")
+            let egBlock = document.querySelector(".l-wizard-section:has(.l-wizard-section__icon:not(.is-active)) .l-wizard-section__container");
             if (egBlock) {
                 egBlock.classList.remove("eg-inactive-section");
                 egOpend.unshift(egBlock);

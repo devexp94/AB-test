@@ -21,35 +21,26 @@ html body .l-wizard-section__header {
     padding-right: 3rem !important;
 }
 
-.eg-arrow {
-    position: absolute;
-    right:0;
-    top: 50%;
-    height: fit-content;
-    width: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translateY(-50%);
-}
-
-.eg-arrow::after {
+html body .l-wizard-section__header::after {
     content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
     display: inline-block;
     width: 0.7rem;
     height: 0.7rem;
     border: solid #ED40A9;
     border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
+    transform: rotate(45deg) translateY(-100%);
     cursor: pointer;
 }
 
-.l-wizard-section__header:has(~.l-wizard-section__container:not(.eg-inactive-section)) .eg-arrow::after{
+.l-wizard-section__header:has(~.l-wizard-section__container:not(.eg-inactive-section))::after{
  transform:rotate(227deg);
 }
 
 /*hiding arrow if section has no content*/
-.l-wizard-section:has(.l-wizard-section__header .is-inactive) .eg-arrow{
+.l-wizard-section:has(.l-wizard-section__header .is-inactive) .l-wizard-section__header::after{
     display:none !important;
     pointer-events: none !important;
 }
