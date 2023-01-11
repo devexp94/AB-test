@@ -11,14 +11,15 @@
     
     .egBanner {
         background: #FFF;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid;
     }
     
     .egInner a {
-        font-size: 15px;
+        font-size: 14px;
         color: #000;
         font-family: FuturaPT;
-        font-weight: 600;
+        font-weight: 500;
     }
 }
