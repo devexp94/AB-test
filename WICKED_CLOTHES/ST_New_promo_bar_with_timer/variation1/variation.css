@@ -1,0 +1,31 @@
+@media(min-width:991px) {
+    html body main.home {
+        margin-top: -4rem !important; /* setting by default just increased by -2 rem */
+    }
+}
+
+.eg-promo-wrapper {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.eg-promo-container {
+    background: #fff;
+}
+
+@media(max-width:680px) {
+    .eg-promo-wrapper {
+        text-align: center;
+        flex-direction:
+            column;
+        align-items: center;
+        gap: 10px;
+    }
+}
