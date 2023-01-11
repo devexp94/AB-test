@@ -85,6 +85,7 @@
             let egContainer = headerEle.parentElement.querySelector(".l-wizard-section__container");
             if (egContainer !== null) {
                 closeOpenArrows(egContainer);
+                egContainer.removeAttribute("style");
                 egContainer.classList.toggle("eg-inactive-section");
                 headerEle.parentElement.scrollIntoView({ behavior: "smooth", block: 'start' });
 
@@ -128,7 +129,6 @@
                             closeOpenArrows();
                             egOpend.unshift(secTion.querySelector(".eg-inactive-section"));
                             secTion.querySelector(".eg-inactive-section").classList.remove("eg-inactive-section");
-
                         }
 
                     }
@@ -150,6 +150,7 @@
 
             const observer = new MutationObserver(mutations => {
                 mutations.forEach(mutation => {
+                    console.log("EG mutation")
                     if (mutation.attributeName === 'disabled') {
                         if (element.disabled === false) {
                             clearTimeout(egCloseTimeout);
