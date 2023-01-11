@@ -58,7 +58,6 @@
         }
 
         let egOpend = [];
-        let egToclose = false;
         let closeInterval;
         /* Variation Init */
         function init() {
@@ -70,9 +69,13 @@
                         item.insertAdjacentHTML("beforeend", `<span class="eg-arrow"></span>`);
                     }
                 });
+                closeActiveSection();
             }, 50, 15000);
 
         }
+
+
+
 
 
         // header click detect
@@ -88,17 +91,12 @@
         });
 
         // order now button click
-        live('.c-button', "click", function() {
+        live(['html body .c-product-card__btn',
+            "html body .c-product-header__wizard-cta",
+            "html body .c-sticky-nav__button"
+        ], "click", function() {
             waitForElement('html body .l-wizard__body', init, 50, 15000);
         });
-
-        live(["html body .l-wizard__body .l-wizard-section *","html body .l-wizard__body .c-wizard-button","html body .l-wizard__body .c-wizard-button__variants-item"], "click", function() {
-            let egIsTarget = this.classList.contains("eg-arrow") || this.classList.contains("l-wizard-section__header")
-            if (!egIsTarget) {
-                egToclose = true;
-                closeActiveSection();
-            }
-        })
 
         // expand close logic
         live(['.c-wizard-summary__btn-edit', '.eg-arrow'], 'click', function() {
@@ -155,19 +153,24 @@
 
         // check api call and close tab accordinglly
         function closeActiveSection() {
-            const send = XMLHttpRequest.prototype.send
-            XMLHttpRequest.prototype.send = function() {
-                this.addEventListener('load', function() {
-                    // checking api is called for product
-                    // console.log(this.responseURL.indexOf("wizard"))
-                    if (this.responseURL.indexOf("/api/wizard/") != -1) {
-                        egToclose && closeAll();
-                        egToclose = false;
+            const element = document.querySelector('#vue-wizard .l-wizard__trigger');
+
+            const observer = new MutationObserver(mutations => {
+                mutations.forEach(mutation => {
+                    if (mutation.attributeName === 'disabled') {
+                        if (element.disabled) {
+                            closeAll();
+                        }
                     }
-                })
-                return send.apply(this, arguments)
-            }
+                });
+            });
+
+            const config = { attributes: true };
+            observer.observe(element, config);
+
         }
+
+
 
 
         function closeAll() {
@@ -181,10 +184,11 @@
             closeOpenArrows();
 
             let egBlock = document.querySelector(".l-wizard-section:has(.l-wizard-section__icon:not(.is-active)) .l-wizard-section__container")
-
-            egBlock.classList.remove("eg-inactive-section");
-            egOpend.unshift(egBlock);
-            egBlock.parentElement.scrollIntoView({ behaviour: "smooth", block: 'start' });
+            if (egBlock) {
+                egBlock.classList.remove("eg-inactive-section");
+                egOpend.unshift(egBlock);
+                egBlock.parentElement.scrollIntoView({ behaviour: "smooth", block: 'start' });
+            }
 
         }
 
