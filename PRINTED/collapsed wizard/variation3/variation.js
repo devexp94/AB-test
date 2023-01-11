@@ -73,17 +73,8 @@
 
         // header click detect
 
-        // live(".l-wizard-section__action-button","click",function() {
-        //     this.parentElement.parentElement.querySelector(".l-wizard-section__container").classList.toggle("eg-inactive-section");
-        // })
-
         live('.l-wizard-section__header', 'click', (e) => {
             if (e.target.classList.contains("l-wizard-section__header")) {
-                // if (e.target.querySelector(".l-wizard-section__action-button")) {
-                //     e.target.querySelector(`.l-wizard-section__action-button:not([style="display: none;"])`).click();
-                // } else {
-                //     showContainer(e.target);
-                // }
                 showContainer(e.target);
 
             } else if ((e.target.classList.contains("l-wizard-section__title")) || (e.target.classList.contains("l-wizard-section__icon"))) {
