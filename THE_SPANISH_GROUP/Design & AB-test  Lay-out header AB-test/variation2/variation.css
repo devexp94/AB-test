@@ -94,6 +94,10 @@ a.eg_quote {
     font-size: 17px !important;
 }
 
+div.eg_desc > div:nth-child(2) > div.eg_img img  {
+    width: 24px;
+}
+
 .eg_aside {
     background: rgb(4 62 113 / 80%) !important;
     display: flex;

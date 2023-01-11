@@ -165,6 +165,9 @@ button#nfnOrderBtn{
     margin-bottom: 13px;
 }
 
+div.eg_desc > div:nth-child(2) > div.eg_img img  {
+    width: 24px;
+}
 
 .eg_img img {
     width: 22px;
