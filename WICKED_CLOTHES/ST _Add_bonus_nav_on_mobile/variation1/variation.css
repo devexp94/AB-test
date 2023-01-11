@@ -4,14 +4,15 @@
     }
     
     .egBanner {
-        background: #FFF;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
+      background: #FFF;
+      padding-top: 10px;
+      padding-bottom: 0px;
+  }
 
 div.egScrollMenu {
     overflow: auto;
     white-space: nowrap;
+    border-bottom: 1px solid;
   }
   
   div.egScrollMenu a {
@@ -19,7 +20,8 @@ div.egScrollMenu {
     color: #000;
     font-weight: 500;
     text-align: center;
-    padding: 12px;
+    padding: 12px 8px;
+    font-size: 15px;
     text-decoration: none;
   }
 }
