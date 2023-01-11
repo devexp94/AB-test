@@ -77,7 +77,7 @@
             if (e.target.classList.contains("l-wizard-section__header")) {
                 showContainer(e.target);
             } else if ((e.target.classList.contains("l-wizard-section__title")) || (e.target.classList.contains("l-wizard-section__icon"))) {
-                showContainer(e.target.parentElement);
+                e.target.parentElement.click();
             }
         });
 
