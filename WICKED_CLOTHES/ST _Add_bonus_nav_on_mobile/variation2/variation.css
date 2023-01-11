@@ -1,0 +1,24 @@
+@media screen and (max-width: 767px) {
+    html body.nav-show-mobile {
+        margin-top: 100px !important; 
+    }
+    
+    .egInner {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .egBanner {
+        background: #FFF;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    .egInner a {
+        font-size: 16px;
+        color: #000;
+        font-family: FuturaPT;
+        font-weight: 600;
+    }
+    }
