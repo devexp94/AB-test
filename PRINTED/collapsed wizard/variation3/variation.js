@@ -58,7 +58,7 @@
         }
 
         let egOpend = [];
-        let closeInterval;
+        let egCloseTimeout;
         /* Variation Init */
         function init() {
             /* start your code here */
@@ -69,8 +69,11 @@
                         item.insertAdjacentHTML("beforeend", `<span class="eg-arrow"></span>`);
                     }
                 });
-                closeActiveSection();
-            }, 50, 15000);
+                setTimeout(()=>{
+                    closeActiveSection();
+                },2000);
+                
+            }, 500, 15000);
 
         }
 
@@ -158,8 +161,11 @@
             const observer = new MutationObserver(mutations => {
                 mutations.forEach(mutation => {
                     if (mutation.attributeName === 'disabled') {
-                        if (element.disabled) {
-                            closeAll();
+                        if (element.disabled === false) {
+                            clearTimeout(egCloseTimeout);
+                            egCloseTimeout = setTimeout(()=>{
+                                 closeAll();
+                            },500);
                         }
                     }
                 });
