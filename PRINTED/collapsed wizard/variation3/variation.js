@@ -75,9 +75,15 @@
 
         live('.l-wizard-section__header', 'click', (e) => {
             if (e.target.classList.contains("l-wizard-section__header")) {
-                showContainer(e.target);
+                if (e.target.querySelector(".l-wizard-section__action-button")) {
+                    e.target.parentElement.querySelector(".l-wizard-section__container").classList.toggle("eg-inactive-section");
+                    e.target.querySelector(".l-wizard-section__action-button").click();
+                } else {
+                    showContainer(e.target);
+                }
+
             } else if ((e.target.classList.contains("l-wizard-section__title")) || (e.target.classList.contains("l-wizard-section__icon"))) {
-                showContainer(e.target.parentElement);
+                e.target.parentElement.click();
             }
         });
 
@@ -104,11 +110,7 @@
             waitForElement('html body .l-wizard__body', init, 50, 15000);
         });
 
-        live("html body .l-wizard-section__action-button", "click", function() {
-            this.parentElement.click();
-        });
 
-        
         // edit btn click logic
         live('.c-wizard-summary__btn-edit', 'click', function() {
             if (this.classList.contains("c-wizard-summary__btn-edit")) {
@@ -150,13 +152,19 @@
 
             const observer = new MutationObserver(mutations => {
                 mutations.forEach(mutation => {
-                    console.log("EG mutation")
+                    console.log("eg-mutation")
                     if (mutation.attributeName === 'disabled') {
                         if (element.disabled === false) {
-                            clearTimeout(egCloseTimeout);
-                            egCloseTimeout = setTimeout(() => {
-                                closeAll();
-                            }, 500);
+                            
+                            egOpend = egOpend.concat(Array.from(document.querySelectorAll(".l-wizard-section__container")));
+                            closeOpenArrows();
+                            let egBlock = document.querySelector(".l-wizard-section:has(.l-wizard-section__icon:not(.is-active)) .l-wizard-section__container");
+                            if (egBlock) {
+                                egBlock.classList.remove("eg-inactive-section");
+                                egOpend.unshift(egBlock);
+                                egBlock.parentElement.scrollIntoView({ behaviour: "smooth", block: 'start' });
+                            }
+                            
                         }
                     }
                 });
