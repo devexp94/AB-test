@@ -15,6 +15,11 @@ html {
     padding-block: .8rem !important;
 }
 
+.l-wizard-section:has(.l-wizard-section__action-button:nth-of-type(2):not([style="display: none;"])) .l-wizard-section__container{
+    max-height:unset !important;
+    overflow: unset !important;
+}
+
 /*arrow up and down*/
 html body .l-wizard-section__header {
     position: relative !important;
