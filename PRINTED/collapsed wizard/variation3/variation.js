@@ -73,11 +73,14 @@
 
         // header click detect
 
+        live(".l-wizard-section__action-button","click",function() {
+            this.parentElement.parentElement.querySelector(".l-wizard-section__container").classList.toggle("eg-inactive-section");
+        })
+
         live('.l-wizard-section__header', 'click', (e) => {
             if (e.target.classList.contains("l-wizard-section__header")) {
                 if (e.target.querySelector(".l-wizard-section__action-button")) {
-                    e.target.parentElement.querySelector(".l-wizard-section__container").classList.toggle("eg-inactive-section");
-                    e.target.querySelector(".l-wizard-section__action-button").click();
+                    e.target.querySelector(`.l-wizard-section__action-button:not([style="display: none;"])`).click();
                 } else {
                     showContainer(e.target);
                 }
