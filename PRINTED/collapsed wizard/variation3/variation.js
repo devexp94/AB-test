@@ -175,26 +175,6 @@
 
         }
 
-
-        function closeAll() {
-            const egHeaders = document.querySelectorAll(".l-wizard-section__header");
-            egHeaders.forEach(egHeader => {
-                if (!egHeader.parentElement.querySelector(".eg-inactive-section")) {
-                    egHeader.click();
-                }
-            });
-
-            closeOpenArrows();
-
-            let egBlock = document.querySelector(".l-wizard-section:has(.l-wizard-section__icon:not(.is-active)) .l-wizard-section__container");
-            if (egBlock) {
-                egBlock.classList.remove("eg-inactive-section");
-                egOpend.unshift(egBlock);
-                egBlock.parentElement.scrollIntoView({ behaviour: "smooth", block: 'start' });
-            }
-
-        }
-
         /* Initialize variation */
         waitForElement('html body .l-wizard__body', init, 50, 15000);
 
